@@ -1,0 +1,19 @@
+* {
+				box-sizing: border-box;
+				padding: 0;
+				margin: 0;
+}
+
+.container{
+				padding: 15px;
+				background: #bfffd5;
+}
+.row:after {
+				content: "";
+				clear: both;
+				display: table;
+}
+
+[kol*=] {
+				
+}
