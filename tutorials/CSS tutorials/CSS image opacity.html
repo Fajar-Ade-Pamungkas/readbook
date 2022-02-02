@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<script type="text/javascript" src="buka.js"></script>
+<style type="text/css">
+.image-opacity01 {
+	max-width:50%;
+	float:left;
+	font-size: 12px;
+	text-align:left;
+}
+.image-opacity01 img{
+	max-width:100%;
+}
+.clearfix {
+	clear:both;
+}
+
+#sembunyikan01 img {
+	opacity: 0.4; 
+	filter: alpha(opacity=40); /* For IE8 and earlier */ 
+}
+
+.image-opacity02 img:hover {
+	opacity:1.0;
+	filter:alpha(opacity=100);
+}
+.image-opacity02 img {
+	opacity:0.1;
+	margin-left:15px;
+	filter:alpha(opacity=100);
+}
+
+.image-opacity02 {
+	margin:auto;
+	 width:50%;
+}
+
+#sembunyikan02 img { 
+	opacity: 0.4; 
+	filter: alpha(opacity=40); /* For IE8 and earlier */ 
+}
+
+#sembunyikan02 img:hover {
+	opacity: 1.0;
+	filter: alpha(opacity=100); /* For IE8 and earlier */ 
+} 
+
+#sembunyikan03 div.background, div.background  { 
+	background: url(../../Pictures/Night.jpg) no-repeat -250px 100%; 
+	border: 2px solid black; 
+} 
+
+#sembunyikan03 div.transbox, div.transbox  { 
+	margin: 30px; 
+	background-color: #ffffff; 
+	border: 1px solid black; 
+	opacity: 0.6; 
+	filter: alpha(opacity=60); /* For IE8 and earlier */ 
+} 
+
+#sembunyikan03 div.transbox p, div.transbox  { 
+	margin: 5%; 
+	font-weight: bold; 
+	color: #000000; 
+}
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Image Opacity / Transparency </h1>
+				<p> Oembuatan image transparan menggunakan CSS dengan mudah.</p>
+				<p> Properti <mark>opacity</mark> CSS merupakan bagian dari rekomendasi CSS3.</p>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> Example 1 - Creating a Transparent Image</h2>
+				<p> Contoh 1 - Pembuatan sebuah Image/Foto Transparan</p>
+				<p> Properti CSS3 untuk tembus pandang adalah <mark>opacity</mark>.</p>
+				<p> Pertama-tama kita akan menampilkan pada kamu, bagaimana untuk membuat sebuah image transparan dengan CSS.</p>
+				
+				<div class="image-opacity01">
+					<div>Regular image:</div>
+					<img src="../../Pictures/Rain Fall.png" height="auto" alt="Hujan"/>
+				</div>
+				
+				<div class="image-opacity01">
+					<div>image with transparency:</div>
+					<img src="../../Pictures/Rain Fall.png" style="opacity:0.5;" height="auto" alt="Hujan"/>
+				</div>
+				
+				<div class="clearfix"></div>
+				
+				<p> Lihatlah CSS berikut:</p>
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						img { <br>
+						    opacity: 0.4; <br>
+						    filter: alpha(opacity=40); /* For IE8 and earlier */ <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						img { <br>
+						    opacity: 0.4; <br>
+						    filter: alpha(opacity=40); /* For IE8 and earlier */ <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>h1</b>>Image Transparency<<b>/h1</b>> <br>
+					<<b>img</b> <span class="teal">src="klematis.jpg" width="150" height="113" alt="klematis"</span>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<h4>Image Transparency</h4>
+						<img src="../../Pictures/Putik.jpg" width="150" height="113" alt="klematis">
+					
+					</div>
+				</article>
+				
+				<p> Properti <mark>opacity</mark> bisa menambil nilai daei <b class="justRed">0.0 - 1.0</b>. Lebih kecil nilainya maka lebih transparan.</p>
+				<div class="nasehat">
+					<p> IE8 dan versi sebelumnya menggunakan <mark>filter:alpha(opacity=x)</mark>.x bisa menambil nilai dari 0 - 100. Nilai lebih kecil membuat element lebih transparan.</p>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Example 2 - Image Transparency - Hover Effect</h2>
+				<p> Contoh 2 - Image Transparan (dengan) Efek Hover</p>
+				<div class="image-opacity02">
+					<div>Mouse over the images:</div>
+					<img src="../../Pictures/Rain Fall.png" width="160" height="auto" alt="Hujan"/>
+				</div>
+				<p> CSS terlihat seperti ini:</p>
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						img { <br>
+						    opacity: 0.4; <br>
+						    filter: alpha(opacity=40); /* For IE8 and earlier */ <br>
+						}<br>
+						<br>
+						img:hover {<br>
+						    opacity: 1.0;<br>
+						    filter: alpha(opacity=100); /* For IE8 and earlier */ <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						img { <br>
+						    opacity: 0.4; <br>
+						    filter: alpha(opacity=40); /* For IE8 and earlier */ <br>
+						}<br>
+						<br>
+						img:hover {<br>
+						    opacity: 1.0;<br>
+						    filter: alpha(opacity=100); /* For IE8 and earlier */ <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>h1</b>>Image Transparency<<b>/h1</b>>
+					<<b>img</b> <span class="teal">src="klematis.jpg" width="150" height="113" alt="klematis"</span>> <br>
+					<<b>img</b> <span class="teal">src="klematis2.jpg" width="150" height="113" alt="klematis"</span>> <br>
+					<br>
+					<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> In IE, a !DOCTYPE must be added for the :hover selector to work on other elements than the a element.<<b>/p</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+					<h4>Image Transparency</h4>
+					<img src="../../Pictures/Night.jpg" width="150" height="113" alt="klematis">
+					<img src="../../Pictures/Turtle in the beach.jpeg" width="150" height="113" alt="klematis">
+					
+					<p><b>Note:</b> In IE, a !DOCTYPE must be added for the :hover selector to work on other elements than the a element.</p>
+					
+					</div>
+				</article>
+				
+				<p> Blok CSS pertama mirip dengan kode pada Example 1. Pada penambahan, kita telah menambahkan apa yang harus terjadi ketika user menggerakan mouse pada image. 
+				Pada kasus ini kita ingin image TIDAK ditransparansikan ketika user meng-hover image. CSS untuk ini adalah <mark>opacity: 1;</mark>. </p>
+				<p> Ketika Penunjuk mouse bergerak dari image, image akan ditransparansikan lagi.</p>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Example 3 - Text in Transparent Box</h2>
+				<p> Contoh 3 - Teks dalam Kotak Transparan </p>
+				<p> Ini merupakan beberapa teks yang ditempatkan pada kotak transparan.</p>
+				<p> Source code terlihat seperti ini:</p>
+				
+				<div class="background">
+				  <div class="transbox">
+				    <p>This is some text that is placed in the transparent box.</p>
+				  </div>
+				</div>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open03">
+						
+						div.background { <br>
+						    background: url(klematis.jpg) repeat; <br>
+						    border: 2px solid black; <br>
+						} <br>
+						 <br>
+						div.transbox { <br>
+						    margin: 30px; <br>
+						    background-color: #ffffff; <br>
+						    border: 1px solid black; <br>
+						    opacity: 0.6; <br>
+						    filter: alpha(opacity=60); /* For IE8 and earlier */ <br>
+						} <br>
+						 <br>
+						div.transbox p { <br>
+						    margin: 5%; <br>
+						    font-weight: bold; <br>
+						    color: #000000; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div.background { <br>
+						    background: url(klematis.jpg) repeat; <br>
+						    border: 2px solid black; <br>
+						} <br>
+						 <br>
+						div.transbox { <br>
+						    margin: 30px; <br>
+						    background-color: #ffffff; <br>
+						    border: 1px solid black; <br>
+						    opacity: 0.6; <br>
+						    filter: alpha(opacity=60); /* For IE8 and earlier */ <br>
+						} <br>
+						 <br>
+						div.transbox p { <br>
+						    margin: 5%; <br>
+						    font-weight: bold; <br>
+						    color: #000000; <br>
+						}<br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>div</b> <span class="teal">class="background"</span>> <br>
+					  <<b>div</b> <span class="teal">class="transbox"</span>> <br>
+					    <<b>p</b>>This is some text that is placed in the transparent box.<<b>/p</b>> <br>
+					  <<b>/div</b>> <br>
+					<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+						<div class="background">
+						  <div class="transbox">
+						    <p>This is some text that is placed in the transparent box.</p>
+						  </div>
+						</div>
+					
+					</div>
+				</article>
+				
+				<p> Pertama-tama, kita membuat sebuah element <<b>div</b>> (dengan <b class="fontWhite">class="background"</b>) dengan sebuah background inage, dan sebuah border.
+				 Kemudian kita membuat sebuah <<b>div</b>> lainnya (dengan <b class="fontWhite">class="transbox"</b>) didalam <<b>div</b>> pertama. <<b>div</b> <span class="teal">class="transbox"</span>> memiliki sebuah background color.
+				 <p> dan sebuah border - div adalah transparan. Didalam <<b>div</b>> transparan, kita tambahkan beberapa teks didalam element <<b>p</b>>.</p>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS image gallery.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS image sprites.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

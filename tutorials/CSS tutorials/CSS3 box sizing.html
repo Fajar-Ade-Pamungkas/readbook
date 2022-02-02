@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS3 box sizing </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+#sembunyikan01 .div1, .div1 { 
+width: 300px; 
+height: 100px; 
+border: 1px solid blue; 
+} 
+
+#sembunyikan01 .div2, .div2 { 
+width: 300px; 
+height: 100px; 
+padding: 50px; 
+border: 1px solid red; 
+} 
+
+
+#sembunyikan02 .div3, .div3 { 
+width: 300px; 
+height: 100px; 
+border: 1px solid blue; 
+box-sizing: border-box; 
+} 
+
+#sembunyikan02 .div4, .div4 { 
+width: 300px; 
+height: 100px; 
+padding: 50px; 
+border: 1px solid red; 
+box-sizing: border-box; 
+} 
+
+
+
+* { 
+box-sizing: border-box; 
+} 
+
+#sembunyikan03 input, textarea { 
+width: 100%; 
+} 
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS3 Box Sizing </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> CSS3 Box Sizing </h2>
+				<p> Properti <mark>box-sizing</mark> CSS3 memperbolehkan kita untuk memasukan padding dan borderdalam sebuah total lebar dan tinggi element.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Browser Support for Box Sizing</h2>
+				<p> Nomor pada tabel menentukan browser versi pertama yang mendukung secara penuh  properti ini.</p>
+				<p> Nomor yang diikut dengan <mark>-ms-</mark>, <mark>-webkit-</mark>, <mark>-moz-</mark> atau <mark>-o-</mark> menentukan versi pertama yang bekerja dengan awalan properti.</p>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> Properti </td>
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> box-sizing </td>
+							<td> 10.0 <br> 4.0 -webkit- </td>
+							<td> 12.0 dan 8.0 </td>
+							<td> 29.0 <br> 2.0 -moz- </td>
+							<td> 5.1 <br> 3.1 -webkit- </td>
+							<td> 9.5 </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Without the CSS3 box-sizing Property</h2> 
+				<p> Tanpa Properti <mark>box-sizing</mark> CSS3</p>
+				<p> Dengan default, lebar (width) dan tinggi (height) dari sebuah element dikalkulssikan seperti ini:</p>
+				
+				<ol>
+					<li>width + padding + border = actual width of an element</li>
+					<li>height + padding + border = actual height of an element</li>
+				</li>
+				
+				<p> Ini berarti: Ketika kamu mrngatur width/height dari sebuah element, element seringkali tampak lebih besar daripada yang kamu telah atur atau kamu tetapkan 
+				(karena border dan padding element ditambahkan ke lebar/tinggi yang ditentukan element).</p>
+				<p> Illustrasi berikut menampilkan dua element <<b>div</b>> dengan tinggi dan lebar yang ditentukan sama:</p>
+				<div class="div1"> Div ini lebih kecil (lebar 300px dan tinggi 100px).</div> <br>
+				<div class="div2">Div ini lebih besar (lebar 300px juga dan tinggi 100px juga).</div>
+				
+				<p> Dua lement <<b>div</b>> diatas berakhiri dengan ukuran yang berbeda pada hasil (karena div2 memiliki sebuah padding yang ditentukan):</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						.div1 { <br>
+						width: 300px; <br>
+						height: 100px; <br>
+						border: 1px solid blue;  <br>
+						} <br>
+						<br>
+						.div2 { <br>
+						width: 300px; <br>
+						height: 100px; <br>
+						padding: 50px; <br>
+						border: 1px solid red; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.div1 { <br>
+						width: 300px; <br>
+						height: 100px; <br>
+						border: 1px solid blue;  <br>
+						} <br>
+						<br>
+						.div2 { <br>
+						width: 300px; <br>
+						height: 100px; <br>
+						padding: 50px; <br>
+						border: 1px solid red; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						
+						<<b>div</b> <span class="teal">class="div1"</span>>This div is smaller (width is 300px and height is 100px).<<b>/div</b>> <br>
+						<<b>br</b>> <br>
+						<<b>div</b> <span class="teal">class="div2"</span>>This div is bigger (width is also 300px and height is 100px).<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						
+						<div class="div1">This div is smaller (width is 300px and height is 100px).</div>
+						<br>
+						<div class="div2">This div is bigger (width is also 300px and height is 100px).</div>
+					
+					</div>
+				</article>
+				
+				<p> Jadi, untuk waktu yang lama web developers telah menentukan sebuah nilai width yang lebih kecil dibandingkan yang mereka mau, karena mereka harus mengurangi melebihi keluar padding dan border.</p>
+				<p> Dengan CSS3, properti <mark>box-sizing</mark> mengatasi masalah ini.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>With the CSS3 box-sizing Property</h2>
+				<p> Dengan Properti <mark>box-sizing</mark> CSS3</p>
+				<p> Properti <mark>box-sizing</mark> CSS3 memperbolehkan kita untuk memasukan padding dan border dalam sebuah total lebar dan tinggi element.</p>
+				<p> Jika kamu mengatur <mark>box-sizing: border-box;</mark> pada sebuah element, padding dan border dimasukan dalam (total) width dan height:</p>
+				<div class="div3"> Kedua div memiliki ukuran yang sama sekarang!</div> <br>
+				<div class="div4"> Hooray!</div>
+				<p> Disini adalah contoh yang sama seperti diatas, dengan <mark>box-sizing:border-box;</mark> ditambahkan ke (keduanya) element <<b>div</b>>:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						.div1 { <br>
+						width: 300px; <br>
+						height: 100px; <br>
+						border: 1px solid blue; <br>
+						box-sizing: border-box; <br>
+						} <br>
+						<br>
+						.div2 { <br>
+						width: 300px; <br>
+						height: 100px; <br>
+						padding: 50px; <br>
+						border: 1px solid red; <br>
+						box-sizing: border-box; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.div1 { <br>
+						width: 300px; <br>
+						height: 100px; <br>
+						border: 1px solid blue; <br>
+						box-sizing: border-box; <br>
+						} <br>
+						<br>
+						.div2 { <br>
+						width: 300px; <br>
+						height: 100px; <br>
+						padding: 50px; <br>
+						border: 1px solid red; <br>
+						box-sizing: border-box; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						
+						<<b>div</b> <span class="teal">class="div1"</span>>Both divs are the same size now!<<b>/div</b>> <br>
+						<<b>br</b>> <br>
+						<<b>div</b> <span class="teal">class="div2"</span>>Hooray!<<b>/div</b>> <br> <br>
+						
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						
+						<div class="div3">Both divs are the same size now!</div>
+						<br>
+						<div class="div4">Hooray!</div>
+						
+					
+					</div>
+				</article>
+				
+				
+				<p> Sekali hasil dari penggunaan <mark>box-sizing: border-box;</mark> adalah sangat lebih baik, banyak developers ingin semua element pada halaman mereka untuk melakukan cara ini.</p>
+				<p> Kode dibawah memastikan bahwa semua element diukur ulang pada cara intuisi lebih. Banyak browser sudah menggunakan <mark>box-sizing: border-box;</mark> untuk banyak elemen form (formulir) (tapi tidak semuanya - yang mana karena input dan textareas terlihat berbeda pada <mark>width: 100%;</mark>).</p>
+				<p> Penerapan ini ke semua element, dan semuanya aman dan bijak.</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open03">
+						
+						* { <br>
+						box-sizing: border-box; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						* { <br>
+						box-sizing: border-box; <br>
+						}  <br>
+						 <br>
+						input, textarea { <br>
+						width: 100%; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>form</b> <span class="teal">action="http://www.w3schools.com/css/action_page.php"</span>> <br>
+						First name:<<b>br</b>> <br>
+						<<b>input</b> <span class="teal">type="text" name="firstname" value="Mickey"</span>><<b>br</b>> <br>
+						Last name:<<b>br</b>> <br>
+						<<b>input</b> <span class="teal">type="text" name="lastname" value="Mouse"</span>><<b>br</b>> <br>
+						Comments:<<b>br</b>> <br>
+						<<b>textarea</b> <span class="teal">name="message" rows="5" cols="30"</span>> <br>
+						<<b>/textarea</b>> <br>
+						<<b>br</b>><<b>br</b>> <br>
+						<<b>input</b> <span class="teal">type="submit" value="Submit"</span>> <br>
+						<<b>/form</b>>  <br>
+						 <br>
+						<<b>p</b>><<b>strong</b>>Tip:<<b>/strong</b>> Try to remove the box-sizing property from the style element and look what happens. <br>
+						Notice that the input, textarea, and submit button will no longer have equal widths.<<b>/p</b>> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+						<form action="http://www.w3schools.com/css/action_page.php">
+						First name:<br>
+						<input type="text" name="firstname" value="Mickey"><br>
+						Last name:<br>
+						<input type="text" name="lastname" value="Mouse"><br>
+						Comments:<br>
+						<textarea name="message" rows="5" cols="30">
+						</textarea>
+						<br><br>
+						<input type="submit" value="Submit">
+						</form> 
+						
+						<p><strong>Tip:</strong> Try to remove the box-sizing property from the style element and look what happens.
+						Notice that the input, textarea, and submit button will no longer have equal widths.</p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS3 user interface.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS3 flexbox.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

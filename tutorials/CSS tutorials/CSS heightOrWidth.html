@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS Height or Width </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+#p01 {
+	width:100%;
+	border:3px gold solid;
+}
+#p02 {
+    width: 500px; 
+    height: 100px; 
+    border:3px gold solid;
+	background-color:navy;
+}
+#p03 {
+    max-width: 500px; 
+    height: 100px; 
+    border:3px gold solid;
+	background-color:navy;
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Height and Width Dimension</h1>
+			</div>
+			
+<section>
+			<div id="p01">
+			<h2>CSS Dimension Properties</h2>
+			<p> Properti dimensi CSS mengizinkan kamu untuk mengendalikan tinggi dan lebar sebuah element. </p>
+			<p> Element ini memiliki width (lebar) 100%. </p>
+			</div>
+</section>
+<section>
+			<article>
+				<h2> Setting height and width </h2>
+				<p> Pengaturan height dan width </p>
+				<p> Properti <mark>height</mark> dan <mark>width</mark> digunakan untuk mengatur tinggi dan lebar suatu element. </p>
+				<p> height dan width bisa diatur menjadi <b>auto</b> (ini merupakan default, Mengartikan bahwa browser mengkalkulasikan tinggi dan lebar secara otomatis), atau ditentukan dalam nilai seperti px, cm, atau sebagainya, atau dalam persen (%) dari blok pengisi. </p>
+				
+				<div id="p02">
+				<p> Element ini memiliki tinggi 100 pixel dan lebar 500 pixel. </p>
+				</div>
+				
+				<div class="nasehat">
+					<p> <b>Catatan:</b> properti height dan width tidak termasuk padding, border atau margin; mereka mengatur tinggi dan lebar dari area didslsm padding, border, dan margin element! </p>
+				</div>
+				<p> Contoh berikut menampilkan element <<b>div</b>> dengan tinggi 100px dan lebar 500px: </p>
+				
+				<article class="example-box">
+					<h4> Input </h4>
+					<div class="example-content">
+					
+					div.p02 {
+					<blockquote>
+					    width: 500px; <br>
+					    height: 100px; <br>
+					    border: 3px solid #73AD21;
+					</blockquote>
+					}
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan02">
+						<div id="p02"> 
+						<p> Element ini memiliki tinggi 100 pixel dan lebar 500 pixel. </p>
+						</div>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Setting max-width </h2>
+				<p> Pengaturan maxz-width</p>
+				<p> Properti <mark>max-width</mark> digunakan untuk mengatur lebar maksimum dari suatu element. </p>
+				<p> <mark>max-width</mark> bisa ditentukan dalam nilai (satuan) panjang , seperti px, cm, dan sebagainya, atau dalam persen (%) dari blok pengisi, atau mengatur menjadi <b>none</b> (ini adalah default. Artinya bahwa tidak ada (nilai) lebar maksimum)</p>
+				<p> Masalah dengan <<b>div</b>> diatas terjadi ketika browser window lebih kecil daripada lebar element (500px). Browser kemudian menambahkan sebuah horizontal scrollbar untuk halaman. </p>
+				<p> Penggunaan <mark>max-width</mark> sebagai pengganti, dalam situasi ini, akan meningkatkan browser's handling untuk small window. </p>
+				<div class="nasehat">
+				 	<p> <b>Tip:</b> Drag-lah (geserlah) browser window menjadi lebih kecil daripada 500px lebar, untuk melihat perbedaan antara dua div! </p>
+				 </div>
+				 
+				 <div id="p03">
+				 	<p> Element <<b>div</b>> ini memiliki tinggi (height) 100 pixel dan lebar maksimal (max-width) 500 pixel. </p>
+				 </div>
+				 
+				 <div class="nasehat">
+				 <p> <b>Catatan</b> Nilai dari <mark>max-width</mark> mengesampingkan lebar (width) element. </p>
+				 </div>
+				 
+				 <p> Fontih berikut menampilkan sebuah element <<b>div</b>> dengan height 100px dan lebar max-width 500px: </p>
+				 
+				 <article class="example-box">
+					 <h4> Input </h4>
+					 <div class="example-content">
+					 
+					 div.p03 {
+					 <blockquote>
+					     max-width: 500px; <br>
+					     height: 100px; <br>
+					     border: 3px solid #73AD21;
+					 </blockquote>
+					 }
+					 
+					 </div>
+					 <button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					 <div class="result sembunyikan" id="sembunyikan03">
+						 <div id="p03" class="redZone"> 
+						 	<p> Element <<b>div</b>> ini memiliki tinggi (height) 100 pixel dan lebar maksimal (max-width) 500 pixel. </p>
+						 </div>
+					 </div>
+				 </article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>All CSS Dimension Properties </h2>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th> Properti </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> height </td>
+							<td> Mengatur tinggi suatu element </td>
+						</tr>
+						<tr>
+							<td> max-height </td>
+							<td> Mengatur tinggi maksimal suatu element </td>
+						</tr>
+						<tr>
+							<td> max-width </td>
+							<td> Mengatur lebar maksimal suatu element </td>
+						</tr>
+						<tr>
+							<td> min-height </td>
+							<td> Mengatur tinggi minimal suatu element </td>
+						</tr>
+						<tr>
+							<td> min-width </td>
+							<td> Mengatur lebar minimal suatu element </td>
+						</tr>
+						<tr>
+							<td> width </td>
+							<td> Mengatur lebar suatu element </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS padding.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS text.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

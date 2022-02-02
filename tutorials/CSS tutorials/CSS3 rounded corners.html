@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS3 rounded corners </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+.rcorners1 {
+border-radius: 25px;
+background: #73AD21;
+padding: 20px; 
+width: 200px;
+height: 150px; 
+}
+
+.rcorners2 {
+border-radius: 25px;
+border: 2px solid #73AD21;
+padding: 20px; 
+width: 200px;
+height: 150px; 
+}
+
+.rcorners3 {
+border-radius: 25px;
+background-image:url("../../Pictures/Putik.jpg");
+background-position: left top;
+background-repeat: repeat;
+padding: 20px; 
+width: 200px;
+height: 150px; 
+}
+
+.rcorners4 {
+border-radius: 15px 50px 30px 5px;
+background: #73AD21;
+padding: 20px; 
+width: 200px;
+height: 150px; 
+}
+
+.rcorners5 {
+border-radius: 15px 50px 30px;
+background: #73AD21;
+padding: 20px; 
+width: 200px;
+height: 150px; 
+}
+
+.rcorners6 {
+border-radius: 15px 50px;
+background: #73AD21;
+padding: 20px; 
+width: 200px;
+height: 150px; 
+}
+
+.rcorners7 { 
+border-radius: 50px/15px; 
+background: #73AD21; 
+padding: 20px; 
+width: 200px; 
+height: 150px; 
+} 
+
+.rcorners8 { 
+border-radius: 15px/50px; 
+background: #73AD21; 
+padding: 20px; 
+width: 200px; 
+height: 150px; 
+} 
+
+.rcorners9 { 
+border-radius: 50%; 
+background: #73AD21; 
+padding: 20px; 
+width: 200px; 
+height: 150px; 
+} 
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS3 Rounded Corners </h1>
+				<div>
+				
+				</div>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> CSS3 Rounded Corners</h2>
+				<p> Dengan properti <mark>birder-radius</mark> CSS3, kamu bisa memberikan "rounded corners" (atau sudut tumpul) pada element apapun.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Browser Support</h2>
+				<p> Nomor pada tabel menentukan browser versi pertama yang mendukung secara penuh  properti <mark>border-radius</mark>.</p>
+				<p> Nomor yang diikut dengan <mark>-webkit-</mark> atau <mark>-moz-</mark> menentukan versi pertama yang bekerja dengan awalan properti.</p>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> Properti </td>
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td>border-radius</td>
+							<td> 5.0 <br> 4.0 -webkit- </td>
+							<td> 12.0 dan 9.0</td>
+							<td> 4.0 <br> 3.0 -moz- </td>
+							<td> 5.0 <br>3.1 -webkit- </td>
+							<td> 10.5 </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 border-radius Property</h2>
+				<p> Dengan properti <mark>birder-radius</mark> CSS3, kamu bisa memberikan "rounded corners" (atau sudut tumpul) 
+				pada element apapun dengan properti <mark>border-radius</mark>.</p>
+				<p> Disini adalah tiga contoh: </p>
+				<p> 1. Rounded corner untuk sebuah element dengan background warna yang sudah ditentu: </p>
+				<div class="rcorners1">
+				Rounded corner!
+				</div>
+				
+				<p> 2. Rounded corner untuk sebuah element dengan border: </p>
+				<div class="rcorners2">
+				Rounded corner!
+				</div>
+				
+				<p> 3. Rounded corner untuk sebuah element dengan background image: </p>
+				<div class="rcorners3">
+				Rounded corner!
+				</div>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						#rcorners1 { <br>
+						border-radius: 25px; <br>
+						background: #73AD21; <br>
+						padding: 20px;  <br>
+						width: 200px; <br>
+						height: 150px;  <br>
+						} <br>
+						 <br>
+						#rcorners2 { <br>
+						border-radius: 25px; <br>
+						border: 2px solid #73AD21; <br>
+						padding: 20px;  <br>
+						width: 200px; <br>
+						height: 150px;  <br>
+						} <br>
+						 <br>
+						#rcorners3 { <br>
+						border-radius: 25px; <br>
+						background: url(paper.gif); <br>
+						background-position: left top; <br>
+						background-repeat: repeat; <br>
+						padding: 20px;  <br>
+						width: 200px; <br>
+						height: 150px;  <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#rcorners1 { <br>
+						border-radius: 25px; <br>
+						background: #73AD21; <br>
+						padding: 20px;  <br>
+						width: 200px; <br>
+						height: 150px;  <br>
+						} <br>
+						 <br>
+						#rcorners2 { <br>
+						border-radius: 25px; <br>
+						border: 2px solid #73AD21; <br>
+						padding: 20px;  <br>
+						width: 200px; <br>
+						height: 150px;  <br>
+						} <br>
+						 <br>
+						#rcorners3 { <br>
+						border-radius: 25px; <br>
+						background: url(paper.gif); <br>
+						background-position: left top; <br>
+						background-repeat: repeat; <br>
+						padding: 20px;  <br>
+						width: 200px; <br>
+						height: 150px;  <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>p</b>>The border-radius property allows you to add rounded corners to elements.<<b>/p</b>><br>
+					<<b>p</b>>Rounded corners for an element with a specified background color:<<b>/p</b>><br>
+					<<b>p</b> <span class="teal">id="rcorners1"</span>>Rounded corners!<<b>/p</b>><br>
+					<<b>p</b>>Rounded corners for an element with a border:<<b>/p</b>><br>
+					<<b>p</b> <span class="teal">id="rcorners2"</span>>Rounded corners!<<b>/p</b>><br>
+					<<b>p</b>>Rounded corners for an element with a background image:<<b>/p</b>><br>
+					<<b>p</b> <span class="teal">id="rcorners3"</span>>Rounded corners!<<b>/p</b>><br><br>
+					
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<p>The border-radius property allows you to add rounded corners to elements.</p>
+						<p>Rounded corners for an element with a specified background color:</p>
+						<p class="rcorners1">Rounded corners!</p>
+						<p>Rounded corners for an element with a border:</p>
+						<p class="rcorners2">Rounded corners!</p>
+						<p>Rounded corners for an element with a background image:</p>
+						<p class="rcorners3">Rounded corners!</p>
+					
+					</div>
+				</article>
+				<p><b>Tip:</b> Properti <mark>border-radius</mark> sebenarnya adalah sebuah shorthand properti untuk <mark>border-top-left-radius</mark>, 
+				<mark>border-top-right-radius</mark>, <mark>border-bottom-right-radius</mark> dan <mark> border-bottom-left-radius</mark> properties.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 border-radius - Specify Each Corner </h2>
+				<p> CSS3 <mark>border-radius</mark> - Menentukan Setiap Sudutnya</p>
+				<p> Jika kamu hanya menentukan satu nilai untuk properti <mark>border-radius</mark>, radius ini akan diterapkan ke semua (keempat) sudut.</p>
+				<p> Akan tetapi, kamu bisa menentukan setiap sudut secara terpisah jika kamu ingin. Disini adalah aturannya:</p>
+				<ul>
+					<li><b>Empat nilai</b> - nilai pertama menentukan top-left corner, nilai kedua menerapkan top-right corner, 
+					nilai ketiga menerapkan bottom-right corner, dan nilai keempat menerapkan bottom-left corner</li>
+					<li><b>Tiga nilai</b> - nilai pertama menentukan top-left corner, nilai kedua menerapkan top-right corner dan bottom-right corner, dan nilai ketiga menerapkan bottom-left corner</li>
+					<li><b>Dua nilai</b> - nilai pertama menentukan top-left corner dan bottom-right, nilai kedua menerapkan top-right corner dan bottom-right corner </li>
+					<li><b>Satu nilai</b> - Semua (keempat) sudut ditumpulkan secara sama</li>
+				</ul>
+				<p> Disini adalah 3 contoh:</p>
+				<p>1. Empat nilai - <mark>border-radius: 15px 50px 30px 5px</mark:></p>
+				<div class="rcorners4"></div>
+				
+				<p>2. Tiga nilai - <mark>border-radius: 15px 50px 30px</mark>:</p>
+				<div class="rcorners5"></div>
+				
+				<p>3. Dua nilai - <mark>border-radius: 15px 50px</mark>:</p>
+				<div class="rcorners6"></div>
+				
+				<p> Disini adalah kodenya:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						#rcorners4 { <br>
+						border-radius: 15px 50px 30px 5px; <br>
+						background: #73AD21; <br>
+						padding: 20px;  <br>
+						width: 200px; <br>
+						height: 150px;  <br>
+						} <br>
+						 <br>
+						#rcorners5 { <br>
+						border-radius: 15px 50px 30px; <br>
+						background: #73AD21; <br>
+						padding: 20px;  <br>
+						width: 200px; <br>
+						height: 150px;  <br>
+						} <br>
+						 <br>
+						#rcorners6 { <br>
+						border-radius: 15px 50px; <br>
+						background: #73AD21; <br>
+						padding: 20px;  <br>
+						width: 200px; <br>
+						height: 150px;  <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#rcorners4 { <br>
+						border-radius: 15px 50px 30px 5px; <br>
+						background: #73AD21; <br>
+						padding: 20px;  <br>
+						width: 200px; <br>
+						height: 150px;  <br>
+						} <br>
+						 <br>
+						#rcorners5 { <br>
+						border-radius: 15px 50px 30px; <br>
+						background: #73AD21; <br>
+						padding: 20px;  <br>
+						width: 200px; <br>
+						height: 150px;  <br>
+						} <br>
+						 <br>
+						#rcorners6 { <br>
+						border-radius: 15px 50px; <br>
+						background: #73AD21; <br>
+						padding: 20px;  <br>
+						width: 200px; <br>
+						height: 150px;  <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>p</b>>Four values - border-radius: 15px 50px 30px 5px:<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="rcorners4"</span>><<b>/p</b>> <br>
+					<br>
+					<<b>p</b>>Three values - border-radius: 15px 50px 30px:<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="rcorners5"</span>><<b>/p</b>> <br>
+					<br>
+					<<b>p</b>>Two values - border-radius: 15px 50px:<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="rcorners6"</span>><<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<p>Four values - border-radius: 15px 50px 30px 5px:</p>
+						<p class="rcorners4"></p>
+						
+						<p>Three values - border-radius: 15px 50px 30px:</p>
+						<p class="rcorners5"></p>
+						
+						<p>Two values - border-radius: 15px 50px:</p>
+						<p class="rcorners6"></p>
+					
+					</div>
+				</article>
+				
+				<p> Kamu juga bisa membuat sudut secara oval atau elliptical corners:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open03">
+						
+						#rcorners7 { <br>
+						border-radius: 50px/15px; <br>
+						background: #73AD21; <br>
+						padding: 20px;  <br>
+						width: 200px; <br>
+						height: 150px;  <br>
+						} <br>
+						 <br>
+						#rcorners8 { <br>
+						border-radius: 15px/50px; <br>
+						background: #73AD21; <br>
+						padding: 20px;  <br>
+						width: 200px; <br>
+						height: 150px;  <br>
+						} <br>
+						 <br>
+						#rcorners9 { <br>
+						border-radius: 50%; <br>
+						background: #73AD21; <br>
+						padding: 20px;  <br>
+						width: 200px; <br>
+						height: 150px; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#rcorners7 { <br>
+						border-radius: 50px/15px; <br>
+						background: #73AD21; <br>
+						padding: 20px;  <br>
+						width: 200px; <br>
+						height: 150px;  <br>
+						} <br>
+						 <br>
+						#rcorners8 { <br>
+						border-radius: 15px/50px; <br>
+						background: #73AD21; <br>
+						padding: 20px;  <br>
+						width: 200px; <br>
+						height: 150px;  <br>
+						} <br>
+						 <br>
+						#rcorners9 { <br>
+						border-radius: 50%; <br>
+						background: #73AD21; <br>
+						padding: 20px;  <br>
+						width: 200px; <br>
+						height: 150px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					
+					<<b>p</b>>Elliptical border - border-radius: 50px/15px:<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="rcorners7"</span>><<b>/p</b>> <br>
+					 <br>
+					<<b>p</b>>Elliptical border - border-radius: 15px/50px:<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="rcorners8"</span>><<b>/p</b>> <br>
+					 <br>
+					<<b>p</b>>Ellipse border - border-radius: 50%:<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="rcorners9"</span>><<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+						
+						<p>Elliptical border - border-radius: 50px/15px:</p>
+						<p class="rcorners7"></p>
+						
+						<p>Elliptical border - border-radius: 15px/50px:</p>
+						<p class="rcorners8"></p>
+						
+						<p>Ellipse border - border-radius: 50%:</p>
+						<p class="rcorners9"></p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 Rounded Corners Properties </h2>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Properti</th>
+							<th>Deskripsi</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>border-radius</td>
+							<td> Sebuah shorthand property untuk mengatur semua (keempat) border radius dalam datu deklarasi</td>
+						</tr>
+						<tr>
+							<td>border-top-left-radius</td>
+							<td> Mendefinisikan bentuk border dari sudut kiri atas </td>
+						</tr>
+						<tr>
+							<td>border-top-right-radius</td>
+							<td> Mendefinisikan bentuk border dari sudut kanan atas </td>
+						</tr>
+						<tr>
+							<td>border-bottom-right-radius</td>
+							<td> Mendefinisikan bentuk border dari sudut kanan bawah </td>
+						</tr>
+						<tr>
+							<td>border-bottom-left-radius</td>
+							<td> Mendefinisikan bentuk border dari sudut kiri bawah </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS3 introduction.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS3 border images.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

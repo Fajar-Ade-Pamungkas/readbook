@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Layout - The position Properti </h1>
+				<p> Properti <mark>position</mark> menentukan tipe metode peletakan atau posisi untuk suatu element (bisa staic, relative, fixed atau absolute). </p>
+				
+			</div>
+			
+			
+<section>
+			<article>
+				<h2>The position Property</h2> 
+				<p> Properti <mark>position</mark> </p>
+				<p> Properti <mark>position</mark> menentukan tipe metode peletakan atau posisi yang digunakan kepada element. </p>
+				<p> Ada empat perbedaan nilai posisi, yaitu: </p>
+				<ul>
+					<li> static </li>
+					<li> relative </li>
+					<li> fixed </li>
+					<li> absolute </li>
+				</ul>
+				<p> Element kemudian diposisikan menggunakan properti <mark>top</mark>, <mark>bottom</mark> , <mark>left</mark>, dan <mark>right</mark>. 
+				Akan tetapi, properti ini tidak akan bekerja tanpa properti <mark> position</mark> diatur terlebih dahulu. Mereka juga bekerja secara beda tergantung pada nilai posisinya. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> position: static;</h2>
+				<p> HTML element bisa diposisi static (tetap) dengan default. </p>
+				<p> Element berposisi static  tidak terpengaruh oleh properti top, bottom, left, right. </p>
+				<p> Suatu element dengan <mark>position:static;</mark> tidak ditempatkan pada cara spesial apapun; Ini selalu berposisi menurut pada normal flow (aliran normal) dari halaman: </p>
+				<div style="position: static; border: 3px solid#73AD21;">
+					<p> Element <<b>div</b>> ini memiliki <mark>position: static; </mark> </p>
+				</div>
+				<p> Disini adalah CSS yang digunakan: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						div.static {
+						<blockquote>
+						    position: static; <br>
+						    border: 3px solid #73AD21;
+						</blockquote>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div.static {
+						<blockquote>
+						    position: static; <br>
+						    border: 3px solid #73AD21;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						<<b>div</b> <span class="teal">class="static"</span>>
+						<blockquote>
+							<<b>p</b>> Element <<b>div</b>> ini memiliki <mark>position: static; </mark> <<b>/p</b>>
+						</blockquote>
+						<<b>/div</b>> <br> <br>
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<div style="position: static; border: 3px solid#73AD21;">
+							<p> Element <<b>div</b>> ini memiliki <mark>position: static; </mark> </p>
+						</div>
+						
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>position: relative; </h2>
+				<p> Suatu element dengan <mark>position: relative;</mark> diposisikan relatif  pada posisi normal.</p>
+				<p> Pengaturan properti top, right, bottom, dan left dari suatu element berposisi relatif akan mengakibatkan element bisa menyesuaikan diri untuk berpindah dari posisi normalnya. 
+				Konten lainnya tidak akan disesuaikan menjadi fit kedalam celah (gap) kiri oleh element itu. </p>
+				<div style="position: relative; left:30px; border: 3px solid #73ad21;">
+					<p> Element <<b>div</b>> ini memeiliki <mark>posisi: relative;</mark> </p>
+				</div>
+				<p> Disini adalah CSS yang digunakan: </p>
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						div.relative {
+						<blockquote>
+						    position: relative; <br>
+						    left: 30px; <br>
+						    border: 3px solid #73AD21;
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div.relative {
+						<blockquote>
+						    position: relative; <br>
+						    left: 30px; <br>
+						    border: 3px solid #73AD21;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						<<b>div</b> <span class="teal">class="relative"</span>>
+						<blockquote>
+						<<b>p</b>> Element <<b>div</b>> ini memeiliki <mark>posisi: relative;</mark> <<b>/p</b>>
+						</blockquote>
+						<<b>/div</b>> <br><br>
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<div style="position: relative; left:30px; border: 3px solid #73ad21;">
+							<p> Element <<b>div</b>> ini memeiliki <mark>posisi: relative;</mark> </p>
+						</div>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>position: fixed; </h2>
+				<p> Suatu element dengan <mark>position: fixed;</mark> diposisikan relatif  (tergantung) pada viewport, Yang mana artinya ini selalu stay (tinggal) di tempat yang sama bahkan jika halaman di-scroll. 
+				Properti rop, right, bottom, dan left digunakan untuk posisi element. </p>
+				<p> Suatu fixed element tidak meninggalkan celah pads halaman dimana ia yang secara normal telah dilokasikan. </p>
+				<p> Perhatikanlah pada elemen (berposisi) fixed di sudut kanan  halaman. Disini adalah CSS yang digunakan: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open03">
+						
+						div.fixed { 
+						<blockquote>
+						    position: fixed; <br>
+						    bottom: 0; <br>
+						    right: 0; <br>
+						    width: 300px; <br>
+						    border: 3px solid #73AD21;
+						</blockquote>
+						} 
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div.fixed { 
+						<blockquote>
+						    position: fixed; <br>
+						    bottom: 0; <br>
+						    right: 0; <br>
+						    width: 300px; <br>
+						    border: 3px solid #73AD21;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+						<div style="position: fixed; bottom:0; right:0; width: 300px; border: 3px solid #73ad21;">
+							<p> Element <<b>div</b>> ini memiliki <mark>posisi: fixed;</mark> </p>
+						</div>
+						
+					</div>
+				</article>
+				
+
+				
+				<div class="nasehat">
+				<p> Contoh dari <mark>position:fixed;</mark> bisa kamu lihat di sudut kanan bawah dari halaman ini.</p>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>position: absolute; </h2>
+				<p> Suatu elemebt dengan position: absolute; diposisikan relatif (tergantung) pada diposisi terdekat dengan ancestor (pengganti dari posisi relatif/tergantung pada viewport, seperti fixed). </p>
+				<p> Akan tetapi; Jika element berposisi absolute belum diposisi ancestor, element menggunakan body dokumen, dan bergerak beserta page scrolling. </p>
+				<div class="nasehat">
+					<p> <b>Catatan:</b> Suatu "positioned" element merupakan satu yang punya  posisi apapun kecuali <b>static</b>. </p>
+				</div>
+				<p> Disini adalah contoh sederhana: </p>
+				<div style="position: relative; width: 400px; height: 200px; border: 3px solid #73ad21;">
+					<p> Element <<b>div</b>> ini memiliki <mark>position: relative;</mark> </p>
+						
+						<div style="position: absolute; width: 200px; height: 100px; top: 80px; right:0px; border: 3px solid #73ad21;">
+							<p> Element <<b>div</b>> ini memiliki <mark>position: absolute;</mark> </p>
+						</div>
+				</div>
+				
+				<p> Disini adalah CSS yang digunakan: </p>
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open04">
+						
+						div.relative {
+						<blockquote>
+						    position: relative; <br>
+						    width: 400px; <br>
+						    height: 200px; <br>
+						    border: 3px solid #73AD21;
+						</blockquote>
+						} <br>
+						<br>
+						div.absolute {
+						<blockquote>
+						    position: absolute; <br>
+						    top: 80px; <br>
+						    right: 0; <br>
+						    width: 200px; <br>
+						    height: 100px; <br>
+						    border: 3px solid #73AD21;
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close04">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div.relative {
+						<blockquote>
+						    position: relative; <br>
+						    width: 400px; <br>
+						    height: 200px; <br>
+						    border: 3px solid #73AD21;
+						</blockquote>
+						} <br>
+						<br>
+						div.absolute {
+						<blockquote>
+						    position: absolute; <br>
+						    top: 80px; <br>
+						    right: 0; <br>
+						    width: 200px; <br>
+						    height: 100px; <br>
+						    border: 3px solid #73AD21;
+						</blockquote>
+						}<br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						<<b>h3</b>>position: absolute; <<b>/h3</b>> <br>
+						<<b>p</b>> Suatu elemebt dengan position: absolute; diposisikan relatif (tergantung) pada diposisi terdekat dengan ancestor (pengganti dari posisi relatif/tergantung pada viewport, seperti fixed). <<b>/p</b>> <br><br>
+						<<b>div</b> <span class="teal">class="relative"</span>>
+						<blockquote>
+							<<b>p</b>> Element <<b>div</b>> ini memiliki <mark>position: relative;</mark> <<b>/p</b>> <br>
+							<<b>div</b> <span class="teal">class="absolute"</span>>
+							<blockquote>
+								<<b>p</b>> Element <<b>div</b>> ini memiliki <mark>position: absolute;</mark> <<b>/p</b>> 
+							</blockquote>
+							<<b>/div</b>>
+						</blockquote>
+						<<b>/div</b>> <br><br>
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<button onclick="buka04()" class="exbutton"> Open </button>
+					<button onclick="tutup04()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+						<h3>position: absolute; </h3>
+						<p> Suatu elemebt dengan position: absolute; diposisikan relatif (tergantung) pada diposisi terdekat dengan ancestor (pengganti dari posisi relatif/tergantung pada viewport, seperti fixed). </p>
+						<div style="position: relative; width: 400px; height: 200px; border: 3px solid #73ad21;">
+							<p> Element <<b>div</b>> ini memiliki <mark>position: relative;</mark> </p>
+							
+							<div style="position: absolute; width: 200px; height: 100px; top: 80px; right:0px; border: 3px solid #73ad21;">
+							<p> Element <<b>div</b>> ini memiliki <mark>position: absolute;</mark> </p>
+							</div>
+						</div>
+						
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Overlapping Elements </h2>
+				<p> Saling melingkupi element </p>
+				<p> Ketika element diposisikan, element bisa saling melingkupi element lainnya. </p>
+				<p> Properti <mark>z-index</mark> menentukan penyusunan urutan (stack order) suatu element 
+				(yang mana element harus ditempatkan di depean dari atau dibelakang element lainnya). </p>
+				<p> Suatu element bisa memiliki (nilai) stack order positip atau negatif. </p>
+				<p> Ini merupakan suatu headingBecause image yang memiliki <mark>z-index: -1;</mark>, ini akan ditempatkan dibelakang teks.</p> 
+				
+				<div style="border: 3px solid #73ad21; background: transparent;">
+					<img src="../logos/Chrome.png" width="100" height="140" style="position: absolute;   z-index: -1;">
+					<p style="font-size:larger; margin-top:50px;"> Ini adalah heading</p>
+					<p style="margin-bottom: 50px;"> Karena Image memiliki z-index: -1;, maka image akan ditempatkan dibelakang teks. </p>
+				</div>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open05">
+						
+						img { 
+						<blockquote>
+						    position: absolute; <br>
+						    left: 0px; <br>
+						    top: 0px; <br>
+						    z-index: -1;
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close05">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						img { 
+						<blockquote>
+						    position: absolute; <br>
+						    left: 0px; <br>
+						    top: 0px; <br>
+						    z-index: -1;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						<<b>p</b> <span class="teal">style="font-size:larger;"</span>> Ini adalah heading<<b>/p</b>> <br>
+						<<b>img</b> <span class="teal">src="../logos/Chrome.png" width="100" height="140"</span>> <br>
+						<<b>p</b>> Karena Image memiliki z-index: -1;, maka image akan ditempatkan dibelakang teks. <<b>/p</b>> <br> <br>
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan05()" class="exbutton">Klik disini</button>
+					<button onclick="buka05()" class="exbutton"> Open </button>
+					<button onclick="tutup05()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+					
+						
+						<p style="font-size:larger;"> Ini adalah heading</p>
+						<img src="../logos/Chrome.png" width="100" height="140" style="position: absolute; left: 50px; right: 0px; z-index: -1;">
+						<p> Karena Image memiliki z-index: -1;, maka image akan ditempatkan dibelakang teks. </p>
+						
+					</div>
+				</article>
+				
+				<p> Suatu ekement dengan stack order lebih besar selalu berada didepan dari suatu elemen dengan stack order yang lebih kecil. </p>
+				<p> <b>Catatan:</b> Jika kedua posisi element saling melingkupi tanpa ditentukan <mark>z-index</mark>. Element diposisi terakhir dalam kode HTML akan ditampilkan diatas. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Positioning Text In an Image</h2>
+				<p> Penempatan Teks Pada Image </p>
+				<p> Bagaimana untuk menempatkan teks diatas image: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open06">
+						
+						.container {
+						<blockquote>
+							position: relative;
+						</blockquote>
+						} <br>
+						<br>
+						<span class="grey">/* Posisi atas kiri */  </span><br>
+						.topleft {
+						<blockquote>
+							position: absolute; <br>
+							top: 8px; <br>
+							left: 16px; <br>
+							font-size: 18px; 
+						</blockquote>
+						} <br>
+						<br>
+						<span class="grey">/* Posisi atas kanan */ </span><br>
+						.topright {
+						<blockquote>
+							position: absolute; <br>
+							top: 8px; <br>
+							right: 16px; <br>
+							font-size: 18px;
+						</blockquote>
+						} <br>
+						<br>
+						<span class="grey">/* Posisi bawah kiri */ </span><br>
+						.bottomleft {
+						<blockquote>
+							position: absolute; <br>
+							bottom: 8px; <br>
+							left: 16px; <br>
+							font-size: 18px; 
+						</blockquote>
+						} <br>
+						<br>
+						<span class="grey">/ * Posisi bawah kanan */ </span><br>
+						.bottomright {
+						<blockquote>
+							position: absolute; <br>
+							bottom: 8px; <br>
+							right: 16px; <br>
+							font-size: 18px;
+						</blockquote>
+						} <br>
+						<br>
+						img { 
+						<blockquote>
+							width: 100%; <br>
+							height: auto; <br>
+							opacity: 0.3;
+						</blockquote>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close06">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.container {
+						<blockquote>
+							position: relative;
+						</blockquote>
+						} <br>
+						<br>
+						<span class="grey">/* Posisi atas kiri */  </span><br>
+						.topleft {
+						<blockquote>
+							position: absolute; <br>
+							top: 8px; <br>
+							left: 16px; <br>
+							font-size: 18px; 
+						</blockquote>
+						} <br>
+						<br>
+						<span class="grey">/* Posisi atas kanan */ </span><br>
+						.topright {
+						<blockquote>
+							position: absolute; <br>
+							top: 8px; <br>
+							right: 16px; <br>
+							font-size: 18px;
+						</blockquote>
+						} <br>
+						<br>
+						<span class="grey">/* Posisi tengah*/</span> <br>
+						.center {
+						<blockquote>
+							position: absolute; <br>
+							left: 0; <br>
+							top: 50%; <br>
+							width: 100%; <br>
+							text-align: center; <br>
+							font-size: 18px; 
+						</blockquote>
+						}<br>
+						<br>
+						<span class="grey">/* Posisi bawah kiri */ </span><br>
+						.bottomleft {
+						<blockquote>
+							position: absolute; <br>
+							bottom: 8px; <br>
+							left: 16px; <br>
+							font-size: 18px; 
+						</blockquote>
+						} <br>
+						<br>
+						<span class="grey">/ * Posisi bawah kanan */ </span><br>
+						.bottomright {
+						<blockquote>
+							position: absolute; <br>
+							bottom: 8px; <br>
+							right: 16px; <br>
+							font-size: 18px;
+						</blockquote>
+						} <br>
+						<br>
+						img { 
+						<blockquote>
+							width: 100%; <br>
+							height: auto; <br>
+							opacity: 0.3;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						<<b>h2</b>>Image Text<<b>/h2</b>> <br>
+						<<b>p</b>>Add some text to an image in the top left corner:</p>
+						<br>
+						<<b>div</b> <span class="teal">class="container"</span>>
+						<blockquote>
+						<<b>img</b> <span class="teal">class="img" src="../../pictures/Rain Fall.png" alt="Norway" width="1000" height="300"</span>> <br>
+						<<b>div</b> <span class="teal">class="topleft"</span>>Top Left<<b>/div</b>> 
+						<<b>div</b> <span class="teal">class="topright"</span>>Top Right<<b>/div</b>> 
+						<<b>div</b> <span class="teal">class="bottomleft"</span>>Bottom Left<<b>/div</b>> 
+						<<b>div</b> <span class="teal">class="bottomright"</span>>Bottom Right<<b>/div</b>> 
+						
+						</blockquote>
+						<<b>/div</b>> <br><br>
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan06()" class="exbutton">Klik disini</button>
+					<button onclick="buka06()" class="exbutton"> Open </button>
+					<button onclick="tutup06()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+					
+						<h3>Image Text</h3>
+						<p>Add some text to an image in the top left corner:</p>
+						
+						<div class="container">
+							<img class="img" src="../../pictures/Rain Fall.png" alt="Norway" width="1000" height="300">
+							<div class="topleft">Top Left</div>
+							<div class="topright">Top Right</div>
+							<div class="centered">Center</div>
+							<div class="bottomleft">Bottom Left</div>
+							<div class="bottomright">Bottom Right</div>
+						</div>
+							
+
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>More Examples</h2>
+				<div class="redZone div01" onclick="tampilkan08()"> Mengatur bentuk element </div>
+				
+				<article class="example-box sembunyikan" id="sembunyikan08">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open07">
+						
+						img {
+						<blockquote>
+							position: absolute; <br>
+							clip: rect(0px,60px,200px,0px);
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close07">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						img {
+						<blockquote>
+							position: absolute; <br>
+							clip: rect(0px,60px,200px,0px);
+						</blockquote>
+						}
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						<<b>img</b> <span class="teal">class="img" src="../../pictures/Rain Fall.png" alt="Norway" width="1000" height="300"</span>> <br><br>
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan07()" class="exbutton">Klik disini</button>
+					<button onclick="buka07()" class="exbutton"> Open </button>
+					<button onclick="tutup07()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan07">
+						
+							<img class="img2" src="../../pictures/Rain Fall.png" alt="Norway" width="200" height="100">
+						
+					</div>
+				</article>
+				<p> Contoh ini memperlihatkan bagaimana utuk emngatur bentuk dari suatu element. Element di-klip kedalam bentuk inu dan ditampilkan.</p>
+				
+				<div class="redZone div01" onclick="tampilkan09()"> Bagaimana untuk menampilkan overflow dalam suatu element menggunakan scroll </div>
+				
+				<article class="example-box sembunyikan" id="sembunyikan09">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open10">
+						
+						div.scroll {
+						<blockquote>
+							background-color: #00FFFF; <br>
+							width: 100px; <br>
+							height: 100px; <br>
+							overflow: scroll;
+						</blockquote>
+						} <br>
+						<br>
+						div.hidden {
+						<blockquote>
+							background-color: #00FF00; <br>
+							width: 100px; <br>
+							height: 100px; <br>
+							overflow: hidden;
+						</blockquote>
+						} 
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close10">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div.scroll {
+						<blockquote>
+							background-color: #00FFFF; <br>
+							width: 100px; <br>
+							height: 100px; <br>
+							overflow: scroll;
+						</blockquote>
+						} <br>
+						<br>
+						div.hidden {
+						<blockquote>
+							background-color: #00FF00; <br>
+							width: 100px; <br>
+							height: 100px; <br>
+							overflow: hidden;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						<<b>p</b>>The overflow property specifies what to do if the content of an element exceeds the size of the element's box.<<b>/p</b>> <br>
+						<br>
+						<<b>p</b>>Result with overflow:scroll<<b>/p</b>> <br>
+						<<b>div</b> <span class="teal">class="scroll"</span>>You can use the overflow property when you want to have better control of the layout. The default value is visible.<<b>/div</b>> <br>
+						<br>
+						<<b>p</b>>Result with overflow:hidden<<b>/p</b>> <br>
+						<<b>div</b> <span class="teal">class="hidden"</span>>You can use the overflow property when you want to have better control of the layout. The default value is visible.<<b>/div</b>> <br><br>
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan10()" class="exbutton">Klik disini</button>
+					<button onclick="buka10()" class="exbutton"> Open </button>
+					<button onclick="tutup10()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan10">
+						
+						<p>The overflow property specifies what to do if the content of an element exceeds the size of the element's box.</p>
+						
+						<p>Result with overflow:scroll</p>
+						<div class="scroll">You can use the overflow property when you want to have better control of the layout. The default value is visible.</div>
+						
+						<p>Result with overflow:hidden</p>
+						<div class="hidden">You can use the overflow property when you want to have better control of the layout. The default value is visible.</div>
+						
+					</div>
+				</article>
+				
+				<p> Contoh ini memperlihatkan bagaiaman untuk mengatur properti <mark>overflow</mark> untuk emembuat scroll bar ketika konten element terlalu besar untuk fit dalam area tertentu. </p>
+				
+				<div class="redZone div01" onclick="tampilkan11()"> Bagaimana untuk mengatur browser untuk secara otomatis menangani overflow </div>
+				
+				<article class="example-box sembunyikan" id="sembunyikan11">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open12">
+						
+						div {
+						<blockquote>
+						background-color: #00FFFF; <br>
+						width: 150px; <br>
+						height: 150px; <br>
+						overflow: auto;
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close12">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan12()" class="exbutton">Klik disini</button>
+					<button onclick="buka12()" class="exbutton"> Open </button>
+					<button onclick="tutup12()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan12">
+						
+						<p> Properti <mark>overflow</mark> memutuskan apa yang dilakukan jika koten didalam element melewati (exceed) yang diberikan properti <mark>height</mark> dan <mark>width</mark>.</p>
+						<div class="oto"> Kamu bisa menggunakan properti <mark>overflow</mark> ketika kamu ingun memiliki kontrol layout yang lebih baik. 
+						Cobalah untuk emngubah properti <mark>overflow</mark> menjadi: visible, hidden, scroll, atau inherit dan lihatlah apa yang terjadi. nilai default adalah visible.</div>
+						
+					</div>
+				</article>
+				<p> Contoh ini memperlihatkan bagaimana untuk mengatur browser untuk secara otomatis menangani overflow.</p>
+			
+				<div class="redZone div01" onclick="tampilkan13()"> Mengubah cursor</div>
+				
+				<article class="example-box sembunyikan" id="sembunyikan13">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open14">
+						
+						<<b>p</b>>Mouse over the words to change the cursor.<<b>/p</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:auto"</span>>auto<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:crosshair"</span>>crosshair<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:default"</span>>default<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:e-resize"</span>>e-resize<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:help"</span>>help<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:move"</span>>move<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:n-resize"</span>>n-resize<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:ne-resize"</span>>ne-resize<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:nw-resize"</span>>nw-resize<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:pointer"</span>>pointer<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:progress"</span>>progress<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:s-resize"</span>>s-resize<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:se-resize"</span>>se-resize<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:sw-resize"</span>>sw-resize<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:text"</span>>text<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:w-resize"</span>>w-resize<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:wait"</span>>wait<<b>/span</b>><<b>br</b>> <br> <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close14">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>>Mouse over the words to change the cursor.<<b>/p</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:auto"</span>>auto<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:crosshair"</span>>crosshair<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:default"</span>>default<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:e-resize"</span>>e-resize<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:help"</span>>help<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:move"</span>>move<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:n-resize"</span>>n-resize<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:ne-resize"</span>>ne-resize<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:nw-resize"</span>>nw-resize<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:pointer"</span>>pointer<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:progress"</span>>progress<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:s-resize"</span>>s-resize<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:se-resize"</span>>se-resize<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:sw-resize"</span>>sw-resize<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:text"</span>>text<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:w-resize"</span>>w-resize<<b>/span</b>><<b>br</b>> <br>
+						<<b>span</b> <span class="teal">style="cursor:wait"</span>>wait<<b>/span</b>><<b>br</b>> <br>
+						
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan14()" class="exbutton">Klik disini</button>
+					<button onclick="buka14()" class="exbutton"> Open </button>
+					<button onclick="tutup14()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan14">
+						
+						<p>Mouse over the words to change the cursor.</p>
+						<span style="cursor:auto">auto</span><br>
+						<span style="cursor:crosshair">crosshair</span><br>
+						<span style="cursor:default">default</span><br>
+						<span style="cursor:e-resize">e-resize</span><br>
+						<span style="cursor:help">help</span><br>
+						<span style="cursor:move">move</span><br>
+						<span style="cursor:n-resize">n-resize</span><br>
+						<span style="cursor:ne-resize">ne-resize</span><br>
+						<span style="cursor:nw-resize">nw-resize</span><br>
+						<span style="cursor:pointer">pointer</span><br>
+						<span style="cursor:progress">progress</span><br>
+						<span style="cursor:s-resize">s-resize</span><br>
+						<span style="cursor:se-resize">se-resize</span><br>
+						<span style="cursor:sw-resize">sw-resize</span><br>
+						<span style="cursor:text">text</span><br>
+						<span style="cursor:w-resize">w-resize</span><br>
+						<span style="cursor:wait">wait</span><br>
+						
+						
+					</div>
+				</article>
+					<p> Contoh inu memperlihatkan bagaimana untuk mengubah cursor</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>All CSS Positioning Properties</h2>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th> Properti </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> bottom </td>
+							<td> Mengatur margin bagian bawah untuk posisi box </td>
+						</tr>
+						<tr>
+							<td> clip </td>
+							<td> Menjepit suatu element yang diposisikan secara absolute </td>
+						</tr>
+						<tr>
+							<td> cursor </td>
+							<td> Menentukan tipe cursor untuk ditampilkan </td>
+						</tr>
+						<tr>
+							<td> left </td>
+							<td> Mengatur margin bagian kiri untuk posisi box </td>
+						</tr>
+						<tr>
+							<td> overflow </td>
+							<td> Menentukan apa yang terjadi jika konten melebihi batas (overflow) box elemen </td>
+						</tr>
+						<tr>
+							<td> overflow-x </td>
+							<td> Menentukan apa yang dilakukan dengan tepi kiri/kanan dari kontent jika ia melebihi batas area konten elemen</td>
+						</tr>
+						<tr>
+							<td> overflow-y </td>
+							<td> Menentukan apa yang dilakukan dengan tepi atas/bawah dari kontent jika ia melebihi batas area konten elemen</td>
+						</tr>
+						<tr>
+							<td> position </td>
+							<td> Menentukan tipe penempatan suatu element </td>
+						</tr>
+						<tr>
+							<td> right </td>
+							<td> Mengatur margin bagian kanan untuk posisi box </td>
+						</tr>
+						<tr>
+							<td> top </td>
+							<td> Mengatur margin bagian atas untuk posisi box </td>
+						</tr>
+						<tr>
+							<td> z-index </td>
+							<td> Mengatur stack order (menyusun urutan) dari suatu element</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS max-width.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS float.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+<style type="text/css">
+.div01 {
+	background-color:gold;
+	width:100%;
+	text-align:center;
+	padding:5px;
+	font-size:medium;
+	margin:10px 0px;
+	border:3px silver groove;
+}
+
+.container {
+	position: relative;
+} 
+/*Posisi atas kiri */
+.topleft {
+	position: absolute; 
+	top: 8px; 
+	left: 16px; 
+	font-size: 18px;
+}
+ 
+/* Posisi tengah */
+
+.centered {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+/*Posisi atas kanan */
+.topright {
+	position: absolute; 
+	top: 8px; 
+	right: 16px; 
+	font-size: 18px;
+} 
+
+/*Posisi bawah kiri */
+.bottomleft {
+	position: absolute; 
+	bottom: 8px; 
+	left: 16px; 
+	font-size: 18px;
+} 
+
+/*Posisi bawah kanan */
+.bottomright {
+	position: absolute; 
+	bottom: 8px; 
+	right: 16px; 
+	font-size: 18px;
+}
+.img {
+	width: 100%; 
+	height: auto; 
+	opacity: 0.3;
+}
+
+.img2 {
+	position: absolute; 
+	clip: rect(0px,60px,200px,0px);
+}
+
+div.scroll {
+	background-color: red; 
+	width: 100px; 
+	height: 100px; 
+	overflow: scroll;
+} 
+
+div.hidden {
+	background-color:navy; 
+	width: 100px; 
+	height: 100px; 
+	overflow: hidden;
+}
+div.oto {
+	background-color: #00FFFF;
+	width: 150px;
+	height: 150px;
+	overflow: auto;
+}
+</style>
+</body>
+</html>

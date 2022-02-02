@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS Tooltips </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+#sembunyikan01, #sembunyikan02, #sembunyikan03, #sembunyikan04,
+#sembunyikan05, #sembunyikan06, #sembunyikan07, #sembunyikan08, 
+#sembunyikan09, #sembunyikan10 {
+	text-align:center;
+	background-color:white;
+	color:black;
+}
+
+/*CONTOH DASAR TOOLTIP*/
+/* Tooltip container atau Penampung Tooltip */ 
+#sembunyikan01 .tooltip { 
+	position: relative; 
+	display: inline-block; 
+	border-bottom: 1px dotted black; /* Jika kamu ingin garis titik dibawah hoverable text */ } 
+
+/* Tooltip text */ 
+#sembunyikan01 .tooltip .tooltiptext { 
+	visibility: hidden; 
+	width: 120px; 
+	background-color: black; 
+	color: #fff; 
+	text-align: center; 
+	padding: 5px 0; 
+	border-radius: 6px; 
+ 	
+/* Posisi dsri teks tooltip - lihatlah contoh dibawah! */ 
+	position: absolute; 
+	z-index: 1; 
+} 
+
+/* Menampilkan teks tooltip ketika kamu menggerakan mouse pada tooltip container */ 
+#sembunyikan01 .tooltip:hover .tooltiptext { 
+	visibility: visible; 
+} 
+
+
+/*CONTOH RIGHT TOOLTIP*/
+#sembunyikan02 .tooltip { 
+	position: relative; 
+	display: inline-block; 
+	border-bottom: 1px dotted black; 
+} 
+
+#sembunyikan02 .tooltip .tooltiptext { 
+	visibility: hidden; 
+	width: 120px; 
+	background-color: black; 
+	color: #fff; 
+	text-align: center; 
+	border-radius: 6px; 
+	padding: 5px 0; 
+	
+	/* Position the tooltip */ 
+	position: absolute; 
+	z-index: 1; 
+	top: -5px; 
+	left: 105%; 
+} 
+
+#sembunyikan02 .tooltip:hover .tooltiptext { 
+	visibility: visible; 
+} 
+
+/*CONTOH LEFT TOOLTIP*/
+#sembunyikan03 .tooltip { 
+	position: relative; 
+	display: inline-block; 
+	border-bottom: 1px dotted black; 
+} 
+
+#sembunyikan03 .tooltip .tooltiptext { 
+	visibility: hidden; 
+	width: 120px; 
+	background-color: black; 
+	color: #fff; 
+	text-align: center; 
+	border-radius: 6px; 
+	padding: 5px 0; 
+	
+	/* Position the tooltip */ 
+	position: absolute; 
+	z-index: 1; 
+	top: -5px; 
+	right: 105%; 
+} 
+
+#sembunyikan03 .tooltip:hover .tooltiptext { 
+	visibility: visible; 
+} 
+
+/*CONTOH TOP TOOLTIP*/
+#sembunyikan04 .tooltip { 
+	position: relative; 
+	display: inline-block; 
+	border-bottom: 1px dotted black; 
+} 
+
+#sembunyikan04 .tooltip .tooltiptext { 
+	visibility: hidden; 
+	width: 120px; 
+	background-color: black; 
+	color: #fff; 
+	text-align: center; 
+	border-radius: 6px; 
+	padding: 5px 0; 
+	
+	/* Position the tooltip */ 
+	position: absolute; 
+	z-index: 1; 
+	bottom: 100%; 
+	left: 50%; 
+	margin-left: -60px; 
+} 
+
+#sembunyikan04 .tooltip:hover .tooltiptext { 
+	visibility: visible; 
+} 
+
+/*CONTOH BOTTOM TOOLTIP*/
+#sembunyikan05 .tooltip { 
+	position: relative; 
+	display: inline-block; 
+	border-bottom: 1px dotted black; 
+} 
+
+#sembunyikan05 .tooltip .tooltiptext { 
+	visibility: hidden; 
+	width: 120px; 
+	background-color: black; 
+	color: #fff; 
+	text-align: center; 
+	border-radius: 6px; 
+	padding: 5px 0; 
+	
+	/* Position the tooltip */ 
+	position: absolute; 
+	z-index: 1; 
+	top: 100%; 
+	left: 50%; 
+	margin-left: -60px; 
+} 
+
+#sembunyikan05 .tooltip:hover .tooltiptext { 
+	visibility: visible; 
+} 
+
+
+/*CONTOH TOP ARROW*/
+#sembunyikan06 .tooltip { 
+	position: relative; 
+	display: inline-block; 
+	border-bottom: 1px dotted black; 
+} 
+
+#sembunyikan06 .tooltip .tooltiptext { 
+	visibility: hidden; 
+	width: 120px; 
+	background-color: black; 
+	color: #fff; 
+	text-align: center; 
+	border-radius: 6px; 
+	padding: 5px 0; 
+	position: absolute; 
+	z-index: 1; 
+	bottom: 150%; 
+	left: 50%; 
+	margin-left: -60px; 
+} 
+
+#sembunyikan06 .tooltip .tooltiptext::after { 
+	content: ""; 
+	position: absolute; 
+	top: 100%; 
+	left: 50%; 
+	margin-left: -5px; 
+	border-width: 5px; 
+	border-style: solid; 
+	border-color: black transparent transparent transparent; 
+} 
+
+#sembunyikan06 .tooltip:hover .tooltiptext { 
+	visibility: visible; 
+} 
+
+/*CONTOH BOTTOM ARROW*/
+#sembunyikan10 .tooltip { 
+	position: relative; 
+	display: inline-block; 
+	border-bottom: 1px dotted black; 
+} 
+
+#sembunyikan10 .tooltip .tooltiptext { 
+	visibility: hidden; 
+	width: 120px; 
+	background-color: black; 
+	color: #fff; 
+	text-align: center; 
+	border-radius: 6px; 
+	padding: 5px 0; 
+	position: absolute; 
+	z-index: 1; 
+	top: 150%; 
+	left: 50%; 
+	margin-left: -60px; 
+} 
+
+#sembunyikan10 .tooltip .tooltiptext::after { 
+	content: ""; 
+	position: absolute; 
+	bottom: 100%; 
+	left: 50%; 
+	margin-left: -5px; 
+	border-width: 5px; 
+	border-style: solid; 
+	border-color: transparent transparent black transparent; 
+} 
+
+#sembunyikan10 .tooltip:hover .tooltiptext { 
+	visibility: visible; 
+} 
+
+/*CONTOH RIGHT ARROW*/
+#sembunyikan07 .tooltip { 
+	position: relative; 
+	display: inline-block; 
+	border-bottom: 1px dotted black; 
+} 
+
+#sembunyikan07 .tooltip .tooltiptext { 
+	visibility: hidden; 
+	width: 120px; 
+	background-color: black; 
+	color: #fff; 
+	text-align: center; 
+	border-radius: 6px; 
+	padding: 5px 0; 
+	position: absolute; 
+	z-index: 1; 
+	top: -5px; 
+	left: 110%; 
+} 
+
+#sembunyikan07 .tooltip .tooltiptext::after { 
+	content: ""; 
+	position: absolute; 
+	top: 50%; 
+	right: 100%; 
+	margin-top: -5px; 
+	border-width: 5px; 
+	border-style: solid; 
+	border-color: transparent black transparent transparent; 
+} 
+
+#sembunyikan07 .tooltip:hover .tooltiptext { 
+	visibility: visible; 
+} 
+
+
+/*CONTOH LEFT ARROW*/
+#sembunyikan08 .tooltip { 
+	position: relative; 
+	display: inline-block; 
+	border-bottom: 1px dotted black; 
+} 
+
+#sembunyikan08 .tooltip .tooltiptext { 
+	visibility: hidden; 
+	width: 120px; 
+	background-color: black; 
+	color: #fff; 
+	text-align: center; 
+	border-radius: 6px; 
+	padding: 5px 0; 
+	position: absolute; 
+	z-index: 1; 
+	top: -5px; 
+	right: 110%; 
+} 
+
+#sembunyikan08 .tooltip .tooltiptext::after { 
+	content: ""; 
+	position: absolute; 
+	top: 50%; 
+	left: 100%; 
+	margin-top: -5px; 
+	border-width: 5px; 
+	border-style: solid; 
+	border-color: transparent transparent transparent black; 
+} 
+
+#sembunyikan08 .tooltip:hover .tooltiptext { 
+	visibility: visible; 
+} 
+
+/*CONTOH FADE IN TOOLTIP*/
+#sembunyikan09 .tooltip { 
+position: relative; 
+display: inline-block; 
+border-bottom: 1px dotted black; 
+} 
+
+#sembunyikan09 .tooltip .tooltiptext { 
+	visibility: hidden; 
+	width: 120px; 
+	background-color: black; 
+	color: #fff; 
+	text-align: center; 
+	border-radius: 6px; 
+	padding: 5px 0; 
+	position: absolute; 
+	z-index: 1; 
+	bottom: 100%; 
+	left: 50%; 
+	margin-left: -60px; 
+	
+	/* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */ 
+	opacity: 0; 
+	transition: opacity 1s; 
+} 
+
+#sembunyikan09 .tooltip:hover .tooltiptext { 
+	visibility: visible; 
+	opacity: 1; 
+} 
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Tooltip </h1>
+				<p> Membuat tooltip (alat saran) dengan CSS. </p>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> Demo: Tooltip Examples</h2>
+				<p> Sebuah tooltips seringkali digunakan untuk menentukan informasi ekstra tentang sesuatu ketika pengguna atau user menggerakan pointer mouse ke sebuah element: </p>
+
+
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Basic Tooltip</h2>
+				<p> Tooptip Dasar</p>
+				<p> Buatlah tooltip yang terlihat ketika ppuser mengerakan mouse  ke sebuah element: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						<<b>style</b>> <br>
+						
+						<em>/* Tooltip container atau Penampung Tooltip */</em> <br>
+						.tooltip { <br>
+						    position: relative; <br>
+						    display: inline-block; <br>
+						    border-bottom: 1px dotted black; <em>/* Jika kamu ingin garis titik dibawah hoverable text */</em>
+						} <br>
+						<br>
+						<em>/* Tooltip text */</em> <br>
+						.tooltip .tooltiptext { <br>
+						    visibility: hidden; <br>
+						    width: 120px; <br>
+						    background-color: black; <br>
+						    color: #fff; <br>
+						    text-align: center; <br>
+						    padding: 5px 0; <br>
+						    border-radius: 6px; <br>
+						 	 <br>
+						    <em>/* Posisi dsri teks tooltip - lihatlah contoh dibawah! */</em> <br>
+						    position: absolute; <br>
+						    z-index: 1; <br>
+						} <br>
+						<br>
+						<em>/* Menampilkan teks tooltip ketika kamu menggerakan mouse pada tooltip container */ </em> <br>
+						.tooltip:hover .tooltiptext { <br>
+						    visibility: visible; <br>
+						} <br>
+						
+						<<b>/style</b>> <br><br>
+						
+						<<b>div</b> <span class="teal">class="tooltip"</span>>Hover over me <br>
+						  <<b>span</b> <span class="teal">class="tooltiptext"</span>>Tooltip text<<b>/span</b>> <br>
+						<<b>/div</b>> <br> <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						<em>/* Tooltip container atau Penampung Tooltip */</em> <br>
+						.tooltip { <br>
+						    position: relative; <br>
+						    display: inline-block; <br>
+						    border-bottom: 1px dotted black; <em>/* Jika kamu ingin garis titik dibawah hoverable text */</em>
+						} <br>
+						 <br>
+						<em>/* Tooltip text */</em> <br>
+						.tooltip .tooltiptext { <br>
+						    visibility: hidden; <br>
+						    width: 120px; <br>
+						    background-color: black; <br>
+						    color: #fff; <br>
+						    text-align: center; <br>
+						    padding: 5px 0; <br>
+						    border-radius: 6px; <br>
+						 	 <br>
+						    <em>/* Posisi dsri teks tooltip - lihatlah contoh dibawah! */</em> <br>
+						    position: absolute; <br>
+						    z-index: 1; <br>
+						} <br>
+						 <br>
+						<em>/* Menampilkan teks tooltip ketika kamu menggerakan mouse pada tooltip container */ </em> <br>
+						.tooltip:hover .tooltiptext { <br>
+						    visibility: visible; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>div</b> <span class="teal">class="tooltip"</span>>Hover over me <br>
+					  <<b>span</b> <span class="teal">class="tooltiptext"</span>>Tooltip text<<b>/span</b>> <br>
+					<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<p>Move the mouse over the text below:</p>
+						<div class="tooltip">Hover over me
+							<span class="tooltiptext">Tooltip text</span>
+						</div>
+						<p>Note that the position of the tooltip text isn't very good. 
+						Go back to the tutorial and continue reading on how to position the tooltip in an desirable way.</p>
+						
+					</div>
+				</article>
+				
+				<p><b>Contoh Menerangkan</b></p>
+				<p><b>HTML &rarr;</b> Gunakanlah element penamoung (seperti <<b>div</b>>) dan tambahkanlah class "tooltip" untuk itu. Ketika user menggerakan mouse pada <<b>div</b>> ini, ia akan menampilkan teks tooltip.</p>
+				<p> Teks tooltip ditempatkan didalam sebuah inline element (seperti <<b>span</b>>) dengan <mark>class="tooltiptext"</mark>.</p>
+				<p> <b>CSS &rarr;</b> Class <b>tooltip</b> menggunakan <mark>position: relative;</mark> yang mana diperlukan untuk posisi teks tooltip (<mark>position: absolute;</mark>). 
+				<b>Catatan:</b> Lihatlah contih dibawah tentang bagaimana untuk posisi tooltip.</p>
+				<p> class <b>tooltiptext</b> menggenggam teks tooltip yang sebenernya. Class <b>tooltiptext</b> disembunyikan (hidden) sebagai default, dan akan ditampilkan saat hover (lihatlah dibawah). 
+				Kita telah menambahkan  beberapa style dasar untuknya: 120px width, black background color, white text color, centered text, dan 5px top and bottom padding.</p>
+				<p> Properti CSS3 <mark>border-radius</mark> digunakan untuk menambahkan sudut tumpul pada teks tooltip.</p>
+				<p> selector <mark>:hover</mark> digunakan untuk menampilkan  teks tooltip ketika pengguna menggerakan mouse pada <<b>div</b>> dengan <b>class="tooltip"</b>.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Positioning Tooltips</h2>
+				<p> Penempatan Tooltips</p>
+				<p> Pada contoh ini, tooltip ditempatkan ke kanan (<mark>left: 105%;</mark>) dari "hoverable" text (<<b>div</b>>). <b>perhatikanlah</b> juga <mark>top: -5px;</mark> digunakan untuk menempatkan 
+				ia pada pertengahan dari element penampungnya. Kita gunakan nomor 5 karena teks tooltio memiliki top dan bottom padding 5px. Jika kamu meningkatkan paddingnya, tingkatkan juga nilai dari 
+				properti <mark>top</mark> untuk memastikan bahwa ia (tooltip) tetap dalam pertengahan (jika ini merupakan sesuatu yang kamu inginkan). 
+				menerapkan hal yang sama jika kamu ingin tooltip ditempatkan ke kiri.</p>
+				
+				<article class="example-box">
+					<h4>Right Tooltip:</h4>
+					<div class="example-content" id="content-open02">
+						
+						.tooltip .tooltiptext { <br>
+						    top: -5px; <br>
+						    left: 105%;  <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.tooltip { <br>
+						position: relative; <br>
+						display: inline-block; <br>
+						border-bottom: 1px dotted black; <br>
+						} <br>
+						 <br>
+						.tooltip .tooltiptext { <br>
+						visibility: hidden; <br>
+						width: 120px; <br>
+						background-color: black; <br>
+						color: #fff; <br>
+						text-align: center; <br>
+						border-radius: 6px; <br>
+						padding: 5px 0; <br>
+						 <br>
+						/* Position the tooltip */ <br>
+						position: absolute; <br>
+						z-index: 1; <br>
+						top: -5px; <br>
+						left: 105%; <br>
+						} <br>
+						 <br>
+						.tooltip:hover .tooltiptext { <br>
+						visibility: visible; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>h2</b>>Right Tooltip<<b>/h2</b>> <br>
+					<<b>p</b>>Move the mouse over the text below:<<b>/p</b>> <br>
+					<<b>div</b> <span class="teal">class="tooltip"</span>>Hover over me
+					<blockquote>
+						<<b>span</b> <span class="teal">class="tooltiptext"</span>>Tooltip text<<b>/span</b>>
+					</blockquote>
+					<<b>/div</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<h2>Right Tooltip</h2>
+						<p>Move the mouse over the text below:</p>
+						<div class="tooltip">Hover over me
+							<span class="tooltiptext">Tooltip text</span>
+						</div>
+					
+					</div>
+				</article>
+				
+				
+				<article class="example-box">
+					<h4>Left Tooltip:</h4>
+					<div class="example-content" id="content-open03">
+						
+						.tooltip .tooltiptext { <br>
+						    top: -5px; <br>
+						    right: 105%;  <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.tooltip { <br>
+						position: relative; <br>
+						display: inline-block; <br>
+						border-bottom: 1px dotted black; <br>
+						} <br>
+						 <br>
+						.tooltip .tooltiptext { <br>
+						visibility: hidden; <br>
+						width: 120px; <br>
+						background-color: black; <br>
+						color: #fff; <br>
+						text-align: center; <br>
+						border-radius: 6px; <br>
+						padding: 5px 0; <br>
+						 <br>
+						/* Position the tooltip */ <br>
+						position: absolute; <br>
+						z-index: 1; <br>
+						top: -5px; <br>
+						right: 105%; <br>
+						} <br>
+						 <br>
+						.tooltip:hover .tooltiptext { <br>
+						visibility: visible; <br>
+						} <br>
+
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>h2</b>>Left Tooltip<<b>/h2</b>> <br>
+					<<b>p</b>>Move the mouse over the text below:<<b>/p</b>> <br>
+					<br>
+					<<b>div</b> <span class="teal">class="tooltip"</span>>Hover over me
+					<blockquote>
+						<<b>span</b> <span class="teal">class="tooltiptext"</span>>Tooltip text<<b>/span</b>>
+					</blockquote>
+					<<b>/div</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+						
+						<h2>Left Tooltip</h2>
+						<p>Move the mouse over the text below:</p>
+						
+						<div class="tooltip">Hover over me
+						<span class="tooltiptext">Tooltip text</span>
+						</div>
+						
+					</div>
+				</article>
+				<p> Jika kamu ingin tooltip tuk dilihat diatas atau dibawah, lihatlah contoh dibawah ini. 
+				<b>Catatan:</b> Bahwa kita menggunakan properti <mark>margin-left</mark> dengan nilai <mark>-60px</mark>. 
+				Ini merupakan untuk posisi tengah tooltip diatas/dibawah hoverable text. Tooltip diatur menjadi setengah dari lebar tooltip (120/2 = 60).</p>
+				
+				<article class="example-box">
+					<h4>Top Tooltip:</h4>
+					<div class="example-content" id="content-open04">
+						
+						.tooltip .tooltiptext { <br>
+						    width: 120px; <br>
+						    bottom: 100%; <br>
+						    left: 50%;  <br>
+						    margin-left: -60px; <em>/* Gunakanlah setengah dari lebar (120/2 = 60), untuk posisi tengah tooltip */</em>  <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close04">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.tooltip { <br>
+						position: relative; <br>
+						display: inline-block; <br>
+						border-bottom: 1px dotted black; <br>
+						} <br>
+						 <br>
+						.tooltip .tooltiptext { <br>
+						visibility: hidden; <br>
+						width: 120px; <br>
+						background-color: black; <br>
+						color: #fff; <br>
+						text-align: center; <br>
+						border-radius: 6px; <br>
+						padding: 5px 0; <br>
+						 <br>
+						/* Position the tooltip */ <br>
+						position: absolute; <br>
+						z-index: 1; <br>
+						bottom: 100%; <br>
+						left: 50%; <br>
+						margin-left: -60px; <br>
+						} <br>
+						 <br>
+						.tooltip:hover .tooltiptext { <br>
+						visibility: visible; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>h2</b>>Top Tooltip<<b>/h2</b>> <br>
+					<<b>p</b>>Move the mouse over the text below:<<b>/p</b>> <br>
+					<br>
+					<<b>div</b> <span class="teal">class="tooltip"</span>>Hover over me
+					<blockquote>
+						<<b>span</b> <span class="teal">class="tooltiptext"</span>>Tooltip text<<b>/span</b>>
+					</blockquote>
+					<<b>/div</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<button onclick="buka04()" class="exbutton"> Open </button>
+					<button onclick="tutup04()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+						<h2>Top Tooltip</h2>
+						<p>Move the mouse over the text below:</p>
+						
+						<div class="tooltip">Hover over me
+						<span class="tooltiptext">Tooltip text</span>
+						</div>
+					
+					</div>
+				</article>
+				
+				
+				<article class="example-box">
+					<h4>Bottom Tooltip:</h4>
+					<div class="example-content" id="content-open05">
+						
+						.tooltip .tooltiptext { <br>
+						    width: 120px; <br>
+						    top: 100%; <br>
+						    left: 50%;  <br>
+					    margin-left: -60px; <em>/* Gunakanlah setengah dari lebar (120/2 = 60), untuk posisi tengah tooltip */</em>  <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close05">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.tooltip { <br>
+						position: relative; <br>
+						display: inline-block; <br>
+						border-bottom: 1px dotted black; <br>
+						} <br>
+						 <br>
+						.tooltip .tooltiptext { <br>
+						visibility: hidden; <br>
+						width: 120px; <br>
+						background-color: black; <br>
+						color: #fff; <br>
+						text-align: center; <br>
+						border-radius: 6px; <br>
+						padding: 5px 0; <br>
+						 <br>
+						/* Position the tooltip */ <br>
+						position: absolute; <br>
+						z-index: 1; <br>
+						top: 100%; <br>
+						left: 50%; <br>
+						margin-left: -60px; <br>
+						} <br>
+						 <br>
+						.tooltip:hover .tooltiptext { <br>
+						visibility: visible; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>h2</b>>Bottom Tooltip<<b>/h2</b>> <br>
+					<<b>p</b>>Move the mouse over the text below:<<b>/p</b>> <br>
+					<br>
+					<<b>div</b> <span class="teal">class="tooltip"</span>>Hover over me
+					<blockquote>
+						<<b>span</b> <span class="teal">class="tooltiptext"</span>>Tooltip text<<b>/span</b>>
+					</blockquote>
+					<<b>/div</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan05()" class="exbutton">Klik disini</button>
+					<button onclick="buka05()" class="exbutton"> Open </button>
+					<button onclick="tutup05()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+					
+						<h2>Bottom Tooltip</h2>
+						<p>Move the mouse over the text below:</p>
+						
+						<div class="tooltip">Hover over me
+						<span class="tooltiptext">Tooltip text</span>
+						</div>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Tooltip Arrows</h2>
+				<p> Untuk membuat sebuah arrow (arah panah) yang harus diperlihatkan dari sisi tertentu dari tooltip, tambahkanlah kontent "kosong" (<mark>content:" ";</mark>) setrlah tooltip. dengan pseudo-element class <mark>::after</mark> dengan properti <mark>content</mark>. 
+				 Arrow itu sendiri dibuat menggunakan borders. Ini akan membuat tooltip terlihat seperti <b>speech bubble</b>.</p>
+				 <p> Contoh ini menampilkan bagaimana untuk menambahkan sebuah arrow (arah oanah) ke bawah dari tooltip:</p>
+				 
+				<article class="example-box">
+					<h4>Top Arrow:</h4>
+					<div class="example-content" id="content-open06">
+						
+						.tooltip .tooltiptext::after { <br>
+						    content: " "; <br>
+						    position: absolute; <br>
+						    top: 100%; <em>/* Berada atas dari tooltip */ </em> <br>
+						    left: 50%; <br>
+						    margin-left: -5px; <br>
+						    border-width: 5px; <br>
+						    border-style: solid; <br>
+						    border-color: black transparent transparent transparent; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close06">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.tooltip { <br>
+						position: relative; <br>
+						display: inline-block; <br>
+						border-bottom: 1px dotted black; <br>
+						} <br>
+						 <br>
+						.tooltip .tooltiptext { <br>
+						visibility: hidden; <br>
+						width: 120px; <br>
+						background-color: black; <br>
+						color: #fff; <br>
+						text-align: center; <br>
+						border-radius: 6px; <br>
+						padding: 5px 0; <br>
+						position: absolute; <br>
+						z-index: 1; <br>
+						bottom: 150%; <br>
+						left: 50%; <br>
+						margin-left: -60px; <br>
+						} <br>
+						 <br>
+						.tooltip .tooltiptext::after { <br>
+						content: ""; <br>
+						position: absolute; <br>
+						top: 100%; <br>
+						left: 50%; <br>
+						margin-left: -5px; <br>
+						border-width: 5px; <br>
+						border-style: solid; <br>
+						border-color: black transparent transparent transparent; <br>
+						} <br>
+						 <br>						
+						.tooltip:hover .tooltiptext { <br>
+						visibility: visible; <br>
+						} <br>
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>h2</b>>Top Tooltip w/ Bottom Arrow<<b>/h2</b>> <br>
+					<<b>p</b>>Move the mouse over the text below:<<b>/p</b>> <br>
+					<br>
+					<<b>div</b> <span class="teal">class="tooltip"</span>>Hover over me
+					<blockquote>
+						<<b>span</b> <span class="teal">class="tooltiptext"</span>>Tooltip text<<b>/span</b>>
+					</blockquote>
+					<<b>/div</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan06()" class="exbutton">Klik disini</button>
+					<button onclick="buka06()" class="exbutton"> Open </button>
+					<button onclick="tutup06()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+					
+						<h2>Top Tooltip w/ Bottom Arrow</h2>
+						
+						<div class="tooltip">Hover over me
+						<span class="tooltiptext">Tooltip text</span>
+						</div>
+					
+					</div>
+				</article>
+				<p><b>Contoh Menerangkan</b></p>
+				<p> Posisi arrow didalam tooltip: <mark>top: 100%;</mark> akan menempatkan arrow dibawah tooltip. <mark>left: 50%;</mark> akan menempatkan arrow ditengah. </p>
+				<p><b>Catatan:</b> properti <mark>border-width</mark> menentukan ukuran dsri arrow. Jika kamu mengubahnya, ubah juga nilai <mark>margin-left</mark> menjadi sama dengan border-width. Ini akan menjaga arrow berada ditengah.</p>
+				<p> <mark>border-color</mark> digunakan untuk transformasi konten kedalam sebuah arrow. Kita mengatur border top menjadi hitam, dan mengistirahatkan menjadi transparan. Jika semua sisi adalah hitam, kamu harus mengakhiri lagi dengan sebuah black square box.</p>
+				
+				<p> Contoh ini mendemonstrasikan bagaimana untuk menambahkan sebuah arrow ke atas tooltip. Perhatikanlah bahwa kita mengatur <mark>border-bottom</mark> pada waktu ini:</p>
+				<article class="example-box">
+					<h4>Bottom Arrow:</h4>
+					<div class="example-content" id="content-open10">
+						
+						.tooltip .tooltiptext::after { <br>
+						    content: " "; <br>
+						    position: absolute; <br>
+						    bottom: 100%; <em>/* Berada dibawah dari tooltip */ </em> <br>
+						    left: 50%; <br>
+						    margin-left: -5px; <br>
+						    border-width: 5px; <br>
+						    border-style: solid; <br>
+						    border-color: black transparent transparent transparent; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close10">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.tooltip { <br>
+						position: relative; <br>
+						display: inline-block; <br>
+						border-bottom: 1px dotted black; <br>
+						} <br>
+						 <br>
+						.tooltip .tooltiptext { <br>
+						visibility: hidden; <br>
+						width: 120px; <br>
+						background-color: black; <br>
+						color: #fff; <br>
+						text-align: center; <br>
+						border-radius: 6px; <br>
+						padding: 5px 0; <br>
+						position: absolute; <br>
+						z-index: 1; <br>
+						top: 150%; <br>
+						left: 50%; <br>
+						margin-left: -60px; <br>
+						} <br>
+						 <br>
+						.tooltip .tooltiptext::after { <br>
+						content: ""; <br>
+						position: absolute; <br>
+						bottom: 100%; <br>
+						left: 50%; <br>
+						margin-left: -5px; <br>
+						border-width: 5px; <br>
+						border-style: solid; <br>
+						border-color: transparent transparent black transparent; <br>
+						} <br>
+						 <br>
+						.tooltip:hover .tooltiptext { <br>
+						visibility: visible; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>h2</b>>Bottom Tooltip w/ Top Arrow<<b>/h2</b>> <br>
+					<<b>p</b>>Move the mouse over the text below:<<b>/p</b>> <br>
+					<br>
+					<<b>div</b> <span class="teal">class="tooltip"</span>>Hover over me
+					<blockquote>
+						<<b>span</b> <span class="teal">class="tooltiptext"</span>>Tooltip text<<b>/span</b>>
+					</blockquote>
+					<<b>/div</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan10()" class="exbutton">Klik disini</button>
+					<button onclick="buka10()" class="exbutton"> Open </button>
+					<button onclick="tutup10()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan10">
+					
+						<h2>Bottom Tooltip w/ Top Arrow</h2>
+						
+						<div class="tooltip">Hover over me
+						<span class="tooltiptext">Tooltip text</span>
+						</div>
+					
+					</div>
+				</article>
+				
+				
+				<p> Contoh ini mendemonstrasikan bagaiaman untuk menambahkan sebuah arrow ke kiri dari tooltip: </p>
+				<article class="example-box">
+					<h4>Right Arrow:</h4>
+					<div class="example-content" id="content-open07">
+						
+						.tooltip .tooltiptext::after { <br>
+						    content: " "; <br>
+						    position: absolute; <br>
+						    top: 50%; <br>
+						    right: 100%; <em>/* Untuk posisi kiri dari tooltip */</em>  <br>
+						    margin-top: -5px; <br>
+						    border-width: 5px; <br>
+						    border-style: solid; <br>
+						    border-color: transparent black transparent transparent; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close07">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.tooltip { <br>
+						position: relative; <br>
+						display: inline-block; <br>
+						border-bottom: 1px dotted black; <br>
+						} <br>
+						 <br>
+						.tooltip .tooltiptext { <br>
+						visibility: hidden; <br>
+						width: 120px; <br>
+						background-color: black; <br>
+						color: #fff; <br>
+						text-align: center; <br>
+						border-radius: 6px; <br>
+						padding: 5px 0; <br>
+						position: absolute; <br>
+						z-index: 1; <br>
+						top: -5px; <br>
+						left: 110%; <br>
+						} <br>
+						 <br>
+						.tooltip .tooltiptext::after { <br>
+						content: ""; <br>
+						position: absolute; <br>
+						top: 50%; <br>
+						right: 100%; <br>
+						margin-top: -5px; <br>
+						border-width: 5px; <br>
+						border-style: solid; <br>
+						border-color: transparent black transparent transparent; <br>
+						} <br>
+						 <br>
+						.tooltip:hover .tooltiptext { <br>
+						visibility: visible; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>h2</b>>Right Tooltip w/ Left Arrow<<b>/h2</b>> <br>
+					<<b>p</b>>Move the mouse over the text below:<<b>/p</b>> <br>
+					<br>
+					<<b>div</b> <span class="teal">class="tooltip"</span>>Hover over me
+					<blockquote>
+						<<b>span</b> <span class="teal">class="tooltiptext"</span>>Tooltip text<<b>/span</b>>
+					</blockquote>
+					<<b>/div</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan07()" class="exbutton">Klik disini</button>
+					<button onclick="buka07()" class="exbutton"> Open </button>
+					<button onclick="tutup07()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan07">
+					
+						<h2>Right Tooltip w/ Left Arrow</h2>
+						
+						<div class="tooltip">Hover over me
+						<span class="tooltiptext">Tooltip text</spa
+						
+					</div>
+				</article>
+				
+				<p> Contoh ini mendemonstrasikan bagaiaman untuk menambahkan sebuah arrow ke kanan dari tooltip: </p>
+				<article class="example-box">
+					<h4>Left Arrow:</h4>
+					<div class="example-content" id="content-open08">
+						
+						.tooltip .tooltiptext::after { <br>
+						    content: " "; <br>
+						    position: absolute; <br>
+						    top: 50%; <br>
+						    left: 100%; <em>/* Untuk posisi kanan dari tooltip */</em> <br>
+						    margin-top: -5px; <br>
+						    border-width: 5px; <br>
+						    border-style: solid; <br>
+						    border-color: transparent transparent transparent black; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close08">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.tooltip { <br>
+						position: relative; <br>
+						display: inline-block; <br>
+						border-bottom: 1px dotted black; <br>
+						} <br>
+						 <br>
+						.tooltip .tooltiptext { <br>
+						visibility: hidden; <br>
+						width: 120px; <br>
+						background-color: black; <br>
+						color: #fff; <br>
+						text-align: center; <br>
+						border-radius: 6px; <br>
+						padding: 5px 0; <br>
+						position: absolute; <br>
+						z-index: 1; <br>
+						top: -5px; <br>
+						right: 110%; <br>
+						} <br>
+						 <br>
+						.tooltip .tooltiptext::after { <br>
+						content: ""; <br>
+						position: absolute; <br>
+						top: 50%; <br>
+						left: 100%; <br>
+						margin-top: -5px; <br>
+						border-width: 5px; <br>
+						border-style: solid; <br>
+						border-color: transparent transparent transparent black; <br>
+						} <br>
+						 <br>
+						.tooltip:hover .tooltiptext { <br>
+						visibility: visible; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>h2</b>>Left Tooltip w/ Right Arrow<<b>/h2</b>> <br>
+					<<b>p</b>>Move the mouse over the text below:<<b>/p</b>> <br>
+					<br>
+					<<b>div</b> <span class="teal">class="tooltip"</span>>Hover over me
+					<blockquote>
+						<<b>span</b> <span class="teal">class="tooltiptext"</span>>Tooltip text<<b>/span</b>>
+					</blockquote>
+					<<b>/div</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan08()" class="exbutton">Klik disini</button>
+					<button onclick="buka08()" class="exbutton"> Open </button>
+					<button onclick="tutup08()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan08">
+					
+						<h2>Left Tooltip w/ Right Arrow</h2>
+						
+						<div class="tooltip">Hover over me
+						<span class="tooltiptext">Tooltip text</span>
+						</div>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Fade In Tooltips (Animation)</h2>
+				<p> Memudarkan Tooltip (Animasi)</p>
+				<p> Jika kamu ingin memudarkan teks tooltip ketika ia ditampilkan, kamu bisa menggunakan properti <mark>transitiin</mark> CSS3 bersamaan dengan properti <mark>opacity</mark>, 
+				dan menjalankan dari ketidak terlihatan secara lengkap menjadi <mark>100%</mark> terlihat, pada nomor dari detik yang ditentukan (1 detik dalam setiap contoh).</p>
+				
+
+				<article class="example-box">
+					<h4>Bottom Arrow:</h4>
+					<div class="example-content" id="content-open09">
+						
+						.tooltip .tooltiptext { <br>
+						    opacity: 0; <br>
+						    transition: opacity 1s; <br>
+						} <br>
+						 <br>
+						.tooltip:hover .tooltiptext { <br>
+						    opacity: 1; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close09">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.tooltip { <br>
+						position: relative; <br>
+						display: inline-block; <br>
+						border-bottom: 1px dotted black; <br>
+						} <br>
+						 <br>
+						.tooltip .tooltiptext { <br>
+						visibility: hidden; <br>
+						width: 120px; <br>
+						background-color: black; <br>
+						color: #fff; <br>
+						text-align: center; <br>
+						border-radius: 6px; <br>
+						padding: 5px 0; <br>
+						position: absolute; <br>
+						z-index: 1; <br>
+						bottom: 100%; <br>
+						left: 50%; <br>
+						margin-left: -60px; <br>
+						 <br>
+						/* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */ <br>
+						opacity: 0; <br>
+						transition: opacity 1s; <br>
+						} <br>
+						 <br>
+						.tooltip:hover .tooltiptext { <br>
+						visibility: visible; <br>
+						opacity: 1; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					
+					<<b>h2</b>>Fade In Tooltip on Hover<<b>/h2</b>> <br>
+					<<b>p</b>>When you move the mouse over the text below, the tooltip text will fade in and 
+					take 1 second to go from completely invisible to visible.<<b>/p</b>><br>
+					<br>
+					<<b>div</b> <span class="teal">class="tooltip"</span>>Hover over me
+					<blockquote>
+						<<b>span</b> <span class="teal">class="tooltiptext"</span>>Tooltip text<<b>/span</b>>
+					</blockquote>
+					<<b>/div</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan09()" class="exbutton">Klik disini</button>
+					<button onclick="buka09()" class="exbutton"> Open </button>
+					<button onclick="tutup09()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan09">
+					
+						<h2>Fade In Tooltip on Hover</h2>
+						<p>When you move the mouse over the text below, the tooltip text will fade in and take 1 second to go from completely invisible to visible.</p>
+						
+						<div class="tooltip">Hover over me
+						<span class="tooltiptext">Tooltip text</span>
+						</div>
+						
+					</div>
+				</article>
+				<p><b>Catatan:</b> Kamu akan mempelajari lebih tentang <mark>transition</mark> dan <mark>animation</mark> nanti dalam tutorial ini.</p>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS dropdowns.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS image gallery.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

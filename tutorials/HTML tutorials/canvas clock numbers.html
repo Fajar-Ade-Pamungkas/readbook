@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML5 canvas clock numbers </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+<style type="text/css">
+.example-content {
+	margin-bottom:15px;
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch()"> HTML Tutorial</button>
+			<div class="drop-content" id="myDropdown">
+			<input type="text" class="myInput" id="myInput" placeholder="Cari" onkeyup="filterFunction()"/>
+			<ol>
+				<a href="HTML HOME.html" > <li>HOME</li> </a>
+				<a href="HTML introduction.html" > <li> Pengenalan </li> </a>
+				<a href="HTML textEditor.html" > <li> Text Editor </li> </a>
+				<a href="HTML basic.html" > <li> Dasar </li> </a>
+				<a href="HTML elements.html" > <li> Element </li> </a>
+				<a href="HTML attributes.html" > <li> Attribute </li> </a>
+				<a href="HTML headings.html" > <li> Heading </li> </a>
+				<a href="HTML paragraphs.html" > <li> Paragraf </li> </a>
+				<a href="HTML styles.html" > <li> Style </li> </a>
+				<a href="HTML formatting.html" > <li> Formatting </li> </a>
+				<a href="HTML quotations.html" > <li> Tanda Petik </li> </a>
+				<a href="HTML computercode.html" > <li> Kode Komputer </li> </a>
+				<a href="HTML comments.html" > <li> Komentar </li> </a>
+				<a href="HTML colors.html" > <li> Warna </li> </a>
+				<a href="HTML CSS.html" > <li> CSS </li> </a>
+				<a href="HTML links.html" > <li> Link </li> </a>
+				<a href="HTML images.html" > <li> Gambar </li> </a>
+				<a href="HTML tables.html" > <li> Tabel </li> </a>
+				<a href="HTML lists.html" > <li> Daftar </li> </a>
+				<a href="HTML blocks.html" > <li> Blok </li> </a>
+				<a href="HTML classes.html" > <li> Class </li> </a>
+				<a href="HTML layout.html" > <li> Layout </li> </a>
+				<a href="HTML responsive.html" > <li> Respon </li> </a>
+				<a href="HTML iframes.html" > <li class="redZone"> Iframes </li> </a>
+				<a href="HTML JavaScript.html" > <li> JavaScript </li> </a>
+				<a href="HTML head.html" > <li> Head </li> </a>
+				<a href="HTML entities.html" > <li> Entities </li> </a>
+				<a href="HTML symbols.html" > <li> Simbol </li> </a>
+				<a href="HTML charset.html" > <li> Charset </li> </a>
+				<a href="HTML URL encode.html" > <li> URL Encode </li> </a>
+				<a href="HTML XHTML.html" > <li> XHTML </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch2()"> HTML Form</button>
+			<div class="drop-content" id="myDropdown2">
+			<input type="text" class="myInput" id="myInput2" placeholder="Cari" onkeyup="filterFunction2()"/>
+			<ol>
+				<a href="HTML forms.html" > <li> Formulir </li> </a>
+				<a href="HTML form elements.html" > <li> Elemen Formulir </li> </a>
+				<a href="HTML input types.html" > <li> Tipe Input </li> </a>
+				<a href="HTML input attributes.html" > <li> Attribute input </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch3()"> HTML5 </button>
+			<div class="drop-content" id="myDropdown3">
+			<input type="text" class="myInput" id="myInput3" placeholder="Cari" onkeyup="filterFunction3()"/>
+			<ol>
+				<a href="HTML5 intro.html" > <li> Pengenalan HTM5 </li> </a>
+				<a href="HTML5 support.html" > <li> Support HTML5</li> </a>
+				<a href="HTML5 elements.html" > <li> Element HTML5 </li> </a>
+				<a href="HTML5 semantics.html" > <li> Semantik HTML5</li> </a>
+				<a href="HTML5 migration.html" > <li> Migrasi HTML5</li> </a>
+				<a href="HTML5 style guide.html" > <li> Panduan Style HTML5  </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch4()"> HTML5 Graphics </button>
+			<div class="drop-content" id="myDropdown4">
+			<input type="text" class="myInput" id="myInput4" placeholder="Cari" onkeyup="filterFunction4()"/>
+			<ol>
+				<a href="HTML5 canvas.html" > <li> Canvas </li> </a>
+				<a href="HTML5 SVG.html" > <li> SVG </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch5()"> HTML Media </button>
+			<div class="drop-content" id="myDropdown5">
+			<input type="text" class="myInput" id="myInput5" placeholder="Cari" onkeyup="filterFunction5()"/>
+			<ol>
+				<a href="HTML media.html" > <li> HTML Media </li> </a>
+				<a href="HTML5 video.html" > <li> HTML Video </li> </a>
+				<a href="HTML5 audio.html" > <li> HTML Audio </li> </a>
+				<a href="HTML plug-ins.html" > <li> HTML Plug-ins </li> </a>
+				<a href="HTML YouTube.html" > <li> HTML Youtube </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch6()"> HTML5 APIs </button>
+			<div class="drop-content" id="myDropdown6">
+			<input type="text" class="myInput" id="myInput6" placeholder="Cari" onkeyup="filterFunction6()"/>
+			<ol>
+				<a href="HTML5 geolocation.html" > <li> Geolocation </li> </a>
+				<a href="HTML5 drag or down.html" > <li> Drag or Down </li> </a>
+				<a href="HTML5 local storage.html" > <li> Penyimpanan Lokal </li> </a>
+				<a href="HTML5 application cache.html" > <li> Application Cache </li> </a>
+				<a href="HTML5 web worker.html" > <li> Web Worker </li> </a>
+				<a href="HTML5 SSE.html" > <li> SSE </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch7()"> Canvas Tutorials </button>
+			<div class="drop-content" id="myDropdown7">
+			<input type="text" class="myInput" id="myInput7" placeholder="Cari" onkeyup="filterFunction7()"/>
+			<ol>
+				<li class="title-nav"> Canvas Tutorial</li>
+				<a href="canvas HOME.html" > <li> Canvas Home </li> </a>
+				<a href="canvas drawing.html" > <li> Canvas Drawing </li> </a>
+				<a href="canvas coordinates.html" > <li> Canvas Coordinates </li> </a>
+				<a href="canvas gradients.html" > <li> Canvas Gradient </li> </a>
+				<a href="canvas text.html" > <li> Canvas Text </li> </a>
+				<a href="canvas images.html" > <li> Canvas Images </li> </a>
+			</ol>
+		
+			<ol>
+				<li class="title-nav"> Canvas Clock </li>
+				<a href="canvas clock intro.html" > <li> Clock Intorduction </li> </a>
+				<a href="canvas clock face.html" > <li> Clock Face </li> </a>
+				<a href="canvas clock numbers.html" > <li> Clock Numbers </li> </a>
+				<a href="canvas clock hands.html" > <li> Clock Hands </li> </a>
+				<a href="canvas clock start.html" > <li> Clock Start </li> </a>
+			</ol>
+		
+			<ol>
+				<li class="title-nav"> Canvas Reference </li>
+				<a href="canvas reference.html" > <li> Canvas Reference </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch8()"> SVG Tutorials</button>
+			<div class="drop-content" id="myDropdown8">
+			<input type="text" class="myInput" id="myInput8" placeholder="Cari" onkeyup="filterFunction8()"/>
+			<ol>
+				<li class="title-nav">SVG Tutorials</li>
+				<a href="SVG HOME.html" > <li> SVG Home </li> </a>
+				<a href="SVG in HTML5.html" > <li> SVG in HTML5 </li> </a>
+				<a href="SVG rectangle.html" > <li> SVG Rectangle </li> </a>
+				<a href="SVG circle.html" > <li> SVG Circle </li> </a>
+				<a href="SVG ellipse.html" > <li> SVG Ellipse </li> </a>
+				<a href="SVG line.html" > <li> SVG Line </li> </a>
+				<a href="SVG polygon.html" > <li> SVG Polygon </li> </a>
+				<a href="SVG polyline.html" > <li> SVG Polyline </li> </a>
+				<a href="SVG path.html" > <li> SVG Path </li> </a>
+				<a href="SVG text.html" > <li> SVG Text </li> </a>
+				<a href="SVG stroking.html" > <li> SVG Stroking </li> </a>
+			</ol>
+			
+			<ol>
+				<li class="title-nav">SVG Filter Introduction</li>
+				<a href="SVG filters intro.html" > <li> SVG Filter intoduction </li> </a>
+				<a href="SVG blur effects.html" > <li> SVG Blur Effects </li> </a>
+				<a href="SVG drop shadows.html" > <li> SVG Drop Shadows </li> </a>
+			</ol>
+			
+			<ol>
+				<li class="title-nav">SVG Gradient</li>
+				<a href="SVG linier.html" > <li> SVG Linier </li> </a>
+				<a href="SVG radial.html" > <li> SVG Radial </li> </a>
+			</ol>
+			
+			<ol>
+				<li class="title-nav">SVG Examples</li>
+				<a href="SVG examples.html" > <li> SVG Examples </li> </a>
+			</ol>
+			
+			<ol>
+				<li class="title-nav">SVG Reference</li>
+				<a href="SVG reference.html" > <li> SVG Reference </li> </a>
+			</ol>
+			</div>
+			</div>
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML5 - Canvas Clock Numbers </h1>
+				
+			</div>
+			
+			
+<section>			
+			<article>
+				<h2> Part III - Draw Clock Numbers </h2>
+				<p> Bagian II - Gambarlah Nomor Jam </p>
+				<p> Jam Membutuhkan nomor - nomor. Buatlah sebuah fungsi untuk menulis atau menggambar clock numbers: </p>
+				
+				<canvas id="canvas" width="300" height="300" style="background-color:#333"></canvas>
+								
+				<article class="example-box">
+					<h4>JavaScript</h4>
+					<div class="example-content">
+							
+						<code>function</code> drawClock() {
+							<blockquote>
+						    drawFace(ctx, radius); <br>
+						    <strong>drawNumbers(ctx, radius);</strong>
+							</blockquote>
+						} <br>
+						<br>
+						<code>function</code> drawNumbers(ctx, radius) {
+							<blockquote>
+						    <code>var</code> ang; <br>
+						    <b>var</b> num; <br>
+						    ctx.font = radius*0.15 + "px arial"; <br>
+						    ctx.textBaseline="middle"; <br>
+						    ctx.textAlign="center"; <br>
+						    for(num= 1; num <b><</b> 13; num++){ 
+								<blockquote>
+						        ang = num * Math.PI / 6; <br>
+						        ctx.rotate(ang); <br>
+						        ctx.translate(0, -radius*0.85); <br>
+						        ctx.rotate(-ang); <br>
+						        ctx.fillText(num.toString(), 0, 0); <br>
+						        ctx.rotate(ang); <br>
+						        ctx.translate(0, radius*0.85); <br>
+						        ctx.rotate(-ang);
+								</blockquote>
+						    }
+							</blockquote>
+						}
+							
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Example Explained </h2>
+				<p> Contoh Menenrangkan </p>
+				<p> Aturlah font size (dari object gambar) menjadi 15% dari radius: </p>
+				
+				<div class="example-content">
+					ctx.font = radius*0.15 + "px arial";
+				</div>
+				
+				<p> Aturlah text alignment (perataan teks) menjadi middle (pertengahan) dan center (pusat) dari print position atau posisi cetak: </p>
+				
+				<div class="example-content">
+					ctx.textBaseline="middle"; <br>
+					ctx.textAlign="center";
+				</div>
+				
+				<p> Kalkulasikan rint position (untuk 12 nomor) menjadi 85% dari radius, dirotasi (PI/6) untuk setiap nomor: </p>
+				
+				<div class="example-content">
+					<code>for</code>(num= 1; num <b><</b> 13; num++) {
+						<blockquote>
+					    ang = num * Math.PI / 6; <br>
+					    ctx.rotate(ang); <br>
+					    ctx.translate(0, -radius*0.85); <br>
+					    ctx.rotate(-ang); <br>
+					    ctx.fillText(num.toString(), 0, 0); <br>
+					    ctx.rotate(ang); <br>
+					    ctx.translate(0, radius*0.85); <br>
+					    ctx.rotate(-ang); 
+						</blockquote>
+					}
+				</div>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="canvas clock face.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="canvas clock hands.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			</article>
+			<article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+<script type="text/javascript">
+// Part I
+var canvas = document.getElementById("canvas"); 
+var ctx = canvas.getContext("2d"); 
+var radius = canvas.height / 2; 
+ctx.translate(radius, radius); 
+radius = radius * 0.90 
+drawClock(); 
+
+function drawClock() {
+    ctx.arc(0, 0, radius, 0 , 2*Math.PI); 
+    ctx.fillStyle = "white"; 
+    ctx.fill(); 
+} 
+
+//Part II
+function drawClock() {
+    drawFace(ctx, radius);
+	drawNumbers(ctx, radius);
+} 
+
+function drawFace(ctx, radius) {
+    var grad; 
+
+    ctx.beginPath(); 
+    ctx.arc(0, 0, radius, 0, 2*Math.PI); 
+    ctx.fillStyle = 'white'; 
+    ctx.fill(); 
+
+    grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05); 
+    grad.addColorStop(0, '#333'); 
+    grad.addColorStop(0.5, 'white'); 
+    grad.addColorStop(1, '#333'); 
+    ctx.strokeStyle = grad; 
+    ctx.lineWidth = radius*0.1; 
+    ctx.stroke(); 
+
+    ctx.beginPath(); 
+    ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI); 
+    ctx.fillStyle = '#333'; 
+    ctx.fill();
+}
+
+//Part III
+function drawNumbers(ctx, radius) {
+    var ang; 
+    var num; 
+    ctx.font = radius*0.15 + "px arial"; 
+    ctx.textBaseline="middle"; 
+    ctx.textAlign="center"; 
+    for(num= 1; num < 13; num++){
+        ang = num * Math.PI / 6; 
+        ctx.rotate(ang); 
+        ctx.translate(0, -radius*0.85); 
+        ctx.rotate(-ang); 
+        ctx.fillText(num.toString(), 0, 0); 
+        ctx.rotate(ang); 
+        ctx.translate(0, radius*0.85); 
+        ctx.rotate(-ang);
+    }
+}
+</script>
+</body>
+</html>

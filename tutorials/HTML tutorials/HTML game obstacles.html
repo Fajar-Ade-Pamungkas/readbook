@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML Game Obstacles  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+	
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML Game Obstacles  </h1>
+				
+			</div>
+			
+			
+<section>			
+			<article>
+				<h2>Game Obstacles </h2>
+				<p> Tekan tombol untuk menggerakan persegi merah:</p>
+				<div>
+				UP <br>
+				 <br>
+				LEFT  RIGHT <br>
+				<br>
+				DOWN
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Add Some Obstacles</h2>
+				<p> Menambahkan Beberapa Rintangan</p>
+				<p> Sekarang kita ingin menambahkan beberapa rintangan untuk game kita.</p>
+				<p> Tambahkan komponen baru untuk area permainan. Buat itu menjadi green, 10px wide, 200px high, dan posisinya di 300px ke kanan dan 120px ke bawah.</p>
+				<p> Perbaharui juga komponen obstacle pada setisp waktu:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						var myGamePiece; <br>
+						var myObstacle; <br>
+						<br>
+						function startGame() {
+						<blockquote>
+							myGamePiece = new component(30, 30, "red", 10, 120); <br>
+							myObstacle = new component(10, 200, "green", 300, 120);  <br>
+							myGameArea.start();
+						</blockquote>
+						} <br>
+						<br>
+						function updateGameArea() {
+						<blockquote>
+							myGameArea.clear(); <br>
+							myObstacle.update(); <br>
+							myGamePiece.newPos(); <br>
+							myGamePiece.update();
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>script</b>> <br>
+					
+					<<b>/script</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Hit The Obstacle = Game Over</h2>
+				<p> Pada contoh diatas, Tidak ada yang terjadu ketika kamu menambrak obstacle. Pada sebuah game, itu sangat tidak memuaskan. </p>
+				<p> Bagaimana kita tahu jika red square kita menabrak obstacle? </p>
+				<p> Buatlah metode baru dalam component constructor, bahwa mengetes jika komponen bertabrakan dengan komponen lainnya. Metode ini harus dipanggil setiap kali frame diperbaharui, 50 time per second. </p>
+				<p> Tambahkan juga metode <mark>stop()</mark> ke <mark>myGameArea</mark> object, yang mana membersihkan interval 20 milidetik. </p>
+
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						var myGameArea = {
+						<blockquote>
+							canvas : document.createElement("canvas"), <br>
+							start : function() {
+							<blockquote>
+								this.canvas.width = 480; <br>
+								this.canvas.height = 270; <br>
+								this.context = this.canvas.getContext("2d"); <br>
+								document.body.insertBefore(this.canvas, document.body.childNodes[0]); <br>
+								this.interval = setInterval(updateGameArea, 20);
+							</blockquote>
+							}, <br>
+							clear : function() { 
+							<blockquote>
+								this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+							</blockquote>
+							}, <br>
+							stop : function() {
+							<blockquote>
+								clearInterval(this.interval);
+							</blockquote>
+							}
+						</blockquote>
+						} <br>
+						<br>
+						function component(width, height, color, x, y) {
+						<blockquote>
+							this.width = width; <br>
+							this.height = height; <br>
+							this.speedX = 0; <br>
+							this.speedY = 0;  <br>
+							this.x = x; <br>
+							this.y = y; <br>
+							this.update = function() {
+							<blockquote>
+								ctx = myGameArea.context; <br>
+								ctx.fillStyle = color; <br>
+								ctx.fillRect(this.x, this.y, this.width, this.height);
+							</blockquote>
+							} <br>
+							this.newPos = function() {
+							<blockquote>
+								this.x += this.speedX; <br>
+								this.y += this.speedY; 
+							</blockquote>
+							} <br>
+							this.crashWith = function(otherobj) {
+							<blockquote>
+								var myleft = this.x; <br>
+								var myright = this.x + (this.width); <br>
+								var mytop = this.y; <br>
+								var mybottom = this.y + (this.height); <br>
+								var otherleft = otherobj.x; <br>
+								var otherright = otherobj.x + (otherobj.width); <br>
+								var othertop = otherobj.y; <br>
+								var otherbottom = otherobj.y + (otherobj.height); <br>
+								var crash = true; <br>
+								if ((mybottom <b><</b> othertop) || <br>
+								(mytop > otherbottom) || <br>
+								(myright <b><</b> otherleft) || <br>
+								(myleft > otherright)) {
+								<blockquote>
+									crash = false;
+								</blockquote>
+								} <br>
+								return crash;
+							</blockquote>
+							}
+						</blockquote>
+						} <br>
+						<br>
+						function updateGameArea() {
+						<blockquote>
+							if (myGamePiece.crashWith(myObstacle)) {
+							<blockquote>
+								myGameArea.stop(); 
+							</blockquote>
+							} else {
+							<blockquote>
+								myGameArea.clear(); <br>
+								myObstacle.update(); <br>
+								myGamePiece.newPos();  <br>
+								myGamePiece.update();
+							</blockquote>
+							}
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>script</b>> <br>
+					
+					<<b>/script</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Moving Obstacle </h2>
+				<p>Pergerakan Rintangan</p>
+				<p> Obstacles (rintangan) tidak berbahaya ketika ia statis (tetap/diam), jadi kita kita ingin rintangan menjadi bergerak. </p>
+				<p> Ubahlah nilai properti dari <mark>myObstacle.x</mark> di setiap perbaharuan: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						function updateGameArea() {
+						<blockquote>
+							if (myGamePiece.crashWith(myObstacle)) {
+							<blockquote>
+								myGameArea.stop();
+							</blockquote>
+							} else {
+							<blockquote>
+								myGameArea.clear(); <br>
+								myObstacle.x += -1; <br>
+								myObstacle.update(); <br>
+								myGamePiece.newPos(); <br>
+								myGamePiece.update(); 
+							</blockquote>
+							}
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>script</b>> <br>
+					
+					<<b>/script</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>			
+			<article>
+				<h2>Multiple Obstacles</h2>
+				<p> Rintangan Lebih dari satu</p>
+				<p> Bagaiaman tentang penambahan multiple obstacles? </p>
+				<p> Untuk itu kita membutuhkan sebuah properti untuk penghitungan frames, dan sebuah metode untuk mengeksekusi sesuatu saat sebuah nilai/rate frame yang diberikan.</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						var myGameArea = {
+						<blockquote>
+						canvas : document.createElement("canvas"), <br>
+						start : function() {
+						<blockquote>
+						this.canvas.width = 480; <br>
+						this.canvas.height = 270; <br>
+						this.context = this.canvas.getContext("2d"); <br>
+						document.body.insertBefore(this.canvas, document.body.childNodes[0]); <br>
+						this.frameNo = 0;  <br>
+						this.interval = setInterval(updateGameArea, 20);
+						</blockquote>
+						}, <br>
+						clear : function() {
+						<blockquote>
+						this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+						</blockquote>
+						}, <br>
+						stop : function() {
+						<blockquote>
+						clearInterval(this.interval);
+						</blockquote>
+						}
+						</blockquote>
+						} <br>
+						<br>
+						function everyinterval(n) {
+						<blockquote>
+							if ((myGameArea.frameNo / n) % 1 == 0) {return true;} <br>
+							return false;
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>script</b>> <br>
+					
+					<<b>/script</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+					</div>
+				</article>
+				
+				<p>Fungsi <mark>everyinterval</mark> mengembalikan <b>true</b> jika kesamaan posisi <mark>framenumber</mark> saat ini dengan interval yang diberikan. </p>
+				<p> Untuk mendefinisikan multiple obstacle, pertama-tama deklarasikan variabel <mark>obstacle</mark> sebagai sebuah array.</p>
+				<p> Kedua, kita perlu membuat beberapa pengubahan dalam fungsi <mark>updateGameArea</mark>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						var myGamePiece; <br>
+						var myObstacles = []; <br>
+						<br>
+						function updateGameArea() {
+						<blockquote>
+							var x, y; <br>
+							for (i = 0; i <b><</b> myObstacles.length; i += 1) {
+							<blockquote>
+								if (myGamePiece.crashWith(myObstacles[i])) {
+								<blockquote>
+									myGameArea.stop(); <br>
+									return; 
+								</blockquote>
+								} 
+							</blockquote>
+							} <br>
+							myGameArea.clear(); <br>
+							myGameArea.frameNo += 1; <br>
+							if (myGameArea.frameNo == 1 || everyinterval(150)) {
+							<blockquote>
+								x = myGameArea.canvas.width; <br>
+								y = myGameArea.canvas.height - 200 <br>
+								myObstacles.push(new component(10, 200, "green", x, y));
+							</blockquote>
+							} <br>
+							for (i = 0; i <b><</b> myObstacles.length; i += 1) {
+							<blockquote>
+								myObstacles[i].x += -1; <br>
+								myObstacles[i].update();
+							</blockquote>
+							} <br>
+							myGamePiece.newPos(); <br>
+							myGamePiece.update();
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>script</b>> <br>
+					
+					<<b>/script</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+					</div>
+				</article>
+				
+				<p> Pada fungsi <mark>updateGameArea</mark> kita harus me-loop (menaklukan/menyimpulkan) 
+				melewati setiap obstacle untuk melihat jika ada suatu tabrakan. Jika ada sebuah tabrakan (crash), 
+				fungsi <mark>updateGameArea</mark> akan berhenti dan tidak ada lagi penggambaran yang dilakukan. </p>
+				<p> Fungsi <mark>updateGameArea</mark> menghitung frame dan menambahkan sebuah obstacle untuk setiap frame ke 150 (150th frame). </p>
+
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Obstacles of Random Size</h2>
+				<p> Rintangan tentang Ukuran Acak</p>
+				<p> Untuk membuat game sebuah bit lebih sulit dan menyenangkan, kita akan mengirim dalam obstacles dari ukuran acak, jadi bahwa red square harus bergerak keatas atau ke bawah agar tidak menambrak. </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						function updateGameArea() {
+						<blockquote>
+							var x, height, gap, minHeight, maxHeight, minGap, maxGap; <br>
+							for (i = 0; i <b><</b> myObstacles.length; i += 1) {
+							<blockquote>
+								if (myGamePiece.crashWith(myObstacles[i])) {
+								<blockquote>
+									myGameArea.stop(); <br>
+									return; 
+								</blockquote>
+								} 
+							</blockquote>
+							} <br>
+							myGameArea.clear(); <br>
+							myGameArea.frameNo += 1; <br>
+							if (myGameArea.frameNo == 1 || everyinterval(150)) {
+							<blockquote>
+								x = myGameArea.canvas.width; <br>
+								minHeight = 20; <br>
+								maxHeight = 200; <br>
+								height = Math.floor(Math.random()*(maxHeight-minHeight+1)+minHeight); <br>
+								minGap = 50; <br>
+								maxGap = 200; <br>
+								gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap); <br>
+								myObstacles.push(new component(10, height, "green", x, 0)); <br>
+								myObstacles.push(new component(10, x - height - gap, "green", x, height + gap));
+							</blockquote>
+							} <br>
+							for (i = 0; i <b><</b> myObstacles.length; i += 1) {
+							<blockquote>
+								myObstacles[i].x += -1; <br>
+								myObstacles[i].update();
+							</blockquote>
+							} <br>
+							myGamePiece.newPos(); <br>
+							myGamePiece.update();
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>script</b>> <br>
+					
+					<<b>/script</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML .html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML .html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			</article>
+			<article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

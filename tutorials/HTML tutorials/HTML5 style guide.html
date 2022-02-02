@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML5 style guide </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML(5) Style Guide and Coding Conventions </h1>
+				<p> Panduan Gaya dan Ketentuan Persandian HTML(5). </p>
+			</div>
+			
+			
+<section>			
+			<article>
+				<h2> HTML Coding Conventions </h2>
+				<p> Perjanjian Penyadian HTML</p>
+				<p> Para pengembang HTML sering kali ragu-ragu tentang coding style (kode tampilan) dan sintaksis untuk menggunakannya pada HTML.</p>
+				<p> Antara tahun 2000 dan 2010, banyak para pengembang web yang mengubah dari HTML menjadi XHTML. </p>
+				<p> Dengan XHTML, para pengembang dituntut untuk menulis secara valid dan "well-formed" code (kode format yang baik). </p>
+				<p> HTML5 merupakan sebuah bit lebih tidak rapih ketika ia sampai pada code validation. </p>
+				<p> Dengan HTML5, kamu harus menciptakan <b> Best Practie, Style Guide, and Coding Conventions</b> milik kamu sendiri.</p>
+				
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Be Smart and Future Proof </h2>
+				<p> Pintarlah dan buktikan masa depan </p>
+				<p> Konsekuensi menggunakan style, membuat ia mudah orang lain mengerti dan menggunakan HTML kamu. </p>
+				<p> Di masa yang akan datang, program seperti XML readers, mungkin mau membaca HTML kamu. </p>
+				<p> Menggunakan sebuah well-formed (formulir yang baik) "close to XHMTL" syntax, bisa menjadi pintar.</p>
+				
+				<div class="nasehat">
+				Selalu jaga your style smart (tampilan pintar kamu), tidy (rapih), clean (bersih) dan well-formed (formulir yang baik). 
+				</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Use Correct Document Type </h2>
+				<p> Selalu deklarasikan tipe dokumen sebagai baris pertama pada dokumen kamu: </p>
+				
+				<div class="example-content">
+					<<b>!DOCTYPE</b> <span class="teal">html</span>>
+				</div>
+				
+				<p> Jika kamu ingin konsisten (berpendirian) dengan lowercase tag (penulisan dalam huruf kecil), kamu bisa gunakan: </p>
+				
+				<div class="example-content">
+					<<b>!doctype</b> <span class="teal">html</span>>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Use Lower Case Element Names </h2>
+				<p> Gunakanlah nama -nama element dengan huruf kecil</p>
+				<p> HTML5 mengizinkan pencampuran  uppercase dan lowercase letters (huruf kecil dan besar) dalam nama element. </p>
+				<p> kita rekomendasikan penggunaan nama element lowercase: </p>
+				
+				<ul>
+				 	<li> Pencampuran nama dengan huruf besar dan kecil adalah buruk. </li>
+					<li> Para developer menggunakan nama huruf kecil (seperti dalam XHTML). </li>
+					<li> Lowercase terlihat bersih dan rapih </li>
+					<li> Lowercase lebih mudsh ditulis</li>
+				</ul>
+				
+				<article class="example-box">
+					<h4> Buruk </h4>
+					<div class="example-content">
+						<<b>SECTION</b>> 
+							<blockquote><<b>p</b>> This is a paragraph. <<b>/p</b>> </blockquote>
+						<<b>/SECTION</b>>
+					</div>
+				</article>
+				
+				<article class="example-box">
+					<h4> Sangat Buruk </h4>
+					<div class="example-content">
+						<<b>SECTION</b>> 
+							<blockquote><<b>p</b>> This is a paragraph. <<b>/p</b>> </blockquote>
+						<<b>/section</b>>
+					</div>
+				</article>
+				
+				<article class="example-box">
+					<h4> Bagus </h4>
+					<div class="example-content">
+						<<b>section</b>> 
+							<blockquote><<b>p</b>> This is a paragraph. <<b>/p</b>> </blockquote>
+						<<b>/section</b>>
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Close All HTML Elements </h2>
+				<p> Tutuplah semua element HTML</p>
+				<p> Pada HTML5, kamu tidak hsrus menutup semua element (untuk contoh element <<b>p</b>>). 
+				<p> Kita rekomendasikan untuk selalu menutup semua element HTML: </p>
+				
+				<article class="example-box">
+					<h4> Buruk </h4>
+					<div class="example-content">
+						<<b>section</b>> 
+							<blockquote>
+							<<b>p</b>> This is a paragraph. <br>
+							<<b>p</b>> This is a paragraph. 
+							</blockquote>
+						<<b>/section</b>>
+					</div>
+				</article>
+				
+				<article class="example-box">
+					<h4> Bagus </h4>
+					<div class="example-content">
+						<<b>section</b>> 
+							<blockquote>
+							<<b>p</b>> This is a paragraph. <<b>/p</b>> <br>
+							<<b>p</b>> This is a paragraph. <<b>/p</b>> 
+							</blockquote>
+						<<b>/section</b>>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Close Empty HTML Elements </h2>
+				<p> Tutuplah Element HTML Kosong (Jomblo)</p>
+				<p> Pada HTML5, ini merupakan pilihan untuk menutup element empty (kosong). </p>
+				
+				<article class="example-box">
+					<h4> Tidak Baik </h4>
+					<div class="example-content">
+						<<b>meta</b> <span class="teal">charset="utf-8"</span>> 
+					</div>
+				</article>
+				
+				<article class="example-box">
+					<h4> Bagus </h4>
+					<div class="example-content">
+						<<b>meta</b> <span class="teal">charset="utf-8"/</span>> 
+					</div>
+				</article>
+				
+				<p> slash (/) diharuskan dalam XHTML dan XML. </p>
+				<p> Jika kamu mengira sofware XML tuk mengakses halaman kamu, ini mungkin ide yang bagus untuk selalu menggunakan slash untuk menutup element empty. </p>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Use Lower Case Attribute Names </h2>
+				<p> Gunakanlah nama atribute menggunakan huruf kecil. </p>
+				<p> HTML5 mengizinkan pencampuran huruf besar dan kecil dalam nama attribute. </p>
+				<p> Tapi kita rekomendasikan penggunaan nama attibute dengan lowercase: </p>
+				
+				<ul>
+				 	<li> Pencampuran nama dengan huruf besar dan kecil adalah buruk. </li>
+					<li> Para developer menggunakan nama huruf kecil (seperti dalam XHTML). </li>
+					<li> Lowercase terlihat bersih dan rapih </li>
+					<li> Lowercase lebih mudsh ditulis</li>
+				</ul>
+				
+				<article class="example-box">
+					<h4> Buruk </h4>
+					<div class="example-content">
+						<<b>div</b> <span class="teal">CLASS="menu"</span>> 
+					</div>
+				</article>
+				
+				<article class="example-box">
+					<h4> Bagus </h4>
+					<div class="example-content">
+						<<b>div</b> <span class="teal">class="menu"</span>> 
+					</div>
+				</article>
+				
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Quote Attribute Values </h2>
+				<p> Berilah Tanda Kutip Pada Nilai Attribute. </p>
+				<p> HTML5 mengizinkan nilai attribute tanpa quotes (tanda kutip). </p>
+				<p> Namun, kita sarankan penggunaan tanda kutip untuk nilai attribute: </p>
+				
+				<ul>
+					<li> Kamu harus menggunakan quotes jika nilai berisikan spasi</li>
+					<li> pencampuran stayle tidak pernah baik</li>
+					<li> Nilai yang diberi tanda kutip lebih mudsh dibaca</li>
+				</ul>
+				
+				<p> Ini tidak akan bekerja, karena nilai berisi spasi: </p>
+				
+				<article class="example-box">
+					<h4> Buruk </h4>
+					<div class="example-content">
+						<<b>div</b> <span class="teal">class=image flow</span>> 
+					</div>
+				</article>
+				
+				<p> Ini akan bekerja</p>
+				
+				<article class="example-box">
+					<h4> Bagus </h4>
+					<div class="example-content">
+						<<b>div</b> <span class="teal">class="image flow"</span>> 
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Image Attributes </h2>
+				<p> Attibute Gambar</p>
+				<p> Selalu gunakan attrihute <b>alt</b> pada gambar, Ini penting ketika gambar tidsk bisa ditampilkan. </p>
+				
+				<article class="example-box">
+					<div class="example-content">
+						<<b>img</b> <span class="teal">src="html5.gif" <mark>alt="HTML5"</mark> style="width:120px; height:120px;"</span>> 
+					</div>
+				</article>
+				
+				<p> Selalu definisikan ukursn gambar. Ini mengurangi flickering (kelap - kelip) karens browser bisa reserve spaspce untuk gambar sebelum mereka dimuat. </p>
+				
+				<article class="example-box">
+					<div class="example-content">
+						<<b>img</b> <span class="teal">src="html5.gif" alt="HTML5" <mark>style="width:120px; height:120px;</mark>"</span>> 
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Spaces and Equal Signs </h2>
+				<p> Tanda Sama dengan (=) dan Spasi </p>
+				<p> Spasi disekitar tanda sama dengan adalah legal (diperbolehkan): </p>
+				
+				<article class="example-box">
+					<div class="example-content">
+						<<b>link</b> <span class="teal"> rel = "stylesheet" href = "styles.css"</span>>
+					</div>
+				</article>
+				
+				<p> Tapi, spasi-less lebih mudah untuk dibaca, dan pengelompokan entitas lebih baik bersama: </p>
+				
+				<article class="example-box">
+					<div class="example-content">
+						<<b>link</b> <span class="teal"> rel="stylesheet" href="styles.css"</span>>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Avoid Long Code Lines </h2>
+				<p> Hindarilah Baris Kode Terlalu Panjang </p>
+				<p> Ketikan menggunakan sebuah editor HTML, ini menyenangkan untuk menggeser layar kekanan dan kekiri untuk pembacaan kode HMTL. </p>
+				<p> Cobalah untuk menghindari panjang baris kode yang lebih dari 80 karakter. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Blank Lines and Indentation </h2>
+				<p> Jeda baris dan indensasi </p>
+				<p> <b>Jangan</b> menjeda baris tanpa alasan. </p>
+				<p> Untuk kemampuan pembacaan, tambahakn blank lines untuk memisahkan besar atau blok kode logika. </p>
+				<p> Untuk kemampuan pambacaan, tambahkan 2 spasi indensasi. <b>Jangan</b> gunakan TAB. </p>
+				<p> Jangan gunakan blank line dan indensasi yang tidak diperlukan. Ini tidak diperlukan untuk menggunakan blank line antara short dan related items, Ini tidak memerlukan untuk mengidensasi setiap element. </p>
+				 
+			 <article class="example-box">
+				 <h4> Tidak perlu </h4>
+				 <div class="example-content">
+				 
+				 <<b>article</b>> <br><br>
+				 	<blockquote>
+				     <<b>section</b>> <br><br>
+				     <<b>h2</b>>Famous Cities<<b>/h2</b>> <br><br>
+				 
+				     <<b>div</b> <span class="teal">class="city"</span>> <br>
+				     <<b>h2</b>>London<<b>/h2</b>> <br>
+				     <<b>p</b>><br>
+				     London is the capital city of England. It is the most populous city in the United Kingdom,
+				      with a metropolitan area of over 13 million inhabitants.<br>
+				      <<b>/p</b>> <br>
+					 <<b>/div</b>> <br> <br>
+					 <<b>/section</b>> <br><br>
+				 	</blockquote>
+			 <<b>/article</b>> <br><br>
+				 </div>
+			</article>
+				 
+			<article class="example-box">
+				 <h4> Lebih Baik </h4>
+				 <div class="example-content">
+				 
+				 <<b>article</b>> <br><br>
+				     <<b>section</b>> <br><br>
+				     <<b>h2</b>>Famous Cities<<b>/h2</b>> <br><br>
+				 
+				     <<b>div</b> <span class="teal">class="city"</span>> <br>
+				     <<b>h2</b>>London<<b>/h2</b>> <br>
+				     <<b>p</b>>London is the capital city of England. It is the most populous city in the United Kingdom,
+				      with a metropolitan area of over 13 million inhabitants.<<b>/p</b>> <br>
+					 <<b>/div</b>> <br> <br>
+					 <<b>/section</b>> <br><br>
+				<<b>/article</b>> <br><br>
+					 </div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Use Lower Case File Names </h2>
+				<p> Gunakanlah Nama File Dengan Huruf Kecil</p>
+				<p> Kebanyakan web server (Apache, Unix) merupakan case sensitive tentang nama file: </p>
+				<p> london.jpg tidak bisa diakses sebagai London.jpg. </p>
+				<p> Web server lainnya (Microsoft, IIS) tidak merupakan case sensitve: </p>
+				<p> london.jpg bisa diakses sebagai London.jpg atau london.jpg. </p>
+				<p> Jika kamu menggunakan campuran huruf besar dan kecil, kamu harus sangat konsisten. </p>
+				<p> Jika kamu berpindah dari sebuah server case insensitive ke server case sensitive, bahkan error kecil pun akan mem-break (menghentikan) web kamu. </p>
+				<p> Untuk menghindari masalah ini, selalu gunakan nama file dengan huruf kecil (lower case) (jika memungkinkan). </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> File Extensions </h2>
+				<p> File HTML harus memiliki extensi <b>.html</b> (atau .<b>htm</b>). </p>
+				<p> File CSS harus memiliki extensi <b>.css</b> </p>
+				<p> File JavaScript harus memiliki extensi <b>.js</b> </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Differences Between .htm and .html </h2>
+				<p> Perbedaan antara .htm dan .html </p>
+				<p> Tidak akan perbedaan antara ekstensi <b>.htm</b> dan <b>.html</b>. keduanya akan diperlakukan sebagai HTML 
+				web browser atau web server apapun.</p>
+				<p> Perbedaan merupakan kultural: </p>
+				<p> <b>.htm</b> "berbau" tentang sistem DOS awal dimana sistem dibatasi extensi menjadi 3 karakter. </p>
+				<p> <b>.html</b> "berbau" sistem operasi Unix yang tidak memiliki perbatasan ini. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Technically Differences </h2>
+				<p> Perbedaan secara teknis. </p>
+				<p> Ketika sebuah URL tidak menentukan sebuah filename (seperti http://www.w3schools.com/css/), 
+				server mengembalikan sebuah default filename. Umumnya defsult filename adalah index.html, 
+				index.htm, default.html, default.html.</p>
+				<p> Jika server kamu dikonfigurasi hanya dengan "index.html" sebagai defaul filename, file kamu harus 
+				dinamai "index.html" bukan "index.htm". </p>
+				<p> Akan tetapi, server bisa dikonfigurasi dengan lebih daripada satu default filename, 
+				dan normalnya kamu bisa menyetel ulang sebanyak default filename yang dibutuhkan. </p>
+				<p> Akan demikian, full extension untuk file HTML adalah .html, dan tidak ada alasan .html tidak harus digunakan. </p>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML5 migration.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML5 canvas.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

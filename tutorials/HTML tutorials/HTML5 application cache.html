@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML5 application cache </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML5 Application Cache </h1>
+				<p> Dengan application cache, ini mudah untuk membuat versi offline tentang web application, dengan penciptaan sebuah cache manifest file.</p>
+			</div>
+			
+			
+<section>			
+			<article>
+				<h2> What is Application Cache? </h2>
+				<p> Apa itu Application Cache? </p>
+				<p> HTML5 memperkenalkan application cache, yang mana artinya bahwa sebuah web application di-cache dan dapat diakses tanpa koneksi internet. </p>
+				<p> Application cache memberikan sebuah aplikasi dengan 3 keuntungan: </p>
+				<ul>
+					<li> Offline browsing - Para pengguna bisa menggunakan aplikasi ketika mereka sedang offline</li>
+					<li> Speed - cached resource (sumber - sumber yang di-cache) dimuat lebih cepat </li>
+					<li> Reduced server load - Browser hanya akan mengunduh perbaruan/perubahan sumber dari server. </li>
+				</ul>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Browser Support </h2>
+				<p> Nomor pada tabel menentukan browser versi pertama yang mendukung secara penuh <b>Application Cache</b>. </p>
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td class="left"> API </td>
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> <b>Application Cache</b> </td>
+							<td> 4.0 </td>
+							<td> 10.0 </td>
+							<td> 3.5 </td>
+							<td> 4.0 </td>
+							<td> 11.5 </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML Cache <b class="justRed">Manifest</b> Example </h2>
+				<p> Contoh <b>Manifest</b> Cache HTML</p>
+				<p> Contoh dibawah ini menampilkan sebuah dokumen HTML dengan sebuah cache <b>manifest</b> (untuk offline browsing): </p>
+				
+				<article class="example-box">
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br>
+						<<b>html</b> <span class="redZone">manifest="demo_html.appcache"</span>><br>
+							<<b>head</b>><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br><br>
+							
+							<<b>p</b> <span class="teal">id="timePara"</span>>
+							<<b>button</b> <span class="teal">onclick="getDateTime()"</span>>Get Date and Time<<b>/button</b>><<b>/p</b>> <br><br>
+							<<b>p</b>><<b>img</b> <span class="teal">src="img_logo.gif" width="336" height="69"</span>><<b>/p</b>><br><br>
+							<<b>p</b>>Try opening <<b>a</b> <span class="teal">href="tryhtml5_html_manifest.htm" target="_blank"</span>>this page<<b>/a</b>>, 
+							then go offline, and reload the page. The script and the image should still work.<<b>/p</b>> <br><br>
+							<<b>script</b> <span class="teal">src="demo_time.js"</span>><<b>/script</b>><br><br>
+							
+							<<b>/body</b>><br>
+						<<b>/html</b>>
+						
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						<p id="timePara"><button onclick="getDateTime()">Get Date and Time</button></p>
+						
+						<p><img src="../logos/html 5.jpg" width="336" height="69"></p>
+						
+						<p>Try opening <a href="tryhtml5_html_manifest.htm" target="_blank">this page</a>, 
+						then go offline, and reload the page. The script and the image should still work.</p>
+					</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Cache Manifest Basics </h2>
+				<p> Untuk membolehkan application cahce, Masukanlah attribute <b>manifest</b> dalam tag <<b>html</b>> dokumen: </p>
+				
+				<div class="example-content">
+				<<b>!DOCTYPE</b> HTML> <br>
+				<<b>html</b> <span class="teal">manifest="demo.appcache"</span>> <br>
+				... <br>
+				<<b>/html</b>>
+				</div>
+				
+				<p> Setiap halaman dengan attribute <b>manifest</b> tertentu akan di-cached ketika pengguna mengunjungi halaman tersebut, 
+				Jika attribute <b>manifest</b> tidak ditentukan, halaman tidak akan bisa di-cached (tanpa halaman yang ditentukan secara langsung dalam manifest file). </p>
+				<p> Ekstensi file yang direkomendasikan untuk file manifest adalah: "<b>.appcache</b>" </p>
+				
+				<div class="nasehatX">
+				Sebuah file manifest perlu disajikan dengan <b>tipe media yang benar</b>, yang mana adalah "text/cache-manifest". Harus dikonfigurasikan (diatur) di web server. 
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The Manifest File </h2>
+				<p> File Manifest </p>
+				<p> File manifest merupakan file teks sederhana, yang mana memberitahukan browser bagaimana untuk me-cache (dan bagaimana untuk jangan pernah me-cache). </p>
+				<p> File Manifest memiliki 3 bagian: </p>
+				
+				<ul>
+					<li> <b>CACHE MANIFEST</b> - File - file didaftarkan dibawah header ini akan di-cache setelah mereka didownload untuk the first time (waktu pertama).</li>
+					<li> <b>NETWORK</b> - File - file didaftarkan dibawah header ini memerlukan (required) sebuah koneksi ke server, dan tidak akan di-cached </li>
+					<li> <b>FALLBACK</b> - File - file didaftarkan dibawah header ini menentukan halaman fallback jika halaman tidak bisa dimasuki atau diakses</li>
+				</ul>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> CACHE MANIFEST </h2>
+				<p> Baris pertama <b>CACHE MANIFEST</b> diharuskan: </p>
+				<div class="example-content">
+				CACHE MANIFEST <br>
+				/theme.css <br>
+				/logo.gif <br>
+				/main.js <br>
+				</div>
+				<p> File Manifest diatas mendaftarkan 3 tiga sumber: sebuah file CSS, sebuah gambar GIF, dan sebuah file JavaScript. Ketika file manifest dimuat, 
+				browser akan mengunduh tiga file dari root directory dari website. Lalu, kapanpun pengguna sedahg tidak terhubung ke internet, resource masih akan tersedia. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> NETWORK </h2>
+				<p> Bagian <b>NETWORK</b> dibawah menentukan bahwa file "login.asp" tidak harus di-cached, dan tidak akan disediakan (secara) offline: </p>
+				<div class="example-content">
+				NETWORK: <br>
+				login.asp
+				</div>
+				<p> Sebuah tanda bintang bisa digunakan untuk mengindikasikan bahwa semua resource/file lainnya memerlukan sebuah koneksi internet: </p>
+				<div class="example-content">
+				NETWORK: <br>
+				*
+				</div>
+			</article>
+</section>
+<section>
+			<article>	
+				<h2>FALLBACK </h2>
+				<p> Bagian <b>FALLBACK</b> dibawah ini menentukan bahwa "offline.html" akan disajikan dalam tempat dari semua file di katalog <b>/html/</b>, pada kasus suatu koneksi internet tidak bisa dibentuk:</p>
+				<div class="example-content">
+				FALLBACK: <br>
+				/html/ /offline.html
+				</div>
+				<div class="nasehat">
+				<b>Catatan:</b> URI pertama adalah resource (sumber), yang kedua adalah fallback.
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Updating the Cache </h2>
+				<p> Pembaharuan Cache </p>
+				<p> Sekali aplikasi di-cache, applikasi tetap di-cached sampai salah satu hal berikut terjadi: </p>
+				<ul>
+					<li> User membersihkan browser's cache </li>
+					<li> File manifest dimodifikasi (lihat tips dibawah)</li>
+					<li> Application cache diperbaharui secara otonatis </li>
+				</ul>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Example - Complete Cache Manifest File</h2>
+				<p> Contoh - Cache Manifest File Lengkap </p>
+				
+				<div class="example-content">
+				CACHE MANIFEST <br>
+				# 2012-02-21 v1.0.0 <br>
+				/theme.css <br>
+				/logo.gif <br>
+				/main.js <br>
+				<br>
+				NETWORK: <br>
+				login.asp <br>
+				<br>
+				FALLBACK: <br>
+				/html/ /offline.html
+				</div>
+				
+				<div class="nasehat">
+				<b>Tip:</b> Baris dimulai dengan sebuah tanda "#" merupakan baris comment, tapi bisa juga melayani maksud lainnya.
+				Sebuah cache applikasi hanya diperbaharui ketika file manifestnya berubah. Jika kamu mengedit sebuah gambar atau mengubah sebuah fungsi JavaScript, 
+				perubahan - perubahan itu tidak akan di-"re-cache". Pembaharuan tanggal (date) dan versi dalam sebuah baris comment merupakan satu cara untuk membuat browser me-"re-cache" file kamu. 
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Notes on Application Cache </h2>
+				<p> Catatan - catatan di Application Cache</p>
+				<p> Berhati - hatilah dengan apa yang kamu <b>cache</b>. </p>
+				<p> Sekali sebuah file di-cache, browser akan meneruskan atau terus menampilkan veris yang di-cache, bahkan jika kamu mengubah file pada server. 
+				Untuk memastikan browser memperbaharui cache, kamu perlu mengubah file manifest. </p>
+				<div class="nasehat">
+				<b>Catatan:</b> Browser mungkin memiliki batas ukuran yang berbeda - beda untuk cached data (beberapa browser memiliki sebuah batas 5MB limit per site).
+				</div>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML5 local storage.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTMLweb worker.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+<script type="text/javascript">
+function getDateTime(){
+	x = new Date();
+	document.getElementById("timePara").innerHTML= x.getTime();
+}
+</script>
+</body>
+</html>

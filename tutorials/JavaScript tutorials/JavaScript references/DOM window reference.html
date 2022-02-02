@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | JavaScript | JavaScript </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="../tutorial.css">
+<script type="text/javascript" src="../../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../javaScript3.js"></script>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> The HTML DOM Document Object </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> HTML DOM Events </h2>
+				<p> HTML DOM event membolehkan JavaScirpt untuk register event handlers yang berbeda pada element di sebuah dokumen HTML.</p>
+				<p> Event normalnya digunakan pada kombinasi dengan fungsi dan fungsi tidak akan dieksekusi sebelum event terjadi (seperti ketika user mengklik button).</p>
+				
+				<table>
+					<thead>
+						<tr>
+							<th>Event</th>
+							<th>Deskripsi</th>
+							<th>anggota dari</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>abort</td>
+							<td>Event terjadi ketika sedang memuat sebuah media yang dibatalkan</td>
+							<td>UiEvent, Event</td>
+						</tr>
+						<tr>
+							<td> afterprint </td>
+							<td> Event terjadi ketika page telah mulai mencetak (printing), atau jika print dialogue box sudah ditutup </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> animationend </td>
+							<td> Event terjadi ketika CSS animation telah complete atau selesai </td>
+							<td>  AnimationEvent </td>
+						</tr>
+						<tr>
+							<td> animationiteration </td>
+							<td> Event terjadi ketika CSS animation dibolak-balik (repeated) </td>
+							<td>  AnimationEvent </td>
+						</tr>
+						<tr>
+							<td> animationstart </td>
+							<td> Event terjadi ketika CSS animation telah dimulai </td>
+							<td> AnimationEvent </td>
+						</tr>
+						<tr>
+							<td> beforeprint </td>
+							<td> Event terjadi ketika halaman (page) hampir dicetak </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> beforeunload </td>
+							<td> Event terjadi ketika dokumen hampir di-unload (dibongkar)</td>
+							<td> UiEvent, Event </td>
+						</tr>
+						<tr>
+							<td> blur </td>
+							<td> Event terjadi ketika sebuah element kehilangan fokus </td>
+							<td> FovusEvent </td>
+						</tr>
+						<tr>
+							<td> canplay </td>
+							<td> Event terjadi ketika browser bisa mulai memainkan media (ketika ia telah buffered cukup untuk dimulai) </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> canplaythrough </td>
+							<td> Event terjadi ketika browser bisa mulai memainkan sepanjang media tanpa menghentikan buffering </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> change </td>
+							<td> Event terjadi ketika konten dari elemen <b>form</b>, selection, atau keadaan yang dicek telah berubah (untuk <<b>input</b>>, <<b>select</b>>, dan <<b>textarea</b>>) </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> click </td>
+							<td> Event terjadi ketika user mengklik pads sebuah element  </td>
+							<td> MouseEvent </td>
+						</tr>
+						<tr>
+							<td> contextmenu </td>
+							<td> Event terjadi ketika user mengklik-kanan pada element untuk membuak sebuah context menu </td>
+							<td> MouseEvent </td>
+						</tr>
+						<tr>
+							<td> copy </td>
+							<td> Event terjadi ketika user menyalin konten dari element  </td>
+							<td> ClipboardEvent </td>
+						</tr>
+						<tr>
+							<td> cut </td>
+							<td> Event terjadi ketika user memotong (cut) konten element </td>
+							<td> ClipboardEvent </td>
+						</tr>
+						<tr>
+							<td> dblclick </td>
+							<td> Event terjadi ketika user mengklik-dobel pada element </td>
+							<td> MouseEvent </td>
+						</tr>
+						<tr>
+							<td> drag </td>
+							<td> Event terjadi ketika sebuah element sedang di-drag </td>
+							<td> DragEvent </td>
+						</tr>
+						<tr>
+							<td> dragend </td>
+							<td> Event terjadi ketika user telah selesai men-drag element </td>
+							<td> DragEvent </td>
+						</tr>
+						<tr>
+							<td> dragenter </td>
+							<td> Event terjadi ketika dragged element masuk (enter) drop target (tempat peletakan) </td>
+							<td> DragEvent </td>
+						</tr>
+						<tr>
+							<td> dragleave </td>
+							<td> Event terjadi ketika dragged element meninggal drop target (tempat peletakan)  </td>
+							<td> DragEvent </td>
+						</tr>
+						<tr>
+							<td> dragover </td>
+							<td> Event terjadi ketika dragged element berada diatas/melebihi (over) drop target </td>
+							<td> DragEvent </td>
+						</tr>
+						<tr>
+							<td> dragstart </td>
+							<td> Event terjadi ketika pengguna mulai men-drag sebuah element </td>
+							<td> DragEvent </td>
+						</tr>
+						<tr>
+							<td> drop </td>
+							<td> Event terjadi ketika dragged element diletakan (dropped) di drop target </td>
+							<td> DragEvent </td>
+						</tr>
+						<tr>
+							<td> durationchange </td>
+							<td> Event terjadi ketika durasi dari media diubah </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> ended </td>
+							<td> Event terjadi ketika media mempunyai jangkauan akhir (berguna untuk pesan seperti "thanks for listening") </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> error </td>
+							<td> Event terjadi ketika error terjadi saat memuat sebuah external file </td>
+							<td> ProgressEvent, UiEvent, Event </td>
+						</tr>
+						<tr>
+							<td> focus </td>
+							<td> Event terjadi ketika sebauh element mendapat fokus </td>
+							<td> FocusEvent </td>
+						</tr>
+						<tr>
+							<td> focusin </td>
+							<td> Event terjadi ketika sebuah element hampir mendapat fokus </td>
+							<td> FocusEvent </td>
+						</tr>
+						<tr>
+							<td> focusout </td>
+							<td> Event terjadi ketika sebuah element hampir kehilangan fokus </td>
+							<td> FocusEvent </td>
+						</tr>
+						<tr>
+							<td> fullscreenchange </td>
+							<td> Event terjadi ketika sebuah element ditampilkan dalam mode fullscreen</td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> fullscreenerror </td>
+							<td> Event terjadi ketika sebuah element tidak bisa ditampilkan dalam mode fullscreen </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> hashchange </td>
+							<td> Event terjadi ketika ada sudah/sedang berubah menjadi bagian anchor dari sebuah URL </td>
+							<td> HashChangeEvent </td>
+						</tr>
+						<tr>
+							<td> input </td>
+							<td> Event terjadi ketika sebuah element mendapat input pengguna</td>
+							<td> InputEvent, Event </td>
+						</tr>
+						<tr>
+							<td> invalid </td>
+							<td> Event terjadi ketika sebuah element tidak valid </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> keydown </td>
+							<td> Event terjadi ketika user sedang menekan sebuah kunci (key) </td>
+							<td> KeyboardEvent </td>
+						</tr>
+						<tr>
+							<td> keypress </td>
+							<td> Event terjadi ketika user menekan sebuah kunci (key) </td>
+							<td> KeyboardEvent </td>
+						</tr>
+						<tr>
+							<td> keyup </td>
+							<td> Event terjadi ketika user melepaskan sebuah kunci </td>
+							<td> KeyboardEvent </td>
+						</tr>
+						<tr>
+							<td> load </td>
+							<td> Event terjadi ketika sebuah object telah dimuat </td>
+							<td> UiEvent, Event </td>
+						</tr>
+						<tr>
+							<td> loadeddata </td>
+							<td> Event terjadi ketika media data dimuat </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> loadedmetadata </td>
+							<td> Event terjadi ketika meta data (seperti dimensi dan durasi) dimuat </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> loadstart </td>
+							<td> Event terjadi ketika browser mulai mencari media tertentu </td>
+							<td> ProgressEvent </td>
+						</tr>
+						<tr>
+							<td> message </td>
+							<td> Event terjadi ketika sebuah pesan diterima melalui event source (sumber event) </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> mousedown </td>
+							<td> Event terjadi ketika user menekan tombol mouse pada sebuah element</td>
+							<td> MouseEvent </td>
+						</tr>
+						<tr>
+							<td> mouseenter </td>
+							<td> Event terjadi ketika pointer digerakan diatas/kedalam sebuah element </td>
+							<td> MouseEvent </td>
+						</tr>
+						<tr>
+							<td> mouseleave </td>
+							<td> Event terjadi ketika pointer digerakan keluar dari sebuah element </td>
+							<td> MouseEvent </td>
+						</tr>
+						<tr>
+							<td> mousemove </td>
+							<td> Event terjadi ketika pointer sedang bergerakan saat pointer berada diatas sebuah element</td>
+							<td> MouseEvent </td>
+						</tr>
+						<tr>
+							<td> mouseover </td>
+							<td> Event terjadi ketika pointer digerakan kedalam/keatas sebuah element, atau kedalam salah satu anak/turunan nya (its children) </td>
+							<td> MouseEvent </td>
+						</tr>
+						<tr>
+							<td> mouseout </td>
+							<td> Event terjadi ketika user mengerakan pointer (penunjuk) mouse keluar dari sebuah element, atau keluar dari anaknya (its children)  </td>
+							<td> MouseEvent </td>
+						</tr>
+						<tr>
+							<td> mouseup </td>
+							<td> Event terjadi ketika user melepaskan tombol mouse diluar element</td>
+							<td> MouseEvent </td>
+						</tr>
+						<tr>
+							<td> mousewheel </td>
+							<td> <span class="justRed">Diprotes</span>. Gunakalah wheel event sebagai pengganti </td>
+							<td> WheelEvent </td>
+						</tr>
+						<tr>
+							<td> offline </td>
+							<td> Event terjadi ketika browser mulai bekerja (dalam keadaan) offline </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> online </td>
+							<td> Event terjadi ketika browser mulai bekerja (dalam keadaan) online  </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> open </td>
+							<td> Event terjadi ketika sebuah koneksi dengan sumber event dibukan </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> pagehide </td>
+							<td> Event terjadi ketika user menavigasi jauh dari sebuah webpage</td>
+							<td> PageTransitionEvent </td>
+						</tr>
+						<tr>
+							<td> pageshow </td>
+							<td> Event terjadi ketika user menavigasi ke sebuah webpage </td>
+							<td> PageTransitionEvent </td>
+						</tr>
+						<tr>
+							<td> paste </td>
+							<td> Event terjadi ketika user menempelkan (paste) beberapa konten dalam sebuah element </td>
+							<td> ClipboardEvent </td>
+						</tr>
+						<tr>
+							<td> pause </td>
+							<td> Event terjadi ketika media yang dijeda (paused) salah satu oelh user atau secara programmatis </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> play </td>
+							<td> Event terjadi ketika media telah dimulai atau tidak lama dipause </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> playing </td>
+							<td> Event terjadi ketika media sedang dimainkan setelah dijeda (paused) atau dihentikan untuk buffering</td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> popstate </td>
+							<td> Event terjadi ketika histori window berubah  </td>
+							<td> PopStateEvent </td>
+						</tr>
+						<tr>
+							<td> progress </td>
+							<td> Event terjadi ketika browser berada dslam proses tentang mendapatkan media data (pengunduhan media) </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> ratechange </td>
+							<td> Event terjadi ketika kecepatan memainkan dari media diubah</td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> resize </td>
+							<td> Event terjadi ketika document view di-resize </td>
+							<td> UiEvent, Event </td>
+						</tr>
+						<tr>
+							<td> reset </td>
+							<td> Event terjadi ketika sebuah form di-reset </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> scroll </td>
+							<td> Event terjadi ketika sebuah scrollbar element sedang di scroll </td>
+							<td> UiEvent, Event </td>
+						</tr>
+						<tr>
+							<td> search </td>
+							<td> Event terjadi ketika user menulis sesuatu dalam bidang pencarian (untuk <<b>input</b>=<span class="teal">"search"</span>>) </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> seeked </td>
+							<td> Event terjadi ketika user sedang mengakhiri pergerakan/melompati sebuah posisi baru pada media </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> seeking </td>
+							<td> Event terjadi ketika user memulai pergerakan/pelompatan untuk sebuah posisi barudalam media </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> select </td>
+							<td> Event terjadi setelah user menyeleksi beberapa teks (untuk <<b>input</b>> dan <<b>textarea</b>>) </td>
+							<td> UiEvent, Event </td>
+						</tr>
+						<tr>
+							<td> show </td>
+							<td> Event terjadi ketika sebuah element <<b>menu</b>> ditampilkan sebagai sebuah context menu  </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> stalled </td>
+							<td> Event terjadi ketika browser sedang mencoba untuk mendapatkan media data, tapi data tidak tersedia </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> storage </td>
+							<td> Event terjadi ketika sebuah Web Storage area diperbaharui</td>
+							<td> StorageEvent </td>
+						</tr>
+						<tr>
+							<td> submit </td>
+							<td> Event terjadi ketika sebuah form (formulir) diserahkan </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> suspend </td>
+							<td> Event terjadi ketika browser dengan sengaja tidak sedang mendapatkan media data </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> timeupdate </td>
+							<td> Event terjadi ketika posisi bermain telah diubah (seperti ketika user cepat kedepan untuk sebuah titik berbeda dalam media) </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> toggle </td>
+							<td> Event terjadi ketika user membuka atau menutup element <<b>details</b>></td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> touchcancel </td>
+							<td> Event terjadi ketika touch (sentuhan) is interrupted (disela) </td>
+							<td> TouchEvent </td>
+						</tr>
+						<tr>
+							<td> touchend </td>
+							<td> Event terjadi ketika jari (finger) dicopot dari touch screen </td>
+							<td> TouchEvent </td>
+						</tr>
+						<tr>
+							<td> touchmove </td>
+							<td> Event terjadi ketika jari (finger) di-drag dari satu sisi ke sisi lain layar</td>
+							<td> TouchEvent </td>
+						</tr>
+						<tr>
+							<td> touchstart </td>
+							<td> Event terjadi ketika jari (finger) ditempatkan pada touch screen (layar sentuh) </td>
+							<td> TouchScreen </td>
+						</tr>
+						<tr>
+							<td> transitionend </td>
+							<td> Event terjadi ketika sebuah CSS transition telah lengkap atau selesai </td>
+							<td> TransitionEvent </td>
+						</tr>
+						<tr>
+							<td> unload </td>
+							<td> Event terjadi sekali halaman telah membongkar (untuk <<b>body</b>>)  </td>
+							<td> UiEvent, Event </td>
+						</tr>
+						<tr>
+							<td> volumechange </td>
+							<td> Event terjadi ketika volume dari media telah berubah (termasuk pengaturan volume untuk "mute")  </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> waiting </td>
+							<td> Event terjadi ketika media telah dijeda (paused) tapi diharapkan untuk resume atau dimulai lagi (seperti ketika media mem-pause untuk memperlancar (buffer) lebih data) </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> wheel </td>
+							<td> Event terjadi ketika mouse berputar menggulung keatas atau kebawah diatas sebuah element </td>
+							<td> WheelEvent </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>HTML DOM Event Properties and Methods</h2>
+				
+				<table>
+					<thead>
+						<tr>
+							<th>Properti/Metode</th>
+							<th>Deskripsi</th>
+							<th>Anggota dari</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> altKey </td>
+							<td> Mengembalikan apakah kunci "ALT" ditekan ketika mouse event dicetuskan </td>
+							<td> MouseEvent </td>
+						</tr>
+						<tr>
+							<td> altKey </td>
+							<td> Mengembalikan apakah kunci "ALT" ditekan ketika key event dicetuskan </td>
+							<td> KeyboardEvent, TouchEvent </td>
+						</tr>
+						<tr>
+							<td> animationName </td>
+							<td> Mengembalikan nama dari animasi </td>
+							<td> AnimationEvent </td>
+						</tr>
+						<tr>
+							<td> bubbles </td>
+							<td> Mengembalikan apakah (iya) atau bukan sebuah event tertentu adalah bubling event (event gelembung) </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> button </td>
+							<td> Mengembalikan yang mana tombol mouse yang ditekan ketika mouse event dicetuskan  </td>
+							<td> MouseEvent </td>
+						</tr>
+						<tr>
+							<td> buttons </td>
+							<td> Mengembalikan yang mana tombol-tombol mouse ditekan ketika mouse event dicetuskan </td>
+							<td> MouseEvent </td>
+						</tr>
+						<tr>
+							<td> cancelable </td>
+							<td> Mengembalikan apakah (iya) atau bukan sebuah event bisa memiliki defaul action -nya tersisih </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> charCode </td>
+							<td> Mengembalikan Unicode character kode tentang kunya yang mencetuskan <b>onkeypress</b> event </td>
+							<td> KeyboardEvent </td>
+						</tr>
+						<tr>
+							<td> changeTouches </td>
+							<td> Mengembalikan sebuah daftar tentang semua touch objects siapa punya keadaan berubah antara previous touch dan this touch </td>
+							<td> TouchEvent </td>
+						</tr>
+						<tr>
+							<td> clientX </td>
+							<td> Mengembalikan koordinat horizontal dari mouse pointer, relatif untuk window saat ini, ketika mouse event dicetuskan </td>
+							<td> MouseEvent, TouchEvent </td>
+						</tr>
+						<tr>
+							<td> clientY </td>
+							<td> Mengembalikan koordinat vertikal dari mouse pointer, relatif untuk window saat ini, ketika mouse event dicetuskan </td>
+							<td> MouseEvent, TouchEvent </td>
+						</tr>
+						<tr>
+							<td> clipboardData </td>
+							<td> Mengembalikan sebuah object berisikan data terpengaruh oleh operasi clipboard </td>
+							<td> ClipboardData </td>
+						</tr>
+						<tr>
+							<td> code </td>
+							<td> Mengembalikan kode dari kunci (key) yang mencetus event </td>
+							<td> KeyboardEvent </td>
+						</tr>
+						<tr>
+							<td> composed </td>
+							<td> Mengembalikan apakah event disusun (composed) atau tidak </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> createEvent() </td>
+							<td> Membuat sebuah event baru </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> ctrlKey </td>
+							<td> Mengembalikan apakah kunci "CRTL" ditekan ketika <b>mouse</b> event dicetuskan </td>
+							<td> MouseEvent </td>
+						</tr>
+						<tr>
+							<td> ctrlKey </td>
+							<td> Mengembalikan apakah kunci "CTRL" ditekan ketika <b>key</b> event dicetuskan  </td>
+							<td> KeyboardEvent, TouchEvent </td>
+						</tr>
+						<tr>
+							<td> currentTarget </td>
+							<td> Mengembalikan element yang event listeners (nya) mencetuskan event  </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> data </td>
+							<td> Mengembalikan karakter-karakter yang disisipkan </td>
+							<td> InputEvent </td>
+						</tr>
+						<tr>
+							<td> dataTransfer </td>
+							<td> Mengembalikan sebuah object yang berisikan data yang (sedang) digeser (draged)/diletakan (dropped) atau disisipkan/dihapus </td>
+							<td> DragEvent, InputEvent </td>
+						</tr>
+						<tr>
+							<td> defaultPrevented </td>
+							<td> Mengembalikan apakah (iya) atau bukan metode <b>preventedDefault()</b> dipanggil untuk event </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> deltaX </td>
+							<td> Mengembalikan horizontal scroll jumlah dari sebuah mouse wheel (sumbu-x) <br>
+							Returns the horizontal scroll amount of a mouse wheel (x-axis)	  </td>
+							<td> WheelEvent </td>
+						</tr>
+						<tr>
+							<td> deltaY </td>
+							<td> Mengembalikan vertical scroll jumlah dari sebuah mouse wheel (sumbu-y) <br>
+							Returns the vertical scroll amount of a mouse wheel (y-axis)	  </td>
+							<td> WheelEvent </td>
+						</tr>
+						<tr>
+							<td> deltaZ </td>
+							<td> Mengembalikan scroll jumlah dari sebuah mouse wheel untuk sumbu-z <br>
+							Returns the scroll amount of a mouse wheel for the z-axis  </td>
+							<td> WheelEvent </td>
+						</tr>
+						<tr>
+							<td> deltaMode </td>
+							<td> Mengembalikan nomor yang mempresentasikan satuan (unit) dari ukuran (measurement) untuk nilai delta (pixels, lines, atau page)  </td>
+							<td> WheelEvent </td>
+						</tr>
+						<tr>
+							<td> detail </td>
+							<td> Mengembalikan nomor yang mengindikasikan berapa banyak waktu mouse diklik </td>
+							<td> UiEvent </td>
+						</tr>
+						<tr>
+							<td> elapsedTime </td>
+							<td> Mengembalikan nomor dari (satuan) detik suatu animasi sedang/telah berjalan  </td>
+							<td> AnimationEvent </td>
+						</tr>
+						<tr>
+							<td> elapsedTime </td>
+							<td> Mengembalikan nomor dari (satuan) detik suatu transisi sedang/telah berjalan  </td>
+							<td>  </td>
+						</tr>
+						<tr>
+							<td> eventPhase </td>
+							<td> Mengembalikan yang mana phase/tahap daru event flow secara sekarang sedang dievaluasi </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> getTargetRanges() </td>
+							<td> Mengembalikan sebuah array yang berisikan target ranges (jarak target) yang akan dipengaruhi oleh insertion/deletion </td>
+							<td> InputEvent </td>
+						</tr>
+						<tr>
+							<td> getModifierState() </td>
+							<td> Mengembalikan sebuah array yang berisikan target ranges (jarak target) yang akan dipengaruhi oleh insertion/deletion </td>
+							<td> MouseEvent </td>
+						</tr>
+						<tr>
+							<td> inputType </td>
+							<td> Mengembalikan tipe dari perubahan (i,e "inserting" atau "deleting") </td>
+							<td> InputEvent </td>
+						</tr>
+						<tr>
+							<td> isComposing </td>
+							<td> Mengembalikan apakah keadaan (state) dari event sedang mengubah atau tida  </td>
+							<td> InputEvent, KeyboardEvent </td>
+						</tr>
+						<tr>
+							<td> isTrusted </td>
+							<td> Mengembalikan apakah (iya) atau tidak sebuah event dipercaya </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> key </td>
+							<td> Mengembalikan nilai kunci daru kunci yang dipresentasikan oleh  event </td>
+							<td> KeyboardEvent </td>
+						</tr>
+						<tr>
+							<td> key </td>
+							<td> Mengembalikan kunci (key) tentang penyimpanan item yang diubah </td>
+							<td> StorageEvent </td>
+						</tr>
+						<tr>
+							<td> keyCode </td>
+							<td> Mengembalikan kode karakter Unicode dari kunci (key) yang dicetuskan event <b>onkeypress</b>, 
+							atau kode kunci Unicode tentang kunci yang dicetuskan event <b>onkeydown</b> atau <b>onkeyup</b> </td>
+							<td> KeyboardEvent </td>
+						</tr>
+						<tr>
+							<td> location </td>
+							<td> Mengembalikan lokasi dari sebuah kunci pada keyboard atau device </td>
+							<td> KeyboardEvent </td>
+						</tr>
+						<tr>
+							<td> lengthComputable </td>
+							<td> Mengembalikan apakah panjang (length) dari progress bisa diperhitungkan atau tidak </td>
+							<td> ProgressEvent </td>
+						</tr>
+						<tr>
+							<td> loaded </td>
+							<td> Mengembalikan berapa banyak tugas (work) yang telah dimuat </td>
+							<td> ProgressEvent </td>
+						</tr>
+						<tr>
+							<td> metaKey </td>
+							<td> Mengembalikan apakah "META" key ditekan saat sebuah event dicetuskan </td>
+							<td> MouseEvent </td>
+						</tr>
+						<tr>
+							<td> metaKey </td>
+							<td> Mengembalikan apakah "meta" key ditekan saat <b>key</b> event dicetuskan  </td>
+							<td> KeyboardEvent, TouchEvent </td>
+						</tr>
+						<tr>
+							<td> MovementX </td>
+							<td> Mengembalikan koordinat horizontal dari penunjuk mouse (pointer) relatif ke posisi dari event <b>mousemove</b> terakhir  </td>
+							<td> MouseEvent </td>
+						</tr>
+						<tr>
+							<td> MovementY </td>
+							<td> Mengembalikan koordinat vertikal dari penunjuk mouse (pointer) relatif ke posisi dari event <b>mousemove</b> terakhir  </td>
+							<td> MouseEvent </td>
+						</tr>
+						<tr>
+							<td>  </td>
+							<td> Mengembalikan   </td>
+							<td>  </td>
+						</tr>
+						<tr>
+							<td> newValue </td>
+							<td> Mengembalikan nilai baru dari penyimpanan item yang diubah  </td>
+							<td> StorageEvent </td>
+						</tr>
+						<tr>
+							<td> newURL </td>
+							<td> Mengembalikan URL dari dokumen, setelay hash sudah diubah </td>
+							<td> HasChangeEvent </td>
+						</tr>
+						<tr>
+							<td> offsetX </td>
+							<td> Mengembalikan koordinat horizontal dari penunjuk mouse (pointer) relatif ke posisi dari tepi dari elemen target  </td>
+							<td> MouseEvent </td>
+						</tr>
+						<tr>
+							<td> offsetY </td>
+							<td> Mengembalikan koordinat vertikal dari penunjuk mouse (pointer) relatif ke posisi dari tepi dari elemen target  </td>
+							<td> MouseEvent </td>
+						</tr>
+						<tr>
+							<td> oldValue </td>
+							<td> Mengembalikan nilai lama dari penyimpanan item (storage itenm) yang diubah </td>
+							<td> StorageEvent </td>
+						</tr>
+						<tr>
+							<td> oldURL </td>
+							<td> Mengembalikan URL dari dokumen, sebelum hash diubah  </td>
+							<td> HasChangeEvent </td>
+						</tr>
+						<tr>
+							<td> onemptied </td>
+							<td> Event terjadi ketika sesuatu yang buruk terjadi dan file media secara tiba-tiba tidak tersedia (seperti disconnect secara tak terduga) </td>
+							<td>  </td>
+						</tr>
+						<tr>
+							<td> pageX </td>
+							<td> Mengembalikan koordinat horizontal dari penunjuk mouse (pointer), relatif ke dokumen, ketika event <b>mouse</b> dicetuskan </td>
+							<td> MouseEvent </td>
+						</tr>
+						<tr>
+							<td> pageY </td>
+							<td> Mengembalikan koordinat vertikal dari penunjuk mouse (pointer), relatif ke dokumen, ketika event <b>mouse</b> dicetuskan </td>
+							<td> MouseEvent </td>
+						</tr>
+						<tr>
+							<td> persisted </td>
+							<td> Mengembalikan apakah webpage di-cached oleh browser </td>
+							<td> PageTransitionEvent </td>
+						</tr>
+						<tr>
+							<td> preventDefault() </td>
+							<td> Membatalkan event jika ia dapat dibatalkan, artinya bahwa default action itu anggota dari event yang tidak akan terjadi </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> propertyName </td>
+							<td> Mengembalikan nama dari CSS property yang berhubungan dengan animation atau transition </td>
+							<td> AnimationEvent, TransitionEvent </td>
+						</tr>
+						<tr>
+							<td> pseudoElement </td>
+							<td> Mengembalikan nama dari pseudo-element dari animation atau transition  </td>
+							<td> AnimationEvent, TransitionEvent </td>
+						</tr>
+						<tr>
+							<td> region </td>
+							<td>  </td>
+							<td> MouseEvent </td>
+						</tr>
+						<tr>
+							<td> relatedTarget </td>
+							<td> Mengembalikan element yang berkaitan dengan element yang mencetuskan event <b>mouse</b> </td>
+							<td> MouseEvent </td>
+						</tr>
+						<tr>
+							<td> relatedTarget </td>
+							<td> Mengembalikan element yang berkaitan dengan element yang mencetuskan event </td>
+							<td> FocusEvent </td>
+						</tr>
+						<tr>
+							<td> repeat </td>
+							<td> Mengembalikan apakah sebuah kunci sedang digenggam kebawah dengan mengulang, atau tidak </td>
+							<td> KeyboardEvent </td>
+						</tr>
+						<tr>
+							<td> screenX </td>
+							<td> Mengembalikan koordinat horizontal dari penunjuk mouse (pointer), relatif ke screen (layar), ketika sebuah event dicetuskan </td>
+							<td> MouseEvent </td>
+						</tr>
+						<tr>
+							<td> screenY </td>
+							<td> Mengembalikan koordinat vertikal dari penunjuk mouse (pointer), relatif ke screen (layar), ketika sebuah event dicetuskan </td>
+							<td> MouseEvent </td>
+						</tr>
+						<tr>
+							<td> shiftKey </td>
+							<td> Mengembalikan apakah "SHIFT" key ditekan ketika sebuah event dicetuskan   </td>
+							<td> MouseEvent </td>
+						</tr>
+						<tr>
+							<td> shiftKey </td>
+							<td> Mengembalikan apakah "SHIFT" key ditekan ketika <b>key</b> event dicetuskan  </td>
+							<td> KeyboardEvent, TouchEvent </td>
+						</tr>
+						<tr>
+							<td> state </td>
+							<td> Mengembalikan sebuah object yang berisikan sebuah salinan dari history entries </td>
+							<td> PopStateEvent </td>
+						</tr>
+						<tr>
+							<td> stopImmediatePropagation() </td>
+							<td> Mencegah listener lain dari event yang sama dari yang dipanggil </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> stopPropagation() </td>
+							<td> Mencegah further propagation (perkembangbiakan secara lebih lanjut) dari sebuah event selama event mengalir (flow) </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> storageArea </td>
+							<td> Returns an obje   representing the affected storage object </td>
+							<td> StorageEvent </td>
+						</tr>
+						<tr>
+							<td> target </td>
+							<td> Mengembalikan elemeht yang dicetuskan (triggered) event  </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> targetTouch </td>
+							<td> Mengembalikan sebuah daftar tentang semua touch objets yang berada dalam kontak dengan surface dan dimana <b>touchstart</b> event terjadi pada target element yang sama seperti target element saat ini  </td>
+							<td> TouchEvent </td>
+						</tr>
+						<tr>
+							<td> timeStamp </td>
+							<td> Mengembalikan waktu (dalam satuan milidetik relatif ke epoch) pada yang mana event dibuat </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> total </td>
+							<td> Mengembalikan jumlah total dari tugas yang akan dimuat </td>
+							<td> ProgressEvent </td>
+						</tr>
+						<tr>
+							<td> touches </td>
+							<td> Mengembalikan sebuah daftar tentang semua touch objects yang dengan sekarang berada pada kontak dengan surface  </td>
+							<td> TouchEvent </td>
+						</tr>
+						<tr>
+							<td> transitionend </td>
+							<td> Event terjadi ketika sebuah CSS transition telah lengkap/selesai </td>
+							<td> TransitionEvent </td>
+						</tr>
+						<tr>
+							<td> type </td>
+							<td> Mengembalikan nama dari event </td>
+							<td> Event </td>
+						</tr>
+						<tr>
+							<td> url </td>
+							<td> Mengembalikan URL dari dokumen item terubah </td>
+							<td> StorageEvent </td>
+						</tr>
+						<tr>
+							<td> which </td>
+							<td> Mengembalikan yang mana tombol mouse yang ditekan saat <b>mouse</b> event dicetuskan </td>
+							<td> MouseEvent </td>
+						</tr>
+						<tr>
+							<td> which </td>
+							<td> Mengembalikan kode karakter Unicode dari key yang dicetuskan <b>onkeypress</b> event, atau kode kunci Unicode dari key yang dicetuskan  <b>onkeydown</b> atau <b>onkeyup</b> event </td>
+							<td> KeyboardEvent </td>
+						</tr>
+						<tr>
+							<td> view </td>
+							<td> Mengembalikan sebuah referensi untuk <b>Window</b> object dimana event terjadi </td>
+							<td> UiEvent </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="BOM .html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="BOM .html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

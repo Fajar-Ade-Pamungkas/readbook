@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML5 SVG reference </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+<style type="text/css">
+table {
+	overflow:visible;
+	width:100%;
+	
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch()"> HTML Tutorial</button>
+			<div class="drop-content" id="myDropdown">
+			<input type="text" class="myInput" id="myInput" placeholder="Cari" onkeyup="filterFunction()"/>
+			<ol>
+				<a href="HTML HOME.html" > <li>HOME</li> </a>
+				<a href="HTML introduction.html" > <li> Pengenalan </li> </a>
+				<a href="HTML textEditor.html" > <li> Text Editor </li> </a>
+				<a href="HTML basic.html" > <li> Dasar </li> </a>
+				<a href="HTML elements.html" > <li> Element </li> </a>
+				<a href="HTML attributes.html" > <li> Attribute </li> </a>
+				<a href="HTML headings.html" > <li> Heading </li> </a>
+				<a href="HTML paragraphs.html" > <li> Paragraf </li> </a>
+				<a href="HTML styles.html" > <li> Style </li> </a>
+				<a href="HTML formatting.html" > <li> Formatting </li> </a>
+				<a href="HTML quotations.html" > <li> Tanda Petik </li> </a>
+				<a href="HTML computercode.html" > <li> Kode Komputer </li> </a>
+				<a href="HTML comments.html" > <li> Komentar </li> </a>
+				<a href="HTML colors.html" > <li> Warna </li> </a>
+				<a href="HTML CSS.html" > <li> CSS </li> </a>
+				<a href="HTML links.html" > <li> Link </li> </a>
+				<a href="HTML images.html" > <li> Gambar </li> </a>
+				<a href="HTML tables.html" > <li> Tabel </li> </a>
+				<a href="HTML lists.html" > <li> Daftar </li> </a>
+				<a href="HTML blocks.html" > <li> Blok </li> </a>
+				<a href="HTML classes.html" > <li> Class </li> </a>
+				<a href="HTML layout.html" > <li> Layout </li> </a>
+				<a href="HTML responsive.html" > <li> Respon </li> </a>
+				<a href="HTML iframes.html" > <li class="redZone"> Iframes </li> </a>
+				<a href="HTML JavaScript.html" > <li> JavaScript </li> </a>
+				<a href="HTML head.html" > <li> Head </li> </a>
+				<a href="HTML entities.html" > <li> Entities </li> </a>
+				<a href="HTML symbols.html" > <li> Simbol </li> </a>
+				<a href="HTML charset.html" > <li> Charset </li> </a>
+				<a href="HTML URL encode.html" > <li> URL Encode </li> </a>
+				<a href="HTML XHTML.html" > <li> XHTML </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch2()"> HTML Form</button>
+			<div class="drop-content" id="myDropdown2">
+			<input type="text" class="myInput" id="myInput2" placeholder="Cari" onkeyup="filterFunction2()"/>
+			<ol>
+				<a href="HTML forms.html" > <li> Formulir </li> </a>
+				<a href="HTML form elements.html" > <li> Elemen Formulir </li> </a>
+				<a href="HTML input types.html" > <li> Tipe Input </li> </a>
+				<a href="HTML input attributes.html" > <li> Attribute input </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch3()"> HTML5 </button>
+			<div class="drop-content" id="myDropdown3">
+			<input type="text" class="myInput" id="myInput3" placeholder="Cari" onkeyup="filterFunction3()"/>
+			<ol>
+				<a href="HTML5 intro.html" > <li> Pengenalan HTM5 </li> </a>
+				<a href="HTML5 support.html" > <li> Support HTML5</li> </a>
+				<a href="HTML5 elements.html" > <li> Element HTML5 </li> </a>
+				<a href="HTML5 semantics.html" > <li> Semantik HTML5</li> </a>
+				<a href="HTML5 migration.html" > <li> Migrasi HTML5</li> </a>
+				<a href="HTML5 style guide.html" > <li> Panduan Style HTML5  </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch4()"> HTML5 Graphics </button>
+			<div class="drop-content" id="myDropdown4">
+			<input type="text" class="myInput" id="myInput4" placeholder="Cari" onkeyup="filterFunction4()"/>
+			<ol>
+				<a href="HTML5 canvas.html" > <li> Canvas </li> </a>
+				<a href="HTML5 SVG.html" > <li> SVG </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch5()"> HTML Media </button>
+			<div class="drop-content" id="myDropdown5">
+			<input type="text" class="myInput" id="myInput5" placeholder="Cari" onkeyup="filterFunction5()"/>
+			<ol>
+				<a href="HTML media.html" > <li> HTML Media </li> </a>
+				<a href="HTML5 video.html" > <li> HTML Video </li> </a>
+				<a href="HTML5 audio.html" > <li> HTML Audio </li> </a>
+				<a href="HTML plug-ins.html" > <li> HTML Plug-ins </li> </a>
+				<a href="HTML YouTube.html" > <li> HTML Youtube </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch6()"> HTML5 APIs </button>
+			<div class="drop-content" id="myDropdown6">
+			<input type="text" class="myInput" id="myInput6" placeholder="Cari" onkeyup="filterFunction6()"/>
+			<ol>
+				<a href="HTML5 geolocation.html" > <li> Geolocation </li> </a>
+				<a href="HTML5 drag or down.html" > <li> Drag or Down </li> </a>
+				<a href="HTML5 local storage.html" > <li> Penyimpanan Lokal </li> </a>
+				<a href="HTML5 application cache.html" > <li> Application Cache </li> </a>
+				<a href="HTML5 web worker.html" > <li> Web Worker </li> </a>
+				<a href="HTML5 SSE.html" > <li> SSE </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch7()"> Canvas Tutorials </button>
+			<div class="drop-content" id="myDropdown7">
+			<input type="text" class="myInput" id="myInput7" placeholder="Cari" onkeyup="filterFunction7()"/>
+			<ol>
+				<li class="title-nav"> Canvas Tutorial</li>
+				<a href="canvas HOME.html" > <li> Canvas Home </li> </a>
+				<a href="canvas drawing.html" > <li> Canvas Drawing </li> </a>
+				<a href="canvas coordinates.html" > <li> Canvas Coordinates </li> </a>
+				<a href="canvas gradients.html" > <li> Canvas Gradient </li> </a>
+				<a href="canvas text.html" > <li> Canvas Text </li> </a>
+				<a href="canvas images.html" > <li> Canvas Images </li> </a>
+			</ol>
+		
+			<ol>
+				<li class="title-nav"> Canvas Clock </li>
+				<a href="canvas clock intro.html" > <li> Clock Intorduction </li> </a>
+				<a href="canvas clock face.html" > <li> Clock Face </li> </a>
+				<a href="canvas clock numbers.html" > <li> Clock Numbers </li> </a>
+				<a href="canvas clock hands.html" > <li> Clock Hands </li> </a>
+				<a href="canvas clock start.html" > <li> Clock Start </li> </a>
+			</ol>
+		
+			<ol>
+				<li class="title-nav"> Canvas Reference </li>
+				<a href="canvas reference.html" > <li> Canvas Reference </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch8()"> SVG Tutorials</button>
+			<div class="drop-content" id="myDropdown8">
+			<input type="text" class="myInput" id="myInput8" placeholder="Cari" onkeyup="filterFunction8()"/>
+			<ol>
+				<li class="title-nav">SVG Tutorials</li>
+				<a href="SVG HOME.html" > <li> SVG Home </li> </a>
+				<a href="SVG in HTML5.html" > <li> SVG in HTML5 </li> </a>
+				<a href="SVG rectangle.html" > <li> SVG Rectangle </li> </a>
+				<a href="SVG circle.html" > <li> SVG Circle </li> </a>
+				<a href="SVG ellipse.html" > <li> SVG Ellipse </li> </a>
+				<a href="SVG line.html" > <li> SVG Line </li> </a>
+				<a href="SVG polygon.html" > <li> SVG Polygon </li> </a>
+				<a href="SVG polyline.html" > <li> SVG Polyline </li> </a>
+				<a href="SVG path.html" > <li> SVG Path </li> </a>
+				<a href="SVG text.html" > <li> SVG Text </li> </a>
+				<a href="SVG stroking.html" > <li> SVG Stroking </li> </a>
+			</ol>
+			
+			<ol>
+				<li class="title-nav">SVG Filter Introduction</li>
+				<a href="SVG filters intro.html" > <li> SVG Filter intoduction </li> </a>
+				<a href="SVG blur effects.html" > <li> SVG Blur Effects </li> </a>
+				<a href="SVG drop shadows.html" > <li> SVG Drop Shadows </li> </a>
+			</ol>
+			
+			<ol>
+				<li class="title-nav">SVG Gradient</li>
+				<a href="SVG linier.html" > <li> SVG Linier </li> </a>
+				<a href="SVG radial.html" > <li> SVG Radial </li> </a>
+			</ol>
+			
+			<ol>
+				<li class="title-nav">SVG Examples</li>
+				<a href="SVG examples.html" > <li> SVG Examples </li> </a>
+			</ol>
+			
+			<ol>
+				<li class="title-nav">SVG Reference</li>
+				<a href="SVG reference.html" > <li> SVG Reference </li> </a>
+			</ol>
+			</div>
+			</div>
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML5 SVG Reference  </h1>
+				
+			</div>
+			
+			
+<section>			
+			<article>
+				<h2>SVG Elements </h2>
+				<h2><b class="justRed">Has not been Finished !</b></h2>
+<!--
+				<table>
+					<thead>
+						<tr>
+							<th> Element </th>
+							<th> Deskripsi </th>
+							<th> Attribute </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> <<b>a</b>> </td>
+							<td> Membuat sebuah link yang mengelilingi element SVG </td>
+							<td> xlink:show <br>
+								xlink:actuate <br>
+								xlink:href <br>
+								target 
+							</td>
+						</tr>
+						<tr>
+							<td> <<b>altGlyph</b>> </td>
+							<td> Menyediakan control over the glyphs mpyang digunakan untuk menyumbang particular charafter data </td>
+							<td> x <br>
+								y <br>
+								dx <br>
+								dy <br>
+								rotate <br>
+								glyphRef <br>
+								format <br>
+								xlink:href <br>
+							</td>
+						</tr>
+						<tr>
+							<td> <<b>altGlyphDef</b>> </td>
+							<td> Mendefinisikan sebuah substitution set (aturan penggantik) untuk glyphs   </td>
+							<td> id </td>
+						</tr>
+						<tr>
+							<td> <<b>altGlyphItem</b>> </td>
+							<td> Mendefinisikan sebuah candidate set dari glyph sustitutions </td>
+							<td> id </td>
+						</tr>
+						<tr>
+							<td> <<b>animate</b>> </td>
+							<td> Mendefinisikan bagaimana sebuah attribute dari element yang mengubah melebihi waktu (changes over time) </td>
+							<td> attributeName="<i> Nama dari attributr target</i>" <br>
+								by="a relative offset value" <br>
+								from="<i>Nilai awal</i>" <br>
+								to="<i>Nilai akhir</i>" <br>
+								dur="<i>Durasi</i>" <br>
+								repeatCount="<i> Waktu animasi akan mengambil tempat</i>"
+							</td>
+						</tr>
+						<tr>
+							<td> <<b>aninateMotion</b>> </td>
+							<td> Menyebabkan sebuah element bereferensi untuk menggerakan selama sebuah motion path </td>
+							<td>  calcMode="<i> mode interpolasi (penyisipan) untuk animasi. Bisa <b>'discrete', 'linear', 'paced', 'spline'</b></i>" <br>
+								path=" <b>the motion path</b>"  <br>
+								keyPoints=" <i>Berapa jauh motion path, object harus bergerak di moment pada waktu</i>"</br>
+								rotate=" <i>Menerapkan sebuah rotation transformation (perubahan rotasi)"</i> <br>
+								xlink:href=" <i> sebuah referensi URI untuk element <<b>path</b>> yang mana itu mendefinisikan motion path </i>" 
+							</td>
+						</tr>
+						<tr>
+							<td> <<b>animateTransform</b>> </td>
+							<td> Menganimasikan sebuah attribute <b>transformation</b> pada element <b>target</b>, dengan demikian pengizinan animasi untuk control translation, scaling, rotation dan/atau skewing</td>
+							<td> by="<i> sebuah nilai pemperseimbang (relative offset value</i>" </br>
+								from="<i>the starting value (nilai awal)</i>" <br>
+								to="<i>the ending value (nilai akhir)</i>" <br>
+								type="<i>Nilai transformation yang mana itu untuk memiliki nilainya yang mengubah melebihi waktu. Bisa jadi 'translate', 'scale', 'rotate', 'skewX', 'skewY'</i>" <br>
+							</td>
+						</tr>
+						<tr>
+							<td> <<b>circle</b>> </td>
+							<td> Mendefinisikan sebuah lingkaran </td>
+							<td> cx="<i>the x-axis center of the circle</i>" <br>
+							cy="<i>the y-axis center of the circle</i>" <br>
+							r="<i>The circle's radius</i>". Required. <br>
+							+ presentation attributes:<br>
+							Color, FillStroke, Graphics
+							</td>
+						</tr>
+						<tr>
+							<td> <<b>clipPath</b>> </td>
+							<td> Clipping is about hiding what normally would be drawn. The stencil which defines what is and what isn't drawn is called a clipping path	</td>
+							<td> clip-path="<i>the referenced clipping path is intersected with the referencing clipping path</i>" <br>
+							clipPathUnits="<i>'userSpaceOnUse' or 'objectBoundingBox'. The second value makes units of children a fraction of the object bounding box which uses the mask (default: 'userSpaceOnUse')</i>" 
+							</td>
+						</tr>
+						<tr>
+							<td> <<b>color-profile</b>> </td>
+							<td> Specifies a color profile description (when the document is styled using CSS)	</td>
+							<td>local="<i>the unique ID for a locally stored color profile</i>" <br>
+							name=""<br>
+							rendering-intent="<i>auto|perceptual|relative-colorimetric|saturation|absolute-colorimetric</i>" <br>
+							xlink:href="<i>the URI of an ICC profile resource</i>"
+							</td>
+						</tr>
+						<tr>
+							<td> <<b>cursor</b>> </td>
+							<td> Defines a platform-independent custom cursor</td>
+							<td> x="<i>the x-axis top-left corner of the cursor (default is 0)</i>" <br>
+							y="<i>the y-axis top-left corner of the cursor (default is 0)</i>" <br>
+							xlink:href="<i>the URI of the image to use as the cursor</i>"
+							</td>
+						</tr>
+						<tr>
+							<td> <<b>defs</b>> </td>
+							<td> A container for referenced elements</td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td> <<b>desc</b>> </td>
+							<td> A text-only description for container elements or graphic elements in SVG (user agents may display the text as a tooltip)	 </td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td> <<b>ellipse</b>> </td>
+							<td> Mendefinisikan sebuah ellipse </td>
+							<td> cx="<i>the x-axis center of the ellipse</i>" <br>
+								cy="<i>the y-axis center of the ellipse</i>" <br>
+								rx="<i>the length of the ellipse's radius along the x-axis</i>". Required. <br>
+								ry="<i>the length of the ellipse's radius along the y-axis</i>". Required. <br>
+								<br>
+								+ presentation attributes: <br>
+								<b>Color, FillStroke, Graphics</b>
+							</td>
+						</tr>
+						<tr>
+							<td> <<b>feBlend</b>> </td>
+							<td> Composes two objects together according to a certain blending mode	<br>
+								mode="<i>the image blending modes: normal|multiply|screen|darken|lighten</i>" <br>
+								in="<i>identifies input for the given filter primitive: SourceGraphic | SourceAlpha | BackgroundImage | BackgroundAlpha | FillPaint | StrokePaint | <<b>filter-primitive-reference</b>></i>"<br>
+								in2="<i>the second input image to the blending operation</i>" <br>
+							</td>
+						</tr>
+						<tr>
+							<td> <b>feColorMatrix</b> </td>
+							<td> SVG filter. Applies a matrix transformation</td>
+							<td></td> 
+						</tr>
+						<tr>
+							<td> <b>feComponentTransfer</b> </td>
+							<td> SVG filter. Performs component-wise remapping of data	</td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td> <b>feComposite</b> </td>
+							<td> SVG filter. </td>
+							<td>  </td>
+						</tr>
+						<tr>
+							<td> <b>feConvolveMatrix</b> </td>
+							<td> SVG filter </td>
+							<td>  </td>
+						</tr>
+						<tr>
+							<td> feDiffuseLighting</td> </td>
+							<td> SVG filter </td>
+							<td>  </td>
+						</tr>
+						<tr>
+							<td> <b>feDisplacementMap</b> </td>
+							<td> SVG filter </td>
+							<td>  </td>
+						</tr>
+						<tr>
+							<td> <b>feDistantLight</b> </td>
+							<td> SVG filter. Defines a light source </td>
+							<td>  </td>
+						</tr>
+						<tr>
+							<td> <b>feFlood</b> </td>
+							<td> SVG filter </td>
+							<td>  </td>
+						</tr>
+						<tr>
+							<td> <b>feFuncA</b> </td>
+							<td> SVG filter </td>
+							<td> Sub-element to feComponentTransfer </td>
+						</tr>
+						<tr>
+							<td> <b>feFuncB</b> </td>
+							<td> SVG filter </td>
+							<td> Sub-element to feComponentTransfer </td>
+						</tr>
+						<tr>
+							<td> <b>feFuncG</b> </td>
+							<td> SVG filter </td>
+							<td> Sub-element to feComponentTransfer </td>
+						</tr>
+						<tr>
+							<td> <b>feFuncR</b> </td>
+							<td> SVG filter </td>
+							<td> Sub-element to feComponentTransfer </td>
+						</tr>
+						
+						<tr>
+							<td> BELUM SELESAI </td>
+							<td>  </td>
+							<td>  </td>
+						</tr>
+					</tbody>
+				</table>
+<!---
+								feFuncA	SVG filter. Sub-element to feComponentTransfer	 
+								feFuncB	SVG filter. Sub-element to feComponentTransfer	 
+								feFuncG	SVG filter. Sub-element to feComponentTransfer	 
+								feFuncR	SVG filter. Sub-element to feComponentTransfer	 
+								feGaussianBlur	SVG filter. Performs a Gaussian blur on the image	 
+								feImage	SVG filter.	 
+								feMerge	SVG filter. Creates image layers on top of each other	 
+								feMergeNode	SVG filter. Sub-element to feMerge	 
+								feMorphology	SVG filter. Performs a "fattening" or "thinning" on a source graphic	 
+								feOffset	SVG filter. Moves an image relative to its current position	 
+								fePointLight	SVG filter.	 
+								feSpecularLighting	SVG filter.	 
+								feSpotLight	SVG filter.	 
+								feTile	SVG filter.	 
+								feTurbulence	SVG filter.	 
+								filter	Container for filter effects	 
+								font	Defines a font	 
+								font-face	Describes the characteristics of a font	 
+								font-face-format	 	 
+								font-face-name	 	 
+								font-face-src	 	 
+								font-face-uri	 	 
+								foreignObject	 	 
+				<g>	Used to group together elements	id="the name of the group"
+				fill="the fill color for the group"
+				opacity="the opacity for the group"
+				
+				+ presentation attributes:
+				All
+				glyph	Defines the graphics for a given glyph	 
+				glyphRef	Defines a possible glyph to use	 
+				hkern	 	 
+				<image>	Defines an image	x="the x-axis top-left corner of the image"
+				y="the y-axis top-left corner of the image"
+				width="the width of the image". Required.
+				height="the height of the image". Required.
+				xlink:href="the path to the image". Required.
+				
+				+ presentation attributes:
+				Color, Graphics, Images, Viewports
+				<line>	Defines a line	x1="the x start point of the line"
+				y1="the y start point of the line"
+				x2="the x end point of the line"
+				y2="the y end point of the line"
+				
+				+ presentation attributes:
+				Color, FillStroke, Graphics, Markers
+				<linearGradient>	Defines a linear gradient. Linear gradients fill the object by using a vector, and can be defined as horizontal, vertical or angular gradients.	id="the unique id used to reference this pattern. Required to reference it"
+				gradientUnits="'userSpaceOnUse' or 'objectBoundingBox'. Use the view box or object to determine relative position of vector points. (Default 'objectBoundingBox')"
+				gradientTransform="the transformation to apply to the gradient"
+				x1="the x start point of the gradient vector (number or % - 0% is default)"
+				y1="the y start point of the gradient vector. (0% default)" 
+				x2="the x end point of the gradient vector. (100% default)"
+				y2="the y end point of the gradient vector. (0% default)" 
+				spreadMethod="'pad' or 'reflect' or 'repeat'"
+				xlink:href="reference to another gradient whose attribute values are used as defaults and stops included. Recursive"
+				<marker>	Markers can be placed on the vertices of lines, polylines, polygons and paths. These elements can use the marker attributes "marker-start", "marker-mid" and "marker-end"' which inherit by default or can be set to 'none' or the URI of a defined marker. You must first define the marker before you can reference it via its URI. Any kind of shape can be put inside marker. They are drawn on top of the element they are attached to	markerUnits="'strokeWidth' or 'userSpaceOnUse'. If 'strokeWidth' is used then one unit equals one stroke width. Otherwise, the marker does not scale and uses the the same view units as the referencing element (default 'strokeWidth')"
+				refx="the position where the marker connects with the vertex (default 0)"
+				refy="the position where the marker connects with the vertex (default 0)"
+				orient="'auto' or an angle to always show the marker at. 'auto' will compute an angle that makes the x-axis a tangent of the vertex (default 0)"
+				markerWidth="the width of the marker (default 3)"
+				markerHeight="the height of the marker (default 3)"
+				viewBox="the points "seen" in this SVG drawing area. 4 values separated by white space or commas. (min x, min y, width, height)" 
+				
+				+ presentation attributes:
+				All
+				<mask>	Masking is a combination of opacity values and clipping. Like clipping you can use shapes, text or paths to define sections of the mask. The default state of a mask is fully transparent which is the opposite of clipping plane. The graphics in a mask sets how opaque portions of the mask are	maskUnits="'userSpaceOnUse' or 'objectBoundingBox'. Set whether the clipping plane is relative the full view port or object (default: 'objectBoundingBox')"
+				maskContentUnits="Use the second with percentages to make mask graphic positions relative the object. 'userSpaceOnUse' or 'objectBoundingBox' (default: 'userSpaceOnUse')"
+				x="the clipping plane of the mask (default: -10%)" 
+				y="the clipping plane of the mask (default: -10%)" 
+				width="the clipping plane of the mask (default: 120%)"
+				height="the clipping plane of the mask (default: 120%)"
+				metadata	Specifies metadata	 
+				missing-glyph	 	 
+				mpath	 	 
+				<path>	Defines a path	d="a set of commands which define the path"
+				pathLength="If present, the path will be scaled so that the computed path length of the points equals this value"
+				transform="a list of transformations"
+				
+				+ presentation attributes:
+				Color, FillStroke, Graphics, Markers
+				<pattern>	Defines the coordinates you want the view to show and the size of the view. Then you add shapes into your pattern. The pattern repeats when an edge of the view box (viewing area) is hit	id="the unique id used to reference this pattern." Required. 
+				patternUnits="'userSpaceOnUse' or 'objectBoundingBox'. The second value makes units of x, y, width, height a fraction (or %) of the object bounding box which uses the pattern."
+				patternContentUnits="'userSpaceOnUse' or 'objectBoundingBox'"
+				patternTransform="allows the whole pattern to be transformed"
+				x="pattern's offset from the top-left corner (default 0)" 
+				y="pattern's offset from the top-left corner. (default 0)"
+				width="the width of the pattern tile (default 100%)" 
+				height="the height of the pattern tile (default 100%)"
+				viewBox="the points "seen" in this SVG drawing area. 4 values separated by white space or commas. (min x, min y, width, height)" 
+				xlink:href="reference to another pattern whose attribute values are used as defaults and any children are inherited. Recursive"
+				 
+				<polygon>	Defines a graphic that contains at least three sides	points="the points of the polygon. The total number of points must be even". Required.
+				fill-rule="part of the FillStroke presentation attributes"
+				
+				+ presentation attributes:
+				Color, FillStroke, Graphics, Markers
+				<polyline>	Defines any shape that consists of only straight lines	points="the points on the polyline". Required.
+				
+				+ presentation attributes:
+				Color, FillStroke, Graphics, Markers
+				<radialGradient>	Defines a radial gradient. Radial gradients are created by taking a circle and smoothly changing values between gradient stops from the focus point to the outside radius.	gradientUnits="'userSpaceOnUse' or 'objectBoundingBox'. Use the view box or object to determine relative position of vector points. (Default 'objectBoundingBox')"
+				gradientTransform="the transformation to apply to the gradient" 
+				cx="the center point of the gradient (number or % - 50% is default)"
+				cy="the center point of the gradient. (50% default)"
+				r="the radius of the gradient. (50% default)" 
+				fx="the focus point of the gradient. (0% default)"
+				fy="The focus point of the gradient. (0% default)"
+				spreadMethod="'pad' or 'reflect' or 'repeat'"
+				xlink:href="Reference to another gradient whose attribute values are used as defaults and stops included. Recursive"
+				<rect>	Defines a rectangle	x="the x-axis top-left corner of the rectangle"
+				y="the y-axis top-left corner of the rectangle"
+				rx="the x-axis radius (to round the element)"
+				ry="the y-axis radius (to round the element)" 
+				width="the width of the rectangle". Required.
+				height="the height of the rectangle" Required.
+				
+				+ presentation attributes:
+				Color, FillStroke, Graphics
+				script	Container for scripts (e.g., ECMAScript)	 
+				set	Sets the value of an attribute for a specified duration	 
+				<stop>	The stops for a gradient	offset="the offset for this stop (0 to 1/0% to 100%)". Required.
+				stop-color="the color of this stop" 
+				stop-opacity="the opacity of this stop (0 to 1)"
+				style	Allows style sheets to be embedded directly within SVG content	 
+				<svg>	Creates an SVG document fragment	x="top left corner when embedded (default 0)"
+				y="top left corner when embedded (default 0)"
+				width="the width of the svg fragment (default 100%)"
+				height="the height of the svg fragment (default 100%)"
+				viewBox="the points "seen" in this SVG drawing area. 4 values separated by white space or commas. (min x, min y, width, height)"
+				preserveAspectRatio="'none' or any of the 9 combinations of 'xVALYVAL' where VAL is 'min', 'mid' or 'max'. (default xMidYMid)"
+				zoomAndPan="'magnify' or 'disable'. Magnify option allows users to pan and zoom your file (default magnify)"
+				xml="outermost <svg> element needs to setup SVG and its namespace: xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve""
+				
+				+ presentation attributes:
+				All
+				switch	 	 
+				symbol	 	 
+				<text>	Defines a text	x="a list of x-axis positions. The nth x-axis position is given to the nth character in the text. If there are additional characters after the positions run out they are placed after the last character. 0 is default"
+				y="a list of y-axis positions. (see x). 0 is default"
+				dx="a list of lengths which moves the characters relative to the absolute position of the last glyph drawn. (see x)"
+				dy="a list of lengths which moves the characters relative to the absolute position of the last glyph drawn. (see x)"
+				rotate="a list of rotations. The nth rotation is performed on the nth character. Additional characters are NOT given the last rotation value"
+				textLength="a target length for the text that the SVG viewer will attempt to display the text between by adjusting the spacing and/or the glyphs. (default: The text's normal length)"
+				lengthAdjust="tells the viewer what to adjust to try to accomplish rendering the text if the length is specified. The two values are 'spacing' and 'spacingAndGlyphs'"
+				
+				+ presentation attributes:
+				Color, FillStroke, Graphics, FontSpecification, TextContentElements
+				textPath	 	 
+				title	A text-only description for elements in SVG - not displayed as part of the graphics. User agents may display the text as a tooltip	 
+				<tref>	References any <text> element in the SVG document and reuse it	Identical to the <text> element
+				<tspan>	Identical to the <text> element but can be nested inside text tags and inside itself	Identical to the <text> element
+				+ in addition:
+				xlink:href="Reference to a <text> element"
+				<use>	Uses a URI to reference a <g>, <svg> or other graphical element with a unique id attribute and replicate it. The copy is only a reference to the original so only the original exists in the document. Any change to the original affects all copies.	x="the x-axis top-left corner of the cloned element"
+				y="the y-axis top-left corner of the cloned element"
+				width="the width of the cloned element"
+				height="the height of the cloned element"
+				xlink:href="a URI reference to the cloned element"
+				
+				+ presentation attributes:
+				All
+				view	 	 
+				vkern	 	 
+-->
+				 
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="SVG examples.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="SVG reference.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			</article>
+			<article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

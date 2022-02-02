@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS3 Gradients </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+.gradientBackground {
+	height:200px;
+	background: red; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(green, white); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(green, white); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(green, white); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(green, white); /* Standard syntax */
+}
+
+.grad1 {
+	height:200px;
+	background: red; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(red, yellow); /* Standard syntax */
+}
+
+.grad2 { 
+	height: 200px; 
+	background: red; /* For browsers that do not support gradients */ 
+	background: -webkit-linear-gradient(left, red , yellow); /* For Safari 5.1 to 6.0 */ 
+	background: -o-linear-gradient(right, red, yellow); /* For Opera 11.1 to 12.0 */ 
+	background: -moz-linear-gradient(right, red, yellow); /* For Firefox 3.6 to 15 */ 
+	background: linear-gradient(to right, red , yellow); /* Standard syntax */ 
+}
+
+.grad3 { 
+	height: 200px; 
+	background: red; /* For browsers that do not support gradients */ 
+	background: -webkit-linear-gradient(left top, red, yellow); /* For Safari 5.1 to 6.0 */ 
+	background: -o-linear-gradient(bottom right, red, yellow); /* For Opera 11.1 to 12.0 */ 
+	background: -moz-linear-gradient(bottom right, red, yellow); /* For Firefox 3.6 to 15 */ 
+	background: linear-gradient(to bottom right, red, yellow); /* Standard syntax */ 
+} 
+
+.grad4A { 
+height: 100px; background: red; /* For browsers that do not support gradients */ 
+background: -webkit-linear-gradient(0deg, red, yellow); /* For Safari 5.1 to 6.0 */ 
+background: -o-linear-gradient(0deg, red, yellow); /* For Opera 11.1 to 12.0 */ 
+background: -moz-linear-gradient(0deg, red, yellow); /* For Firefox 3.6 to 15 */ 
+background: linear-gradient(0deg, red, yellow); /* Standard syntax */ 
+} 
+
+.grad4B { 
+height: 100px; background: red; /* For browsers that do not support gradients */ 
+background: -webkit-linear-gradient(90deg, red, yellow); /* For Safari 5.1 to 6.0 */ 
+background: -o-linear-gradient(90deg, red, yellow); /* For Opera 11.1 to 12.0 */ 
+background: -moz-linear-gradient(90deg, red, yellow); /* For Firefox 3.6 to 15 */ 
+background: linear-gradient(90deg, red, yellow); /* Standard syntax */ 
+} 
+
+.grad4C { 
+height: 100px; background: red; /* For browsers that do not support gradients */ 
+background: -webkit-linear-gradient(180deg, red, yellow); /* For Safari 5.1 to 6.0 */ 
+background: -o-linear-gradient(180deg, red, yellow); /* For Opera 11.1 to 12.0 */ 
+background: -moz-linear-gradient(180deg, red, yellow); /* For Firefox 3.6 to 15 */ 
+background: linear-gradient(180deg, red, yellow); /* Standard syntax */ 
+} 
+
+.grad4D { 
+height: 100px; background: red; /* For browsers that do not support gradients */ 
+background: -webkit-linear-gradient(-90deg, red, yellow); /* For Safari 5.1 to 6.0 */ 
+background: -o-linear-gradient(-90deg, red, yellow); /* For Opera 11.1 to 12.0 */ 
+background: -moz-linear-gradient(-90deg, red, yellow); /* For Firefox 3.6 to 15 */ 
+background: linear-gradient(-90deg, red, yellow); /* Standard syntax */ 
+} 
+
+.grad5A { 
+height: 200px; 
+background: -webkit-linear-gradient(red, yellow, green); /* For Safari 5.1 to 6.0 */ 
+background: -o-linear-gradient(red, yellow, green); /* For Opera 11.1 to 12.0 */ 
+background: -moz-linear-gradient(red, yellow, green); /* For Firefox 3.6 to 15 */ 
+background: linear-gradient(red, yellow, green); /* Standard syntax (must be last) */ 
+} 
+
+.grad5B { 
+height: 200px; 
+background: -webkit-linear-gradient(red, orange, yellow, green, blue, indigo, violet); /* For Safari 5.1 to 6.0 */ 
+background: -o-linear-gradient(red, orange, yellow, green, blue, indigo, violet); /* For Opera 11.1 to 12.0 */ 
+background: -moz-linear-gradient(red, orange, yellow, green, blue, indigo, violet); /* For Firefox 3.6 to 15 */ 
+background: linear-gradient(red, orange, yellow, green, blue, indigo, violet); /* Standard syntax (must be last) */ 
+} 
+
+.grad5C { 
+height: 200px; 
+background: -webkit-linear-gradient(red 10%, green 85%, blue 90%); /* For Safari 5.1 to 6.0 */ 
+background: -o-linear-gradient(red 10%, green 85%, blue 90%); /* For Opera 11.1 to 12.0 */ 
+background: -moz-linear-gradient(red 10%, green 85%, blue 90%); /* For Firefox 3.6 to 15 */ 
+background: linear-gradient(red 10%, green 85%, blue 90%); /* Standard syntax (must be last) */ 
+}
+ 
+.grad6 { 
+height: 200px; 
+background: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* For Safari 5.1 to 6.0 */ 
+background: -o-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* For Opera 11.1 to 12.0 */ 
+background: -moz-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* For Fx 3.6 to 15 */ 
+background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Standard syntax (must be last) */ 
+}
+
+.grad7 { 
+height: 200px; 
+background: -webkit-linear-gradient(left, rgba(255,0,0,0), rgba(255,0,0,1)); /* For Safari 5.1 to 6.0 */ 
+background: -o-linear-gradient(right, rgba(255,0,0,0), rgba(255,0,0,1)); /* For Opera 11.1 to 12.0 */ 
+background: -moz-linear-gradient(right, rgba(255,0,0,0), rgba(255,0,0,1)); /* For Firefox 3.6 to 15 */ 
+background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); /* Standard syntax (must be last) */ 
+} 
+
+.grad8A { 
+height: 200px; 
+background: -webkit-repeating-linear-gradient(red, yellow 10%, green 20%); /* For Safari 5.1 to 6.0 */ 
+background: -o-repeating-linear-gradient(red, yellow 10%, green 20%); /* For Opera 11.1 to 12.0 */ 
+background: -moz-repeating-linear-gradient(red, yellow 10%, green 20%); /* For Firefox 3.6 to 15 */ 
+background: repeating-linear-gradient(red, yellow 10%, green 20%); /* Standard syntax (must be last) */ 
+} 
+
+.grad8B { 
+height: 200px; 
+background: -webkit-repeating-linear-gradient(45deg,red,yellow 7%,green 10%); /* For Safari 5.1 to 6.0 */ 
+background: -o-repeating-linear-gradient(45deg,red,yellow 7%,green 10%); /* For Opera 11.1 to 12.0 */ 
+background: -moz-repeating-linear-gradient(45deg,red,yellow 7%,green 10%); /* For Firefox 3.6 to 15 */ 
+background: repeating-linear-gradient(45deg,red,yellow 7%,green 10%); /* Standard syntax (must be last) */ 
+} 
+
+.grad8C { 
+height: 200px; 
+background: -webkit-repeating-linear-gradient(190deg,red,yellow 7%,green 10%); /* For Safari 5.1 to 6.0 */ 
+background: -o-repeating-linear-gradient(190deg,red,yellow 7%,green 10%); /* For Opera 11.1 to 12.0 */ 
+background: -moz-repeating-linear-gradient(190deg,red,yellow 7%,green 10%); /* For Firefox 3.6 to 15 */ 
+background: repeating-linear-gradient(190deg,red,yellow 7%,green 10%); /* Standard syntax (must be last) */ 
+} 
+
+.grad8D { 
+height: 200px; 
+background: -webkit-repeating-linear-gradient(90deg,red,yellow 7%,green 10%); /* For Safari 5.1 to 6.0 */ 
+background: -o-repeating-linear-gradient(); /* For Opera 11.1 to 12.0 */ 
+background: -moz-repeating-linear-gradient(90deg,red,yellow 7%,green 10%); /* For Firefox 3.6 to 15 */ 
+background: repeating-linear-gradient(90deg,red,yellow 7%,green 10%); /* Standard syntax (must be last) */ 
+} 
+
+.grad9 { 
+height: 150px; 
+width: 200px; 
+background: red; /* For browsers that do not support gradients */ 
+background: -webkit-radial-gradient(red, yellow, green); /* Safari 5.1 to 6.0 */
+background: -o-radial-gradient(red, yellow, green); /* For Opera 11.6 to 12.0 */ 
+background: -moz-radial-gradient(red, yellow, green); /* For Firefox 3.6 to 15 */ 
+background: radial-gradient(red, yellow, green); /* Standard syntax (must be last) */ 
+} 
+
+.grad10 { 
+height: 150px; 
+width: 200px; 
+background: red; /* For browsers that do not support gradients */ 
+background: -webkit-radial-gradient(red 5%, yellow 15%, green 60%); /* Safari 5.1-6.0 */ 
+background: -o-radial-gradient(red 5%, yellow 15%, green 60%); /* For Opera 11.6 to 12.0 */ 
+background: -moz-radial-gradient(red 5%, yellow 15%, green 60%); /* For Firefox 3.6 to 15 */ 
+background: radial-gradient(red 5%, yellow 15%, green 60%); /* Standard syntax (must be last) */ 
+} 
+
+.grad11A { 
+height: 150px; 
+width: 200px; 
+background: -webkit-radial-gradient(red, yellow, green); /* For Safari 5.1 to 6.0 */ 
+background: -o-radial-gradient(red, yellow, green); /* For Opera 11.6 to 12.0 */ 
+background: -moz-radial-gradient(red, yellow, green); /* For Fx 3.6 to 15 */ 
+background: radial-gradient(red, yellow, green); /* Standard syntax (must be last) */ 
+} 
+
+.grad11B { 
+height: 150px; 
+width: 200px; 
+background: -webkit-radial-gradient(circle, red, yellow, green); /* For Safari 5.1 to 6.0 */ 
+background: -o-radial-gradient(circle, red, yellow, green); /* For Opera 11.6 to 12.0 */ 
+background: -moz-radial-gradient(circle, red, yellow, green); /* For Fx 3.6 to 15 */ 
+background: radial-gradient(circle, red, yellow, green); /* Standard syntax (must be last) */ 
+} 
+
+.grad12A { 
+height: 150px; 
+width: 150px; 
+background: -webkit-radial-gradient(60% 55%, closest-side, red, yellow, black); /* Safari 5.1 to 6.0 */ 
+background: -o-radial-gradient(60% 55%, closest-side, red, yellow, black); /* For Opera 11.6 to 12.0 */ 
+background: -moz-radial-gradient(60% 55%, closest-side, red, yellow, black); /* For Firefox 3.6 to 15 */ 
+background: radial-gradient(closest-side at 60% 55%, red, yellow, black); /* Standard syntax (must be last) */ 
+} 
+
+.grad12B { 
+height: 150px; 
+width: 150px; 
+background: -webkit-radial-gradient(60% 55%, farthest-side, red, yellow, black); /* Safari 5.1 to 6.0 */ 
+background: -o-radial-gradient(60% 55%, farthest-side, red, yellow, black); /* For Opera 11.6 to 12.0 */ 
+background: -moz-radial-gradient(60% 55%, farthest-side, red, yellow, black); /* For Firefox 3.6 to 15 */ 
+background: radial-gradient(farthest-side at 60% 55%, red, yellow, black); /* Standard syntax (must be last) */ 
+} 
+
+.grad12C { 
+height: 150px; 
+width: 150px; 
+background: -webkit-radial-gradient(60% 55%, closest-corner, red, yellow, black); /* Safari 5.1 to 6.0 */ 
+background: -o-radial-gradient(60% 55%, closest-corner, red, yellow, black); /* For Opera 11.6 to 12.0 */ 
+background: -moz-radial-gradient(60% 55%, closest-corner, red, yellow, black); /* For Firefox 3.6 to 15 */ 
+background: radial-gradient(closest-corner at 60% 55%, red, yellow, black); /* Standard syntax (must be last) */ 
+} 
+
+.grad12D { 
+height: 150px; 
+width: 150px; 
+background: -webkit-radial-gradient(60% 55%, farthest-corner, red, yellow, black); /* Safari 5.1 to 6.0 */ 
+background: -o-radial-gradient(60% 55%, farthest-corner, red, yellow, black); /* For Opera 11.6 to 12.0 */ 
+background: -moz-radial-gradient(60% 55%, farthest-corner, red, yellow, black); /* For Firefox 3.6 to 15 */ 
+background: radial-gradient(farthest-corner at 60% 55%, red, yellow, black); /* Standard syntax (must be last) */ 
+} 
+
+.grad13 { 
+height: 150px; 
+width: 200px; 
+background: -webkit-repeating-radial-gradient(red, yellow 10%, green 15%); /* For Safari 5.1 to 6.0 */ 
+background: -o-repeating-radial-gradient(red, yellow 10%, green 15%); /* For Opera 11.6 to 12.0 */ 
+background: -moz-repeating-radial-gradient(red, yellow 10%, green 15%); /* For Firefox 3.6 to 15 */ 
+background: repeating-radial-gradient(red, yellow 10%, green 15%); /* Standard syntax (must be last) */ 
+} 
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS3 Gradients </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> CSS3 Gradients</h2>
+				
+				<div class="gradientBackground">Gradient Background</div>
+				
+				<p> CSS3 gradient membolehkan kamu untuk menampilkan smooth transitions antara dua atau lebih warna tertentu.</p>
+				<p> Versi dulu, kamu harus menggunakan image untuk efek ini. Akan tetapi, dengan menggunakan CSS3 gradient kamu bisa mengurangi download time (waktu unduh) dan bandwitdh usage (pemakaian bandwidth). 
+				Dalam penambahannya, element dengan gradient terlihat lebih baik ketika di-zoom, karena gradient dihasilkan oleh browser.</p>
+				<p> CSS3 mendefinisikan dua tipe gradient:</p>
+				<ol>
+					<li><b>Linear Gradients</b> (goes down/up/left/right/diagonally)</li>
+					<li><b>Radial Gradients</b> (defined by their center)</li>
+				</ol>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Browser Support</h2>
+				<p> Nomor pada tabel menentukan browser versi pertama yang mendukung secara penuh  properti ini.</p>
+				<p> Nomor yang diikut dengan <mark>-webkit-</mark>, <mark>-moz-</mark> atau <mark>-o-</mark> menentukan versi pertama yang bekerja dengan awalan properti.</p>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> Properti </td>
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td>linear-gradient</td>
+							<td> 26.0 <br> 10.0 -webkit- </td>
+							<td> 12.0 dan 10.0</td>
+							<td> 16.0 <br> 3.6 -moz- </td>
+							<td> 6.1 <br>5.1 -webkit- </td>
+							<td> 12.1 <br> 11.1 -o-</td>
+						</tr>
+						<tr class="center">
+							<td>radial-gradient</td>
+							<td> 26.0 <br> 10.0 -webkit- </td>
+							<td> 12.0 dan 10.0</td>
+							<td> 16.0 <br> 3.6 -moz- </td>
+							<td> 6.1 <br>5.1 -webkit- </td>
+							<td> 12.1 <br> 11.6 -o-</td>
+						</tr>
+						<tr class="center">
+							<td>repeating-linear-gradient</td>
+							<td> 26.0 <br> 10.0 -webkit- </td>
+							<td> 12.0 dan 10.0</td>
+							<td> 16.0 <br> 3.6 -moz- </td>
+							<td> 6.1 <br>5.1 -webkit- </td>
+							<td> 12.1 <br> 11.1 -o-</td>
+						</tr>
+						<tr class="center">
+							<td>repeating-radial-gradient</td>
+							<td> 26.0 <br> 10.0 -webkit- </td>
+							<td> 12.0 dan 10.0</td>
+							<td> 16.0 <br> 3.6 -moz- </td>
+							<td> 6.1 <br>5.1 -webkit- </td>
+							<td> 12.1 <br> 11.6 -o-</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 Linear Gradients</h2>
+				<p> Untuk membuat sebuah linear gradient kamu harus mendefinisikan dalam paling kurang dua color stop. Color stops adalah warna yang ingin 
+				kamu berikan smooth transition. Kamu juga bisa mengatur titik mulai dan arah (atau sudut) bersamaan dengan efek gradient.</p>
+				<h3>Sintaksis</h3>
+				<div class="simple-example">
+					<p>background: linear-gradient(direction, color-stop1, color-stop2, ...);</p>
+				</div>
+				<p>Linear Gradient - Top to Bottom (this is default)</p>
+				<p> Contoh berikut menampilkan sebuah linear gradient yang dimulai dari atas. Ini dimulai dengan warna merah, berubah menjadi kuning:</p>
+				
+				<div class="grad1"></div>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						#grad { <br>
+						background: red; <em>/* For browsers that do not support gradients */</em> <br>
+						background: -webkit-linear-gradient(red, yellow); <em>/* For Safari 5.1 to 6.0 */</em> <br>
+						background: -o-linear-gradient(red, yellow); <em>/* For Opera 11.1 to 12.0 */</em> <br>
+						background: -moz-linear-gradient(red, yellow); <em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: linear-gradient(red, yellow); <em>/* Standard syntax */ </em><br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#grad { <br>
+						height: 200px; <br>
+						background: red; <em>/* For browsers that do not support gradients */</em> <br>
+						background: -webkit-linear-gradient(red, yellow); <em>/* For Safari 5.1 to 6.0 */</em> <br>
+						background: -o-linear-gradient(red, yellow); <em>/* For Opera 11.1 to 12.0 */</em> <br>
+						background: -moz-linear-gradient(red, yellow); <em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: linear-gradient(red, yellow); <em>/* Standard syntax */ </em><br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>h3</b>>Linear Gradient - Top to Bottom<<b>/h3</b>> <br>
+					<<b>p</b>>This linear gradient starts at the top. It starts red, transitioning to yellow:<<b>/p</b>> <br>
+					 <br>
+					<<b>div</b> <span class="teal">id="grad1"</span>><<b>/div</b>> <br>
+					 <br>
+					<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> Internet Explorer 9 and earlier versions do not support gradients.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<h3>Linear Gradient - Top to Bottom</h3>
+						<p>This linear gradient starts at the top. It starts red, transitioning to yellow:</p>
+						
+						<div class="grad1"></div>
+						
+						<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>
+					
+					</div>
+				</article>
+				
+				
+				<p><b>Linear Gradient - Left to Right</b></p>
+				<p> Contoh berikut menampilkan sebauh linear grandient yang dimulai dari kiri, Ini dimulai denhan warna merah berubah menjadi kuning:</p>
+				
+				<div class="grad2"></div>
+						
+						
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						#grad1 { <br>
+						background: red; <em>/* For browsers that do not support gradients */</em> <br>
+						background: -webkit-linear-gradient(left, red , yellow); <em>/* For Safari 5.1 to 6.0 */</em> <br>
+						background: -o-linear-gradient(right, red, yellow); <em>/* For Opera 11.1 to 12.0 */</em> <br>
+						background: -moz-linear-gradient(right, red, yellow); <em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: linear-gradient(to right, red , yellow); <em>/* Standard syntax */</em> <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#grad1 { <br>
+						height: 200px; <br>
+						background: red; <em>/* For browsers that do not support gradients */</em> <br>
+						background: -webkit-linear-gradient(left, red , yellow); <em>/* For Safari 5.1 to 6.0 */</em> <br>
+						background: -o-linear-gradient(right, red, yellow); <em>/* For Opera 11.1 to 12.0 */</em> <br>
+						background: -moz-linear-gradient(right, red, yellow); <em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: linear-gradient(to right, red , yellow); <em>/* Standard syntax */</em> <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					
+					<<b>h3</b>>Linear Gradient - Left to Right<<b>/h3</b>> <br>
+					<<b>p</b>>This linear gradient starts at the left. It starts red, transitioning to yellow:<<b>/p</b>> <br>
+					 <br>
+					<<b>div</b> <span class="teal">id="grad1"</span>><<b>/div</b>> <br>
+					 <br>
+					<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> Internet Explorer 9 and earlier versions do not support gradients.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						
+						<h3>Linear Gradient - Left to Right</h3>
+						<p>This linear gradient starts at the left. It starts red, transitioning to yellow:</p>
+						
+						<div class="grad2"></div>
+						
+						<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>
+					
+					</div>
+				</article>
+				
+				<p><b>Linear Gradient - Diagonal</b></p>
+				<p> Kamu bisa membuat sebuah gradient secara diagonal dengan menentukan horizontal dan vertikal memulai posisi.</p>
+				<p> Contoh berikut menampilkan sebuah linear gradient yang dimulai dari atas (dan pergi ke bawah kanan). Ini dimukai dengan warna merah berubah menjadi kuning:</p>
+				
+				<div class="grad3"></div>
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open03">
+						
+						#grad1 { <br>
+						background: red; <em>/* For browsers that do not support gradients */</em> <br>
+						background: -webkit-linear-gradient(left top, red, yellow); <em>/* For Safari 5.1 to 6.0 */</em> <br>
+						background: -o-linear-gradient(bottom right, red, yellow); <em>/* For Opera 11.1 to 12.0 */</em> <br>
+						background: -moz-linear-gradient(bottom right, red, yellow); <em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: linear-gradient(to bottom right, red, yellow); <em>/* Standard syntax */</em> <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#grad1 { <br>
+						height: 200px; <br>
+						background: red; <em>/* For browsers that do not support gradients */</em> <br>
+						background: -webkit-linear-gradient(left top, red, yellow); <em>/* For Safari 5.1 to 6.0 */</em> <br>
+						background: -o-linear-gradient(bottom right, red, yellow); <em>/* For Opera 11.1 to 12.0 */</em> <br>
+						background: -moz-linear-gradient(bottom right, red, yellow); <em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: linear-gradient(to bottom right, red, yellow); <em>/* Standard syntax */</em> <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>h3</b>>Linear Gradient - Diagonal<<b>/h3</b>> <br>
+					<<b>p</b>>This linear gradient starts at top left. It starts red, transitioning to yellow:<<b>/p</b>> <br>
+					 <br>
+					<<b>div</b> <span class="teal">id="grad1"</span>><<b>/div</b>> <br>
+					 <br>
+					<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> Internet Explorer 9 and earlier versions do not support gradients.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+						<h3>Linear Gradient - Diagonal</h3>
+						<p>This linear gradient starts at top left. It starts red, transitioning to yellow:</p>
+						
+						<div class="grad3"></div>
+						
+						<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>
+						
+						
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Using Angles</h2>
+				<p> Jika kamu ingin kontrol lebih arah dari gradient, kamu bisa mendefinisikan sebuah angle, sebagai pengganti dari direksi yang tlah dikenal 
+				(ke bawah, ke atas, ke kanan, ke kiri, ke kanan bawah, spdan sebagainya).</p>
+				
+				<h3>Sintaksis</h3>
+				<div class="simple-example">
+				<p> background: linear-gradient(angle, color-stop1, color-stop2);</p>
+				</div>
+				
+				<p> Angle ditentukan sebagai sebuah segi atau sudut antara garis horizontal dan garis gradient.</p>
+				<p> Contoh berikut menampilkan bagaimana untuk menggunakan angle pada gradient garis:</p>
+				
+				<div class="grad4A"></div>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open04">
+						
+						#grad { <br>
+						background: red; <em>/* For browsers that do not support gradients */</em> <br>
+						background: -webkit-linear-gradient(-90deg, red, yellow); <em>/* For Safari 5.1 to 6.0 */</em> <br>
+						background: -o-linear-gradient(-90deg, red, yellow); <em>/* For Opera 11.1 to 12.0 */</em> <br>
+						background: -moz-linear-gradient(-90deg, red, yellow); <em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: linear-gradient(-90deg, red, yellow); <em>/* Standard syntax */</em> <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close04">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#grad1 { <br>
+						height: 100px;
+						background: red; <em>/* For browsers that do not support gradients */</em> <br>
+						background: -webkit-linear-gradient(0deg, red, yellow); <em>/* For Safari 5.1 to 6.0 */</em> <br>
+						background: -o-linear-gradient(0deg, red, yellow); <em>/* For Opera 11.1 to 12.0 */</em> <br>
+						background: -moz-linear-gradient(0deg, red, yellow); <em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: linear-gradient(0deg, red, yellow); <em>/* Standard syntax */</em> <br>
+						} <br>
+						<br>
+						#grad2 { <br>
+						height: 100px;
+						background: red; <em>/* For browsers that do not support gradients */</em> <br>
+						background: -webkit-linear-gradient(90deg, red, yellow); <em>/* For Safari 5.1 to 6.0 */</em> <br>
+						background: -o-linear-gradient(90deg, red, yellow); <em>/* For Opera 11.1 to 12.0 */</em> <br>
+						background: -moz-linear-gradient(90deg, red, yellow); <em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: linear-gradient(90deg, red, yellow); <em>/* Standard syntax */</em> <br>
+						} <br>
+						<br>
+						#grad3 { <br>
+						height: 100px;
+						background: red; <em>/* For browsers that do not support gradients */</em> <br>
+						background: -webkit-linear-gradient(180deg, red, yellow); <em>/* For Safari 5.1 to 6.0 */</em> <br>
+						background: -o-linear-gradient(180deg, red, yellow); <em>/* For Opera 11.1 to 12.0 */</em> <br>
+						background: -moz-linear-gradient(180deg, red, yellow); <em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: linear-gradient(180deg, red, yellow); <em>/* Standard syntax */</em> <br>
+						} <br>
+						<br>
+						#grad4 { <br>
+						height: 100px;
+						background: red; <em>/* For browsers that do not support gradients */</em> <br>
+						background: -webkit-linear-gradient(-90deg, red, yellow); <em>/* For Safari 5.1 to 6.0 */</em> <br>
+						background: -o-linear-gradient(-90deg, red, yellow); <em>/* For Opera 11.1 to 12.0 */</em> <br>
+						background: -moz-linear-gradient(-90deg, red, yellow); <em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: linear-gradient(-90deg, red, yellow); <em>/* Standard syntax */</em> <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>h3</b>>Linear Gradients - Using Different Angles<<b>/h3</b>> <br>
+					<<b>div</b> <span class="teal">id="grad1" style="color:white;text-align:center;"</span>>0deg<<b>/div</b>><<b>br</b>> <br>
+					<<b>div</b> <span class="teal">id="grad2" style="color:white;text-align:center;"</span>>90deg<<b>/div</b>><<b>br</b>> <br>
+					<<b>div</b> <span class="teal">id="grad3" style="color:white;text-align:center;"</span>>180deg<<b>/div</b>><<b>br</b>> <br>
+					<<b>div</b> <span class="teal">id="grad4" style="color:white;text-align:center;"</span>>-90deg<<b>/div</b>> <br>
+					 <br>
+					<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> Internet Explorer 9 and earlier versions do not support gradients.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<button onclick="buka04()" class="exbutton"> Open </button>
+					<button onclick="tutup04()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+						<h3>Linear Gradients - Using Different Angles</h3>
+						<div class="grad4A" style="color:white;text-align:center;">0deg</div><br>
+						<div class="grad4B" style="color:white;text-align:center;">90deg</div><br>
+						<div class="grad4C" style="color:white;text-align:center;">180deg</div><br>
+						<div class="grad4D" style="color:white;text-align:center;">-90deg</div>
+						
+						<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Using Multiple Color Stops</h2>
+				<p> Penggunaan Multiple Color Stop</p>
+				<p> Contoh berikut menampilkan sebuah linear gradient (dari atas ke bawah) dengan multiple color stop:</p>
+				
+				<div class="grad5A"></div>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open05">
+						
+						#grad { <br>
+						background: red; <em>/* For browsers that do not support gradients */</em> <br>
+						background: -webkit-linear-gradient(red, yellow, green); <em>/* For Safari 5.1 to 6.0 */</em> <br>
+						background: -o-linear-gradient(red, yellow, green); <em>/* For Opera 11.1 to 12.0 */</em> <br>
+						background: -moz-linear-gradient(red, yellow, green); <em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: linear-gradient(red, yellow, green); <em>/* Standard syntax */</em> <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close05">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#grad1 { <br>
+						height: 200px; <br>
+						background: -webkit-linear-gradient(red, yellow, green); <em>/* For Safari 5.1 to 6.0 */</em> <br>
+						background: -o-linear-gradient(red, yellow, green); <em>/* For Opera 11.1 to 12.0 */</em> <br>
+						background: -moz-linear-gradient(red, yellow, green); <em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: linear-gradient(red, yellow, green); <em>/* Standard syntax (must be last) */</em> <br>
+						} <br>
+						 <br>
+						#grad2 { <br>
+						height: 200px; <br>
+						background: -webkit-linear-gradient(red, orange, yellow, green, blue, indigo, violet); <em>/* For Safari 5.1 to 6.0 */</em> <br>
+						background: -o-linear-gradient(red, orange, yellow, green, blue, indigo, violet); <em>/* For Opera 11.1 to 12.0 */</em> <br>
+						background: -moz-linear-gradient(red, orange, yellow, green, blue, indigo, violet); <em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: linear-gradient(red, orange, yellow, green, blue, indigo, violet); <em>/* Standard syntax (must be last) */</em> <br>
+						} <br>
+						 <br>
+						#grad3 { <br>
+						height: 200px; <br>
+						background: -webkit-linear-gradient(red 10%, green 85%, blue 90%); <em>/* For Safari 5.1 to 6.0 */</em> <br>
+						background: -o-linear-gradient(red 10%, green 85%, blue 90%); <em>/* For Opera 11.1 to 12.0 */</em> <br>
+						background: -moz-linear-gradient(red 10%, green 85%, blue 90%); <em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: linear-gradient(red 10%, green 85%, blue 90%); <em>/* Standard syntax (must be last) */</em> <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>h3</b>>3 Color Stops (evenly spaced)<<b>/h3</b>> <br>
+						<<b>div</b> <span class="teal">id="grad1"</span>><<b>/div</b>> <br>
+						 <br>
+						<<b>h3</b>>7 Color Stops (evenly spaced)<<b>/h3</b>> <br>
+						<<b>div</b> <span class="teal">id="grad2"</span>><<b>/div</b>> <br>
+						 <br>
+						<<b>h3</b>>3 Color Stops (not evenly spaced)<<b>/h3</b>> <br>
+						<<b>div</b> <span class="teal">id="grad3"</span>><<b>/div</b>> <br> 
+						<br>
+						<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> Color stops are automatically spaced evenly when no percents are specified.<<b>/p</b>> <br>
+						<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> Internet Explorer 9 and earlier versions do not support gradients.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan05()" class="exbutton">Klik disini</button>
+					<button onclick="buka05()" class="exbutton"> Open </button>
+					<button onclick="tutup05()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+					
+						<h3>3 Color Stops (evenly spaced)</h3>
+						<div class="grad5A"></div>
+						
+						<h3>7 Color Stops (evenly spaced)</h3>
+						<div class="grad5B"></div>
+						
+						<h3>3 Color Stops (not evenly spaced)</h3>
+						<div class="gradC"></div>
+						
+						<p><strong>Note:</strong> Color stops are automatically spaced evenly when no percents are specified.</p>
+						<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>
+						
+					</div>
+				</article>
+				
+				
+				<p> Contoh berikut menampilkan bagaimana untuk membuat linear gradient (dari kiri ke kanan) dengan warna pelangi dan bebrapa teks:</p>
+				
+				<div class="grad6" style="text-align:center;margin:auto;color:#888888;font-size:40px;font-weight:bold">
+				Gradient Background
+				</div>
+				
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open06">
+						
+						#rainbowgrad { <br>
+						background: red; <em>/* For browsers that do not support gradients */</em> <br>
+						<em>/* For Safari 5.1 to 6.0 */</em> <br>
+						background: -webkit-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet); <br>
+						<em>/* For Opera 11.1 to 12.0 */</em>> <br>
+						background: -o-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet); <br>
+						<em>/* For Fx 3.6 to 15 */</em> <br>
+						background: -moz-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet); <br>
+						<em>/* Standard syntax */</em> <br>
+						background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);  <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close06">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#grad1 { <br>
+						height: 55px; <br>
+						background: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); <em>/* For Safari 5.1 to 6.0 */</em> <br>
+						background: -o-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); <em>/* For Opera 11.1 to 12.0 */</em> <br>
+						background: -moz-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); <em>/* For Fx 3.6 to 15 */</em> <br>
+						background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); <em>/* Standard syntax (must be last) */</em> <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">id="grad1" style="text-align:center;margin:auto;color:#888888;font-size:40px;font-weight:bold"</span>> <br>
+						Gradient Background <br>
+						<<b>/div</b>> <br>
+						 <br>
+						<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> Internet Explorer 9 and earlier versions do not support gradients.<<b>/p</b>> <br> <br>
+						
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan06()" class="exbutton">Klik disini</button>
+					<button onclick="buka06()" class="exbutton"> Open </button>
+					<button onclick="tutup06()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+						
+						<div class="grad6" style="text-align:center;margin:auto;color:#888888;font-size:40px;font-weight:bold">
+						Gradient Background
+						</div>
+						
+						<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>
+						
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Using Transparency</h2>
+				<p>CSS3 gradient juga mendukung transparan, yang mana bisa digunakan untuk membuat fading effect.</p>
+				<p> Untuk menambahkan transparency, kita menggunakan fungsi <mark>rgba()</mark> untuk mendefinisikan color stops. Parameter terakhir pada fungsi <mark>rgba()</mark> bisa sebuah nomor dari 0 sampai 1 dan 
+				fungsi ini mendefinisikan transparency dari warna 0 mengindikasikan full transparency, 1 mengindikasikan full color (tidak ada transparency).</p>
+				<p> Contoh berikut menampilkan sebuah kinear gradient yang dimulai dari kiri. Ini dimulai dengan transparan secara penuh, pergeseran menjadi warna merah penuh:</p>
+				
+				<div class="grad7"></div>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open07">
+						
+						#grad { <br>
+						background: red; <em>/* For browsers that do not support gradients */</em> <br>
+						background: -webkit-linear-gradient(left,rgba(255,0,0,0),rgba(255,0,0,1)); <em>/*Safari 5.1-6*/</em> <br>
+						background: -o-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); <em>/*Opera 11.1-12*/</em> <br>
+						background: -moz-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); <em>/*Fx 3.6-15*/</em> <br>
+						background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); <em>/*Standard*/</em> <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close07">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#grad1 { <br>
+						height: 200px; <br>
+						background: -webkit-linear-gradient(left, rgba(255,0,0,0), rgba(255,0,0,1)); <em>/* For Safari 5.1 to 6.0 */</em> <br>
+						background: -o-linear-gradient(right, rgba(255,0,0,0), rgba(255,0,0,1)); <em>/* For Opera 11.1 to 12.0 */</em> <br>
+						background: -moz-linear-gradient(right, rgba(255,0,0,0), rgba(255,0,0,1)); <em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); <em>/* Standard syntax (must be last) */</em> <br>
+						} <br>
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>h3</b>>Linear Gradient - Transparency<<b>/h3</b>> <br>
+					<<b>p</b>>To add transparency, we use the rgba() function to define the color stops. The last parameter in the rgba() function can be a value from 0 to 1, 
+					and it defines the transparency of the color: 0 indicates full transparency, 1 indicates full color (no transparency).<<b>/p</b>> <br> <br>
+					<br>
+					<<b>div</b> <span class="teal">id="grad1"</span>><<b>/div</b>> <br>
+					<br>
+					<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> Internet Explorer 9 and earlier versions do not support gradients.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan07()" class="exbutton">Klik disini</button>
+					<button onclick="buka07()" class="exbutton"> Open </button>
+					<button onclick="tutup07()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan07">
+					
+						<h3>Linear Gradient - Transparency</h3>
+						<p>To add transparency, we use the rgba() function to define the color stops. The last parameter in the rgba() function can be a value from 0 to 1, and it defines the transparency of the color: 0 indicates full transparency, 1 indicates full color (no transparency).</p>
+						
+						<div class="grad7"></div>
+						
+						<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Repeating a linear-gradient</h2>
+				<p> fungsi <mark>repeating-linear-gradient()</mark> digunakan untuk membolak-balikan linear gradient:</p>
+				<p>Contih</p>
+				<p>Repeating linear gradient:</p>
+				
+				<div class="grad8A"></div>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open08">
+						
+						#grad { <br>
+						background: red; <em>/* For browsers that do not support gradients */</em> <br>
+						<em>/* Safari 5.1 to 6.0 */</em> <br>
+						background: -webkit-repeating-linear-gradient(red, yellow 10%, green 20%); <br>
+						<em>/* Opera 11.1 to 12.0 */</em> <br>
+						background: -o-repeating-linear-gradient(red, yellow 10%, green 20%); <br>
+						<em>/* Firefox 3.6 to 15 */</em> <br>
+						background: -moz-repeating-linear-gradient(red, yellow 10%, green 20%); <br>
+						<em>/* Standard syntax */</em> <br>
+						background: repeating-linear-gradient(red, yellow 10%, green 20%); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close08">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#grad1 { <br>
+						height: 200px; <br>
+						background: -webkit-repeating-linear-gradient(red, yellow 10%, green 20%); <em>/* For Safari 5.1 to 6.0 */</em> <br>
+						background: -o-repeating-linear-gradient(red, yellow 10%, green 20%); <em>/* For Opera 11.1 to 12.0 */</em> <br>
+						background: -moz-repeating-linear-gradient(red, yellow 10%, green 20%); <em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: repeating-linear-gradient(red, yellow 10%, green 20%); <em>/* Standard syntax (must be last) */</em> <br>
+						} <br>
+						 <br>
+						#grad2 { <br>
+						height: 200px; <br>
+						background: -webkit-repeating-linear-gradient(45deg,red,yellow 7%,green 10%); <em>/* For Safari 5.1 to 6.0 */</em> <br>
+						background: -o-repeating-linear-gradient(45deg,red,yellow 7%,green 10%); <em>/* For Opera 11.1 to 12.0 */</em> <br>
+						background: -moz-repeating-linear-gradient(45deg,red,yellow 7%,green 10%); <em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: repeating-linear-gradient(45deg,red,yellow 7%,green 10%); <em>/* Standard syntax (must be last) */</em> <br>
+						} <br>
+						 <br>
+						#grad3 { <br>
+						height: 200px; <br>
+						background: -webkit-repeating-linear-gradient(190deg,red,yellow 7%,green 10%); <em>/* For Safari 5.1 to 6.0 */</em> <br>
+						background: -o-repeating-linear-gradient(190deg,red,yellow 7%,green 10%); <em>/* For Opera 11.1 to 12.0 */</em> <br>
+						background: -moz-repeating-linear-gradient(190deg,red,yellow 7%,green 10%); <em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: repeating-linear-gradient(190deg,red,yellow 7%,green 10%); <em>/* Standard syntax (must be last) */</em> <br>
+						} <br>
+						 <br>
+						#grad4 { <br>
+						height: 200px; <br>
+						background: -webkit-repeating-linear-gradient(90deg,red,yellow 7%,green 10%); <em>/* For Safari 5.1 to 6.0 */</em> <br>
+						background: -o-repeating-linear-gradient(); <em>/* For Opera 11.1 to 12.0 */</em> <br>
+						background: -moz-repeating-linear-gradient(90deg,red,yellow 7%,green 10%); <em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: repeating-linear-gradient(90deg,red,yellow 7%,green 10%); <em>/* Standard syntax (must be last) */</em> <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>h3</b>>Repeating Linear Gradient<<b>/h3</b>> <br>
+						 <br>
+						<<b>div</b> <span class="teal">id="grad1"</span>><<b>/div</b>> <br>
+						 <br>
+						<<b>p</b>>A repeating gradient on 45deg axe starting red and finishing green:<<b>/p</b>> <br>
+						<<b>div</b> <span class="teal">id="grad2"</span>><<b>/div</b>> <br>
+						 <br>
+						<<b>p</b>>A repeating gradient on 190deg axe starting red and finishing green:<<b>/p</b>> <br>
+						<<b>div</b> <span class="teal">id="grad3"</span>><<b>/div</b>> <br>
+						 <br>
+						<<b>p</b>>A repeating gradient on 90deg axe starting red and finishing green:<<b>/p</b>> <br>
+						<<b>div</b> <span class="teal">id="grad4"</span>><<b>/div</b>> <br>
+						 <br>
+						<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> Internet Explorer 9 and earlier versions do not support gradients.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan08()" class="exbutton">Klik disini</button>
+					<button onclick="buka08()" class="exbutton"> Open </button>
+					<button onclick="tutup08()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan08">
+					
+					<h3>Repeating Linear Gradient</h3>
+					
+					<div class="grad8A"></div>
+					
+					<p>A repeating gradient on 45deg axe starting red and finishing green:</p>
+					<div class="grad8B"></div>
+					
+					<p>A repeating gradient on 190deg axe starting red and finishing green:</p>
+					<div class="grad8C"></div> 
+					
+					<p>A repeating gradient on 90deg axe starting red and finishing green:</p> 
+					<div class="grad8D"></div>
+					<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 Radial Gradients</h2>
+				<p> Sebuah radial gradient didefinisikan oleh pusatnya.</p>
+				<p> Untuk membuat radial gradient kamu juga harus mendefinisikan paling kurang dua color stops.</p>
+				<h3>Sintaksis</h3>
+				<div class="simple-example">
+				<p>background: radial-gradient(shape size at position, start-color, ..., last-color);</p>
+				</div>
+				<p> Dengan default, bentuknya adalah oval, ukurannya adalah farthest-cornee, dan posisinya di tengah.</p>
+				<p> Radial Gradient - Evenly Spaced Color Stops (this is default)</p>
+				<p> Contoh berikt menampikan sebuah radiak gradient dengan evenly spaced color stops:</p>
+				
+				<div class="grad9"></div>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open09">
+						
+						#radialgrad { <br>
+						background: red; <em>/* For browsers that do not support gradients */</em> <br>
+						background: -webkit-radial-gradient(red, yellow, green); <em>/* Safari 5.1 to 6.0 */</em> <br>
+						background: -o-radial-gradient(red, yellow, green); <em>/* For Opera 11.6 to 12.0 */</em> <br>
+						background: -moz-radial-gradient(red, yellow, green); <em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: radial-gradient(red, yellow, green); <em>/* Standard syntax */</em> <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close09">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#grad1 { <br>
+						height: 150px; <br>
+						width: 200px; <br>
+						background: red; <em>/* For browsers that do not support gradients */</em>  <br>
+						background: -webkit-radial-gradient(red, yellow, green); <em>/* Safari 5.1 to 6.0 */</em> <br>
+						background: -o-radial-gradient(red, yellow, green); <em>/* For Opera 11.6 to 12.0 */</em> <br>
+						background: -moz-radial-gradient(red, yellow, green); <em>/* For Firefox 3.6 to 15 */ </em><br>
+						background: radial-gradient(red, yellow, green); <em>/* Standard syntax (must be last) */</em> <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>h3</b>>Radial Gradient - Evenly Spaced Color Stops<<b>/h3</b>> <br>
+						<<b>div</b> <span class="teal">id="grad1"</span>><<b>/div</b>> <br>
+						 <br>
+						<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> Internet Explorer 9 and earlier versions do not support gradients.<<b>/p</b>> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan09()" class="exbutton">Klik disini</button>
+					<button onclick="buka09()" class="exbutton"> Open </button>
+					<button onclick="tutup09()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan09">
+					
+						<h3>Radial Gradient - Evenly Spaced Color Stops</h3>
+						<div class="grad9"></div>
+						
+						<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Radial Gradient - Differently Spaced Color Stops</h2>
+				<p>Contoh berikut menampilkan sebuah radial gradient dengan differently spaced color stops:</p>
+				
+				<div class="grad10"></div>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open10">
+						
+						#radialgrad2 { <br>
+						background: red; <em>/* For browsers that do not support gradients */</em> <br>
+						background: -webkit-radial-gradient(red 5%, yellow 15%, green 60%); <em>/* Safari 5.1-6.0 */</em> <br>
+						background: -o-radial-gradient(red 5%, yellow 15%, green 60%); <em>/* For Opera 11.6-12.0 */</em> <br>
+						background: -moz-radial-gradient(red 5%, yellow 15%, green 60%); <em>/* For Firefox 3.6-15 */</em> <br>
+						background: radial-gradient(red 5%, yellow 15%, green 60%); <em>/* Standard syntax */</em> <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close10">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#grad1 { <br>
+						height: 150px; <br>
+						width: 200px; <br>
+						background: red; <em>/* For browsers that do not support gradients */</em> <br>
+						background: -webkit-radial-gradient(red 5%, yellow 15%, green 60%); <em>/* Safari 5.1-6.0 */</em> <br>
+						background: -o-radial-gradient(red 5%, yellow 15%, green 60%); <em>/* For Opera 11.6 to 12.0 */</em> <br>
+						background: -moz-radial-gradient(red 5%, yellow 15%, green 60%); <em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: radial-gradient(red 5%, yellow 15%, green 60%); <em>/* Standard syntax (must be last) */</em> <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>h3</b>>Radial Gradient - Differently Spaced Color Stops<<b>/h3</b>> <br>
+						<<b>div</b> <span class="teal">id="grad1"</span>><<b>/div</b>> <br>
+						 <br>
+						<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> Internet Explorer 9 and earlier versions do not support gradients.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan10()" class="exbutton">Klik disini</button>
+					<button onclick="buka10()" class="exbutton"> Open </button>
+					<button onclick="tutup10()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan10">
+					
+						<h3>Radial Gradient - Differently Spaced Color Stops</h3>
+						<div class="grad10"></div>
+						
+						<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>
+					
+					</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Set Shape</h2>
+				<p> Mengatur bentuk</p>
+				<p> Parameter shape mendefinisikan bentuk, Shape bisa mengambil nilai <mark>circle</mark> atau <mark>ellipse</mark>. Nilai default adalah <mark>ellipse</mark>.</p>
+				<p> Contoh berikut menampilkan sebuah radial gradient dengan bentuk lingkaran atau circle:</p>
+				
+				<div class="grad11A"></div>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open11">
+						
+						#grad { <br>
+						background: red; <em>/* For browsers that do not support gradients */</em> <br>
+						background: -webkit-radial-gradient(circle, red, yellow, green); <em>/* Safari */</em> <br>
+						background: -o-radial-gradient(circle, red, yellow, green); <em>/* Opera 11.6 to 12.0 */</em> <br>
+						background: -moz-radial-gradient(circle, red, yellow, green); <em>/* Firefox 3.6 to 15 */</em> <br>
+						background: radial-gradient(circle, red, yellow, green); <em>/* Standard syntax */</em> <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close11">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#grad1 { <br>
+						height: 150px; <br>
+						width: 200px; <br>
+						background: -webkit-radial-gradient(red, yellow, green); <em>/* For Safari 5.1 to 6.0 */</em> <br>
+						background: -o-radial-gradient(red, yellow, green); <em>/* For Opera 11.6 to 12.0 */</em> <br>
+						background: -moz-radial-gradient(red, yellow, green); <em>/* For Fx 3.6 to 15 */</em> <br>
+						background: radial-gradient(red, yellow, green); <em>/* Standard syntax (must be last) */</em> <br>
+						} <br>
+						 <br>
+						#grad2 { <br>
+						height: 150px; <br>
+						width: 200px; <br>
+						background: -webkit-radial-gradient(circle, red, yellow, green); <em>/* For Safari 5.1 to 6.0 */</em> <br>
+						background: -o-radial-gradient(circle, red, yellow, green); <em>/* For Opera 11.6 to 12.0 */</em> <br>
+						background: -moz-radial-gradient(circle, red, yellow, green); <em>/* For Fx 3.6 to 15 */</em> <br>
+						background: radial-gradient(circle, red, yellow, green); <em>/* Standard syntax (must be last) */</em> <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>h3</b>>Radial Gradient - Shapes<<b>/h3</b>> <br>
+						 <br>
+						<<b>p</b>><<b>strong</b>>Ellipse (this is default):<<b>/strong</b>><<b>/p</b>> <br>
+						<<b>div</b> <span class="teal">id="grad1"</span>><<b>/div</b>> <br>
+						 <br>
+						<<b>p</b>><<b>strong</b>>Circle:<<b>/strong</b>><<b>/p</b>> <br>
+						<<b>div</b> <span class="teal">id="grad2"</span>><<b>/div</b>> <br>
+						 <br>
+						<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> Internet Explorer 9 and earlier versions do not support gradients.<<b>/p</b>> <br> <br>
+					</b>
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan11()" class="exbutton">Klik disini</button>
+					<button onclick="buka11()" class="exbutton"> Open </button>
+					<button onclick="tutup11()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan11">
+					
+						<h3>Radial Gradient - Shapes</h3>
+						
+						<p><strong>Ellipse (this is default):</strong></p>
+						<div class="grad11A"></div>
+						
+						<p><strong>Circle:</strong></p>
+						<div class="grad11B"></div>
+						
+						<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Use of Different Size Keywords</h2>
+				<p> Menggunakan Perbedaan Kata kunci Ukuran </p>
+				<p> Parameter size mendefinisikan ukuran dari gradient. Ini bisa mengambilnempar nilai:</p>
+				
+				<ul>
+					<li>closest-side</li>
+					<li>farthest-side</li>
+					<li>closest-corner</li>
+					<li>farthest-corner</li>
+				</ul>
+				
+				<p>Contoh</p>
+				<div class="grad12A"></div>
+				
+				<p> Sebuah radial gradient dengan perbedaan katakunci ukuran:</p>
+				
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open12">
+						
+						#grad1 { <br>
+						background: red; /* For browsers that do not support gradients */ <br>
+						<em>/* Safari 5.1 to 6.0 */</em> <br>
+						background: -webkit-radial-gradient(60% 55%, closest-side, red, yellow, black);  <br>
+						<em>/* For Opera 11.6 to 12.0 */</em> <br>
+						background: -o-radial-gradient(60% 55%, closest-side, red, yellow, black); <br>
+						<em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: -moz-radial-gradient(60% 55%, closest-side, red, yellow, black); <br>
+						<em>/* Standard syntax */</em> <br>
+						background: radial-gradient(closest-side at 60% 55%, red, yellow, black); <br>
+						} <br>
+						 <br>
+						#grad2 { <br>
+						<em>/* Safari 5.1 to 6.0 */</em> <br>
+						background: -webkit-radial-gradient(60% 55%, farthest-side, red, yellow, black); <br>
+						<em>/* Opera 11.6 to 12.0 */</em>  <br>
+						background: -o-radial-gradient(60% 55%, farthest-side, red, yellow, black); <br>
+						<em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: -moz-radial-gradient(60% 55%, farthest-side, red, yellow, black); <br>
+						<em>/* Standard syntax */</em> <br>
+						background: radial-gradient(farthest-side at 60% 55%, red, yellow, black); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close12">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#grad1 { <br>
+						height: 150px; <br>
+						width: 150px; <br>
+						background: -webkit-radial-gradient(60% 55%, closest-side, red, yellow, black); <em>/* Safari 5.1 to 6.0 */</em> <br>
+						background: -o-radial-gradient(60% 55%, closest-side, red, yellow, black); <em>/* For Opera 11.6 to 12.0 */</em> <br>
+						background: -moz-radial-gradient(60% 55%, closest-side, red, yellow, black); <em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: radial-gradient(closest-side at 60% 55%, red, yellow, black); <em>/* Standard syntax (must be last) */</em> <br>
+						} <br>
+						 <br>
+						#grad2 { <br>
+						height: 150px; <br>
+						width: 150px; <br>
+						background: -webkit-radial-gradient(60% 55%, farthest-side, red, yellow, black); <em>/* Safari 5.1 to 6.0 */</em> <br>
+						background: -o-radial-gradient(60% 55%, farthest-side, red, yellow, black); <em>/* For Opera 11.6 to 12.0 */</em> <br>
+						background: -moz-radial-gradient(60% 55%, farthest-side, red, yellow, black); <em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: radial-gradient(farthest-side at 60% 55%, red, yellow, black); <em>/* Standard syntax (must be last) */</em> <br>
+						} <br>
+						 <br>
+						#grad3 { <br>
+						height: 150px; <br>
+						width: 150px; <br>
+						background: -webkit-radial-gradient(60% 55%, closest-corner, red, yellow, black); <em>/* Safari 5.1 to 6.0 */</em> <br>
+						background: -o-radial-gradient(60% 55%, closest-corner, red, yellow, black); <em>/* For Opera 11.6 to 12.0 */</em> <br>
+						background: -moz-radial-gradient(60% 55%, closest-corner, red, yellow, black); <em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: radial-gradient(closest-corner at 60% 55%, red, yellow, black); <em>/* Standard syntax (must be last) */</em> <br>
+						} <br>
+						 <br>
+						#grad4 { <br>
+						height: 150px; <br>
+						width: 150px; <br>
+						background: -webkit-radial-gradient(60% 55%, farthest-corner, red, yellow, black); <em>/* Safari 5.1 to 6.0 */</em> <br>
+						background: -o-radial-gradient(60% 55%, farthest-corner, red, yellow, black); <em>/* For Opera 11.6 to 12.0 */</em> <br>
+						background: -moz-radial-gradient(60% 55%, farthest-corner, red, yellow, black); <em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: radial-gradient(farthest-corner at 60% 55%, red, yellow, black); <em>/* Standard syntax (must be last) */</em> <br>
+						} <br>
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>h3</b>>Radial Gradients - Use of different size keywords<<b>/h3</b>> <br>
+						 <br>
+						<<b>p</b>><<b>strong</b>>closest-side:<<b>/strong</b>><<b>/p</b>> <br>
+						<<b>div</b> <span class="teal">id="grad1"</span>><<b>/div</b>> <br>
+						 <br>
+						<<b>p</b>><<b>strong</b>>farthest-side:<<b>/strong</b>><<b>/p</b>> <br>
+						<<b>div</b> <span class="teal">id="grad2"</span>><<b>/div</b>> <br>
+						 <br>
+						<<b>p</b>><<b>strong</b>>closest-corner:<<b>/strong</b>><<b>/p</b>> <br>
+						<<b>div</b> <span class="teal">id="grad3"</span>><<b>/div</b>> <br>
+						 <br>
+						<<b>p</b>><<b>strong</b>>farthest-corner (this is default):<<b>/strong</b>><<b>/p</b>> <br>
+						<<b>div</b> <span class="teal">id="grad4"</span>><<b>/div</b>> <br>
+						 <br>
+						<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> Internet Explorer 9 and earlier versions do not support gradients.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan12()" class="exbutton">Klik disini</button>
+					<button onclick="buka12()" class="exbutton"> Open </button>
+					<button onclick="tutup12()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan12">
+					
+						<h3>Radial Gradients - Use of different size keywords</h3>
+						
+						<p><strong>closest-side:</strong></p>
+						<div class="grad12A"></div>
+						
+						<p><strong>farthest-side:</strong></p>
+						<div class="grad12B"></div>
+						
+						<p><strong>closest-corner:</strong></p>
+						<div class="grad12C"></div>
+						
+						<p><strong>farthest-corner (this is default):</strong></p>
+						<div class="grad12D"></div>
+						
+						<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Repeating a radial-gradient</h2>
+				<p>Fungsi <mark>repeating-radial-gradient()</mark> digunakan unuk membolak-balik radial gradient:</p>
+				<p>Contoh</p>
+				<p>Sebuah repeating radial gradient:</p>
+				
+				<div class="grad13"></div>
+				
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open13">
+						
+						#grad { <br>
+						background: red; /* For browsers that do not support gradients */ <br>
+						<em>/* For Safari 5.1 to 6.0 */</em> <br>
+						background: -webkit-repeating-radial-gradient(red, yellow 10%, green 15%); <br>
+						<em>/* For Opera 11.6 to 12.0 */</em> <br>
+						background: -o-repeating-radial-gradient(red, yellow 10%, green 15%); <br>
+						<em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: -moz-repeating-radial-gradient(red, yellow 10%, green 15%); <br>
+						<em>/* Standard syntax */</em> <br>
+						background: repeating-radial-gradient(red, yellow 10%, green 15%); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close13">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#grad1 { <br>
+						height: 150px; <br>
+						width: 200px; <br>
+						background: -webkit-repeating-radial-gradient(red, yellow 10%, green 15%); <em>/* For Safari 5.1 to 6.0 */</em> <br>
+						background: -o-repeating-radial-gradient(red, yellow 10%, green 15%); <em>/* For Opera 11.6 to 12.0 */</em> <br>
+						background: -moz-repeating-radial-gradient(red, yellow 10%, green 15%); <em>/* For Firefox 3.6 to 15 */</em> <br>
+						background: repeating-radial-gradient(red, yellow 10%, green 15%); <em>/* Standard syntax (must be last) */</em> <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>h3</b>>Repeating Radial Gradient<<b>/h3</b>> <br>
+						 <br>
+						<<b>div</b> <span class="teal">id="grad1"</span>><<b>/div</b>> <br>
+						 <br>
+						<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> Internet Explorer 9 and earlier versions do not support gradients.<<b>/p</b>> <br> <br>
+						
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan13()" class="exbutton">Klik disini</button>
+					<button onclick="buka13()" class="exbutton"> Open </button>
+					<button onclick="tutup13()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan13">
+					
+						<h3>Repeating Radial Gradient</h3>
+						
+						<div class="grad13"></div>
+						
+						<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS3 colors.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS3 shadows.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

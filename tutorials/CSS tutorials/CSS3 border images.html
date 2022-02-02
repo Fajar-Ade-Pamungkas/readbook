@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS3 border images </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+[class*="borderimg"]{
+	text-shadow:1px 1px 1px black, 1px 1px 1px black;
+}
+.borderimg-repeated { 
+border: 10px solid transparent; 
+padding: 15px; 
+-webkit-border-image: url("../gif/wow.gif") 30 round; /* Safari 3.1-5 */ 
+-o-border-image: url("../gif/wow.gif") 30 round; /* Opera 11-12.1 */ 
+border-image: url("../gif/wow.gif") 30 round; 
+} 
+
+.borderimg-stretched { 
+border: 10px solid transparent; 
+padding: 15px; 
+-webkit-border-image: url("../gif/kiss.gif") 30 stretch; /* Safari 3.1-5 */ 
+-o-border-image: url("../gif/kiss.gif") 30 stretch; /* Opera 11-12.1 */ 
+border-image: url("../gif/kiss.gif") 30 stretch; 
+} 
+
+.borderimg1 { 
+border: 10px solid transparent; 
+padding: 15px; 
+-webkit-border-image: url("../gif/angry.gif") 50 round; /* Safari 3.1-5 */ 
+-o-border-image: url("../gif/angry.gif") 50 round; /* Opera 11-12.1 */ 
+border-image: url("../gif/angry.gif") 50 round; 
+background-color:hotpink;
+} 
+
+.borderimg2 { 
+border: 10px solid transparent; 
+padding: 15px; 
+-webkit-border-image: url("../gif/kiss2.gif") 20% round; /* Safari 3.1-5 */ 
+-o-border-image: url("../gif/kiss2.gif") 20% round; /* Opera 11-12.1 */ 
+border-image: url("../gif/kiss2.gif") 20% round; 
+} 
+
+.borderimg3 { 
+border: 10px solid transparent; 
+padding: 15px; 
+-webkit-border-image: url("../gif/boring.gif") 30% round; /* Safari 3.1-5 */ 
+-o-border-image: url("../gif/boring.gif") 30% round; /* Opera 11-12.1 */ 
+border-image: url("../gif/boring.gif") 30% round; 
+} 
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS3 Border Images </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<div>
+				<h2> CSS3 Border Images</h2>
+				<p> Dengan CSS3 <mark>border-image</mark> properti, kamu bisa mengatur sebuahbimage untuk digunakan sebagau border yang mengelilingi sebuah element.</p>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Browser Support</h2>
+				<p> Nomor pada tabel menentukan browser versi pertama yang mendukung secara penuh  properti <mark>border-image</mark>.</p>
+				<p> Nomor yang diikut dengan <mark>-webkit-</mark>, <mark>-moz-</mark> atau <mark>-o-</mark> menentukan versi pertama yang bekerja dengan awalan properti.</p>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> Properti </td>
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td>border-image</td>
+							<td> 16.0 <br> 4.0 -webkit- </td>
+							<td> 12.0 dan 11.0</td>
+							<td> 15.0 <br> 3.5 -moz- </td>
+							<td> 6.0 <br>3.1 -webkit- </td>
+							<td> 10.5 <br> 11.0 -o-</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 border-image Property</h2>
+				<p> Properti <mark>border-image</mark> CSS3 memperbolehkan kamu untuk menentukan sebuah image untuk digunakan pengganti dari border normal disekitar element.</p>
+				<p> Properti ini memiliki tiga bagian: </p>
+				<ul>
+					<li>Image untuk digunakan sebagai border</li>
+					<li>Dimana harus memotong (slice) image</li>
+					<li>Mendefinisikan apakah bagian pertengahan harus dibolak-balik (repeated) atau direnggangkan (stretched)</li>
+				</ul>
+				
+				<p> Kita akan menggunakan image berikut (yang bernama "border.png"): </p>
+				
+				
+				<p>Properti <mark>border-image</mark> mengambil/membawa image dan memotongnya (slice) kedalam sembilan bagian, seperti <b>tic-tac-toe board</b>. ia kemudian menempatkan sudut pada sudut, 
+				dan bagian tengah dibolak-balik atau direnggangkan seperti yang kamu tentukan.</p>
+				<div class="nasehatX">
+					<p> <b>Catatan:</b> Agar <mark>border-image</mark> bekerja, element juga memerlukan properti border yang diatur!</p>
+				</div>
+				<p> Disini, middle section (bagian pertengahan) dari image dibolak-balik untuk membuat border: </p>
+				
+				<div class="borderimg-repeated">Image sebagai border!</div>
+				
+				<p> Disini adalah kodenya:</p>
+				
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						#borderimg { <br>
+						border: 10px solid transparent; <br>
+						padding: 15px; <br>
+						-webkit-border-image: url(border.png) 30 round; /* Safari 3.1-5 */ <br>
+						-o-border-image: url(border.png) 30 round; /* Opera 11-12.1 */ <br>
+						border-image: url(border.png) 30 round; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#borderimg { <br>
+						border: 10px solid transparent; <br>
+						padding: 15px; <br>
+						-webkit-border-image: url(border.png) 30 round; /* Safari 3.1-5 */ <br>
+						-o-border-image: url(border.png) 30 round; /* Opera 11-12.1 */ <br>
+						border-image: url(border.png) 30 round; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>p</b>>The border-image property specifies an image to be used as the border around an element:<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="borderimg"</span>>Here, the middle sections of the image are repeated to create the border.<<b>/p</b>> <br>
+					 <br>
+					<<b>p</b>>Here is the original image:<<b>/p</b>><<b>img</b> <span class="teal">src="border.png"</span>> <br>
+					<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> Internet Explorer 10, and earlier versions, do not support the border-image property.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<p>The border-image property specifies an image to be used as the border around an element:</p>
+						<p class="borderimg-repeated">Here, the middle sections of the image are repeated to create the border.</p>
+						
+						<p>Here is the original image:</p><img src="../gif/wow.gif">
+						<p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image property.</p>
+					
+					</div>
+				</article>
+				
+				
+				
+				<p> Disini, bagian pertengahan dari image direnggangkan untuk membuat border:</p>
+				<div class="borderimg-stretched">Image sebagai border!</div>
+				
+				<p> Disini adalah kodenya:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						#borderimg { <br>
+						border: 10px solid transparent; <br>
+						padding: 15px; <br>
+						-webkit-border-image: url(border.png) 30 stretch; /* Safari 3.1-5 */ <br>
+						-o-border-image: url(border.png) 30 stretch; /* Opera 11-12.1 */ <br>
+						border-image: url(border.png) 30 stretch; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#borderimg { <br>
+						border: 10px solid transparent; <br>
+						padding: 15px; <br>
+						-webkit-border-image: url(border.png) 30 stretch; /* Safari 3.1-5 */ <br>
+						-o-border-image: url(border.png) 30 stretch; /* Opera 11-12.1 */ <br>
+						border-image: url(border.png) 30 stretch; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>p</b>>The border-image property specifies an image to be used as the border around an element:<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="borderimg"</span>>Here, the middle sections of the image are stretched to create the border.<<b>/p</b>> <br>
+					 <br>
+					<<b>p</b>>Here is the original image:<<b>/p</b>><<b>img</b> <span class="teal">src="border.png"</span>> <br>
+					<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> Internet Explorer 10, and earlier versions, do not support the border-image property.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<p>The border-image property specifies an image to be used as the border around an element:</p>
+						<p class="borderimg-stretched">Here, the middle sections of the image are stretched to create the border.</p>
+						
+						<p>Here is the original image:</p><img src="../gif/kiss.gif">
+						<p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image property.</p>
+					
+					</div>
+				</article>
+				<p><b>Tip:</b> Properti <mark>border-image</mark> sebenarnya merupakan sebuah shorthand properti untuk <mark>border-image-source</mark>, <mark>border-image-slice</mark>, 
+				<mark>border-image-width</mark>, <mark>border-image-outset</mark> dan <mark>border-image-repeat</mark> properties.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 border-image - Different Slice Values</h2>
+				<p> Nilai pemotong yang berbeda seutuhnya mengubah tampilan dari border:</p>
+				
+				<p>Contoh 1:</p>
+				<div class="borderimg1">border-image: url(border.png) 50 round;</div>
+				
+				<p>Contoh 2:</p>
+				<div class="borderimg2">border-image: url(border.png) 20% round;</div>
+				
+				<p>Contoh 3:</p>
+				<div class="borderimg3">border-image: url(border.png) 30% round;</div>
+				
+				<p> Disini adalah kodenya:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open03">
+						
+						#borderimg1 { <br>
+						border: 10px solid transparent; <br>
+						padding: 15px; <br>
+						-webkit-border-image: url(border.png) 50 round; /* Safari 3.1-5 */ <br>
+						-o-border-image: url(border.png) 50 round; /* Opera 11-12.1 */ <br>
+						border-image: url(border.png) 50 round; <br>
+						} <br>
+						<br>
+						#borderimg2 { <br>
+						border: 10px solid transparent; <br>
+						padding: 15px; <br>
+						-webkit-border-image: url(border.png) 20% round; /* Safari 3.1-5 */ <br>
+						-o-border-image: url(border.png) 20% round; /* Opera 11-12.1 */ <br>
+						border-image: url(border.png) 20% round; <br>
+						} <br>
+						<br>
+						#borderimg3 { <br>
+						border: 10px solid transparent; <br>
+						padding: 15px; <br>
+						-webkit-border-image: url(border.png) 30% round; /* Safari 3.1-5 */ <br>
+						-o-border-image: url(border.png) 30% round; /* Opera 11-12.1 */ <br>
+						border-image: url(border.png) 30% round; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#borderimg1 { <br>
+						border: 10px solid transparent; <br>
+						padding: 15px; <br>
+						-webkit-border-image: url(border.png) 50 round; /* Safari 3.1-5 */ <br>
+						-o-border-image: url(border.png) 50 round; /* Opera 11-12.1 */ <br>
+						border-image: url(border.png) 50 round; <br>
+						} <br>
+						<br>
+						#borderimg2 { <br>
+						border: 10px solid transparent; <br>
+						padding: 15px; <br>
+						-webkit-border-image: url(border.png) 20% round; /* Safari 3.1-5 */ <br>
+						-o-border-image: url(border.png) 20% round; /* Opera 11-12.1 */ <br>
+						border-image: url(border.png) 20% round; <br>
+						} <br>
+						<br>
+						#borderimg3 { <br>
+						border: 10px solid transparent; <br>
+						padding: 15px; <br>
+						-webkit-border-image: url(border.png) 30% round; /* Safari 3.1-5 */ <br>
+						-o-border-image: url(border.png) 30% round; /* Opera 11-12.1 */ <br>
+						border-image: url(border.png) 30% round; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>p</b> <span class="teal">id="borderimg1"</span>>border-image: url(border.png) 50 round;<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="borderimg2"</span>>border-image: url(border.png) 20% round;<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="borderimg3"</span>>border-image: url(border.png) 30% round;<<b>/p</b>> <br>
+					 <br>
+					<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> Internet Explorer 10, and earlier versions, do not support the border-image property.<<b>/p</b>> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+						
+						<p class="borderimg1">border-image: url(border.png) 50 round;</p>
+						<p class="borderimg2">border-image: url(border.png) 20% round;</p>
+						<p class="borderimg3">border-image: url(border.png) 30% round;</p>
+						
+						<p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image property.</p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 Border Properties</h2>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Properti</th>
+							<th>Deskripsi</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>border-image</td>
+							<td> Sebuah shorthand property untuk mengatur semua border image properti dalam satu deklarasi</td>
+						</tr>
+						<tr>
+							<td>border-image-source</td>
+							<td> Menentukan path (jejak) image untuk digunakan sebagai sebuah border</td>
+						</tr>
+						<tr>
+							<td>border-image-slice</td>
+							<td> Menentukan bagaimana untuk memotong (slice) border image</td>
+						</tr>
+						<tr>
+							<td>border-image-width</td>
+							<td> Menentukan lebar dari border image</td>
+						</tr>
+						<tr>
+							<td>border-image-outset</td>
+							<td> Menentukan jumlah dengan yang mana border image area sulit memperluas border box (specifies the amount by which the border image area extends beyond the border box).</td>
+						</tr>
+						<tr>
+							<td>border-image-repeat</td>
+							<td> Menentukan apakah border image harus dibolak-balik</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS3 rounded corners.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS3 backgrounds.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

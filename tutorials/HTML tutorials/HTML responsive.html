@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML responsive</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+<style>
+.city {
+   float: left;
+   margin: 10px;
+   padding: 10px;
+   width: 300px;
+   height: 300px;
+   border: 1px solid black;
+}   
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML Responsive Web Design</h1>
+				<p>
+				Halaman web kamu harus terlihat bagus, dan mudsh untuk digunakan, tanpa memperhatikan (perbedaan luas layar pada) perangkat lain.
+				</p>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> What is Responsive Web Design? </h2>
+				<p> Responsive web design membuat halaman web kamu terlihat bagus pada semua perangkat (desktops atau pc, tablets dan telepon). </p>
+				<p> 
+				Responsive web design ialah tentang penggunaan CSS dan HTML untuk me-resize (mengukur ulang),hide (sembuyikan), shrink (menyusutkan), enlarge (memperluas), 
+				atau move (memindahkan) konten untuk membuatnya terlihat bagus disemua layar: 
+				</p>
+				<img src="../responsive.png" alt="responsive" width="100%" height:auto; />
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Create Your Own Responsive Design </h2>
+				<p> Satu cara untuk menciptakan sebuah responsive design adalah membuatnya (oleh kamu) sendiri: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+							<<b>!DOCTYPE html</b>><br><br>
+							<<b>html</b>><br>
+								<<b>head</b>><br>
+								<<b>style</b>> <br>
+								.city {
+								<blockquote>
+									float: left; <br>
+									margin: 10px; <br>
+									padding: 10px; <br>
+									width: 300px; <br>
+									height: 300px; <br>
+									border: 1px solid black;
+								</blockquote>
+								}    <br>
+								<<b>/style</b>> <br>
+								
+								<<b>/head</b>><br>
+								<<b>body</b>><br>
+									<br>
+								<<b>h1</b>>Responsive Web Design Demo<<b>/h1</b>> <br>
+								<<b>h2</b>>Resize this responsive page!<<b>/h2</b>> <br>
+								<br>
+								<<b>div</b> <span class="teal">class="city"</span>> <br>
+								<<b>h2</b>>London<<b>/h2</b>> <br>
+								<<b>p</b>>London is the capital city of England.<<b>/p</b>> <br>
+								<<b>p</b>>It is the most populous city in the United Kingdom,
+								with a metropolitan area of over 13 million inhabitants.<<b>/p</b>> <br>
+								<<b>/div</b>> <br>
+								<br>
+								<<b>div</b> <span class="teal">class="city"</span>> <br>
+								<<b>h2</b>>Paris<<b>/h2</b>> <br>
+								<<b>p</b>>Paris is the capital of France.<<b>/p</b>> <br> 
+								<<b>p</b>>The Paris area is one of the largest population centers in Europe,
+								with more than 12 million inhabitants.<<b>/p</b>> <br>
+								<<b>/div</b>> <br>
+								<br>
+								<<b>div</b> <span class="teal">class="city"</span>> <br>
+								<<b>h2</b>>Tokyo<<b>/h2</b>> <br>
+								<<b>p</b>>Tokyo is the capital of Japan.<<b>/p</b>> <br>
+								<<b>p</b>>It is the center of the Greater Tokyo Area,
+								and the most populous metropolitan area in the world.<<b>/p</b>> <br>
+								<<b>/div</b>> <br>
+								<br>
+								<<b>div</b> <span class="teal">class="city"</span>> <br>
+								<<b>h2</b>>View Source<<b>/h2</b>> <br>
+								<<b>p</b>>View the source code to see how this page was built.<<b>/p</b>> <br>
+								<<b>/div</b>> <br>
+					<<b>/body</b>><br><br>
+					<<b>/html</b>><br>
+
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					<p> 
+					Contoh ini sengaja tidak karena ada ketidaksesuaian pada kode diatas dengan formatting CSS 
+					yang sudah dibuat pertama kali. 
+					</p>
+					<p> Jika kamu ingin melihat hasilnya kamu bisa menyalin teks diatas lalu terapkan pada folder html sendiri.</p>
+					<!--			
+					<h1>Responsive Web Design Demo</h1>
+					<h2>Resize this responsive page!</h2>
+					
+					<div class="city">
+					  <h2>London</h2>
+					  <p>London is the capital city of England.</p>
+					  <p>It is the most populous city in the United Kingdom,
+					with a metropolitan area of over 13 million inhabitants.</p>
+					</div>
+					
+					<div class="city">
+					  <h2>Paris</h2>
+					  <p>Paris is the capital of France.</p> 
+					  <p>The Paris area is one of the largest population centers in Europe,
+					with more than 12 million inhabitants.</p>
+					</div>
+					
+					<div class="city">
+					  <h2>Tokyo</h2>
+					  <p>Tokyo is the capital of Japan.</p>
+					  <p>It is the center of the Greater Tokyo Area,
+					and the most populous metropolitan area in the world.</p>
+					</div>
+					
+					<div class="city">
+					  <h2>View Source</h2>
+					  <p>View the source code to see how this page was built.</p>
+					</div> 
+					-->
+				</div>
+				</article>
+				
+				<p> Kamu akan mempelajari lebih tentang responsive dilain chapter </p>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML layout.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML iframes.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML XHTML</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+<style type="text/css">
+input {
+	padding:10px;
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML Forms </h1>
+
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> The <b class="blue"><<b>form</b>></b> Element </h2>
+				<p>HTML form (formulir) digunakan untuk mengumpulkan input pengguna. </p>
+				<p> Element <<b>form</b>> mendefinisikan sebuah formulir HTML: </p>
+				
+				<article class="example-box">
+					<div class="example-content">
+					<<b>form</b>> <br>
+					. <br>
+					form elements <br>
+					. <br>
+					<<b>/form</b>>
+					</div>
+				</article>
+				
+				<p> HTML form berisi <b>form element</b>. </p>
+				<p> Form element memiliki tipe element input yang berbeda - beda mulai dari <b>checkbox</b>, <b>radio button</b>, <b>submit button</b> dan selebihnya. </p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> The <b class="blue"><<b>input</b>></b> Element </h2>
+				<p> Element <<b>input</b>> adalah element formulir paling penting. </p>
+				<p> Element <<b>input</b>> memiliki banyak variasi, tergantung pada attribute <b>tipe</b>. </p>
+				<p> Disini adalah tipe - tipe yang digunakan dalam chapter ini: </p>
+				
+				<table>
+					<thead>
+						<tr>
+							<th> Type </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> text </td>
+							<td> Mendefinisikan input (berupa) teks normal </td>
+						</tr>
+						<tr>
+							<td> radio </td>
+							<td> Mendefinisikan input tombol radio (untuk penyeleksian satu dari banyaknya pilihan)</td>
+						</tr>
+						<tr>
+							<td> submit </td>
+							<td> Mendefinisikan tombol submit (untuk penyerahan formulir) </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<p> Kamu akan mempelajari banyak tentang tipe input nanti di tutorial ini. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Text Input </h2>
+				<p><<b>input type="text"</b>> mendefinisikan bidang input satu baris untuk input teks: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>form</b>>
+								  <blockquote>
+								  First name:<<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="text" name="firstname"</span>><<b>br</b>> <br>
+								  Last name:<<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="text" name="lastname"</span>>
+								</blockquote>
+								<<b>/form</b>>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						<form>
+						  First name:<br>
+						  <input type="text" name="firstname"><br>
+						  Last name:<br>
+						  <input type="text" name="lastname">
+						</form>
+					</div>
+				</article>
+				
+				<div class="nasehatX">
+				<b>Catatan:</b> formulir itu sendiri tidak diperlihatkan. Juga perhatikan bahwa default width (lebar) dari text field (bidang teks) adalah 20 karakter. 
+				</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Radio Button Input </h2>
+				<p><<b>input</b> <span class="teal">type="radio"</span>> mendefinisikan sebuah tombol radio. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>form</b>>
+								  <blockquote>
+								  <<b>input</b> <span class="teal">type="radio" name="gender" value="male" checked</span>><<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="radio" name="gender" value="female"</span>><<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="radio" name="gender" value="other"</span>><<b>br</b>> <br>
+								</blockquote>
+								<<b>/form</b>>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan02()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+						
+						<form>
+						  <input type="radio" name="gender" value="male" checked> Male<br>
+						  <input type="radio" name="gender" value="female"> Female<br>
+						  <input type="radio" name="gender" value="other"> Other
+						</form>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The Submit Button </h2>
+				<p> <<b>input</b> <span class="teal">type="submit"</span>> mendefinisikan sebuah tombol untuk <b>submitting</b> (penyerahan) formulir ke <b>form-handler</b>. </p>
+				<p> Form-handler secara khas adalah sebuah halaman server dengan sebuah script (naskah) untuk processing input data. </p>
+				<p> Form-handler ditentukan dalam attribute <b>action</b> (aksi) formulir: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>form</b> <span class="redZone">action="action_page.php"</span>>
+								  <blockquote>
+									  First name:<<b>br</b>> <br>
+									  <<b>input</b> <span class="teal">type="text" name="firstname" value="Mickey"</span>><<b>br</b>> <br>
+									  Last name:<<b>br</b>> <br>
+									  <<b>input</b> <span class="teal">type="text" name="lastname" value="Mouse"</span>><<b>br</b>><<b>br</b>> <br><br>
+									  <<b>input</b> <span class="teal">type="submit" value="Submit"</span>>
+								</blockquote>
+								<<b>/form</b>>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan03()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+						
+						<form action="action_page.php">
+						  First name:<br>
+						  <input type="text" name="firstname" value="Mickey"><br>
+						  Last name:<br>
+						  <input type="text" name="lastname" value="Mouse"><br><br>
+						  <input type="submit" value="Submit">
+						</form>
+						
+					</div>
+				</article>
+				
+				<div class="nasehatX">
+					<b>Catatan:</b> Web ini belum memiliki sebuah web server, jadi bila kamu tombol submit maka akan keluar halaman "not found" atau sebagainya.
+				</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> The Action Attribute </h2>
+				<p> Attribute <b>action</b> mendefinisikan aksi untuk ditunjukanketika formulir diserahkan. </p>
+				<p> Carah umu untuk menyerahkan (submit) formulir menuju server, adalah dengan menggunakan sebuah tombol <b>submit</b>. </p>
+				<p> Secara normal, firmulir diserahkan ke halaman web pada sebuah web server. </p>
+				<p> Pada contoh diatas, sebuah server-side script ditentukan untuk mengatasi formulir yang diserahkan. </p>
+				
+				<div class="example-content">
+				<<b>form</b> <span class="redZone">action="action_page.php"</span>>
+				</div>
+				
+				<p> Jika attribute actiondi hilangkan, action diatur menjadi halaman pada saat ini. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The Method Attribute </h2>
+				<p> Attribute <b>method</b> menentukan metode HTTP (GET atau POST) untuk digunakan ketika penyerahan formulir: </p>
+				
+				<div class="example-content">
+				<<b>form</b> <span class="teal">action="action_page.php"</span> <span class="redZone">method="get"</span>>
+				</div>
+				
+				<p> atau: </p>
+				
+				<div class="example-content">
+				<<b>form</b> <span class="teal">action="action_page.php"</span> <span class="redZone">method="post"</span>>
+				</div>
+
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Kapan Untuk Menggunakan GET ? </h2>
+				<p> Kamu bisa menggunakan GET (default method): </p>
+				<p> Jika form submission adalah pasif (seperti search engine query), dan tanpa informasi sensitif. </p>
+				<p> Ketika kamu menggunakan GET, form data akan diperlihatkan dalam page address (alamat halaman), seperti contoh ini: </p>
+				<div class="example-content">
+					action_page.php?firstname=Mickey&lastname=Mouse
+				</div>
+				
+				<div class="nasehat">
+				GET sangat cocok untuk jumlah singkat (short amounts) data. Keterbatasan ukuran diatur dalam browser kamu. 
+				</div>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Kapan Untuk Menggunakan POST ?</h2>
+				<p> Kamu lebih baik gunakan POST: </p>
+				<p> Jika formulir sedang mengunggah data, atau mencantumkan (include) informasi sensitif (password). </p>
+				<p> POST menawarkan keamanan yang lebih baik karena data yang diserahkan tidak diperlihatkan dalam page address (alamat halaman). </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The Name Attribute </h2>
+				<p> Untuk disubmit secara benar, setiap bidang input harus memiliki sebuah attribute <b>name</b>. </p>
+				<p> Contoh ini hanya akan menyerahkan bidang input "Last name": </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>form</b> <span class="redZone">action="action_page.php"</span>>
+								  <blockquote>
+									  First name:<<b>br</b>> <br>
+									  <<b>input</b> <span class="teal">type="text" name="firstname" value="Mickey"</span>><<b>br</b>> <br>
+									  Last name:<<b>br</b>> <br>
+									  <<b>input</b> <span class="teal">type="text" name="lastname" value="Mouse"</span>><<b>br</b>><<b>br</b>> <br><br>
+									  <<b>input</b> <span class="teal">type="submit" value="Submit"</span>>
+								</blockquote>
+								<<b>/form</b>>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan03()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+						
+						<form action="action_page.php">
+						  First name:<br>
+						  <input type="text" name="firstname" value="Mickey"><br>
+						  Last name:<br>
+						  <input type="text" name="lastname" value="Mouse"><br><br>
+						  <input type="submit" value="Submit">
+						</form>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Grouping Form Data with <b class="blue"><<b>fieldset</b>></b> </h2>
+				<p> Element <<b>fieldset</b>> mengelompokkan data berhubungan pada formulir. </p>
+				<p> Element <<b>fieldset</b>> mendefinisikan sebuah caption untuk element <<b>fieldset</b>>. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>form</b> <span class="teal">action="action_page.php"</span>>
+								  <blockquote>
+									  <span class="redZone"><<b>fieldset</b>></span>
+										  <blockquote>
+										  <span class="redZone"><<b>legend</b>>Personal information:<<b>/legend</b>></span> <br>
+										  First name:<<b>br</b>> <br>
+										  <<b>input</b> <span class="teal">type="text" name="firstname" value="Mickey"</span>><<b>br</b>> <br>
+										  Last name:<<b>br</b>> <br>
+										  <<b>input</b> <span class="teal">type="text" name="lastname" value="Mouse"</span>><<b>br</b>><<b>br</b>> <br>
+										  <<b>input</b> <span class="teal">type="submit" value="Submit"</span>>
+										</blockquote>
+									<span class="redZone"><<b>/fieldset</b>></span>
+								</blockquote>
+								<<b>/form</b>>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan04()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+						
+						<form action="action_page.php">
+						  <fieldset>
+						    <legend>Personal information:</legend>
+						    First name:<br>
+						    <input type="text" name="firstname" value="Mickey"><br>
+						    Last name:<br>
+						    <input type="text" name="lastname" value="Mouse"><br><br>
+						    <input type="submit" value="Submit">
+						  </fieldset>
+						</form>
+						
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML Form Attributes </h2>
+				<p> Sebuah element <<b>form</b>> HTML, dengan semua attribut yang mungkin diatur, akan terlihat seperti ini: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+					<<b>form</b> <span class="teal">action="action_page.php" method="post" target="_blank" accept-charset="UTF-8"
+					enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate</span>> <br>
+					
+						. <br>
+						form elements <br>
+						. <br>
+					<<b>/form</b>>
+
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Attribute - attribute <b class="blue"><<b>form</b>></b> </h2>
+				<p> Disini adalah daftar dari attribute <<b>form</b>>: </p>
+				
+				<table>
+					<thead>
+						<tr> 
+							<th> Attribute </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> accept-charset </td>
+							<td> Menentukan charset yang digunakan dalam submitted form (default: the page charset). </td>
+						</tr>
+						<tr>
+							<td> action </td>
+							<td> Menentukan sebuah alamat (URL) dimana untuk menyerahkan formulir (default: submitting page). </td>
+						</tr>
+						<tr>
+							<td> autocomplete </td>
+							<td> Menentukan jika browser harus autocomplete (lengkapi secara otomatis) formulir (default:on). </td>
+						</tr>
+						<tr>
+							<td> enctype </td>
+							<td> Menentukan encoding (penyadian) data yang diserahkan (default: is url-encoded).</td>
+						</tr>
+						<tr>
+							<td> method </td>
+							<td> Menentukan metode HTTP yang digunakan ketika penyerahan formulir (default: GET) </td>
+						</tr>
+						<tr>
+							<td> name </td>
+							<td> Menentukan sebuah nama yang digunakan untuk mengidentifikasi formulir (for DOM usage: document.forms.name). </td>
+						</tr>
+						<tr>
+							<td> novalidate </td>
+							<td> Menentukan bahwa browser tidak harus mem-validasi (mengesahkan) formulir. </td>
+						</tr>
+						<tr>
+							<td> target </td>
+							<td> Menentukan taget dari address dalam attribute <b>action</b> (default: _self). </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<p> Kamu akan mempelajari lagi tentang attribute dalam chapter selanjutnya. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> More Examples </h2>
+				<button onclick="tampilkan05()"> Send e-mail from a form </button>
+				<p> Bagaimana mengirim e-mail dari sebuah formulir. </p>
+				
+				<article class="example-box sembunyikan" id="sembunyikan05">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>h2</b>>Send e-mail to someone@example.com:<<b>/h2</b>> <br>
+								<<b>form</b> <span class="teal">action="MAILTO:someone@example.com" method="post" enctype="tex/plain"</span>>
+										  <blockquote>
+										  Name:<<b>br</b>> <br>
+										  <<b>input</b> <span class="teal">type="text" name="name" value="your name"</span>><<b>br</b>> <br>
+										  E-mail:<<b>br</b>> <br>
+										  <<b>input</b> <span class="teal">type="text" name="email" value="your email"</span>><<b>br</b>> <br>
+										  Comment:<<b>br</b>> <br>
+										  <<b>input</b> <span class="teal">type="text" name="comment" value="your comment" size="50"</span>><<b>br</b>><<b>br</b>> <br>
+										  <<b>input</b> <span class="teal">type="submit" value="Send"</span>>
+										  <<b>input</b> <span class="teal">type="reset" value="Reset"</span>>
+										</blockquote>
+								<<b>/form</b>>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan06()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+						
+						<h2>Send e-mail to someone@example.com:</h2>
+						
+						<form action="MAILTO:someone@example.com" method="post" enctype="text/plain">
+						Name:<br>
+						<input type="text" name="name" value="your name"><br>
+						E-mail:<br>
+						<input type="text" name="mail" value="your email"><br>
+						Comment:<br>
+						<input type="text" name="comment" value="your comment" size="50"><br><br>
+						<input type="submit" value="Send">
+						<input type="reset" value="Reset">
+						</form>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML XHTML.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML form elements.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

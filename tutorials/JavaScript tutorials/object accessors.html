@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | JavaScript | object accessors</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="javaScript.js"></script>
+<script type="text/javascript" src="javaScript2.js"></script>
+<script type="text/javascript" src="javaScript3.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical"> <!--open link-->
+		<button onclick="openMenu()" id="menu">Open Menu</button>
+		<button onclick="closeMenu()" id="menu">Close Menu</button>
+		
+		<div id="vertical">
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch()"> JavaScript Tutorial</button>
+			<div class="drop-content" id="myDropdown">
+			<input type="text" class="myInput" id="myInput" placeholder="Cari" onkeyup="filterFunction()"/>
+			<ol>
+				<a href="js home.html"><li> Home </li></a>
+				<a href="js introduction.html"><li> Introduction </li></a>
+				<a href="js where to.html"><li> Where To </li></a>
+				<a href="js output.html"><li> Output </li></a>
+				<a href="js syntax.html"><li> Syntax </li></a>
+				<a href="js statements.html" ><li> Statements </li></a>
+				<a href="js comments.html" ><li> Comments </li></a>
+				<a href="js variables.html"><li> Variable </li></a>
+				<a href="js operators.html"><li> Operators </li></a>
+				<a href="js arithmetic.html"><li> Arithmetic </li></a>
+				<a href="js assignment.html"><li> Assignment </li></a>
+				<a href="js data types.html"><li> Data Types </li></a>
+				<a href="js functions.html"><li> Functions </li></a>
+				<a href="js objects.html"><li> Objects </li></a>
+				<a href="js scope.html"><li> Scope </li></a>
+				<a href="js events.html"><li> Events </li></a>
+				<a href="js strings.html"><li> string </li></a>
+				<a href="js string methods.html"><li> Strings Method </li></a>
+				<a href="js numbers.html"><li> Numbers </li></a>
+				<a href="js number methods.html"><li> Number Methods </li></a>
+				<a href="js math.html"><li> Math </li></a>
+				<a href="js random.html" ><li> Math Random </li></a>
+				<a href="js dates.html"><li> Dates </li></a>
+				<a href="js date formats.html" ><li> Date Formats </li></a>
+				<a href="js date methods.html" ><li> Date Methods </li></a>
+				<a href="js get date methods.html" ><li> Date get Methods </li></a>
+				<a href="js set date methods.html" ><li> Date Set Methods </li></a>
+				<a href="js arrays.html"><li> Arrays </li></a>
+				<a href="js array methods.html" ><li> Array Methods </li></a>
+				<a href="js array sort.html"><li> Array Sort </li></a>
+				<a href="js array iteration.html"><li> Array Iteration </li></a>
+				<a href="js booleans.html" ><li> boolean </li></a>
+				<a href="js comparisons.html" ><li> Comparisons </li></a>
+				<a href="js conditions.html" ><li>Conditions</li></a>
+				<a href="js switch.html" ><li>Switch </li></a>
+				<a href="js loop for.html"><li> Loop For </li></a>
+				<a href="js loop while.html" ><li>Loop while</li></a>
+				<a href="js break.html" ><li>Break</li></a>
+				<a href="js type conversion.html" ><li> Types conversion</li></a>
+				<a href="js bitwise.html" ><li> Bitwise </li></a>
+				<a href="js RegExp.html" ><li>RegExp</li></a>
+				<a href="js errors.html" ><li>Errors </li></a>
+				<a href="js debugging.html"><li>Debugging </li></a>
+				<a href="js hoisting.html" ><li>Hoisting</li></a>
+				<a href="js strict mode.html"><li>Strict mode</li></a>
+				<a href="js this keyword.html" ><li> this Keyword </li></a>
+				<a href="js let.html" ><li> Let </li></a>
+				<a href="js const.html" ><li> Const </li></a>
+				<a href="js style guide.html" ><li>Style guide</li></a>
+				<a href="js best practices.html" ><li>best practices </li></a>
+				<a href="js mistakes.html"><li> Mistakes </li></a>
+				<a href="js performance.html" ><li>Performance</li></a>
+				<a href="js reserved words.html" ><li>Reserved words</li></a>
+				<a href="js versions.html" ><li> Versions </li></a>
+				<a href="js version ES5.html" ><li class="redZone"> Version ES5 </li></a>
+				<a href="js version ES6.html" ><li class="redZone"> Version ES6 </li></a>
+				<a href="js JSON.html"><li>JSON</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch2()"> JavaScript Formulir</button>
+			<div class="drop-content" id="myDropdown2">
+			<input type="text" class="myInput" id="myInput2" placeholder="Cari" onkeyup="filterFunction2()"/>
+			<ol>
+				<a href="forms validation.html" ><li>Forms Validation</li></a>
+				<a href="forms API.html" ><li class="redZone">Forms API</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch3()"> JavaScript Object</button>
+			<div class="drop-content" id="myDropdown3">
+			<input type="text" class="myInput" id="myInput3" placeholder="Cari" onkeyup="filterFunction3()"/>
+			<ol>
+				<a href="object definitions.html" ><li>Object Definitions</li></a>
+				<a href="object properties.html" ><li>Object Properties</li></a>
+				<a href="object methods.html"><li class="redZone">Object Methods</li></a>
+				<a href="object accessors.html" ><li>Object accessors</li></a>
+				<a href="object constructors.html" ><li>Object constructor</li></a>
+				<a href="object prototypes.html" ><li>Object Prototypes</li></a>
+				<a href="object ECMAScript5.html" ><li class="redZone">Object ECMAScript5</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch4()"> JavaScript Function</button>
+			<div class="drop-content" id="myDropdown4">
+			<input type="text" class="myInput" id="myInput4" placeholder="Cari" onkeyup="filterFunction4()"/>
+			<ol>
+				<a href="funtion definitions.html" ><li>Function Definitions</li></a>
+				<a href="function parameters.html" ><li>Function Parameters</li></a>
+				<a href="function invocation.html" ><li>Function Invocation</li></a>
+				<a href="function closures.html" ><li>Function Closures</li></a>
+				<a href="function apply.html" ><li class="redZone">Function Apply</li></a>
+				<a href="function call.html" ><li>Function Call</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch5()">  JavaScript HMTL DOM </button>
+			<div class="drop-content" id="myDropdown5">
+			<input type="text" class="myInput" id="myInput5" placeholder="Cari" onkeyup="filterFunction5()"/>
+			<ol>
+				<a href="DOM intro.html" ><li> DOM Introduction </li></a>
+				<a href="DOM methods.html" ><li> DOM Methods </li></a>
+				<a href="DOM document.html" ><li> DOM Documents</li></a>
+				<a href="DOM elements.html" ><li> DOM Elements  </li></a>
+				<a href="DOM HTML.html" ><li> DOM HTML</li></a>
+				<a href="DOM CSS.html" ><li> DOM CSS  </li></a>
+				<a href="DOM animations.html" ><li> DOM Animations </li></a>
+				<a href="DOM events.html" ><li> DOM Events </li></a>
+				<a href="DOM eventListener.html" ><li> DOM EventListener </li></a>
+				<a href="DOM navigation.html" ><li> DOM Navigation </li></a>
+				<a href="DOM nodes.html" ><li> DOM Nodes </li></a>
+				<a href="DOM nodelist.html" ><li> DOM Nodelist </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch6()"> JavaScript Browser BOM </button>
+			<div class="drop-content" id="myDropdown6">
+			<input type="text" class="myInput" id="myInput6" placeholder="Cari" onkeyup="filterFunction6()"/>
+			<ol>
+				<a href="BOM window.html" ><li> Window </li></a>
+				<a href="BOM screen.html" ><li> Screen </li></a>
+				<a href="BOM location.html" ><li> Location </li></a>
+				<a href="BOM history.html" ><li> History  </li></a>
+				<a href="BOM navigator.html" ><li> Navigator </li></a>
+				<a href="BOM popup alert.html" ><li> Popup Alert </li></a>
+				<a href="BOM timing.html" ><li> Timing </li></a>
+				<a href="BOM cookies.html" ><li> Cookies </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch7()">JavaScript AJAX</button>
+			<div class="drop-content" id="myDropdown7">
+			<input type="text" class="myInput" id="myInput7" placeholder="Cari" onkeyup="filterFunction7()"/>
+			<ol>
+				<a href="AJAX intro.html" ><li> AJAX Introduction</li></a>
+				<a href="AJAX XMLHttpRequest.html" ><li> AJAX XMLHttpRequest </li></a>
+				<a href="AJAX request.html" ><li> AJAX Request </li></a>
+				<a href="AJAX respone.html" ><li class="redZone"> AJAX Response </li></a>
+				<a href="AJAX XML file.html" ><li> AJAX XML File</li></a>
+				<a href="AJAX PHP.html" ><li> AJAX PHP </li></a>
+				<a href="AJAX ASP.html" ><li> AJAX ASP </li></a>
+				<a href="AJAX database.html" ><li> AJAX Database </li></a>
+				<a href="AJAX XML applications.html" ><li> AJAX XML Application </li></a>
+				<a href="AJAX examples.html" ><li> AJAX Example </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch8()">JavaScript JSON</button>
+			<div class="drop-content" id="myDropdown8">
+			<input type="text" class="myInput" id="myInput8" placeholder="Cari" onkeyup="filterFunction8()"/>
+			<ol>
+				<a href="JSON intro.html" ><li class="redZone"> JSON Introduction</li></a>
+				<a href="JSON syntax.html" ><li class="redZone"> JSON Syntax </li></a>
+				<a href="JSON vs XML.html" ><li class="redZone"> JSON vs XML </li></a>
+				<a href="JSON data types.html" ><li class="redZone"> JSON Data Types </li></a>
+				<a href="JSON parse.html" ><li class="redZone"> JSON parse </li></a>
+				<a href="JSON stringify.html" ><li class="redZone"> JSON Stringify</li></a>
+				<a href="JSON objects.html" ><li class="redZone"> JSON Objects </li></a>
+				<a href="JSON arrays.html" ><li class="redZone"> JSON Arrays </li></a>
+				<a href="JSON PHP.html" ><li class="redZone"> JSON PHP </li></a>
+				<a href="JSON HTML.html" ><li class="redZone"> JSON HTML </li></a>
+				<a href="JSON JSONP.html" ><li class="redZone"> JSON JSONP </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch9()">JavaScript Reference</button>
+			<div class="drop-content" id="myDropdown9">
+			<input type="text" class="myInput" id="myInput9" placeholder="Cari" onkeyup="filterFunction9()"/>
+			<ol>
+				<li> <p> JavaScript References </p> </li>
+				<a href="JavaScript references/overview.html" > <li> Overview </li> </a>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch11()">JavaScript</button>
+					<div class="drop-content" id="myDropdown11">
+					<input type="text" class="myInput" id="myInput11" placeholder="Cari" onkeyup="filterFunction11()"/>
+					<ol>
+						<a href="JavaScript references/string reference.html" ><li>String Reference </li></a>
+						<a href="JavaScript references/number reference.html" ><li>Number Reference </li></a>
+						<a href="JavaScript references/operator reference.html" ><li>Operator Reference </li></a>
+						<a href="JavaScript references/statement reference.html" ><li>Statement Reference </li></a>
+						<a href="JavaScript references/math reference.html" ><li>Math Reference </li></a>
+						<a href="JavaScript references/date reference.html" ><li>Date Reference </li></a>
+						<a href="JavaScript references/array reference.html" ><li> Array Reference </li></a>
+						<a href="JavaScript references/boolean reference.html" ><li> Boolean Reference </li></a>
+						<a href="JavaScript references/RegExp reference.html" ><li> RegExp Reference </li></a>
+						<a href="JavaScript references/global reference.html" ><li> Global Reference </li></a>
+						<a href="JavaScript references/conversion reference.html" ><li> Conversion Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()">Browser Object Model (BOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="JavaScript references/BOM window reference.html" ><li> BOM Window Reference </li></a>
+						<a href="JavaScript references/BOM navigator reference.html" ><li> BOM Navigator Reference </li></a>
+						<a href="JavaScript references/BOM screen reference.html" ><li> BOM screen Reference </li></a>
+						<a href="JavaScript references/BOM history reference.html" ><li> BOM History Reference </li></a>
+						<a href="JavaScript references/BOM location reference.html" ><li> BOM Location Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()"> HTML Document Object Model (DOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="JavaScript references/DOM document reference.html" ><li> DOM Documents Reference </li></a>
+						<a href="JavaScript references/DOM element reference.html" ><li> DOM Elements Reference </li></a>
+						<a href="JavaScript references/DOM attribute reference.html" ><li> DOM Attributes Reference </li></a>
+						<a href="JavaScript references/DOM event reference.html" ><li> DOOM Events Reference </li></a>
+						<a href="JavaScript references/DOM style.html" ><li> DOM Style Reference </li></a>
+					</ol>
+					</div>
+			</ol>
+			</div>
+			</div>
+		</div>
+		</div>
+		</div> <!--close Link-->
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> JavaScript Object Accessors</h1>
+				
+			</div>
+			
+
+			
+<section>
+			<article>
+				<h1> JavaScript Accessors (Getters and Setters) </h1>
+				<p>
+				ECMAScript 5 (2009) memperkenalkan (Penyerap dan Pengatur). <br><br>
+				Getter dan Setter mengizinkan kamu untuk mendefinisikan Object Accessor (Computed Properties).
+				</p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> JavaScript Getter (Kata kunci <b class="blue">get</b>)  </h1>
+				<p>
+				Contoh ini menggunakan sebuah properti <b>lang</b> untuk <b>get</b> (mendapatkan) nilai dari properti <b>language</b>.
+				</p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+						<em>// Buatlah sebuah Object</em> <br>
+						<span class="purple">var</span> person = {
+							<blockquote>
+							firstName : "David", <br>
+							lastName : "John", <br>
+							language : "en", <br>
+							<div class="redZone">get lang() {
+								<blockquote>
+								return this.language;
+								</blockquote>
+							}
+							</div>
+							</blockquote>
+						}; <br>
+						<em>// Tampilkan data dari object menggunakan sebuah penyerap (getter)</em> <br>
+						document.getElementById("demo").innerHTML = person.lang;
+					</div>
+					<h4>Output:</h4>
+					<div class="example-content">
+						<button onclick="myAcc1()">Klik disini</button>
+						<p id="myAcc1"></p>
+					</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> JavaScript Setter (Kata kunci <b class="blue">set</b>)  </h1>
+				<p>
+				Contoh ini menggunakan sebuah properti <b>lang</b> untuk <b>set</b> (mengatur) nilai dari properti <b>language</b>.
+				</p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+						<span class="purple">var</span> person = {
+							<blockquote>
+							firstName : "David", <br>
+							lastName : "John", <br>
+							language : "", <br>
+							<div class="redZone">set lang(lang) {
+								<blockquote>
+								this.language = lang;
+								</blockquote>
+							}
+							</div>
+							</blockquote>
+						}; <br>
+						<em>// atur sebuah properti objet dengan menggunakan setter: </em><br>
+						person.lang = "en"; <br>
+						<em>// Tampilkan data dari object:</em> <br>
+						document.getElementById("demo").innerHTML = person.language;
+					</div>
+					<h4>Output:</h4>
+					<div class="example-content">
+						<button onclick="myAcc2()">Klik disini</button>
+						<p id="myAcc2"></p>
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h1> JavaScript Fungsi atau Getter? </h1>
+				<p>
+				Apa perbedaan antara kedua contoh berikut?
+				</p>
+				
+				<article class="example-box">
+					<h1>Contoh1</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+						<span class="purple">var</span> person = {
+							<blockquote>
+							firstName : "David", <br>
+							lastName : "John", <br>
+							fullName : <div class="redZone">function() {
+								<blockquote>
+								return this.firstName + " " + this.lastName;
+								</blockquote>
+							}
+							</div>
+							</blockquote>
+						}; <br>
+						<em>// Tampilkan data dari object dengan menggunakan metode:</em> <br>
+						document.getElementById("demo").innerHTML = person.fullName();
+					</div>
+					<h4>Output:</h4>
+					<div class="example-content">
+						<button onclick="myAcc3()">Klik disini</button>
+						<p id="myAcc3"></p>
+					</div>
+				</article>
+				
+				<article class="example-box">
+					<h1>Contoh 2</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+						<span class="purple">var</span> person = {
+							<blockquote>
+							firstName : "David", <br>
+							lastName : "John", <br>
+							<div class="redZone">get fullName() {
+								<blockquote>
+								return this.firstName + " " + this.lastName;
+								</blockquote>
+							}
+							</div>
+							</blockquote>
+						}; <br>
+						<em>// Tampilkan data dari object dengan menggunakan geter (penyerap):</em> <br>
+						document.getElementById("demo").innerHTML = person.fullName;
+					</div>
+					<h4>Output:</h4>
+					<div class="example-content">
+						<button onclick="myAcc4()">Klik disini</button>
+						<p id="myAcc4"></p>
+					</div>
+				</article>
+				
+				<p>
+				Contoh 1 mengakses <b>fullName</b> sebagai sebuah fungsi: <b>person.fullName()</b>. <br><br>
+				Contoh 1 mengakses <b>fullName</b> sebagai sebuah properti: <b>person.fullName</b>. <br><br>
+				Contoh kedua menyediakan sintaksis yang lebih sederhana.
+				</p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Data Quality  </h1>
+				<p>
+				JavaScript bisa mengamankan lebih baik kualitas data ketika menggunakan getter dan setter.<br><br>
+				Penggunaan properti <b>lang</b>, pada contoh ini, mengembalikan nilai dari properti <b>language</b> dalam uppercase (huruf kapital): <br><br>
+				</p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+						<em>// Buatlah sebuah Object</em> <br>
+						<span class="purple">var</span> person = {
+							<blockquote>
+							firstName : "David", <br>
+							lastName : "John", <br>
+							language : "en", <br>
+							<div class="redZone">get lang() {
+								<blockquote>
+								return this.language.toUpperCase();
+								</blockquote>
+							}
+							</div>
+							</blockquote>
+						}; <br>
+						<em>// Tampilkan data dari object menggunakan sebuah penyerap (getter)</em> <br>
+						document.getElementById("demo").innerHTML = person.lang;
+					</div>
+					<h4>Output:</h4>
+					<div class="example-content">
+						<button onclick="myAcc5()">Klik disini</button>
+						<p id="myAcc5"></p>
+					</div>
+				</article>
+				
+				<p>
+				Penggunaan properti <b>lang</b>, pada contoh ini, menyimpan sebuah nilai upper case dalam properti <b>language</b>:
+				</p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+						<span class="purple">var</span> person = {
+							<blockquote>
+							firstName : "David", <br>
+							lastName : "John", <br>
+							language : "", <br>
+							<div class="redZone">set lang(lang) {
+								<blockquote>
+								this.language = lang.toUpperCase();
+								</blockquote>
+							}
+							</div>
+							</blockquote>
+						}; <br>
+						<em>// atur sebuah properti object dengan menggunakan setter: </em><br>
+						person.lang = "en"; <br>
+						<em>// Tampilkan data dari object:</em> <br>
+						document.getElementById("demo").innerHTML = person.language;
+					</div>
+					<h4>Output:</h4>
+					<div class="example-content">
+						<button onclick="myAcc6()">Klik disini</button>
+						<p id="myAcc6"></p>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Kenapa Menggunakan Getter dan Setter </h1>
+				<ul>
+					<li> Karena getter dan setter memberikan sintaksis yang lebih sederhana </li>
+					<li> Karena getter dan setter mengizinkan sintaksis yang sama untuk properti dan metode </li>
+					<li>Karena getter dan setter bia mengamankan lebih baik kualitas data </li>
+					<li> Karena getter dan setter berguna untuk melakukan hal - hal behind-the-scenes (dibalik layar) </li>
+				</ul>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Contoh Counter (penghitung) </h1>
+				
+				<article class="example-box redZone">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+						<span class="purple">var</span> myObject = {
+							<blockquote>
+							counter : 0,
+								<blockquote>
+								<span class="purple">get</span> reset() {
+									<blockquote>
+									<span class="purple">this</span>.counter = 0;
+									</blockquote>
+								}, <br>
+								<span class="purple">get</span> increment() {
+									<blockquote>
+									<span class="purple">this</span>.counter++;
+									</blockquote>
+								}, <br>
+								<span class="purple">get</span> decrement() {
+									<blockquote>
+									<span class="purple">this</span>.counter--;
+									</blockquote>
+								},<br>
+								<span class="purple">set</span> add(value) {
+									<blockquote>
+									<span class="purple">this</span>.counter += value;
+									</blockquote>
+								}, <br>
+								<span class="purple">set</span> substract(value) {
+									<blockquote>
+									<span class="purple">this</span>.counter -= value;
+									</blockquote>
+								}
+								</blockquote>
+							</blockquote>
+						}; <br>
+						<em>// Mainkan dengan counter: </em><br>
+						myObject.reset; <br>
+						myObject.add = 5; <br>
+						myObject.substract = 1; <br>
+						myObject.increment; <br>
+						myObject.decrement;
+					</div>
+					<h4>Output:</h4>
+					<div class="example-content">
+						<button onclick="myAcc7()">Klik disini</button>
+						<p id="myAcc7"></p>
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Object.defineProperty()</h1>
+				<p>
+				Metode <b>Object.defineProperty()</b> bisa juga digunakan untuk menambahkan <b>Getter</b> dan <b>Setter</b>:
+				</p>
+				
+				<article class="example-box redZone">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+						<em>//Definisikan Object</em> <br>
+						<span class="purple">var</span> obj = {counter:0}; <br><br>
+						<em>//Definisikan Setter</em> <br>
+						Object.defineProperty(obj, "reset" {
+							<blockquote>
+							get : <span class="purple">function</span> () {this.counter = 0;}
+							</blockquote>
+						}); <br><br>
+						Object.defineProperty(obj, "increment", {
+							<blockquote>
+							get : function () {this.counter++;}
+							</blockquote>
+						}); <br><br>
+						Object.defineProperty(obj, "decrement", {
+							<blockquote>
+							get : function () {this.counter--;}
+							</blockquote>
+						}); <br><br>
+						Object.defineProperty(obj, "add", {
+							<blockquote>
+							get : function () {this.counter += value;}
+							</blockquote>
+						}); <br><br>
+						Object.defineProperty(obj, "substract", {
+							<blockquote>
+							get : function () {this.counter -= value;}
+							</blockquote>
+						}); <br><br>
+						<em>// Mainkan dengan counter: </em><br>
+						obj.reset; <br>
+						obj.add = 5; <br>
+						obj.substract = 1; <br>
+						obj.increment; <br>
+						obj.decrement;
+					</div>
+					<h4>Output:</h4>
+					<div class="example-content">
+						<button onclick="myAcc8()">Klik disini</button>
+						<p id="myAcc8"></p>
+					</div>
+				</article>
+
+			</article>
+</section>
+<section>
+			<article>
+				<h1>Browser Support</h1>
+				<p>
+				Getter dan Setter tidak didukung pada Internet Explorer 8 atau versi sebelumnya:
+				</p>
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody class="center">
+						<tr class="browser-logos">
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr>
+							<td> Yes </td>
+							<td> 9.0 </td>
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+
+			<article id="NoB">
+			<a href="object methods.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="object constructors.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			</article>
+			<article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+<script type="text/javascript">
+function myAcc1() {
+	var pirate = {
+	   firstName : "Dave",
+	   lastName : "John",
+	   language : "en",
+	   get lang() {
+	      return this.language;
+	   }
+	};
+	document.getElementById("myAcc1").innerHTML = pirate.lang;
+}
+
+function myAcc2() {
+	var person = {
+	firstName : "David", 
+	lastName : "John", 
+	language : "", 
+	set lang(lang) {
+	this.language = lang;
+	}
+	}; 
+	// atur sebuah properti objet dengan menggunakan setter: 
+	person.lang = "en"; 
+	// Tampilkan data dari object: 
+	document.getElementById("myAcc2").innerHTML = person.language;
+}
+
+function myAcc3() {
+	var orang= {
+	firstName : "David", 
+	lastName : "John", 
+	fullName : function() {
+		return this.firstName + " " + this.lastName;
+		}
+	}; 
+	// Tampilkan data dari object dengan menggunakan metode: 
+	document.getElementById("myAcc3").innerHTML = orang.fullName();
+}
+
+function myAcc4(){
+	var person = {
+	firstName : "David", 
+	lastName : "John", 
+	get fullName() {
+		return this.firstName + " " + this.lastName;
+		}
+	}; 
+	// Tampilkan data dari object dengan menggunakan geter (penyerap): 
+	document.getElementById("myAcc4").innerHTML = person.fullName;
+}
+
+function myAcc5() {
+	// Buatlah sebuah Object 
+	var person = {
+	firstName : "David", 
+	lastName : "John", 
+	language : "en", 
+	get lang() {
+		return this.language.toUpperCase();
+		}
+	}; 
+	// Tampilkan data dari object menggunakan sebuah penyerap (getter) 
+	document.getElementById("myAcc5").innerHTML = person.lang;
+}
+
+function myAcc6() {
+	var person = {
+		firstName : "David", 
+		lastName : "John", 
+		language : "", 
+			set lang(lang) {
+			this.language = lang.toUpperCase();
+			}
+	}; 
+	// atur sebuah properti objet dengan menggunakan setter: 
+	person.lang = "en"; 
+	// Tampilkan data dari object: 
+	document.getElementById("myAcc6").innerHTML = person.language;
+}
+
+function myAcc7(){
+	var myObject = {
+		counter : 0,
+		get reset() {
+			this.counter = 0;
+		}, 
+		get increment() {
+			this.counter++;
+		}, 
+		get decrement() {
+			this.counter--;
+		},
+		set add(value) {
+			this.counter += value;
+		}, 
+		set substract(value) {
+			this.counter -= value;
+		}
+	}; 
+	// Mainkan dengan counter: 
+	myObject.reset; 
+	myObject.add = 5; 
+	myObject.substract = 1; 
+	myObject.increment; 
+	myObject.decrement;
+	
+	//document.getElementByid("myAcc7").innerHTML = myObject;
+}
+
+/*
+function myAcc8() {
+	//Definisikan Object 
+	var obj = {counter:0}; 
+	
+	//Definisikan Setter 
+	Object.defineProperty(obj, "reset" {
+		get : function () {this.counter = 0;}
+	}); 
+	
+	Object.defineProperty(obj, "increment", {
+		get : function () {this.counter++;}
+	}); 
+	
+	Object.defineProperty(obj, "decrement", {
+		get : function () {this.counter--;}
+	}); 
+	
+	Object.defineProperty(obj, "add", {
+		get : function () {this.counter += value;}
+	}); 
+	
+	Object.defineProperty(obj, "substract", {
+		get : function () {this.counter -= value;}
+	}); 
+	
+	// Mainkan dengan counter: 
+	obj.reset; 
+	obj.add = 5; 
+	obj.substract = 1; 
+	obj.increment; 
+	obj.decrement;
+}
+*/
+</script>
+</body>
+</html>

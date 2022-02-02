@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | JavaScript | JQuery Selectors</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="JSON.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../javaScript3.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> JavaScript /jQuery DOM Selectors</h1> </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2>jQuery vs JavaScript</h2>
+				<p> jQuery diciptakan pada tahun 2006 oleh John Resig. jQuery didesign untuk menangani Browser Incompatiblities (browser yang tidak sesuai) dan untuk mempermudah HTML DOM Manifulation, Event Handling, Animation dan Ajax.</p>
+				<p> Untuk lebih dari 10 tahun, jQuery telah menjadi  JavaScript library yang paling populer di dunia.</p>
+				<p> Akan tetapi, setelah JavaScript versi 5 (pada tahun 2009), Kebanyakan jQuery utilities bisa dipecahkan dengan beberapa garis tentang standar JavaScript:</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Finding HTML Element by Id</h2>
+				<p> Mencari HTML Element dengan Id</p>
+				<p> Kembalikan element dengan <b>id="intro":</b>
+				
+				<article class="example-box">
+					<h4>jQuery</h4>
+					<div class="example-content" id="content-open01">
+						
+						<code>var</code> myElement = $("#id01");
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>script</b>> <br>
+					
+					<<b>/script</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+								<!DOCTYPE html>
+								<html>
+								<head>
+								<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+								</head>
+								<body>
+								
+								<h2>Finding HTML Elements by Id</h2>
+								
+								<p id="id01">Hello World!</p>
+								<p id="id02">Hello Sweden!</p>
+								<p id="id03">Hello Japan!</p>
+								
+								<p id="demo"></p>
+								
+								<script>
+								$(document).ready(function() {
+								var myElements = $("#id01");
+								$("#demo").text("The text from the id01 paragraph is: " + myElements[0].innerHTML);
+								});
+								</script>
+								
+								</body>
+								</html>
+								
+					
+					</div>
+				</article>
+				
+				<article class="example-box">
+					<h4>JavaScript</h4>
+					<div class="example-content" id="content-open02">
+						
+					var myElement = document.getElementById("id01");
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>script</b>> <br>
+					
+					<<b>/script</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+								<!DOCTYPE html>
+								<html>
+								<body>
+								
+								<h2>Finding HTML Elements by Id</h2>
+								
+								<p id="id01">Hello World!</p>
+								<p id="id02">Hello Sweden!</p>
+								<p id="id03">Hello Japan!</p>
+								
+								<p id="demo"></p>
+								
+								<script>
+								var myElement = document.getElementById("id01");
+								document.getElementById("demo").innerHTML = "The text from the id01 paragraph is: " + myElement.innerHTML;
+								</script>
+								
+								</body>
+								</html>
+								
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Finding HTML Elements by Tag Name</h2>
+				<p> Mencari HTML Element dengan Nama Tag</p>
+				<p> Kembalikan semua element <<b>p</b>>:</p>
+				
+				<article class="example-box">
+					<h4>jQuery</h4>
+					<div class="example-content" id="content-open03">
+						
+						<code>var</code> myElements = $("p");
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>script</b>> <br>
+					
+					<<b>/script</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+							<!DOCTYPE html>
+							<html>
+							<head>
+							<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+							</head>
+							
+							<body>
+							
+							<h2>Finding HTML Elements by Tag Name</h2>
+							
+							<p>Hello World!</p>
+							<p>Hello Sweden!</p>
+							<p>Hello Japan!</p>
+							
+							<p id="demo"></p>
+							
+							<script>
+							$(document).ready(function() {
+							var myElements = $("p");
+							$("#demo").text("The text in the first paragraph is: " + myElements[0].innerHTML);
+							});
+							</script>
+							
+							</body>
+							</html>
+							
+					
+					</div>
+				</article>
+				
+				
+				
+				<article class="example-box">
+					<h4>JavaScript</h4>
+					<div class="example-content" id="content-open04">
+						
+						<code>var</code> myElements = document.getElementsByTagName("p");
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close04">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>script</b>> <br>
+					
+					<<b>/script</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<button onclick="buka04()" class="exbutton"> Open </button>
+					<button onclick="tutup04()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+								<!DOCTYPE html>
+								<html>
+								<body>
+								
+								<h2>Finding HTML Elements by Tag Name</h2>
+								
+								<p>Hello World!</p>
+								<p>Hello Sweden!</p>
+								<p>Hello Japan!</p>
+								
+								<p id="demo"></p>
+								
+								<script>
+								var myElements = document.getElementsByTagName("p");
+								document.getElementById("demo").innerHTML = "The text in the first paragraph is: " + myElements[0].innerHTML;
+								</script>
+								
+								</body>
+								</html>
+								
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Finding HTML Elements by Class Name</h2>
+				<p> Mencari HTML Element dengan Nama Class</p>
+				<p> Kembalikan semua element dengan <b>class="intro"</b>
+				
+				<article class="example-box">
+					<h4>jQuery</h4>
+					<div class="example-content" id="content-open05">
+						
+						<code>var</code> myElements = $(".intro");
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close05">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>script</b>> <br>
+					
+					<<b>/script</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan05()" class="exbutton">Klik disini</button>
+					<button onclick="buka05()" class="exbutton"> Open </button>
+					<button onclick="tutup05()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+					
+								<!DOCTYPE html>
+								<html>
+								<head>
+								<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+								</head>
+								<body>
+								
+								<h2>Finding HTML Elements by Class Name</h2>
+								
+								<p class="intro">Hello World!</p>
+								<p class="intro">Hello Sweden!</p>
+								<p class="intro">Hello Japan!</p>
+								
+								<p id="demo"></p>
+								
+								<script>
+								$(document).ready(function() {
+								var myElements = $(".intro");
+								$("#demo").text("The first paragraph with class='intro' is: " + myElements[0].innerHTML);
+								});
+								</script>
+					
+					</div>
+				</article>
+				
+				
+				
+				<article class="example-box">
+					<h4>JavaScript</h4>
+					<div class="example-content" id="content-open06">
+						
+						<code>var</code> myElements = document.getElementsByClassName("intro");
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close06">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>script</b>> <br>
+					
+					<<b>/script</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan06()" class="exbutton">Klik disini</button>
+					<button onclick="buka06()" class="exbutton"> Open </button>
+					<button onclick="tutup06()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+					
+							<!DOCTYPE html>
+							<html>
+							<body>
+							
+							<h2>Finding HTML Elements by Class Name</h2>
+							
+							<p class="intro">Hello World!</p>
+							<p class="intro">Hello Sweden!</p>
+							<p class="intro">Hello Japan!</p>
+							
+							<p id="demo"></p>
+							
+							<script>
+							var myElements = document.getElementsByClassName("intro");
+							document.getElementById("demo").innerHTML = "The first paragraph with class='intro' is: " + myElements[0].innerHTML;
+							</script>
+							
+							</body>
+							</html>
+							
+					
+					</div>
+				</article>
+				
+				<div class="nasehat">
+				<p> Mencari element dengan class name tidak bekerja di Internet Explorer 8 dan versi sebelumnya.</p>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Finding HTML Elements by CSS Selectors</h2>
+				<p> Mencari HTML Element dengan CSS Selector</p>
+				<p> Kembalikan daftar tentang semua element <<b>p</b>> dengan <b>class="intro"</b>.</p>
+				Return a list of all <p> elements with class="intro".
+				
+				<article class="example-box">
+					<h4>jQuery</h4>
+					<div class="example-content" id="content-open07">
+						
+						<code>var</code> myElements = $("p.intro");
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close07">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>script</b>> <br>
+					
+					<<b>/script</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan07()" class="exbutton">Klik disini</button>
+					<button onclick="buka07()" class="exbutton"> Open </button>
+					<button onclick="tutup07()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan07">
+					
+							<!DOCTYPE html>
+							<html>
+							<head>
+							<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+							</head>
+							<body>
+							
+							<h2>Finding HTML Elements by Query Selector</h2>
+							
+							<p class="intro">Hello World!</p>
+							<p class="intro">Hello Sweden!</p>
+							<p class="intro">Hello Japan!</p>
+							
+							<p id="demo"></p>
+							
+							<script>
+							$(document).ready(function() {
+							var myElements = $("p.intro");
+							$("#demo").text("The first paragraph with class='intro' is: " + myElements[0].innerHTML);
+							});
+							</script>
+							
+							</body>
+							</html>
+							
+					
+					</div>
+				</article>
+				
+				
+				
+				<article class="example-box">
+					<h4>JavaScript</h4>
+					<div class="example-content" id="content-open08">
+						
+					<code>var</code> myElements = document.querySelectorAll("p.intro");
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close08">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>script</b>> <br>
+					
+					<<b>/script</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan08()" class="exbutton">Klik disini</button>
+					<button onclick="buka08()" class="exbutton"> Open </button>
+					<button onclick="tutup08()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan08">
+					
+							<!DOCTYPE html>
+							<html>
+							<body>
+							
+							<h2>Finding HTML Elements by Query Selector</h2>
+							
+							<p class="intro">Hello World!</p>
+							<p class="intro">Hello Sweden!</p>
+							<p class="intro">Hello Japan!</p>
+							
+							<p id="demo"></p>
+							
+							<script>
+							var myElements = document.querySelectorAll("p.intro");
+							document.getElementById("demo").innerHTML = 
+							"The first paragraph with class='intro' is: " + myElements[0].innerHTML;
+							</script>
+							
+							</body>
+							</html>
+							
+					
+					</div>
+				</article>
+				
+				<div class="nasehat">
+					<p>Metode <mark>querySelectorAll()</mark> tidak bekerja di Internet Explorer 8 dan versi sebelumnya.</p>
+				</div>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href=" .html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href=" .html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			</article>
+			<article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML5 Audio </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML5 Audio </h1>
+				<p> HTML5 menyediakan sebuah stabdar untuk memainkan file audio. </p>
+				
+				<audio width="100%" height="auto" autoplay>
+				  <source src="../../../Bluetooth/Nissa_sabyan_full_album_sholawat_terbaru_2018_.mp3" type="audio/mpeg">
+				  <source src="../../../Bluetooth/Nissa_sabyan_full_album_2018_.ogg" type="audio/ogg">
+				Your browser does not support the video tag.
+				</audio>
+			</div>
+			
+			
+<section>			
+			<article>
+				<h2> Audio on the Web </h2>
+				<p> Audio pada Web</p>
+				<p> Sebelum HTML5, Tidak ada standar untuk memainkan file audio pada sebuah web page. </p>
+				<p> Sebelum HTML5, file audio hanya bisa dimainkan dengan sebuah  plug-in (seperti flash). </p>
+				<p> Element <<b>video</b>> HTML5 menentukan sebuah cara standar untuk menanamkan sebuah audio dalam web page. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Browser Support </h2>
+				<p> Nomor pada tabel menentukan browser versi pertama yang mendukung secara penuh element <<b>audio</b>>. </p>
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td class="left"> Element</td>
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> <<b>audio</b>> </td>
+							<td> 4.0 </td>
+							<td> 9.0 </td>
+							<td> 3.5 </td>
+							<td> 4.0 </td>
+							<td> 10.5 </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> The HTML <b class="blue"><<b>audio</b>></b> Element </h2>
+				<p> Untuk menampilkan sebuah audio dalam HTML, gunakanlah element <<b>audio</b>>: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br>
+						<<b>html</b>><br>
+							<<b>head</b>><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br><br>
+						
+							<<b>audip</b> <span class="teal">controls</span>><br>
+							  <<b>source</b> <span class="teal">src="audio.mp3" type="audio/mpep"</span>> <br>
+							  <<b>source</b> <span class="teal">src="audio.ogg" type="audio/ogg"</span>> <br>
+							Your browser does not support the audio tag. <br>
+							<<b>/audio</b>> <br><br>
+								
+							<<b>/body</b>><br>
+						<<b>/html</b>>
+						
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						<audio controls>
+						  <source src="../../../Bluetooth/Nissa_sabyan_full_album_sholawat_terbaru_2018_.mp3" type="audio/mpeg">
+						  <source src="../../../Bluetooth/Nissa_sabyan_full_album_sholawat_terbaru_2018_.ogg" type="audio/ogg">
+						Your browser does not support the video tag.
+						</audio>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> How it Works </h2>
+				<p> Bagaimana Audio Bekerja. </p>
+				<p> Attribute <b>controls</b> menambahakan kontrol audio, seperti play, pause, volume. </p>
+				<p> Teks diantara tag <<b>audio</b>> dan <<b>/audio</b>> hanya akan ditampilkan dalam browser yang tidak men-support element <<b>video</b>>. </p>
+				<p> Element <<b>source</b>> bisa me-link ke file audio yang berbeda. Browser akan menggunakan format yang diakui pertama (first recognized format). </p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> HTML <b class="blue"><<b>audio</b>></b> Autoplay </h2>
+				<p> Untuk memulai sebuah audio secara otomatis gunakanlah attribute <b>autoplay</b>: </p>
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br>
+						<<b>html</b>><br>
+							<<b>head</b>><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br><br>
+						
+							<<b>audio</b> <span class="teal">autoplay</span>><br>
+							  <<b>source</b> <span class="teal">src="lagu.mp3" type="audio/mpeg"</span>> <br>
+							  <<b>source</b> <span class="teal">src="lagu.ogg" type="audio/ogg"</span>> <br>
+							Your browser does not support the video tag. <br>
+							<<b>/audio</b>> <br><br>
+								
+							<<b>/body</b>><br>
+						<<b>/html</b>>
+						
+					</div>
+					<button onclick="tampilkan03()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+							<audio autoplay>
+							  <source src="../../../Bluetooth/Nissa_sabyan_full_album_sholawat_terbaru_2018_.mp3" type="audio/mpeg"/>
+							  <source src="../../../Bluetooth/Nissa_sabyan_full_album_sholawat_terbaru_2018_.ogg" type="audio/ogg"/>
+							Your browser does not support the video tag.
+							</audio>
+					</div>
+				</article>
+				
+				<div class="nasehat">
+				<p> Attribute <b>autoplay</b> tidak bekerja di perangkat mobile seperti <b>iPad</b> dan <b>iPhone</b>. </p>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML Audio - Browser Support </h2>
+				<p> Sekarang ini, ada 3 format audio yang disupport untuk element <<b>audio</b>>: MP3, Wav, dan Ogg: </p>
+				
+				<table>
+					<thead>
+						<tr>
+							<th> Browser </th>
+							<th> MP3 </th>
+							<th> Wav </th>
+							<th> Ogg </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> Internet Explorer </td>
+							<td> YES </td>
+							<td> NO </td>
+							<td> NO </td>
+						</tr>
+						<tr>
+							<td> Chrome </td>
+							<td> YES </td>
+							<td> YES </td>
+							<td> YES </td>
+						</tr>
+						<tr>
+							<td> Firefox </td>
+							<td> YES </td>
+							<td> YES </td>
+							<td> YES </td>
+						</tr>
+						<tr>
+							<td> Safari </td>
+							<td> YES </td>
+							<td> YES </td>
+							<td> NO </td>
+						</tr>
+						<tr>
+							<td> Opera </td>
+							<td> YES (untuk Opera 25) </td>
+							<td> YES </td>
+							<td> YES </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML Video - Media Types </h2>
+				<table>
+					<thead>
+						<tr>
+							<th> File Format </th>
+							<th> Media Type </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> MP3 </td>
+							<td> audio/mpeg </td>
+						</tr>
+						<tr>
+							<td> Wav </td>
+							<td> audio/wav </td>
+						</tr>
+						<tr>
+							<td> Ogg </td>
+							<td> audio/ogg </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML Audio - Methods, Properties, and Events </h2>
+				<p> HTML5 mendefinisikan metode DOM, dan event untuk element <<b>audio</b>>. </p>
+				<p> Ini mengizinkan kamu untuk load, play, dan pause audio, sebagus penyetingan durasi dan volume. </p>
+				<p> Ada juga DOM events yang bisa memberitahukan kamu ketika sebuah audio mulai dimainkan, dipause dan sebagainya. </p>
+				<p> Untuk referensi DOM penuh, silahkan kunjungi <a href="HTML5 Audio/Video DOM Reference.html" >HTML5 Audio/Video DOM Reference</a>.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML5 Video Tags </h2>
+				<table>
+					<thead>
+						<tr>
+							<th> Tag </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> <<b>audio</b>> </td>
+							<td> Mendefinisikan sebuah audio atau sound </td>
+						</tr>
+						<tr>
+							<td> <<b>source</b>> </td>
+							<td> Mendefinisikan mutiple media resource (sumber media multiple) seperti <<b>video</b>> dan <<b>audio</b> </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML5 video.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML plug-ins.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

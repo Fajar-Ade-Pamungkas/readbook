@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML Game Introducdtion  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="../CSS tutorials/buka.js"></script>
+<style type="text/css">
+canvas {
+	border:1px solid #d3d3d3; 
+	background-color: #f1f1f1;
+	position:relative;
+	margin: 0 auto;
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+	
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML Game Introduction  </h1>
+				
+			</div>
+			
+			
+<section>			
+			<article>
+				<h2> HTML Game Example </h2>
+				<p> Belajar bagaimana untuk membuat game, tidak menggunakan apapun tapi (hanya menggunakan) HTML dan JavaScript. </p>
+				<p> Tekan tombol untuk menggerakan persegi merah: </p>
+				<div> <span>Restart</span>
+				<span>UP</span>
+				<span>LEFT  RIGHT</span>
+				<span>DOWN</span>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Try it Yourself Examples</h2>
+				<p>With our online editor, you can edit the code, and click on a button to view the result.</p>
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						<code>function</code> startGame() {
+							<blockquote>
+								myGamePiece = new component(30, 30, "red", 10, 120); <br>
+								myGamePiece.gravity = 0.05; <br>
+								myScore = new component("30px", "Consolas", "black", 280, 40, "text"); <br>
+								myGameArea.start();
+							</blockquote>
+							} <br>
+							<br>
+							<code>var</code> myGameArea = {
+							<blockquote>
+								canvas : document.createElement("canvas"), <br>
+								start : function() {
+								<blockquote>
+									this.canvas.width = 480; <br>
+									this.canvas.height = 270; <br>
+									this.context = this.canvas.getContext("2d"); <br>
+									document.body.insertBefore(this.canvas, document.body.childNodes[0]); <br>
+									this.frameNo = 0;
+								</blockquote>
+								}, <br>
+								clear : function() {
+								<blockquote>
+									this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+								</blockquote>
+								}
+							</blockquote>
+						}<br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						canvas {
+						<blockquote>
+							border:1px solid #d3d3d3; <br>
+							background-color: #f1f1f1;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b> <span clas="teal">onload="startGame()"</span>><br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>script</b>> <br>
+					
+					var myGamePiece; <br>
+					var myObstacles = []; <br>
+					var myScore; <br>
+					<br>
+					function startGame() {
+					<blockquote>
+					    myGamePiece = new component(30, 30, "red", 10, 120); <br>
+					    myGamePiece.gravity = 0.05; <br>
+					    myScore = new component("30px", "Consolas", "black", 280, 40, "text"); <br>
+					    myGameArea.start();
+					</blockquote>
+					} <br>
+					<br>
+					var myGameArea = { 
+					<blockquote>
+					    canvas : document.createElement("canvas"), <br>
+					    start : function() { 
+					    <blockquote>
+							this.canvas.width = 480; <br>
+							this.canvas.height = 270; <br>
+							this.context = this.canvas.getContext("2d"); <br>
+							document.body.insertBefore(this.canvas, document.body.childNodes[0]); <br>
+							this.frameNo = 0; <br>
+							this.interval = setInterval(updateGameArea, 20);
+						</blockquote>
+						}, <br>
+						clear : function() {
+						<blockquote>
+							this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+						</blockquote>
+						}
+					</blockquote>
+					} <br>
+					<br>
+					function component(width, height, color, x, y, type) {
+					<blockquote>
+						this.type = type; <br>
+						this.score = 0; <br>
+						this.width = width; <br>
+						this.height = height; <br>
+						this.speedX = 0; <br>
+						this.speedY = 0;  <br>
+						this.x = x; <br>
+						this.y = y; <br>
+						this.gravity = 0; <br>
+						this.gravitySpeed = 0; <br>
+						this.update = function() {
+						<blockquote>
+							ctx = myGameArea.context; <br>
+							if (this.type == "text") { 
+							<blockquote>
+								ctx.font = this.width + " " + this.height; <br>
+								ctx.fillStyle = color; <br>
+								ctx.fillText(this.text, this.x, this.y);
+							</blockquote>
+							} else {
+							<blockquote>
+								ctx.fillStyle = color; <br>
+								ctx.fillRect(this.x, this.y, this.width, this.height);
+							</blockquote>
+							}
+						</blockquote>
+						}<br>
+						this.newPos = function() {
+						<blockquote>
+							this.gravitySpeed += this.gravity; <br>
+							this.x += this.speedX; <br>
+							this.y += this.speedY + this.gravitySpeed; <br>
+							this.hitBottom();
+						</blockquote>
+						} <br>
+						this.hitBottom = function() {
+						<blockquote>
+							var rockbottom = myGameArea.canvas.height - this.height; <br>
+							if (this.y > rockbottom) {
+							<blockquote>
+								this.y = rockbottom; <br>
+								this.gravitySpeed = 0;
+							</blockquote>
+							}
+						</blockquote>
+						}<br>
+						this.crashWith = function(otherobj) {
+						<blockquote>
+							var myleft = this.x; <br>
+							var myright = this.x + (this.width); <br>
+							var mytop = this.y; <br>
+							var mybottom = this.y + (this.height); <br>
+							var otherleft = otherobj.x; <br>
+							var otherright = otherobj.x + (otherobj.width); <br>
+							var othertop = otherobj.y; <br>
+							var otherbottom = otherobj.y + (otherobj.height); <br>
+							var crash = true; <br>
+							if ((mybottom <b><</b> othertop) || (mytop > otherbottom) || (myright <b><</b> otherleft) || (myleft > otherright)) {
+							<blockquote>
+								crash = false;
+							</blockquote>
+							} <br>
+							return crash;
+						</blockquote>
+						}
+					</blockquote>
+					} <br>
+					<br>
+					function updateGameArea() {
+					<blockquote>
+						var x, height, gap, minHeight, maxHeight, minGap, maxGap; <br>
+						for (i = 0; i <b><</b> myObstacles.length; i += 1) { 
+						<blockquote>
+							if (myGamePiece.crashWith(myObstacles[i])) {
+							<blockquote>
+								return;
+							</blockquote>
+							} 
+						</blockquote>
+						} <br>
+						myGameArea.clear(); <br>
+						myGameArea.frameNo += 1; <br>
+						if (myGameArea.frameNo == 1 || everyinterval(150)) {
+						<blockquote>
+							x = myGameArea.canvas.width; <br>
+							minHeight = 20; <br>
+							maxHeight = 200; <br>
+							height = Math.floor(Math.random()*(maxHeight-minHeight+1)+minHeight); <br>
+							minGap = 50; <br>
+							maxGap = 200; <br>
+							gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap); <br>
+							myObstacles.push(new component(10, height, "green", x, 0)); <br>
+							myObstacles.push(new component(10, x - height - gap, "green", x, height + gap));
+						</blockquote>
+						} <br>
+						for (i = 0; i <b><</b> myObstacles.length; i += 1) {
+						<blockquote>
+							myObstacles[i].x += -1; <br>
+							myObstacles[i].update();
+						</blockquote>
+						} <br>
+						myScore.text="SCORE: " + myGameArea.frameNo; <br>
+						myScore.update(); <br>
+						myGamePiece.newPos(); <br>
+						myGamePiece.update(); 
+					</blockquote>
+					} <br>
+					<br>
+					function everyinterval(n) {
+					<blockquote>
+						if ((myGameArea.frameNo / n) % 1 == 0) {return true;} <br>
+						return false;
+					</blockquote>
+					} <br>
+					<br>
+					function accelerate(n) {
+					<blockquote>
+						myGamePiece.gravity = n;
+					</blockquote>
+					}<br>
+
+					<<b>/script</b>> <br><br>
+					<<b>br</b>> <br>
+					<<b>button</b> <span class="teal">onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)"</span>>ACCELERATE<<b>/button</b>> <br>
+					<<b>p</b>> Gunaknlah tombol ACCELERATE untuk tetap berada diudara<<b>/p</b>> <br>
+					<<b>p</b>> Berapa lama kamu tetap bertahan hidup?<<b>/p</b>> <br> <br>
+
+					<<b>/body</b>><br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01" >
+									
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="SVG reference.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML game canvas.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			</article>
+			<article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+<script>
+
+var myGamePiece;
+var myObstacles = [];
+var myScore;
+
+function startGame() {
+    myGamePiece = new component(30, 30, "red", 10, 120);
+    myGamePiece.gravity = 0.05;
+    myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+    myGameArea.start();
+}
+
+var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+		this.canvas.width = 480;
+		this.canvas.height = 270;
+		this.context = this.canvas.getContext("2d");
+		document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+		this.frameNo = 0;
+		this.interval = setInterval(updateGameArea, 20);
+	},
+	clear : function() {
+		this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+	}
+}
+
+function component(width, height, color, x, y, type) {
+	this.type = type;
+	this.score = 0;
+	this.width = width;
+	this.height = height;
+	this.speedX = 0;
+	this.speedY = 0;    
+	this.x = x;
+	this.y = y;
+	this.gravity = 0;
+	this.gravitySpeed = 0;
+	this.update = function() {
+		ctx = myGameArea.context;
+		if (this.type == "text") {
+			ctx.font = this.width + " " + this.height;
+			ctx.fillStyle = color;
+			ctx.fillText(this.text, this.x, this.y);
+		} else {
+			ctx.fillStyle = color;
+			ctx.fillRect(this.x, this.y, this.width, this.height);
+		}
+	}
+	this.newPos = function() {
+		this.gravitySpeed += this.gravity;
+		this.x += this.speedX;
+		this.y += this.speedY + this.gravitySpeed;
+		this.hitBottom();
+	}
+	this.hitBottom = function() {
+		var rockbottom = myGameArea.canvas.height - this.height;
+		if (this.y > rockbottom) {
+			this.y = rockbottom;
+			this.gravitySpeed = 0;
+		}
+	}
+	this.crashWith = function(otherobj) {
+		var myleft = this.x;
+		var myright = this.x + (this.width);
+		var mytop = this.y;
+		var mybottom = this.y + (this.height);
+		var otherleft = otherobj.x;
+		var otherright = otherobj.x + (otherobj.width);
+		var othertop = otherobj.y;
+		var otherbottom = otherobj.y + (otherobj.height);
+		var crash = true;
+		if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
+			crash = false;
+		}
+		return crash;
+	}
+}
+
+function updateGameArea() {
+	var x, height, gap, minHeight, maxHeight, minGap, maxGap;
+	for (i = 0; i < myObstacles.length; i += 1) {
+		if (myGamePiece.crashWith(myObstacles[i])) {
+			return;
+		} 
+	}
+	myGameArea.clear();
+	myGameArea.frameNo += 1;
+	if (myGameArea.frameNo == 1 || everyinterval(150)) {
+		x = myGameArea.canvas.width;
+		minHeight = 20;
+		maxHeight = 200;
+		height = Math.floor(Math.random()*(maxHeight-minHeight+1)+minHeight);
+		minGap = 50;
+		maxGap = 200;
+		gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
+		myObstacles.push(new component(10, height, "green", x, 0));
+		myObstacles.push(new component(10, x - height - gap, "green", x, height + gap));
+	}
+	for (i = 0; i < myObstacles.length; i += 1) {
+		myObstacles[i].x += -1;
+		myObstacles[i].update();
+	}
+	myScore.text="SCORE: " + myGameArea.frameNo;
+	myScore.update();
+	myGamePiece.newPos();
+	myGamePiece.update();
+}
+
+function everyinterval(n) {
+	if ((myGameArea.frameNo / n) % 1 == 0) {return true;}
+	return false;
+}
+
+function accelerate(n) {
+	myGamePiece.gravity = n;
+}
+</script>
+
+</body>
+</html>

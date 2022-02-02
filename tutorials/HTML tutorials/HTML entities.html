@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML entities</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML Entities</h1>
+				<p>Karakter yang dipesan dalam HTML harus digantikan dengan <b>character entities</b> (karakter yang udah ada). </p>
+				<p> Karakter yang tidak disediakan pada keyboard kamu, juga busa diganti dengan entities. </p>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> HTML Entities </h2>
+				<p> Beberapa karakter dipesan dalam HTML. </p>
+				<p> Jika kamu menggunakan simbol less than (<b><</b>) atau greater than (<b>></b>) pada teks kamu, <b>browser mungkin mencampurkan mereka dengan tag</b>. </p>
+				<p> Character entities digunakan untuk menampilkan karakter yang dipesan dalam HTML. </p>
+				<p> Sebuah karakter entitas terlihat seperti ini: </p>
+				
+				<div class="simple-example">
+				&<i class="grey">entity_name</i>; <br><br>
+				OR <br> <br>
+				&#<i class="grey">entity_number</i>;
+				</div>
+				
+				<p> Untuk menampilkan simbol less than (kurang dari) kita harus menulis <b>&<b>alt;</b></b> atau <b>&#60;</b> </p>
+				
+				<div class="nasehat">
+				Keuntungan (advantage) dari penggunaan sebuah entity name, sebagai pengganti dari nomor, yaitu nama lebih mudah untuk diingat. <br>
+				Kerugiannya adalah browser mungkin tidak mendukung semua entity name, tapi mendukung untuk nomor (entity) itu baik. 
+				</div>
+				
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Non-breaking Space </h2>
+				<p> Karakter entity yang umum digunakan di HTML adalah non-breaking space: &<b>nbsp;</b> </p>
+				<p> Non-breaking space adalag space (ruang) yang tidak akan menjeda kedalam garis baru. </p>
+				<p> Dua kata dipisahkan dengan sebuah non-breaking space akan melekat bersama di akhir dsri sebuah baris. Ini cekatan atau cepat ketika penjedaan kata mungkin dikacaukan. </p>
+				<p> Contoh: </p>
+				
+				<ul>
+					<li>� 10</li>
+					<li>10 m/s</li>
+					<li>10 km/h </li>
+					<li> 10 PM</li>
+				</ul>
+				
+				<p> Cara umum lainnya menggunakan non-breaking space yaitu tuk mencegah browser memotong spasi dslam halaman HTML. </p>
+				<p> 
+				Jika kamu menulis 10 spasi pada teks kamu, browser akan mencabut  9 spasi dari 10 spasi. Untuk menambahkan spasi asli ke teks kamu, 
+				kamu bisa gunakan karakter entitas &<b>nbsp</b>;
+				</p>
+				<div class="nasehat">
+				Non-breaking hypen (<a href="non-breaking hypen.hml"> &#<i>8209</i>;</a>) membiarkan kamu menggunakan karakter hypen yang tidak akan dijeda. 
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Some Other Useful HTML Character Entities </h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Result </th>
+							<th>Description</th>
+							<th>Entity Name</th>
+							<th>Entity Number</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> </td> 
+							<td>non-breaking space</td>
+							<td>&<i>nbsp</i>; </td>
+							<td>&#<i>160</i>; </td>
+						</tr>
+						<tr>
+							<td> <b><</b> </td>
+							<td>less than	</td>
+							<td> &<i>lt</i>;</td>
+							<td> &#<i>60</i>; </td>
+						</tr>
+						<tr>
+							<td>></td>
+							<td>greater than</td>
+							<td>&<i>gt</i>;</td>
+							<td>&#<i>62</i>;</td>
+						</tr>
+						<tr>
+							<td>&</td>	
+							<td>ampersand</td>
+							<td>&<i>amp</i>; </td>
+							<td> &#<i>38</i>; </td>
+						</tr>
+						<tr>
+							<td>¢</td>
+							<td>cent</td>
+							<td>&<i>cent</i>;</td>
+							<td>&#<i>162</i>; </td>
+						</tr>
+						<tr>
+							<td>£</td>
+							<td>pound</td>
+							<td>&<i>pound</i>;</td>
+							<td>&#<i>163</i>; </td>
+						</tr>
+						<tr>
+							<td>¥</td>
+							<td>yen</td>
+							<td>&<i>yen</i>;</td>
+							<td>&#<i>165</i>; </td>
+						</tr>
+						<tr>
+							<td>€</td>
+							<td>euro</td>
+							<td>&<i>euro</i>;</td>	
+							<td>&#<i>8364</i>; </td>
+						</tr>
+						<tr>
+							<td>©</td>
+							<td>copyright</td>
+							<td>&<i>copy</i>;</td>
+							<td>&#<i>169</i>; </td>
+						</tr>
+						<tr>
+							<td>®</td>
+							<td>registered trademark</td>
+							<td>&<i>reg</i>;</td>
+							<td>&#<i>174</i>;</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<div class="nasehatX">
+				 Entity names merupakan case sensitive.
+				</div>
+				
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Combining Diacritical Marks </h2>
+				<p> Sebuah tanda pengenal (diacritical mark) adalah sebuah "glyph" yang ditambahkan ke sebuah huruf. </p>
+				<p> Beberapa tanda pengenal bisa dilihat berdua diatas dan dibawah sebuah huruf, didalam huruf, dan diantara dua huruf. </p>
+				<p> Tanda pengenal bisa digunakan dalam kombinasi dengan karakter alpanumeric, untuk memproduksi sebuah karakter yang tidak dipersembahakan dalam character set (encoding) yang digunakan dalam halaman. </p>
+				<p> Disini adalah beberapa contoh: </p> <br>
+				
+				<!--
+				<img src="../entities.png" width="100%" height="auto" alt="entities">
+				-->
+				
+				<table>
+					<thead>
+						<tr>
+							<th> Mark </th>
+							<th> Character </th>
+							<th> Construct </th>
+							<th>Result </th>
+						</tr>
+					</thead>
+					<tbody>
+
+						<tr>
+							<td>&#768;</td>
+							<td>a</td>
+							<td>a&#<i>768</i>;</td>
+							<td> a&#768; </td>
+						</tr>
+						
+						<tr>
+							<td> &#769; </td>
+							<td>a</td>
+							<td>a&#<i>769</i>; </td>
+							<td> a&#769  </td>
+						</tr>
+						
+						<tr>
+							<td> &#770; </td>
+							<td>a</td>	
+							<td>a&#<i>770</i>; </td>
+							<td> a&#770;  </td>̂
+						</tr>
+						
+						<tr>
+							<td>&#771; </td>
+							<td>a</td>
+							<td>a&#<i>771</i>;</td>
+							<td> a&#771; </td>
+						</tr>
+
+						<tr>
+							<td> &#768; </td>
+							<td>O</td>
+							<td>O&#<i>768</i>;</td>
+							<td> 0&#768;</td>
+						</tr>
+
+						<tr>
+							<td> &#769; </td>
+							<td> 0 </td>
+							<td>O&#<i>769</i>; </td>
+							<td> 0&#769; </td>
+						</tr>
+
+						<tr>
+							<td> &#770; </td>
+							<td>0</td>
+							<td> O&#<i>770</i>; </td>
+							<td> 0&#770; </td>
+						</tr>
+
+						<tr>
+							<td> &#771; </td>
+							<td>0</td>
+							<td> O&#<i>771</i>; </td>
+							<td> 0&#771; </td>
+						</tr>
+
+					</tbody>
+				</table>
+				
+				<p> Kamu akan mengerti lebih tentang simbol HTML pada chapter selanjutnya di tutorial ini. </p>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML head.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML symbols.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

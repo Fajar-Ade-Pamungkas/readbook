@@ -1,0 +1,1837 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML Game Coomponents  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="../CSS tutorials/buka.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+	
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML Game Components </h1>
+				<p> Tambahkan sebuah kotak merah kedalam game area:</p>
+			</div>
+			
+			
+<section>			
+			<article>
+				<h2> Add a Component </h2>
+				<p> Menambahkan Komponen </p>
+				<p> Buatlah component constructor (pembangun komponen), yang mana mengizinkan kamu untuk menambahkan komponen-komponen kedalam gamearea. </p>
+				<p> Object constructor disebut dengan <b>component</b>, dan kita membuat komponen pertama kita, yang disebut <mark>myGamePiece: </mark>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						<code>var</code> myGamePiece; <br>
+						<br>
+						<code>function</code> startGame() {
+						<blockquote>
+							myGameArea.start(); <br>
+							myGamePiece = new component(30, 30, "red", 10, 120);
+						</blockquote>
+						} <br>
+						<br>
+						<code>function</code> component(width, height, color, x, y) {
+						<blockquote>
+							this.width = width; <br>
+							this.height = height; <br>
+							this.x = x; <br>
+							this.y = y;  <br>
+							ctx = myGameArea.context; <br>
+							ctx.fillStyle = color; <br>
+							ctx.fillRect(this.x, this.y, this.width, this.height);
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						canvas {
+						<blockquote>
+							border:1px solid #d3d3d3; <br>
+							background-color: #f1f1f1;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b> <span clas="teal">onload="startGame()"</span>><br><br>
+					
+					<<b>p</b>> Kita telah menambahkan sebuah komponen pada game kita, sebuah red square!<<b>/p</b>> <br><br>
+					<<b>script</b>> <br>
+					
+					var myGamePiece; <br>
+					<br>
+					function startGame() { 
+					<blockquote>
+					    myGameArea.start(); <br>
+					    myGamePiece = new component(30, 30, "red", 10, 120); 
+					</blockquote>
+					} <br>
+					<br>
+					var myGameArea = {
+					<blockquote>
+					    canvas : document.createElement("canvas"), <br>
+					    start : function() {
+					    <blockquote>
+					        this.canvas.width = 480; <br>
+							this.canvas.height = 270; <br>
+							this.context = this.canvas.getContext("2d"); <br>
+							document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+					    </blockquote>
+					    }
+					</blockquote>
+					} <br>
+					<br>
+					function component(width, height, color, x, y) {
+						<blockquote>
+					    this.width = width; <br>
+					    this.height = height; <br>
+					    this.x = x; <br>
+					    this.y = y; <br>
+					    ctx = myGameArea.context; <br>
+					    ctx.fillStyle = color; <br>
+					    ctx.fillRect(this.x, this.y, this.width, this.height);
+					</blockquote>
+					} <br>
+						
+					<<b>/script</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					<p><a href="HTML Games/example 3.1.html" target="_blank">Try it</a></p>
+					</div>
+				</article>
+				
+				<p> komponen memiliki properti dan metode untuk mengontrol pergerakan dan kemunculan/tampilan. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Frames</h2>
+				<p> Bingkai </p>
+				<p> Untuk membuat gane siap untuk beraksi, kita akan memperbaharui menampilkan (dalam waktu) 50 per detik, yang mana merupakan banyak seperti frame dalam sebuah movie. </p>
+				<p> Pertama, buatlah sebuah fungsi baru yang bernama <mark>updateGameArea()</mark>. </p>
+				<p> Pada <mark>myGameArea</mark> object, tambahakan sebuah <b>interval</b> yang mana akan menjalankan fungsi <mark>updateGameArea()</mark> setiap 20 milidetik (50 times per second). 
+				Tambahkan juga fungsi bernama <mark>clear()</mark>, untuk membersihkan seluruh (konten dalam) canvas. </p>
+				<p> Pada component constructor, tambahkanlah fungsi bernama <mark>update()</mark>, untuk meng-handle gambar dari komponen. </p>
+				<p> Fungsi <mark>updateGameArea()</mark> memanggil metode <mark>clear()</mark> dan <mark>update()</mark>. </p>
+				<p> Hasil yang komponen digambar dan dibersihkan (dalam) 50 time per second: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						var myGameArea = {
+						<blockquote>
+							canvas : document.createElement("canvas"), <br>
+							start : function() {
+							<blockquote>
+								this.canvas.width = 480; <br>
+								this.canvas.height = 270; <br>
+								this.context = this.canvas.getContext("2d"); <br>
+								document.body.insertBefore(this.canvas, document.body.childNodes[0]); <br>
+								this.interval = setInterval(updateGameArea, 20);
+							</blockquote>
+							}, <br>
+							clear : function() {
+							<blockquote>
+								this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+							</blockquote>
+							}
+						</blockquote>
+						} <br>
+						<br>
+						function component(width, height, color, x, y) {
+						<blockquote>
+							this.width = width; <br>
+							this.height = height; <br>
+							this.x = x; <br>
+							this.y = y;  <br>
+							this.update = function(){
+							<blockquote>
+								ctx = myGameArea.context;<br>
+								ctx.fillStyle = color; <br>
+								ctx.fillRect(this.x, this.y, this.width, this.height);
+								</blockquote>
+							}
+						</blockquote>
+						} <br>
+						<br>
+						function updateGameArea() {
+						<blockquote>
+							myGameArea.clear(); <br>
+							myGamePiece.update();
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						canvas {
+						<blockquote>
+							border:1px solid #d3d3d3; <br>
+							background-color: #f1f1f1;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b> <span clas="teal">onload="startGame()"</span>><br><br>
+					
+					<<b>p</b>> Red Square sebenarnya sedang ditulis (dalam) 5 times per second. <<b>/p</b>> <br><br>
+					
+					<<b>script</b>> <br>
+
+					var myGamePiece; <br>
+					<br>
+					function startGame() {
+					<blockquote>
+					    myGamePiece = new component(30, 30, "red", 10, 120); <br>
+					    myGameArea.start();
+					</blockquote>    
+					} <br>
+					<br>
+					var myGameArea = {
+					<blockquote>
+					    canvas : document.createElement("canvas"), <br>
+					    start : function() { 
+					    <blockquote>
+					        this.canvas.width = 480; <br>
+					        this.canvas.height = 270; <br>
+					        this.context = this.canvas.getContext("2d"); <br>
+					        document.body.insertBefore(this.canvas, document.body.childNodes[0]); <br>
+					        this.interval = setInterval(updateGameArea, 20);
+					    </blockquote>
+					    }, <br>
+					    clear : function() {
+					    <blockquote>
+					        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+					    </blockquote>
+					    }
+					</blockquote>
+					} <br>
+					<br>
+					function component(width, height, color, x, y) {
+					<blockquote>
+					    this.width = width; <br>
+					    this.height = height; <br>
+					    this.x = x; <br>
+					    this.y = y;  <br>
+					    this.update = function(){
+					    <blockquote>
+					        ctx = myGameArea.context; <br>
+					        ctx.fillStyle = color; <br>
+					        ctx.fillRect(this.x, this.y, this.width, this.height);
+					    </blockquote>
+					    } 
+					</blockquote>
+					} <br>
+					<br>
+					function updateGameArea() {
+					<blockquote>
+					    myGameArea.clear(); <br>
+					    myGamePiece.update();
+					</blockquote>
+					} <br>
+
+					<<b>/script</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+					<p><a href="HTML Games/example 3.2.html" target="_blank">Try it</a></p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Make it Move</h2>
+				<p> Untuk membuktikan bahwa persegi merah (sedang) digambar dalam 50 time per second, kita akan mengubah posisi x (horizontal) dengan satu pixel setiap waktu kita perbaharui game area: </p>
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open03">
+						
+						<code>function</code> updateGameArea() {
+						<blockquote>
+							myGameArea.clear(); <br>
+							myGamePiece.x += 1; <br>
+							myGamePiece.update();
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						canvas {
+						<blockquote>
+							border:1px solid #d3d3d3; <br>
+							background-color: #f1f1f1;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b> <span clas="teal">onload="startGame()"</span>><br><br>
+					
+					<<b>script</b>> <br>
+	
+					var myGamePiece; <br>
+					<br>
+					function startGame() {
+					<blockquote>
+					    myGamePiece = new component(30, 30, "red", 10, 120); <br>
+					    myGameArea.start();
+					</blockquote>
+					} <br>
+					<br>
+					var myGameArea = {
+					<blockquote>
+					    canvas : document.createElement("canvas"), <br>
+					    start : function() { 
+					    <blockquote>
+					        this.canvas.width = 480; <br>
+					        this.canvas.height = 270; <br>
+					        this.context = this.canvas.getContext("2d");<br>
+					        document.body.insertBefore(this.canvas, document.body.childNodes[0]); <br>
+					        this.interval = setInterval(updateGameArea, 20); 
+					    </blockquote>
+					    }, <br>
+					    clear : function() {
+					    <blockquote>
+					        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+					    </blockquote>
+					    }
+					</blockquote>
+					} <br>
+					<br>
+					function component(width, height, color, x, y) {
+					<blockquote>
+					    this.width = width; <br>
+					    this.height = height; <br>
+					    this.x = x; <br>
+					    this.y = y; <br>
+					    this.update = function(){
+					    <blockquote>
+					        ctx = myGameArea.context; <br>
+					        ctx.fillStyle = color; <br>
+					        ctx.fillRect(this.x, this.y, this.width, this.height);
+					    </blockquote>
+					    }
+					</blockquote>
+					} <br>
+					<br>
+					function updateGameArea() {
+					<blockquote>
+					    myGameArea.clear(); <br>
+					    myGamePiece.x += 1; <br>
+					    myGamePiece.update();
+					</blockquote>
+					} <br>
+	
+					<<b>/script</b>> <br><br>
+					<<b>p</b>>red square bergerak satu pixel ke kanan, (dalam) 50 time per second. <<b>/p</b>> <br><br>
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+					<p><a href="HTML Games/example 3.3.html" target="_blank">Try it</a></p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Why Clear The Game Area? </h2>
+				<p> Kenapa harus membersihkan Area Permainan?</p>
+				<p> Ini mungkin terlihat tidak diperlukan untuk membersihkan game area pada setiap update. 
+				Akan tetapi, Jika kita meninggalkan (game) metode <mark>clear()</mark>, semua pergerakan dari 
+				komponen akan meninggalkan sebuah trail tentang dimana komponen diposisikan pada frame terakhir: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open04">
+						
+						function updateGameArea() {
+						<blockquote>
+							<em>// myGameArea.clear();</em> <br>
+							myGamePiece.x += 1; <br>
+							myGamePiece.update();
+						</blockquote>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close04">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						canvas {
+						<blockquote>
+							border:1px solid #d3d3d3; <br>
+							background-color: #f1f1f1;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b> <span clas="teal">onload="startGame()"</span>><br><br>
+					
+					<<b>script</b>> <br>
+					var myGamePiece; <br>
+					<br>
+					function startGame() {
+					<blockquote>
+					    myGamePiece = new component(30, 30, "red", 10, 120); <br>
+					    myGameArea.start();
+					</blockquote>
+					} <br>
+					<br>
+					var myGameArea = {
+					<blockquote>
+					    canvas : document.createElement("canvas"), <br>
+					    start : function() {
+					    <blockquote>
+					        this.canvas.width = 480; <br>
+					        this.canvas.height = 270; <br>
+					        this.context = this.canvas.getContext("2d"); <br>
+					        document.body.insertBefore(this.canvas, document.body.childNodes[0]); <br>
+					        this.interval = setInterval(updateGameArea, 20);
+					    </blockquote>
+					    }, <br>
+					    clear : function() {
+					    <blockquote>
+					        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+					    </blockquote>
+					    }
+					</blockquote>
+					} <br>
+					<br>
+					function component(width, height, color, x, y) {
+					<blockquote>
+					    this.width = width; <br>
+					    this.height = height; <br>
+					    this.x = x; <br>
+					    this.y = y; <br>
+					    this.update = function(){
+					    <blockquote>
+					        ctx = myGameArea.context; <br>
+					        ctx.fillStyle = color; <br>
+					        ctx.fillRect(this.x, this.y, this.width, this.height);
+					    </blockquote>
+					    }
+					</blockquote>
+					} <br>
+					<br>
+					function updateGameArea() {
+					<blockquote>
+					    <em>//myGameArea.clear();</em> <br>
+					    myGamePiece.x += 1; <br>
+					    myGamePiece.update(); 
+					</blockquote>
+					} <br>
+					<<b>/script</b>> <br><br>
+					<<b>p</b>> Jika kita tidak membersihkan game area di setiap update, trail (jejak) dari semua pergerakan sebelumnya akan ditampilkan.<<b>/p</b>> <br><br>
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<button onclick="buka04()" class="exbutton"> Open </button>
+					<button onclick="tutup04()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+					<p><a href="HTML Games/example 3.4.html" target="_blank">Try it</a></p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Change the Size</h2>
+				<p> Mengubah Ukuran</p>
+				<p> Kamu bisa mengontrol lebar dan tinggi dari komponen: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<p class="fontWhite">Buatlah rectangle (persegi) dengan ukuran 10x140 pixel</p>
+					<div class="example-content" id="content-open05">
+						
+						function startGame() {
+						<blockquote>
+							myGameArea.start(); <br>
+							myGamePiece = new component(140, 10, "red", 10, 120);
+						</blockquote>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close05">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						canvas {
+						<blockquote>
+							border:1px solid #d3d3d3; <br>
+							background-color: #f1f1f1;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b> <span clas="teal">onload="startGame()"</span>><br><br>
+					
+					<<b>script</b>> <br>
+					var myGamePiece; <br>
+					<br>
+					function startGame() {
+					<blockquote>
+					    myGamePiece = new component(140, 10, "red", 10, 120); <br>
+					    myGameArea.start();
+					</blockquote>    
+					} <br>
+					<br>
+					var myGameArea = {
+					<blockquote>
+					    canvas : document.createElement("canvas"), <br>
+					    start : function() { 
+					    <blockquote>
+					        this.canvas.width = 480; <br>
+					        this.canvas.height = 270; <br>
+					        this.context = this.canvas.getContext("2d"); <br>
+					        document.body.insertBefore(this.canvas, document.body.childNodes[0]); <br>
+					        this.interval = setInterval(updateGameArea, 20);
+					    </blockquote>
+					    }, <br>
+					    clear : function() {
+					    <blockquote>
+					        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+					    </blockquote>
+					    }
+					</blockquote>
+					} <br>
+					<br>
+					function component(width, height, color, x, y) {
+					<blockquote>
+					    this.width = width; <br>
+					    this.height = height; <br>
+					    this.x = x; <br>
+					    this.y = y; <br>
+					    this.update = function(){
+					    <blockquote>
+					        ctx = myGameArea.context; <br>
+					        ctx.fillStyle = color; <br>
+					        ctx.fillRect(this.x, this.y, this.width, this.height);
+					    </blockquote>
+					    }
+					</blockquote>
+					} <br>
+					<br>
+					function updateGameArea() {
+					<blockquote>
+					    myGameArea.clear(); <br>
+					    myGamePiece.x += 1; <br>
+					    myGamePiece.update();
+					</blockquote>
+					} <br>
+					<<b>/script</b>> <br><br>
+					<<b>p</b>> Lihatlah! Panjang red rectangle (persegi panjang merah)!<<b>/p</b>> <br><br>
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan05()" class="exbutton">Klik disini</button>
+					<button onclick="buka05()" class="exbutton"> Open </button>
+					<button onclick="tutup05()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+					
+					<p><a href="HTML Games/example 3.5.html" target="_blank">Try it</a></p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Change the Color</h2>
+				<p> Mengubah Warna </p>
+				<p> Kamu bisa mengontrol warna dari komponen:</p>
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open06">
+						
+						function startGame() {
+						<blockquote>
+							myGameArea.start(); <br>
+							myGamePiece = new component(30, 30, "blue", 10, 120);
+						</blockquote>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close06">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						canvas {
+						<blockquote>
+							border:1px solid #d3d3d3; <br>
+							background-color: #f1f1f1;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b> <span clas="teal">onload="startGame()"</span>><br><br>
+					
+					<<b>script</b>> <br>
+					var myGamePiece; <br>
+					<br>
+					function startGame() {
+					<blockquote>
+					    myGamePiece = new component(30, 30, "blue", 10, 120); <br>
+					    myGameArea.start();
+					</blockquote>
+					} <br>
+					<br>
+					var myGameArea = {
+					<blockquote>
+					    canvas : document.createElement("canvas"), <br>
+					    start : function() { 
+					    <blockquote>
+					        this.canvas.width = 480; <br>
+					        this.canvas.height = 270; <br>
+					        this.context = this.canvas.getContext("2d"); <br>
+					        document.body.insertBefore(this.canvas, document.body.childNodes[0]); <br>
+					        this.interval = setInterval(updateGameArea, 20);
+					   </blockquote>
+					    }, <br>
+					    clear : function() {
+					    <blockquote>
+					        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+					    </blockquote>
+					    } 
+					</blockquote>
+					} <br>
+					<br>
+					function component(width, height, color, x, y) {
+					<blockquote>
+					    this.width = width; <br>
+					    this.height = height; <br>
+					    this.x = x; <br>
+					    this.y = y; <br>
+					    this.update = function(){
+					    <blockquote>
+					        ctx = myGameArea.context; <br>
+					        ctx.fillStyle = color; <br>
+					        ctx.fillRect(this.x, this.y, this.width, this.height);
+					    </blockquote>
+					    } 
+					</blockquote>
+					} <br>
+					<br>
+					function updateGameArea() {
+					<blockquote>
+					    myGameArea.clear(); <br>
+					    myGamePiece.x += 1; <br>
+									  	  myGamePiece.update(); 
+					</blockquote>
+					} <br>
+					<<b>/script</b>> <br><br>
+					<<b>p</b>>Lihatlah! sebuah persegi kecil berwarna biru!<<b>/p</b>><br><br>
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan06()" class="exbutton">Klik disini</button>
+					<button onclick="buka06()" class="exbutton"> Open </button>
+					<button onclick="tutup06()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+					
+					<p><a href="HTML Games/example 3.6.1.html" target="_blank">Try it</a></p>
+					
+					</div>
+				</article>
+				
+				<p> Kamu bisa juga menggunakan nilai warna sepertu hex, rgb, atau rgba: </p>
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open06B">
+						
+						function startGame() {
+						<blockquote>
+							myGameArea.start(); <br>
+							myGamePiece = new component(30, 30, "rgba(0, 0, 255, 0.5)", 10, 120);
+						</blockquote>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close06B">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						canvas {
+						<blockquote>
+							border:1px solid #d3d3d3; <br>
+							background-color: #f1f1f1;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b> <span clas="teal">onload="startGame()"</span>><br><br>
+					
+					<<b>script</b>> <br>
+					var myGamePiece; <br>
+					<br>
+					function startGame() {
+					<blockquote>
+					    myGamePiece = new component(30, 30, "rgba(0, 0, 255, 0.5)", 10, 120); <br>
+					    myGameArea.start();
+					</blockquote>
+					} <br>
+					<br>
+					var myGameArea = {
+					<blockquote>
+					    canvas : document.createElement("canvas"), <br>
+					    start : function() {
+					    <blockquote>
+					        this.canvas.width = 480; <br>
+					        this.canvas.height = 270; <br>
+					        this.context = this.canvas.getContext("2d"); <br>
+					        document.body.insertBefore(this.canvas, document.body.childNodes[0]); <br>
+					        this.interval = setInterval(updateGameArea, 20);
+					    </blockquote>
+					    }, <br>
+					    clear : function() {
+					    <blockquote>
+					        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+					    </blockquote>
+					    }
+					</blockquote>
+					} <br>
+					<br>
+					function component(width, height, color, x, y) {
+					<blockquote>
+					    this.width = width; <br>
+					    this.height = height; <br>
+					    this.x = x; <br>
+					    this.y = y; <br>
+					    this.update = function(){
+					    <blockquote>
+					        ctx = myGameArea.context; <br>
+					        ctx.fillStyle = color; <br>
+					        ctx.fillRect(this.x, this.y, this.width, this.height);
+					    </blockquote>
+					    } 
+					</blockquote>
+					} <br>
+					<br>
+					function updateGameArea() {
+					<blockquote>
+					    myGameArea.clear(); <br>
+					    myGamePiece.x += 1; <br>
+					    myGamePiece.update();
+					</blockquote>
+					} <br>
+					<<b>/script</b>> <br><br>
+					<<b>p</b>>Lihat! Sebuah persegi berwarna biru transparan!<<b>/p</b>> <br><br>
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan06B()" class="exbutton">Klik disini</button>
+					<button onclick="buka06B()" class="exbutton"> Open </button>
+					<button onclick="tutup06B()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan06B">
+					
+					<p><a href="HTML Games/example 3.6.2.html" target="_blank">Try it</a></p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Change the Position</h2>
+				<p> Kita gunakan koordinat <b>x</b> dan <b>y</b> untuk  menempatkan komponen kedalam game area. </p>
+				<p> Sudut kiri atas dari canvas memiliki koordinat (0,0)</p>
+				<p> Gerakanlah mouse (Mouse over) pada game area dibawah untuk melihat koordinat dari x dan y:</p>
+				<div>X <br>Y </div>
+				<p> Kamu bisa menmpatkan component dimana saja yang kamu suka pada game area:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open07">
+						
+						function startGame() {
+						<blockquote>
+						myGameArea.start(); <br>
+						myGamePiece = new component(30, 30, "red", 2, 2);
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close07">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						canvas {
+						<blockquote>
+							border:1px solid #d3d3d3; <br>
+							background-color: #f1f1f1;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b> <span clas="teal">onload="startGame()"</span>><br><br>
+					
+					<<b>script</b>> <br>
+					var myGamePiece; <br>
+					<br>
+					function startGame() {
+					<blockquote>
+					    myGamePiece = new component(30, 30, "red", 2, 2); <br>
+					    myGameArea.start(); 
+					</blockquote>
+					} <br>
+					<br>
+					var myGameArea = {
+					<blockquote>
+					    canvas : document.createElement("canvas"), <br>
+					    start : function() {
+					    <blockquote>
+					        this.canvas.width = 480; <br> 
+					        this.canvas.height = 270; <br>
+					        this.context = this.canvas.getContext("2d"); <br>
+					        document.body.insertBefore(this.canvas, document.body.childNodes[0]); <br>
+					        this.interval = setInterval(updateGameArea, 20);
+					    </blockquote>
+					    }, <br>
+					    clear : function() {
+					    <blockquote>
+					        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+					    </blockquote>
+					    }
+					</blockquote>
+					} <br>
+					<br>
+					function component(width, height, color, x, y) {
+					<blockquote>
+					    this.width = width; <br>
+					    this.height = height; <br>
+					    this.x = x; <br>
+					    this.y = y; <br>
+					    this.update = function(){
+					    <blockquote>
+					        ctx = myGameArea.context; <br>
+					        ctx.fillStyle = color; <br>
+					        ctx.fillRect(this.x, this.y, this.width, this.height);
+					    </blockquote>
+					    }
+					</blockquote>
+					} <br>
+					<br>
+					function updateGameArea() {
+					<blockquote>
+					    myGameArea.clear(); <br>
+					    myGamePiece.x += 1; <br>
+					    myGamePiece.update();
+					</blockquote>
+					} <br>
+					<<b>/script</b>> <br><br>
+					<<b>p</b>> Posisi red square pada koordinat 2,2<<b>/p</b>> <br><br>
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan07()" class="exbutton">Klik disini</button>
+					<button onclick="buka07()" class="exbutton"> Open </button>
+					<button onclick="tutup07()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan07">
+					
+					<p><a href="HTML Games/example 3.7.html" target="_blank">Try it</a></p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Many Components </h2>
+				<p> Banyak Komponen </p>
+				<p> Kamu bisa menaruh komponen sebanyak yang kamu suka pada game area: </p>
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open08">
+						
+						var redGamePiece, blueGamePiece, yellowGamePiece; <br>
+						<br>
+						function startGame() {
+						<blockquote>
+						redGamePiece = new component(75, 75, "red", 10, 10); <br>
+						yellowGamePiece = new component(75, 75, "yellow", 50, 60); <br> 
+						blueGamePiece = new component(75, 75, "blue", 10, 110); <br>
+						myGameArea.start();
+						</blockquote>
+						} <br>
+						<br>
+						function updateGameArea() { 
+						<blockquote>
+							myGameArea.clear(); <br>
+							redGamePiece.update(); <br>
+							yellowGamePiece.update(); <br>
+							blueGamePiece.update();
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close08">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						canvas {
+						<blockquote>
+							border:1px solid #d3d3d3; <br>
+							background-color: #f1f1f1;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b> <span clas="teal">onload="startGame()"</span>><br><br>
+					
+					<<b>script</b>> <br>
+					var redGamePiece, blueGamePiece, yellowGamePiece; <br>
+					<br>
+					function startGame() {
+					<blockquote>
+					    redGamePiece = new component(75, 75, "red", 10, 10); <br>
+					    yellowGamePiece = new component(75, 75, "yellow", 50, 60); <br>    
+					    blueGamePiece = new component(75, 75, "blue", 10, 110); <br>
+					    myGameArea.start();
+					</blockquote>
+					} <br>
+					<br>
+					var myGameArea = {
+					<blockquote>
+					    canvas : document.createElement("canvas"), <br>
+					    start : function() { 
+					    <blockquote>
+					        this.canvas.width = 480; <br>
+					        this.canvas.height = 270; <br>
+					        this.context = this.canvas.getContext("2d"); <br>
+					        document.body.insertBefore(this.canvas, document.body.childNodes[0]); <br>
+					        this.interval = setInterval(updateGameArea, 20);
+					    </blockquote>
+					    }, <br>
+					    clear : function() {
+					    <blockquote>
+					        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+					    </blockquote>
+					    }
+					</blockquote>
+					} <br>
+					<br>
+					function component(width, height, color, x, y) {
+					<blockquote>
+					    this.width = width; <br>
+					    this.height = height; <br>
+					    this.x = x; <br>
+					    this.y = y; <br>
+					    this.update = function(){
+					    <blockquote>
+					        ctx = myGameArea.context; <br>
+					        ctx.fillStyle = color; <br>
+					        ctx.fillRect(this.x, this.y, this.width, this.height);
+					    </blockquote>
+					    } <br>
+					</blockquote>
+					} <br>
+					 <br>
+					function updateGameArea() {
+					<blockquote>
+					    myGameArea.clear(); <br>
+					    redGamePiece.update(); <br>
+					    yellowGamePiece.update(); <br>      
+					    blueGamePiece.update();
+					</blockquote>
+					} <br>
+					<<b>/script</b>> <br><br>
+					<<b>p</b>> Tiga komponen pada satu game area.<<b>/p</b>> <br>
+					<<b>p</b>> Perhatikanlah bahwa stack order (tumpukan susunan) dari komponen tergantung pada urutan mereka memperbaharui dalam fungsi updateGameArea. 
+					The blue game piece diperbaharui terakhir, dan akan ditempatkan diatas dari yellow, yang mana kan ditempatkan diatas dari red. <<b>/p</b>> <br><br>
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan08()" class="exbutton">Klik disini</button>
+					<button onclick="buka08()" class="exbutton"> Open </button>
+					<button onclick="tutup08()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan08">
+					
+					<p><a href="HTML Games/example 3.8.html" target="_blank">Try it</a></p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Moving Components </h2>
+				<p> Pengerakan Komponen </p>
+				<p> Buatlah ketiga komponen bergerak pada arah yang berbdda-beda:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open09">
+						
+						function updateGameArea() {
+						<blockquote>
+						myGameArea.clear(); <br>
+						redGamePiece.x += 1; <br>
+						yellowGamePiece.x += 1; <br>
+						yellowGamePiece.y += 1;  <br>
+						blueGamePiece.x += 1;  <br>
+						blueGamePiece.y -= 1;  <br>
+						redGamePiece.update(); <br>
+						yellowGamePiece.update(); <br>
+						blueGamePiece.update();
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close09">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						canvas {
+						<blockquote>
+							border:1px solid #d3d3d3; <br>
+							background-color: #f1f1f1;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b> <span clas="teal">onload="startGame()"</span>><br><br>
+					
+					<<b>script</b>> <br>
+					var redGamePiece, blueGamePiece, yellowGamePiece; <br>
+					<br>
+					function startGame() { 
+					<blockquote>
+					    redGamePiece = new component(75, 75, "red", 10, 10); <br>
+					    yellowGamePiece = new component(75, 75, "yellow", 50, 60); <br>
+					    blueGamePiece = new component(75, 75, "blue", 10, 220); <br>
+					    myGameArea.start();
+					</blockquote>
+					} <br>
+					<br>
+					var myGameArea = {
+					<blockquote>
+					    canvas : document.createElement("canvas"), <br>
+					    start : function() {
+					    <blockquote>
+					        this.canvas.width = 480; <br>
+					        this.canvas.height = 270; <br>
+					        this.context = this.canvas.getContext("2d"); <br>
+					        document.body.insertBefore(this.canvas, document.body.childNodes[0]); <br>
+					        this.interval = setInterval(updateGameArea, 20);
+					    </blockquote>
+					    }, <br>
+					    clear : function() {
+					    <blockquote>
+					        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+					    </blockquote>
+					    } 
+					</blockquote>
+					}<br>
+					<br>
+					function component(width, height, color, x, y) {
+					<blockquote>
+					    this.width = width; <br>
+					    this.height = height; <br>
+					    this.x = x; <br>
+					    this.y = y; <br>
+					    this.update = function(){
+					    <blockquote>
+					        ctx = myGameArea.context; <br>
+					        ctx.fillStyle = color; <br>
+					        ctx.fillRect(this.x, this.y, this.width, this.height);
+					    </blockquote>
+					    }
+					</blockquote>
+					} <br>
+					<br>
+					function updateGameArea() {
+					<blockquote>
+					    myGameArea.clear(); <br>
+					    redGamePiece.x += 1; <br>
+					    yellowGamePiece.x += 1; <br>  
+					    yellowGamePiece.y += 1; <br>   
+					    blueGamePiece.x += 1;<br> 
+					    blueGamePiece.y -= 1; <br>        
+					    redGamePiece.update(); <br>
+					    yellowGamePiece.update(); <br>      
+					    blueGamePiece.update();
+					</blockquote>
+					} <br>
+					<<b>/script</b>> <br><br>
+					<<b>p</b>> Tiga komponen bergerak dengan perubahan koordinat x dan y pada setiap update. <<b>/p</b>> <br><br>
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan09()" class="exbutton">Klik disini</button>
+					<button onclick="buka09()" class="exbutton"> Open </button>
+					<button onclick="tutup09()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan09" onclick="startGame09">
+					
+					<p><a href="HTML Games/example 3.9.html" target="_blank">Try it</a></p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML game canvas.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML game controllers.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			</article>
+			<article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+
+<!-- contoh 1
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
+</style>
+</head>
+<body onload="startGame()">
+<script>
+
+var myGamePiece;
+
+function startGame() {
+    myGameArea.start();
+    myGamePiece = new component(30, 30, "red", 10, 120);
+}
+
+var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 480;
+		this.canvas.height = 270;
+		this.context = this.canvas.getContext("2d");
+		document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+    }
+}
+
+function component(width, height, color, x, y) {
+    this.width = width;
+    this.height = height;
+    this.x = x;
+    this.y = y;    
+    ctx = myGameArea.context;
+    ctx.fillStyle = color;
+    ctx.fillRect(this.x, this.y, this.width, this.height);
+}
+
+</script>
+
+<p>We have added a component to our game, a red square!</p>
+
+</body>
+</html>
+
+-->
+
+<!--- Contoh 2 Frame
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
+</style>
+</head>
+<body onload="startGame()">
+<script>
+
+var myGamePiece;
+
+function startGame() {
+    myGamePiece = new component(30, 30, "red", 10, 120);
+    myGameArea.start();
+}
+
+var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 480;
+        this.canvas.height = 270;
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        this.interval = setInterval(updateGameArea, 20);
+    },
+    clear : function() {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    }
+}
+
+function component(width, height, color, x, y) {
+    this.width = width;
+    this.height = height;
+    this.x = x;
+    this.y = y;    
+    this.update = function(){
+        ctx = myGameArea.context;
+        ctx.fillStyle = color;
+        ctx.fillRect(this.x, this.y, this.width, this.height);
+    }
+}
+
+function updateGameArea() {
+    myGameArea.clear();
+    myGamePiece.update();
+}
+</script>
+<p>The red square is actually being drawn 50 times per second.</p>
+</body>
+</html>
+
+-->
+
+
+
+
+
+<!--- Contoh 3 make it move
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
+</style>
+</head>
+<body onload="startGame()">
+<script>
+
+var myGamePiece;
+
+function startGame() {
+    myGamePiece = new component(30, 30, "red", 10, 120);
+    myGameArea.start();
+}
+
+var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 480;
+        this.canvas.height = 270;
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        this.interval = setInterval(updateGameArea, 20);
+    },
+    clear : function() {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    }
+}
+
+function component(width, height, color, x, y) {
+    this.width = width;
+    this.height = height;
+    this.x = x;
+    this.y = y;    
+    this.update = function(){
+        ctx = myGameArea.context;
+        ctx.fillStyle = color;
+        ctx.fillRect(this.x, this.y, this.width, this.height);
+    }
+}
+
+function updateGameArea() {
+    myGameArea.clear();
+    myGamePiece.x += 1;
+    myGamePiece.update();
+}
+</script>
+<p>The red square moves one pixel to the right, 50 times per second.</p>
+</body>
+</html>
+
+-->
+
+
+
+<!--- Contoh 4 why clear area
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
+</style>
+</head>
+<body onload="startGame()">
+<script>
+
+var myGamePiece;
+
+function startGame() {
+    myGamePiece = new component(30, 30, "red", 10, 120);
+    myGameArea.start();
+}
+
+var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 480;
+        this.canvas.height = 270;
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        this.interval = setInterval(updateGameArea, 20);
+    },
+    clear : function() {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    }
+}
+
+function component(width, height, color, x, y) {
+    this.width = width;
+    this.height = height;
+    this.x = x;
+    this.y = y;    
+    this.update = function(){
+        ctx = myGameArea.context;
+        ctx.fillStyle = color;
+        ctx.fillRect(this.x, this.y, this.width, this.height);
+    }
+}
+
+function updateGameArea() {
+    //myGameArea.clear();
+    myGamePiece.x += 1;
+    myGamePiece.update();
+}
+</script>
+<p>If we do not clear the game area at every update, a trail of all earlier movements will be shown.</p>
+</body>
+</html>
+
+-->
+
+
+<!--- Contoh 5 change size
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
+</style>
+</head>
+<body onload="startGame()">
+<script>
+
+var myGamePiece;
+
+function startGame() {
+    myGamePiece = new component(140, 10, "red", 10, 120);
+    myGameArea.start();
+}
+
+var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 480;
+        this.canvas.height = 270;
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        this.interval = setInterval(updateGameArea, 20);
+    },
+    clear : function() {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    }
+}
+
+function component(width, height, color, x, y) {
+    this.width = width;
+    this.height = height;
+    this.x = x;
+    this.y = y;    
+    this.update = function(){
+        ctx = myGameArea.context;
+        ctx.fillStyle = color;
+        ctx.fillRect(this.x, this.y, this.width, this.height);
+    }
+}
+
+function updateGameArea() {
+    myGameArea.clear();
+    myGamePiece.x += 1;
+    myGamePiece.update();
+}
+</script>
+<p>Look! A long red rectangle!</p>
+</body>
+</html>
+
+-->
+
+
+
+<!--- Contoh 6 change color
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
+</style>
+</head>
+<body onload="startGame()">
+<script>
+
+var myGamePiece;
+
+function startGame() {
+    myGamePiece = new component(30, 30, "blue", 10, 120);
+    myGameArea.start();
+}
+
+var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 480;
+        this.canvas.height = 270;
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        this.interval = setInterval(updateGameArea, 20);
+    },
+    clear : function() {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    }
+}
+
+function component(width, height, color, x, y) {
+    this.width = width;
+    this.height = height;
+    this.x = x;
+    this.y = y;    
+    this.update = function(){
+        ctx = myGameArea.context;
+        ctx.fillStyle = color;
+        ctx.fillRect(this.x, this.y, this.width, this.height);
+    }
+}
+
+function updateGameArea() {
+    myGameArea.clear();
+
+    myGamePiece.x += 1;
+    myGamePiece.update();
+}
+</script>
+<p>Look! A blue little square!</p>
+</body>
+</html>
+
+-->
+
+<!--- Contoh 6B change color 
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
+</style>
+</head>
+<body onload="startGame()">
+<script>
+
+var myGamePiece;
+
+function startGame() {
+    myGamePiece = new component(30, 30, "rgba(0, 0, 255, 0.5)", 10, 120);
+    myGameArea.start();
+}
+
+var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 480;
+        this.canvas.height = 270;
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        this.interval = setInterval(updateGameArea, 20);
+    },
+    clear : function() {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    }
+}
+
+function component(width, height, color, x, y) {
+    this.width = width;
+    this.height = height;
+    this.x = x;
+    this.y = y;    
+    this.update = function(){
+        ctx = myGameArea.context;
+        ctx.fillStyle = color;
+        ctx.fillRect(this.x, this.y, this.width, this.height);
+    }
+}
+
+function updateGameArea() {
+    myGameArea.clear();
+    myGamePiece.x += 1;
+    myGamePiece.update();
+}
+</script>
+<p>Look! A blue transparent little square!</p>
+</body>
+</html>
+-->
+
+
+
+<!--- Contoh 7
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
+</style>
+</head>
+<body onload="startGame()">
+<script>
+
+var myGamePiece;
+
+function startGame() {
+    myGamePiece = new component(30, 30, "red", 2, 2);
+    myGameArea.start();
+}
+
+var myGameArea = {
+
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 480;
+        this.canvas.height = 270;
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        this.interval = setInterval(updateGameArea, 20);
+    },
+    clear : function() {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    }
+}
+
+function component(width, height, color, x, y) {
+    this.width = width;
+    this.height = height;
+    this.x = x;
+    this.y = y;    
+    this.update = function(){
+        ctx = myGameArea.context;
+        ctx.fillStyle = color;
+        ctx.fillRect(this.x, this.y, this.width, this.height);
+    }
+}
+
+function updateGameArea() {
+    myGameArea.clear();
+    myGamePiece.x += 1;
+    myGamePiece.update();
+}
+</script>
+<p>Position the red square at the coordinates 2,2</p>
+</body>
+</html>
+
+-->
+
+
+<!--- Contoh 8 many component
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
+</style>
+</head>
+<body onload="startGame()">
+<script>
+
+var redGamePiece, blueGamePiece, yellowGamePiece;
+
+function startGame() {
+    redGamePiece = new component(75, 75, "red", 10, 10);
+    yellowGamePiece = new component(75, 75, "yellow", 50, 60);    
+    blueGamePiece = new component(75, 75, "blue", 10, 110);
+    myGameArea.start();
+}
+
+var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 480;
+        this.canvas.height = 270;
+        this.context = this.canvas.getContext("2d");
+
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        this.interval = setInterval(updateGameArea, 20);
+    },
+    clear : function() {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    }
+}
+
+function component(width, height, color, x, y) {
+    this.width = width;
+    this.height = height;
+    this.x = x;
+    this.y = y;    
+    this.update = function(){
+        ctx = myGameArea.context;
+        ctx.fillStyle = color;
+        ctx.fillRect(this.x, this.y, this.width, this.height);
+    }
+}
+
+function updateGameArea() {
+    myGameArea.clear();
+    redGamePiece.update();
+    yellowGamePiece.update();        
+    blueGamePiece.update();
+}
+</script>
+<p>Three components on one game area.</p>
+<p>Notice that the stack order of the components depends on the order they were updated in the updateGameArea function. The blue game piece is updated last, and will be placed on top of the yellow, which will be placed on top of the red.</p>
+</body>
+</html>
+
+-->
+
+
+<!--- Contoh 9 moving component
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
+</style>
+</head>
+<body onload="startGame()">
+<script>
+
+var redGamePiece, blueGamePiece, yellowGamePiece;
+
+function startGame() {
+    redGamePiece = new component(75, 75, "red", 10, 10);
+    yellowGamePiece = new component(75, 75, "yellow", 50, 60);    
+    blueGamePiece = new component(75, 75, "blue", 10, 220);
+    myGameArea.start();
+}
+
+var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 480;
+        this.canvas.height = 270;
+        this.context = this.canvas.getContext("2d");
+
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        this.interval = setInterval(updateGameArea, 20);
+    },
+    clear : function() {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    }
+}
+
+function component(width, height, color, x, y) {
+    this.width = width;
+    this.height = height;
+    this.x = x;
+    this.y = y;    
+    this.update = function(){
+        ctx = myGameArea.context;
+        ctx.fillStyle = color;
+        ctx.fillRect(this.x, this.y, this.width, this.height);
+    }
+}
+
+function updateGameArea() {
+    myGameArea.clear();
+    redGamePiece.x += 1;
+    yellowGamePiece.x += 1;    
+    yellowGamePiece.y += 1;        
+    blueGamePiece.x += 1;        
+    blueGamePiece.y -= 1;            
+    redGamePiece.update();
+    yellowGamePiece.update();        
+    blueGamePiece.update();
+}
+</script>
+<p>The three components moves by changing the x- and y-coordinates on every update.</p>
+</body>
+</html>
+
+-->
+</body>
+</html>

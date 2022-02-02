@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+.div01, .div02, .div03, .div04 {
+	width:100%;
+	padding:10px 20px 20px 20px;
+	color:black;
+	text-shadow: 1px 1px 3px white, -1px -1px 3px blue;
+	text-align:center;
+}
+.div01 span{
+	margin-top:none;
+	text-transform:capitalize;
+	font-weight:bold;
+}
+.div01 {
+	background-color:black;
+	box-shadow:1px 1px 5px white, -1px -1px 5px white;
+	margin:10px;
+}
+.div02 {
+	background-color:green;
+}
+.div03 {
+	background-color:black;
+}
+.div04 {
+	background-color:darkSlateGrey;
+}
+div.contoh01 {
+background-color: lightgrey; 
+width: 300px; 
+padding: 25px; 
+border: 25px solid navy; 
+margin: 25px;
+color:black;
+}
+
+#sembunyikan01 div {
+width: 320px; 
+padding: 10px; 
+border: 5px solid gray; 
+margin: 0;
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Box Model </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2>The CSS Box Model</h2>
+				<p> Semua elemen HTML bisa diperhitungkan sebagai box. Di CSS, istilah "box model" digunakan ketika berbicara tentang design dan layout.</p>
+				<p> CSS Model Box secara pokok merupakan kotak yang membungkus sekeliling setiap elemen HTML. Box Model terdiri dari: margin, border, padding dan konten aktual. </p>
+				<p> Gambar dibawah ini mengilustrasikan Box Model: </p>
+				
+				<div class="col-12 col-m-12">
+					<div class="div01">
+						<span>margin</span>
+						<div class="div02">
+							<span>border</span>
+							<div class="div03">
+								<span>padding</span>
+								<div class="div04">
+									<span>content</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p> Penjelasan dari bagian - bagian yang berbeda: </p>
+				<ul>
+					<li> <mark>Content</mark> - Konten (isi) box, dimana teks dan gambar diperlihatkan</li>
+					<li> <mark>Padding</mark> - Membereskan area disekeliling konten. Padding ialah transparan (tidak berwarna)</li>
+					<li> <mark>Border</mark> - Sebuah garis atau border yang mengelilingi padding dan konten</li>
+					<li> <mark>Margin</mark> - Membereskan area diluar border. Margin juga transparan (tidak berwarna)</li>
+				</ul>
+				<p> Box modek mengizinkan kita untuk menambahkan border disekitar element dan untuk mendefinisikan space (ruang) antara element</p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content" id="content-open01">
+						
+						div {
+							<blockquote>
+							background-color: lightgrey; <br>
+							width: 300px; <br>
+							padding: 25px; <br>
+							border: 25px solid navy; <br>
+							color: black; <br>
+							margin: 25px;
+							</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+						
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+						<<b>head</b>><br>
+						<<b>style</b>> <br>
+						div {
+							<blockquote>
+							background-color: lightgrey; <br>
+							width: 300px; <br>
+							padding: 25px; <br>
+							border: 25px solid navy; <br>
+							color: black; <br>
+							margin: 25px;
+							</blockquote>
+						}<br>
+						<<b>/style</b>> <br>
+						<<b>/head</b>><br><br>
+						<<b>body</b>><br><br>
+						<<b>h2</b>>Demonstrating the Box Model<<b>/h2</b>> <br>
+						<<b>p</b>>The CSS box model is essentially a box that wraps around every HTML element. It consists of: <br>
+						margins, borders, padding, and the actual content.<<b>/p</b>> <br> <br>
+						<<b>div</b>>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in  <br>
+						voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<<b>/div</b>> <br><br>
+						<<b>/body</b>><br><br>
+						<<b>>/html</b>>
+						
+					</div>
+					<h4>Output:</h4>
+					<button onclick="tampilkan01()" class="exbutton"> Show </button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<h2>Demonstrating the Box Model</h2>
+						<p>The CSS box model is essentially a box that wraps around every HTML element. It consists of:
+						margins, borders, padding, and the actual content.</p>
+						<div class="contoh01">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+						
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Width and Height of an Element </h2>
+				<p> Width dan Height dari suatu Element </p>
+				<p> Pada urutan untuk mengatur width (lebar) dan height (tinggi) suatu element dengan benar dalam semua browser, kamu perlu mengetahui bagaimana box model bekerja.</p>
+				<div class="nasehat">
+					<p><b>PENTING:</b> Ketika kamu mengatur properti width dan height dari sebuah element dengan CSS, kamu juga mengatur width (lebar) dan height (tinggi) area konten. 
+					Untuk mengkalkulasi (menghitung) ukuran penuh dari suatu element, kamu juga harus menambahkan padding dan margin.</p>
+				</div>
+				<p> Mengharap kita ingin men-style element <<b>div</b>> untuk memiliki total lebar dari 350px:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<p class="fontWhite"> Ketika layar (browser window) menjadi lebih kecil daripada 768px, setiap kolom harus memiliki width: 100% </p>
+					<div class="example-content" id="content-open02">
+						
+						div {
+						<blockquote>
+						width: 320px; <br>
+						padding: 10px; <br>
+						border: 5px solid gray; <br>
+						margin: 0;
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						div {
+						<blockquote>
+						width: 320px; <br>
+						padding: 10px; <br>
+						border: 5px solid gray; <br>
+						margin: 0;
+						</blockquote>
+						}
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						<<b>h2</b>>Calculate the total width:<<b>/h2</b>> <br><br>
+						<<b>img</b> <span class="teal">src="klematis4_big.jpg" width="350" height="263" alt="Klematis"</span>> <br>
+						<<b>div</b>>The picture above is 350px wide. The total width of this element is also 350px.<<b>/div</b>> <br><br>
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<h2>Calculate the total width:</h2>
+						
+						<img src="../../pictures/Night.jpg" width="350" height="263" alt="Klematis">
+						<div>The picture above is 350px wide. The total width of this element is also 350px.</div>
+						
+					</div>
+				</article>
+				
+				<p> Disini adala perhutungannya: </p>
+				<div class="simple-example">
+				320px (width) <br>
+				+ 20px (padding kanan + kiri) <br>
+				+ 10px (border kanan + kiri) <br>
+				+ 0px (margin kanan + kiri) <br>
+				= 350px
+				</div>
+				
+				<p> Total width dari suatu element harus dikalkulasikan seperti: </p>
+				<p> Lebar total element = width (atau lebar) + padding kiri + padding kanan + border kiri + border kanan + margin kiri + margin kanan</p>
+				<p> Total height dari suatu element harus dikalkulasikan seperti: </p>
+				<p> Tinggi total element = hight (atau tinggi) + padding atas + padding bawah + border atas + border bawah + margin atas + margin bawah</p>
+				<div class="nasehat">
+				<p><b>Catatan untuk IE lama:</b> Internet Explorer 8 atau versi sebelumnya, memasukkan padding dan border dalam properti <b>width</b>. Untuk memperbaiki masalah ini, 
+				tambahkanlah <<b>!DOCTYPE</b> <span class="justRed">html</span>> ke halaman HTML. </p>
+				</div>
+				
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS tables.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS outline.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

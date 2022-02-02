@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS3 button </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+#sembunyikan01 .button, .button  { 
+background-color: #4CAF50; 
+border: none; 
+color: white; 
+padding: 15px 32px; 
+text-align: center; 
+text-decoration: none; 
+display: inline-block; 
+font-size: 16px; 
+margin: 4px 2px; 
+cursor: pointer; 
+} 
+
+
+#sembunyikan02 .button { 
+background-color: #4CAF50; /* Green */ border: none; 
+color: white; 
+padding: 15px 32px; 
+text-align: center; 
+text-decoration: none; 
+display: inline-block; 
+font-size: 16px; 
+margin: 4px 2px; 
+cursor: pointer; 
+} 
+#sembunyikan02 .button2 {background-color: #008CBA;} /* Blue */ 
+#sembunyikan02 .button3 {background-color: #f44336;} /* Red */ 
+#sembunyikan02 .button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+#sembunyikan02 .button5 {background-color: #555555;} /* Black */ 
+
+
+#sembunyikan03 .button { 
+background-color: #4CAF50; /* Green */ 
+border: none; 
+color: white; 
+padding: 15px 32px; 
+text-align: center; 
+text-decoration: none; 
+display: inline-block; 
+font-size: 16px; 
+margin: 4px 2px; 
+cursor: pointer; 
+} 
+
+#sembunyikan03 .button1 {font-size: 10px;} 
+#sembunyikan03 .button2 {font-size: 12px;} 
+#sembunyikan03 .button3 {font-size: 16px;} 
+#sembunyikan03 .button4 {font-size: 20px;} 
+#sembunyikan03 .button5 {font-size: 24px;} 
+
+
+#sembunyikan04 .button { 
+background-color: #4CAF50; >/* Green */ 
+border: none; 
+color: white; 
+padding: 15px 32px; 
+text-align: center; 
+text-decoration: none; 
+display: inline-block; 
+font-size: 16px; 
+margin: 4px 2px; 
+cursor: pointer; 
+} 
+#sembunyikan04 .button1 {border-radius: 2px;} 
+#sembunyikan04 .button2 {border-radius: 4px;} 
+#sembunyikan04 .button3 {border-radius: 8px;} 
+#sembunyikan04 .button4 {border-radius: 12px;} 
+#sembunyikan04 .button5 {border-radius: 50%;} 
+
+#sembunyikan05 .button { 
+background-color: #4CAF50; /* Green */ 
+border: none; 
+color: white; 
+padding: 15px 32px; 
+text-align: center; 
+text-decoration: none; 
+display: inline-block; 
+font-size: 16px; 
+margin: 4px 2px; 
+cursor: pointer; 
+} 
+
+#sembunyikan05 .button1 { 
+background-color: white; 
+color: black; 
+border: 2px solid #4CAF50; 
+} 
+
+#sembunyikan05 .button2 { 
+background-color: white; 
+color: black; 
+border: 2px solid #008CBA; 
+} 
+
+#sembunyikan05 .button3 { 
+background-color: white; 
+color: black; 
+border: 2px solid #f44336; 
+} 
+
+#sembunyikan05 .button4 { 
+background-color: white; 
+color: black; 
+border: 2px solid #e7e7e7; 
+} 
+
+#sembunyikan05 .button5 { 
+background-color: white; 
+color: black; 
+border: 2px solid #555555; 
+} 
+
+
+/*Hoverable buttons*/
+#sembunyikan06 .button { 
+background-color: #4CAF50; /* Green */ 
+border: none; 
+color: white; 
+padding: 16px 32px; 
+text-align: center; 
+text-decoration: none; 
+display: inline-block; 
+font-size: 16px; 
+margin: 4px 2px; 
+-webkit-transition-duration: 0.4s; /* Safari */ 
+transition-duration: 0.4s; 
+cursor: pointer; 
+} 
+
+#sembunyikan06 .button1 { 
+background-color: white; 
+color: black; 
+border: 2px solid #4CAF50; 
+} 
+
+#sembunyikan06 .button1:hover { 
+background-color: #4CAF50; 
+color: white; 
+} 
+
+#sembunyikan06 .button2 { 
+background-color: white; 
+color: black; 
+border: 2px solid #008CBA; 
+} 
+
+#sembunyikan06 .button2:hover { 
+background-color: #008CBA; 
+color: white; 
+} 
+
+#sembunyikan06 .button3 { 
+background-color: white; 
+color: black; 
+border: 2px solid #f44336; 
+} 
+
+#sembunyikan06 .button3:hover { 
+background-color: #f44336; 
+color: white; 
+} 
+
+#sembunyikan06 .button4 { 
+background-color: white; 
+color: black; 
+border: 2px solid #e7e7e7; 
+} 
+
+#sembunyikan06 .button4:hover {background-color: #e7e7e7;} 
+
+#sembunyikan06 .button5 { 
+background-color: white; 
+color: black; 
+border: 2px solid #555555; 
+} 
+
+#sembunyikan06 .button5:hover { 
+background-color: #555555; 
+color: white; 
+} 
+
+
+/*Shadow buttons*/
+#sembunyikan07 .button { 
+background-color: #4CAF50; /* Green */ 
+border: none; 
+color: white; 
+padding: 15px 32px; 
+text-align: center; 
+text-decoration: none; 
+display: inline-block; 
+font-size: 16px; 
+margin: 4px 2px; 
+cursor: pointer; 
+-webkit-transition-duration: 0.4s; /* Safari */ 
+transition-duration: 0.4s; 
+} 
+
+#sembunyikan07 .button1 { 
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
+} 
+
+#sembunyikan07 .button2:hover { 
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); 
+} 
+
+
+/*Disabled buttons*/
+#sembunyikan08 .button { 
+background-color: #4CAF50; /* Green */ 
+border: none; 
+color: white; 
+padding: 15px 32px; 
+text-align: center; 
+text-decoration: none; 
+display: inline-block; 
+font-size: 16px; 
+margin: 4px 2px; 
+cursor: pointer; 
+} 
+
+#sembunyikan08 .disabled { 
+opacity: 0.6; 
+cursor: not-allowed; 
+} 
+
+/*Button width*/
+#sembunyikan09 .button { 
+background-color: #4CAF50; /* Green */ 
+border: none; 
+color: white; 
+padding: 15px 32px; 
+text-align: center; 
+text-decoration: none; 
+display: inline-block; 
+font-size: 16px; 
+margin: 4px 2px; 
+cursor: pointer; 
+} 
+
+#sembunyikan09 .button1 {width: 250px;} 
+#sembunyikan09 .button2 {width: 50%;} 
+#sembunyikan09 .button3 { 
+padding-left: 0; 
+padding-right: 0; 
+width: 100%; 
+} 
+
+
+/*Button groups*/
+#sembunyikan10 .button { 
+background-color: #4CAF50; /* Green */ 
+border: none; 
+color: white; 
+padding: 15px 32px; 
+text-align: center; 
+text-decoration: none; 
+display: inline-block; 
+font-size: 16px; 
+cursor: pointer; 
+float: left; 
+} 
+
+#sembunyikan10 .button:hover { 
+background-color: #3e8e41; 
+} 
+
+
+/*Bordered button groups*/
+#sembunyikan11 .button { 
+background-color: #4CAF50; /* Green */ 
+border: 1px solid green; 
+color: white; 
+padding: 15px 32px; 
+text-align: center; 
+text-decoration: none; 
+display: inline-block; 
+font-size: 16px; 
+cursor: pointer; 
+float: left; 
+} 
+
+#sembunyikan11 .button:hover { 
+background-color: #3e8e41; 
+} 
+
+
+/*Animated "Arrow" button*/
+#sembunyikan12 .button { 
+display: inline-block; 
+border-radius: 4px; 
+background-color: #f4511e; 
+border: none; 
+color: #FFFFFF; 
+text-align: center; 
+font-size: 28px; 
+padding: 20px; 
+width: 200px; 
+transition: all 0.5s; 
+cursor: pointer; 
+margin: 5px; 
+} 
+
+#sembunyikan12 .button span { 
+cursor: pointer; 
+display: inline-block; 
+position: relative; 
+transition: 0.5s; 
+} 
+
+#sembunyikan12 .button span:after { 
+content: '»'; 
+position: absolute; 
+opacity: 0; 
+top: 0; 
+right: -20px; 
+transition: 0.5s; 
+} 
+
+#sembunyikan12 .button:hover span { 
+padding-right: 25px; 
+} 
+
+#sembunyikan12 .button:hover span:after { 
+opacity: 1; 
+right: 0; 
+} 
+
+
+/*Animated "Ripple" button*/
+#sembunyikan13 .button { 
+position: relative; 
+background-color: #4CAF50; 
+border: none; 
+font-size: 28px; 
+color: #FFFFFF; 
+padding: 20px; 
+width: 200px; 
+text-align: center; 
+-webkit-transition-duration: 0.4s; /* Safari */ 
+transition-duration: 0.4s; 
+text-decoration: none; 
+overflow: hidden; 
+cursor: pointer; 
+} 
+
+#sembunyikan13 .button:after { 
+content: ""; 
+background: #90EE90; 
+display: block; 
+position: absolute; 
+padding-top: 300%; 
+padding-left: 350%; 
+margin-left: -20px!important; 
+margin-top: -120%; 
+opacity: 0; 
+transition: all 0.8s 
+} 
+
+#sembunyikan13 .button:active:after { 
+padding: 0; 
+margin: 0; 
+opacity: 1; 
+transition: 0s 
+} 
+
+/*Animated "clicked effect" buttons*/
+#sembunyikan14 .button { 
+display: inline-block; 
+padding: 15px 25px; 
+font-size: 24px; 
+cursor: pointer; 
+text-align: center;	
+text-decoration: none; 
+outline: none; 
+color: #fff; 
+background-color: #4CAF50; 
+border: none; 
+border-radius: 15px; 
+box-shadow: 0 9px #999; 
+} 
+
+#sembunyikan14 .button:hover {background-color: #3e8e41} 
+
+#sembunyikan14 .button:active { 
+background-color: #3e8e41; 
+box-shadow: 0 5px #666; 
+transform: translateY(4px); 
+} 
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS3 Buttons </h1>
+				<p> Belajarlah bagaimana untuk me-style tombol menggunakan CSS.</p>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> Basic Button Styling </h2>
+				<p> Penggayaan Tombol Dasar </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						.button { <br>
+						background-color: #4CAF50; <em>/* Green */</em> <br>
+						border: none; <br>
+						color: white; <br>
+						padding: 15px 32px; <br>
+						text-align: center; <br>
+						text-decoration: none; <br>
+						display: inline-block; <br>
+						font-size: 16px; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.button { <br>
+						background-color: #4CAF50; <br>
+						border: none; <br>
+						color: white; <br>
+						padding: 15px 32px; <br>
+						text-align: center; <br>
+						text-decoration: none; <br>
+						display: inline-block; <br>
+						font-size: 16px; <br>
+						margin: 4px 2px; <br>
+						cursor: pointer; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>h2</b>>CSS Buttons<<b>/h2</b>> <br>
+						 <br>
+						<<b>button</b>>Default Button<<b>/button</b>> <br>
+						<<b>a</b> <span class="teal">href="#" class="button"</span>>Link Button<<b>/a</b>> <br>
+						<<b>button</b> <span class="teal">class="button"</span>>Button<<b>/button</b>> <br>
+						<<b>input</b> <span class="teal">type="button" class="button" value="Input Button"</span>> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<h2>CSS Buttons</h2>
+						
+						<button>Default Button</button>
+						<a href="#" class="button">Link Button</a>
+						<button class="button">Button</button>
+						<input type="button" class="button" value="Input Button">
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Button Colors</h2>
+				<p> Warna Tombol</p>
+				<p> Gunakanlah properti <mark>background-color</mark> untuk mengubah warna background dari sebuah button:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						.button1 {background-color: #4CAF50;} <em>/* Green */</em> <br>
+						.button2 {background-color: #008CBA;} <em>/* Blue */</em> <br>
+						.button3 {background-color: #f44336;} <em>/* Red */ </em> <br>
+						.button4 {background-color: #e7e7e7; color: black;} <em>/* Gray */</em> <br>
+						.button5 {background-color: #555555;} <em>/* Black */</em> <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.button { <br>
+						background-color: #4CAF50; <em>/* Green */</em>
+						border: none; <br>
+						color: white; <br>
+						padding: 15px 32px; <br>
+						text-align: center; <br>
+						text-decoration: none; <br>
+						display: inline-block; <br>
+						font-size: 16px; <br>
+						margin: 4px 2px; <br>
+						cursor: pointer; <br>
+						} <br>
+						 <br>
+						.button2 {background-color: #008CBA;} <em>/* Blue */</em> <br>
+						.button3 {background-color: #f44336;} <em>/* Red */ </em> <br>
+						.button4 {background-color: #e7e7e7; color: black;} <em>/* Gray */ </em> <br>
+						.button5 {background-color: #555555;} <em>/* Black */</em> <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>h2</b>>Button Colors<<b>/h2</b>> <br>
+						<<b>p</b>>Change the background color of a button with the background-color property:<<b>/p</b>> <br>
+						 <br>
+						<<b>button</b> <span class="teal">class="button"</span>>Green<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">class="button button2"</span>>Blue<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">class="button button3"</span>>Red<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">class="button button4"</span>>Gray<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">class="button button5"</span>>Black<<b>/button</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<h2>Button Colors</h2>
+						<p>Change the background color of a button with the background-color property:</p>
+						
+						<button class="button">Green</button>
+						<button class="button button2">Blue</button>
+						<button class="button button3">Red</button>
+						<button class="button button4">Gray</button>
+						<button class="button button5">Black</button>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Button Sizes</h2>
+				<p> Ukuran Tombol</p>
+				<p> Gunakanlah properti <mark>font-size</mark> untuk mengubah ukuran dari suatu button:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open03">
+						
+						.button6 {font-size: 10px;} <br>
+						.button7 {font-size: 12px;} <br>
+						.button8 {font-size: 16px;} <br>
+						.button9 {font-size: 20px;} <br>
+						.button10 {font-size: 24px;} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.button { <br>
+						background-color: #4CAF50; /* Green */ <br>
+						border: none; <br>
+						color: white; <br>
+						padding: 15px 32px; <br>
+						text-align: center; <br>
+						text-decoration: none; <br>
+						display: inline-block; <br>
+						font-size: 16px; <br>
+						margin: 4px 2px; <br>
+						cursor: pointer; <br>
+						} <br>
+						 <br>
+						.button1 {font-size: 10px;} <br>
+						.button2 {font-size: 12px;} <br>
+						.button3 {font-size: 16px;} <br>
+						.button4 {font-size: 20px;} <br>
+						.button5 {font-size: 24px;} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>h2</b>>Button Sizes<<b>/h2</b>> <br>
+						<<b>p</b>>Change the size of a button with the font-size property:<<b>/p</b>> <br>
+						 <br>
+						<<b>button</b> <span class="teal">class="button button1"</span>>10px<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">class="button button2"</span>>12px<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">class="button button3"</span>>16px<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">class="button button4"</span>>20px<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">class="button button5"</span>>24px<<b>/button</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+						<h2>Button Sizes</h2>
+						<p>Change the size of a button with the font-size property:</p>
+						
+						<button class="button button1">10px</button>
+						<button class="button button2">12px</button>
+						<button class="button button3">16px</button>
+						<button class="button button4">20px</button>
+						<button class="button button5">24px</button>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Rounded Buttons</h2>
+				<p> Tombol (Bersudut) Tumpul</p>
+				<p> Gunakanlah properti <mark>border-radius</mark> untuk menambahkan sudut tumpul untuk suatu button:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open04">
+						
+						.button1 {border-radius: 2px;} <br>
+						.button2 {border-radius: 4px;} <br>
+						.button3 {border-radius: 8px;} <br>
+						.button4 {border-radius: 12px;} <br>
+						.button5 {border-radius: 50%;} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close04">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.button { <br>
+						background-color: #4CAF50; <em>>/* Green */</em> <br>
+						border: none; <br>
+						color: white; <br>
+						padding: 15px 32px; <br>
+						text-align: center; <br>
+						text-decoration: none; <br>
+						display: inline-block; <br>
+						font-size: 16px; <br>
+						margin: 4px 2px; <br>
+						cursor: pointer; <br>
+						} <br>
+						
+						.button1 {border-radius: 2px;} <br>
+						.button2 {border-radius: 4px;} <br>
+						.button3 {border-radius: 8px;} <br>
+						.button4 {border-radius: 12px;} <br>
+						.button5 {border-radius: 50%;} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>h2</b>>Rounded Buttons<<b>/h2</b>> <br>
+						<<b>p</b>>Add rounded corners to a button with the border-radius property:<<b>/p</b>> <br>
+						 <br>
+						<<b>button</b> <span class="teal">class="button button1"</span>>2px<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">class="button button2"</span>>4px<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">class="button button3"</span>>8px<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">class="button button4"</span>>12px<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">class="button button5"</span>>50%<<b>/button</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<button onclick="buka04()" class="exbutton"> Open </button>
+					<button onclick="tutup04()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+						<h2>Rounded Buttons</h2>
+						<p>Add rounded corners to a button with the border-radius property:</p>
+						
+						<button class="button button1">2px</button>
+						<button class="button button2">4px</button>
+						<button class="button button3">8px</button>
+						<button class="button button4">12px</button>
+						<button class="button button5">50%</button>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Colored Button Borders</h2>
+				<p> Border (garis) Tombol berwarna</p>
+				<p> Gunakanlah properti <mark>border</mark> untuk menambahkan sebuah border berwarna untuk suatu button:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open05">
+						
+						.button1 { <br>
+						background-color: white; <br>
+						color: black; <br>
+						border: 2px solid #4CAF50; <em>/* Green */</em> <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close05">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.button { <br>
+						background-color: #4CAF50; <em>/* Green */</em> <br>
+						border: none; <br>
+						color: white; <br>
+						padding: 15px 32px; <br>
+						text-align: center; <br>
+						text-decoration: none; <br>
+						display: inline-block; <br>
+						font-size: 16px; <br>
+						margin: 4px 2px; <br>
+						cursor: pointer; <br>
+						} <br>
+						 <br>
+						.button1 { <br>
+						background-color: white;  <br>
+						color: black;  <br>
+						border: 2px solid #4CAF50; <br>
+						} <br>
+						 <br>
+						.button2 { <br>
+						background-color: white;  <br>
+						color: black;  <br>
+						border: 2px solid #008CBA; <br>
+						} <br>
+						 <br>
+						.button3 { <br>
+						background-color: white;  <br>
+						color: black;  <br>
+						border: 2px solid #f44336; <br>
+						} <br>
+						 <br>
+						.button4 { <br>
+						background-color: white; <br>
+						color: black; <br>
+						border: 2px solid #e7e7e7; <br>
+						} <br>
+						 <br>
+						.button5 { <br>
+						background-color: white; <br>
+						color: black; <br>
+						border: 2px solid #555555; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>h2</b>>Colored Button Borders<<b>/h2</b>> <br>
+						<<b>p</b>>Use the border property to add a border to the button:<<b>/p</b>> <br>
+						 <br>
+						<<b>button</b> <span class="teal">class="button button1"</span>>Green<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">class="button button2"</span>>Blue<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">class="button button3"</span>>Red<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">class="button button4"</span>>Gray<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">class="button button5"</span>>Black<<b>/button</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan05()" class="exbutton">Klik disini</button>
+					<button onclick="buka05()" class="exbutton"> Open </button>
+					<button onclick="tutup05()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+					
+						<h2>Colored Button Borders</h2>
+						<p>Use the border property to add a border to the button:</p>
+						
+						<button class="button button1">Green</button>
+						<button class="button button2">Blue</button>
+						<button class="button button3">Red</button>
+						<button class="button button4">Gray</button>
+						<button class="button button5">Black</button>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Hoverable Buttons</h2>
+				<p> Tombol yang dapat di-"hover"</p>
+				<p>Gunakanlah selector <mark>:hover</mark> untuk mengubah style dari button ketika kamu menggerakan mouse pada button tersebut.</p>
+				
+				<div class="nasehat">
+					<p> <b>Tip:</b> Guanaknalh properti <mark>transition-duration</mark> untuk memutuskan kecepatan dari efek "hover":</p>
+				</div>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open06">
+						
+						.button { <br>
+						-webkit-transition-duration: 0.4s; <em>/* Safari */</em> <br>
+						transition-duration: 0.4s; <br>
+						} <br>
+						 <br>
+						.button:hover { <br>
+						background-color: #4CAF50; <em>/* Green */</em> <br>
+						color: white; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close06">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.button { <br>
+						background-color: #4CAF50; <em>/* Green */</em> <br>
+						border: none; <br>
+						color: white; <br>
+						padding: 16px 32px; <br>
+						text-align: center; <br>
+						text-decoration: none; <br>
+						display: inline-block; <br>
+						font-size: 16px; <br>
+						margin: 4px 2px; <br>
+						-webkit-transition-duration: 0.4s; <em>/* Safari */</em> <br>
+						transition-duration: 0.4s; <br>
+						cursor: pointer; <br>
+						} <br>
+						 <br>
+						.button1 { <br>
+						background-color: white;  <br>
+						color: black;  <br>
+						border: 2px solid #4CAF50; <br>
+						} <br>
+						 <br>
+						.button1:hover { <br>
+						background-color: #4CAF50; <br>
+						color: white; <br>
+						} <br>
+						 <br>
+						.button2 { <br>
+						background-color: white;  <br>
+						color: black;  <br>
+						border: 2px solid #008CBA; <br>
+						} <br>
+						 <br>
+						.button2:hover { <br>
+						background-color: #008CBA; <br>
+						color: white; <br>
+						} <br>
+						 <br>
+						.button3 { <br>
+						background-color: white;  <br>
+						color: black;  <br>
+						border: 2px solid #f44336; <br>
+						} <br>
+						 <br>
+						.button3:hover { <br>
+						background-color: #f44336; <br>
+						color: white; <br>
+						} <br>
+						 <br>
+						.button4 { <br>
+						background-color: white; <br>
+						color: black; <br>
+						border: 2px solid #e7e7e7; <br>
+						} <br>
+						 <br>
+						.button4:hover {background-color: #e7e7e7;} <br>
+						 <br>
+						.button5 { <br>
+						background-color: white; <br>
+						color: black; <br>
+						border: 2px solid #555555; <br>
+						} <br>
+						 <br>
+						.button5:hover { <br>
+						background-color: #555555; <br>
+						color: white; <br>
+						} <br>
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>h2</b>>Hoverable Buttons<<b>/h2</b>> <br>
+						<<b>p</b>>Use the :hover selector to change the style of the button when you move the mouse over it.<<b>/p</b>> <br>
+						<<b>p</b>><<b>strong</b>>Tip:<<b>/strong</b>> Use the transition-duration property to determine the speed of the "hover" effect:<<b>/p</b>> <br>
+						 <br>
+						<<b>button</b> <span class="teal">class="button button1"</span>>Green<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">class="button button2"</span>>Blue<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">class="button button3"</span>>Red<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">class="button button4"</span>>Gray<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">class="button button5"</span>>Black<<b>/button</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan06()" class="exbutton">Klik disini</button>
+					<button onclick="buka06()" class="exbutton"> Open </button>
+					<button onclick="tutup06()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+					
+						<h2>Hoverable Buttons</h2>
+						<p>Use the :hover selector to change the style of the button when you move the mouse over it.</p>
+						<p><strong>Tip:</strong> Use the transition-duration property to determine the speed of the "hover" effect:</p>
+						
+						<button class="button button1">Green</button>
+						<button class="button button2">Blue</button>
+						<button class="button button3">Red</button>
+						<button class="button button4">Gray</button>
+						<button class="button button5">Black</button>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Shadow Buttons</h2>
+				<p>Bayangan Tombol</p>
+				<p> Gunakanlah properti <mark>box-shadow</mark> untuk menambahkan bayangan untuk button:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open07">
+						
+						.button1 { <br>
+						box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); <br>
+						} <br>
+						<br>
+						.button2:hover { <br>
+						box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close07">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.button { <br>
+						background-color: #4CAF50; <em>/* Green */</em> <br>
+						border: none; <br>
+						color: white; <br>
+						padding: 15px 32px; <br>
+						text-align: center; <br>
+						text-decoration: none; <br>
+						display: inline-block; <br>
+						font-size: 16px; <br>
+						margin: 4px 2px; <br>
+						cursor: pointer; <br>
+						-webkit-transition-duration: 0.4s; <em>/* Safari */</em> <br>
+						transition-duration: 0.4s; <br>
+						} <br>
+						 <br>
+						.button1 { <br>
+						box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); <br>
+						} <br>
+						 <br>
+						.button2:hover { <br>
+						box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); <br>
+						} <br>
+						
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>h2</b>>Shadow Buttons<<b>/h2</b>> <br>
+						<<b>p</b>>Use the box-shadow property to add shadows to the button:<<b>/p</b>> <br>
+						 <br>
+						<<b>button</b> <span class="teal">class="button button1"</span>>Shadow Button<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">class="button button2"</span>>Shadow on Hover<<b>/button</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan07()" class="exbutton">Klik disini</button>
+					<button onclick="buka07()" class="exbutton"> Open </button>
+					<button onclick="tutup07()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan07">
+					
+						<h2>Shadow Buttons</h2>
+						<p>Use the box-shadow property to add shadows to the button:</p>
+						
+						<button class="button button1">Shadow Button</button>
+						<button class="button button2">Shadow on Hover</button>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Disabled Buttons</h2>
+				<p> Tombol Dilumpuhkan</p>
+				
+				<p> Guanaknlah properti <mark>opacity</mark> untuk menambahkan efek tembus cahaya untuk button (membuat sebuah "disabled" look).</p>
+				<div class="nasehat">
+					<p><b>Tip:</b> Kamu juga bisa menambahkan properti <mark>cursor</mark> dengan sebuah nilai <b>"not-allowed"</b>, yang mana akan menampilkan sebuah "no parking sign" ketika kamu menggerakan mouse pada button:</p>
+				</div>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open08">
+						
+						.disabled { <br>
+						opacity: 0.6; <br>
+						cursor: not-allowed; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close08">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.button { <br>
+						background-color: #4CAF50; <em>/* Green */</em> <br>
+						border: none; <br>
+						color: white; <br>
+						padding: 15px 32px; <br>
+						text-align: center; <br>
+						text-decoration: none; <br>
+						display: inline-block; <br>
+						font-size: 16px; <br>
+						margin: 4px 2px; <br>
+						cursor: pointer; <br>
+						} <br>
+						 <br>
+						.disabled { <br>
+						opacity: 0.6; <br>
+						cursor: not-allowed; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>h2</b>>Disabled Buttons<<b>/h2</b>> <br>
+						<<b>p</b>>Use the opacity property to add some transparency to the button (make it look disabled):<<b>/p</b>> <br>
+						 <br>
+						<<b>button</b> <span class="teal">class="button"</span>>Normal Button<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">class="button disabled"</span>>Disabled Button<<b>/button</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan08()" class="exbutton">Klik disini</button>
+					<button onclick="buka08()" class="exbutton"> Open </button>
+					<button onclick="tutup08()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan08">
+					
+						<h2>Disabled Buttons</h2>
+						<p>Use the opacity property to add some transparency to the button (make it look disabled):</p>
+						
+						<button class="button">Normal Button</button>
+						<button class="button disabled">Disabled Button</button>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Button Width</h2>
+				<p> Lebar Tombol</p>
+				
+				250px
+				50% 100%
+				<p> Dengan default, ukuran dari button diputuskan dengan konten teksnya (selebar kontennya sendiri). 
+				Guanaknlah properti <mark>width</mark> untuk mengubah lebar dari button:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open09">
+						
+						.button1 {width: 250px;} <br>
+						.button2 {width: 50%;} <br>
+						.button3 {width: 100%;} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close09">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.button { <br>
+						background-color: #4CAF50; <em>/* Green */</em> <br>
+						border: none; <br>
+						color: white; <br>
+						padding: 15px 32px; <br>
+						text-align: center; <br>
+						text-decoration: none; <br>
+						display: inline-block; <br>
+						font-size: 16px; <br>
+						margin: 4px 2px; <br>
+						cursor: pointer; <br>
+						} <br>
+						 <br>
+						.button1 {width: 250px;} <br>
+						.button2 {width: 50%;} <br>
+						.button3 { <br>
+						padding-left: 0; <br>
+						padding-right: 0; <br>
+						width: 100%; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>h2</b>>Button Width<<b>/h2</b>> <br>
+						<<b>p</b>>Use the width property to change the width of the button:<<b>/p</b>> <br>
+						<<b>p</b>><<b>strong</b>>Tip:<<b>/strong</b>> Use pixels if you want to set a fixed width and use percent for responsive buttons (e.g. 50% of its parent element).<<b>/p</b>> <br>
+						 <br>
+						<<b>button</b> <span class="teal">class="button button1"</span>>250px<<b>/button</b>><<b>br</b>> <br>
+						<<b>button</b> <span class="teal">class="button button2"</span>>50%<<b>/button</b>><<b>br</b>> <br>
+						<<b>button</b> <span class="teal">class="button button3"</span>>100%<<b>/button</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan09()" class="exbutton">Klik disini</button>
+					<button onclick="buka09()" class="exbutton"> Open </button>
+					<button onclick="tutup09()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan09">
+					
+						<h2>Button Width</h2>
+						<p>Use the width property to change the width of the button:</p>
+						<p><strong>Tip:</strong> Use pixels if you want to set a fixed width and use percent for responsive buttons (e.g. 50% of its parent element).</p>
+						
+						<button class="button button1">250px</button><br>
+						<button class="button button2">50%</button><br>
+						<button class="button button3">100%</button>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Button Groups</h2>
+				<p> Kelompok Tombol</p>
+				
+				
+				<p> Copotlah atau hilangkanlah margin dan tambahkanlah <mark>float:left;</mark> untuk setiap button agar membuat sebuah kelompok button:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open10">
+						
+						.button { <br>
+						float: left; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close10">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.button { <br>
+						background-color: #4CAF50; <em>/* Green */</em> <br>
+						border: none; <br>
+						color: white; <br>
+						padding: 15px 32px; <br>
+						text-align: center; <br>
+						text-decoration: none; <br>
+						display: inline-block; <br>
+						font-size: 16px; <br>
+						cursor: pointer; <br>
+						float: left; <br>
+						} <br>
+						 <br>
+						.button:hover { <br>
+						background-color: #3e8e41; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>h2</b>>Button Groups<<b>/h2</b>> <br>
+						<<b>p</b>>Remove margins and float the buttons to create a button group:<<b>/p</b>> <br>
+						 <br>
+						<<b>button</b> <span class="teal">class="button"</span>>Button<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">class="button"</span>>Button<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">class="button"</span>>Button<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">class="button"</span>>Button<<b>/button</b>> <br>
+						 <br>
+						<<b>p</b> <span class="teal">style="clear:both"</span>><<b>br</b>>Remember to clear floats after, or else will this p element also float next to the buttons.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan10()" class="exbutton">Klik disini</button>
+					<button onclick="buka10()" class="exbutton"> Open </button>
+					<button onclick="tutup10()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan10">
+					
+						<h2>Button Groups</h2>
+						<p>Remove margins and float the buttons to create a button group:</p>
+						
+						<button class="button">Button</button>
+						<button class="button">Button</button>
+						<button class="button">Button</button>
+						<button class="button">Button</button>
+						
+						<p style="clear:both"><br>Remember to clear floats after, or else will this p element also float next to the buttons.</p>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Bordered Button Groups</h2>
+				
+				ButtonButtonButtonButton
+				
+				<p> Guanaknlah properti <mark>border</mark> untuk menciptakan sebuah kelompok tombol border</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open11">
+						
+						.button { <br>
+						float: left; <br>
+						border: 1px solid green <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close11">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.button { <br>
+						background-color: #4CAF50; <em>/* Green */</em> <br>
+						border: 1px solid green; <br>
+						color: white; <br>
+						padding: 15px 32px; <br>
+						text-align: center; <br>
+						text-decoration: none; <br>
+						display: inline-block; <br>
+						font-size: 16px; <br>
+						cursor: pointer; <br>
+						float: left; <br>
+						} <br>
+						 <br>
+						.button:hover { <br>
+						background-color: #3e8e41; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>h2</b>>Bordered Button Group<<b>/h2</b>> <br>
+						<<b>p</b>>Add borders to create a bordered button group:<<b>/p</b>> <br>
+						 <br>
+						<<b>button</b> <span class="teal">class="button"</span>>Button<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">class="button"</span>>Button<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">class="button"</span>>Button<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">class="button"</span>>Button<<b>/button</b>> <br>
+						 <br>
+						<<b>p</b> <span class="teal">style="clear:both"</span>><<b>br</b>>Remember to clear floats after, or else will this p element also float next to the buttons.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan11()" class="exbutton">Klik disini</button>
+					<button onclick="buka11()" class="exbutton"> Open </button>
+					<button onclick="tutup11()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan11">
+					
+						<h2>Bordered Button Group</h2>
+						<p>Add borders to create a bordered button group:</p>
+						
+						<button class="button">Button</button>
+						<button class="button">Button</button>
+						<button class="button">Button</button>
+						<button class="button">Button</button>
+						
+						<p style="clear:both"><br>Remember to clear floats after, or else will this p element also float next to the buttons.</p>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Animated Buttons</h2>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<p class="fontWhite">Menambahkan sebuah arah panah saat disentuh</p>
+					<div class="example-content" id="content-open12">
+					
+					</div>
+					<div class="example-content sembunyikan" id="content-close12">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.button { <br>
+						display: inline-block; <br>
+						border-radius: 4px; <br>
+						background-color: #f4511e; <br>
+						border: none; <br>
+						color: #FFFFFF; <br>
+						text-align: center; <br>
+						font-size: 28px; <br>
+						padding: 20px; <br>
+						width: 200px; <br>
+						transition: all 0.5s; <br>
+						cursor: pointer; <br>
+						margin: 5px; <br>
+						} <br>
+						 <br>
+						.button span { <br>
+						cursor: pointer; <br>
+						display: inline-block; <br>
+						position: relative; <br>
+						transition: 0.5s; <br>
+						} <br>
+						 <br>
+						.button span:after { <br>
+						content: '»'; <br>
+						position: absolute; <br>
+						opacity: 0; <br>
+						top: 0; <br>
+						right: -20px; <br>
+						transition: 0.5s; <br>
+						} <br>
+						 <br>
+						.button:hover span { <br>
+						padding-right: 25px; <br>
+						} <br>
+						 <br>
+						.button:hover span:after { <br>
+						opacity: 1; <br>
+						right: 0; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>h2</b>>Animated Button<<b>/h2</b>> <br>
+						 <br>
+						<<b>button</b> <span class="teal">class="button" style="vertical-align:middle"</span>><<b>span</b>>Hover <<b>/span</b>><<b>/button</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan12()" class="exbutton">Klik disini</button>
+					<button onclick="buka12()" class="exbutton"> Open </button>
+					<button onclick="tutup12()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan12">
+					
+						<h2>Animated Button</h2>
+						
+						<button class="button" style="vertical-align:middle"><span>Hover </span></button>
+					
+					</div>
+				</article>
+				
+				
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<p class="fontWhite">Menambahkan sebuah efek "ripple" saat diklik</p>
+					<div class="example-content" id="content-open13">
+					
+					</div>
+					<div class="example-content sembunyikan" id="content-close13">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.button { <br>
+						position: relative; <br>
+						background-color: #4CAF50; <br>
+						border: none; <br>
+						font-size: 28px; <br>
+						color: #FFFFFF; <br>
+						padding: 20px; <br>
+						width: 200px; <br>
+						text-align: center; <br>
+						-webkit-transition-duration: 0.4s; <em>/* Safari */</em> <br>
+						transition-duration: 0.4s; <br>
+						text-decoration: none; <br>
+						overflow: hidden; <br>
+						cursor: pointer; <br>
+						} <br>
+						 <br>
+						.button:after { <br>
+						content: ""; <br>
+						background: #90EE90; <br>
+						display: block; <br>
+						position: absolute; <br>
+						padding-top: 300%; <br>
+						padding-left: 350%; <br>
+						margin-left: -20px!important; <br>
+						margin-top: -120%; <br>
+						opacity: 0; <br>
+						transition: all 0.8s <br>
+						} <br>
+						 <br>
+						.button:active:after { <br>
+						padding: 0; <br>
+						margin: 0; <br>
+						opacity: 1; <br>
+						transition: 0s <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>h2</b>>Animated Button - Ripple Effect<<b>/h2</b>>
+						
+						<<b>button</b> class="button">Click Me<<b>/button</b>>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan13()" class="exbutton">Klik disini</button>
+					<button onclick="buka13()" class="exbutton"> Open </button>
+					<button onclick="tutup13()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan13">
+					
+						<h2>Animated Button - Ripple Effect</h2>
+						
+						<button class="button">Click Me</button>
+					
+					</div>
+				</article>
+				
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<p class="fontWhite">Menambahkan sebuah efek "ditekan" saat diklik</p>
+					<div class="example-content" id="content-open14">
+					
+					</div>
+					<div class="example-content sembunyikan" id="content-close14">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.button { <br>
+						display: inline-block; <br>
+						padding: 15px 25px; <br>
+						font-size: 24px; <br>
+						cursor: pointer; <br>
+						text-align: center;	 <br>
+						text-decoration: none; <br>
+						outline: none; <br>
+						color: #fff; <br>
+						background-color: #4CAF50; <br>
+						border: none; <br>
+						border-radius: 15px; <br>
+						box-shadow: 0 9px #999; <br>
+						} <br>
+						 <br>
+						.button:hover {background-color: #3e8e41} <br>
+						 <br>
+						.button:active { <br>
+						background-color: #3e8e41; <br>
+						box-shadow: 0 5px #666; <br>
+						transform: translateY(4px); <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>h2</b>>Animated Buttons - "Pressed Effect"<<b>/h2</b>> <br>
+						 <br>
+						<<b>button</b> <span class="teal">class="button"</span>>Click Me<<b>/button</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan14()" class="exbutton">Klik disini</button>
+					<button onclick="buka14()" class="exbutton"> Open </button>
+					<button onclick="tutup14()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan14">
+					
+						<h2>Animated Buttons - "Pressed Effect"</h2>
+						
+						<button class="button">Click Me</button>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS3 images.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS3 pagination.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

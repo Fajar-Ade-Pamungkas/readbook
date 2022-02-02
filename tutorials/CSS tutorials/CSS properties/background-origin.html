@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS properties | CSS3 background-origin  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="../tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="../buka.js"></script>
+<script type="text/javascript" src="../../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../.,/HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS3 background-origin  Property </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2>Contoh</h2>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<p> Membiarkan background gambar dimulai dari sudut kiri lebih atas dari kontent </p>
+					<div class="example-content" id="content-open01">
+						
+						#example1 { <br>
+						background:url(img_flwr.gif); <br>
+						background-repeat: no-repeat; <br>
+						padding:35px; <br>
+						background-origin: content-box; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Definisi dan Penggunaan</h2>
+				
+				<p>Properti <mark>backgrround-origin</mark> menentukan dimana background gambar diposisikan.</p>
+				<p><b>Catatan:</b> Jika properti background-attachment diatur menjadi "fixed", properti ini tidak memiliki efek.</p>
+				
+				<table class="definition">
+					<tr>
+						<th> Default value: </th>
+						<td> padding-box </td>
+						<td>  </td>
+					</tr>
+					<tr>
+						<th> Inherited: </th>
+						<td> no </td>
+						<td>  </td>
+					</tr>
+					<tr>
+						<th> Animatable: </th>
+						<td> no. <a href="../CSS references/CSS animatable.html" > Read about animatable</a> </td>
+						<td>  </td>
+					</tr>
+					<tr>
+						<th> Version </th>
+						<td> CSS3 </td>
+						<td>  </td>
+					</tr>
+					<tr>
+						<th> JavaScript syntax: </th>
+						<td> <i>object</i>.style.backgroundOrigin="<i>content-box</i>"</td>
+						<td> <a href="JavaScript syntax/.html" target="_blank" >Try it</a> </td>
+					</tr>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Browser Support</h2>
+				
+				<p> Nomor dalam tabel menentukan browser versi pertama yang mendukung properti secara penuh.</p>
+				<p> Nomor yang diikuti oleh <mark>-webkit-</mark>, <mark>-moz-</mark> atau <mark>-o-</mark> menentukan versi pertama yang bekerja dengan awalan kata.</p>
+				
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="7" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> Properti </td>
+							<td> <img src="../../logos/Chrome.png" alt="Chrome"> </td>
+							<td> <img src="../../logos/Edge.png" alt="Edge"> </td>
+							<td> <img src="../../logos/IE.png" alt="Internet Explorer"> </td>
+							<td> <img src="../../logos/Firefox.png" alt="Firefox"> </td>
+							<td> <img src="../../logos/Safari.png" alt="Safari"> </td>
+							<td> <img src="../../logos/Opera.png" alt="Opera"> </td>
+						</tr>
+						<tr>
+							<td> background-origin </td>
+							<td> 4.0 </td>
+							<td> 12.0 </td>
+							<td> 9.0 </td>
+							<td> 4.0 </td>
+							<td> 3.0 </td>
+							<td> 10.5 </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Sintaksis CSS</h2>
+				
+				<div class="simple-example">
+					<b>background-origin</b>: padding-box|border-box|content-box|initial|inherit;
+				</div>
+				
+				<h2>Nilai Properti</h2>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Nilai</th>
+							<th>Deskripsi</th>
+							<th>Mainkan</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> padding-box </td>
+							<td> Nilai default. Background gambar dimuali dari sudut kiri lebih atas dari sisi padding </td>
+							<td> <a href="values/backgroundOrigin-paddingBox.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> border-box </td>
+							<td> Background gambar dimulai dari sudut kiri lebih atas dari border </td>
+							<td> <a href="values/backgroundOrigin-borderBox.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> content-box </td>
+							<td> Background gambar dimulai dari sudut kiri lebih atas dari konten </td>
+							<td> <a href="values/backgroundOrigin-contentBox.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> initial </td>
+							<td> Mengatur properti ini untuk nilai defaultnya. <a href="initial.html" target="_blank" > Read about initial</a> </td>
+							<td>  </td>
+						</tr>
+						<tr>
+							<td> inherit </td>
+							<td> Mewarisi properti ini dari nilai element induknya. <a href="inherit.html" target="_blank" > Read about initial</a> </td>
+							<td>  </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Halaman yang Berhubungan</h2>
+				<ul>
+					<li>CSS3 tutorial: <a href="../CSS3 backgrounds.html" > CSS3 Background </a></li>
+					<li>HTML DOM reference: <a href="DOM/backgroundOrigin.html" >  backgroundOrigin property</a></li>
+				</ul>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="background-image.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="background-position.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

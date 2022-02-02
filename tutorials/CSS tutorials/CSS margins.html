@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS Margins </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<script type="text/javascript" src="buka.js"></script>
+</head>
+<style type="text/css">
+.margin {
+	padding:10px;
+	margin:80px;
+	border:5px gold groove;
+}
+</style>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS margins </h1>
+				
+				<div class="margin">
+				<h2>CSS Margin Properties </h2>
+				<p> Properti <mark>margin</mark> CSS digunakan untuk mengahsilkan spasi di sekeliling element. </p>
+				<p> Properti <mark>margin</mark> mengatur ukuran dari white spasi DILUAR border.</p>
+				<p> Element ini memiliki margin 80px. </p>
+				</div>
+				
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> CSS Margins </h2>
+				<p> Properti <mark>margin</mark> CSS mengatur ukuran white space DILUAR border. </p>
+				<div class="nasehat">
+				<p> <b>Catatan:</b> Margin merupakan ruang transparan atau completely transparent - dan tidak bisa memiliki sebuah background-color (warna)!</p>
+				</div>
+				<p> Dengan CSS, kamu memiliki kendali penuh pada margin. Ada properti - properti CSS untuk pengaturan margun untuk setiap sisi dari element (top, right, bottom, and left).</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Margin - Individual Sides </h2>
+				<p> CSS memiliki properti untuk penentuan margin utuk setiap sisi sebuah element: </p>
+				<ul>
+					<li> <mark>margin-top </mark> </li>
+					<li> <mark>margin-right</mark> </li>
+					<li> <mark>margin-bottom</mark> </li>
+					<li> <mark> margin-left</mark> </li>
+				</li>
+				<p> Semua properti margin bisa memiliki nilai berikut: </p>
+				
+				<ul>
+					<li> auto - Browser mengkalkulasi margin secara otomatis</li>
+					<li> length - Menentukan margin dalam satuan px, pt, cm, dan sebagainya. </li>
+					<li> % - Menentukan margin dalam satuan persen (%) width atau lebar dari element pengisi</li>
+					<li> inherit - Menentukan bahwa margin harus diwariskan (inherited) dari parent element (elemen induk)</li>
+				</ul>
+				<div class="nasehat">
+				<p> <b>Catatan:</b> Margin juga memungkinkan untuk menggunakan nilai negatif untuk margin; untuk <b>overlap content</b> (konten saling melingkupi). </p>
+				</div>
+				<p> Contoh berikut mengatur perbedaan margin untuk semua keempat sisi dari element <<b>/p</b>>: </p>
+				
+				<article class="example-box">
+					<h4> Input </h4>
+					<div class="example-content">
+						
+						p {
+						<blockquote>
+						    margin-top: 100px; <br>
+						    margin-bottom: 100px; <br>
+						    margin-right: 150px; <br>
+						    margin-left: 80px;
+						</blockquote>
+						}
+						
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan01">
+							<p> This paragraph has a top and bottom margin of 100px, a left margin of 80px, and a right margin of 150px.</p>
+					</div>
+				</article>
+					
+					<p> Contoh berikut memperbolehkan marginkiri diwariskan dari parent element: </p>
+					
+				<article class="example-box">
+					<h4> Input </h4>
+					<div class="example-content">
+					
+					div.container01 { 
+					<blockquote>
+					    border: 1px solid red; <br>
+					    margin-left: 100px;
+					</blockquote>
+					}<br>
+					<br>
+					p.p1 { 
+					<blockquote>
+					    margin-left: inherit; 
+					</blockquote>
+					}
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan02">
+						<h3>Use of the inherit Value</h3>
+						<p>Let the left margin be inherited from the parent element:</p>
+						<div class="container01">
+						<p class="p1"> This is a paragraph with an inherited left margin (from the div element).</p>
+						</div>
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Margin - Shorthand Property </h2>
+				<p> Untuk mempersingkat kode, ini memungkinkan untuk menentukan semua properti margin dalam satu deklarasi. </p>
+				<p> Properti <mark>margin</mark> merupakan sebuah shorthand properti untuk properti margin individual sebagai berikut: </p>
+				
+				<ul>
+					<li> <mark>margin-top</mark></li>
+					<li> <mark>margin-right</mark></li>
+					<li> <mark>margin-bottom</mark></li>
+					<li> <mark>margin-left</mark></li>
+				</ul>
+				
+				<article class="example-box">
+					<h4> Input </h4>
+					<div class="example-content">
+					
+					p.p2 {
+					<blockquote>
+					    margin:100px 150px 100px 80px;
+					</blockquote>
+					}
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan03">
+					<p class="p2"> This paragraph has a top and bottom margin of 100px, a left margin of 80px, and a right margin of 150px.</p>
+					</div>
+				</article>
+				
+				<p> Jadi, Disini adalah penjelasan bagaimana itu bekerja: </p>
+				<p> Jika properti <mark>margin</mark> memiliki empat properti: </p>
+				<ul>
+					<li>margin: 25px 50px 75px 100px</li>
+						<ol>
+							<li> top margin is 25px</li>
+							<li>right margin is 50px</li>
+							<li>bottom margin is 75px</li>
+							<li>left margin is 100px</li>
+						</ol>
+				</ul>
+				
+				<p> Jika properti <mark>margin</mark> memiliki tiga nilai </p>
+				<ul>
+					<li>margin: 25px 50px 75px;</li>
+						<ol>
+						<li>top margin is 25px</li>
+						<li>right and left margins are 50px</li>
+						<li>bottom margin is 75px</li>
+						</ol>
+				</ul>
+				
+				<p> Jika properti <mark>margin</mark> memiliki dua nilai: </p>
+				<ul>
+					<li>margin: 25px 50px;</li>
+					<ol>
+						<li>top and bottom margins are 25px</li>
+						<li>right and left margins are 50px</li>
+					</ol>
+				</ul>
+				
+				<p> Jika properti <mark>margin</mark> memiliki satu nilai</p>
+				<ul>
+					<li>margin: 25px;</li>
+						<ol>
+							<li>all four margins are 25px</li>
+						</ol>
+				</ul>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Use of The auto Value </h2>
+				<p> Gunakanlah Nilai <b>auto</b> </p>
+				<p> Kamu bisa mengatur ptoperti <mark>margin</mark> menjadi <b>auto</b> untuk (posisi) pusat mendatar dengan kontainernya. </p>
+				<p> Element lalu akan mengambil kembali lebar yang ditentukan dan sisa spasinya akan di-split (dirobek) secara sama antara kiri dan kanan margin: </p>
+				
+				<article class="example-box">
+					<h4> Input </h4>
+					<div class="example-content">
+					
+					div.p4 {
+					<blockquote>
+					    width: 300px; <br>
+					    margin: auto; <br>
+					    border: 1px solid red;
+					</blockquote>
+					}
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan03">
+					
+					<div class="p4">
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+					sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					</div>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>All CSS Margin Properties</h2>
+				<table class="table">
+					<thead>
+						<tr>
+							<th> Properti </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> margin </td>
+							<td> Shorthand property untuk mengatur properti margin dalam satu deklarasi </td>
+						</tr>
+						<tr>
+							<td> margin-bottom </td>
+							<td> Mengatur margin bawah dari suatu element </td>
+						</tr>
+						<tr>
+							<td> margin-left </td>
+							<td> Mengatur margin kiri dari suatu element </td>
+						</tr>
+						<tr>
+							<td> margin-right </td>
+							<td> Mengatur margin kanan dari suatu element </td>
+						</tr>
+						<tr>
+							<td> margin-top </td>
+							<td> Mengatur margin atas dari suatu element </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS borders.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS padding.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

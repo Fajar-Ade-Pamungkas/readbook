@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS3  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+p.test1A { 
+white-space: nowrap; 
+width: 200px; 
+border: 1px solid #ff0000; 
+overflow: hidden; 
+text-overflow: clip; 
+} 
+
+p.test1B { 
+white-space: nowrap; 
+width: 200px; 
+border: 1px solid #ff0000; 
+overflow: hidden; 
+text-overflow: ellipsis; 
+} 
+
+div.test2 { 
+white-space: nowrap; 
+width: 200px; 
+overflow: hidden; 
+border: 1px solid #000000; 
+} 
+
+div.test2:hover { 
+text-overflow: inherit; 
+overflow: visible; 
+} 
+
+p.test3 { 
+width: 11em; 
+border: 1px solid #ff0000; 
+word-wrap: break-word; 
+} 
+
+p.test4A { 
+width: 140px; 
+border: 1px solid #ff0000; 
+word-break: keep-all; 
+} 
+
+p.test4B { 
+width: 140px; 
+border: 1px solid #ff0000; 
+word-break: break-all; 
+} 
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS3 Text </h1>
+				<div>
+				
+				</div>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2>CSS3 Text</h2>
+				<p> CSS3 berisikan bebeeapa feature teks baru. </p>
+				<p> Pada hapter ini kamu akan mempelajari tentang properti-rpoeprti teks berikut:</p>
+				
+				<ul>
+					<li>text-overflow</li>
+					<li>word-wrap</li>
+					<li>word-break</li>
+				</ul>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Browser Support</h2>
+				<p> Nomor pada tabel menentukan browser versi pertama yang mendukung secara penuh  properti ini.</p>
+				<p> Nomor yang diikut dengan <mark>-webkit-</mark>, <mark>-moz-</mark> atau <mark>-o-</mark> menentukan versi pertama yang bekerja dengan awalan properti.</p>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> Properti </td>
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td>text-overflow</td>
+							<td> 4.0 </td>
+							<td> 12.0 dan 6.0</td>
+							<td> 7.0 </td>
+							<td> 3.1 </td>
+							<td> 11.0 <br> 9.0 -o-</td>
+						</tr>
+						<tr class="center">
+							<td>word-wrap</td>
+							<td> 23.0 </td>
+							<td> 12.0 dan 5.5 </td>
+							<td> 3.5 </td>
+							<td> 6.1  </td>
+							<td> 12.1 </td>
+						</tr>
+						<tr class="center">
+							<td>word-break</td>
+							<td> 4.0 </td>
+							<td> 12.0 dan 5.5 </td>
+							<td> 15.0 </td>
+							<td> 3.1  </td>
+							<td> 15.0 </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 Text Overflow</h2>
+				<p> Properti <mark>text-overflow</mark> CSS3 menentukan bagaimana konten yang diluapkan atau melewati batas 
+				itu tidak ditampilkan sebagaimana diisyaratkan ke pengguna.</p>
+				
+				<p>Teks melebihi kontainer bisa di-clip:</p>
+				<p class="test1A">This is some long text that will not fit in the box</p>
+				
+				<p> Atau teks yang melebihi kontianer bisa dibuat sebagai suatu tanda pengganti (..):</p>
+				<p class="test1B">This is some long text that will not fit in the box</p>
+				
+				<p>Kode CSS sebagai berikut:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						p.test1 { <br>
+						white-space: nowrap;  <br>
+						width: 200px;  <br>
+						border: 1px solid #000000; <br>
+						overflow: hidden; <br>
+						text-overflow: clip;  <br>
+						} <br>
+						 <br>
+						p.test2 { <br>
+						white-space: nowrap;  <br>
+						width: 200px;  <br>
+						border: 1px solid #000000; <br>
+						overflow: hidden; <br>
+						text-overflow: ellipsis; <br> 
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						p.test1 { <br>
+						white-space: nowrap;  <br>
+						width: 200px;  <br>
+						border: 1px solid #000000; <br>
+						overflow: hidden; <br>
+						text-overflow: clip; <br>
+						} <br>
+						 <br>
+						p.test2 { <br>
+						white-space: nowrap;  <br>
+						width: 200px;  <br>
+						border: 1px solid #000000; <br>
+						overflow: hidden; <br>
+						text-overflow: ellipsis; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>>The following two paragraphs contains a long text that will not fit in the box.<<b>/p</b>> <br>
+						 <br>
+						<<b>p</b>>text-overflow: clip:<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">class="test1"</span>>This is some long text that will not fit in the box<<b>/p</b>> <br>
+						 <br>
+						<<b>p</b>>text-overflow: ellipsis:<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">class="test2"</span>>This is some long text that will not fit in the box<<b>/p</b>> <br>
+						
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<p>The following two paragraphs contains a long text that will not fit in the box.</p>
+						
+						<p>text-overflow: clip:</p>
+						<p class="test1A">This is some long text that will not fit in the box</p>
+						
+						<p>text-overflow: ellipsis:</p>
+						<p class="test1B">This is some long text that will not fit in the box</p>
+					
+					</div>
+				</article>
+				
+				
+				<p> Contoh berikut menanpilkan bagaimana kamu bisa menampilkan overflowed content ketika meng-hover element:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						div.test:hover { <br>
+						text-overflow: inherit; <br>
+						overflow: visible; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div.test { <br>
+						white-space: nowrap;  <br>
+						width: 200px;  <br>
+						overflow: hidden;  <br>
+						border: 1px solid #000000; <br>
+						} <br>
+						 <br>
+						div.test:hover { <br>
+						text-overflow: inherit; <br>
+						overflow: visible; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>>Hover over the two divs below, to see the entire text.<<b>/p</b>> <br>
+						<<b>div</b> <span class="teal">class="test" style="text-overflow:ellipsis;"</span>>This is some long text that will not fit in the box<<b>/div</b>> <br>
+						<<b>br</b>> <br>
+						<<b>div</b> <span class="teal">class="test" style="text-overflow:clip;"</span>>This is some long text that will not fit in the box<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+						
+						<p>Hover over the two divs below, to see the entire text.</p>
+						<div class="test2" style="text-overflow:ellipsis;">This is some long text that will not fit in the box</div>
+						<br>
+						<div class="test2" style="text-overflow:clip;">This is some long text that will not fit in the box</div>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 Word Wrapping</h2>
+				<p> Properti <mark>word-wrap</mark> CSS3 memperbolehkan kata yang panjang untuk dapat dirusak (broken) dan diselimuti diatas garis berikutnya.</p>
+				<p> Jika sebuah kata terlalu panjang untuk fit dengan suatu area, teks diperlebar keluar (area).</p>
+				<p class="test3"> Paragraf ini berisikan kata yang sangat panjang: thisisaveryveryveryveryveryverylongword. Kata panjang akan menjeda dan menyelubungi baris selanjutnya.</p>
+				
+				<p> Kode CSS sebagai berikut:</p>
+				
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<p class="fontWhite">Memperbolehkan kata yang panjang untuk dapat dirusak dan diselubungi diatas teks selanjutnya:</p>
+					<div class="example-content" id="content-open03">
+						
+						p { <br>
+						word-wrap: break-word; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						p.test { <br>
+						width: 11em;  <br>
+						border: 1px solid #000000; <br>
+						word-wrap: break-word; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b> <span class="teal">class="test"</span>> This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.<<b>/p</b>>
+						
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+						
+						<p class="test3"> This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+						
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 Word Breaking</h2>
+				<p> Properti <mark>word-break</mark> CSS3 menentukan peraturan penjedaan baris.</p>
+				<p class="test4A"> Paragraf ini berisikan beberapa teks. Baris ini akan-membreak-di-hyphens.</p>
+				<p class="test4B"> Paragraf ini berisikan beberapa teks. Baris ini akan membreak di karakter apapun.</p>
+				
+				<p> Kode CSS sebagai berikut:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open04">
+						
+						p.test1 { <br>
+						word-break: keep-all; <br>
+						} <br>
+						 <br>
+						p.test2 { <br>
+						word-break: break-all; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close04">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						p.test1 { <br>
+						width: 140px;  <br>
+						border: 1px solid #000000; <br>
+						word-break: keep-all; <br>
+						} <br>
+						 <br>
+						p.test2 { <br>
+						width: 140px;  <br>
+						border: 1px solid #000000; <br>
+						word-break: break-all; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b> <span class="teal">class="test1"</span>>This paragraph contains some text. This line will-break-at-hyphens.<<b>/p</b>> <br>
+						 <br>
+						<<b>p</b> <span class="teal">class="test2"</span>>This paragraph contains some text. The lines will break at any character.<<b>/p</b>> <br>
+						 <br>
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> The word-break property is not supported in Opera 12 and earlier versions.<<b>/p</b>> <br> <br>
+						
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<button onclick="buka04()" class="exbutton"> Open </button>
+					<button onclick="tutup04()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+						<p class="test4A">This paragraph contains some text. This line will-break-at-hyphens.</p>
+						<p class="test4B">This paragraph contains some text. The lines will break at any character.</p>
+						<p><b>Note:</b> The word-break property is not supported in Opera 12 and earlier versions.</p>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 Text Properties</h2>
+				<p> Daftar tabel berikut adalah properti-properti text CSS3 baru:</p>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Properti</th>
+							<th>Deskripsi</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>text-align-last</td>
+							<td>Menentukan bagaimana untuk perataan baris terakhir dari sebuah teks</td>
+						</tr>
+						<tr>
+							<td>text-emphasis</td>
+							<td> Sebuah shorthand untuk pengaturan text-emphasis-style dan text-emphasis-color dalam satu deklarasi</td>
+						</tr>
+						<tr>
+							<td>text-justify</td>
+							<td> Menentukan bagaimana justified text harus diratakan (aligned) dan di-spasi (spaced)</td>
+						</tr>
+						<tr>
+							<td> text-overflow </td>
+							<td> Mnentukan bagaimana overflowed content yang tidak ditampilkan harus diisyaratkan ke pengguna </td>
+						</tr>
+						<tr>
+							<td> text-break </td>
+							<td> Menentukan peratuan penjedaan barus untuk non-CJK script </td>
+						</tr>
+						<tr>
+							<td> text-wrap </td>
+							<td> Membiarkan kata yang panjang untuk dapat disuak dan diselubungi keatas teks berikutnya </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS3 shadows.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS3 fonts.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

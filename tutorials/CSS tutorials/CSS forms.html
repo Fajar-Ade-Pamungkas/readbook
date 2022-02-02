@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS Forms </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+.branding-padd input[type=text], select {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+.branding-padd input[type=submit] {
+width: 100%;
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.branding-padd input[type=submit]:hover {
+background-color: #45a049;
+}
+
+.branding-padd div {
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 40px;
+text-align:left;
+color:black;
+}
+
+#sembunyikan01 input { 
+width: 100%; 
+}
+
+#sembunyikan02 input[type=text] { 
+width: 100%; 
+padding: 12px 20px; 
+margin: 8px 0; 
+box-sizing: border-box; 
+}
+
+#sembunyikan03 input[type=text] { 
+width: 100%; 
+padding: 12px 20px; 
+margin: 8px 0; 
+box-sizing: border-box; 
+border: 2px solid #73ad21; 
+border-radius: 4px; 
+} 
+
+#sembunyikan04 input[type=text] { 
+width: 100%; 
+padding: 12px 20px; 
+margin: 8px 0; 
+box-sizing: border-box; 
+border: none; 
+border-bottom: 2px solid #73ad21; 
+} 
+
+#sembunyikan05 input[type=text] { 
+width: 100%; 
+padding: 12px 20px; 
+margin: 8px 0; 
+box-sizing: border-box; 
+border: none; 
+background-color: #3CBC8D; 
+color: white; 
+} 
+
+#sembunyikan06 input[type=text] { 
+width: 100%; 
+padding: 12px 20px; 
+margin: 8px 0; 
+box-sizing: border-box; 
+border: 3px solid #ccc; 
+-webkit-transition: 0.5s; 
+transition: 0.5s; 
+outline: none; 
+} 
+
+#sembunyikan06 input[type=text]:focus { 
+background-color: lightblue; 
+} 
+
+#sembunyikan07 input[type=text] { 
+width: 100%; 
+padding: 12px 20px; 
+margin: 8px 0; 
+box-sizing: border-box; 
+border: 3px solid #ccc; 
+-webkit-transition: 0.5s; 
+transition: 0.5s; 
+outline: none; 
+} 
+
+#sembunyikan07 input[type=text]:focus { 
+border: 3px solid #555; 
+} 
+#sembunyikan08 input[type=text] { 
+width:100%; 
+box-sizing: border-box; 
+border: 2px solid #ccc; 
+border-radius: 4px; 
+font-size: 16px; 
+background-color: white; 
+background-image: url('../logos/search.png'); 
+background-size: 20px auto; /*Ditambahakan sendiri*/
+background-position: 10px 10px; 
+background-repeat: no-repeat; 
+padding: 12px 20px 12px 40px; 
+} 
+
+#sembunyikan09 input[type=text] { 
+width: 130px; 
+box-sizing: border-box; 
+border: 2px solid #ccc; 
+border-radius: 4px; 
+font-size: 16px; 
+background-color: white; 
+background-image: url('../logos/search.png'); 
+background-size: 20px auto; /*Ditambahakan sendiri*/
+background-position: 10px 10px; 
+background-repeat: no-repeat; 
+padding: 12px 20px 12px 40px; 
+-webkit-transition: width 0.4s ease-in-out; 
+transition: width 0.4s ease-in-out; 
+} 
+
+#sembunyikan09 input[type=text]:focus { 
+width: 100%; 
+} 
+
+#sembunyikan10 textarea { 
+width: 100%; 
+height: 150px; 
+padding: 12px 20px; 
+box-sizing: border-box; 
+border: 2px solid #ccc; 
+border-radius: 4px; 
+background-color: #f8f8f8; 
+resize: none; 
+}
+
+#sembunyikan11 select { 
+width: 100%; 
+padding: 16px 20px; 
+border: none; 
+border-radius: 4px; 
+background-color: #f1f1f1; 
+}
+
+#sembunyikan12 input[type=button], input[type=submit], input[type=reset] { 
+background-color: #4CAF50; 
+border: none; 
+color: white; 
+padding: 16px 32px; 
+text-decoration: none; 
+margin: 4px 2px; 
+cursor: pointer; 
+} 
+
+/* Tip: use width: 100% for full-width buttons */
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Forms </h1>
+				<p> Melihat dari sebuah HTML Form bisa ditingkatkan dengan sangat hebat dengan CSS:</p>
+				
+				<h3>Using CSS to style a HTML Form</h3>
+				
+				<div>
+				<form action="#">
+				<label for="fname">First Name</label>
+				<input type="text" id="fname" name="firstname">
+				
+				<label for="lname">Last Name</label>
+				<input type="text" id="lname" name="lastname">
+				
+				<label for="country">State</label>
+				<select id="country" name="country">
+				<option value="australia">Australia</option>
+				<option value="canada">Canada</option>
+				<option value="usa">USA</option>
+				</select>
+				
+				<input type="submit" value="Submit">
+				</form>
+				</div>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> Styling Input Fields</h2>
+				<p> Gunakanlah properti <mark>width</mark> untuk menentukan lebar dari input field:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						input { <br>
+						width: 100%; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						input { <br>
+						width: 100%; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>p</b>>A full-width input field:<<b>/p</b>> <br>
+					 <br>
+					<<b>form</b>> <br>
+					<<b>label</b> <span class="teal">for="fname"</span>>First Name<<b>/label</b>> <br>
+					<<b>input</b> <span class="teal">type="text" id="fname" name="fname"</span>> <br>
+					<<b>/form</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<p>A full-width input field:</p>
+						
+						<form>
+						<label for="fname">First Name</label>
+						<input type="text" id="fname" name="fname">
+						</form>
+					
+					</div>
+				</article>
+				
+				<p> Contoh diatas menerapkan untuk semua element <<b>input</b>>. Jika kamu hanya ingin me-style sebuah tipe input tertentu, kamu bisa menggunakan attribute selector:</p>
+				<ul>
+					<li> <b>input[type=text]</b> - Hanya akan menyeleksi input tipe teks
+					<li> <b>input[type=password]</b> - Hanya akan menyeleksi input tipe password</li>
+					<li> <b>input[type=number]</b> - Hanya akan menyeleksi input tipe number </li>
+					<li> Dan sebagainya..</li>
+				</li>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Padded Inputs</h2>
+				<p> Input berpadding</p>
+				<p> Gunakanlah properi <mark>padding</mark> untuk menambahkan ruang didalam teks field.</p>
+				<p><b>Tip:</b> Ketika kamu memiliki banyak input setelah setiap lainnya, kamu juga mungkin ingin menambahkan beberapa margin, untuk menambahkan ruang lebih diluarnya:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						input[type=text] { <br>
+						width: 100%; <br>
+						padding: 12px 20px; <br>
+						margin: 8px 0; <br>
+						box-sizing: border-box; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						input[type=text] { <br>
+						width: 100%; <br>
+						padding: 12px 20px; <br>
+						margin: 8px 0; <br>
+						box-sizing: border-box; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>p</b>>Padded text field:<<b>/p</b>> <br>
+					 <br>
+					<<b>form</b>> <br>
+					<<b>label</b> <span class="teal">for="fname"</span>>First Name<<b>/label</b>> <br>
+					<<b>input</b> <span class="teal">type="text" id="fname" name="fname"</span>> <br>
+					<<b>label</b> <span class="teal">for="lname"</span>>Last Name<<b>/label</b>> <br>
+					<<b>input</b> <span class="teal">type="text" id="lname" name="lname"</span>> <br>
+					<<b>/form</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+						
+						<p>Padded text fields:</p>
+						
+						<form>
+						<label for="fname">First Name</label>
+						<input type="text" id="fname" name="fname">
+						<label for="lname">Last Name</label>
+						<input type="text" id="lname" name="lname">
+						</form>
+					
+					</div>
+				</article>
+				
+				<p> Perhatikanlah bahwa kita telah mengatur  properti <mark>box-sizing</mark> menjadi <mark>border-box</mark>. 
+				Ini memastikan bahwa padding dan nantinya border dimasukan dalam <b class="redZone">total width dan height dari elements</b>.</p>
+				<p> Bacalah selebihnya tentang properti <mark>box-sizing</mark> dalam <a href="CSS3 box-sizing.htm">CSS3 Box Sizing</a> chapter kita.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Bordered Inputs </h2>
+				<p>Gunakanlah properti <mark>border</mark> untuk mengubah ukuran dsn warna border, dan gunakanlah properti <mark>border-radius</mark> untuk menambahkan sudut tumpul:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open03">
+						
+						input[type=text] { <br>
+						border: 2px solid red; <br>
+						border-radius: 4px; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						input[type=text] { <br>
+						width: 100%; <br>
+						padding: 12px 20px; <br>
+						margin: 8px 0; <br>
+						box-sizing: border-box; <br>
+						border: 2px solid red; <br>
+						border-radius: 4px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>p</b>>Text field with borders:<<b>/p</b>> <br>
+					 <br>
+					<<b>form</b>> <br>
+					<<b>label</b> <span class="teal">for="fname"</span>>First Name<<b>/label</b>> <br>
+					<<b>input</b> <span class="teal">type="text" id="fname" name="fname"</span>> <br>
+					<<b>label</b> <span class="teal">for="lname"</span>>Last Name<<b>/label</b>> <br>
+					<<b>input</b> <span class="teal">type="text" id="lname" name="lname"</span>> <br>
+					<<b>/form</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+						<p>Text fields with borders:</p>
+						
+						<form>
+						<label for="fname">First Name</label>
+						<input type="text" id="fname" name="fname">
+						<label for="lname">Last Name</label>
+						<input type="text" id="lname" name="lname">
+						</form>
+					
+					</div>
+				</article>
+				<p>Jika kamu hanya ingin border bawah, gunakanlah properti <mark>border-bottom</mark>:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open04">
+						
+						input[type=text] { <br>
+						border: none; <br>
+						border-bottom: 2px solid red; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close04">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						input[type=text] { <br>
+						width: 100%; <br>
+						padding: 12px 20px; <br>
+						margin: 8px 0; <br>
+						box-sizing: border-box; <br>
+						border: none; <br>
+						border-bottom: 2px solid red; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>p</b>>Text field with only a bottom border:<<b>/p</b>> <br>
+					 <br>
+					<<b>form</b>> <br>
+					<<b>label</b> <span class="teal">for="fname"</span>>First Name<<b>/label</b>> <br>
+					<<b>input</b> <span class="teal">type="text" id="fname" name="fname"</span>> <br>
+					<<b>label</b> <span class="teal">for="lname"</span>>Last Name<<b>/label</b>> <br>
+					<<b>input</b> <span class="teal">type="text" id="lname" name="lname"</span>> <br>
+					<<b>/form</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<button onclick="buka04()" class="exbutton"> Open </button>
+					<button onclick="tutup04()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+						<p>Text fields with only a bottom border:</p>
+						
+						<form>
+						<label for="fname">First Name</label>
+						<input type="text" id="fname" name="fname">
+						<label for="fname">Last Name</label>
+						<input type="text" id="lname" name="lname">
+						</form>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Colored Inputs</h2>
+				<p> Gunakanlah properti <mark>background-color</mark> untuk menambahkan background warna kepada input, dan properti <mark>color</mark> untuk emngubah warna font (teks):</p>
+				
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open05">
+						
+						input[type=text] { <br>
+						background-color: #3CBC8D; <br>
+						color: white; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close05">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						input[type=text] { <br>
+						width: 100%; <br>
+						padding: 12px 20px; <br>
+						margin: 8px 0; <br>
+						box-sizing: border-box; <br>
+						border: none; <br>
+						background-color: #3CBC8D; <br>
+						color: white; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>p</b>>Colored text fields:<<b>/p</b>> <br>
+					 <br>
+					<<b>form</b>> <br>
+					<<b>label</b> <span class="teal">for="fname"</span>>First Name<<b>/label</b>> <br>
+					<<b>input</b> <span class="teal">type="text" id="fname" name="fname" value="Davy"</span>> <br>
+					<<b>label</b> <span class="teal">for="lname"</span>>Last Name<<b>/label</b>> <br>
+					<<b>input</b> <span class="teal">type="text" id="lname" name="lname" value="John"</span>> <br>
+					<<b>/form</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan05()" class="exbutton">Klik disini</button>
+					<button onclick="buka05()" class="exbutton"> Open </button>
+					<button onclick="tutup05()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+					
+						<p>Colored text fields:</p>
+						
+						<form>
+						<label for="fname">First Name</label>
+						<input type="text" id="fname" name="fname" value="John">
+						<label for="fname">Last Name</label>
+						<input type="text" id="lname" name="lname" value="Doe">
+						</form>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Focused Inputs</h2>
+				<p> Input Berfokus</p>
+				<p> Oleh default, beberapa browser akan menambahkan sebuah blue outline disekitar input ketika input mendapat fokus (clicked on). 
+				Kamu bisa menghapus sifat ini dengan menambahkan <mark>outline: none;</mark> untuk input.</p>
+				<p> Gunakanlah selector <mark>:focus</mark> untuk melakukan sesuatu dengan input field ketika input mendapat focus:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open06">
+						
+						input[type=text]:focus { <br>
+						background-color: lightblue; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close06">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						input[type=text] { <br>
+						width: 100%; <br>
+						padding: 12px 20px; <br>
+						margin: 8px 0; <br>
+						box-sizing: border-box; <br>
+						border: 3px solid #ccc; <br>
+						-webkit-transition: 0.5s; <br>
+						transition: 0.5s; <br>
+						outline: none; <br>
+						} <br>
+						 <br>
+						 input[type=text]:focus { <br>
+						 background-color: lightblue; <br>
+						 } <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>p</b>>In this example, we use the :focus selector to add a black border color to the text field when it gets focused (clicked on)::<<b>/p</b>> <br>
+					<<b>p</b>>Note that we have added the CSS3 transition property to animate the border color (takes 0.5 seconds to change the color on focus).:<<b>/p</b>> <br>
+					 <br>
+					<<b>form</b>> <br>
+					<<b>label</b> <span class="teal">for="fname"</span>>First Name<<b>/label</b>> <br>
+					<<b>input</b> <span class="teal">type="text" id="fname" name="fname" value="Davy"</span>> <br>
+					<<b>label</b> <span class="teal">for="lname"</span>>Last Name<<b>/label</b>> <br>
+					<<b>input</b> <span class="teal">type="text" id="lname" name="lname" value="John"</span>> <br>
+					<<b>/form</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan06()" class="exbutton">Klik disini</button>
+					<button onclick="buka06()" class="exbutton"> Open </button>
+					<button onclick="tutup06()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+					
+						<p>In this example, we use the :focus selector to add a black border color to the text field when it gets focused (clicked on):</p>
+						<p>Note that we have added the CSS3 transition property to animate the border color (takes 0.5 seconds to change the color on focus).</p>
+						
+						<form>
+						<label for="fname">First Name</label>
+						<input type="text" id="fname" name="fname" value="John">
+						<label for="fname">Last Name</label>
+						<input type="text" id="lname" name="lname" value="Doe">
+						</form>
+					
+					</div>
+				</article>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open07">
+						
+						input[type=text]:focus { <br>
+						border: 3px solid #555; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close07">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						input[type=text] { <br>
+						width: 100%; <br>
+						padding: 12px 20px; <br>
+						margin: 8px 0; <br>
+						box-sizing: border-box; <br>
+						border: 3px solid #ccc; <br>
+						-webkit-transition: 0.5s; <br>
+						transition: 0.5s; <br>
+						outline: none; <br>
+						} <br>
+						 <br>
+						input[type=text]:focus { <br>
+						border: 3px solid #555; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>p</b>>In this example, we use the :focus selector to add a black border color to the text field when it gets focused (clicked on)::<<b>/p</b>> <br>
+					<<b>p</b>>Note that we have added the CSS3 transition property to animate the border color (takes 0.5 seconds to change the color on focus).:<<b>/p</b>> <br>
+					 <br>
+					<<b>form</b>> <br>
+					<<b>label</b> <span class="teal">for="fname"</span>>First Name<<b>/label</b>> <br>
+					<<b>input</b> <span class="teal">type="text" id="fname" name="fname" value="Davy"</span>> <br>
+					<<b>label</b> <span class="teal">for="lname"</span>>Last Name<<b>/label</b>> <br>
+					<<b>input</b> <span class="teal">type="text" id="lname" name="lname" value="John"</span>> <br>
+					<<b>/form</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan07()" class="exbutton">Klik disini</button>
+					<button onclick="buka07()" class="exbutton"> Open </button>
+					<button onclick="tutup07()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan07">
+					
+						<p>In this example, we use the :focus selector to add a black border color to the text field when it gets focused (clicked on):</p>
+						<p>Note that we have added the CSS3 transition property to animate the border color (takes 0.5 seconds to change the color on focus).</p>
+						
+						<form>
+						<label for="fname">First Name</label>
+						<input type="text" id="fname" name="fname" value="John">
+						<label for="fname">Last Name</label>
+						<input type="text" id="lname" name="lname" value="Doe">
+						</form>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Input with icon/image</h2>
+				<p> Jika kamu ingin sebuah icon didalam input, gunakanlah properti <mark>background-image</mark> dan posisikan ia dengan properti <mark>background-position</mark>. 
+				Juga catatlah bahwa kita menambahkan sebuah padding kiri yang besar untuk me-reserve ruang dari icon:</p>
+				
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open08">
+						
+						input[type=text] { <br>
+						background-color: white; <br>
+						background-image: url('searchicon.png'); <br>
+						background-position: 10px 10px;  <br>
+						background-repeat: no-repeat; <br>
+						padding-left: 40px; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close08">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						input[type=text] { <br>
+						width: 130px; <br>
+						box-sizing: border-box; <br>
+						border: 2px solid #ccc; <br>
+						border-radius: 4px; <br>
+						font-size: 16px; <br>
+						background-color: white; <br>
+						background-image: url('searchicon.png'); <br>
+						background-position: 10px 10px;  <br>
+						background-repeat: no-repeat; <br>
+						padding: 12px 20px 12px 40px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<p>Animated search input:</p> <br>
+					 <br>
+					<<b>form</b>> <br>
+					<<b>input</b> <span class="teal">type="text" name="search" placeholder="Search.."</span>> <br>
+					<<b>/form</b>> <br>
+					
+					<<b>p</b>> search input with icon:<<b>/p</b>> <br>
+					 <br>
+					<<b>input</b> <span class="teal">type="text" name="search" placeholder="Search..."</span>> <br>
+					<<b>/form</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan08()" class="exbutton">Klik disini</button>
+					<button onclick="buka08()" class="exbutton"> Open </button>
+					<button onclick="tutup08()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan08">
+						
+						<p>Search input with icon</p>
+						
+						<form>
+						<input type="text" name="search" placeholder="Search..">
+						</form>
+						
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Animated Search Input</h2>
+				<p> Pada xontoh ini kita menggunakan properti <mark>transition</mark> CSS3 untuk meng-animasi lebar dari search input ketika mendapst focus. 
+				Kamu ajan mempelajari lebih tentang properti <mark>transition</mark> nanti, di <a href="CSS3 transitions.html" >CSS3 Transitions</a> chapter kita.</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open09">
+						
+						input[type=text] { <br>
+						-webkit-transition: width 0.4s ease-in-out; <br>
+						transition: width 0.4s ease-in-out; <br>
+						} <br>
+						 <br>
+						input[type=text]:focus { <br>
+						width: 100%; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close09">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						input[type=text] { <br>
+						width: 130px; <br>
+						box-sizing: border-box; <br>
+						border: 2px solid #ccc; <br>
+						border-radius: 4px; <br>
+						font-size: 16px; <br>
+						background-color: white; <br>
+						background-image: url('searchicon.png'); <br>
+						background-position: 10px 10px;  <br>
+						background-repeat: no-repeat; <br>
+						padding: 12px 20px 12px 40px; <br>
+						-webkit-transition: width 0.4s ease-in-out; <br>
+						transition: width 0.4s ease-in-out; <br>
+						} <br>
+						 <br>
+						input[type=text]:focus { <br>
+						width: 100%; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>p</b>>Animated search input:0:<<b>/p</b>> <br>
+					 <br>
+					<<b>input</b> <span class="teal">type="text" name="search" placeholder="Search..."</span>> <br>
+					<<b>/form</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan09()" class="exbutton">Klik disini</button>
+					<button onclick="buka09()" class="exbutton"> Open </button>
+					<button onclick="tutup09()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan09">
+					
+						<p>Animated search input:0 :</p>
+						
+						<form>
+						<input type="text" name="search" placeholder="Search..">
+						</form>
+						
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Styling Textareas</h2>
+				<p> <b>Tip:</b> Gunakanlah properti <mark>resize</mark> untuk mengatasi textarea dari diukur ulang atau di-resize (men-disable "grabber" pada sudut kanan bawah):</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open10">
+						
+						textarea { <br>
+						width: 100%; <br>
+						height: 150px; <br>
+						padding: 12px 20px; <br>
+						box-sizing: border-box; <br>
+						border: 2px solid #ccc; <br>
+						border-radius: 4px; <br>
+						background-color: #f8f8f8; <br>
+						resize: none; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close10">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						textarea { <br>
+						width: 100%; <br>
+						height: 150px; <br>
+						padding: 12px 20px; <br>
+						box-sizing: border-box; <br>
+						border: 2px solid #ccc; <br>
+						border-radius: 4px; <br>
+						background-color: #f8f8f8; <br>
+						resize: none; <br>
+						}
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>p</b>><<b>strong</b>>Tip:<<b>/strong</b>> Use the resize property to prevent textareas from being resized (disable the "grabber" in the bottom right corner):<<b>/p</b>> <br>
+					 <br>
+					<<b>form</b>> <br>
+					<<b>textarea</b>>Some text...<<b>/textarea</b>> <br>
+					<<b>/form</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan10()" class="exbutton">Klik disini</button>
+					<button onclick="buka10()" class="exbutton"> Open </button>
+					<button onclick="tutup10()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan10">
+					
+						<p><strong>Tip:</strong> Use the resize property to prevent textareas from being resized (disable the "grabber" in the bottom right corner):</p>
+						
+						<form>
+						<textarea>Some text...</textarea>
+						</form>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Styling Select Menus</h2>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open11">
+						
+						select { <br>
+						width: 100%; <br>
+						padding: 16px 20px; <br>
+						border: none; <br>
+						border-radius: 4px; <br>
+						background-color: #f1f1f1; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close11">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						select { <br>
+						width: 100%; <br>
+						padding: 16px 20px; <br>
+						border: none; <br>
+						border-radius: 4px; <br>
+						background-color: #f1f1f1; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>p</b>>A styled select menu.<<b>/p</b>> <br>
+					 <br>
+					<<b>form</b>> <br>
+					<<b>select</b> <span class="teal">id="country" name="country"</span>> <br>
+					<<b>option</b> <span class="teal">value="usa"</span>>Australia<<b>/option</b>> <br>
+					<<b>option</b> <span class="teal">value="usa"</span>>Canada<<b>/option</b>> <br>
+					<<b>option</b> <span class="teal">value="usa"</span>>USA<<b>/option</b>> <br>
+					<<b>/select</b>> <br>
+					<<b>/form</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan11()" class="exbutton">Klik disini</button>
+					<button onclick="buka11()" class="exbutton"> Open </button>
+					<button onclick="tutup11()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan11">
+					
+						<p>A styled select menu.</p>
+						
+						<form>
+						<select id="country" name="country">
+						<option value="usa">Australia</option>
+						<option value="usa">Canada</option>
+						<option value="usa">USA</option>
+						</select>
+						</form>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Styling Input Buttons</h2>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open12">
+						
+						input[type=button], input[type=submit], input[type=reset] { <br>
+						background-color: #4CAF50; <br>
+						border: none; <br>
+						color: white; <br>
+						padding: 16px 32px; <br>
+						text-decoration: none; <br>
+						margin: 4px 2px; <br>
+						cursor: pointer; <br>
+						} <br>
+						 <br>
+						<me>/* Tip: use width: 100% for full-width buttons */</me>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close12">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						input[type=button], input[type=submit], input[type=reset] { <br>
+						background-color: #4CAF50; <br>
+						border: none; <br>
+						color: white; <br>
+						padding: 16px 32px; <br>
+						text-decoration: none; <br>
+						margin: 4px 2px; <br>
+						cursor: pointer; <br>
+						} <br>
+						 <br>
+						<me>/* Tip: use width: 100% for full-width buttons */</me> <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>p</b>>Styled input buttons.<<b>/p</b>> <br>
+					 <br>
+					<<b>input</b> <span class="teal">type="button" value="Button"</span>> <br>
+					<<b>input</b> <span class="teal">type="reset" value="Reset"</span>> <br>
+					<<b>input</b> <span class="teal">type="submit" value="Submit"</span>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan12()" class="exbutton">Klik disini</button>
+					<button onclick="buka12()" class="exbutton"> Open </button>
+					<button onclick="tutup12()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan12">
+					
+						<p>Styled input buttons.</p>
+						
+						<input type="button" value="Button">
+						<input type="reset" value="Reset">
+						<input type="submit" value="Submit">
+						
+					
+					</div>
+				</article>
+				
+				<p> Untuk informasi selebihnya tentang bagaimana me-style button dengan CSS, bacalah <a href="CSS buttons.html" >CSS Buttons Tutorial</a> kita.</p>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS attr selectors.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS counter.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

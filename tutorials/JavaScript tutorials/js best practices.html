@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | JavaScript | js best practices</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="javaScript.js"></script>
+<script type="text/javascript" src="javaScript2.js"></script>
+<script type="text/javascript" src="javaScript3.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical"> <!--open link-->
+		<button onclick="openMenu()" id="menu">Open Menu</button>
+		<button onclick="closeMenu()" id="menu">Close Menu</button>
+		
+		<div id="vertical">
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch()"> JavaScript Tutorial</button>
+			<div class="drop-content" id="myDropdown">
+			<input type="text" class="myInput" id="myInput" placeholder="Cari" onkeyup="filterFunction()"/>
+			<ol>
+				<a href="js home.html"><li> Home </li></a>
+				<a href="js introduction.html"><li> Introduction </li></a>
+				<a href="js where to.html"><li> Where To </li></a>
+				<a href="js output.html"><li> Output </li></a>
+				<a href="js syntax.html"><li> Syntax </li></a>
+				<a href="js statements.html" ><li> Statements </li></a>
+				<a href="js comments.html" ><li> Comments </li></a>
+				<a href="js variables.html"><li> Variable </li></a>
+				<a href="js operators.html"><li> Operators </li></a>
+				<a href="js arithmetic.html"><li> Arithmetic </li></a>
+				<a href="js assignment.html"><li> Assignment </li></a>
+				<a href="js data types.html"><li> Data Types </li></a>
+				<a href="js functions.html"><li> Functions </li></a>
+				<a href="js objects.html"><li> Objects </li></a>
+				<a href="js scope.html"><li> Scope </li></a>
+				<a href="js events.html"><li> Events </li></a>
+				<a href="js strings.html"><li> string </li></a>
+				<a href="js string methods.html"><li> Strings Method </li></a>
+				<a href="js numbers.html"><li> Numbers </li></a>
+				<a href="js number methods.html"><li> Number Methods </li></a>
+				<a href="js math.html"><li> Math </li></a>
+				<a href="js random.html" ><li> Math Random </li></a>
+				<a href="js dates.html"><li> Dates </li></a>
+				<a href="js date formats.html" ><li> Date Formats </li></a>
+				<a href="js date methods.html" ><li> Date Methods </li></a>
+				<a href="js get date methods.html" ><li> Date get Methods </li></a>
+				<a href="js set date methods.html" ><li> Date Set Methods </li></a>
+				<a href="js arrays.html"><li> Arrays </li></a>
+				<a href="js array methods.html" ><li> Array Methods </li></a>
+				<a href="js array sort.html"><li> Array Sort </li></a>
+				<a href="js array iteration.html"><li> Array Iteration </li></a>
+				<a href="js booleans.html" ><li> boolean </li></a>
+				<a href="js comparisons.html" ><li> Comparisons </li></a>
+				<a href="js conditions.html" ><li>Conditions</li></a>
+				<a href="js switch.html" ><li>Switch </li></a>
+				<a href="js loop for.html"><li> Loop For </li></a>
+				<a href="js loop while.html" ><li>Loop while</li></a>
+				<a href="js break.html" ><li>Break</li></a>
+				<a href="js type conversion.html" ><li> Types conversion</li></a>
+				<a href="js bitwise.html" ><li> Bitwise </li></a>
+				<a href="js RegExp.html" ><li>RegExp</li></a>
+				<a href="js errors.html" ><li>Errors </li></a>
+				<a href="js debugging.html"><li>Debugging </li></a>
+				<a href="js hoisting.html" ><li>Hoisting</li></a>
+				<a href="js strict mode.html"><li>Strict mode</li></a>
+				<a href="js this keyword.html" ><li> this Keyword </li></a>
+				<a href="js let.html" ><li> Let </li></a>
+				<a href="js const.html" ><li> Const </li></a>
+				<a href="js style guide.html" ><li>Style guide</li></a>
+				<a href="js best practices.html" ><li>best practices </li></a>
+				<a href="js mistakes.html"><li> Mistakes </li></a>
+				<a href="js performance.html" ><li>Performance</li></a>
+				<a href="js reserved words.html" ><li>Reserved words</li></a>
+				<a href="js versions.html" ><li> Versions </li></a>
+				<a href="js version ES5.html" ><li class="redZone"> Version ES5 </li></a>
+				<a href="js version ES6.html" ><li class="redZone"> Version ES6 </li></a>
+				<a href="js JSON.html"><li>JSON</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch2()"> JavaScript Formulir</button>
+			<div class="drop-content" id="myDropdown2">
+			<input type="text" class="myInput" id="myInput2" placeholder="Cari" onkeyup="filterFunction2()"/>
+			<ol>
+				<a href="forms validation.html" ><li>Forms Validation</li></a>
+				<a href="forms API.html" ><li class="redZone">Forms API</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch3()"> JavaScript Object</button>
+			<div class="drop-content" id="myDropdown3">
+			<input type="text" class="myInput" id="myInput3" placeholder="Cari" onkeyup="filterFunction3()"/>
+			<ol>
+				<a href="object definitions.html" ><li>Object Definitions</li></a>
+				<a href="object properties.html" ><li>Object Properties</li></a>
+				<a href="object methods.html"><li class="redZone">Object Methods</li></a>
+				<a href="object accessors.html" ><li>Object accessors</li></a>
+				<a href="object constructors.html" ><li>Object constructor</li></a>
+				<a href="object prototypes.html" ><li>Object Prototypes</li></a>
+				<a href="object ECMAScript5.html" ><li class="redZone">Object ECMAScript5</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch4()"> JavaScript Function</button>
+			<div class="drop-content" id="myDropdown4">
+			<input type="text" class="myInput" id="myInput4" placeholder="Cari" onkeyup="filterFunction4()"/>
+			<ol>
+				<a href="funtion definitions.html" ><li>Function Definitions</li></a>
+				<a href="function parameters.html" ><li>Function Parameters</li></a>
+				<a href="function invocation.html" ><li>Function Invocation</li></a>
+				<a href="function closures.html" ><li>Function Closures</li></a>
+				<a href="function apply.html" ><li class="redZone">Function Apply</li></a>
+				<a href="function call.html" ><li>Function Call</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch5()">  JavaScript HMTL DOM </button>
+			<div class="drop-content" id="myDropdown5">
+			<input type="text" class="myInput" id="myInput5" placeholder="Cari" onkeyup="filterFunction5()"/>
+			<ol>
+				<a href="DOM intro.html" ><li> DOM Introduction </li></a>
+				<a href="DOM methods.html" ><li> DOM Methods </li></a>
+				<a href="DOM document.html" ><li> DOM Documents</li></a>
+				<a href="DOM elements.html" ><li> DOM Elements  </li></a>
+				<a href="DOM HTML.html" ><li> DOM HTML</li></a>
+				<a href="DOM CSS.html" ><li> DOM CSS  </li></a>
+				<a href="DOM animations.html" ><li> DOM Animations </li></a>
+				<a href="DOM events.html" ><li> DOM Events </li></a>
+				<a href="DOM eventListener.html" ><li> DOM EventListener </li></a>
+				<a href="DOM navigation.html" ><li> DOM Navigation </li></a>
+				<a href="DOM nodes.html" ><li> DOM Nodes </li></a>
+				<a href="DOM nodelist.html" ><li> DOM Nodelist </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch6()"> JavaScript Browser BOM </button>
+			<div class="drop-content" id="myDropdown6">
+			<input type="text" class="myInput" id="myInput6" placeholder="Cari" onkeyup="filterFunction6()"/>
+			<ol>
+				<a href="BOM window.html" ><li> Window </li></a>
+				<a href="BOM screen.html" ><li> Screen </li></a>
+				<a href="BOM location.html" ><li> Location </li></a>
+				<a href="BOM history.html" ><li> History  </li></a>
+				<a href="BOM navigator.html" ><li> Navigator </li></a>
+				<a href="BOM popup alert.html" ><li> Popup Alert </li></a>
+				<a href="BOM timing.html" ><li> Timing </li></a>
+				<a href="BOM cookies.html" ><li> Cookies </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch7()">JavaScript AJAX</button>
+			<div class="drop-content" id="myDropdown7">
+			<input type="text" class="myInput" id="myInput7" placeholder="Cari" onkeyup="filterFunction7()"/>
+			<ol>
+				<a href="AJAX intro.html" ><li> AJAX Introduction</li></a>
+				<a href="AJAX XMLHttpRequest.html" ><li> AJAX XMLHttpRequest </li></a>
+				<a href="AJAX request.html" ><li> AJAX Request </li></a>
+				<a href="AJAX respone.html" ><li class="redZone"> AJAX Response </li></a>
+				<a href="AJAX XML file.html" ><li> AJAX XML File</li></a>
+				<a href="AJAX PHP.html" ><li> AJAX PHP </li></a>
+				<a href="AJAX ASP.html" ><li> AJAX ASP </li></a>
+				<a href="AJAX database.html" ><li> AJAX Database </li></a>
+				<a href="AJAX XML applications.html" ><li> AJAX XML Application </li></a>
+				<a href="AJAX examples.html" ><li> AJAX Example </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch8()">JavaScript JSON</button>
+			<div class="drop-content" id="myDropdown8">
+			<input type="text" class="myInput" id="myInput8" placeholder="Cari" onkeyup="filterFunction8()"/>
+			<ol>
+				<a href="JSON intro.html" ><li class="redZone"> JSON Introduction</li></a>
+				<a href="JSON syntax.html" ><li class="redZone"> JSON Syntax </li></a>
+				<a href="JSON vs XML.html" ><li class="redZone"> JSON vs XML </li></a>
+				<a href="JSON data types.html" ><li class="redZone"> JSON Data Types </li></a>
+				<a href="JSON parse.html" ><li class="redZone"> JSON parse </li></a>
+				<a href="JSON stringify.html" ><li class="redZone"> JSON Stringify</li></a>
+				<a href="JSON objects.html" ><li class="redZone"> JSON Objects </li></a>
+				<a href="JSON arrays.html" ><li class="redZone"> JSON Arrays </li></a>
+				<a href="JSON PHP.html" ><li class="redZone"> JSON PHP </li></a>
+				<a href="JSON HTML.html" ><li class="redZone"> JSON HTML </li></a>
+				<a href="JSON JSONP.html" ><li class="redZone"> JSON JSONP </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch9()">JavaScript Reference</button>
+			<div class="drop-content" id="myDropdown9">
+			<input type="text" class="myInput" id="myInput9" placeholder="Cari" onkeyup="filterFunction9()"/>
+			<ol>
+				<li> <p> JavaScript References </p> </li>
+				<a href="JavaScript references/overview.html" > <li> Overview </li> </a>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch11()">JavaScript</button>
+					<div class="drop-content" id="myDropdown11">
+					<input type="text" class="myInput" id="myInput11" placeholder="Cari" onkeyup="filterFunction11()"/>
+					<ol>
+						<a href="JavaScript references/string reference.html" ><li>String Reference </li></a>
+						<a href="JavaScript references/number reference.html" ><li>Number Reference </li></a>
+						<a href="JavaScript references/operator reference.html" ><li>Operator Reference </li></a>
+						<a href="JavaScript references/statement reference.html" ><li>Statement Reference </li></a>
+						<a href="JavaScript references/math reference.html" ><li>Math Reference </li></a>
+						<a href="JavaScript references/date reference.html" ><li>Date Reference </li></a>
+						<a href="JavaScript references/array reference.html" ><li> Array Reference </li></a>
+						<a href="JavaScript references/boolean reference.html" ><li> Boolean Reference </li></a>
+						<a href="JavaScript references/RegExp reference.html" ><li> RegExp Reference </li></a>
+						<a href="JavaScript references/global reference.html" ><li> Global Reference </li></a>
+						<a href="JavaScript references/conversion reference.html" ><li> Conversion Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()">Browser Object Model (BOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="JavaScript references/BOM window reference.html" ><li> BOM Window Reference </li></a>
+						<a href="JavaScript references/BOM navigator reference.html" ><li> BOM Navigator Reference </li></a>
+						<a href="JavaScript references/BOM screen reference.html" ><li> BOM screen Reference </li></a>
+						<a href="JavaScript references/BOM history reference.html" ><li> BOM History Reference </li></a>
+						<a href="JavaScript references/BOM location reference.html" ><li> BOM Location Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()"> HTML Document Object Model (DOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="JavaScript references/DOM document reference.html" ><li> DOM Documents Reference </li></a>
+						<a href="JavaScript references/DOM element reference.html" ><li> DOM Elements Reference </li></a>
+						<a href="JavaScript references/DOM attribute reference.html" ><li> DOM Attributes Reference </li></a>
+						<a href="JavaScript references/DOM event reference.html" ><li> DOOM Events Reference </li></a>
+						<a href="JavaScript references/DOM style.html" ><li> DOM Style Reference </li></a>
+					</ol>
+					</div>
+			</ol>
+			</div>
+			</div>
+		</div>
+		</div>
+		</div> <!--close Link-->
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> Latihan Terbaik JavaScript</h1>
+				<p>
+				Hindarilah <b>variabel global</b>, hindari <b>new</b>, hindari <b>==</b>, hindari <b>eval()</b>.
+				</p>
+			</div>
+			
+			
+<section>
+			<article>
+				<h1> Hindarilah Variabel Global </h1>
+				<p>
+				Minimalkan menggunakan variabel global. <br>
+				Termasuk semua type data, fungsi dan object. <br>
+				Variabel global dan fungsi bisa ditulis lebih oleh berkas yang lainnya. <br>
+				gunakanlah alternatif variabel lokal, dan belajar bagaimana menggunakan <a href="closures.html" > closures</a>
+				</p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Selalu Deklarasikan Variable Lokal </h1>
+				<p>
+				semua variabel digunakan dalam fungsi harus dideklarasikan sebagai <b>lokal variabel</b>.<br>
+				semua lokal variabel <b>harus</b> dideklarasikan dengan kata kunci <b>var</b>, jika tidak 
+				mereka akan menjadi variabel global.
+				</p>
+			</article>
+			
+			<!--ATTENTION-->
+			<article>
+			<table class="attention">
+			<tr>
+			<td class="td-left">
+			<h1>!</h1>
+			</td>
+			<td class="td-right">
+			strict mode tidak memperbolehkan variabel tanpa deklarasi
+			</td>
+			</tr>
+			</table>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Pendeklarasian di Atas </h1>
+				<p>
+				Ini adalah latihan persandian yang baik untuk medeklarasikan semuanya di atas di masing - masing 
+				naskah (script) atau (function). <br><br>
+				Saran seperti:
+				</p>
+				<ul>
+					<li> Berilah cleaner code (langkah satu baris)</li>
+					<li>sediakan satu tempat untuk melihat variabel lokal</li>
+					<li> Membuatnya lebih mudah menghindari variabel global yang tak dikehendaki (menyataakan tak secara langsung) </li>
+					<li> Kurangilah kemungkinan pendeklarasian yang tak dikehendaki.</li>
+				</ul>
+				
+				<article class="simple-example">
+				<span class="grey">// Declare at the beginning</span> <br>
+				<span class="purple">var</span> firstName, lastName, price, discount, fullPrice; <br><br>
+				
+				<span class="grey">// Use later </span><br>
+				firstName = "John";<br>
+				lastName = "Doe";<br><br>
+				
+				price = 19.90;<br>
+				discount = 0.10;<br><br>
+				
+				fullPrice = price * 100 / discount;<br>
+				</article>
+				
+				<p>
+				Ini juga saran untuk <b>loop for</b>:
+				</p>
+				
+				<article class="simple-example">
+					<span class="grey">// Declare at the beginning </span> <br>
+					<span class="purple">var</span> i; <br><br>
+					
+					<span class="grey">// Use later</span> <br>
+					<span class="purple">for</span> (i = 0; i <q lang="no"><</q> 5; i++) {
+				</article>
+				
+			</article>
+			
+			<!--ATTENTION-->
+			<article>
+			<table class="attention">
+			<tr>
+			<td class="td-left">
+			<h1>!</h1>
+			</td>
+			<td class="td-right">
+			Dengan default, JavaScript menggerakan semua deklarasi ke atas (JavaScript Hoisting).
+			</td>
+			</tr>
+			</table>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Initialize Variabel </h1>
+				<p>
+				Latihan pengkodean yang baik untuk initialize variables ketika kamu mendekalariskannya. <br><br>
+				Saran seperti: 
+				</p>
+				<ul>
+					<li> Berilah cleaner code </li>
+					<li> Sediakanlah a single place (satu tempat) untuk initialize variables.</li>
+					<li> Hindarilah nilai undefinied</li>
+				</ul>
+				
+				<article class="simple-example">
+					<span class="grey">// Declare and initiate at the beginning</span> <br>
+					<span class="purple">var</span> firstName = "", 
+					<blockquote>
+					lastName = "", <br>
+					price = 0,<br>
+					discount = 0,<br>
+					fullPrice = 0,<br>
+					myArray = [],<br>
+					myObject = {};
+					</blockquote>
+				</article>
+			</article>
+			
+			<!--ATTENTION-->
+			<article>
+			<table class="attention">
+			<tr>
+			<td class="td-left">
+			<h1>!</h1>
+			</td>
+			<td class="td-right">
+			Penginisialam variabel menyediakan sebuah ide yang bermaksud untuk menggunakan (dan intended data type).
+			</td>
+			</tr>
+			</table>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Jangan Pernah Deklarasikan Object String, Object Number, dan Object Boolean </h1>
+				<p>
+				Selalu perlakukan String, Number dan Object sebagai nilai sederhana atau nilai asli (primitive values). Bukan sebagai Object.<br>
+				Pendeklarasian tipe - tipe ini sebagai Object, dapat memperlambat kecepatan pengeksekusian JaavaScript dan 
+				menghasilkan efek samping yang buruk.
+				</p>
+				
+				<article class="example-box">
+					<h1 style="text-align:center; font-style:italic;"> Contoh </h1>
+					<h4>Input </h4>
+					<div class="example-content">
+					<span class="purple">var</span> x = "John";         <br>
+					<span class="purple">var</span> y = new String("John"); <br>
+					(x === y) <em> // mengembalikan false (salah) karena x adalah sebuah String dan y adalah sebuah Object.</em>
+					</div>
+					<h4>Output</h4>
+					<div class="example-content">
+					<button onclick="bestPractices1()"> klik disini </button>
+					<p id="bestPractices01">Apakah  x dan y sama ?</p>
+					</div>
+				</article>
+				
+				<p>
+				Atau bahkan lebih buruk:
+				</p>
+				
+				<article class="example-box">
+					<h1 style="text-align:center; font-style:italic;"> Contoh </h1>
+					<h4>Input </h4>
+					<div class="example-content">
+					<span class="purple">var</span> x = new string("John");     <br>
+					<span class="purple">var</span> y = new String("John"); <br>
+					(x === y) <em> // mengembalikan false (salah) karena sesama tipe Object tidak bisa dibandingkan.</em>
+					</div>
+					<h4>Output</h4>
+					<div class="example-content">
+					<button onclick="bestPractices2()"> klik disini </button>
+					<p id="bestPractices02"> Apakah  x dan y sama ?</p>
+					</div>
+				</article>
+				
+			</article>
+	</section>
+	<section>		
+			<article>
+				<h1> Jangan Gunakan new Object() </h1>
+				<ul>
+					<li> Gunakanlah {} alternatif dari new Object() </li>
+					<li> Gunakanlah "" alternatif dari new String() </li>
+					<li> Gunakanlah 0 alternatif dari new Number() </li>
+					<li> Gunakanlah false alternatif dari new Boolean() </li>
+					<li> Gunakanlah [] alternatif dari new Array() </li>
+					<li> Gunakanlah {} alternarif dari new Object() </li>
+					<li> Gunakanlah /()/ alternatif dari new RegExp() </li>
+					<li> Gunakanlah function() {} alternatif dari new Function() </li>
+				</ul>
+				
+				<article class="example-box">
+					<h1 style="text-align:center; font-style:italic;"> Contoh  (contoh masih error)</h1>
+					<h4>Input </h4>
+					<div class="example-content">
+					<span class="purple">var</span> x1 = {};           <em>// new object</em> <br>
+					<span class="purple">var</span> x2 = "";           <em>// new primitive string</em> <br>
+					<span class="purple">var</span> x3 = 0;            <em>// new primitive number </em> <br>
+					<span class="purple">var</span> x4 = false;        <em>// new primitive boolean </em> <br>
+					<span class="purple">var</span> x5 = [];           <em> // new array object </em> <br>
+					<span class="purple">var</span>	x6 = /()/;         <em>// new regexp object </em> <br>
+					<span class="purple">var</span> x7 = function(){}; <em>// new function object </em>
+					</div>
+					<h4>Output</h4>
+					<div class="example-content">
+					<button onclick="bestPractices3()"> klik disini </button>
+					<p id="bestPractices03"></p>
+					</div>
+				</article>
+			</article>
+</section>	
+<section>
+			<article>
+				<h1> Hati - hati Ketentuan Tipe Otomatis </h1>
+				<p>
+				Berhati - hatilah Number secara tidak sengaja bisa diubah menjadi String atau NaN (Not a Number). <br>
+				JavaScript dengan bebas tipe, sebuah variabel bisa berisi data tipe yang berbeda, dan sebuah variabel 
+				bisa merubah tipe data tersebut.
+				</p>
+				
+				<article class="example-box">
+					<h1 style="text-align:center; font-style:italic;"> Contoh </h1>
+					<h4>Input </h4>
+					<div class="example-content">
+					<span class="purple">var</span> x = "Hello";           <em>// tipe data x adalah String</em> <br>
+					x = 10;           <em>// merubah tipe data dari String menjadi Number</em>
+					</div>
+					<h4>Output</h4>
+					<div class="example-content">
+					<button onclick="bestPractices4()"> klik disini </button>
+					<p id="bestPractices04"></p>
+					</div>
+				</article>
+				
+				<p>
+				Ketika melakukan pengoperasian matematika, JavaScript bisa merubah Number menjadi String.
+				</p>
+				
+				<article class="example-box">
+					<h1 style="text-align:center; font-style:italic;"> Contoh </h1>
+					<h4>Input </h4>
+					<div class="example-content">
+						<span class="purple">var</span> a = 5 + 7;       <em>// a.valueOf() is 12,  typeof a is a number </em> <br>
+						<span class="purple">var</span> b = 5 + "7";     <em>// b.valueOf() is 57,  typeof b is a string </em> <br>
+						<span class="purple">var</span> c = "5" + 7;     <em>// c.valueOf() is 57,  typeof c is a string </em> <br>
+						<span class="purple">var</span> d = 5 - 7;       <em>// d.valueOf() is -2,  typeof d is a number </em> <br>
+						<span class="purple">var</span> e = 5 - "7";     <em>// e.valueOf() is -2,  typeof e is a number </em> <br>
+						<span class="purple">var</span> f = "5" - 7;     <em>// f.valueOf() is -2,  typeof f is a number </em> <br>
+						<span class="purple">var</span> g = 5 - "x";     <em>// g.valueOf() is NaN, typeof g is a number</em>
+					</div>
+					<h4>Output</h4>
+					<div class="example-content">
+					<button onclick="bestPractices5()"> klik disini </button>
+					<p id="bestPractices05"></p>
+					</div>
+					</article>
+					
+					<p>
+					Pengurangan String dan String, bukan hal umum tapi bisa mengembalikan NaN (Not a Number)
+					</p>
+					
+					<article class="example-box">
+					<h1 style="text-align:center; font-style:italic;"> Contoh </h1>
+					<h4>Input </h4>
+					<div class="example-content">
+					<span class="purple">var</span> a = "Hello" - "World !";  <em>// mengembalikan NaN </em>
+					</div>
+					<h4>Output</h4>
+					<div class="example-content">
+					<button onclick="bestPractices6()"> klik disini </button>
+					<p id="bestPractices06"></p>
+					</div>
+					</article>
+			</article>
+</section>	
+<section>
+			<article>
+				<h1> Gunakan Perbandingan === </h1>
+				<p>
+				Operator perbandingan = selalu mengubah (untuk tipe yang cocok) sebelum membandingkan. <br>
+				Operator === memiliki kekuatan membandingkan nilai dan tipe dari variabel.
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center; font-style:italic;"> Contoh </h1>
+				<h4>Input </h4>
+				<div class="example-content">
+				0 == "";       <em> // true</em> <br>
+				1 == "1";      <em>  // true </em> <br>
+				1 == true;      <em>// true </em> <br> <br>
+				
+				0 === "";      <em> // false </em><br>
+				1 === "1";     <em> // false </em> <br>
+				1 === true;    <em>  // false </em><br>
+				</div>
+				<h4>Output</h4>
+				<div class="example-content">
+				<button onclick="bestPractices7()"> klik disini </button>
+				<p id="bestPractices07"></p>
+				</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Gunakan Paraeter Default </h1>
+				<p>
+				Jika sebuah fungsi dipanggil dengan pernyataan lepas, nilai dari pernyataan tersebut diatur menjadi <b>undefined</b>. <br>
+				Nilai undefinied bisa menjeda kode kamu, kebiasaan yang benar untuk memberikan nilai default pada pernyataan:
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center; font-style:italic;"> Contoh ( contoh masih error )</h1>
+				<h4>Input </h4>
+				<div class="example-content">
+				<span class="purple">function</span> myFunction(x, y) { 
+				    <blockquote>
+				    <span class="purple">if</span> (y === undefined) {
+				       <blockquote> y = 0; </blockquote>
+				    }
+				    </blockquote>
+				}
+				</div>
+				<h4>Output</h4>
+				<div class="example-content">
+				<button onclick="bestPractices8()"> klik disini </button>
+				<p id="bestPractices08"></p>
+				</div>
+				</article>
+				
+				<p>
+				Bacalah lebih banyak tentang parameter fungsi dan argument di 
+				<a href="function parameter.html" > Function Parameters </a>.
+				</p>
+			</article>
+</section>
+<section>		
+			<article>
+				<h1> Akhiri Switch Kamu dengan Default </h1>
+				<p>
+				Selalu akhiri pernyataan switch kamu dengan sebuah default, bahkan jika kamu 
+				tidak memerlukannya.
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center; font-style:italic;"> Contoh ( contoh masih error )</h1>
+				<h4>Input </h4>
+				<div class="example-content">
+				    <span class="purple">switch</span>(new Date().getDay() ) { <br>
+				    <blockquote>
+				    case 0: <br>
+				    <blockquote>
+				    katakan = "Minggu"; <br>
+				    break;<br>
+				    </blockquote>
+				    case 1: <br>
+				    <blockquote>
+				    katakan = "Senin"; <br>
+				    break; <br>
+				    </blockquote>
+				    case 2:<br>
+				    <blockquote>
+				    katakan = "Selasa"; <br>
+				    break; <br>
+				    </blockquote>
+				    case 3: <br>
+				    <blockquote>
+				    katakan = "Rabu"; <br>
+				    break; <br>
+				    </blockquote>
+				    case 4: <br>
+				    <blockquote>
+				    katakan = "Kamis"; <br>
+				    break; <br>
+				    </blockquote>
+				    case 5: </i><br>
+				    <blockquote>
+				    katakan = "Jum'at"; <br>
+				    break; </i><br>
+				    </blockquote>
+				    case 6: <br>
+				    <blockquote>
+				    katakan = "Sabtu"; <br>
+				    break; <br>
+				    </blockquote>
+				    default; <br>
+				    <blockquote>
+				    nameDay = "Hari tidak diketahui";
+				    </blockquote>
+				    }
+				    </blockquote>
+				</div>
+				<h4>Output</h4>
+				<div class="example-content">
+				<button onclick="bestPractices9()"> klik disini </button>
+				<p id="bestPractices09"></p>
+				</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Hindarilah Penggunaan <b class="justRed">eval()</b> </h1>
+				<p>
+				
+				</p>
+				<p>
+				Fungsi eval() digunakan untuk menjalankan teks sebagai kode. Pada hampir semua kasus, ini tidak dibutuhkan 
+				untuk menggunakannya.<br>
+				Karena ini memperbolehkan kode berubah - ubah, dan juga menunjukan sebuah masalah keamanan.
+				</p>
+			</article>
+</section>
+<section>
+			<article id="NoB">
+			<a href="js style guide.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="js mistakes.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			</article>
+			<article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+
+<script type="text/javascript">
+function bestPractice8(x, y) {
+    if (y === undefined) {
+        y = 0;
+    }
+}
+document.getElementById("bestPractice08").innerHTML= bestPractice8(2,1);
+
+</script>
+
+</body>
+</html>

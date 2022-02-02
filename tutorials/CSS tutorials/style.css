@@ -1,0 +1,118 @@
+.result {
+	background-color:black;
+	font-size:12px;
+}
+.bgColor-red {
+	background-color:red;
+	color:white;
+}
+.bg-fullWidth {
+	background-size:100%;
+}
+.repeat {
+	background-repeat:repeat;
+}
+.bg50px {
+	background-size:50px;
+}
+.bg100px {
+	background-size:100px;
+}
+.repeatX {
+	background-repeat:repeat-x;
+}
+.bgPosition-right-top {
+	background-repeat:no-repeat;
+	background-position:right top;
+}
+.bgAttach-fixed {
+	background-attachment:fixed;
+}
+.campur {
+	 border-style: dotted solid inset groove;
+	 border-color:white;
+}
+.textDecor-Unline { text-decoration:underline;}
+.textDecor-none { text-decoration:none;}
+.padd15px {padding:15px;}
+.link01 {
+	text-decoration:underline; 
+	color:white;
+}
+.link02 {
+	color:red;
+	text-decoration:none;
+}
+.link03 {
+	background-color:red;
+	color:white;
+	padding:5px;
+	border:1px silver groove;
+}
+.link04 {
+	background-color:blue;
+	color:white;
+	padding:5px;
+	border:1px silver groove;
+}
+	.link04:hover {
+		background:gold;
+	}
+.hotpink {
+	color:hotpink;
+}
+.link05:link {
+	color:red;
+}
+	.link05:visited {
+		color:green;
+	}
+	.link05:hover {
+		color:hotpink;
+	}
+	.link05:active {
+		color:black;
+	}
+
+.link05A:link {
+	text-decoration:none;
+}
+	.link05A:visited {
+		text-decoration:none;
+	}
+	.link05A:hover {
+		text-decoration:underline;
+	}
+	.link05A:active {
+		text-decoration:underline;
+	}
+
+
+.link05B{
+	padding:5px;
+	margin:5px;
+}
+	.link05B:link {
+		background-color:yellow;
+	}
+	.link05B:visited {
+		background-color:cyan;
+	}
+	.link05B:hover {
+		background-color:lightgreen;
+	}
+	.link05B:active {
+		background-color:hotpink;
+	}
+	
+.link:link, .link:visited {
+    background-color: #f44336; 
+    color: white; 
+    padding: 14px 25px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block;
+}
+	.link:hover, .link:active {
+	    background-color: red;
+	}

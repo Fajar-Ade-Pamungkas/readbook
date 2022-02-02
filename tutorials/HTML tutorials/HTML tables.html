@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML tables</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+
+<style type="text/css">
+table#tab {
+    width:100%;
+}
+table#tab, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:#fff;
+}
+table#t01 th	{
+    background-color: black;
+    color: white;
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML Tables</h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> Contoh Tabel HTML </h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Number</th>
+							<th> First Name </th>
+							<th> Last Name </th>
+							<th> Birthday </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> 1 </td>
+							<td> Andi </td>
+							<td> Oka Mahendra </td>
+							<td> 23 - 10 - 1986 </td>
+						</tr>
+						<tr>
+							<td> 2 </td>
+							<td> Iqbal </td>
+							<td> Abdillah </td>
+							<td> 27 - 09 -1990 </td>
+						</tr>
+						<tr>
+							<td> 3 </td>
+							<td> Rizki </td>
+							<td> Ade Pangestu </td>
+							<td> 23 - 10 - 1995 </td>
+						</tr>
+						<tr>
+							<td> 4 </td>
+							<td> Fajar </td>
+							<td> Ade Pamungkas </td>
+							<td> 14 - 01 - 1998 </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Defining HTML Tables </h2>
+					
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+					<<b>table</b> <span class="teal">style="width:100%"</span>> <br>
+					  <<b>tr</b>>
+						<blockquote>
+					    <<b>td</b>>Jill<<b>/td</b>> <br>
+					    <<b>td</b>>Smith<<b>/td</b>> <br> 
+					    <<b>td</b>>50<<b>/td</b>> <br>
+						</blockquote>
+					  <<b>/tr</b>> <br>
+					  <<b>tr</b>>
+						<blockquote>
+					    <<b>td</b>>Eve<<b>/td</b>> <br>
+					    <<b>td</b>>Jackson<<b>/td</b>> <br> 
+					    <<b>td</b>>94<<b>/td</b>> 
+						</blockquote>
+					  <<b>/tr</b>> <br>
+					<<b>/table</b>>
+					
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+					<table style="width:100%; margin:none; padding:none; border:none; background:white; border-collapse:separate;">
+					  <tr>
+					    <td style=" margin:none; padding:none; border:none; background:white; border-collapse:separate;">Jill</td>
+					    <td style=" margin:none; padding:none; border:none; background:white; border-collapse:separate;">Smith</td> 
+					    <td style=" margin:none; padding:none; border:none; background:white; border-collapse:separate;">50</td>
+					  </tr>
+					  <tr>
+					    <td style=" margin:none; padding:none; border:none; background:white; border-collapse:separate;">Eve</td>
+					    <td style="margin:none; padding:none; border:none; background:white; border-collapse:separate;">Jackson</td> 
+					    <td style="margin:none; padding:none; border:none; background:white; border-collapse:separate;">94</td>
+					  </tr>
+					</table>
+					
+					</div>
+				</article>
+				
+				
+				<p>Penjelasan contoh:</p>
+				
+				<ul>
+					<li> Tabel didefinisikan dengan tag <<b>table</b>>. </li>
+					<li> Tabel dibagi kedalam baris tabel (table row) dengan tag <<b>tr</b>>. </li>
+					<li> Baris tabel dibagi kedalam data tabel (table data) dengan tag <<b>td</b>>. </li>
+					<li> Baris tabel juga dibagi kedalam tabel kepala (table heading) dengan tag <<b>th</b>>. </li>
+				</ul>
+				
+				<div class="nasehat">
+					Tabel data <<b>td</b>> adalah data pengisi tabel. <br>
+					<<b>td</b>> bisa berisi semua urutan element HTML seperti teks, gambar, list (daftar), tabel lainnya, dan sebagainya. 
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> An HTML Table with a Border Attribute </h2>
+				<p> Jika kamu tidak menentukan sebuah border untuk tabel, tabel akan ditampilkan tanpa border. </p>
+				<p> Border bisa ditambahkan menggunakan attribute <b>border</b>:</p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+					<<b>table</b> <span class="teal">style="width:100%" border="1"</span>> <br>
+					  <<b>tr</b>>
+						<blockquote>
+					    <<b>td</b>>Jill<<b>/td</b>> <br>
+					    <<b>td</b>>Smith<<b>/td</b>> <br> 
+					    <<b>td</b>>50<<b>/td</b>> <br>
+						</blockquote>
+					  <<b>/tr</b>> <br>
+					  <<b>tr</b>>
+						<blockquote>
+					    <<b>td</b>>Eve<<b>/td</b>> <br>
+					    <<b>td</b>>Jackson<<b>/td</b>> <br> 
+					    <<b>td</b>>94<<b>/td</b>> 
+						</blockquote>
+					  <<b>/tr</b>> <br>
+					<<b>/table</b>>
+					
+					</div>
+					<button onclick="tampilkan02()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+					<table style="width:100%; margin:none; padding:none; border:1px black solid; background:white; border-collapse:separate;">
+					  <tr>
+					    <td style=" margin:none; padding:none; border:none; background:white; border-collapse:separate;">Jill</td>
+					    <td style=" margin:none; padding:none; border:none; background:white; border-collapse:separate;">Smith</td> 
+					    <td style=" margin:none; padding:none; border:none; background:white; border-collapse:separate;">50</td>
+					  </tr>
+					  <tr>
+					    <td style=" margin:none; padding:none; border:none; background:white; border-collapse:separate;">Eve</td>
+					    <td style="margin:none; padding:none; border:none; background:white; border-collapse:separate;">Jackson</td> 
+					    <td style="margin:none; padding:none; border:none; background:white; border-collapse:separate;">94</td>
+					  </tr>
+					</table>
+					
+					</div>
+				</article>
+				
+				<div class="nasehatX">
+				The <b>border</b> attribute is on its way out of the HTML standard! It is better to use CSS.
+				</div>
+				
+				<p> Untuk menambahkan border, gunakanlah properti <b>border</b> CSS: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+					table, th, td {
+						<blockquote>border:1px black solid ;</blockquote>
+					}
+					
+					</div>
+					<button onclick="tampilkan03()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+					<table style="width:100%; margin:none; padding:none; border:1px black solid; background:white; border-collapse:separate;">
+					  <tr>
+					    <td style=" margin:none; padding:none; border:1px black solid; background:white; border-collapse:separate; ">Jill</td>
+					    <td style=" margin:none; padding:none; border:1px black solid; background:white; border-collapse:separate;">Smith</td> 
+					    <td style=" margin:none; padding:none; border:1px black solid; background:white;border-collapse:separate;">50</td>
+					  </tr>
+					  <tr>
+					    <td style=" margin:none; padding:none; border:1px black solid; background:white; border-collapse:separate;">Eve</td>
+					    <td style="margin:none; padding:none; border:1px black solid; background:white; border-collapse:separate;">Jackson</td> 
+					    <td style="margin:none; padding:none; border:1px black solid; background:white; border-collapse:separate;">94</td>
+					  </tr>
+					</table>
+					
+					</div>
+					</article>
+					
+					<p> Ingatlah untuk mendefinisikan border untuk keduanya tabel dan tabel cell.</p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> An HTML Table with Collapsed Borders </h2>
+				<p> Jika kamu mau border menjadi collapse (saling berimpitan) kedalam satu border, tambahkan <b>border-collapse</b> CSS: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+					table, th, td {
+						<blockquote>
+						border:1px black solid; <br>
+						border-collapse:collapse;
+						</blockquote>
+					}
+					
+					</div>
+					<button onclick="tampilkan04()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+					<table style="width:100%; margin:none; padding:none; border:1px black solid; background:white; border-collapse:collapse;">
+					  <tr>
+					    <td style=" margin:none; padding:none; border:1px black solid; background:white; border-collapse:collapse; ">Jill</td>
+					    <td style=" margin:none; padding:none; border:1px black solid; background:white; border-collapse:collapse;">Smith</td> 
+					    <td style=" margin:none; padding:none; border:1px black solid; background:white;border-collapse:collapse;">50</td>
+					  </tr>
+					  <tr>
+					    <td style=" margin:none; padding:none; border:1px black solid; background:white; border-collapse:collapse;">Eve</td>
+					    <td style="margin:none; padding:none; border:1px black solid; background:white; border-collapse:collapse;">Jackson</td> 
+					    <td style="margin:none; padding:none; border:1px black solid; background:white; border-collapse:collapse;">94</td>
+					  </tr>
+					</table>
+					
+					</div>
+					</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> An HTML Table with Cell Padding </h2>
+				<p> <b>Cell padding</b> menentukan spasi diantara cell content (isi) dan border itu sendiri. </p>
+				<p> Jika kamu tidak menentukan sebuah padding, tabel cell akan ditampilkan tanpa padding. </p>
+				<p> Untuk mengatur padding, gunakanlah properti <b>padding</b> CSS: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+					table, th, td {
+						<blockquote>
+						border:1px black solid; <br>
+						border-collapse:collapse;
+						</blockquote>
+					} <br>
+					th, td {
+					    <blockquote>
+					    padding: 15px;
+					    </blockquote>
+					}
+					
+					
+					</div>
+					<button onclick="tampilkan05()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+					
+					<table style="width:100%; margin:none; padding:none; border:1px black solid; background:white; border-collapse:collapse;">
+					  <tr>
+					    <td style=" margin:none; padding:15px; border:1px black solid; background:white; border-collapse:collapse; ">Jill</td>
+					    <td style=" margin:none; padding:15px; border:1px black solid; background:white; border-collapse:collapse;">Smith</td> 
+					    <td style=" margin:none; padding:15px; border:1px black solid; background:white;border-collapse:collapse;">50</td>
+					  </tr>
+					  <tr>
+					    <td style="margin:none; padding:15px; border:1px black solid; background:white; border-collapse:collapse;">Eve</td>
+					    <td style="margin:none; padding:15px; border:1px black solid; background:white; border-collapse:collapse;">Jackson</td> 
+					    <td style="margin:none; padding:15px; border:1px black solid; background:white; border-collapse:collapse;">94</td>
+					  </tr>
+					</table>
+					
+					</div>
+					</article>
+					
+				
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> HTML Table Headings </h2>
+				<p> <b>Table Hedings </b> didefinisikan dengan tag <<b>th</b>>. </p>
+				<p> Dengan default, semua major browser menampilkan table heading seperti teks tebal dan rsts tengah: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+					<<b>!DOCTYPE html</b>> <br>
+					<<b>html</b>> <br>
+					<<b>head</b>> <br>
+					<<b>style</b>> <br>
+					table, th, td {
+						<blockquote>
+						border:1px black solid; <br>
+						border-collapse:collapse;
+						</blockquote>
+					} <br>
+					th, td {
+					    <blockquote>
+					    padding: 15px;
+					    </blockquote>
+					} <br>
+					<<b>/style</b>> <br>
+					<<b>/head</b>> <br>
+					<<b>body</b>> <br><br>
+					<<b>table</b> <span class="teal">style="width:100%" border="1"</span>> <br>
+					    <<b>tr</b>>
+						<blockquote>
+					    <<b>th</b>>First Name<<b>/th</b>> <br>
+					    <<b>th</b>>Last Name<<b>/th</b>> <br> 
+					    <<b>th</b>>Points<<b>/th</b>> <br>
+						</blockquote>
+					  <<b>/tr</b>> <br>
+					<<b>tr</b>>
+						<blockquote>
+					    <<b>td</b>>Jill<<b>/td</b>> <br>
+					    <<b>td</b>>Smith<<b>/td</b>> <br> 
+					    <<b>td</b>>50<<b>/td</b>> <br>
+						</blockquote>
+					  <<b>/tr</b>> <br>
+					  <<b>tr</b>>
+						<blockquote>
+					    <<b>td</b>>Eve<<b>/td</b>> <br>
+					    <<b>td</b>>Jackson<<b>/td</b>> <br> 
+					    <<b>td</b>>94<<b>/td</b>> 
+						</blockquote>
+					  <<b>/tr</b>> <br>
+					<<b>/table</b>> <br><br>
+					<<b>/body</b>> <br>
+					<<b>/html</b>>
+
+					</div>
+					<button onclick="tampilkan06()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+					
+					<table style="width:100%; margin:none; padding:none; border:1px black solid; background:white; border-collapse:collapse;">
+					  <tr>
+					    <th style=" margin:none; padding:15px; border:1px black solid; background:white; border-collapse:collapse; color:black; ">First Name</th>
+					    <th style=" margin:none; padding:15px; border:1px black solid; background:white; border-collapse:collapse; color:black; ">Last Name</th> 
+					    <th style=" margin:none; padding:15px; border:1px black solid; background:white;border-collapse:collapse; color:black;">Points</th>
+					  </tr>  
+					<tr>
+					    <td style=" margin:none; padding:15px; border:1px black solid; background:white; border-collapse:collapse; ">Jill</td>
+					    <td style=" margin:none; padding:15px; border:1px black solid; background:white; border-collapse:collapse;">Smith</td> 
+					    <td style=" margin:none; padding:15px; border:1px black solid; background:white;border-collapse:collapse;">50</td>
+					  </tr>
+					  <tr>
+					    <td style="margin:none; padding:15px; border:1px black solid; background:white; border-collapse:collapse;">Eve</td>
+					    <td style="margin:none; padding:15px; border:1px black solid; background:white; border-collapse:collapse;">Jackson</td> 
+					    <td style="margin:none; padding:15px; border:1px black solid; background:white; border-collapse:collapse;">94</td>
+					  </tr>
+					</table>
+					
+					</div>
+					</article>
+					
+					<p> Untuk teks rata kiri untuk table heading (kepala tabel). Gunakanlah properti <b>text-align</b> CSS: </p>
+					
+					<article class="example-box">
+						<p class="fontWhite"> Kamu bisa tambahkan properti ini ke contoh tag diatas </p>
+						<div class="example-content">
+							th {
+								<blockquote>text-align:left;</blockquote>
+							}
+						</div>
+						</article>
+				</article>
+</section> 
+<section>
+				<article>
+					<h2> An HTML Table with Border Spacing </h2>
+					<p> <b>Border spacing</b> menentukan spasi diantara cell. </p>
+					<p> untuk mengatur border spacing untuk tabel, gunakanlah properti <b>border-spacing</b> CSS: </p>
+					
+					<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+					<<b>!DOCTYPE html</b>> <br>
+					<<b>html</b>> <br>
+					<<b>head</b>> <br>
+					<<b>style</b>> <br>
+					table, th, td {
+					<blockquote>
+					border:1px black solid; <br>
+					border-spacing: 15px; <br>
+					border-collapse: separate; <br>
+					</blockquote>
+					} <br>
+					th, td {
+					    <blockquote>
+					padding: 15px;
+					</blockquote>
+					} <br>
+					<<b>/style</b>> <br>
+					<<b>/head</b>> <br>
+					<<b>body</b>> <br><br>
+					<<b>table</b> <span class="teal">style="width:100%" border="1"</span>> <br>
+					    <<b>tr</b>>
+					<blockquote>
+					    <<b>th</b>>First Name<<b>/th</b>> <br>
+					    <<b>th</b>>Last Name<<b>/th</b>> <br> 
+					    <<b>th</b>>Points<<b>/th</b>> <br>
+					</blockquote>
+					  <<b>/tr</b>> <br>
+					<<b>tr</b>>
+					<blockquote>
+					    <<b>td</b>>Jill<<b>/td</b>> <br>
+					    <<b>td</b>>Smith<<b>/td</b>> <br> 
+					    <<b>td</b>>50<<b>/td</b>> <br>
+					</blockquote>
+					  <<b>/tr</b>> <br>
+					  <<b>tr</b>>
+					<blockquote>
+					    <<b>td</b>>Eve<<b>/td</b>> <br>
+					    <<b>td</b>>Jackson<<b>/td</b>> <br> 
+					    <<b>td</b>>94<<b>/td</b>> 
+					</blockquote>
+					  <<b>/tr</b>> <br>
+					<<b>/table</b>> <br><br>
+					<<b>/body</b>> <br>
+					<<b>/html</b>>
+					
+					</div>
+					<button onclick="tampilkan07()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan07">
+					
+					<table style="width:100%; margin:none; padding:none; border:1px black solid; background:white; border-collapse:separate; border-spacing:15px; ">
+					  <tr>
+					    <th style=" margin:none; padding:15px; border:1px black solid; background:white; border-collapse:separate; color:black; border-spacing:15px;">First Name</th>
+					    <th style=" margin:none; padding:15px; border:1px black solid; background:white; border-collapse:separate; color:black; border-spacing:15px;">Last Name</th> 
+					    <th style=" margin:none; padding:15px; border:1px black solid; background:white;border-collapse:separate; color:black; border-spacing:15px;">Points</th>
+					  </tr>  
+					<tr>
+					    <td style=" margin:none; padding:15px; border:1px black solid; background:white; border-collapse:separate; border-spacing:15px;">Jill</td>
+					    <td style=" margin:none; padding:15px; border:1px black solid; background:white; border-collapse:separate; border-spacing:15px;">Smith</td> 
+					    <td style=" margin:none; padding:15px; border:1px black solid; background:white;border-collapse:separate; border-spacing:15px;">50</td>
+					  </tr>
+					  <tr>
+					    <td style="margin:none; padding:15px; border:1px black solid; background:white; border-collapse:separate; border-spacing:15px;">Eve</td>
+					    <td style="margin:none; padding:15px; border:1px black solid; background:white; border-collapse:separate; border-spacing:15px;">Jackson</td> 
+					    <td style="margin:none; padding:15px; border:1px black solid; background:white; border-collapse:separate; border-spacing:15px;">94</td>
+					  </tr> 
+					</table>
+					</div>
+				</article>
+				
+				<div class="nasehatX">
+				Jika tabel memiliki collapsed borders, border-spacing tidak memiliki efek.
+				</div>
+			</article>
+</section> 
+<section>
+			<article>
+				<h2> Table Cells that Span Many Columns </h2>
+				<p> Untuk membuat semua cell span lebih dari satu colom, gunakanlah attribute <b>colspan</b> (merentangkan colom):
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+					<<b>!DOCTYPE html</b>> <br>
+					<<b>html</b>> <br>
+					<<b>head</b>> <br>
+					<<b>style</b>> <br>
+					table, th, td {
+					<blockquote>
+					border:1px black solid; <br>
+					border-spacing: 15px; <br>
+					border-collapse: separate;
+					</blockquote>
+					} <br>
+					th, td {
+					    <blockquote>
+					padding: 15px;
+					</blockquote>
+					} <br>
+					
+					<<b>/style</b>> <br>
+					<<b>/head</b>> <br>
+					<<b>body</b>> <br><br>
+					<<b>table</b> <span class="teal">style="width:100%" border="1"</span>> <br>
+						<blockquote>
+						<<b>tr</b>>
+							<blockquote>
+						    <<b>th</b>> Nama <<b>/th</b>> <br>
+						    <<b>th</b> <span clas="teal">colspan="2"</span>> Telephones <<b>/th</b>> <br> 
+							</blockquote>
+						<<b>/tr</b>> <br>
+						<<b>tr</b>>
+							<blockquote>
+							<<b>td</b>> Fajar <<b>/td</b>> <br>
+							<<b>td</b>> 081288397435 <<b>/td</b>> <br> 
+							<<b>td</b>> 083819136838 <<b>/td</b>> 
+							</blockquote>
+						<<b>/tr</b>> <br>
+						</blockquote>
+					<<b>/table</b>> <br><br>
+					<<b>/body</b>> <br>
+					<<b>/html</b>>
+					</div>
+					<button onclick="tampilkan08()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan08">
+					
+					<table style="width:100%; margin:none; padding:none; border:1px black solid; background:white; border-collapse:collapse;">
+					  <tr>
+					    <th style=" margin:none; padding:15px; border:1px black solid; background:white; border-collapse:collapse; color:black; "> Name </th>
+					    <th colspan="2" style=" margin:none; padding:15px; border:1px black solid; background:white; border-collapse:collapse; color:black; "> Contact</th> 
+					  </tr>  
+					<tr>
+					    <td style=" margin:none; padding:15px; border:1px black solid; background:white; border-collapse:collapse; "> Fajar Ade Pamungkas </td>
+					    <td style=" margin:none; padding:15px; border:1px black solid; background:white; border-collapse:collapse;"> 081288397435 </td> 
+					    <td style=" margin:none; padding:15px; border:1px black solid; background:white;border-collapse:collapse;"> 083819136838 </td>
+					  </tr>
+					</table>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Table Cells that Span Many Rows </h2>
+				<p> Untuk membuat <b>cell span</b> lebih dari satu, gunakanlah attribute <b>rowspan</b> (merentangkan baris): </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+					<<b>!DOCTYPE html</b>> <br>
+					<<b>html</b>> <br>
+					<<b>head</b>> <br>
+					<<b>style</b>> <br>
+					table, th, td {
+					<blockquote>
+					border:1px black solid; <br>
+					border-spacing: 15px; <br>
+					border-collapse: separate;
+					</blockquote>
+					} <br>
+					th, td {
+					    <blockquote>
+					padding: 15px;
+					</blockquote>
+					} <br>
+					
+					<<b>/style</b>> <br>
+					<<b>/head</b>> <br>
+					<<b>body</b>> <br><br>
+					<<b>table</b> <span class="teal">style="width:100%" border="1"</span>> <br>
+						<blockquote>
+						<<b>tr</b>>
+							<blockquote>
+							<<b>th</b>> Nama <<b>/th</b>> <br>
+							<<b>td</b>> Fajar Ade Pamungkas<<b>/th</b>> <br> 
+						</blockquote>
+						<<b>/tr</b>> <br>
+						<<b>tr</b>>
+							<blockquote>
+						    <<b>th</b> <span clas="teal">rowspan="2"</span>> Telephones <<b>/th</b>> <br>
+							<<b>td</b>> 081288397435 <<b>/td</b>> <br> 
+						    </blockquote>
+				    	<<b>/tr</b>> <br>
+					    <<b>tr</b>> 
+					 		<blockquote>
+						    <<b>td</b>> 083819136838 <<b>/td</b>> 
+							</blockquote>
+						<<b>/tr</b>> <br>
+						</blockquote>
+					<<b>/table</b>> <br><br>
+					<<b>/body</b>> <br>
+					<<b>/html</b>>
+					</div>
+					<button onclick="tampilkan09()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan09">
+					
+					<table style="width:100%; margin:none; padding:none; border:1px black solid; background:white; border-collapse:collapse;">
+					  <tr>
+					    <th style=" margin:none; padding:15px; border:1px black solid; background:white; border-collapse:collapse; color:black; "> Name </th>
+					    <td style=" margin:none; padding:15px; border:1px black solid; background:white; border-collapse:collapse; "> Fajar Ade Pamungkas </td>
+					  </tr>  
+					<tr>
+				   		<th rowspan="2" style=" margin:none; padding:15px; border:1px black solid; background:white; border-collapse:collapse; color:black; "> Contact</th> 
+					    <td style=" margin:none; padding:15px; border:1px black solid; background:white; border-collapse:collapse;"> 081288397435 </td> 
+					</tr>
+					<tr>
+					    <td style=" margin:none; padding:15px; border:1px black solid; background:white;border-collapse:collapse;"> 083819136838 </td>
+					  </tr>
+					</table>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> An HTML Table With a Caption </h2>
+				<p> Untuk menambahkan sebuah caption (judul tabel) kepada tabel, gunakanlah tag <<b>caption</b>>: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+					<<b>!DOCTYPE html</b>> <br>
+					<<b>html</b>> <br>
+					<<b>head</b>> <br>
+					<<b>style</b>> <br>
+					table, th, td {
+					<blockquote>
+					border:1px black solid; <br>
+					border-spacing: 15px; <br>
+					border-collapse: separate;
+					</blockquote>
+					} <br>
+					th, td {
+					    <blockquote>
+					padding: 15px;
+					</blockquote>
+					} <br>
+					
+					<<b>/style</b>> <br>
+					<<b>/head</b>> <br>
+					<<b>body</b>> <br><br>
+					<<b>table</b> <span class="teal">style="width:100%" border="1"</span>> <br>
+						<<b>caption</b>> Phonebooks <<b>/caption</b>> <br><br>
+						
+						<blockquote>
+						<<b>tr</b>>
+							<blockquote>
+							<<b>th</b>> Nama <<b>/th</b>> <br>
+							<<b>td</b>> Fajar Ade Pamungkas<<b>/th</b>> <br> 
+						</blockquote>
+						<<b>/tr</b>> <br>
+						<<b>tr</b>>
+							<blockquote>
+						    <<b>th</b> <span clas="teal">rowspan="2"</span>> Telephones <<b>/th</b>> <br>
+							<<b>td</b>> 081288397435 <<b>/td</b>> <br> 
+						    </blockquote>
+									    	<<b>/tr</b>> <br>
+					    <<b>tr</b>> 
+					 		<blockquote>
+						    <<b>td</b>> 083819136838 <<b>/td</b>> 
+							</blockquote>
+						<<b>/tr</b>> <br>
+						</blockquote>
+					<<b>/table</b>> <br><br>
+					<<b>/body</b>> <br>
+					<<b>/html</b>>
+					</div>
+					<button onclick="tampilkan10()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan10">
+					
+					<table style="width:100%; margin:none; padding:none; border:1px black solid; background:white; border-collapse:collapse;">
+					 <caption style="font-style:inherit;"> Phonebooks </caption>
+					<tr>
+					    <th style=" margin:none; padding:15px; border:1px black solid; background:white; border-collapse:collapse; color:black; "> Name </th>
+					    <td style=" margin:none; padding:15px; border:1px black solid; background:white; border-collapse:collapse; "> Fajar Ade Pamungkas </td>
+					  </tr>  
+					<tr>
+									   		<th rowspan="2" style=" margin:none; padding:15px; border:1px black solid; background:white; border-collapse:collapse; color:black; "> Contact</th> 
+					    <td style=" margin:none; padding:15px; border:1px black solid; background:white; border-collapse:collapse;"> 081288397435 </td> 
+					</tr>
+					<tr>
+					    <td style=" margin:none; padding:15px; border:1px black solid; background:white;border-collapse:collapse;"> 083819136838 </td>
+					  </tr>
+					</table>
+					
+					</div>
+				</article>
+				
+				<div class="nasehatX">
+				Tag <<b>caption</b>> harus disisipkan segera setelah tag <<b>table</b>>.
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>A Special Style for One Table </h2>
+				<p> Untuk mendefinisikan sebuah gaya (style) special untuk tabel special, tambahkan sebuah attribute <b>id</b> untuk tabel: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<p class="fontWhite"> Disini saya tambahkan attribute id="t01"</p>
+					<div class="example-content">
+						<<b>table</b> <span class="teal">id="t01"</span>> <br>
+							<blockquote>
+							<<b>tr</b>>
+								<blockquote>
+								<<b>th</b>>First Name<<b>/th</b>> <br>
+								<<b>th</b>>Last Name<<b>/th</b>> <br>		
+								<<b>th</b>>Points<<b>/th</b>>
+								</blockquote>
+							<<b>/tr</b>> <br>
+							<<b>tr</b>>
+								<blockquote>
+								<<b>td</b>>Jill<<b>/td</b>> <br>
+								<<b>td</b>>Smith<<b>/td</b>> <br>	
+								<<b>td</b>>50<<b>/td</b>>
+								</blockquote>
+							<<b>/tr</b>> <br>
+							<<b>tr</b>>
+								<blockquote>
+								<<b>td</b>>Eve<<b>/td</b>> <br>
+								<<b>td</b>>Jackson<<b>/td</b>> <br>		
+								<<b>td</b>>94<<b>/td</b>>
+								</blockquote>
+							<<b>/tr</b>> <br>
+							<<b>tr</b>>
+								<blockquote>
+								<<b>td</b>>John<<b>/td</b>> <br>
+								<<b>td</b>>Doe<<b>/td</b>>	<br>
+								<<b>td</b>>80<<b>/td</b>> 
+								</blockquote>
+							<<b>/tr</b>>
+							</blockquote>
+						<<b>/table</b>> 
+					</div>
+				</article>
+				
+				<article class="example-box">
+					<h1>Kamu bisa mendefinisikan sebuah style special untuk tabel itu:</h1>
+					<div class="example-content">
+						table#t01 th	{
+							<blockquote>
+							background-color: black; <br>
+							color: white; <br>
+							</blockquote>
+						}
+					</div>
+				</article>
+				
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+					<<b>!DOCTYPE</b> <span class="teal"> html</span>> <br>
+					<<b>html</b>> <br>
+					<<b>head</b>> <br>
+					<<b>style</b>> <br>
+					table {
+						<blockquote>width:100%;</blockquote>
+					} <br>
+					table, th, td { 
+						<blockquote>
+						border: 1px solid black; <br>
+						border-collapse: collapse;
+						</blockquote>
+					}<br>
+					th, td {
+						<blockquote>
+						padding: 5px; <br>
+						text-align: left;
+						</blockquote>
+					} <br>
+					table#t01 tr:nth-child(even) {
+						<blockquote>background-color: #eee;</blockquote>
+					} <br>
+					table#t01 tr:nth-child(odd) {
+						<blockquote>background-color:#fff;</blockquote>
+					} <br>
+					table#t01 th	{
+						<blockquote>
+						background-color: black; <br>
+						color: white;
+						</blockquote>
+					}<br>
+					<<b>/style</b>> <br>
+					<<b>/head</b>> <br>
+					<<b>body</b>> <br><br>
+					
+					<<b>table</b>> <br>
+						<blockquote>
+						<<b>tr</b>> <br>
+							<blockquote>
+							<<b>th</b>>First Name<<b>/th</b>><br>
+							<<b>th</b>>Last Name<<b>/th</b>> <br>		
+							<<b>th</b>>Points<<b>/th</b>> 
+							</blockquote>
+						<<b>/tr</b>><br>
+						<<b>tr</b>> 
+							<blockquote>
+							<<b>td</b>>Jill<<b>/td</b>> <br>
+							<<b>td</b>>Smith<<b>/td</b>> <br>	
+							<<b>td</b>>50<<b>/td</b>>
+							</blockquote>
+						<<b>/tr</b>> <br>
+						<<b>tr</b>> 
+							<blockquote>
+							<<b>td</b>>Eve<<b>/td</b>> <br>
+							<<b>td</b>>Jackson<<b>/td</b>> <br>		
+							<<b>td</b>>94<<b>/td</b>> 
+							</blockquote>
+						<<b>/tr</b>> <br>
+						<<b>tr</b>> 
+							<blockquote>
+							<<b>td</b>>John<<b>/td</b>> <br>
+							<<b>td</b>>Doe<<b>/td</b>> <br>		
+							<<b>td</b>>80<<b>/td</b>> 
+							</blockquote>
+						<<b>/tr</b>>
+						</blockquote>
+					<<b>/table</b>> <br><br>
+					
+					<<b>table</b> <span class="teal">id="t01"</span>> <br>
+						<blockquote>
+						<<b>tr</b>>
+							<blockquote>
+							<<b>th</b>>First Name<<b>/th</b>> <br>
+							<<b>th</b>>Last Name<<b>/th</b>> <br>		
+							<<b>th</b>>Points<<b>/th</b>>
+							</blockquote>
+						<<b>/tr</b>> <br>
+						<<b>tr</b>>
+							<blockquote>
+							<<b>td</b>>Jill<<b>/td</b>> <br>
+							<<b>td</b>>Smith<<b>/td</b>> <br>	
+							<<b>td</b>>50<<b>/td</b>>
+							</blockquote>
+						<<b>/tr</b>> <br>
+						<<b>tr</b>>
+							<blockquote>
+							<<b>td</b>>Eve<<b>/td</b>> <br>
+							<<b>td</b>>Jackson<<b>/td</b>> <br>		
+							<<b>td</b>>94<<b>/td</b>>
+							</blockquote>
+						<<b>/tr</b>> <br>
+						<<b>tr</b>>
+							<blockquote>
+							<<b>td</b>>John<<b>/td</b>> <br>
+							<<b>td</b>>Doe<<b>/td</b>>	<br>
+							<<b>td</b>>80<<b>/td</b>> 
+							</blockquote>
+						<<b>/tr</b>>
+						</blockquote>
+					<<b>/table</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>>
+					</div>
+					<button onclick="tampilkan11()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan11">
+
+						<table id="tab">
+						  <tr>
+						    <th>First Name</th>
+						    <th>Last Name</th>		
+						    <th>Points</th>
+						  </tr>
+						  <tr>
+						    <td>Jill</td>
+						    <td>Smith</td>		
+						    <td>50</td>
+						  </tr>
+						  <tr>
+						    <td>Eve</td>
+						    <td>Jackson</td>		
+						    <td>94</td>
+						  </tr>
+						  <tr>
+						    <td>John</td>
+						    <td>Doe</td>		
+						    <td>80</td>
+						  </tr>
+						</table>
+						
+						<br>
+						
+						<table id="t01">
+						  <tr>
+						    <th>First Name</th>
+						    <th>Last Name</th>		
+						    <th>Points</th>
+						  </tr>
+						  <tr>
+						    <td>Jill</td>
+						    <td>Smith</td>		
+						    <td>50</td>
+						  </tr>
+						  <tr>
+						    <td>Eve</td>
+						    <td>Jackson</td>		
+						    <td>94</td>
+						  </tr>
+						  <tr>
+						    <td>John</td>
+						    <td>Doe</td>		
+						    <td>80</td>
+						  </tr>
+						</table>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Ringkasan Materi </h2>
+				<ul>
+					<li> Gunakanlah element <<b>table</b>> HTML untuk mendefinisikan sebuah tabel </li>
+					<li> Gunakanlah element <<b>tr</b>> HTML untuk mendefinisikan baris tabel </li>
+					<li> Gunakanlah element <<b>td</b>> HTML untuk mendefinisikan data tabel </li>
+					<li> Gunakanlah element <<b>caption</b>> HTML untuk mendefinisikan caption (judul) tabel </li>
+					<li> Gunakanlah properti <b>border</b> CSS untuk mendefinisikan border </li>
+					<li> Gunakanlah properti <b>collapse</b> CSS untuk merapatkan border cell </li> 
+					<li> Gunakanlah properti <b>padding</b> CSS untuk menambahkan padding pada cell </li>
+					<li> Gunakanlah properti <b>text-align</b> CSS untuk perataan cell teks </li>
+					<li> Gunakanlah properti <b>border-spacing</b> CSS untuk mengatur spasi antara kolom </li>
+					<li> Gunakanlah attribute <b>colspan</b> untuk membuat (merentangkan) cell ke banyak kolom </li>
+					<li> Gunakanlah attribute <b>rowspan</b> untuk membuat (merentangkan) cell ke banyak baris </li>
+					<li> Gunakanlah attribute <b>id</b> untuk dengan unik mendefinisikan satu tabel </li>
+					<li> Gunakanlah properti <b>vertical-align</b> CSS untuk meratakan teks secara vertical </li>
+				</ul>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML Table Tags </h2>
+				
+				<table>
+					<thead>
+						<tr>
+							<th> Tag </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> <<b>table</b>> </td>
+							<td> Mendefinisikan sebuah tabel </td>
+						</tr>
+						<tr>
+							<td> <<b>th</b>> </td>
+							<td> Mendefinisikan header cell (kepala cell atau tabel) dalam sebuah tabel</td>
+						</tr>
+						<tr>
+							<td> <<b>tr</b>> </td>
+							<td> Mendefinisikan baris dalam sebuah tabel </td>
+						</tr>
+						<tr>
+							<td> <<b>td</b>> </td>
+							<td> Mendefinisikan sebuah cell dalam tabel </td>
+						</tr>
+						<tr>
+							<td> <<b>caption</b>> </td>
+							<td> Mendefinisikan sebuah judul tabel </td>
+						</tr>
+						<tr>
+							<td> <<b>colgroup</b>> </td>
+							<td> Menentukan sebuah grup daru satu atau lebih colom dalam sebuah tabel untuk formatting </td>
+						</tr>
+						<tr>
+							<td> <<b>col</b>> </td>
+							<td> Menentukan properti kolom untuk setiap kolom dengan sebuah element <<b>colgroup</b>> </td>
+						</tr>
+						<tr>
+							<td> <<b>thead</b>> </td>
+							<td> Menggrupkan header content (konten kepala tabel) dalam sebuah tabel </td>
+						</tr>
+						<tr>
+							<td> <<b>tbody</b>> </td>
+							<td> Menggrupkan body content (konten badan tabel) dalam sebuah tabel </td>
+						</tr>
+						<tr>
+							<td> <<b>tfoot</b>> </td>
+							<td> Menggrupkan footer content (konten kaki tabel) dalam sebuah tabel </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article id="NoB">
+			<a href="HTML images.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML lists.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

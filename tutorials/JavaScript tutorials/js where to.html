@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | JavaScript | js where to</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="javaScript.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> Dimana JavaScript diletakan ?</h1>
+					<p>
+					JavaScript bisa diletakkan pada bagian sesi <<b>head</b>> 
+					dan <<b>body</b>> 
+					</p>
+			</div>
+			
+			
+<section>
+			<article>
+				<h1> Tanda <q lang="code">script</q></h1>
+				<p>
+				Pada HTML. JavaScript harus disisipkan diantara <<b>script</b>> dan <<b>/script</b>>.
+				</p>
+			</article>
+			
+			<!-- kotak contoh 1-->
+			<article class="example-box">
+				<div class="example-content">
+					
+					<<b>script</b>><br><br>
+					<span class="purple">function</span> myFunction() {
+						<<blockquote>
+							<em>//Pernyataan</em>
+						</blockquote>
+					}<br><br>
+					<<b>/script</b>
+					
+				</div>
+			</article>	
+			
+			<article>
+				<table class="attention">
+				<tr>
+				<td class="td-left">
+				<h1>!</h1>
+				</td>
+				<td class="td-right">
+					Pada contoh terdahulu, penulisan <i>script</i> 
+					harus seperti <<b>script <span class="teal">type="JavaScript"</span></b>>. <br>
+					Namun, Sekarang itu sudah tidak diperlukan.<br> 
+					karena <<b>script</b>> sudah menjadi default (setelan pabrik).
+				</td>
+				</tr>
+				</table>
+			</article>
+</section>			
+<section>
+				<article>
+				<h1> Fungsi dan kejadian JavaScript </h1>
+				<p>
+				Fungsi JavaScript merupakan sebuah blok dari kode javaScript, 
+				yang bisa dieksekusi dengan cara <b><i>meminta</i></b> nya untuk melakukan sesuatu.<br><br>
+				<b> Untuk contoh</b>, sebuah fungsi dapat dieksekusi ketika 
+				sebuah event (peristiwa) terjadi. <br>seperti ketika pengguna mengklik sebuah tombol.<br><br>
+				Kamu akan belajar tentang fungsi dan event di lain chapter.
+				</p>
+				</article>
+</section>
+<section>
+				<article>
+					<h1>JavaScript di <q lang="code">head</q> atau <q lang="code">body</q></h1>
+					<p>
+					Kamu bisa menempatkan nomor apapun dari JavaScript dalam sebuah dokumen HTML.<br><br>
+					script (naskah javaScript) dapat ditempatkan di <q lang="code">head</q> dan <q lang="code">body</q>. Atau di keduanya
+					</p>
+				</article>
+				<article>
+					<table class="attention">
+					<tr>
+					<td class="td-left">
+					<h1>!</h1>
+					</td>
+					<td class="td-right">
+						Tetaplah tempatkan <b>script</b> pada satu tempat. Agar dapat bekerja dengan baik.
+					</td>
+					</tr>
+					</table>
+				</article>
+				
+</section>
+<section>
+				<article>
+					<h1> JavaScript pada <q lang="code">head</q></h1>
+					<p>
+					Pada contoh ini, fungsi javaScript di tempatkan di bagian <b>head</b> pada halaman HTML. <br><br>
+					Fungsi ini dipanggil (diaktifkan) ketika sebuah button (tombol) di klik.
+					</p>
+				</article>
+				
+					<!-- kotak contoh 2-->
+				<article class="example-box">
+					<h1 style="text-align:center;"><i>Contoh</i></h1>
+					<h4>input</h4>
+					<div class="example-content">
+					
+					<<b>!DOCTYPE html</b>><br> <br>
+					<<b>html</b>><br> <br>
+					<<b>head</b>><br> <br>
+					<<b>script</b>><br> 
+					<span class="purple">function</span> myFunction() {<br><br>
+					<blockquote cite="http://redbook.co.id/JavaScript/js introduce.html">
+					document.getElementById("<span class="purple"> par </span>").innerHTML="Hello JavaScriptor !"";<br><br>
+					</blockquote>
+					}<br>
+					<<b>/script</b>> <br> <br>
+					<<b>/head</b>> <br> <br>
+					<<b>body</b>><br><br>
+					<<b>h1</b>> Readbook <<b>/h1</b>><br><br>
+					<<b>p</b> <span class="teal">id="demo"</span>> Ini paragraf  <<b>/p</b>><br><br>
+					<<b>button onclick="myFunction()"</b>> Submit <<b>/button</b>><br><br>
+					<<b>/body</b>><br><br>
+					<<b>/html</b>>
+					
+					</div>
+					<h4>output</h4>
+					<div class="example-content">
+					<h1> Readbook </h1>
+					<p id="demo"> Ini paragraf </p>
+					<button onclick="myFunction()"> Klik disini </button>
+					</div>
+					</article>	
+</section>
+<section>
+					<article>
+					<h1> JavaScript pada <q lang="code">body</q></h1>
+					<p>
+					Pada contoh ini, fungsi javaScript di tempatkan di bagian <b>body</b> pada halaman HTML. <br><br>
+					Fungsi ini dipanggil (diaktifkan) ketika sebuah button (tombol) di klik.
+					</p>
+					</article>
+					
+					<!-- kotak contoh 3-->
+					<article class="example-box">
+					<h1 style="text-align:center;"><i>Contoh</i></h1>
+					<h4>input</h4>
+					<div class="example-content">
+					
+					<<b>!DOCTYPE html</b>><br><br>
+					<<b>html</b>><br><br>
+					<<b>head</b>><br><br>
+					<<b>/head</b>><br><br>
+					<<b>body</b>><br><br>
+					<<b>p</b>>Tekan tombol dibawah ini untuk merubah kata dibawah<<b>/p</b>><br><br>
+					<<b>button</b> <span class="purple">onclick="myFunction()"</span>>Klik disini<<b>/button</b>><br><br>
+					<<b>p</b> <span class="purple">id="demo"</span>> Dimana script disimpan ?<<b>/p</b>><br><br>
+					<<b>script</b>><br><br>
+					<span class="purple">function</span> myFunction() {<br><br>
+					document.getElementById("<span class="purple">demo</span>").innerHTML=<q> Script disimpan di tag head</q>;<br><br>
+					}<br><br>
+					<<b>/script</b>><br><br>
+					<<b>/body</b>><br><br>
+					<<b>/html</b>>
+					
+					</div>
+					<h4>output</h4>
+					<div class="example-content">
+					<p>Tekan tombol dibawah ini untuk menampilkan waktu</p>
+					<button onclick="inHead()">Klik disini</button>
+					<p id="inhead"> Dimana script disimpan ? </p>
+					</div>
+					</article>
+</section>					
+<section>											
+					<article>
+						<table class="attention">
+						<tr>
+							<td class="td-left">
+								<h1>!</h1>
+							</td>
+							<td class="td-right">
+							Cara diatas adalah ide yang bagus untuk menyimpan <q lang="code">script</q> 
+							diantara tanda <q lang="code">body</q>. <br>Cara ini dapat meningkatkan performa 
+							ketika sedang memuat halaman. <br>Dan kumpulan kode - kode bisa memperlambat halaman saat ditampilkan.
+							</td>
+						</tr>
+						</table>
+					</article>
+</section>
+<section>
+				<article>
+				<h1> JavaScript dapat ditempatkan di luar file HTML</h1>
+				<p>
+					Cara ini dapat dipraktikan sebuah kode yang sama digunakan pada banyak web page yang berbeda.<br><br>
+					File JavaScript harus memiliki <b>format file .js</b><br><br>
+					Untuk menggunakan external script (naskah diluar HTML).<br>
+					Taruhlah nama file tersebut pada <b>src</b> (sumber) attribute didalam <q lang="code">script</q> tag.
+				</p>
+				</article>
+				<article>
+				<table class="attention">
+				<tr>
+				<td class="td-left">
+				<h1>!</h1>
+				</td>
+				<td class="td-right">
+				External script tidak berisi <q lang="code">script</q>.
+				</td>
+				</tr>
+				</table>
+				</article>
+</section>				
+<section>
+				<article>
+				<h1> Keuntungan JavaScript External</h1>
+				<p>
+				Penempatan JavaScript dalam External file (luar file HTML) memiliki beberapa keuntungan, yaitu:
+				</p>
+				<ul>
+					<li>Memisahkan HTML dan kode.</li>
+					<li>membuat HTML dan JavaScript mudah dibaca dan mengurus / memelihara.</li>
+					<li>menyembunyikan file JavaScript bisa mempercepat dalam memuat halaman.</li>
+				</ul>
+				</article>
+				<article id="NoB">
+					<a href="js introduction.html">
+						<div class="back">&larr; Kembali </div>
+					</a>
+					<a href="js output.html" >
+						<div class="next">Selanjutnya &rarr;</div>
+					</a>
+					
+				<article>
+</section>
+			
+		</div>
+<!--closing main-->
+	</div>
+			
+</div>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML Youtube </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML YouTube Videos </h1>
+				<p> Cara paling mudah untuk memainkan video dalam HTML, adalah menggunakan YouTube. </p>
+			</div>
+			
+			
+<section>			
+			<article>
+				<h2> Struggling with Video Formats? </h2>
+				<p> Tetap Berjuang denganFormat Video? </p>
+				<p> Versi - versi yang berbeda dari browser support yang berbeda format video yang berbeda. </p>
+				<p> Di tutorial sebelumnya, kamu telah melihat bahwa kamu mungkin harus mengubah atau 
+				mengkonversikan video kamu menjadu format video yang berbeda untuk membuat mereka dimain di semua browser.</p>
+				<p> Pengubahan video ke format yang berbeda bisa menjadi sulit dan memakan waktu. </p>
+				<p> Sebuah solusi yang lebih mudah mungkin membiarkan YouTube memainkan video di halaman web kamu. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> YouTube Video Id </h2>
+				<p> Id Video YouTube </p>
+				<p> YouTube akan menampilkan sebuah <b>id</b> (seperti XGSy3_Czz8k), ketika kamu menyimpan (atau memainkan) sebuah video. </p>
+				<p> Kamu bisa menggunakan <b>id</b> ini dan mengarahkan pada video kamu di HTML. </p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Playing a YouTube Video in HTML </h2>
+				<p> Pemutaran Video YouTube di HTML </p>
+				<p> Untuk memutar video kamu di halaman web, lakukanlah langkah - langkah berikut: </p>
+				<ul>
+					<li> Unggahlah video ke YouTube </li>
+					<li> Ambillah sebuah catatan id video </li>
+					<li> Definusikan sebuah element <<b>iframe</b>> dalam halaman web kamu</li>
+					<li> Izinkan tujuan attribute <b>src</b> ke URL video </li>
+					<li> Gunakanlah attribute <b>height</b> dan <b>width</b> untuk menentukan dimensi dari player (pemutar) </li>
+					<li> Tambahkan parameter lainnya untuk URL </li>
+				</ul>
+				
+				<article class="example-box">
+					<h4>Contoh - Penggunaan iFrame (metode yang dirrkomendasikan)</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br>
+							<<b>head</b>><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br> <br>
+								<<b>iframe</b> <span class="teal">width="420" height="315"
+								src="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=1"</span>>
+								<<b>/iframe</b>> <br><br>
+							<<b>/body</b>><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						<iframe width="420" height="315"
+						src="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=1">
+						</iframe>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> YouTube Parameters </h2>
+				<p> Parameter - parameter YouTube. </p>
+				
+				<div>
+				<h4>autohide</h4>
+				<p> Nilai 0: Player controls selalu diperlihatkan. </p>
+				<p> Nilai 1: Player controls secara otomatis disembunyikan ketika video diputar. </p>
+				<p> Nilai 2 (default): Jika player (pemutar) memiliki rasio 16:9 atau 4:3, sama seperti 1, kalau tidak sama seperti 0. </p>
+				</div>
+				
+				<div>
+				<h4>autoplay</h4>
+				<p> Nilai 0 (default): Video tidak akan diputar secara otomatis ketika memuat player. </p>
+				<p> Nilai 1: Video akan dimainkan secara otomatis ketika memuat player. </p>
+				</div>
+				
+				<div>
+				<h4> controls </h4>
+				<p> Nilai 0: Player controls tidak ditampilkan. Video memuat dengan segera. </p>
+				<p> Nilai 1 (default): Player control ditampilkan. Video memuat dengan segera. </p>
+				</div>
+				
+				<div>
+				<h4> loop </h4>
+				<p> Nilai 0 (default): video hanya dimainkan sekali saja. </p>
+				<p> Nilai 1: Video akan di-loop atau diulang - ulang (selalu). </p>
+				</div>
+				
+				<div>
+				<h4>playlist</h4>
+				<p> A comma separated list of videos to play (in addition to the original URL).</p>
+				<p class="grey"> Sebuah daftar pemisah koma dari video untuk dimainkan (pada penambahan URL asli). </p>
+				</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> YouTube <b class="blue"><<b>object</b>></b> Embeds </h2>
+				<p> YouTube <<b>object</b>> embeds diprotes dari bulan Januari 2015. </p>
+				<p> Kamu harus migrasi-kan applikasi kamu untuk menggunakan <<b>iframe</b>> embeds. </p>
+				
+				<article class="example-box">
+					<h4>Contoh - Penggunaan <<b>object</b>> (diprotes)</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br>
+							<<b>head</b>><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br> <br>
+								<<b>object</b> <span class="teal">width="420" height="315"
+								data="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=1"</span>>
+								<<b>/object</b>> <br><br>
+							<<b>/body</b>><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan02()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+							<object width="420" height="315"
+							data="http://www.youtube.com/embed/XGSy3_Czz8k">
+							</object>
+					</div>
+				</article>
+				
+				<article class="example-box">
+					<h4>Contoh - Penggunaan <<b>embed</b>> (diprotes)</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br>
+							<<b>head</b>><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br> <br>
+								<<b>embed</b> <span class="teal">width="420" height="315"
+								src="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=1"</span>><br><br>
+							<<b>/body</b>><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan03()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+							<embed width="420" height="315"
+							src="http://www.youtube.com/embed/XGSy3_Czz8k">
+					</div>
+				</article>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML plug-ins.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML geolocation.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

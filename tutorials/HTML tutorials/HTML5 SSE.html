@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML5 SEE </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML5 Server-Sent Events </h1>
+				<p> Server-Sent Event membolehkan halaman web untuk dapat memperbaharui dari server. </p>
+			</div>
+			
+			
+<section>			
+			<article>
+				<h2> Server-Sent Events - One Way Messaging </h2>
+				<p> Server-Sent Event - Pesan Satu Arah </p>
+				<p> Server-sent event adalah ketika web page secara otomatis memperbaharui (dari) server. </p>
+				<p> Ini juga adalah memungkinkan sebelumnya, tapi web page akan atau harus bertanya jika perbaharuan tersedia. Dengan server-sent event, mengupdate secara otomatis. </p>
+				<p> Contoh: Facebook/Twitter updates, stock price updates, news feeds, sport results, etc. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Browser Support </h2>
+				<p> Nomor pada tabel menentukan browser versi pertama yang mendukung secara penuh <b>SSE</b>. </p>
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td class="left"> API </td>
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> <b>SSE</b> </td>
+							<td> 6.0 </td>
+							<td> <span class="justRed">Not <br> supported</span> </td>
+							<td> 6.5 </td>
+							<td> 5.0 </td>
+							<td> 11.5 </td>
+						</tr>
+					</tbody>
+				</table> 
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Receive Server-Sent Event Notifications </h2>
+				<p> Menerima Notifikasi Server-Sent Event</p>
+				<p> Object <b>EventSource</b> digunakan untuk menerima pemberitahuan server-sent event: </p>
+				
+				<article class="example-box">
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br>
+						<<b>html</b>><br>
+							<<b>head</b>><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+							<<b>script</b>>
+							if(typeof(EventSource) !== "undefined") {
+							<blockquote>
+								var source = new EventSource("demo_sse.php"); <br>
+								source.onmessage = function(event) {
+								<blockquote>
+								document.getElementById("result").innerHTML += event.data + "<br>";
+								</blockquote>
+								};
+							</blockquote>
+							} else {
+							<blockquote>
+							document.getElementById("result").innerHTML = "Sorry, your browser does not support server-sent events...";
+							</blockquote>
+							}
+							<<b>/script</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br><br>
+							
+							<<b>h1</b>>Getting server updates<<b>/h1</b>> <br>
+							<<b>div</b> <span class="teal">id="result"</span>><<b>/div</b>> <br><br>
+								
+							<<b>/body</b>><br>
+						<<b>/html</b>>
+						
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						<h3>Getting server updates</h3>
+						<div id="result"></div>
+					</div>
+				</article>
+				
+				<p><b> Contoh menerangkan: </b></p>
+				<ul>
+					<li> Buatlah object <b>EventSource</b> baru, dan tentukan URL dari pengiriman halaman yang diupdate (dalam contoh ini adalah "demo_sse.php")</li>
+					<li> Setiap waktu sebuah update diterima, event <b>onmessage</b> terjadi</li>
+					<li> Ketika event <b>onmessage</b> terjadi, taruhlahdata yang diterima kedalam elemen dengan id="result"</li>
+				</ul>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Check Server-Sent Events Support </h2>
+				<p> Periksalah Server-Sent Events Support</p>
+				<p> Di Contoh diatas ada beberapa baris ekstra dari kode untuk mengecek browser support untuk <b>server-sent events</b>: </p>
+				
+				<div class="example-content">
+				<code>if</code>(typeof(EventSource) !== "undefined") { <br>
+				    <em>// Yes! Server-sent events support!</em> <br>
+				    <em>// Some code.....</em> <br>
+				} else { <br>
+				    <em>// Sorry! No server-sent events support..</em> <br>
+				}
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Server-Side Code Example </h2>
+				<p> Contoh Kode Server-Side </p>
+				<p> Untuk contoh diatas bekerja, kamu perlu sebuah server capabel tentang pengiriman data updates (seperti PHP atau ASP). </p>
+				<p> Server-side event mengeluarkan (stream) sintaksis sederhana. Aturlah header "Content-Type" menjadi "text/event-stream". Sekarang kamu bisa memulai pengiriman event streams. </p>
+				<p><b> Code dalam PHP (demo_sse.php): </b> </p> 
+				
+				<div class="example-content">
+				<<b>?php</b> <br>
+				header('Content-Type: text/event-stream'); <br>
+				header('Cache-Control: no-cache');<br>
+				<br>
+				$time = date('r'); <br>
+				echo "data: The server time is: {$time}\n\n"; <br>
+				flush();<br>
+				<b>?</b>>
+				</div>
+				
+				<p><b> Code dalam ASP (VB) (demo_sse.asp): </b> </p> 
+				
+				<div class="example-content">
+				<<b>%</b> <br>
+				Response.ContentType = "text/event-stream" <br>
+				Response.Expires = -1 <br>
+				Response.Write("data: The server time is: " & now()) <br>
+				Response.Flush() 
+				<b>%</b>>
+				</div>
+				
+				<p>Code menjelaskan: </p>
+				<ul>
+					<li> Aturlah header "Content-Type" menjadi "text/event-stream" </li>
+					<li> Tentukanlah bahwa halaman (page) tidak harus men-cache</li>
+					<li> Output (keluaran) data harus dikirim (<b>selalu</b> mulailah dengan "data: ") </li>
+					<li> flush (bilas/bersihkan) output data kembali menjadi halaman web </li>
+				</ul>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> The EventSource Object </h2>
+				<p> Pada contoh diatas kita gunakan event <b>onmessage</b> untuk mendapatkan pesan. Tapi event lain juga tersedia: </p>
+				
+				<table>
+					<thead>
+						<tr> 
+							<th> Event</th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> onopen </td>
+							<td> Ketika atau saat sebuah koneksi menuju server dibuka </td>
+						</tr>
+						<tr>
+							<td> onmessage </td>
+							<td> Ketika atau saat sebuah pesan diterima </td>
+						</tr>
+						<tr>
+							<td> onerror </td>
+							<td> Ketika atau saat sebuah error terjadi </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML5 web worker.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML5 SSE.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+<script>
+if(typeof(EventSource) !== "undefined") {
+var source = new EventSource("demo_sse.php");
+source.onmessage = function(event) {
+document.getElementById("result").innerHTML += event.data + "<br>";
+};
+} else {
+document.getElementById("result").innerHTML = "Sorry, your browser does not support server-sent events...";
+}
+</script>
+</body>
+</html>

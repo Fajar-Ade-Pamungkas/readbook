@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS Fonts </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+p.serif {
+	font-family: "Times New Roman", Times, serif;
+}
+
+p.sansserif {
+	font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Fonts </h1>
+				<p> Properti <mark>font</mark> CSS mendefinisikan font family, boldness, size dan style dari suatu teks. </p>
+				
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> Difference Between Serif and Sans-serif Fonts </h2>
+				
+				<ul>
+					<li style="font-family:arial, serif;"> Serif </li>
+					<li style="font-family:times new roman, sans-serif;"> Sans-serif </li>
+				</ul>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> CSS Font Families </h2>
+				<p> Pada CSS, ada dua tipe nama font family: </p>
+				<ul>
+					<li> <b>generic family</b> - Suatu kelompok dari font family dengan penampilan yang mirip (seperti "Serif" atau "Monispace") </li>
+					<li> <b>font family</b> - Sebuah font family tertentu (seperti "Time new roman" atau "Arial") </li>
+				</ul>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Generic family</th>
+							<th> Font Family </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> Serif </td>
+							<td> 
+								<ul>
+									<li style="font-family:times new roman;"> Times New Roman </li>
+									<li style="font-family:georgia;"> Georgia </li>
+								</ul>
+							</td>
+							<td> Serif font memiliki garis kecil di akhir pada beberapa karakter </td>
+						</tr>
+						<tr>
+							<td> Sans-serif </td>
+							<td> 
+								<ul>
+									<li style="font-family:Arial;"> Arial </li>
+									<li style="font-family:verdana;"> Verdana </li>
+								</ul>
+							</td>
+							<td> "Sans" berarti tanpa - Font ini tidak memiliki garis di akhir karakter </td>
+						</tr>
+						<tr>
+							<td> Monospace </td>
+							<td> 
+								<ul>
+									<li style="font-family:courier new;"> Courier New </li>
+									<li style="font-family:lucida console;"> Lucida Console </li>
+								</ul>
+							</td>
+							<td> Semua karakter monospace memiliki tebal yang sama. </td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="nasehat">
+					<p><b>Catatan:</b> Pada layar komputer, <b>sans-serif</b> font lebih mudah dipertimbangkan untuk membaca daripada <b>serif</b> font
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Font Family</h2>
+				<p> Font family dari suatu teks diatur dengan properti <mark>font-family</mark>. </p>
+				<p> Properti <mark>font-family</mark> harus menggenggam beberapa nama font sebagai sistem "fallback". Jika browser tidak men-suppport font pertama, mencoba font selanjutnya dan seterusnya. </p>
+				<p> Awali dengan font yang kamu inginkan, dan akhiri dengan generic family untuj membiarkan browser mengangkut  font yang mirip dalam gereric family, jika tidak font lain disediakan. </p>
+				<div class="nasehat">
+					<p><b>Catatan:</b> Jika nama dari font family lebih daru satu kata, harus ditandai kutip, seperti "Times New Roman". </p>
+				</div>
+				<p> Lebih dari satu font family ditentukan dalam koma pemisah daftar: </p>
+				<article class="example-box">
+					<h4>Contoh</h4>
+					<div class="example-content">
+					
+						p.serif {
+						<blockquote>
+						    font-family: "Times New Roman", Times, serif;
+						</blockquote>
+						} <br>
+						<br>
+						p.sansserif {
+						<blockquote>
+						    font-family: Arial, Helvetica, sans-serif;
+						</blockquote>
+						}
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						
+						<p style="font-size:30px; text-align:center;">CSS font-family</p>
+						<p class="serif">This is a paragraph, shown in the Times New Roman font.</p>
+						<p class="sansserif">This is a paragraph, shown in the Arial font.</p>
+						
+					</div>
+				</article>
+				<p> Untuk digunakan secara umum font kombinasi, lihatlah di <a href="web safe font combinators.html" >Web Safe Font Combinations</a>.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Font Style </h2>
+				<p> Properti <mark>font-family</mark> paling banyak digunakan untuk menentukan teks miring. </p>
+				<p> Propertiini memiliki tiga nilai: </p>
+				<ul>
+					<li> <b>normal</b> - teks ditampilkan secara normal </li>
+					<li> <b>italic</b> - teks ditamoilkan secara italic (miring) </li>
+					<li> <b>oblique</b> - teks is "learning" (oblique sangat mirip dengan italic, tapi disupport kecil)</li>
+				</ul>
+				
+				<article class="example-box">
+					<h4>Contoh</h4>
+					<div class="example-content">
+					
+					p.normal {
+					<blockquote>
+					    font-style: normal;
+					</blockquote>
+					} <br>
+					<br>
+					p.italic {
+					<blockquote>
+					    font-style: italic;
+					</blockquote>
+					}<br>
+					<br>
+					p.oblique {
+					<blockquote>
+					    font-style: oblique;
+					</blockquote>
+					}
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+						
+						<p style="font-style:normal;">This is a paragraph in normal style.</p>
+						<p style="font-style:italic;">This is a paragraph in italic style.</p>
+						<p style="font-style:oblique;">This is a paragraph in oblique style.</p>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Font Size </h2>
+				<p> Properti <mark>font-size</mark> mengatur ukuran dari suatu teks. </p>
+				<p> Bisa me-manage ukuran teks penting dalam web design. </p>
+				<p> Selalu gunakan properti HTML tag, seperti <<b>h1</b>> - <<b>h6</b>> untuk heading dan <<b>p</b>> untuk paragraf. </p>
+				<p> Nilai <mark>font-size</mark> bisa menjadi absolute atau relative. </p>
+				<p> Nilai Absolute:</p>
+				<ul>
+					<li> Mengatur teks menjadi ukuran tertentu</li>
+					<li> Jangan izinkan pengguna untuk mengubah ukuran teks dalam semua browser (itu buruk untuk alasan accessibility)</li>
+					<li> Absolute size berguna ketika ukuran fisik dari output yang diketahui. </li>
+				</ul>
+				<p> Relative Size: </p>
+				<ul>
+					<li> Mengatur ukuran relative untuk melingkupi element</li>
+					<li> Izinkan pengguna untuk mengubah ukuran teks pada browser </li>
+				</ul>
+				<div class="nasehat">
+				<p> <b>Catatan:</b> Jika kamu tidak menentukan <b>font-size</b> (ukuran font), ukuran defualt untuk teks normal seperti paragraf adalah 16px (16px = 1em)</p>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Set Font Size With Pixels </h2>
+				<p> Mengatur Ukuran Font Dengan Pixel </p>
+				<p> Pengaturan ukuran teks dengan pixel memberikan kamu kontrol penuh ukuran teks: </p>
+				
+				<article class="example-box">
+					<h4>Contoh</h4>
+					<div class="example-content">
+				
+						h1 {
+						<blockquote>
+						    font-size: 40px;
+						</blockquote>
+						}<br>
+						<br>
+						h2 {
+						<blockquote>
+						    font-size: 30px;
+						</blockquote>
+						}<br>
+						<br>
+						p {
+						<blockquote>
+						    font-size: 14px;
+						</blockquote>
+						}
+						
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+						
+						
+						<p style="font-size: 40px;">This is heading 1</p>
+						<p style="font-size: 30px;">This is heading 2</p>
+						<p style="font-size: 14px;">This is a paragraph.</p>
+						<p style="font-size: 14px;">This is another paragraph.</p>
+						
+					</div>
+				</article>
+				
+				<div class="nasehat">
+				<p> <b>Catatan:</b> Jika kamu menggunakan pixel, kamu masih bisa menggunakan zoom tool untuk me-resize keseluruhan halaman. </p>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Set Font Size With Em</h2>
+				<p> Mengatur Ukuran Font Dengan Em</p>
+				<p> Untuk mengizinkan para pengguna untuk me-resize teks (dalam browser menu), banyak pengembang menggunakan <b>em</b> sebagai pengganti dari <b>pixel</b>. </p>
+				<p> Satuan ukur <b>em</b> direkomendasikan oleh W3C. </p>
+				<p> 1em sama dengan font saat ini. ukuran teks default dalam browser adalah 16px. Jadi, ukuran default dari 1em adalah 16px. </p>
+				<p> Ukuran bisa dikalkulasikan dari pixel menjadi em menggunakan <b>formula: pixels/16=em</b>
+				
+				<article class="example-box">
+					<h4>Contoh</h4>
+					<div class="example-content">
+					
+						h1 {
+						<blockquote>
+						    font-size: 2.5em; <em>/* 40px/16=2.5em */</em>
+						</blockquote>
+						} <br>
+						 <br>
+						h2 {
+						<blockquote>
+						    font-size: 1.875em; <em>/* 30px/16=1.875em */</em>
+						</blockquote>
+						}<br>
+						<br>
+						p {
+						<blockquote>
+						    font-size: 0.875em; <em>/* 14px/16=0.875em */</em>
+						</blockquote>
+						}
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+						
+						<p style="font-size: 2.5em;">This is heading 1</p>
+						<p style="font-size: 1.875em;">This is heading 2</p>
+						<p style="font-size: 0.875em;">This is a paragraph.</p>
+						<p style="font-size: 0.875em;">Specifying the font-size in em allows all major browsers to resize the text.
+						Unfortunately, there is still a problem with older versions of IE. When resizing the text, it becomes larger/smaller than it should.</p>
+						
+						
+					</div>
+				</article>
+				<p> Contih diatas, ukuran teks dalam (satuan) em sama sepertu contoh sebelumnya dalam pixel. Akan tetapi, dengan ukuran em, it memungkinkan untuk menyesuaikan ukuran teks dalam semua browser. </p>
+				<p> Sayangnya, masih ada masalah dengan versi dulu dari IE. Tejs menjadi lebih besar daripada seharusnya ketika dibuat lebih besar, dan lebih kecil daripada seharusnya ketika dibuat lebih kecil. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Use a Combination of Percent and Em</h2>
+				<p> Menggunakan Kombinasi dari Persen dan Em
+				<p> Gunakanlah Kombinasi dari Persen dan Em </p>
+				<p> Solusi yang bekerja dalam semua browser, ialah dengan mengatur  default <b>font-size</b> dalam (satuan) persen untuk element <<b>body</b>>: </p>
+				
+				<article class="example-box">
+					<h4>Contoh</h4>
+					<div class="example-content">
+				
+						body {
+						<blockquote>
+						    font-size: 100%;
+						</blockquote>
+						}<br>
+						<br>
+						h1 {
+						<blockquote>
+						    font-size: 2.5em;
+						</blockquote>
+						}<br>
+						<br>
+						h2 {
+						<blockquote>
+						    font-size: 1.875em;
+						</blockquote>
+						}<br>
+						<br>
+						p {
+						<blockquote>
+						    font-size: 0.875em;
+						</blockquote>
+						}
+				
+					</div>
+					<button onclick="tampilkan05()" class="exbutton">Klik disini</button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+						
+						<div style="font-size:100%;">
+						<p style="font-size: 2.5em;">This is heading 1</p>
+						<p style="font-size: 1.87em;">This is heading 2</p>
+						<p style="font-size: 0.875em;">This is a paragraph.</p>
+						<p style="font-size: 0.875em;">Specifying the font-size in percent and em displays the same size in all major browsers, and allows all browsers to resize the text!</p>
+						</div>
+						
+					</div>
+				</article>
+				<p> Kode kita sekarang bekerja dengan baik! Ini menampilkan ukuran teks yang sama dalam semua browser dan memperbolehkan semua browser untuk me-zoom dan me-resize teks! </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Font Weight </h2>
+				<p> Properti <mark>font-weight</mark> menentuksn ketebalan dsri suatu font: </p>
+				
+				<article class="example-box">
+					<h4>Contoh</h4>
+					<div class="example-content">
+
+						p.normal {
+						<blockquote>
+						    font-weight: normal;
+						</blockquote>
+						}<br>
+						<br>
+						p.thick {
+						<blockquote>
+						    font-weight: bold;
+						</blockquote>
+						}
+				
+					</div>
+					<button onclick="tampilkan06()" class="exbutton">Klik disini</button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+						
+						<p style="font-weight:normal;">This is a paragraph.</p>
+						<p style="font-weight:bold;">This is a paragraph.</p>
+						<p style="font-weight:bold;">This is a paragraph.</p>
+						<p style="font-weight:bolder;">This is a paragraph.</p>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Font Variant</h2>
+				<p> Properti <mark>font-variant</mark> menentukan apakah Ya atau Tidak teks harus ditampilkan dalam small-caps font (huruf besar atau kecil).</p>
+				<p> Pada small-cap fot, Semua lowercase (huruf kecil) diubah menjadi uppercase letter (huruf besar). Akan tetapi, mengubah huruf besar tampak dslsm ukuran font yang kebih kecil daripada 
+				huruf besar aslinya dalam teks. </p>
+				
+				<article class="example-box">
+					<h4>Contoh</h4>
+					<div class="example-content">
+					
+						p.normal {
+						<blockquote>
+						    font-variant: normal;
+						</blockquote>
+						} <br>
+						<br>
+						p.small {
+						<blockquote>
+						    font-variant: small-caps;
+						</blockquote>
+						}
+					
+					</div>
+					<button onclick="tampilkan07()" class="exbutton">Klik disini</button>
+					<div class="example-content sembunyikan" id="sembunyikan07">
+					
+					<p style="font-variant:normal;"> I am the normal text </p>
+					<p style="font-variant:small-caps;"> I am small-caps </p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> All CSS Font Properties</h2>
+				<table class="table">
+					<thead>
+						<tr> 
+							<th>Properti</th>
+							<th>Deskripsi</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> font </td>
+							<td> Mengatr semua properti font dalam satu deklarasi</td>
+						</tr>
+						<tr>
+							<td> font-family </td>
+							<td> Menentukan font family (tipe huruf) untuk teks</td>
+						</tr>
+						<tr>
+							<td> font-size </td>
+							<td> Menentukan Ukuran font dari teks</td>
+						</tr>
+						<tr>
+							<td> font-style </td>
+							<td> Menentukan gaya font untuj teks </td>
+						</tr>
+						<tr>
+							<td> font-variant </td>
+							<td> Menentukan apakah ya atau tidak teks harus ditampilkan dalam small-caps font (font kecil - kapital)</td>
+						</tr>
+						<tr>
+							<td> font-weight </td>
+							<td> Menentukan ketebalaj dari suatu teks</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS text.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS links.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

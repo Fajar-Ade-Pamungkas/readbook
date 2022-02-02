@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<script type="text/javascript" src="buka.js"></script>
+<style type="text/css">
+#sembunyikan01 #home { 
+	width: 46px; 
+	height: 44px; 
+	background: url(../gif/kiss2.gif) 0 0; 
+}
+#sembunyikan01 #next { 
+	width: 46px; 
+	height: 44px; 
+	background: url(../gif/kiss2.gif) 0 0; 
+}
+
+
+#sembunyikan03 #navlist {
+position: relative;
+}
+
+#sembunyikan03 #navlist li {
+margin: 0;
+padding: 0;
+list-style: none;
+position: absolute;
+top: 0;
+}
+
+#sembunyikan03 #navlist li, #navlist a {
+height: 44px;
+display: block;
+}
+
+#sembunyikan03 #home {
+left: 0px;
+width: 46px;
+background: url('../gif/kiss2.gif') 0 0;
+}
+
+#sembunyikan03 #prev {
+left: 63px;
+width: 43px;
+background: url('../gif/kiss2.gif') -47px 0;
+}
+
+#sembunyikan03 #next {
+left: 129px;
+width: 43px;
+background: url('../gif/kiss2.gif') -91px 0;
+}
+
+#sembunyikan03 #home a:hover {
+background: url('../gif/kiss2.gif') 0 -45px;
+}
+
+#sembunyikan03 #prev a:hover {
+background: url('../gif/kiss2.gif') -47px -45px;
+}
+
+#sembunyikan03 #next a:hover {
+background: url('../gif/kiss2.gif') -91px -45px;
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Image Sprites </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> Image Sprites </h2>
+				<p> Sebuah image sprite merupkaan sekumpulan image yang ditaruh kedalam single image (image tunggal).</p>
+				<p> Web page dengan banyak image bisa memakan banyak waktu untuk memuat dan menghasilkan multiple server requests. </p>
+				<p> Penggunaan image sprites akan mengurangi nomor (atau muatan) daei server requests dan menyimpan bandwidth.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Image Sprites - Simple Example </h2>
+				<p> Image Sprites - Contoh Sederhana</p>
+				<p> Sebagai pengganti dari penggunaan 3 separate image, kita menggunakan single image ini ("img_navspirates.gif"):</p>
+				
+				
+				<p> Dengan CSS, kita bisa hanya menampilkan bagian dari iamge yang kita perlukan.</p>
+				<p> Pada contoh berikut CSS menentukan bagian yang mana dari image "img_navsprites.gif" untuk ditampilkan:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						#home { <br>
+						width: 46px; <br>
+						height: 44px; <br>
+						background: url(img_navsprites.gif) 0 0; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#home { <br>
+						width: 46px; <br>
+						height: 44px; <br>
+						background: url(img_navsprites.gif) 0 0; <br>
+						} <br>
+						 <br>
+						#next { <br>
+						width: 43px; <br>
+						height: 44px; <br>
+						background: url(img_navsprites.gif) -91px 0; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>img</b> <span class="teal">id="home" src="img_trans.gif"</span>><<b>br></b><<b>br</b>> <br> <br>
+					<<b>img</b> <span class="teal">id="next" src="img_trans.gif"</span>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<img id="home" src="img_trans.gif"><br><br>
+						<img id="next" src="img_trans.gif">
+					
+					</div>
+				</article>
+				
+				<p><b>Contoh Menerangkan:</b></p>
+				<ul>
+					<li> <<b>img</b> <span class="teal">id="home" sec="img_trans.gif"</span>> - Hanya mendefinisikan sebuah image kecil transparan karena atttribute 
+					<mark>src</mark> tidak boleh kosong. Image yang ditampilkan akan menjadi background image yang kita tentukan dalam CSS</li>
+					<li> <mark>width: 46px; height: 44px;</mark> - Mendefinisikan bagian dari iange yang kita ingin lihat</li>
+					<li> <mark>background: url(img_navsprites.gif) 0 0;</mark> - Mendefinisikan background image dan posisinya (left: 0px;, top: 0px;)</li>
+					<li> Ini merupakan cara paling mudah untuk menggunakan image sprites, sekarang kita ingin memperluasnya dengan menggunakan link dan efek hover.</li>
+				</ul>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Image Sprites - Create a Navigation List </h2>
+				<p> Image Sprires - Membuat sebuah Navigation List </p>
+				<p> Kita ingin menggunakan sprite image ("img_navsprite.gif") untuk membuat sebuah navigarion list.</p>
+				<p> Kita akan menggunakan sebuah HTML list, karena ini bisa menjadi sebuah link dam juga mendukung sebuah background image:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						#navlist { <br>
+						position: relative; <br>
+						} <br>
+						 <br>
+						#navlist li { <br>
+						margin: 0; <br>
+						padding: 0; <br>
+						list-style: none; <br>
+						position: absolute; <br>
+						top: 0; <br>
+						} <br>
+						 <br>
+						#navlist li, #navlist a { <br>
+						height: 44px; <br>
+						display: block; <br>
+						} <br>
+						 <br>
+						#home { <br>
+						left: 0px; <br>
+						width: 46px; <br>
+						background: url('img_navsprites.gif') 0 0; <br>
+						} <br>
+						 <br>
+						#prev { <br>
+						left: 63px; <br>
+						width: 43px; <br>
+						background: url('img_navsprites.gif') -47px 0; <br>
+						} <br>
+						 <br>
+						#next { <br>
+						left: 129px; <br>
+						width: 43px; <br>
+						background: url('img_navsprites.gif') -91px 0; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#navlist { <br>
+						position: relative; <br>
+						} <br>
+						 <br>
+						#navlist li { <br>
+						margin: 0; <br>
+						padding: 0; <br>
+						list-style: none; <br>
+						position: absolute; <br>
+						top: 0; <br>
+						} <br>
+						 <br>
+						#navlist li, #navlist a { <br>
+						height: 44px; <br>
+						display: block; <br>
+						} <br>
+						 <br>
+						#home { <br>
+						left: 0px; <br>
+						width: 46px; <br>
+						background: url('img_navsprites.gif') 0 0; <br>
+						} <br>
+						 <br>
+						#prev { <br>
+						left: 63px; <br>
+						width: 43px; <br>
+						background: url('img_navsprites.gif') -47px 0; <br>
+						} <br>
+						 <br>
+						#next { <br>
+						left: 129px; <br>
+						width: 43px; <br>
+						background: url('img_navsprites.gif') -91px 0; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>ul</b> <span class="teal">id="navlist"</span>> <br>
+					<<b>li</b> <span class="teal">id="home"><<b>a</b> <span class="teal">href="default.html"</span>><<b>/a</b>><<b>/li</b>> <br>
+					<<b>li</b> <span class="teal">id="prev"><<b>a</b> <span class="teal">href="css_intro.html"</span>><<b>/a</b>><<b>/li</b>> <br>
+					<<b>li</b> <span class="teal">id="next"><<b>a</b> <span class="teal">href="css_syntax.html"</span>><<b>/a</b>><<b>/li</b>> <br>
+					<<b>/ul</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<ul id="navlist">
+						<li id="home"><a href="default.html"></a></li>
+						<li id="prev"><a href="css_intro.html"></a></li>
+						<li id="next"><a href="css_syntax.html"></a></li>
+						</ul>
+						
+					</div>
+				</article>
+				
+				<p> <b>Contoh Menjelaskan:</b></p>
+				<ul>
+					<li> <mark>#navlist {position:relative;}</mark> - Posisi diatur menjadi relative untuk memperbolehkan penempatan absolute kedalamnya</li>
+					<li> <mark>#navlist li {margin:0;padding:0;list-style:none;position:absolute;top:0;}</mark> - margin dan padding diatur menjadi 0, list-style dihapus, dan semua list item diposisikan sebagai absolute</li>
+					<li> <mark>#navlist li, #navlist a {height:44px;display:block;}</mark> - Tinggi dari semua image adalah 44px</li>
+				</ul>
+				
+				<p> Sekarang mulailah untuk memposisikan dan me-style setiap bagian yang spesifik: </p>
+				
+				<ul>
+					<li> <mark>#home {left:0px;width:46px;}</mark> - Menempatkan semuanya ke kiri dan lebar image adalah 46px</li>
+					<li><mark>#home {background:url(img_navsprites.gif) 0 0;}</mark> - Mendefinisikan background image dan memposisikannya (left 0px, top 0px)</li>
+					<li> <mark>#prev {left:63px;width:43px;}</mark> - Memposisikan 63px ke kanan (#home lebar 46px + beberapa extra space antara items), dan lebar adalah 43px.</li>
+					<li> <mark>#prev {background:url('img_navsprites.gif') -47px 0;}</mark> - Mendedinsikan background image 47px ke kanan (#home lebar 46px + 1px line divider) </li>
+					<li> <mark>#next {left:129px;width:43px;}</mark> - Memposisikan 129px ke kanan (dimulai dari #prev adalah 63px + #prev lebar 43px + extra space), dan lebar adalah 43px.</li>
+					<li> <mark>#next {background:url('img_navsprites.gif') -91px 0;}</mark> - Mendefinisikan background image 91px ke kanan (#home lebar 46px + 1px line divider + #prev lebar 43px + 1px line divider )</li>
+				</ul>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Image Sprites - Hover Effect</h2>
+				<p> Sekarang kita ingin menggunakan efek hover untjk navigation list kita.</p> 
+				<div class="nasheat">
+					<p> <b>Catatan:</b> selector <mark>:hover</mark> bisa digunakan pada semua element, tidak hanya pada link.</p>
+				</div>
+				
+				<p> Karena ini merupakan one single image, dan bukan  six separate files, akan ada yang tidak penundaan (delay) dimuat saat user meng-hover image.</p>
+				<p> Kita hanya menambahkan tiga baris dari kode untuk menambahkan efek hover:</p>
+				
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open03">
+						
+						#home a:hover { <br>
+						background: url('img_navsprites_hover.gif') 0 -45px; <br>
+						} <br>
+						 <br>
+						#prev a:hover { <br>
+						background: url('img_navsprites_hover.gif') -47px -45px; <br>
+						} <br>
+						 <br>
+						#next a:hover { <br>
+						background: url('img_navsprites_hover.gif') -91px -45px; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#navlist { <br>
+						position: relative; <br>
+						} <br>
+						 <br>
+						#navlist li { <br>
+						margin: 0; <br>
+						padding: 0; <br>
+						list-style: none; <br>
+						position: absolute; <br>
+						top: 0; <br>
+						} <br>
+						 <br>
+						#navlist li, #navlist a { <br>
+						height: 44px; <br>
+						display: block; <br>
+						} <br>
+						 <br>
+						#home { <br>
+						left: 0px; <br>
+						width: 46px;
+						background: url('img_navsprites_hover.gif') 0 0; <br>
+						} <br>
+						 <br>
+						#prev { <br>
+						left: 63px; <br>
+						width: 43px; <br>
+						background: url('img_navsprites_hover.gif') -47px 0; <br>
+						} <br>
+						 <br>
+						#next { <br>
+						left: 129px; <br>
+						width: 43px; <br>
+						background: url('img_navsprites_hover.gif') -91px 0; <br>
+						} <br>
+						 <br>
+						#home a:hover { <br>
+						background: url('img_navsprites_hover.gif') 0 -45px; <br>
+						} <br>
+						 <br>
+						#prev a:hover { <br>
+						background: url('img_navsprites_hover.gif') -47px -45px; <br>
+						} <br>
+						 <br>
+						#next a:hover {
+						background: url('img_navsprites_hover.gif') -91px -45px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>ul</b> <span class="teal">id="navlist"</span>> <br>
+					<<b>li</b> <span class="teal">id="home"</span>><<b>a</b> <span class="teal">href="default.html"</span>><<b>/a</b>><<b>/li</b>> <br>
+					<<b>li</b> <span class="teal">id="prev"</span>><<b>a</b> <span class="teal">href="css_intro.html"</span>><<b>/a</b>><<b>/li</b>> <br>
+					<<b>li</b> <span class="teal">id="next"</span>><<b>a</b> <span class="teal">href="css_syntax.html"</span>><<b>/a</b>><<b>/li</b>> <br>
+					<<b>/ul</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+					<ul id="navlist">
+					<li id="home"><a href="default.html"></a></li>
+					<li id="prev"><a href="css_intro.html"></a></li>
+					<li id="next"><a href="css_syntax.html"></a></li>
+					</ul>
+					
+					
+					
+					</div>
+				</article>
+				<p><b>Contoh menerangkan:</b></p>
+				<p> <b>#home a:hover {background: transparent url('img_navsprites_hover.gif') 0 -45px;}</b> - 
+				Untuk semua (3) hover image yang kita tentukan posisi background yang sama, hanya 45 further down</p>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS image opacity.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS attr selectors.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

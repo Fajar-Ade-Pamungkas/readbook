@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS3 Animations </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+#sembunyikan01 div {
+width: 100px;
+height: 100px;
+background-color: red;
+-webkit-animation-name: example1; /* Chrome, Safari, Opera */
+-webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+animation-name: example1;
+animation-duration: 4s;
+}
+
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes example1 {
+	from {background-color: red;}
+	to {background-color: yellow;}
+	}
+	
+	/* Standard syntax */
+	@keyframes example1 {
+	from {background-color: red;}
+	to {background-color: yellow;}
+	}
+
+
+#sembunyikan02 div {
+width: 100px;
+height: 100px;
+background-color: red;
+-webkit-animation-name: example2; /* Chrome, Safari, Opera */
+-webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+animation-name: example2;
+animation-duration: 4s;
+}
+	
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes example2 {
+	0%   {background-color: red;}
+	25%  {background-color: yellow;}
+	50%  {background-color: blue;}
+	100% {background-color: green;}
+	}
+	
+	/* Standard syntax */
+	@keyframes example2 {
+	0%   {background-color: red;}
+	25%  {background-color: yellow;}
+	50%  {background-color: blue;}
+	100% {background-color: green;}
+	}
+
+
+#sembunyikan03 div {
+width: 100px;
+height: 100px;
+background-color: red;
+position: relative;
+-webkit-animation-name: example3; /* Chrome, Safari, Opera */
+-webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+animation-name: example3;
+animation-duration: 4s;
+}
+	
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes example3 {
+	0%   {background-color:red; left:0px; top:0px;}
+	25%  {background-color:yellow; left:200px; top:0px;}
+	50%  {background-color:blue; left:200px; top:200px;}
+	75%  {background-color:green; left:0px; top:200px;}
+	100% {background-color:red; left:0px; top:0px;}
+	}
+	
+	/* Standard syntax */
+	@keyframes example3 {
+	0%   {background-color:red; left:0px; top:0px;}
+	25%  {background-color:yellow; left:200px; top:0px;}
+	50%  {background-color:blue; left:200px; top:200px;}
+	75%  {background-color:green; left:0px; top:200px;}
+	100% {background-color:red; left:0px; top:0px;}
+	}
+
+
+#sembunyikan04 div {
+width: 100px;
+height: 100px;
+background-color: red;
+position: relative;
+-webkit-animation-name: example4; /* Chrome, Safari, Opera */
+-webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+-webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+animation-name: example4;
+animation-duration: 4s;
+animation-delay: 2s;
+}
+
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes example4 {
+	0%   {background-color:red; left:0px; top:0px;}
+	25%  {background-color:yellow; left:200px; top:0px;}
+	50%  {background-color:blue; left:200px; top:200px;}
+	75%  {background-color:green; left:0px; top:200px;}
+	100% {background-color:red; left:0px; top:0px;}
+	}
+	
+	/* Standard syntax */
+	@keyframes example4 {
+	0%   {background-color:red; left:0px; top:0px;}
+	25%  {background-color:yellow; left:200px; top:0px;}
+	50%  {background-color:blue; left:200px; top:200px;}
+	75%  {background-color:green; left:0px; top:200px;}
+	100% {background-color:red; left:0px; top:0px;}
+	}
+
+
+#sembunyikan05 div {
+width: 100px;
+height: 100px;
+background-color: red;
+position: relative;
+-webkit-animation-name: example5; /* Chrome, Safari, Opera */
+-webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+-webkit-animation-iteration-count: 3; /* Chrome, Safari, Opera */
+animation-name: example5;
+animation-duration: 4s;
+animation-iteration-count: 3;
+}
+
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes example5 {
+	0%   {background-color:red; left:0px; top:0px;}
+	25%  {background-color:yellow; left:200px; top:0px;}
+	50%  {background-color:blue; left:200px; top:200px;}
+	75%  {background-color:green; left:0px; top:200px;}
+	100% {background-color:red; left:0px; top:0px;}
+	}
+	
+	/* Standard syntax */
+	@keyframes example5 {
+	0%   {background-color:red; left:0px; top:0px;}
+	25%  {background-color:yellow; left:200px; top:0px;}
+	50%  {background-color:blue; left:200px; top:200px;}
+	75%  {background-color:green; left:0px; top:200px;}
+	100% {background-color:red; left:0px; top:0px;}
+	}
+
+
+#sembunyikan06 div {
+width: 100px;
+height: 100px;
+background-color: red;
+position: relative;
+-webkit-animation-name: example6; /* Chrome, Safari, Opera */
+-webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+-webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+animation-name: example6;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+}
+
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes example6 {
+	0%   {background-color:red; left:0px; top:0px;}
+	25%  {background-color:yellow; left:200px; top:0px;}
+	50%  {background-color:blue; left:200px; top:200px;}
+	75%  {background-color:green; left:0px; top:200px;}
+	100% {background-color:red; left:0px; top:0px;}
+	}
+	
+	/* Standard syntax */
+	@keyframes example6 {
+	0%   {background-color:red; left:0px; top:0px;}
+	25%  {background-color:yellow; left:200px; top:0px;}
+	50%  {background-color:blue; left:200px; top:200px;}
+	75%  {background-color:green; left:0px; top:200px;}
+	100% {background-color:red; left:0px; top:0px;}
+	}
+
+
+#sembunyikan07 div {
+width: 100px;
+height: 100px;
+background-color: red;
+position: relative;
+-webkit-animation-name: example7; /* Chrome, Safari, Opera */
+-webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+-webkit-animation-iteration-count: 3; /* Chrome, Safari, Opera */
+-webkit-animation-direction: reverse; /* Chrome, Safari, Opera */
+animation-name: example7;
+animation-duration: 4s;
+animation-iteration-count: 3;
+animation-direction: reverse;    
+}
+
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes example7 {
+	0%   {background-color:red; left:0px; top:0px;}
+	25%  {background-color:yellow; left:200px; top:0px;}
+	50%  {background-color:blue; left:200px; top:200px;}
+	75%  {background-color:green; left:0px; top:200px;}
+	100% {background-color:red; left:0px; top:0px;}
+	}
+	
+	/* Standard syntax */
+	@keyframes example7 {
+	0%   {background-color:red; left:0px; top:0px;}
+	25%  {background-color:yellow; left:200px; top:0px;}
+	50%  {background-color:blue; left:200px; top:200px;}
+	75%  {background-color:green; left:0px; top:200px;}
+	100% {background-color:red; left:0px; top:0px;}
+	}
+
+#sembunyikan08 div { 
+width: 100px; 
+height: 100px; 
+background-color: red; 
+position: relative; 
+-webkit-animation-name: example8; /* Chrome, Safari, Opera */ 
+-webkit-animation-duration: 4s; /* Chrome, Safari, Opera */ 
+-webkit-animation-iteration-count: 3; /* Chrome, Safari, Opera */ 
+-webkit-animation-direction: alternate; /* Chrome, Safari, Opera */ 
+animation-name: example8; 
+animation-duration: 4s; 
+animation-iteration-count: 3; 
+animation-direction: alternate; 
+} 
+	
+	/* Chrome, Safari, Opera */ 
+	@-webkit-keyframes example8 { 
+	0% {background-color:red; left:0px; top:0px;} 
+	25% {background-color:yellow; left:200px; top:0px;} 
+	50% {background-color:blue; left:200px; top:200px;} 
+	75% {background-color:green; left:0px; top:200px;} 
+	100% {background-color:red; left:0px; top:0px;} 
+	} 
+	
+	/* Standard syntax */ 
+	@keyframes example8 { 
+	0% {background-color:red; left:0px; top:0px;} 
+	25% {background-color:yellow; left:200px; top:0px;} 
+	50% {background-color:blue; left:200px; top:200px;} 
+	75% {background-color:green; left:0px; top:200px;} 
+	100% {background-color:red; left:0px; top:0px;} 
+	} 
+
+#sembunyikan09 div { 
+width: 100px; 
+height: 50px; 
+background-color: red; 
+font-weight: bold; 
+position: relative; 
+-webkit-animation: mymove9 5s infinite; /* Chrome, Safari, Opera */ 
+animation: mymove9 5s infinite; 
+} 
+	
+	/* Chrome, Safari, Opera */ 
+	#div1 {-webkit-animation-timing-function: linear;} 
+	#div2 {-webkit-animation-timing-function: ease;} 
+	#div3 {-webkit-animation-timing-function: ease-in;} 
+	#div4 {-webkit-animation-timing-function: ease-out;} 
+	#div5 {-webkit-animation-timing-function: ease-in-out;} 
+	
+	/* Standard syntax */ 
+	#div1 {animation-timing-function: linear;} 
+	#div2 {animation-timing-function: ease;} 
+	#div3 {animation-timing-function: ease-in;} 
+	#div4 {animation-timing-function: ease-out;} 
+	#div5 {animation-timing-function: ease-in-out;} 
+	
+	/* Chrome, Safari, Opera */ 
+	@-webkit-keyframes mymove9 { 
+	from {left: 0px;} 
+	to {left: 300px;} 
+	} 
+	
+	/* Standard syntax */ 
+	@keyframes mymove9 { 
+	from {left: 0px;} 
+	to {left: 300px;} 
+	} 
+
+
+#sembunyikan10 div { 
+width: 100px; 
+height: 100px; 
+background-color: red; 
+position: relative; 
+/* Chrome, Safari, Opera */ 
+-webkit-animation-name: example10; 
+-webkit-animation-duration: 5s; 
+-webkit-animation-timing-function: linear; 
+-webkit-animation-delay: 2s; 
+-webkit-animation-iteration-count: infinite; 
+-webkit-animation-direction: alternate; 
+/* Standard syntax */ 
+animation-name: example10; 
+animation-duration: 5s; 
+animation-timing-function: linear; 
+animation-delay: 2s; 
+animation-iteration-count: infinite; 
+animation-direction: alternate; 
+} 
+
+	/* Chrome, Safari, Opera */ 
+	@-webkit-keyframes example10 { 
+	0% {background-color:red; left:0px; top:0px;} 
+	25% {background-color:yellow; left:200px; top:0px;} 
+	50% {background-color:blue; left:200px; top:200px;} 
+	75% {background-color:green; left:0px; top:200px;} 
+	100% {background-color:red; left:0px; top:0px;} 
+	} 
+	
+	/* Standard syntax */ 
+	@keyframes example10 { 
+	0% {background-color:red; left:0px; top:0px;} 
+	25% {background-color:yellow; left:200px; top:0px;} 
+	50% {background-color:blue; left:200px; top:200px;} 
+	75% {background-color:green; left:0px; top:200px;} 
+	100% {background-color:red; left:0px; top:0px;} 
+	} 
+
+#sembunyikan11 div { 
+width: 100px; 
+height: 100px; 
+background-color: red; 
+position: relative; 
+-webkit-animation: myfirst11 5s linear 2s infinite alternate; /* Chrome, Safari, Opera */ 
+animation: myfirst11 5s linear 2s infinite alternate; 
+} 
+
+	/* Chrome, Safari, Opera */ 
+	@-webkit-keyframes myfirst11 { 
+	0% {background-color:red; left:0px; top:0px;} 
+	25% {background-color:yellow; left:200px; top:0px;} 
+	50% {background-color:blue; left:200px; top:200px;} 
+	75% {background-color:green; left:0px; top:200px;} 
+	100% {background-color:red; left:0px; top:0px;} 
+	} 
+	
+	/* Standard syntax */ 
+	@keyframes myfirst11 { 
+	0% {background-color:red; left:0px; top:0px;} 
+	25% {background-color:yellow; left:200px; top:0px;} 
+	50% {background-color:blue; left:200px; top:200px;} 
+	75% {background-color:green; left:0px; top:200px;} 
+	100% {background-color:red; left:0px; top:0px;} 
+	} 
+
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS3 Animations </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> CSS3 Animations</h2>
+				<p> CSS3 animations membolehkan animasi daei kebanyakan element HTML tanpa menggunakan JavaScript atau Flash!</p>
+				
+				<div>
+					<div class="animasi">CSS</div>
+				</div>
+				
+				<p> Animation </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Browser Support for Animation</h2>
+				<p> Nomor pada tabel menentukan browser versi pertama yang mendukung secara penuh  properti ini.</p>
+				<p> Nomor yang diikut dengan <mark>-ms-</mark>, <mark>-webkit-</mark>, <mark>-moz-</mark> atau <mark>-o-</mark> menentukan versi pertama yang bekerja dengan awalan properti.</p>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> Properti </td>
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> @keyframes </td>
+							<td> 43.0 <br> 4.0 -webkit- </td>
+							<td> 12.0 dan 10.0 </td>
+							<td> 16.0 <br> 5.0 -moz- </td>
+							<td> 9.0 <br> 4.0 -webkit-</td>
+							<td> 30.0 <br> 15.0 -webkit- <br> 12.0 -o- </td>
+						</tr>
+						<tr class="center">
+							<td> animation </td>
+							<td> 43.0 <br> 4.0 -webkit- </td>
+							<td> 12.0 dan 10.0 </td>
+							<td> 16.0 <br> 5.0 -moz- </td>
+							<td> 9.0 <br> 4.0 -webkit-</td>
+							<td> 30.0 <br> 15.0 -webkit- <br> 12.0 -o- </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> What are CSS3 Animations? </h2>
+				<p> Apa itu CSS3 Animations? </p>
+				<p> Sebuah animasi membiarkan element secara berangsur-angsur beeubah dari satu style menjadi style lainnya.</p>
+				<p> Kamu bisa mengubah sebanyak properti CSS yang kamu mau, sebanyak waktu yang kamu mau.</p>
+				<p> Untuk menggunakan CSS3 animation, kamu pertama kali harus menentukan beberapa <mark>keyframes</mark> (kerangka kunci) untuk animasi.</p>
+				<p> Keyframe menggenggam style, element akan memiliki pada waktu yang pasti.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>The @keyframes Rule</h2>
+				<p> Ketika kamu menentukan CSS style kedalam aturan <mark>@keyframes</mark>, animasi akan secara berangsur-angsur berubah daei style saat ini menjadi style baru di waktu yang pasti.</p>
+				<p>Untuk dapat animasi bekerja, kamu harus melingkari (bind) animasi ke sebuah element.</p>
+				<p> Contoh berikut melingkari animasi "example" untuk element <<b>div</b>></p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						<em>/* The animation code */</em> <br>
+						@keyframes example1 { <br>
+						from {background-color: red;} <br>
+						to {background-color: yellow;} <br>
+						} <br>
+						 <br>
+						<em>/* The element to apply the animation to */</em> <br>
+						div { <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						background-color: red; <br>
+						animation-name: example1; <br>
+						animation-duration: 4s; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						background-color: red; <br>
+						-webkit-animation-name: example1; <em>/* Chrome, Safari, Opera */</em> <br>
+						-webkit-animation-duration: 4s; <em>/* Chrome, Safari, Opera */</em> <br>
+						animation-name: example1; <br>
+						animation-duration: 4s; <br>
+						} <br>
+						 <br>
+						<em>/* Chrome, Safari, Opera */</em> <br>
+						@-webkit-keyframes example1 { <br>
+						from {background-color: red;} <br>
+						to {background-color: yellow;} <br>
+						} <br>
+						 <br>
+						<em>/* Standard syntax */</em> <br>
+						@keyframes example1 { <br>
+						from {background-color: red;} <br>
+						to {background-color: yellow;} <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> This example does not work in Internet Explorer 9 and earlier versions.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b>><<b>/div</b>> <br>
+						 <br>
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> When an animation is finished, it changes back to its original style.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+						<div></div>
+						<p><b>Note:</b> When an animation is finished, it changes back to its original style.</p>
+					
+					</div>
+				</article>
+				
+				
+				<div class="nasehat">
+					<p> <b>Catatan:</b> Jika properti <mark>animation-duration</mark> tidak ditentukan, animasi tidak akan memiliki efek, 
+					karena default (nya) adalah 0.</p>
+				</div>
+				
+				<p> Pada contoh diatas kita telah menentukan (animation-duration) ketika style akan berubah dengan menggunakan kata kunci "from" dan "to" (yang mana mempresentasikan 0% (start) dan 100% (complete)).</p>
+				<p> Properti <mark>animation-duration</mark> juga memungkinkan untuk menggunakan persen. Dengan menggunakan persen, kamu bisa menambah sebanyak style mengubah seperti yang kamu suka.</p>
+				<p> Contoh berikut akan mengubah <mark>background-color</mark> dari properti <<b>div</b>> ketika animasi dalam proses 25%, 50% dan seterusnya ketika proses animasi sampai 100%:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						<em>/* The animation code */</em> <br>
+						@keyframes example2 { <br>
+						0%   {background-color: red;} <br>
+						25%  {background-color: yellow;} <br>
+						50%  {background-color: blue;} <br>
+						100% {background-color: green;} <br>
+						} <br>
+						 <br>
+						<em>/* The element to apply the animation to */</em> <br>
+						div { <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						background-color: red; <br>
+						animation-name: example2; <br>
+						animation-duration: 4s; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						background-color: red; <br>
+						-webkit-animation-name: example2; <em>/* Chrome, Safari, Opera */</em> <br>
+						-webkit-animation-duration: 4s; <em>/* Chrome, Safari, Opera */</em> <br>
+						animation-name: example2; <br>
+						animation-duration: 4s; <br>
+						} <br>
+						 <br>
+						<em>/* Chrome, Safari, Opera */</em> <br>
+						@-webkit-keyframes example2 { <br>
+						0%   {background-color: red;} <br>
+						25%  {background-color: yellow;} <br>
+						50%  {background-color: blue;} <br>
+						100% {background-color: green;} <br>
+						} <br>
+						
+						<em>/* Standard syntax */</em> <br>
+						@keyframes example2 { <br>
+						0%   {background-color: red;} <br>
+						25%  {background-color: yellow;} <br>
+						50%  {background-color: blue;} <br>
+						100% {background-color: green;} <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> This example does not work in Internet Explorer 9 and earlier versions.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b>><<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+						<div></div>
+					
+					</div>
+				</article>
+				
+				
+				<p> Contoh berikut akan mengubah <mark>background-color</mark> dan <mark>position</mark> daei element <<b>div</b>> ketika animasi berproses 25% , 50% dan seterusnya ketika animasi berproses 100%:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open03">
+						
+						<em>/* The animation code */</em> <br>
+						@keyframes example3 { <br>
+						0%   {background-color: red; left:0px; top:0px;} <br>
+						25%  {background-color: yellow; left:200px; top:0px;} <br>
+						50%  {background-color: blue; left:200px; top:200px;} <br>
+						75%  {background-color: green; left:0px; top:200px;} <br>
+						100% {background-color: red; left:0px; top:0px;} <br>
+						} <br>
+						 <br>
+						<em>/* The element to apply the animation to */</em><br>
+						div { <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						position: relative; <br>
+						background-color: red; <br>
+						animation-name: example3; <br>
+						animation-duration: 4s; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						background-color: red; <br>
+						position: relative; <br>
+						-webkit-animation-name: example3; <em>/* Chrome, Safari, Opera */</em> <br>
+						-webkit-animation-duration: 4s; <em>/* Chrome, Safari, Opera */</em> <br>
+						animation-name: example3; <br>
+						animation-duration: 4s; <br>
+						} <br>
+						 <br>
+						<em>/* Chrome, Safari, Opera */</em> <br>
+						@-webkit-keyframes example3 { <br>
+						0%   {background-color:red; left:0px; top:0px;} <br>
+						25%  {background-color:yellow; left:200px; top:0px;} <br>
+						50%  {background-color:blue; left:200px; top:200px;} <br>
+						75%  {background-color:green; left:0px; top:200px;} <br>
+						100% {background-color:red; left:0px; top:0px;} <br>
+						} <br>
+						 <br>
+						<em>/* Standard syntax */</em> <br>
+						@keyframes example3 { <br>
+						0%   {background-color:red; left:0px; top:0px;} <br>
+						25%  {background-color:yellow; left:200px; top:0px;} <br>
+						50%  {background-color:blue; left:200px; top:200px;} <br>
+						75%  {background-color:green; left:0px; top:200px;} <br>
+						100% {background-color:red; left:0px; top:0px;} <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> This example does not work in Internet Explorer 9 and earlier versions.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b>><<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+						<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+						
+						<div></div>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Delay an Animation</h2>
+				<p> Properti <mark>animation-delay</mark> menentukan sebuah penundaan untuk memulai sebuah animasi.</p>
+				<p> Contoh berikut memiliki 2 detik penundaan sebelum memulai animasi:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open04">
+						
+						div { <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						position: relative; <br>
+						background-color: red; <br>
+						animation-name: example4; <br>
+						animation-duration: 4s; <br>
+						animation-delay: 2s; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close04">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						background-color: red; <br>
+						position: relative; <br>
+						-webkit-animation-name: example4; <em>/* Chrome, Safari, Opera */</em> <br>
+						-webkit-animation-duration: 4s; <em>/* Chrome, Safari, Opera */</em> <br>
+						-webkit-animation-delay: 2s; <em>/* Chrome, Safari, Opera */</em> <br>
+						animation-name: example4; <br>
+						animation-duration: 4s; <br>
+						animation-delay: 2s; <br>
+						} <br>
+						
+						<em>/* Chrome, Safari, Opera */</em> <br>
+						@-webkit-keyframes example4 { <br>
+						0%   {background-color:red; left:0px; top:0px;} <br>
+						25%  {background-color:yellow; left:200px; top:0px;} <br>
+						50%  {background-color:blue; left:200px; top:200px;} <br>
+						75%  {background-color:green; left:0px; top:200px;} <br>
+						100% {background-color:red; left:0px; top:0px;} <br>
+						} <br>
+						 <br>
+						<em>/* Standard syntax */</em> <br>
+						@keyframes example4 { <br>
+						0%   {background-color:red; left:0px; top:0px;} <br>
+						25%  {background-color:yellow; left:200px; top:0px;} <br>
+						50%  {background-color:blue; left:200px; top:200px;} <br>
+						75%  {background-color:green; left:0px; top:200px;} <br>
+						100% {background-color:red; left:0px; top:0px;} <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> This example does not work in Internet Explorer 9 and earlier versions.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b>><<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<button onclick="buka04()" class="exbutton"> Open </button>
+					<button onclick="tutup04()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+						<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+						<div></div>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Set How Many Times an Animation Should Run</h2>
+				<p> Aturlah Berapa Banyak Waktu Animasi Harus Berjalan</p>
+				<p> Properti <mark>animation-iteration-count</mark> menentukan  (nomor dari) waktu animasi harus berjalan.</p>
+				<p> Contoh berikut akan menjalankan animasi selama 3 waktu sebelum ia berhenti:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open05">
+						
+						div { <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						position: relative; <br>
+						background-color: red; <br>
+						animation-name: example5; <br>
+						animation-duration: 4s; <br>
+						animation-iteration-count: 3; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close05">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						background-color: red; <br>
+						position: relative; <br>
+						-webkit-animation-name: example5; <em>/* Chrome, Safari, Opera */</em> <br>
+						-webkit-animation-duration: 4s; <em>/* Chrome, Safari, Opera */</em> <br>
+						-webkit-animation-iteration-count: 3; <em>/* Chrome, Safari, Opera */</em> <br>
+						animation-name: example5; <br>
+						animation-duration: 4s; <br>
+						animation-iteration-count: 3; <br>
+						} <br>
+						 <br>
+						<em>/* Chrome, Safari, Opera */</em> <br>
+						@-webkit-keyframes example5 { <br>
+						0%   {background-color:red; left:0px; top:0px;} <br>
+						25%  {background-color:yellow; left:200px; top:0px;} <br>
+						50%  {background-color:blue; left:200px; top:200px;} <br>
+						75%  {background-color:green; left:0px; top:200px;} <br>
+						100% {background-color:red; left:0px; top:0px;} <br>
+						} <br>
+						 <br>
+						<em>/* Standard syntax */</em> <br>
+						@keyframes example5 { <br>
+						0%   {background-color:red; left:0px; top:0px;} <br>
+						25%  {background-color:yellow; left:200px; top:0px;} <br>
+						50%  {background-color:blue; left:200px; top:200px;} <br>
+						75%  {background-color:green; left:0px; top:200px;} <br>
+						100% {background-color:red; left:0px; top:0px;} <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> This example does not work in Internet Explorer 9 and earlier versions.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b>><<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan05()" class="exbutton">Klik disini</button>
+					<button onclick="buka05()" class="exbutton"> Open </button>
+					<button onclick="tutup05()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+					
+						<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+						<div></div>
+					
+					</div>
+				</article>
+				
+				<p> Contoh berikut menggunakan nilai "infinite" untuk membuat animasi terus berjalan selamanya:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open06">
+						
+						div { <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						position: relative; <br>
+						background-color: red; <br>
+						animation-name: example6; <br>
+						animation-duration: 4s; <br>
+						animation-iteration-count: infinite; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close06">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						background-color: red; <br>
+						position: relative; <br>
+						-webkit-animation-name: example6; <em>/* Chrome, Safari, Opera */</em> <br>
+						-webkit-animation-duration: 4s; <em>/* Chrome, Safari, Opera */</em> <br>
+						-webkit-animation-iteration-count: infinite; <em>/* Chrome, Safari, Opera */</em> <br>
+						animation-name: example6; <br>
+						animation-duration: 4s; <br>
+						animation-iteration-count: infinite; <br>
+						} <br>
+						 <br>
+						<em>/* Chrome, Safari, Opera */</em> <br>
+						@-webkit-keyframes example6 { <br>
+						0%   {background-color:red; left:0px; top:0px;} <br>
+						25%  {background-color:yellow; left:200px; top:0px;} <br>
+						50%  {background-color:blue; left:200px; top:200px;} <br>
+						75%  {background-color:green; left:0px; top:200px;} <br>
+						100% {background-color:red; left:0px; top:0px;} <br>
+						} <br>
+						 <br>
+						<em>/* Standard syntax */</em> <br>
+						@keyframes example6 { <br>
+						0%   {background-color:red; left:0px; top:0px;} <br>
+						25%  {background-color:yellow; left:200px; top:0px;} <br>
+						50%  {background-color:blue; left:200px; top:200px;} <br>
+						75%  {background-color:green; left:0px; top:200px;} <br>
+						100% {background-color:red; left:0px; top:0px;} <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> This example does not work in Internet Explorer 9 and earlier versions.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b>><<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan06()" class="exbutton">Klik disini</button>
+					<button onclick="buka06()" class="exbutton"> Open </button>
+					<button onclick="tutup06()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+					
+						<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+						<div></div>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Run Animation in Reverse Direction or Alternate Cycles</h2>
+				<p> Properti <mark>animation-direction</mark> digunakan untuk membiarkan animasi berjalan dalam arah yang berbalik (reverse direction) atau bundaran pengganti (alternate cycles). </p>
+				<p> contoh berikut akan menjalankan animasi dalam arah yang berbalik: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open07">
+						
+						div { <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						position: relative; <br>
+						background-color: red; <br>
+						animation-name: example7; <br>
+						animation-duration: 4s; <br>
+						animation-iteration-count: 3; <br>
+						animation-direction: reverse; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close07">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						background-color: red; <br>
+						position: relative; <br>
+						-webkit-animation-name: example7; <em>/* Chrome, Safari, Opera */</em> <br>
+						-webkit-animation-duration: 4s; <em>/* Chrome, Safari, Opera */</em> <br>
+						-webkit-animation-iteration-count: 3; <em>/* Chrome, Safari, Opera */</em> <br>
+						-webkit-animation-direction: reverse; <em>/* Chrome, Safari, Opera */</em> <br>
+						animation-name: example7; <br>
+						animation-duration: 4s; <br>
+						animation-iteration-count: 3; <br>
+						animation-direction: reverse;  <br>
+						} <br>
+						 <br>
+						<em>/* Chrome, Safari, Opera */</em> <br>
+						@-webkit-keyframes example7 { <br>
+						0%   {background-color:red; left:0px; top:0px;} <br>
+						25%  {background-color:yellow; left:200px; top:0px;} <br>
+						50%  {background-color:blue; left:200px; top:200px;} <br>
+						75%  {background-color:green; left:0px; top:200px;} <br>
+						100% {background-color:red; left:0px; top:0px;} <br>
+						} <br>
+						 <br>
+						<em>/* Standard syntax */</em> <br>
+						@keyframes example7 { <br>
+						0%   {background-color:red; left:0px; top:0px;} <br>
+						25%  {background-color:yellow; left:200px; top:0px;} <br>
+						50%  {background-color:blue; left:200px; top:200px;} <br>
+						75%  {background-color:green; left:0px; top:200px;} <br>
+						100% {background-color:red; left:0px; top:0px;} <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> This example does not work in Internet Explorer 9 and earlier versions.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b>><<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan07()" class="exbutton">Klik disini</button>
+					<button onclick="buka07()" class="exbutton"> Open </button>
+					<button onclick="tutup07()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan07">
+					
+						<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+						
+						<div></div>
+					
+					</div>
+				</article>
+				
+				
+				<p> Contoh berikut menggunakan nilai <b>"alternate"</b> untuk membuat animasi pertama-tama berjalan kedepan, lalu terbalik, lalu kedepan:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open08">
+						
+						div { <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						position: relative; <br>
+						background-color: red; <br>
+						animation-name: example8; <br>
+						animation-duration: 4s; <br>
+						animation-iteration-count: 3; <br>
+						animation-direction: alternate; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close08">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						background-color: red; <br>
+						position: relative; <br>
+						-webkit-animation-name: example8; <em>/* Chrome, Safari, Opera */</em> <br>
+						-webkit-animation-duration: 4s; <em>/* Chrome, Safari, Opera */</em> <br>
+						-webkit-animation-iteration-count: 3; <em>/* Chrome, Safari, Opera */</em> <br>
+						-webkit-animation-direction: alternate; <em>/* Chrome, Safari, Opera */</em> <br>
+						animation-name: example8; <br>
+						animation-duration: 4s; <br>
+						animation-iteration-count: 3; <br>
+						animation-direction: alternate; <br>
+						} <br>
+						 <br>
+						<em>/* Chrome, Safari, Opera */</em> <br>
+						@-webkit-keyframes example8 { <br>
+						0%   {background-color:red; left:0px; top:0px;} <br>
+						25%  {background-color:yellow; left:200px; top:0px;} <br>
+						50%  {background-color:blue; left:200px; top:200px;} <br>
+						75%  {background-color:green; left:0px; top:200px;} <br>
+						100% {background-color:red; left:0px; top:0px;} <br>
+						} <br>
+						 <br>
+						<em>/* Standard syntax */</em> <br>
+						@keyframes example8 { <br>
+						0%   {background-color:red; left:0px; top:0px;} <br>
+						25%  {background-color:yellow; left:200px; top:0px;} <br>
+						50%  {background-color:blue; left:200px; top:200px;} <br>
+						75%  {background-color:green; left:0px; top:200px;} <br>
+						100% {background-color:red; left:0px; top:0px;} <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+						
+						<div></div>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan08()" class="exbutton">Klik disini</button>
+					<button onclick="buka08()" class="exbutton"> Open </button>
+					<button onclick="tutup08()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan08">
+					
+						<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+						
+						<div></div>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Specify the Speed Curve of the Animation</h2>
+				<p> Properti <mark>animation-timing-function</mark> menentukan kecepatan kurva dari animasi.</p>
+				<p> Ptoperti <mark>animation-timing-function</mark> bisa memiliki nilai-nilai berikut:</p>
+				
+				<ul>
+					<li> <b>ease</b> - Menentukan efek transisi dengan diawali pelan, lalu cepat, lalu diakhiri  pelan (ini adalah default)</li>
+					<li> <b>linear</b> - Menentukan efek transisi dengan kecepatan yang sama dari awal sampai akhir</li>
+					<li> <b>ease-in</b> - Menentukan efek transisi dengan awalan pelan</li>
+					<li> <b>ease-out</b> - Menentukan efek transisi dengan akhiran pelan</li>
+					<li> <b>ease-in-out</b> - Menentukan efek transisi dengan awalan dan akhiran pelan</li>
+					<li> <b>cubic-bezier(<i>n,n,n,n</i>)</b> - Membiarkan kamu mendefinisikan nilai kamu sendiri dalam fungsi cubic-bezier <strong>cubic-bezier</strong></li>
+				</ul>
+				
+				<p> Contoh berikut menampil beberapa tentang kurva kecepatan yang beda yang bisa digunakan:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open09">
+						
+						#div1 {animation-timing-function: linear;} <br>
+						#div2 {animation-timing-function: ease;} <br>
+						#div3 {animation-timing-function: ease-in;} <br>
+						#div4 {animation-timing-function: ease-out;} <br>
+						#div5 {animation-timing-function: ease-in-out;} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close09">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 100px; <br>
+						height: 50px; <br>
+						background-color: red; <br>
+						font-weight: bold; <br>
+						position: relative; <br>
+						-webkit-animation: mymove9 5s infinite; <em>/* Chrome, Safari, Opera */</em> <br>
+						animation: mymove9 5s infinite; <br>
+						} <br>
+						 <br>
+						<em>/* Chrome, Safari, Opera */</em> <br>
+						#div1 {-webkit-animation-timing-function: linear;} <br>
+						#div2 {-webkit-animation-timing-function: ease;} <br>
+						#div3 {-webkit-animation-timing-function: ease-in;} <br>
+						#div4 {-webkit-animation-timing-function: ease-out;} <br>
+						#div5 {-webkit-animation-timing-function: ease-in-out;} <br>
+						 <br>
+						<em>/* Standard syntax */</em> <br>
+						#div1 {animation-timing-function: linear;} <br>
+						#div2 {animation-timing-function: ease;} <br>
+						#div3 {animation-timing-function: ease-in;} <br>
+						#div4 {animation-timing-function: ease-out;} <br>
+						#div5 {animation-timing-function: ease-in-out;} <br>
+						 <br>
+						<em>/* Chrome, Safari, Opera */</em> <br>
+						@-webkit-keyframes mymove9 { <br>
+						from {left: 0px;} <br>
+						to {left: 300px;} <br>
+						} <br>
+						 <br>
+						<em>/* Standard syntax */</em> <br>
+						@keyframes mymove9 { <br>
+						from {left: 0px;} <br>
+						to {left: 300px;} <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> The animation-timing-funtion property is not supported in Internet Explorer 9 and earlier versions.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b> <span class="teal">id="div1"</span>>linear<<b>/div</b>> <br>
+						<<b>div</b> <span class="teal">id="div2"</span>>ease<<b>/div</b>> <br>
+						<<b>div</b> <span class="teal">id="div3"</span>>ease-in<<b>/div</b>> <br>
+						<<b>div</b> <span class="teal">id="div4"</span>>ease-out<<b>/div</b>> <br>
+						<<b>div</b> <span class="teal">id="div5"</span>>ease-in-out<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan09()" class="exbutton">Klik disini</button>
+					<button onclick="buka09()" class="exbutton"> Open </button>
+					<button onclick="tutup09()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan09">
+					
+						<p><strong>Note:</strong> The animation-timing-funtion property is not supported in Internet Explorer 9 and earlier versions.</p>
+						
+						<div id="div1">linear</div>
+						<div id="div2">ease</div>
+						<div id="div3">ease-in</div>
+						<div id="div4">ease-out</div>
+						<div id="div5">ease-in-out</div>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Animation Shorthand Property</h2>
+				<p> Contoh dibawah menggunakan enam animation properties:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open10">
+						
+						div { <br>
+						animation-name: example10; <br>
+						animation-duration: 5s; <br>
+						animation-timing-function: linear; <br>
+						animation-delay: 2s; <br>
+						animation-iteration-count: infinite; <br>
+						animation-direction: alternate; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close10">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						background-color: red; <br>
+						position: relative; <br>
+						<em>/* Chrome, Safari, Opera */</em> <br>
+						-webkit-animation-name: example10; <br>
+						-webkit-animation-duration: 5s; <br>
+						-webkit-animation-timing-function: linear; <br>
+						-webkit-animation-delay: 2s; <br>
+						-webkit-animation-iteration-count: infinite; <br>
+						-webkit-animation-direction: alternate; <br>
+						<em>/* Standard syntax */</em> <br>
+						animation-name: example10; <br>
+						animation-duration: 5s; <br>
+						animation-timing-function: linear; <br>
+						animation-delay: 2s; <br>
+						animation-iteration-count: infinite; <br>
+						animation-direction: alternate; <br>
+						} <br>
+						 <br>
+						<em>/* Chrome, Safari, Opera */</em> <br>
+						@-webkit-keyframes example10 { <br>
+						0%   {background-color:red; left:0px; top:0px;} <br>
+						25%  {background-color:yellow; left:200px; top:0px;} <br>
+						50%  {background-color:blue; left:200px; top:200px;} <br>
+						75%  {background-color:green; left:0px; top:200px;} <br>
+						100% {background-color:red; left:0px; top:0px;} <br>
+						} <br>
+						 <br>
+						<em>/* Standard syntax */</em> <br>
+						@keyframes example10 { <br>
+						0%   {background-color:red; left:0px; top:0px;} <br>
+						25%  {background-color:yellow; left:200px; top:0px;} <br>
+						50%  {background-color:blue; left:200px; top:200px;} <br>
+						75%  {background-color:green; left:0px; top:200px;} <br>
+						100% {background-color:red; left:0px; top:0px;} <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> This example does not work in Internet Explorer 9 and earlier versions.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b>><<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan10()" class="exbutton">Klik disini</button>
+					<button onclick="buka10()" class="exbutton"> Open </button>
+					<button onclick="tutup10()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan10">
+					
+						<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+						
+						<div></div>
+					
+					</div>
+				</article>
+				
+				<p> Efek animasi yang sama seperti diatas bisa dicapai dengan menggunakan shorthand <mark>animation</mark> property:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open11">
+						
+						div { <br>
+						animation: example11 5s linear 2s infinite alternate; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close11">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						background-color: red; <br>
+						position: relative; <br>
+						-webkit-animation: myfirst11 5s linear 2s infinite alternate; <em>/* Chrome, Safari, Opera */</em> <br>
+						animation: myfirst11 5s linear 2s infinite alternate; <br>
+						} <br>
+						 <br>
+						<em>/* Chrome, Safari, Opera */</em> <br>
+						@-webkit-keyframes myfirst11 { <br>
+						0%   {background-color:red; left:0px; top:0px;} <br>
+						25%  {background-color:yellow; left:200px; top:0px;} <br>
+						50%  {background-color:blue; left:200px; top:200px;} <br>
+						75%  {background-color:green; left:0px; top:200px;} <br>
+						100% {background-color:red; left:0px; top:0px;} <br>
+						} <br>
+						 <br>
+						<em>/* Standard syntax */</em> <br>
+						@keyframes myfirst11 { <br>
+						0%   {background-color:red; left:0px; top:0px;} <br>
+						25%  {background-color:yellow; left:200px; top:0px;} <br>
+						50%  {background-color:blue; left:200px; top:200px;} <br>
+						75%  {background-color:green; left:0px; top:200px;} <br>
+						100% {background-color:red; left:0px; top:0px;} <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> This example does not work in Internet Explorer 9 and earlier versions.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b>><<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan11()" class="exbutton">Klik disini</button>
+					<button onclick="buka11()" class="exbutton"> Open </button>
+					<button onclick="tutup11()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan11">
+					
+						<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+						<div></div>
+					
+					</div>
+				</article>
+				
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 Animation Properties</h2>
+				<p> Daftar tabel berikut aturan @keyframes dan semua properti animation:</p>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Properti</th>
+							<th>Deskripsi</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> @keyframes </td>
+							<td> Menentukan animation code </td>
+						</tr>
+						<tr>
+							<td> animation </td>
+							<td> Sebuah shorthand property untuk mengatur semua properi animation </td>
+						</tr>
+						<tr>
+							<td> animation-delay </td>
+							<td> Menentukan sebuah penundaan untuk memulai sebuah animasi </td>
+						</tr>
+						<tr>
+							<td> animation-direction </td>
+							<td> Menentukan apakah sebuah animation harus dimainkan dalam arah berbalik (reverse direction) atau bundaran pengganti (alternate cycles) </td>
+						</tr>
+						<tr>
+							<td> animation-duration </td>
+							<td> Menentukan berapa lama (dalam satuan) detik atau milidetik sebuah animasi untuk selesai dalam satu putaran </td>
+						</tr>
+						<tr>
+							<td> animation-fill-mode </td>
+							<td> Menentukan sebuah style untuk elemen ketika animasi tidak dimainkan (ketika animasi diakhiri, atau ketika animasi telah tertunda) </td>
+						</tr>
+						<tr>
+							<td> animation-iteration-count </td>
+							<td> Menentukan nomor tentang waktu sebuah animasi harus dimainkan </td>
+						</tr>
+						<tr>
+							<td> animation-name </td>
+							<td> Menentukan nama dari <mark>@keyframes</mark> animation </td>
+						</tr>
+						<tr>
+							<td> animation-play-state </td>
+							<td> Menentukan apakah animasi sedang berjalan atau terhenti </td>
+						</tr>
+						<tr>
+							<td> animation-timing-function </td>
+							<td> Menentukan kurva kecepatan dari animasi </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS3 3D transforms.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS3 images.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

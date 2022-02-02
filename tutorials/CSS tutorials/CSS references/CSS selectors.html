@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS references | CSS referensi  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="../tutorial.css">
+<link rel="stylesheet" type="text/css" href="../style.css">
+<script type="text/javascript" src="../buka.js"></script>
+<script type="text/javascript" src="../../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../.,/HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+.table td:first-child{
+	text-align:left;
+}
+.table tr:hover i{
+	color:red;
+}
+.table tr:hover b{
+	color:blue;
+}
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Selector Reference </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> CSS Selectors </h2>
+				
+				<p> Dalam CSS, Selektor adalah pola yang digunakan untuk menyeleksi element(s) yang kamu mau untuk di-style.</p>
+				<p> Gunakanlah CSS Selector Tester untuk mendemonstrasikan selekto-selektor yang berbeda.</p>
+				<p> Kolom "CSS" mengindikasikan di CSS versi yang mana propertu didefinisikan (CSS1, CSS2, CSS3).</p>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th> Properti </th>
+							<th> Contoh </th>
+							<th> Deskripsi Contoh </th>
+							<th> CSS </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> .<i>class</i> </td>
+							<td> .intro </td>
+							<td> Menyeleksi semua element dengan class="intro" </td>
+							<td> 1 </td>
+						</tr>
+						<tr>
+							<td> #<i>id</i> </td>
+							<td> #firstname </td>
+							<td> Menyeleksi element dengan id="firstname" </td>
+							<td> 1 </td>
+						</tr>
+						<tr>
+							<td> * </td>
+							<td> * </td>
+							<td> Menyeleksi semua element </td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>  </td>
+							<td> p </td>
+							<td> Menyeleksi semua element <<b>p</b>> </td>
+							<td> 1 </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>, <i>element</i> </td>
+							<td> div, p </td>
+							<td> Menyeleksi semua element <<b>div</b>> dan semua element <<b>p</b>> </td>
+							<td> 1 </td>
+						</tr>
+						<tr>
+							<td> <i>element</i> <i>element</i> </td>
+							<td> div p </td>
+							<td> Menyeleksi semua element <<b>p</b>> didalam element <<b>div</b>> </td>
+							<td> 1 </td>
+						</tr>
+						<tr>
+							<td> <i>element</i> > <i>element</i> </td>
+							<td> div > p </td>
+							<td> Menyeleksi semua element <<b>p</b>> dimana induknya adalah element <<b>div</b>> </td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> <i>element</i> + <i>element</i> </td>
+							<td> div + p </td>
+							<td> Menyeleksi semua element <<b>p</b>> yang ditempatkan secara langsung setelah element <<b>div</b>> </td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> <i>element</i> ~ <i>element</i> </td>
+							<td> p ~ ul </td>
+							<td> Menyeleksi setiap element <<b>ul</b>> yang didahului oleh element <<b>div</b>> </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> [<i>attribute</i>] </td>
+							<td> [target] </td>
+							<td> Menyeleksi semua element dengan attibute <b>target</b> </td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> [<i>attribute</i>=<i>value</i>] </td>
+							<td> [target=_blank] </td>
+							<td> Menyeleksi semua element dengan attibute <b>target="_blank"</b> </td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> [<i>attribute</i>~=<i>value</i>] </td>
+							<td> [title~=flower] </td>
+							<td> Menyeleksi semua element dengan attibute <b>title</b> yang berisikan kata <b>"flower"</b> </td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> [<i>attribute</i>|=<i>value</i>] </td>
+							<td> [lang|=en] </td>
+							<td> Menyeleksi semua element dengan nilai attibute <b>lang</b> yang diawali dengan "en" </td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> [<i>attribute</i>^=<i>value</i>] </td>
+							<td> a[href^="https"] </td>
+							<td> Menyeleksi setiap element <<b>a</b>> yang mempunyai nilai attibute <b>href</b> yang diawali dengan <b>"https"</b> </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> [<i>attribute</i>$=<i>value</i>] </td>
+							<td> a[href$=".pdf"] </td>
+							<td> Menyeleksi setiap element <<b>a</b>> yang mempunyai nilai attibute <b>href</b> yang diakhiri dengan <b>".pdf"</b> </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> [<i>attribute</i>*=<i>value</i>] </td>
+							<td> a[href*="google"] </td>
+							<td> Menyeleksi setiap element <<b>a</b>> yang mempunyai nilai attibute <b>href</b> berisi substring <b>"google"</b> </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> :active </td>
+							<td> a:active </td>
+							<td> Menyeleksi link yang aktif </td>
+							<td> 1 </td>
+						</tr>
+						<tr>
+							<td> ::after </td>
+							<td> p::after </td>
+							<td> Menyisipkan sesuatu setelah konten dari masing-masing element <<b>p</b>> </td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> ::before </td>
+							<td> p::after </td>
+							<td> Menyisipkan sesuatu sebelum konten dari masing-masing element <<b>p</b>> </td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> :checked </td>
+							<td> input:checked </td>
+							<td> Menyeleksi setiap element <<b>input</b>> yang dicek </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> :disabled </td>
+							<td> input:disabled </td>
+							<td> Menyeleksi setiap element <<b>inpu</b>> yang dilumpuhkan </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> :empty </td>
+							<td> p:empty </td>
+							<td> Menyeleksi setiap element <<b>p</b>> yang tidak memiliki anak/turunan (termasuk text nodes) </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> :enabled </td>
+							<td> input:enabled </td>
+							<td> Menyeleksi setiap element <<b>input</b>> yang dimungkinkan/dibolehkan  </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> :first-child </td>
+							<td> p:first-child </td>
+							<td> Menyeleksi setiap element <<b>p</b>> yang merupakan anak/turunan pertama dari induknya </td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> ::first-letter </td>
+							<td> p::first-letter </td>
+							<td> Menyeleksi huruf pertama dari setiap element <<b>p</b>> </td>
+							<td> 1 </td>
+						</tr>
+						<tr>
+							<td> ::first-line </td>
+							<td> p::first-line </td>
+							<td> Menyeleksi baris pertama dari setiap element <<b>p</b>> </td>
+							<td> 1 </td>
+						</tr>
+						<tr>
+							<td> :first-of-type </td>
+							<td> p:first-of-type </td>
+							<td> Menyeleksi setisp element <<b>p</b>> yang merupakan element <<b>p</b>> pertama dsri induknya </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> :focus </td>
+							<td> input:focus </td>
+							<td> Menyeleksi element <b>input</b> yang mana memiliki <b>focus</b> </td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> :hover </td>
+							<td> a:hover </td>
+							<td> Menyeleksi link pada/ketika mouse over  </td>
+							<td> 1 </td>
+						</tr>
+						<tr>
+							<td> :in-range </td>
+							<td> input:in-range </td>
+							<td> Mneyeleksi element <b>input</b> dengan nilai dengan sebuah <b>range</b> (jangkauan) tertentu </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> :invalid </td>
+							<td> input:invalid </td>
+							<td> Menyeleksi semua element <b>input</b> dengan nilai yang tidak valid </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> :lang(<i>language</i>) </td>
+							<td> p:lang(it) </td>
+							<td> Menyeleksi setiap element <<b>p</b>> dengan attribute <b>lang="it"</b> (Italian) </td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> :last-child </td>
+							<td> p:last-child </td>
+							<td> Menyeleksi setisp element <<b>p</b>> yang merupakan anak/turunan terakhir dari induknya </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> :link </td>
+							<td> a:link </td>
+							<td> Menyeleksi semua link yang belum dikunjungi </td>
+							<td> 1 </td>
+						</tr>
+						<tr>
+							<td> :not(<i>selector</i>) </td>
+							<td> :not(p) </td>
+							<td> Menyeleksi setiap element yang bukan merupakan element <<b>p</b>>  </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> :nth-child(<i>node</i>) </td>
+							<td> p:nth-child(2) </td>
+							<td> Menyeleksi setiap element <<b>p</b>> yang merupakan anak/turunan kedua dari induknya  </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> :nth-last-child(<i>node</i>) </td>
+							<td> p:nth-last-child(2) </td>
+							<td> Menyeleksi setiap element <<b>p</b>> yang merupakan anak/turunan kedua dari induknya, penghitungan dari anak/turunan terakhir </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> :nth-last-of-type(<i>node</i>) </td>
+							<td> p:nth-last-of-type(2) </td>
+							<td> Menyeleksi setiap element <<b>p</b>> yang merupakan element <<b>p</b>> kedua dari induknya, penghitungan dari anak/turunan terakhir </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> :nth-of-type(<i>node</i>) </td>
+							<td> p:nth-of-type(2) </td>
+							<td> Menyeleksi setiap element <<b>p</b>> yang merupakan element <<b>p</b>> dari induknya </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> only-of-type </td>
+							<td> p:only-of-type </td>
+							<td> Menyeleksi setiap element <<b>p</b>> yang merupakan element <<b>p</b>>  dari induknya saja </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> only-child </td>
+							<td> p:only-child </td>
+							<td> Menyeleksi setiap element <<b>p</b>> yang merupakan anak/turunan dari induknya saja </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> :optional </td>
+							<td> input:optional </td>
+							<td> Menyeleksi element <b>input</b> dengan tidak ada attribute <b>"required"</b> </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> :out-of-range </td>
+							<td> input:out-of-range </td>
+							<td> Menyeleksi element <b>input</b> dengan sebuah nilai diluar range (jangkauan) tertentu </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> :read-only </td>
+							<td> input:read-only </td>
+							<td> Menyeleksi element <b>input</b> dengan attribute <b>"readonly"</b> yang telah ditentukan  </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> :read-write </td>
+							<td> input:read-write </td>
+							<td> Menyeleksi element <b>input</b> dengan attribute <b>"readonly"</b> yang belum ditentukan </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> :required </td>
+							<td> input:required </td>
+							<td> Menyeleksi element <b>input</b> dengan attribte <b>"required"</b> yang telah ditentukan </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> :root </td>
+							<td> :root </td>
+							<td> Menyeleksi document's root element (elemen akar dokumen) </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> ::selection </td>
+							<td> ::selection </td>
+							<td> Menyeleksi porsi/bagian dari dari sebuah element yang diseleksi oleh user/pengguna </td>
+							<td>  </td>
+						</tr>
+						<tr>
+							<td> :target </td>
+							<td> #news:target </td>
+							<td> Menyeleksi element <b>#news</b> yang aktif saat ini (diklik pada URL yang herisikan nama anchor) </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> :valid </td>
+							<td> input:valid </td>
+							<td> Menyeleksi semua element <b>input</b> dengan nilai yang valid </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> :visited </td>
+							<td> a:visited </td>
+							<td> Menyeleksi semua link yang telah dikunjungi </td>
+							<td> 1 </td>
+						</tr>
+					</tbody>
+				</table>
+				
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS references.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS functions.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

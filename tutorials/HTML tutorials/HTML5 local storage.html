@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML5 local storage </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML5 Local Storage </h1>
+				<p> HTML locak storage, lebih baik daripada cookies.</p>
+			</div>
+			
+			
+<section>			
+			<article>
+				<h2> What is HTML Local Storage? </h2>
+				<p> Apa itu Penyimpanan Lokal HTML?</p>
+				<p> Dengan local storage, applikasi web bisa menyimpan data secara lokal dengan  browser pengguna. </p>
+				<p>	Sebelum HTML5, application data harus disimpan dalam cookies, termasuk dalam setiap server request. Local storage lebih aman, 
+				dan jumlah besar dari data yang bisa disimpan secara lokal, tanpa mempengaruhi website performance. </p>
+				<p> Tidak seperti cookies, batas penyimpanan jauh lebih besar (paling rendah 5MB) dan informasi tidak pernah ditranfer ke server. </p>
+				<p> Local storage ialah per origin (per domain dan protocol). Semua halaman dsri satu sumber (origin), bisa menyimpan dan mengakses data yang sama. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Browser Support </h2>
+				<p> Nomor pada tabel menentukan browser versi pertama yang mendukung secara penuh <b>Local Storage</b>. </p>
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td class="left"> API </td>
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> <b>Web Storage</b> </td>
+							<td> 4.0 </td>
+							<td> 8.0 </td>
+							<td> 3.5 </td>
+							<td> 4.0 </td>
+							<td> 11.5 </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML Local Storage Objects </h2>
+				<p> Object Penyimpanan Lokal HTML </p>
+ 				<p> HTML local storage menyediakan dua object untuk penyimanan data pada client (pelangan): </p>
+ 				<ul>
+ 					<li> <b>window.localStorage</b> - menyimpan data dengan tidak ada expiration date (tanggal kadaluwarsa) </li>
+ 					<li> <b> window.sessionStorage</b> - meyimpan data untuk satu sesi (data dihilangkan ketika browser tab ditutup)</li>
+ 				</ul>
+ 				<p> Sebelum penggunaan local storage, periksalah browser support untuk localStorage dan sessionStorage: </p>
+ 				
+ 				<div class="example-content">
+ 					<code>if</code>(typeof(Storage) !== "undefined") { <br>
+ 					    <em>// Code for localStorage/sessionStorage.</em> <br>
+ 					}<code>else</code>{ <br>
+ 					   <em> // Sorry! No Web Storage support..</em> <br>
+ 					}
+ 				</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> The localStorage Object </h2>
+				<p> Object localStorage </p>
+				<p> Object <b>localStorage</b> menyimpan data dengan tanpa ada expiration date (tanggal kadaluwarsa). 
+				Data tidaka akan dihapus ketiks browser ditutup, dan akan disediakan pada hari, minggu atau tahun berikutnya. </p>
+				
+				<article class="example-box">
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br><br>
+							
+							<<b>div</b> <span class="teal">id="result"</span>><<b>/div</b>> <br>
+							<br>
+							<<b>script</b>> <br>
+							<em>// Check browser support</em> <br>
+							<code>if</code> (typeof(Storage) !== "undefined") {
+							<blockquote>
+							<em>// Store</em> <br>
+							localStorage.setItem("lastname", "Smith"); <br>
+							<em>// Retrieve</em> <br>
+							document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+							</blockquote>
+							} <code>else</code> {
+							<blockquote>
+							document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+							</blockquote>
+							} <br>
+							<<b>/script</b>> <br>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						<div id="result"></div>
+					</div>
+				</article>
+				
+				<h4> Example explained: </h4>
+				<p> Contoh menerangkan: </p>
+				<ul>
+					<li> Buatlah sepasang nama/nilai localStorage dengan <b>name="lastname"</b> dan <b>value="Smith"</b> </li>
+					<li> Dapatkan kembali nilai dari "lastname" dan sisipkan itu kedalam element dengan <b>id="resul"</b> </li>
+				</li>
+				<p> Contoh diatas bisa juga ditulis seperti ini: </p>
+				
+				<div class="example-content">
+				<em>// Store</em> <br>
+				localStorage.lastname = "Smith"; <br>
+				<em>// Retrieve</em>
+				document.getElementById("result").innerHTML = localStorage.lastname;
+				</div>
+				
+				<p> Sintaksis untuk penggantian item localStorage <b>"lastname"</b> sebagai berikut: </p>
+				
+				<div class="example-content">
+				localStorage.removeItem("lastname");
+				</div>
+				<p><b>Catatan</b>: sepasang nama/nilai selalu disimpan sebagai string. Ingatlah untuk mengkonversikan mereka menjadi format lainnya ketika dibutuhkan! </p>
+				<p> Contoh berikut menghitung (count) nomor dari waktu seorang pengguna setelah mengklik seguah tombol. 
+				Pada kode unu nilai string di konversikan menjadi nomor untuk bisa meningkatkan penghitung: </p>
+				
+				<article class="example-box">
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br>
+						<<b>html</b>><br>
+							<<b>head</b>><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+							<<b>script</b>> <br>
+							<code>function</code> clickCounter() {
+								<blockquote>
+								<code>if</code>(typeof(Storage) !== "undefined") {
+								<blockquote>
+								<code>if</code> (localStorage.clickcount) {
+									<blockquote>
+									localStorage.clickcount = Number(localStorage.clickcount)+1;
+									</blockquote>
+								} <code>else</code> {
+									<blockquote>
+									localStorage.clickcount = 1;
+									</blockquote>
+								}
+									document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+									</blockquote>
+								} <code>else</code> {
+									<blockquote>
+									document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+									</blockquote>
+								}
+								</blockquote>
+							} <br>
+							<<b>/script</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br><br>
+							
+							<<b>p</b>><<b>button</b> <span class="teal">onclick="clickCounter()" type="button"</span>>Click me!<<b>/button</b>><<b>/p</b>> <br>
+							<<b>div</b> <span class="teal">id="resulting"</span>><<b>/div</b>> <br>
+							<<b>p</b>>Click the button to see the counter increase.<<b>/p</b>> <br>
+							<<b>p</b>>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).<<b>/p</b>>
+
+								<br>
+							<<b>/body</b>><br>
+						<<b>/html</b>>
+						
+					</div>
+					<button onclick="tampilkan02()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+						<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+						<div id="resulting"></div>
+						<p>Click the button to see the counter increase.</p>
+						<p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The sessionStorage Object </h2>
+				<p> Object <b>sessionStorage</b></p>
+				<p> Object <b>sessionStorage</b> sama dengan objet localStorage, <b><i>kecuali</i></b> bahwa sesstionStorage menyimpan data hanya untuk satu sesi. (Lalu) Data dihapus ketika pengguna menutup specific browser tab (tab browser itu). </p>
+				<p> Contoh berikut menghitung nomor waktu (times) pengguna setelah mengklik sebuah tombol di sesi sekarang ini: </p>
+				
+				<article class="example-box">
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br>
+						<<b>html</b>><br>
+							<<b>head</b>><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+							<<b>script</b>> <br>
+							<code>function</code> clickCounter() {
+								<blockquote>
+								<code>if</code>(typeof(Storage) !== "undefined") {
+								<blockquote>
+								<code>if</code> (sessionStorage.clickcount) {
+									<blockquote>
+									sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+									</blockquote>
+								} <code>else</code> {
+									<blockquote>
+									sessionStorage.clickcount = 1;
+									</blockquote>
+								}
+									document.getElementById("result").innerHTML = "You have clicked the button " + sessionStorage.clickcount + " time(s).";
+									</blockquote>
+								} <code>else</code> {
+									<blockquote>
+									document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+									</blockquote>
+								}
+								</blockquote>
+							} <br>
+							<<b>/script</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br><br>
+							
+							<<b>p</b>><<b>button</b> <span class="teal">onclick="clickCounter()" type="button"</span>>Click me!<<b>/button</b>><<b>/p</b>> <br>
+							<<b>div</b> <span class="teal">id="resulting"</span>><<b>/div</b>> <br>
+							<<b>p</b>>Click the button to see the counter increase.<<b>/p</b>> <br>
+							<<b>p</b>>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).<<b>/p</b>>
+				
+								<br>
+							<<b>/body</b>><br>
+						<<b>/html</b>>
+						
+					</div>
+					<button onclick="tampilkan03()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+						<p><button onclick="clickCounter03()" type="button">Click me!</button></p>
+						<div id="resulting03"></div>
+						<p>Click the button to see the counter increase.</p>
+						<p>Close the browser tab (or window), and try again, and the counter is reset.</p>
+					</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> 
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML5 drag or drop.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML5 application cache.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+<script>
+// Check browser support
+if (typeof(Storage) !== "undefined") {
+// Store
+localStorage.setItem("lastname", "Smith");
+// Retrieve
+document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+} else {
+document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+
+//localStorage object
+function clickCounter() {
+	if(typeof(Storage) !== "undefined") {
+	if (localStorage.clickcount) {
+		localStorage.clickcount = Number(localStorage.clickcount)+1;
+	} else {
+		localStorage.clickcount = 1;
+	}
+	document.getElementById("resulting").innerHTML = 
+	"You have clicked the button " + localStorage.clickcount + " time(s).";
+	} else {
+		document.getElementById("resulting").innerHTML = "Sorry, your browser does not support web storage...";
+	}
+}
+
+//sessionStorage  Object
+function clickCounter03() {
+	if(typeof(Storage) !== "undefined") {
+	if (sessionStorage.clickcount) {
+		sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+	} else {
+		sessionStorage.clickcount = 1;
+	}
+		document.getElementById("resulting03").innerHTML = 
+		"You have clicked the button " + sessionStorage.clickcount + " time(s) in this session.";
+	} else {
+		document.getElementById("resulting03").innerHTML = "Sorry, your browser does not support web storage...";
+	}
+}
+</script>
+</body>
+</html>

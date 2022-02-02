@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML5 SVG </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML5 SVG</h1>
+
+			</div>
+			
+			
+<section>			
+			<article>
+				<h2> What is SVG? </h2>
+				<p> Apa itu SVG ? </p>
+				
+				<ul>
+				  <li> SVG berdiri untuk <b>S</b>calable <b>V</b>ector <b>G</b>raphics (Grafik Sekala Vektor dapat dinaikan)</li>
+				  <li> SVG digunakan untuk mendefinisikan grafik  untuk Web</li>
+				  <li> SVG adalah sebuah rekomendasi W3C </li>
+				</ul>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The HTML <b class="blue"><<b>svg</b>></b> Element </h2>
+				<p> Element <<b>svg</b>> (diperkenalkan di HTML5) adalah sebuah container (tempat) untik grafik SVG. </p>
+				<p> Canvas memiliki beberapa metode untuk penggambaran paths, boxes, circles, text, dan grafik gambar. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Browser Support </h2>
+				<p> Nomor pada tabel menentukan browser versi pertams yang mendukung secara penuh element <<b>canvas</b>>. </p>
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td class="left"> Element</td>
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> <<b>svg</b>> </td>
+							<td> 4.0 </td>
+							<td> 9.0 </td>
+							<td> 3.0 </td>
+							<td> 3.2 </td>
+							<td> 10.1 </td>
+						</tr>
+					</tbody>
+				</table>
+				
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> SVG Circle </h2>
+				<p> SVG Lingkaran </p>
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br>
+							<<b>title</b>> SVG Circle <<b>/title</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br><br>
+							
+							<<b>svg</b> <span class="teal">width="100" height="100"</span>> <br>
+							  <<b>circle</b> <span class="teal">cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" </span>/> <br>
+							<<b>/svg</b>> <br><br>
+								
+							<<b>/body</b>><br>
+						<<b>/html</b>>
+						
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						<svg width="100" height="100">
+						  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+						</svg>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> SVG Rectangle </h2>
+				<p>SVG Persegi Panjang </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br>
+							<<b>title</b>> SVG Circle <<b>/title</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br><br>
+							
+							<<b>svg</b> <span class="teal">width="400" height="100"</span>> <br>
+							  <<b>rect</b> <span class="teal"> width="400" height="100" style="fill:rgb(0,0,255); 
+							stroke-width:10; stroke:rgb(0,0,0)"/</span>> <br>
+							<<b>/svg</b>> <br><br>
+								
+							<<b>/body</b>><br>
+						<<b>/html</b>>
+						
+					</div>
+					<button onclick="tampilkan02()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+						<svg width="400" height="100">
+							<rect width="400" height="100" style="fill:rgb(0,0,255); stroke-width:10; stroke:rgb(0,0,0)"/>
+						</svg>
+					</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> SVG Rounded Rectangle </h2>
+				<p> SVG Persegi Panjang Dibulatkan </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br>
+							<<b>title</b>> SVG Circle <<b>/title</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br><br>
+							
+							<<b>svg</b> <span class="teal">width="400" height="100"</span>> <br>
+							  <<b>rect</b> <span class="teal"> x="50" y="20" rx="20" ry="20" width="150" height="150" 
+							style="fill:rgb(255,0,0); stroke:black; stroke-width:5; opacity:0.5;"/</span>> <br>
+							<<b>/svg</b>> <br><br>
+								
+							<<b>/body</b>><br>
+						<<b>/html</b>>
+						
+					</div>
+					<button onclick="tampilkan03()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+						<svg width="400" height="180">
+							<rect x="50" y="20" rx="20" ry="20"
+							width="150" height="150" style="fill:red; stroke:black; stroke-width:5; opacity:0.5;"/>
+						</svg>
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> SVG Star </h2>
+				<p> SVG Bintang </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br>
+							<<b>title</b>> SVG Circle <<b>/title</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br><br>
+							
+							<<b>svg</b> <span class="teal">width="400" height="250"</span>> <br>
+							  <<b>polygon</b> <span class="teal"> points="100,10 40,198 190,78 10,78 160,198"
+							  style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;"/</span>> <br>
+							<<b>/svg</b>> <br><br>
+								
+							<<b>/body</b>><br>
+						<<b>/html</b>>
+						
+					</div>
+					<button onclick="tampilkan04()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+						<svg width="400" height="220">
+							<polygon points="100,10 40,198 190,78 10,78, 160,198"
+							style="fill:lime; stroke:purple; stroke-width:5; fill-rule:evenodd;"/>
+						</svg>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> SVG Logo </h2>
+				<p> SVG Logo </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br>
+							<<b>title</b>> SVG Circle <<b>/title</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br><br>
+							
+							<<b>svg</b> <span class="teal">width="130" height="500"</span>> <br>
+							    <<b>defs</b>> <br>
+			    				  <<b>linearGradient</b> <span class="teal">id="grad1" x1="0%" y1="0%" x2="100%" y2="0%"</span>> <br>
+							        <<b>stop</b> <span class="teal">offset="0%" style="stop-color:orange; stop-opacity:1;"</span> /> <br>
+							        <<b>stop</b> <span class="teal">offset="100%" style="stop-color:red; stop-opacity:1;"</span> /> <br>
+							      <<b>/linearGradient</b>> <br>
+							    <<b>/defs</b>> <br>
+							    <<b>ellipse</b> <span class="teal">cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)"</span> /> <br>
+							      <<b>text</b> <span class="teal">fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86"</span>>SVG<<b>/text</b>> <br>
+							      Sorry, your browser does not support inline SVG.<br>
+							<<b>/svg</b>> <br><br>
+								
+							<<b>/body</b>><br>
+						<<b>/html</b>>
+						
+					</div>
+					<button onclick="tampilkan05()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+						
+						<svg height="130" width="500">
+						  <defs>
+						    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+						      <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+						      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+						    </linearGradient>
+						  </defs>
+						  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+						  <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+						  Sorry, your browser does not support inline SVG.
+						</svg>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Differences Between SVG and Canvas </h2>
+				<p> Perbedaan Antara SVG dan Canavas </p>
+				<p> SVG merupakan suatu bahasa untuk pendeskripsian grafik 2D (dua dimensi) dalam XML.</p>
+				<p> Canvas menggambar grapik 2D, on the fly (dengan sebuah JavaScript). </p>
+				<p> SVG didasari XML, yang mana artinya setiap elemen tersedia dengan SVG DOM, kamu bisa melampirkan 
+				JavaScript event handler untuk sebuah element. </p>
+				<p> Dalam SVG, setiap shape (bentuk) diingat sebagai sebuah object, Jika attribute dari sebuah object SVG diubah, 
+				browser bisa secara otomatis mengubah kembali shape. </p>
+				<p> Canvas diterjemahkan atau diubah pixel demi pixel. Dalam canvas, sekali grafik digambar, ia dilupakan oleh browser. Jika posisi canvas harus diubah, 
+				sekuruh layar perlu digambar ulang, termasuk object apa saja yang mungkin telah di-cover oleh grafik. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Comparison of Canvas and SVG </h2>
+				<p> Perbandingan Canvas dan SVG </p>
+				<p> Tabel dibawah menampilkan beberapa perbedaan penting antsra Canvas dan SVG: </p>
+				<table>
+					<thead>
+						<tr>
+							<th> Canvas </th>
+							<th> SVG </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="vertOp">
+							<td>
+								<ul>
+									<li> Resolution independent (bebas) </li>
+									<li> Tidak ada dukungan untuk event handler </li>
+									<li> Kemampuan menyumbang teks miskin (sedikit) </li>
+									<li> Kamu bisa menyimpan hasil gambar sebagau <b>.png</b> atau <b>.jpg</b> </li>
+									<li> Cocok untuk graphic-intensive games</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li> Resolution independent (bebeas) </li>
+									<li> Mendukung Event handler </li>
+									<li> Sangat cocok untuk applikasi dengan area penyumbang luas atau besar (Google Maps) </li>
+									<li> Tidak cocok untuk aplikasi game. </li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<p> Untuk mempelajari lebih tentang SVG, Sikahkan bacalah <a href="SVG tutorial.html" >SVG Tutorials</a>. </p>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML5 canvas.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML media.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

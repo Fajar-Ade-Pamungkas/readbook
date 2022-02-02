@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS properties | CSS3 border-image </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="../tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="../buka.js"></script>
+<script type="text/javascript" src="../../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../.,/HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS3 border-image Property </h1>
+			</div>
+			
+<section>
+			<article>
+				<h2>Contoh</h2>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<p> Menentukan sebuah gambar sebagai border yang mengelilingi sebuah element: </p>
+					<div class="example-content" id="content-open01">
+						
+						#borderimg { <br>
+						-webkit-border-image: url(border.png) 30 round; <em>/* Safari 3.1-5 */</em> <br>
+						-o-border-image: url(border.png) 30 round; <em>/* Opera 11-12.1 */</em> <br>
+						border-image: url(border.png) 30 round; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Definisi dan Penggunaan</h2>
+				
+				<p>Properti <mark>border-image</mark> memperbolehkan kamu untuk mengubah sebuah gambar untuk dogunakan sebagai pengganti dari border normal yang mengelilingi sebuah element.</p>
+				<p>Properti <mark>border-image</mark> merupakan shorhand property untuk pengaturan <mark>border-image-source</mark>, <mark>border-image-slice</mark>, <mark>border-image-width</mark>, <mark>border-image-outset</mark> dan <mark>border-image-repeat</mark>.</p>
+				<p>Menghapus nilai akan diatur menjadi nilai-nilai defaultnya.</p>
+				
+				<table class="definition">
+					<tr>
+						<th> Default value: </th>
+						<td> none 100% 1 0 stretch </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<th> Inherited: </th>
+						<td> no </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<th> Animatable: </th>
+						<td> no. <a href="../CSS references/CSS animatable.html" > Read about animatable</a> </td> 
+						<td>  </td>
+					</tr>
+					<tr>
+						<th> Version </th>
+						<td> CSS3 </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<th> JavaScript syntax: </th>
+						<td> <i>object</i>.style.borderImage="<i>url(border.png) 30 round</i>" </td>
+						<td> <a href="JavaScript syntax/.html" target="_blank" >Try it</a> </td>
+					</tr>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Browser Support</h2>
+				
+				<p> Nomor dalam tabel menentukan browser versi pertama yang mendukung properti secara penuh.</p>
+				<p> Nomor yang diikuti oleh <mark>-webkit-</mark>, <mark>-moz-</mark> atau <mark>-o-</mark> menentukan versi pertama yang bekerja dengan awalan kata.</p>
+				
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="7" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> Properti </td>
+							<td> <img src="../../logos/Chrome.png" alt="Chrome"> </td>
+							<td> <img src="../../logos/Edge.png" alt="Edge"> </td>
+							<td> <img src="../../logos/IE.png" alt="Internet Explorer"> </td>
+							<td> <img src="../../logos/Firefox.png" alt="Firefox"> </td>
+							<td> <img src="../../logos/Safari.png" alt="Safari"> </td>
+							<td> <img src="../../logos/Opera.png" alt="Opera"> </td>
+						</tr>
+						<tr>
+							<td> border-image </td>
+							<td> 16.0 <br> 4.0 -webkit- </td>
+							<td> 12.0 </td>
+							<td> 11.0 </td>
+							<td> 15.0 <br> 3.5 -moz- </td>
+							<td> 6.0 <br> 3.1 -webkit- </td>
+							<td> 15.0 <br> 11.0 -o- </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<p><b>Catatan:</b> Lihatlah individual browser support untuk setiap nilai dibawah.</p>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Sintaksis CSS</h2>
+				
+				<div class="simple-example">
+					<b>border-image</b>: source slice width outset repeat|initial|inherit;
+				</div>
+				
+				<h2>Nilai Properti</h2>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Nilai</th>
+							<th>Deskripsi</th>
+							<th>Mainkan</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> <a href="border-image-source.html" >border-image-source</a> </td>
+							<td> Path gambar untuk digunakan sebagai border </td>
+							<td>  </td>
+						</tr>
+						<tr>
+							<td> <a href="border-image-slice.html" >border-image-slice</a> </td>
+							<td> Bagaimana untuk memotong border gambar </td>
+							<td>  </td>
+						</tr>
+						<tr>
+							<td> <a href="border-image-width.html" >border-image-width</a> </td>
+							<td> Menentukan lebar dari border gambar </td>
+							<td>  </td>
+						</tr>
+						<tr>
+							<td> <a href="border-image-outset.html" >border-image-outset</a> </td>
+							<td> Jumlah yang mana area border gambar memperpanjang melebihi border box </td>
+							<td>  </td>
+						</tr>
+						<tr>
+							<td> <a href="border-image-repeat.html" >border-image-repeat</a> </td>
+							<td> Menentukan apakah border gambar harus diulang-ulang (repeated), dibulat (rounded) atau direnggangkan (stretched) </td>
+							<td>  </td>
+						</tr>
+						<tr>
+							<td> initial </td>
+							<td> Mengatur properti ini untuk nilai defaultnya. <a href="initial.html" target="_blank" > Read about initial</a> </td>
+							<td>  </td>
+						</tr>
+						<tr>
+							<td> inherit </td>
+							<td> Mewarisi properti ini dari nilai element induknya. <a href="inherit.html" target="_blank" > Read about initial</a> </td>
+							<td>  </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Contoh Lebih</h2>
+				
+
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<p> Different slice values completely changes the look of the border:</p>
+					<div class="example-content" id="content-open02">
+						
+						#borderimg1 { <br>
+						border: 10px solid transparent; <br>
+						padding: 15px; <br>
+						-webkit-border-image: url(border.png) 50 round; <em>/* Safari 3.1-5 */</em> <br>
+						-o-border-image: url(border.png) 50 round; <em>/* Opera 11-12.1 */</em> <br>
+						border-image: url(border.png) 50 round; <br>
+						} <br>
+						 <br>
+						#borderimg2 { <br>
+						border: 10px solid transparent; <br>
+						padding: 15px; <br>
+						-webkit-border-image: url(border.png) 20% round; <em>/* Safari 3.1-5 */</em> <br>
+						-o-border-image: url(border.png) 20% round; <em>/* Opera 11-12.1 */</em> <br>
+						border-image: url(border.png) 20% round; <br>
+						} <br>
+						 <br>
+						#borderimg3 { <br>
+						border: 10px solid transparent; <br>
+						padding: 15px; <br>
+						-webkit-border-image: url(border.png) 30% round; <em>/* Safari 3.1-5 */</em> <br>
+						-o-border-image: url(border.png) 30% round; <em>/* Opera 11-12.1 */</em> <br>
+						border-image: url(border.png) 30% round; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Halaman yang Berhubungan</h2>
+				<ul>
+					<li>CSS3 tutorial: <a href="../CSS3 border images.html" > CSS3 Border Image </a></li>
+					<li>CSS reference <a href="border-image-outset.html" > border-image-outset property </a></li>
+					<li>CSS reference <a href="border-image-repeat.html" > border-image-repeat property </a></li>
+					<li>CSS reference <a href="border-image-slice.html" > border-image-slice property </a></li>
+					<li>CSS reference <a href="border-image-source.html" > border-image-source property </a></li>
+					<li>CSS reference <a href="border-image-width.html" > border-image-width property </a></li>
+					<li>HTML DOM reference: <a href="DOM/borderImage.html" > borderImage property </a></li>
+				</ul>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="border-color.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="border-image-source.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

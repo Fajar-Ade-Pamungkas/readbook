@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS Outline </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS  </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<div style="outline:10px green double; border: 3px black solid;">
+					<h2>CSS Outline Properties</h2>
+					<p> Outline adalah garis yang digambar mengelilingi suatu elemen - diluar border. Ini busa digunakan untuk membuat element "stand out". </p>
+					<p> Properti <mark>outline</mark> CSS menentukan style, cokor, dan width dari outline. </p>
+					<p> Element ini memiliki garis hitam tipis dan double outline yang tebalnya 10px dan berwarna hijau. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS Outline</h2>
+				<p> Otukine merupakan garis yang digambar mengelilingi element (diluar border) untuk membuat element "stand out". </p>
+				
+				<div class="col-12 col-m-12">
+					<div class="div01">
+						<span>outline</span>
+						<div class="div02">
+							<span>border</span>
+								<div class="div03">
+									<span>content</span>
+								</div>
+						</div>
+					</div>
+				</div>
+				<p> Akan tetapi properi <mark>outline</mark> berbeda dari properti <mark>birder</mark> - Outline BUKAN merupakan bagian dari dimensi elemen; 
+				lebar dan tinggi total element dipengaruhi oleh lebar atau tebal outline.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Outline Style</h2>
+				<p> Properti <mark>outline-style</mark> menentukan style dari outline. </p>
+				<p> properti <mark>outline-style</mark> bisa memiliki salah satu nilai berikut: </p>
+				
+				<ul>
+					<li><mark>dotted</mark> - Mendefinisikan sebuah outline titik</li>
+					<li><mark>dashed</mark> - Mendefinisikan sebuah outline garis terpisah - pisah </li>
+					<li><mark>solid</mark> - Mendefinisikan sebuah outline garis </li>
+					<li><mark>double</mark> - Mendefinisikan sebuah outline ganda </li>
+					<li><mark>groove</mark> - Mendefinisikan sebuah outline beralur (grooved) 3D. Efek  tergantung kepada properti outline-color</li>  
+					<li><mark>ridge</mark> - Mendefinisikan sebuah 3D ridged outline. Efek tergantung kepada properti outline-color</li> 
+					<li><mark>inset</mark> - Mendefinisikan sebuah 3D inset outline. Efek tergantung kepada properti outline-color</li> 
+					<li><mark>outset</mark> - Mendefinisikan sebuah 3D outset outline. Efek tergantung kepada properti outline-color</li> 
+					<li><mark>none</mark> - Mendefinisikan tidak ada outline</li>
+					<li><mark>hidden</mark> - Mendefinisikan sebuah outline tersembunyi</li> 
+				</ul>
+				
+				<p> Contoh pertama berikut mengatur border hitam lurus disekitar setiap element <<b>p</b>>, lalu contoh menampilkan perbedaan nilai <mark>outline-style</mark>:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						p {
+						<blockquote>
+						    border: 1px solid black; <br>
+						    outline-color: red; 
+						</blockquote>
+						} <br>
+						<br>
+						p.dotted {outline-style: dotted;} <br>
+						p.dashed {outline-style: dashed;} <br>
+						p.solid {outline-style: solid;} <br>
+						p.double {outline-style: double;} <br>
+						p.groove {outline-style: groove;} <br>
+						p.ridge {outline-style: ridge;} <br>
+						p.inset {outline-style: inset;} <br>
+						p.outset {outline-style: outset;} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						p {
+						<blockquote>
+						    border: 1px solid black; <br>
+						    outline-color: red; 
+						</blockquote>
+						} <br>
+						<br>
+						p.dotted {outline-style: dotted;} <br>
+						p.dashed {outline-style: dashed;} <br>
+						p.solid {outline-style: solid;} <br>
+						p.double {outline-style: double;} <br>
+						p.groove {outline-style: groove;} <br>
+						p.ridge {outline-style: ridge;} <br>
+						p.inset {outline-style: inset;} <br>
+						p.outset {outline-style: outset;} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>p</b> <span class="teal">class="dotted"</span>>A dotted outline.<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">class="dashed"</span>>A dashed outline.<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">class="solid"</span>>A solid outline.<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">class="double"</span>>A double outline.<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">class="groove"</span>>A groove outline. The effect depends on the outline-color value.<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">class="ridge"</span>>A ridge outline. The effect depends on the outline-color value.<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">class="inset"</span>>An inset outline. The effect depends on the outline-color value.<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">class="outset"</span>>An outset outline. The effect depends on the outline-color value.<<b>/p</b>> <br><br>
+						
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<p class="dotted">A dotted outline.</p>
+						<p class="dashed">A dashed outline.</p>
+						<p class="solid">A solid outline.</p>
+						<p class="double">A double outline.</p>
+						<p class="groove">A groove outline. The effect depends on the outline-color value.</p>
+						<p class="ridge">A ridge outline. The effect depends on the outline-color value.</p>
+						<p class="inset">An inset outline. The effect depends on the outline-color value.</p>
+						<p class="outset">An outset outline. The effect depends on the outline-color value.</p>
+						
+					</div>
+				</article>
+				<div class="nasehat">
+				<p><b>Catatan:</b> None dari properti <mark>outline</mark> CSS LAINNYA dideskripsikan dibawahakan memiliki efek lainnya tanpa properti <mark>outline-style</mark> diatur!</p>
+				
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Outline Color</h2>
+				<p> Properti <mark>outline-color</mark> digunakan untuk mengatur warna dari outline.</p>
+				<p> Warna bisa diatur dengan: </p>
+				<ul>
+					<li> sebuah nama warna valid - seperti <b>"red"</b> </li>
+					<li> Sebuah nilai HEX - seperti <b>"#ff0000"</b> </li>
+					<li> Sebuah nilai RGB - seperti <b>"rgb(255,0,0)" </b></li>
+					<li> invert - Menunjukkan color inversion (yang mana meyakinkan bahwa outkine ditampilkan, tanpa memperhatikan warna background)</li>
+				</ul>
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						p {
+						<blockquote>
+						    border: 1px solid black; <br>
+						    outline-style: double; <br>
+						    outline-color: red;
+						</blockquote>
+						} 
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						p {
+						<blockquote>
+						    border: 1px solid blue; <br>
+						    outline-style: double; <br>
+						    outline-color: red;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						<<b>p</b>> A colored outline.<<b>/p</b>> <br>
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<p style="border:1px blue solid; outline: red double;"> A colored outline.</p>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Outline Width</h2>
+				<p> Properti <mark>outline-width</mark> menentukan lebar dari outline. </p>
+				<p> Lebar bisa diatur sebagai ukuran tertentu (dalam satuan px, pt, cm, em, dan sebagainya) atau menggunakan salah satu dari tiga nilai yang sudah dikenal seperti: <b>thin</b>, <b>medium</b>, atau <b>thick</b>. </p>
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open03">
+						
+						p {border: 1px solid black;} <br>
+						<br>
+						p.one {
+						<blockquote>
+						    outline-style: double; <br>
+						    outline-color: red; <br>
+						    outline-width: thick;
+						</blockquote>
+						} <br>
+						<br>
+						p.two {
+						<blockquote>
+						    outline-style: double; <br>
+						    outline-color: green; <br>
+						    outline-width: 3px;
+						</blockquote>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						p {border: 1px solid blue;} <br>
+						<br>
+						p.one {
+						<blockquote>
+						    outline-style: double; <br>
+						    outline-color: red; <br>
+						    outline-width: thick;
+						</blockquote>
+						} <br>
+						<br>
+						p.two {
+						<blockquote>
+						    outline-style: double; <br>
+						    outline-color: green; <br>
+						    outline-width: 3px;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						<<b>p</b> <span class="teal">class="one"</span>>A thick outline.<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">class="two"</span>>A thinner outline.<<b>/p</b>> <br><br>
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+						<p style="border:1px blue solid; outline:thick red double; margin-bottom:15px;">A thick outline.</p>
+						<p style="border:1px blue solid; outline:3px green double;">A thinner outline.</p>
+						
+					</div>
+				</article>
+
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Outline - Shorthand property</h2>
+				<p> Untuk mempersingkat kode, Ini mungkin untuk menentukan semua properti outline individual dalam satu properti. </p>
+				<p> properti <mark>outline</mark> merupakan shorthand property untuk properti outline individual berikut: </p>
+				<ul>
+					<li>outline-width</li>
+					<li>outline-style <b class="justRed">(required)</b></li>
+					<li>outline-color</li>
+				</ul>
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open04">
+						
+						p {
+						<blockquote>
+						    border: 1px solid black; <br>
+						    outline: 5px dotted red;
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close04">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						p {
+						<blockquote>
+						    border: 1px solid blue; <br>
+						    outline: 5px dotted red;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						<<b>p</b>>An outline.<<b>/p</b>> <br>
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<button onclick="buka04()" class="exbutton"> Open </button>
+					<button onclick="tutup04()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+						<p style="border:1px solid blue; outline:5px dotted red;">An outline.</p>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>All CSS Outline Properties </h2>
+				<table class="table">
+					<thead>
+						<tr>
+							<th> Properti </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> outline </td>
+							<td> Mengatur semua properti outline dalam satu deklarasi</td>
+						</tr>
+						<tr>
+							<td> outline-color </td>
+							<td> Mengatur warna suatu outline</td>
+						</tr>
+						<tr>
+							<td> outline-offset </td>
+							<td> Menentukan space (ruang) antara otuline dan edge (tepi/pinggir) atau border dari suatu element</td>
+						</tr>
+						<tr>
+							<td> outline-style </td>
+							<td> Mengatur style atau gaya outline </td>
+						</tr>
+						<tr>
+							<td> outline-width </td>
+							<td> Mengatur width atau lebar atau tebal suatu outline</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS box model.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS display.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+
+<style type="text/css">
+.div01, .div02, .div03{
+	width:100%;
+	padding:5px 20px 20px 20px;
+	color:black;
+	text-shadow: 1px 1px 3px white, -1px -1px 3px blue;
+	text-align:center;
+}
+.div01 span{
+	margin-top:none;
+	text-transform:capitalize;
+	font-weight:bold;
+}
+.div01 {
+	background-color:green;
+	border:3px white dashed;
+	margin:10px;
+}
+.div02 {
+	background-color:darkSlateGrey;
+}
+.div03 {
+	background-color:black;
+}
+.example-content p{
+	margin-bottom:10px;
+}
+</style>
+</body>
+</html>

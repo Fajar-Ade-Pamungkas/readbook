@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML5 web worker </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML5 Web Worker </h1>
+				<p> Web worker adalah sebuah JavaScript yang berjalan dalam background, tanpa mempengaruhi kinerja dari halaman. </p>
+			</div>
+			
+			
+<section>			
+			<article>
+				<h2> What is a Web Worker? </h2>
+				<p> Apa itu Web Worker ? </p>
+				<p> Ketika pengeksekusian script dalam sebuah halaman HTML, Halaman menjadi tidak merespon sampai script selesai. </p>
+				<p> Web worker adalah JavaScript yang berjalan dalam background, secara bebas tentang script lain, tanpa mempengaruhi 
+				kinerja dari halaman. Kamu bisa melanjutkan tuk melakukan apapun yang kamu mau: clicking, selecting things, etc., 
+				saat web worker berjalan di background. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Browser Support </h2>
+				<p> Nomor pada tabel menentukan browser versi pertama yang mendukung secara penuh <b>Web Worker</b>. </p>
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td class="left"> API </td>
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> <b>Web Worker</b> </td>
+							<td> 4.0 </td>
+							<td> 10.0 </td>
+							<td> 3.5 </td>
+							<td> 4.0 </td>
+							<td> 11.5 </td>
+						</tr>
+					</tbody>
+				</table> 
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML Web Workers Example </h2>
+				<p> Contoh Web Worker HTML </p>
+				<p> Contoh dibawah ini membuat sebuah web worker sederhana yang menghitung nomor dalam background: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>script</b>> <br>
+							<code>var</code> w; <br>
+							<br>
+							<code>function</code> startWorker() { 
+								<blockquote>
+								<code>if</code>(typeof(Worker) !== "undefined") {
+									<blockquote>
+									if(typeof(w) == "undefined") {
+										<blockquote>
+										w = new Worker("demo_workers.js");
+										</blockquote>
+										} <br>
+										w.onmessage = function(event) {
+											<blockquote>
+											document.getElementById("result").innerHTML = event.data;
+											</blockquote>
+										}; 
+										</blockquote>
+									} else {
+									<blockquote>
+									document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Workers...";
+									</blockquote>
+								}
+								</blockquote>
+							} <br>
+							 <br>
+							function stopWorker() { 
+							<blockquote>
+							w.terminate(); <br>
+							w = undefined;
+							</blockquote>
+							} <br>
+							<<b>/script</b>> <br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br><br>
+							
+							<<b>p</b>>Count numbers: <<b>output</b> <span class="teal">id="result"</span>><<b>/output</b>><<b>/p</b>> <br>
+							<<b>button</b> <span class="teal">onclick="startWorker()"</span>>Start Worker<<b>/button</b>> <br> 
+							<<b>button</b> <span class="teal">onclick="stopWorker()"</span>>Stop Worker<<b>/button</b>> <br>
+							<br>
+							<<b>p</b>><<b>strong></b>Note:<<b>/strong</b>> Internet Explorer 9 and earlier versions do not support Web Workers.<<b>/p</b>><br>
+							<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						<p>Count numbers: <output id="result"></output></p>
+						<button onclick="startWorker()">Start Worker</button> 
+						<button onclick="stopWorker()">Stop Worker</button>
+						
+						<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support Web Workers.</p>
+					</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Check Web Worker Support </h2>
+				<p> Periksalahlah Web Worker Support </p>
+				<p> Sebelum pembuatan sebuah web worker, periksalah apakah browser pengguna mendukung web worker: </p>
+					
+				<div class="example-content">
+				<code>if</code>(typeof(Worker) !== "undefined") { <br>
+				    <em>// Yes! Web worker support!</em> <br>
+				    <em>// Some code.....</em><br>
+				} <code>else</code> { <br>
+				   <em> // Sorry! No Web Worker support..</em>
+				}
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Create a Web Worker File </h2>
+				<p> Buatlah sebuah File Web Worker </p>
+				<p> Sekarang, ayo buat web worker kita dalam sebuah external JavaScript. </p>
+				<p> Disini, kita membuat sebuah script yang menghitung. Script disimpan dalamfile "demo_workers.js": </p>
+				
+				<div class="example-content">
+				<code>var</code> i = 0; <br>
+				<br>
+				<code>function</code> timedCount() {
+					<blockquote>
+				    i = i + 1; <br>
+				    postMessage(i); <br>
+				    setTimeout("timedCount()",500);
+					</blockquote>
+				} <br>
+				<br>
+				timedCount();
+				</div>
+				
+				<p>Bagian penting dari code diatas adalah metode <b>postMessage()</b> - yang mana digunakan untuk me-post pesan balik ke HTML page. </p>
+				<div class="nasehat">
+				<b>Note:</b> Secara normal web worker digunakan untuk script sederhana seperti itu, tapi untuk lebih CPU intensive taks. 
+				</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Create a Web Worker Object </h2>
+				<p> Membuat Object Web Worker</p>
+				<p> Sekarang kita memiliki file web worker, lalu kita perlu memanggilnya dari sebuah HTML page. </p>
+				<p> Baris berikut mengecek jika worker sudsh tersedia, Jika tidak - ia membuat sebuah object web worker baru dan menjalankan code di "demo_workers.js": </p>
+
+				<div class="example-content">
+				<code>if</code>(typeof(w) == "undefined") {
+				    <blockquote>w = new Worker("demo_workers.js");</blockquote>
+				}
+				</div>
+				
+				<p> Lalu kita bisa mengirim dan menerima pesan dari web worker. </p>
+				<p> Tambahkan event listener "onmessage" ke web worker. </p>
+				
+				<div class="example-content">
+				w.onmessage = function(event){
+				<blockquote>
+				    document.getElementById("result").innerHTML = event.data;
+				</blockquote>
+				};
+				</div>
+				
+				<p> Ketika web worker memposting sebuah pesan, kode dengan event listener dieksekusi. Data dari web worker disimpan di <b>event.data</b>. </p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Terminate a Web Worker </h2>
+				<p> Mengakhiri sebuah Web Worker </p>
+				<p> Ketika object web worker  dibuat, ia akan meneruskan ke listen for message (bahkan setelah external script selesai) sampau ia diakhiri. </p>
+				<p> Untuk mengakhiri web worker, dan free browser/computer resource, gunakanlah metode <b>terminate()</b>: </p>
+				
+				<div class="example-content">
+				w.terminate();
+				</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Reuse the Web Worker </h2>
+				<p> Gunakan kembali Web Worker </p>
+				<p> Jika kamu menyetel variabel worker menjadi <i>undefined</i>, setelah ia sudah diakhiri, kamu bisa menggunakn kembali kode: </p>
+				<div class="example-content">
+				w = undefined;
+				</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Full Web Worker Example Code </h2>
+				<p> Contoh Kode Web Worker Penuh </p>
+				<p> Kita sudah melihat kode web worker dalam file .js. Dibawah ini adalah kode untuk HTML page: </p>
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>script</b>> <br>
+							<code>var</code> w; <br>
+							<br>
+							<code>function</code> startWorker() { 
+								<blockquote>
+								<code>if</code>(typeof(Worker) !== "undefined") {
+									<blockquote>
+									if(typeof(w) == "undefined") {
+										<blockquote>
+										w = new Worker("demo_workers.js");
+										</blockquote>
+										} <br>
+										w.onmessage = function(event) {
+											<blockquote>
+											document.getElementById("result").innerHTML = event.data;
+											</blockquote>
+										}; 
+										</blockquote>
+									} else {
+									<blockquote>
+									document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Workers...";
+									</blockquote>
+								}
+								</blockquote>
+							} <br>
+							 <br>
+							function stopWorker() { 
+							<blockquote>
+							w.terminate(); <br>
+							w = undefined;
+							</blockquote>
+							} <br>
+							<<b>/script</b>> <br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br><br>
+							
+							<<b>p</b>>Count numbers: <<b>output</b> <span class="teal">id="result"</span>><<b>/output</b>><<b>/p</b>> <br>
+							<<b>button</b> <span class="teal">onclick="startWorker()"</span>>Start Worker<<b>/button</b>> <br> 
+							<<b>button</b> <span class="teal">onclick="stopWorker()"</span>>Stop Worker<<b>/button</b>> <br>
+							<br>
+							<<b>p</b>><<b>strong></b>Note:<<b>/strong</b>> Internet Explorer 9 and earlier versions do not support Web Workers.<<b>/p</b>><br>
+							<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan02()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+						<p>Count numbers: <output id="result02"></output></p>
+						<button onclick="startWorker02()">Start Worker</button> 
+						<button onclick="stopWorker02()">Stop Worker</button>
+						
+						<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support Web Workers.</p>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Web Workers and the DOM </h2>
+				<p> Web Worker dan DOM (Document Object Model) </p>
+				<p> Sejak web worker berada di external file, mereka tidak memiliki akses ke Object - Object JavaScript berikut: </p>
+				<ul>
+					<li> The window object </li>
+					<li> The document object </li>
+					<li> The parent object </li>
+				</ul>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML5 application cache.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML5 SSE.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+
+<script>
+
+var w;
+
+function startWorker() {
+    if(typeof(Worker) !== "undefined") {
+        if(typeof(w) == "undefined") {
+            w = new Worker("demo_workers.js");
+        }
+        w.onmessage = function(event) {
+            document.getElementById("result").innerHTML = event.data;
+        };
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Workers...";
+    }
+}
+
+function stopWorker() { 
+    w.terminate();
+    w = undefined;
+}
+
+//Second Example 
+function startWorker02() {
+    if(typeof(Worker) !== "undefined") {
+        if(typeof(w) == "undefined") {
+            w = new Worker("demo_workers.js");
+        }
+        w.onmessage = function(event) {
+            document.getElementById("result02").innerHTML = event.data;
+        };
+    } else {
+        document.getElementById("result02").innerHTML = "Sorry, your browser does not support Web Workers...";
+    }
+}
+
+function stopWorker02() { 
+    w.terminate();
+    w = undefined;
+}
+</script>
+</body>
+</html>

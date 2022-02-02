@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | JavaScript | DOM element reference </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="../tutorial.css">
+<script type="text/javascript" src="../../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../javaScript3.js"></script>
+<style type="text/css">
+table i {
+	color:gray;
+}
+table td:first-child {
+	font-weight:bold;
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		
+		<!--Link-->
+		<div id="nav-vertical">
+			
+		<button onclick="openMenu()" id="menu">Open Menu</button>
+		<button onclick="closeMenu()" id="menu">Close Menu</button>
+		
+		<div id="vertical">
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch()"> JavaScript Tutorial</button>
+			<div class="drop-content" id="myDropdown">
+			<input type="text" class="myInput" id="myInput" placeholder="Cari" onkeyup="filterFunction()"/>
+			<ol>
+				<a href="../js home.html"><li> Home </li></a>
+				<a href="../js introduction.html"><li> Introduction </li></a>
+				<a href="../js where to.html"><li> Where To </li></a>
+				<a href="../js output.html"><li> Output </li></a>
+				<a href="../js syntax.html"><li> Syntax </li></a>
+				<a href="../js statements.html" ><li> Statements </li></a>
+				<a href="../js comments.html" ><li> Comments </li></a>
+				<a href="../js variables.html"><li> Variable </li></a>
+				<a href="../js operators.html"><li> Operators </li></a>
+				<a href="../js arithmetic.html"><li> Arithmetic </li></a>
+				<a href="../js assignment.html"><li> Assignment </li></a>
+				<a href="../js data types.html"><li> Data Types </li></a>
+				<a href="../js functions.html"><li> Functions </li></a>
+				<a href="../js objects.html"><li> Objects </li></a>
+				<a href="../js scope.html"><li> Scope </li></a>
+				<a href="../js events.html"><li> Events </li></a>
+				<a href="../js strings.html"><li> string </li></a>
+				<a href="../js string methods.html"><li> Strings Method </li></a>
+				<a href="../js numbers.html"><li> Numbers </li></a>
+				<a href="../js number methods.html"><li> Number Methods </li></a>
+				<a href="../js math.html"><li> Math </li></a>
+				<a href="../js random.html" ><li> Math Random </li></a>
+				<a href="../js dates.html"><li> Dates </li></a>
+				<a href="../js date formats.html" ><li> Date Formats </li></a>
+				<a href="../js date methods.html" ><li> Date Methods </li></a>
+				<a href="../js get date methods.html" ><li> Date get Methods </li></a>
+				<a href="../js set date methods.html" ><li> Date Set Methods </li></a>
+				<a href="../js arrays.html"><li> Arrays </li></a>
+				<a href="../js array methods.html" ><li> Array Methods </li></a>
+				<a href="../js array sort.html"><li> Array Sort </li></a>
+				<a href="../js array iteration.html"><li> Array Iteration </li></a>
+				<a href="../js booleans.html" ><li> boolean </li></a>
+				<a href="../js comparisons.html" ><li> Comparisons </li></a>
+				<a href="../js conditions.html" ><li>Conditions</li></a>
+				<a href="../js switch.html" ><li>Switch </li></a>
+				<a href="../js loop for.html"><li> Loop For </li></a>
+				<a href="../js loop while.html" ><li>Loop while</li></a>
+				<a href="../js break.html" ><li>Break</li></a>
+				<a href="../js type conversion.html" ><li> Types conversion</li></a>
+				<a href="../js bitwise.html" ><li> Bitwise </li></a>
+				<a href="../js RegExp.html" ><li>RegExp</li></a>
+				<a href="../js errors.html" ><li>Errors </li></a>
+				<a href="../js debugging.html"><li>Debugging </li></a>
+				<a href="../js hoisting.html" ><li>Hoisting</li></a>
+				<a href="../js strict mode.html"><li>Strict mode</li></a>
+				<a href="../js this keyword.html" ><li> this Keyword </li></a>
+				<a href="../js let.html" ><li> Let </li></a>
+				<a href="../js const.html" ><li> Const </li></a>
+				<a href="../js style guide.html" ><li>Style guide</li></a>
+				<a href="../js best practices.html" ><li>best practices </li></a>
+				<a href="../js mistakes.html"><li> Mistakes </li></a>
+				<a href="../js performance.html" ><li>Performance</li></a>
+				<a href="../js reserved words.html" ><li>Reserved words</li></a>
+				<a href="../js versions.html" ><li> Versions </li></a>
+				<a href="../js version ES5.html" ><li class="redZone"> Version ES5 </li></a>
+				<a href="../js version ES6.html" ><li class="redZone"> Version ES6 </li></a>
+				<a href="../js JSON.html"><li>JSON</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch2()"> JavaScript Formulir</button>
+			<div class="drop-content" id="myDropdown2">
+			<input type="text" class="myInput" id="myInput2" placeholder="Cari" onkeyup="filterFunction2()"/>
+			<ol>
+				<a href="../forms validation.html" ><li>Forms Validation</li></a>
+				<a href="../forms API.html" ><li class="redZone">Forms API</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch3()"> JavaScript Object</button>
+			<div class="drop-content" id="myDropdown3">
+			<input type="text" class="myInput" id="myInput3" placeholder="Cari" onkeyup="filterFunction3()"/>
+			<ol>
+				<a href="../object definitions.html" ><li>Object Definitions</li></a>
+				<a href="../object properties.html" ><li>Object Properties</li></a>
+				<a href="../object methods.html"><li class="redZone">Object Methods</li></a>
+				<a href="../object accessors.html" ><li>Object accessors</li></a>
+				<a href="../object constructors.html" ><li>Object constructor</li></a>
+				<a href="../object prototypes.html" ><li>Object Prototypes</li></a>
+				<a href="../object ECMAScript5.html" ><li class="redZone">Object ECMAScript5</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch4()"> JavaScript Function</button>
+			<div class="drop-content" id="myDropdown4">
+			<input type="text" class="myInput" id="myInput4" placeholder="Cari" onkeyup="filterFunction4()"/>
+			<ol>
+				<a href="../funtion definitions.html" ><li>Function Definitions</li></a>
+				<a href="../function parameters.html" ><li>Function Parameters</li></a>
+				<a href="../function invocation.html" ><li>Function Invocation</li></a>
+				<a href="../function closures.html" ><li>Function Closures</li></a>
+				<a href="../function apply.html" ><li class="redZone">Function Apply</li></a>
+				<a href="../function call.html" ><li>Function Call</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch5()">  JavaScript HMTL DOM </button>
+			<div class="drop-content" id="myDropdown5">
+			<input type="text" class="myInput" id="myInput5" placeholder="Cari" onkeyup="filterFunction5()"/>
+			<ol>
+				<a href="../DOM intro.html" ><li> DOM Introduction </li></a>
+				<a href="../DOM methods.html" ><li> DOM Methods </li></a>
+				<a href="../DOM document.html" ><li> DOM Documents</li></a>
+				<a href="..DOM elements.html" ><li> DOM Elements  </li></a>
+				<a href="../DOM HTML.html" ><li> DOM HTML</li></a>
+				<a href="../DOM CSS.html" ><li> DOM CSS  </li></a>
+				<a href="../DOM animations.html" ><li> DOM Animations </li></a>
+				<a href="../DOM events.html" ><li> DOM Events </li></a>
+				<a href="../DOM eventListener.html" ><li> DOM EventListener </li></a>
+				<a href="../DOM navigation.html" ><li> DOM Navigation </li></a>
+				<a href="../DOM nodes.html" ><li> DOM Nodes </li></a>
+				<a href="../DOM nodelist.html" ><li> DOM Nodelist </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch6()"> JavaScript Browser BOM </button>
+			<div class="drop-content" id="myDropdown6">
+			<input type="text" class="myInput" id="myInput6" placeholder="Cari" onkeyup="filterFunction6()"/>
+			<ol>
+				<a href="../BOM window.html" ><li> Window </li></a>
+				<a href="../BOM screen.html" ><li> Screen </li></a>
+				<a href="../BOM location.html" ><li> Location </li></a>
+				<a href="../BOM history.html" ><li> History  </li></a>
+				<a href="../BOM navigator.html" ><li> Navigator </li></a>
+				<a href="../BOM popup alert.html" ><li> Popup Alert </li></a>
+				<a href="../BOM timing.html" ><li> Timing </li></a>
+				<a href="../BOM cookies.html" ><li> Cookies </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch7()">JavaScript AJAX</button>
+			<div class="drop-content" id="myDropdown7">
+			<input type="text" class="myInput" id="myInput7" placeholder="Cari" onkeyup="filterFunction7()"/>
+			<ol>
+				<a href="../AJAX intro.html" ><li> AJAX Introduction</li></a>
+				<a href="../AJAX XMLHttpRequest.html" ><li> AJAX XMLHttpRequest </li></a>
+				<a href="../AJAX request.html" ><li> AJAX Request </li></a>
+				<a href="../AJAX respone.html" ><li class="redZone"> AJAX Response </li></a>
+				<a href="../AJAX XML file.html" ><li> AJAX XML File</li></a>
+				<a href="../AJAX PHP.html" ><li> AJAX PHP </li></a>
+				<a href="../AJAX ASP.html" ><li> AJAX ASP </li></a>
+				<a href="../AJAX database.html" ><li> AJAX Database </li></a>
+				<a href="../AJAX XML applications.html" ><li> AJAX XML Application </li></a>
+				<a href="../AJAX examples.html" ><li> AJAX Example </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch8()">JavaScript JSON</button>
+			<div class="drop-content" id="myDropdown8">
+			<input type="text" class="myInput" id="myInput8" placeholder="Cari" onkeyup="filterFunction8()"/>
+			<ol>
+				<a href="../JSON intro.html" ><li class="redZone"> JSON Introduction</li></a>
+				<a href="../JSON syntax.html" ><li class="redZone"> JSON Syntax </li></a>
+				<a href="../JSON vs XML.html" ><li class="redZone"> JSON vs XML </li></a>
+				<a href="../JSON data types.html" ><li class="redZone"> JSON Data Types </li></a>
+				<a href="../JSON parse.html" ><li class="redZone"> JSON parse </li></a>
+				<a href="../JSON stringify.html" ><li class="redZone"> JSON Stringify</li></a>
+				<a href="../JSON objects.html" ><li class="redZone"> JSON Objects </li></a>
+				<a href="../JSON arrays.html" ><li class="redZone"> JSON Arrays </li></a>
+				<a href="../JSON PHP.html" ><li class="redZone"> JSON PHP </li></a>
+				<a href="../JSON HTML.html" ><li class="redZone"> JSON HTML </li></a>
+				<a href="../JSON JSONP.html" ><li class="redZone"> JSON JSONP </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch9()">JavaScript Reference</button>
+			<div class="drop-content" id="myDropdown9">
+			<input type="text" class="myInput" id="myInput9" placeholder="Cari" onkeyup="filterFunction9()"/>
+			<ol>
+				<li> <p> JavaScript References </p> </li>
+				<a href="overview.html" > <li> Overview </li> </a>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch11()">JavaScript</button>
+					<div class="drop-content" id="myDropdown11">
+					<input type="text" class="myInput" id="myInput11" placeholder="Cari" onkeyup="filterFunction11()"/>
+					<ol>
+						<a href="string reference.html" ><li>String Reference </li></a>
+						<a href="number reference.html" ><li>Number Reference </li></a>
+						<a href="operator reference.html" ><li>Operator Reference </li></a>
+						<a href="statement reference.html" ><li>Statement Reference </li></a>
+						<a href="math reference.html" ><li>Math Reference </li></a>
+						<a href="date reference.html" ><li>Date Reference </li></a>
+						<a href="array reference.html" ><li> Array Reference </li></a>
+						<a href="boolean reference.html" ><li> Boolean Reference </li></a>
+						<a href="RegExp reference.html" ><li> RegExp Reference </li></a>
+						<a href="global reference.html" ><li> Global Reference </li></a>
+						<a href="conversion reference.html" ><li> Conversion Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()">Browser Object Model (BOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="BOM window reference.html" ><li> BOM Window Reference </li></a>
+						<a href="BOM navigator reference.html" ><li> BOM Navigator Reference </li></a>
+						<a href="BOM screen reference.html" ><li> BOM screen Reference </li></a>
+						<a href="BOM history reference.html" ><li> BOM History Reference </li></a>
+						<a href="BOM location reference.html" ><li> BOM Location Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()"> HTML Document Object Model (DOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="DOM document reference.html" ><li> DOM Documents Reference </li></a>
+						<a href="DOM element reference.html" ><li> DOM Elements Reference </li></a>
+						<a href="DOM attribute reference.html" ><li> DOM Attributes Reference </li></a>
+						<a href="DOM event reference.html" ><li> DOOM Events Reference </li></a>
+						<a href="DOM style.html" ><li> DOM Style Reference </li></a>
+					</ol>
+					</div>
+			</ol>
+			</div>
+			</div>
+		</div>
+		</div>
+			</div> <!--Close link-->
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> The HTML DOM Element Object </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> HTML DOM Nodes </h2>
+				<p> Di HTML DOM (Document Object Model), segalanya merupakan sebuah node: </p>
+				
+				<ul>
+					<li> Dokumen itu sendiri adalah sebuah node dokumen </li>
+					<li> Semua element HTML merupakan node element </li>
+					<li> Semua attribute HTML merupakan node attribute </li>
+					<li> Teks didalam element HTML merupakan node teks </li>
+					<li> Comment (komentar) merupakan node comment </li>
+				</ul>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The Element Object </h2>
+				<p> Di HTML DOM, <b>Element object</b> mempersembahkan sebuah element HTML. </p>
+				<p> Element object bisa memiliki child node (node anak) dari element node, text node, atau comment node. </p>
+				<p> Sebuah <b>Nodelist object</b> mempersembahkan sebuah daftar node - node, sepertu sekumpulan element HTML tentang child node. </p>
+				<p> Element bisa juga memiliki attribute. Attibute merupakan node attibute (Lihatlah chapter selanjutnya).</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Browser Support </h2>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> Object </td>
+							<td> <img src="../../logos/Chrome.png"> </td>
+							<td> <img src="../../logos/IE.png"> </td>
+							<td> <img src="../../logos/Firefox.png"> </td>
+							<td> <img src="../../logos/Safari.png"> </td>
+							<td> <img src="../../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> Element </td>
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+						</tr>
+						<tr class="center">
+							<td> Nodelist </td>
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<p> Element object dan Nodelist object didukung di semua mayor browser. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Properties and Methods </h2>
+				<p> Semua metode dan properti berikut bisa digunakan pada semua element HTML: </p>
+				
+				<table>
+					<thead>
+						<tr>
+							<th> Properti / Metode </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> <i>element</i>.accessKey </td>
+							<td> Menyetel atau mengembalikan attribute <b>accessKye</b> dari sebuah element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.addEventListener() </td>
+							<td> Melampirkan sebuah event handler untuk element tertentu </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.appendChild() </td>
+							<td> Menambahkan sebuah child node (node anak), untuk sebuah element sebagai last child node (node anak terakhir) </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.attributes </td>
+							<td> Mengembalikan sebuah NamedNodeMap dari element's attribute  </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.blur() </td>
+							<td> Menggantik fokus dari sebuah element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.childElementCount </td>
+							<td> Mengembalikan nomor (penghitungan) elemen - elemen child sebuah element has </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.childNodes </td>
+							<td> Mengembalikan sekumpulan dari suatu element's child nodes (termasuk text node dan comment node ) </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.children </td>
+							<td> Mengembalikan sekumpulan dari suatu element's child element (tidak termasuk text node dan comment node ) </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.classList </td>
+							<td> Mengembalikan class name(s) dari suatu element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.className </td>
+							<td> Menyetel atau mengembalikan nilai dari attribute <b>class</b> dari suatu element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.click() </td>
+							<td> Menirukan (simulate) sebuah mouse-click pada suatu element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.clientHeight </td>
+							<td> Mengembalikan tinggi dari suatu element, termasuk padding </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.clientLeft </td>
+							<td> Mengembalikan lebar dari border kiri dari suatu element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.clientTop </td>
+							<td> Mengembalikan lebar dari border atas dari suatu element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.clientWidth </td>
+							<td> Mengembalikan lebar dari suatu element, termasuk padding </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.cloneNode() </td>
+							<td> Menggandakan (clone) sebuah element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.compareDocumentPosition() </td>
+							<td> Membandingkan posisi dokumen tentang atau dari dua element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.contains() </td>
+							<td> Mengembalikan true jika sebuah node merupakan batasan dari sebuah node, jika tidak akan false </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.contentEditable </td>
+							<td> Menyetel ata mengembalikan apakah konten dari suatu element dapat diedit atau tidak </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.dir </td>
+							<td> Mneyetel atau mengembalikan nilai daei attribute <b>dir</b> dari suatu element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>firstChild </td>
+							<td> Mengembalikan first child node (node anak pertama) daei suatu element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.firstElementChild </td>
+							<td> Mengembalikan first child element dari suatu element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.focus </td>
+							<td> Memberikan fokus ke suatu element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.getAttribute() </td>
+							<td> Mengembalikan nilai attribute tertentu dari suatu element node  </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.getAttributeNode() </td>
+							<td> Mengembalikan node attribute tertentu </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.getElementsByClassName() </td>
+							<td> Mengembalikan kumpulan dari semua child element (elemen anak) dengan <b>nama class</b> tertenu </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.getElementsByTagName() </td>
+							<td> Mengembalikan kumpulan dari semua child element (elemen anak) dengan <b>nama tag</b> tertentu </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.getFeature() </td>
+							<td> Mengembalikan sebuah yang mana menerapkan APIs dari feature tertentu </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.hasAttribute() </td>
+							<td> Mengembalikan true jika suatu element memiliki attribute tertentu, jika tidak false </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.hasAttributes() </td>
+							<td> Mengembalikan true jika suatu element memiliki attribute apapun, jika tidak false </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.hasChildNodes() </td>
+							<td> Mengembalikan true jika suatu element memiliki child node (node anak) apapun, jika tidak false </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.id </td>
+							<td> Menyetel atau mengembalikan nilai dari attribute <b>id</b> dari sebuah element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.innerHTML </td>
+							<td> Menyetel atau mengembalikan konten dari sebuah element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.insertBefore() </td>
+							<td> Menyisipkan sebuah child node baru sebelum sesuatu yang ditentukan, sudah ada, child node </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.isContentEditable </td>
+							<td> Mengembalikan true jika kontent dari suatu element dapat diedit, jika tidak false </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.isDefaultNamespace() </td>
+							<td> Mengembalikan true jika namespaceURI tertentu adalah default, jika tidak false </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.isEqualNode() </td>
+							<td> Mengecek jika dua element itu sama </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.isSameNode() </td>
+							<td> Mengecek jika dua element itu adalah node yang sama </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.isSupported() </td>
+							<td> Mengembalikan true jika suatu feature tertentu disupport di element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.lang </td>
+							<td> Menyetel atau mengembalikan nilai dari attribute <b>lang</b> dari sebuah element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.lastChild </td>
+							<td> Mengembalikan child node terakhir dari suatu element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.lastElementChild </td>
+						<td> Mengembalikan child element terakhir dari suatu element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.namespaceURI </td>
+							<td> Mengembalikan URI dari suatu element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.nextSibling </td>
+							<td> Mengembalikan node berikutnya pada tingkatan pohon node yang sama (the same node tree level)  </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.nextElementSibling </td>
+							<td> Mengembalikan element berikutnya pada tingkatan pohon node yang sama (the same node tree level)  </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.nodeName </td>
+							<td> Mengembalikan nama dari suatu node </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.nodeType </td>
+							<td> Mengembalikan tipe node dari sebuau nide </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.nodeValue </td>
+							<td> Menyetel atau mengembalikan nilai dari sebuah node </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.normalize() </td>
+							<td> Menggabungkan node - node teks yang berdekatan dan mengganti node - node teks yang kosong dalam sebuah element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.offsetHeight </td>
+							<td> Mengembalikan tinggi dari sebuah element, termasuk padding, border, dan scrollbar </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.offsetWidth </td>
+							<td> Mengembalikan lebar dari sebuah element, termasuk padding, border, dan scrollbar </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.offsetLeft </td>
+							<td> Mengembalikan horizontal offset position dari sebuah element</td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.offsetParent </td>
+							<td> Mengembalikan offset container dari sebuah element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.offsetTop </td>
+							<td> Mengembalikan vertical offset position dari suatu element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.ownerDocument </td>
+							<td> Mengembalikan root element (document object) kepada sebuah element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.parentNode </td>
+							<td> Mengembalikan parent node (node induk) dari suatu element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.parentElement </td>
+							<td> Mengembalikan parent element node (node element induk) dari sebuah element  </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.previousSibling </td>
+							<td> Mengembalikan node sebelumnya di tingkatan pohon node yang sama  </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.previousElementSibling </td>
+							<td> Mengembalikan element sebelumnya di tingkatan pohon node yang sama  </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.querySelector() </td>
+							<td> Mengembalikan first child element yang mencocokan suatu specified CSS selector(s) dari suatu element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.querySelector() </td>
+							<td> Mengembalikan semua child element yang mencocokan suatu specified CSS selector(s) dari suatu element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.removeAttribute() </td>
+							<td> Menghilangkan sebuah attribute tertentu dari suatu element  </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.removeAttributeNode() </td>
+							<td> Menghilangkan sebuah node attribute tertentu dan mengembalikan node yang diganti  </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.removeChild() </td>
+							<td> Menghilangkan sebuah child node (node anak) dari suatu element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.replaceChild() </td>
+							<td> Mengganti sebuah child node (node anak) dalam suatu element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.removeEventListener() </td>
+							<td> Menghilangkan sebuah event handler yang telah dilampirkan dengan metode <b>addEventListener()</b> </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.scrollHeight </td>
+							<td> Mengembalikan tinggi keseluruhan dari suatu element, termasuk padding </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.scrollLeft </td>
+							<td> Menyetel atau mengembalikan nomor pixel suatu konten element yang discroll secara horizontal (mendatar) </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.scrollTop </td>
+							<td> Menyetel atau mengembalikan nomor pixel suatu kontent element yang discroll secara vertikal (menurun) </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.scrollWidth </td>
+							<td> Mengembalikan lebar keseluruhan dari suatu element, termasuk padding </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.setAttribute() </td>
+							<td> Menyetel atau mengubah attribute tertentu, menjadi nilai (attribute) tertentu </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.setAttributeNode() </td>
+							<td> Menyetel atau mengubah attribute tertentu, menjadi nilai (attribute) tertentu </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.style </td>
+							<td> Menyetel atau mengembalikan nilai dari attribute <b>style</b> suatu element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.tabIndex </td>
+							<td> Menyetel atau mengembalikan nilai dari attribute <b>tabIndex</b> dari suatu element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.tagName </td>
+							<td> Mengembalikan nama tag dari suatu element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.textContent </td>
+							<td> Menyetel atau mengembalikan textual content dsri suatu node dan perbatasan - perbatasannya </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.title </td>
+							<td> Mneyetel atau mengembalikan nilai dari attribute <b>title</b> dari suatu element </td>
+						</tr>
+						<tr>
+							<td> <i>element</i>.toString() </td>
+							<td> Mengkonversikan (mengubah) suatu element menjadi sebuah string </td>
+						</tr>
+						<tr>
+							<td>  </td>
+							<td>  </td>
+						</tr>
+						<tr>
+							<td> <i>nodelist</i>.item() </td>
+							<td> Mengembalikan node di index tertentu dalam suatu Nodelist </td>
+						</tr>
+						<tr>
+							<td> <i>nodelist</i>.length </td>
+							<td> Mengembalikan nomor (panjang) node - node dalam suatu Nodelist </td>
+						</tr>
+					</tbody>
+				</table>
+				
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="DOM document reference.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="DOM attribute reference.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			</article>
+			<article>
+			</section>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

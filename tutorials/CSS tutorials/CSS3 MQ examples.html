@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS3  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+/*Contoh 1*/
+#sembunyikan01 ul { 
+list-style-type: none; 
+} 
+
+#sembunyikan01 ul li a, { 
+color: green; 
+text-decoration: none; 
+padding: 3px; 
+display: block; 
+} 
+
+
+/*Contoh 2*/
+#sembunyikan02 ul { 
+list-style-type: none; 
+} 
+
+#sembunyikan02 ul li a, { 
+color: green; 
+text-decoration: none; 
+padding: 3px; 
+display: block; 
+} 
+
+@media screen and (max-width: 699px) and (min-width: 520px) {
+	#sembunyikan02ul li a {
+		padding-left: 30px; 
+		background: url(../logos/sql.png) left center no-repeat;
+		background-size:20px;
+	}
+} 
+
+
+/*Contoh 3*/
+#sembunyikan03 ul { 
+list-style-type: none; 
+} 
+
+#sembunyikan03 ul li a { 
+color: green; 
+text-decoration: none; 
+padding: 3px; 
+display: block; 
+} 
+
+@media screen and (max-width: 699px) and (min-width: 520px) {
+	#sembunyikan03 ul li a {
+		padding-left: 30px; 
+		background: url(../logos/sql.png) left center no-repeat;
+		background-size:20px;
+	}
+} 
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+	#sembunyikan03 ul li a:before {
+		content: "Email: "; 
+		font-style: italic; 
+		color: #666666;
+	}
+} 
+
+
+/*Contoh 4*/
+#sembunyikan04 ul { 
+list-style-type: none; 
+} 
+
+#sembunyikan04 ul li a { 
+color: green; 
+text-decoration: none; 
+padding: 3px; 
+display: block; 
+} 
+
+@media screen and (max-width: 699px) and (min-width: 520px) {
+	#sembunyikan04 ul li a {
+		padding-left: 30px; 
+		background: url(../logos/sql.png) left center no-repeat;
+		background-size:20px;
+	}
+} 
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+	#sembunyikan04 ul li a:before {
+		content: "Email: "; 
+		font-style: italic; 
+		color: #666666;
+	}
+} 
+
+@media screen and (min-width: 1001px) {
+	#sembunyikan04 ul li a:after {
+		content: " (" attr(data-email) ")"; 
+		font-size: 12px; 
+		font-style: italic; 
+		color: #666666;
+	}
+} 
+
+
+
+/*Contoh 5*/
+#sembunyikan05 ul { 
+list-style-type: none; 
+} 
+
+#sembunyikan05 ul li a { 
+color: green; 
+text-decoration: none; 
+padding: 3px; 
+display: block; 
+} 
+
+@media screen and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+	#sembunyikan05 ul li a {
+		padding-left: 30px; 
+		background: url(../logos/sql.png) left center no-repeat;
+		background-size:20px;
+	}
+} 
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+	#sembunyikan05 ul li a:before {
+		content: "Email: "; 
+		font-style: italic; 
+		color: #666666;
+	}
+} 
+
+@media screen and (min-width: 1001px) {
+	#sembunyikan05 ul li a:after {
+		content: " (" attr(data-email) ")"; 
+		font-size: 12px; 
+		font-style: italic; 
+		color: #666666;
+	}
+} 
+
+
+
+
+/*Contoh 6*/
+#sembunyikan06 .nav { 
+list-style-type: none; 
+} 
+
+#sembunyikan06 .nav li a { 
+color: green; 
+text-decoration: none; 
+padding: 3px; 
+display: block; 
+} 
+
+#sembunyikan06 .nav { 
+width: 35%; 
+float:left; 
+} 
+
+@media screen and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+	#sembunyikan06 .nav li a {
+		padding-left: 30px; 
+		background: url(../logos/sql.png) left center no-repeat;
+		background-size:20px;
+	}
+} 
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+		#sembunyikan06 .nav li a:before {
+		content: "Email: "; 
+		font-style: italic; 
+		color: #666666;
+	}
+} 
+
+@media screen and (min-width: 1001px) {
+	#sembunyikan06 .nav li a:after {
+		content: " (" attr(data-email) ")"; 
+		font-size: 12px; 
+		font-style: italic; 
+		color: #666666;
+	}
+} 
+
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS3 Media Queries - Examples </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> CSS3 Media Queries - More Examples </h2>
+				<p> Memperbolehkan kita melihat ke beberapa contoh lebih dari penggunaan media queries.</p>
+				<p> Kita akan memulai dengan sebuah daftar nama yang mana fungsi seperti email links. HTML nya adalah:</p>
+				
+				<article class="example-box">
+					<h4>Contoh 1:</h4>
+					<div class="example-content" id="content-open01">
+						
+						<<b>!DOCTYPE html</b>><br>
+						
+						<<b>html</b>><br>
+						<<b>head</b>><br>
+						<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+						<<b>style</b>> <br>
+						
+						ul { <br>
+						list-style-type: none; <br>
+						} <br>
+						<br>
+						ul li a { <br>
+						color: green; <br>
+						text-decoration: none; <br>
+						padding: 3px;  <br>
+						display: block; <br>
+						} <br>
+						
+						<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>ul</b>>
+						<blockquote>
+						<<b>li</b>><<b>a</b> <span class="teal"><mark>data-email="johndoe@example.com"</mark> href="mailto:johndoe@example.com"</span>>John Doe<<b>/a</b>><<b>/li</b>> <br>
+						<<b>li</b>><<b>a</b> <span class="teal"><mark>data-email="marymoe@example.com"</mark> href="mailto:marymoe@example.com"</span>>Mary Moe<<b>/a</b>><<b>/li</b>> <br>
+						<<b>li</b>><<b>a</b> <span class="teal"><mark>data-email="amandapanda@example.com"</mark> href="mailto:amandapanda@example.com"</span>>Amanda Panda<<b>/a</b>><<b>/li</b>>
+						</blockquote>
+						<<b>/ul</b>> <br> <br>
+						
+						<<b>/body</b>> <br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						ul { <br>
+						list-style-type: none; <br>
+						} <br>
+						 <br>
+						ul li a { <br>
+						color: green; <br>
+						text-decoration: none; <br>
+						padding: 3px;  <br>
+						display: block; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>ul</b>>
+							<blockquote>
+							<<b>li</b>><<b>a</b> <span class="teal"><mark>data-email="johndoe@example.com"</mark> href="mailto:johndoe@example.com"</span>>John Doe<<b>/a</b>><<b>/li</b>> <br>
+							<<b>li</b>><<b>a</b> <span class="teal"><mark>data-email="marymoe@example.com"</mark> href="mailto:marymoe@example.com"</span>>Mary Moe<<b>/a</b>><<b>/li</b>> <br>
+							<<b>li</b>><<b>a</b> <span class="teal"><mark>data-email="amandapanda@example.com"</mark> href="mailto:amandapanda@example.com"</span>>Amanda Panda<<b>/a</b>><<b>/li</b>>
+							</blockquote>
+						<<b>/ul</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<ul>
+							<li><a data-email="johndoe@example.com" href="mailto:johndoe@example.com">John Doe</a></li>
+							<li><a data-email="marymoe@example.com" href="mailto:marymoe@example.com">Mary Moe</a></li>
+							<li><a data-email="amandapanda@example.com" href="mailto:amandapanda@example.com">Amanda Panda</a></li>
+						</ul>
+					
+					</div>
+				</article>
+				
+				<p> Perhatikanlah attribute <mark>data-email</mark>. Pada HTML5, kita bisa menggunakan attribute dengan awalan <mark>data-</mark> 
+				untuk menyimpan informasi. Kita akan menggunakan attribute <mark>data-</mark> nanti.</p>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Width from 520 to 699px - Apply an email icon to each link</h2>
+				<p> Lebar dari 250px sampai 699px - Terapkan sebuah email icon untuk setiap link</p>
+				<p> Ketika lebar browser berada diantara 520px sampai 699px, kita akan menerapkan sebuah email icon untuk setiap email link:</p>
+				
+				<article class="example-box">
+					<h4>Contoh 2:</h4>
+					<div class="example-content" id="content-open02">
+						
+						@media screen and (max-width: 699px) and (min-width: 520px) {
+							<blockquote>
+							ul li a {
+								<blockquote>
+								padding-left: 30px; <br>
+								background: url(email-icon.png) left center no-repeat;
+								</blockquote>
+							}
+							</blockquote>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						ul { <br>
+						list-style-type: none; <br>
+						} <br>
+						 <br>
+						ul li a { <br>
+						color: green; <br>
+						text-decoration: none; <br>
+						padding: 3px;  <br>
+						display: block; <br>
+						} <br>
+						 <br>
+						@media screen and (max-width: 699px) and (min-width: 520px) {
+							<blockquote>
+							ul li a {
+								<blockquote>
+								padding-left: 30px; <br>
+								background: url(email-icon.png) left center no-repeat;
+								</blockquote>
+							}
+							</blockquote>
+						} <br>
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>h1</b>>Resize the browser window to see the effect!<<b>/h1</b>> <br>
+						 <br>
+						<<b>ul</b>>
+							<blockquote>
+							<<b>li</b>><<b>a</b> <span class="teal"><mark>data-email="johndoe@example.com"</mark> href="mailto:johndoe@example.com"</span>>John Doe<<b>/a</b>><<b>/li</b>> <br>
+							<<b>li</b>><<b>a</b> <span class="teal"><mark>data-email="marymoe@example.com"</mark> href="mailto:marymoe@example.com"</span>>Mary Moe<<b>/a</b>><<b>/li</b>> <br>
+							<<b>li</b>><<b>a</b> <span class="teal"><mark>data-email="amandapanda@example.com"</mark> href="mailto:amandapanda@example.com"</span>>Amanda Panda<<b>/a</b>><<b>/li</b>>
+							</blockquote>
+						<<b>/ul</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<h3>Resize the browser window to see the effect!</h3>
+						
+						<ul>
+							<li><a data-email="johndoe@example.com" href="mailto:johndoe@example.com">John Doe</a></li>
+							<li><a data-email="marymoe@example.com" href="mailto:marymoe@example.com">Mary Moe</a></li>
+							<li><a data-email="amandapanda@example.com" href="mailto:amandapanda@example.com">Amanda Panda</a></li>
+						</ul>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Width from 700 to 1000px - Preface the links with a text</h2>
+				<p>Lebar dari 700px sampai 1000px - pendahuluan (preface) link dengan teks</p>
+				<p> Ketika lebar browser berada pada 700px sampai 1000px, kita akan mendahului setiap email link dengan "Email: " teks:</p>
+				
+				<article class="example-box">
+					<h4>Contoh 3:</h4>
+					<div class="example-content" id="content-open03">
+						
+						@media screen and (max-width: 1000px) and (min-width: 700px) {
+							<blockquote>
+							ul li a:before {
+								<blockquote>
+								content: "Email: "; <br>
+								font-style: italic; <br>
+								color: #666666;
+								</blockquote>
+							}
+							</blockquote>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						ul { <br>
+						list-style-type: none; <br>
+						} <br>
+						 <br>
+						ul li a { <br>
+						color: green; <br>
+						text-decoration: none; <br>
+						padding: 3px;  <br>
+						display: block; <br>
+						} <br>
+						 <br>
+						@media screen and (max-width: 699px) and (min-width: 520px) {
+							<blockquote>
+							ul li a {
+								<blockquote>
+								padding-left: 30px; <br>
+								background: url(email-icon.png) left center no-repeat;
+								</blockquote>
+							}
+							</blockquote>
+						} <br>
+						 <br>
+						@media screen and (max-width: 1000px) and (min-width: 700px) {
+							<blockquote>
+							ul li a:before {
+								<blockquote>
+								content: "Email: "; <br>
+								font-style: italic; <br>
+								color: #666666;
+								</blockquote>
+							}
+							</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>h1</b>>Resize the browser window to see the effect!<<b>/h1</b>> <br>
+						 <br>
+						<<b>ul</b>>
+							<blockquote>
+							<<b>li</b>><<b>a</b> <span class="teal"><mark>data-email="johndoe@example.com"</mark> href="mailto:johndoe@example.com"</span>>John Doe<<b>/a</b>><<b>/li</b>> <br>
+							<<b>li</b>><<b>a</b> <span class="teal"><mark>data-email="marymoe@example.com"</mark> href="mailto:marymoe@example.com"</span>>Mary Moe<<b>/a</b>><<b>/li</b>> <br>
+							<<b>li</b>><<b>a</b> <span class="teal"><mark>data-email="amandapanda@example.com"</mark> href="mailto:amandapanda@example.com"</span>>Amanda Panda<<b>/a</b>><<b>/li</b>>
+							</blockquote>
+						<<b>/ul</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+						<h3>Resize the browser window to see the effect!</h3>
+						
+						<ul>
+						<li><a data-email="johndoe@example.com" href="mailto:johndoe@example.com">John Doe</a></li>
+						<li><a data-email="marymoe@example.com" href="mailto:marymoe@example.com">Mary Moe</a></li>
+						<li><a data-email="amandapanda@example.com" href="mailto:amandapanda@example.com">Amanda Panda</a></li>
+						</ul>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Width above 1001px - Apply email address to links</h2>
+				<p>Lebar diatas 1001 pixel - Terapkan email address untuk link</p>
+				<p> Ketika lebar browser berada diatas 1001 pixel, kita akan melampirkan/menambahkan email address untuk link.</p>
+				<p>Kita akan menggunakan nilai dari attribute <mark>data-</mark> untuk menambahkan email address setelah nama personal:</p>
+				
+				
+				<article class="example-box">
+					<h4>Contoh 4:</h4>
+					<div class="example-content" id="content-open04">
+						
+						@media screen and (min-width: 1001px) {
+							<blockquote>
+							ul li a:after {
+								<blockquote>
+								content: " (" attr(data-email) ")"; <br>
+								font-size: 12px; <br>
+								font-style: italic; <br>
+								color: #666666;
+								</blockquote>
+							}
+							</blockquote>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close04">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						ul { <br>
+						list-style-type: none; <br>
+						} <br>
+						 <br>
+						ul li a { <br>
+						color: green; <br>
+						text-decoration: none; <br>
+						padding: 3px;  <br>
+						display: block; <br>
+						} <br>
+						 <br>
+						@media screen and (max-width: 699px) and (min-width: 520px) {
+							<blockquote>
+							ul li a {
+								<blockquote>
+								padding-left: 30px; <br>
+								background: url(email-icon.png) left center no-repeat;
+								</blockquote>
+							}
+							</blockquote>
+						} <br>
+						 <br>
+						@media screen and (max-width: 1000px) and (min-width: 700px) {
+							<blockquote>
+							ul li a:before {
+								<blockquote>
+								content: "Email: "; <br>
+								font-style: italic; <br>
+								color: #666666;
+								</blockquote>
+							}
+							</blockquote>
+						} <br>
+						 <br>
+						@media screen and (min-width: 1001px) {
+							<blockquote>
+							ul li a:after {
+								<blockquote>
+								content: " (" attr(data-email) ")"; <br>
+								font-size: 12px; <br>
+								font-style: italic; <br>
+								color: #666666;
+								</blockquote>
+							}
+							</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>h1</b>>Resize the browser window to see the effect!<<b>/h1</b>> <br>
+						 <br>
+						<<b>ul</b>>
+							<blockquote>
+							<<b>li</b>><<b>a</b> <span class="teal"><mark>data-email="johndoe@example.com"</mark> href="mailto:johndoe@example.com"</span>>John Doe<<b>/a</b>><<b>/li</b>> <br>
+							<<b>li</b>><<b>a</b> <span class="teal"><mark>data-email="marymoe@example.com"</mark> href="mailto:marymoe@example.com"</span>>Mary Moe<<b>/a</b>><<b>/li</b>> <br>
+							<<b>li</b>><<b>a</b> <span class="teal"><mark>data-email="amandapanda@example.com"</mark> href="mailto:amandapanda@example.com"</span>>Amanda Panda<<b>/a</b>><<b>/li</b>>
+							</blockquote>
+						<<b>/ul</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<button onclick="buka04()" class="exbutton"> Open </button>
+					<button onclick="tutup04()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+						<h3>Resize the browser window to see the effect!</h3>
+						
+						<ul>
+						<li><a data-email="johndoe@example.com" href="mailto:johndoe@example.com">John Doe</a></li>
+						<li><a data-email="marymoe@example.com" href="mailto:marymoe@example.com">Mary Moe</a></li>
+						<li><a data-email="amandapanda@example.com" href="mailto:amandapanda@example.com">Amanda Panda</a></li>
+						</ul>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Width above 1151px - Add icon as we used before</h2>
+				<p> Untuk browser melebar diatas 1151 pixel, kita akam menambahkan lagi ikon seperti yang kita gunakan sebelumnya.</p>
+				<p> Disini, kita tidak harus menulis sebuah blok media query tambahan, kita hanya bisa melampirkan media query tambahan untuk sesuatu yang sudah ada menggunakan sebuah koma (ini akan berjalan seperti operator OR):</p>
+				
+				
+				<article class="example-box">
+					<h4>Contoh 5:</h4>
+					<div class="example-content" id="content-open05">
+						
+						@media screen and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+							<blockquote>
+							ul li a {
+								<blockquote>
+								padding-left: 30px; <br>
+								background: url(email-icon.png) left center no-repeat;
+								</blockquote>
+							}
+							</blockquote>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close05">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						ul { <br>
+						list-style-type: none; <br>
+						} <br>
+						 <br>
+						ul li a { <br>
+						color: green; <br>
+						text-decoration: none; <br>
+						padding: 3px;  <br>
+						display: block; <br>
+						} <br>
+						 <br>
+						@media screen and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+							<blockquote>
+							ul li a {
+								<blockquote>
+								padding-left: 30px; <br>
+								background: url(email-icon.png) left center no-repeat;
+								</blockquote>
+							}
+							</blockquote>
+						} <br>
+						 <br>
+						@media screen and (max-width: 1000px) and (min-width: 700px) {
+							<blockquote>
+							ul li a:before {
+								<blockquote>
+								content: "Email: "; <br>
+								font-style: italic; <br>
+								color: #666666;
+								</blockquote>
+							}
+							</blockquote>
+						} <br>
+						 <br>
+						@media screen and (min-width: 1001px) {
+							<blockquote>
+							ul li a:after {
+								<blockquote>
+								content: " (" attr(data-email) ")"; <br>
+								font-size: 12px; <br>
+								font-style: italic; <br>
+								color: #666666;
+								</blockquote>
+							}
+							</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>h1</b>>Resize the browser window to see the effect!<<b>/h1</b>> <br>
+						 <br>
+						<<b>ul</b>>
+							<blockquote>
+							<<b>li</b>><<b>a</b> <span class="teal"><mark>data-email="johndoe@example.com"</mark> href="mailto:johndoe@example.com"</span>>John Doe<<b>/a</b>><<b>/li</b>> <br>
+							<<b>li</b>><<b>a</b> <span class="teal"><mark>data-email="marymoe@example.com"</mark> href="mailto:marymoe@example.com"</span>>Mary Moe<<b>/a</b>><<b>/li</b>> <br>
+							<<b>li</b>><<b>a</b> <span class="teal"><mark>data-email="amandapanda@example.com"</mark> href="mailto:amandapanda@example.com"</span>>Amanda Panda<<b>/a</b>><<b>/li</b>>
+							</blockquote>
+						<<b>/ul</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan05()" class="exbutton">Klik disini</button>
+					<button onclick="buka05()" class="exbutton"> Open </button>
+					<button onclick="tutup05()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+					
+						<h1>Resize the browser window to see the effect!</h1>
+						
+						<ul>
+						<li><a data-email="johndoe@example.com" href="mailto:johndoe@example.com">John Doe</a></li>
+						<li><a data-email="marymoe@example.com" href="mailto:marymoe@example.com">Mary Moe</a></li>
+						<li><a data-email="amandapanda@example.com" href="mailto:amandapanda@example.com">Amanda Panda</a></li>
+						</ul>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>More Examples</h2>
+				<p class="redZone" onclick="tampilkan07()"> Menggunakan daftar email link pada sidebar dalam web page</p>
+				<p> Contoh ini meletakan daftar email link kedalam sidebar kiri dari webpage.</p>
+				
+				<article class="example-box sembunyikan" id="sembunyikan07">
+					<h4>Contoh 6:</h4>
+					<div class="example-content" id="content-open06">
+						
+						#nav { <br>
+						list-style-type: none; <br>
+						} <br>
+						 <br>
+						#nav li a { <br>
+						color: green; <br>
+						text-decoration: none; <br>
+						padding: 3px;  <br>
+						display: block; <br>
+						} <br>
+						 <br>
+						#nav { <br>
+						width: 35%; <br>
+						float:left; <br>
+						} <br>
+						 <br>
+						@media screen and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+							<blockquote>
+							#nav li a {
+								<blockquote>
+								padding-left: 30px; <br>
+								background: url(email-icon.png) left center no-repeat;
+								</blockquote>
+							}
+							</blockquote>
+						} <br>
+						 <br>
+						@media screen and (max-width: 1000px) and (min-width: 700px) {
+							<blockquote>
+							#nav li a:before {
+								<blockquote>
+								content: "Email: "; <br>
+								font-style: italic; <br>
+								color: #666666;
+								</blockquote>
+							}
+							</blockquote>
+						} <br>
+						 <br>
+						@media screen and (min-width: 1001px) {
+							<blockquote>
+							#nav li a:after {
+								<blockquote>
+								content: " (" attr(data-email) ")"; <br>
+								font-size: 12px; <br>
+								font-style: italic; <br>
+								color: #666666;
+								</blockquote>
+							}
+							</blockquote>
+						} <br>
+						
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close06">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#nav { <br>
+						list-style-type: none; <br>
+						} <br>
+						 <br>
+						#nav li a { <br>
+						color: green; <br>
+						text-decoration: none; <br>
+						padding: 3px;  <br>
+						display: block; <br>
+						} <br>
+						 <br>
+						#nav { <br>
+						width: 35%; <br>
+						float:left; <br>
+						} <br>
+						 <br>
+						@media screen and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+							<blockquote>
+							#nav li a {
+								<blockquote>
+								padding-left: 30px; <br>
+								background: url(email-icon.png) left center no-repeat;
+								</blockquote>
+							}
+							</blockquote>
+						} <br>
+						 <br>
+						@media screen and (max-width: 1000px) and (min-width: 700px) {
+							<blockquote>
+							#nav li a:before {
+								<blockquote>
+								content: "Email: "; <br>
+								font-style: italic; <br>
+								color: #666666;
+								</blockquote>
+							}
+							</blockquote>
+						} <br>
+						 <br>
+						@media screen and (min-width: 1001px) {
+							<blockquote>
+							#nav li a:after {
+								<blockquote>
+								content: " (" attr(data-email) ")"; <br>
+								font-size: 12px; <br>
+								font-style: italic; <br>
+								color: #666666;
+								</blockquote>
+							}
+							</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>h1</b>>Resize the browser window to see the effect!<<b>/h1</b>> <br>
+						 <br>
+						<<b>ul</b> <span class="teal">id="nav"</span>>
+							<blockquote>
+							<<b>li</b>><<b>a</b> <span class="teal"><mark>data-email="johndoe@example.com"</mark> href="mailto:johndoe@example.com"</span>>John Doe<<b>/a</b>><<b>/li</b>> <br>
+							<<b>li</b>><<b>a</b> <span class="teal"><mark>data-email="marymoe@example.com"</mark> href="mailto:marymoe@example.com"</span>>Mary Moe<<b>/a</b>><<b>/li</b>> <br>
+							<<b>li</b>><<b>a</b> <span class="teal"><mark>data-email="amandapanda@example.com"</mark> href="mailto:amandapanda@example.com"</span>>Amanda Panda<<b>/a</b>><<b>/li</b>>
+							</blockquote>
+						<<b>/ul</b>> <br> 
+						<br>
+						<<b>div</b> <span class="teal">id="main"</span>> <br> 
+						<<b>p</b>>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<<b>/p</b>> <br> 
+						<<b>/div</b>> <br>  <br> 
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan06()" class="exbutton">Klik disini</button>
+					<button onclick="buka06()" class="exbutton"> Open </button>
+					<button onclick="tutup06()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+					
+						<h1>Resize the browser window to see the effect!</h1>
+						
+						<ul class="nav">
+						<li><a data-email="johndoe@example.com" href="mailto:johndoe@example.com">John Doe</a></li>
+						<li><a data-email="marymoe@example.com" href="mailto:marymoe@example.com">Mary Moe</a></li>
+						<li><a data-email="amandapanda@example.com" href="mailto:amandapanda@example.com">Amanda Panda</a></li>
+						</ul>
+						
+						<div class="main">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS3 media queries.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="RWD introduction.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

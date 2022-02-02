@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | JavaScript | js numbers</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="javaScript.js"></script>
+<script type="text/javascript" src="javaScript2.js"></script>
+<script type="text/javascript" src="javaScript3.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		
+		<div id="nav-vertical"> <!--open link-->
+		<button onclick="openMenu()" id="menu">Open Menu</button>
+		<button onclick="closeMenu()" id="menu">Close Menu</button>
+		
+		<div id="vertical">
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch()"> JavaScript Tutorial</button>
+			<div class="drop-content" id="myDropdown">
+			<input type="text" class="myInput" id="myInput" placeholder="Cari" onkeyup="filterFunction()"/>
+			<ol>
+				<a href="js home.html"><li> Home </li></a>
+				<a href="js introduction.html"><li> Introduction </li></a>
+				<a href="js where to.html"><li> Where To </li></a>
+				<a href="js output.html"><li> Output </li></a>
+				<a href="js syntax.html"><li> Syntax </li></a>
+				<a href="js statements.html" ><li> Statements </li></a>
+				<a href="js comments.html" ><li> Comments </li></a>
+				<a href="js variables.html"><li> Variable </li></a>
+				<a href="js operators.html"><li> Operators </li></a>
+				<a href="js arithmetic.html"><li> Arithmetic </li></a>
+				<a href="js assignment.html"><li> Assignment </li></a>
+				<a href="js data types.html"><li> Data Types </li></a>
+				<a href="js functions.html"><li> Functions </li></a>
+				<a href="js objects.html"><li> Objects </li></a>
+				<a href="js scope.html"><li> Scope </li></a>
+				<a href="js events.html"><li> Events </li></a>
+				<a href="js strings.html"><li> string </li></a>
+				<a href="js string methods.html"><li> Strings Method </li></a>
+				<a href="js numbers.html"><li> Numbers </li></a>
+				<a href="js number methods.html"><li> Number Methods </li></a>
+				<a href="js math.html"><li> Math </li></a>
+				<a href="js random.html" ><li> Math Random </li></a>
+				<a href="js dates.html"><li> Dates </li></a>
+				<a href="js date formats.html" ><li> Date Formats </li></a>
+				<a href="js date methods.html" ><li> Date Methods </li></a>
+				<a href="js get date methods.html" ><li> Date get Methods </li></a>
+				<a href="js set date methods.html" ><li> Date Set Methods </li></a>
+				<a href="js arrays.html"><li> Arrays </li></a>
+				<a href="js array methods.html" ><li> Array Methods </li></a>
+				<a href="js array sort.html"><li> Array Sort </li></a>
+				<a href="js array iteration.html"><li> Array Iteration </li></a>
+				<a href="js booleans.html" ><li> boolean </li></a>
+				<a href="js comparisons.html" ><li> Comparisons </li></a>
+				<a href="js conditions.html" ><li>Conditions</li></a>
+				<a href="js switch.html" ><li>Switch </li></a>
+				<a href="js loop for.html"><li> Loop For </li></a>
+				<a href="js loop while.html" ><li>Loop while</li></a>
+				<a href="js break.html" ><li>Break</li></a>
+				<a href="js type conversion.html" ><li> Types conversion</li></a>
+				<a href="js bitwise.html" ><li> Bitwise </li></a>
+				<a href="js RegExp.html" ><li>RegExp</li></a>
+				<a href="js errors.html" ><li>Errors </li></a>
+				<a href="js debugging.html"><li>Debugging </li></a>
+				<a href="js hoisting.html" ><li>Hoisting</li></a>
+				<a href="js strict mode.html"><li>Strict mode</li></a>
+				<a href="js this keyword.html" ><li> this Keyword </li></a>
+				<a href="js let.html" ><li> Let </li></a>
+				<a href="js const.html" ><li> Const </li></a>
+				<a href="js style guide.html" ><li>Style guide</li></a>
+				<a href="js best practices.html" ><li>best practices </li></a>
+				<a href="js mistakes.html"><li> Mistakes </li></a>
+				<a href="js performance.html" ><li>Performance</li></a>
+				<a href="js reserved words.html" ><li>Reserved words</li></a>
+				<a href="js versions.html" ><li> Versions </li></a>
+				<a href="js version ES5.html" ><li class="redZone"> Version ES5 </li></a>
+				<a href="js version ES6.html" ><li class="redZone"> Version ES6 </li></a>
+				<a href="js JSON.html"><li>JSON</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch2()"> JavaScript Formulir</button>
+			<div class="drop-content" id="myDropdown2">
+			<input type="text" class="myInput" id="myInput2" placeholder="Cari" onkeyup="filterFunction2()"/>
+			<ol>
+				<a href="forms validation.html" ><li>Forms Validation</li></a>
+				<a href="forms API.html" ><li class="redZone">Forms API</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch3()"> JavaScript Object</button>
+			<div class="drop-content" id="myDropdown3">
+			<input type="text" class="myInput" id="myInput3" placeholder="Cari" onkeyup="filterFunction3()"/>
+			<ol>
+				<a href="object definitions.html" ><li>Object Definitions</li></a>
+				<a href="object properties.html" ><li>Object Properties</li></a>
+				<a href="object methods.html"><li class="redZone">Object Methods</li></a>
+				<a href="object accessors.html" ><li>Object accessors</li></a>
+				<a href="object constructors.html" ><li>Object constructor</li></a>
+				<a href="object prototypes.html" ><li>Object Prototypes</li></a>
+				<a href="object ECMAScript5.html" ><li class="redZone">Object ECMAScript5</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch4()"> JavaScript Function</button>
+			<div class="drop-content" id="myDropdown4">
+			<input type="text" class="myInput" id="myInput4" placeholder="Cari" onkeyup="filterFunction4()"/>
+			<ol>
+				<a href="funtion definitions.html" ><li>Function Definitions</li></a>
+				<a href="function parameters.html" ><li>Function Parameters</li></a>
+				<a href="function invocation.html" ><li>Function Invocation</li></a>
+				<a href="function closures.html" ><li>Function Closures</li></a>
+				<a href="function apply.html" ><li class="redZone">Function Apply</li></a>
+				<a href="function call.html" ><li>Function Call</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch5()">  JavaScript HMTL DOM </button>
+			<div class="drop-content" id="myDropdown5">
+			<input type="text" class="myInput" id="myInput5" placeholder="Cari" onkeyup="filterFunction5()"/>
+			<ol>
+				<a href="DOM intro.html" ><li> DOM Introduction </li></a>
+				<a href="DOM methods.html" ><li> DOM Methods </li></a>
+				<a href="DOM document.html" ><li> DOM Documents</li></a>
+				<a href="DOM elements.html" ><li> DOM Elements  </li></a>
+				<a href="DOM HTML.html" ><li> DOM HTML</li></a>
+				<a href="DOM CSS.html" ><li> DOM CSS  </li></a>
+				<a href="DOM animations.html" ><li> DOM Animations </li></a>
+				<a href="DOM events.html" ><li> DOM Events </li></a>
+				<a href="DOM eventListener.html" ><li> DOM EventListener </li></a>
+				<a href="DOM navigation.html" ><li> DOM Navigation </li></a>
+				<a href="DOM nodes.html" ><li> DOM Nodes </li></a>
+				<a href="DOM nodelist.html" ><li> DOM Nodelist </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch6()"> JavaScript Browser BOM </button>
+			<div class="drop-content" id="myDropdown6">
+			<input type="text" class="myInput" id="myInput6" placeholder="Cari" onkeyup="filterFunction6()"/>
+			<ol>
+				<a href="BOM window.html" ><li> Window </li></a>
+				<a href="BOM screen.html" ><li> Screen </li></a>
+				<a href="BOM location.html" ><li> Location </li></a>
+				<a href="BOM history.html" ><li> History  </li></a>
+				<a href="BOM navigator.html" ><li> Navigator </li></a>
+				<a href="BOM popup alert.html" ><li> Popup Alert </li></a>
+				<a href="BOM timing.html" ><li> Timing </li></a>
+				<a href="BOM cookies.html" ><li> Cookies </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch7()">JavaScript AJAX</button>
+			<div class="drop-content" id="myDropdown7">
+			<input type="text" class="myInput" id="myInput7" placeholder="Cari" onkeyup="filterFunction7()"/>
+			<ol>
+				<a href="AJAX intro.html" ><li> AJAX Introduction</li></a>
+				<a href="AJAX XMLHttpRequest.html" ><li> AJAX XMLHttpRequest </li></a>
+				<a href="AJAX request.html" ><li> AJAX Request </li></a>
+				<a href="AJAX respone.html" ><li class="redZone"> AJAX Response </li></a>
+				<a href="AJAX XML file.html" ><li> AJAX XML File</li></a>
+				<a href="AJAX PHP.html" ><li> AJAX PHP </li></a>
+				<a href="AJAX ASP.html" ><li> AJAX ASP </li></a>
+				<a href="AJAX database.html" ><li> AJAX Database </li></a>
+				<a href="AJAX XML applications.html" ><li> AJAX XML Application </li></a>
+				<a href="AJAX examples.html" ><li> AJAX Example </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch8()">JavaScript JSON</button>
+			<div class="drop-content" id="myDropdown8">
+			<input type="text" class="myInput" id="myInput8" placeholder="Cari" onkeyup="filterFunction8()"/>
+			<ol>
+				<a href="JSON intro.html" ><li class="redZone"> JSON Introduction</li></a>
+				<a href="JSON syntax.html" ><li class="redZone"> JSON Syntax </li></a>
+				<a href="JSON vs XML.html" ><li class="redZone"> JSON vs XML </li></a>
+				<a href="JSON data types.html" ><li class="redZone"> JSON Data Types </li></a>
+				<a href="JSON parse.html" ><li class="redZone"> JSON parse </li></a>
+				<a href="JSON stringify.html" ><li class="redZone"> JSON Stringify</li></a>
+				<a href="JSON objects.html" ><li class="redZone"> JSON Objects </li></a>
+				<a href="JSON arrays.html" ><li class="redZone"> JSON Arrays </li></a>
+				<a href="JSON PHP.html" ><li class="redZone"> JSON PHP </li></a>
+				<a href="JSON HTML.html" ><li class="redZone"> JSON HTML </li></a>
+				<a href="JSON JSONP.html" ><li class="redZone"> JSON JSONP </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch9()">JavaScript Reference</button>
+			<div class="drop-content" id="myDropdown9">
+			<input type="text" class="myInput" id="myInput9" placeholder="Cari" onkeyup="filterFunction9()"/>
+			<ol>
+				<li> <p> JavaScript References </p> </li>
+				<a href="JavaScript references/overview.html" > <li> Overview </li> </a>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch11()">JavaScript</button>
+					<div class="drop-content" id="myDropdown11">
+					<input type="text" class="myInput" id="myInput11" placeholder="Cari" onkeyup="filterFunction11()"/>
+					<ol>
+						<a href="JavaScript references/string reference.html" ><li>String Reference </li></a>
+						<a href="JavaScript references/number reference.html" ><li>Number Reference </li></a>
+						<a href="JavaScript references/operator reference.html" ><li>Operator Reference </li></a>
+						<a href="JavaScript references/statement reference.html" ><li>Statement Reference </li></a>
+						<a href="JavaScript references/math reference.html" ><li>Math Reference </li></a>
+						<a href="JavaScript references/date reference.html" ><li>Date Reference </li></a>
+						<a href="JavaScript references/array reference.html" ><li> Array Reference </li></a>
+						<a href="JavaScript references/boolean reference.html" ><li> Boolean Reference </li></a>
+						<a href="JavaScript references/RegExp reference.html" ><li> RegExp Reference </li></a>
+						<a href="JavaScript references/global reference.html" ><li> Global Reference </li></a>
+						<a href="JavaScript references/conversion reference.html" ><li> Conversion Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()">Browser Object Model (BOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="JavaScript references/BOM window reference.html" ><li> BOM Window Reference </li></a>
+						<a href="JavaScript references/BOM navigator reference.html" ><li> BOM Navigator Reference </li></a>
+						<a href="JavaScript references/BOM screen reference.html" ><li> BOM screen Reference </li></a>
+						<a href="JavaScript references/BOM history reference.html" ><li> BOM History Reference </li></a>
+						<a href="JavaScript references/BOM location reference.html" ><li> BOM Location Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()"> HTML Document Object Model (DOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="JavaScript references/DOM document reference.html" ><li> DOM Documents Reference </li></a>
+						<a href="JavaScript references/DOM element reference.html" ><li> DOM Elements Reference </li></a>
+						<a href="JavaScript references/DOM attribute reference.html" ><li> DOM Attributes Reference </li></a>
+						<a href="JavaScript references/DOM event reference.html" ><li> DOOM Events Reference </li></a>
+						<a href="JavaScript references/DOM style.html" ><li> DOM Style Reference </li></a>
+					</ol>
+					</div>
+			</ol>
+			</div>
+			</div>
+		</div>
+		</div>
+		</div> <!--close Link-->
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> Nomor JavaScript </h1>
+					<p>
+					JavaScript hanya memiliki satu tipe Number.<br>
+					Number bisa ditulis dengan atau tanpa desimal.
+					</p>
+			</div>
+			
+			
+<section>
+			<article>
+				<h1> Number JavaScript</h1>
+				<p>
+				Number bisa ditulis dengan atau tanpa desimal.
+				</p>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x = 32.00;
+			<span class="grey" style="margin-left:50px;"> // dengan decimal</span> <br><br>
+			<span class="purple">var</span> y = 32;
+			<span class="grey" style="margin-left:50px"> // tanpa desimal</span>
+			</div>
+			</article>
+			
+			<article>
+				<p>
+				ektra besar atau ektra kecil bisa ditulis dengan ilmu pengetahuan (exponential atau ilmu aljabar).
+				</p>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x = 123e5;
+			<span class="grey" style="margin-left:50px;"> // 12300000</span><br><br>
+			<span class="purple">var</span> y = 123e-5;
+			<span class="grey" style="margin-left:50px"> // 0.00123</span>
+			</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1>
+				JavaScript Numbers are Always 64-bit Floating point
+				</h1>
+				<p> 
+				Tidak seperti bahasa pemrograman kebanyakan, JavaScript tidak mendefinisikan
+				perbedaan tipe nomor, seperti integers (bilangan bulat), short, long, floating point, 
+				dan lain sebagainya.<br><br>
+				Number JavaScript selalu disimpan sebagai doubel precision floating point numbers,
+				Berdasarkan Standar IEEE 754 .<br><br>
+				Format ini menyimpan number di 64 bit, yang mana number (fraction/pecahan) disimpan di bit
+				0 sampai 51, exponent (menyangkut Aljabar) di bit 52 sampai 62dan sign (tanda operator) di bit 63.
+				</p>
+			</article>
+			
+			<table class="explain">
+				<caption> Tabel Floating Point </caption>
+				<thead>
+					<tr>
+						<th> Value (Aka fraction/mantissa) </th>
+						<th> Exponent </th>
+						<th> Sign </th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td> 52 bit (0 - 51)</td>
+						<td> 11 bit (52 - 62)</td>
+						<td> 1 bit (63) </td>
+					</tr>
+				</tbody>
+			</table>
+</section>
+<section>			
+			<article>
+				<h1> Precision (Ketelitian) </h1>
+				<p>
+				Integer (number tanpa sebuah periode atau notasi eksponen atau aljabar) adalah
+				dipertimbangkan ketepatan sampai 15 digit.
+				</p>
+			</article>
+			<!-- CONTOH SEDERHANA-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x = 999999999999999;   
+			<span class="grey" style="margin-left:50px">// x akan menjadi 999999999999999</span><br>
+			<span class="purple">var</span> y = 9999999999999999; 
+			<span class="grey" style="margin-left:50px"> // y akan menjadi 10000000000000000</span>
+			</div>
+			<h4> output</h4>
+			<div class="example-content">
+			<button onclick="numbers1()">Klik disini</button>
+			<p id="numbers01"></p>
+			</div>
+			</article>	
+			
+			<article>
+				<p> 
+				Maksimum nilai aritmatika yaitu 17 digit, tapi floating point arithmetic tidak selalu akurat
+				100%,
+				</p>
+			</article>
+			
+			<!-- CONTOH SEDERHANA-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x = 0.1 + 0.2;   
+			<span class="grey" style="margin-left:50px">// x akan menjadi 0.30000000000000004</span><br>
+			</div>
+			<h4> output</h4>
+			<div class="example-content">
+			<p>
+			Nilai dari 1.0  + 0.2 adalah ....
+			</p>
+			<button onclick="numbers2()">Klik disini</button>
+			<p id="numbers02"></p>
+			</div>
+			</article>	
+			
+			<article>
+			<p>
+			Untuk mengatasi masalah diatas, gunakan operator * dan /.
+			</p>
+			</article>
+			
+			<!-- CONTOH SEDERHANA-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<div class="example-content">
+			<span class="purple">var</span> x = (0.1 * 10 + 0.2 * 10) / 10;   
+			<span class="grey" style="margin-left:50px">// x akan menjadi 0.3</span><br>
+			</div>
+			<h4> output</h4>
+			<div class="example-content">
+			<p>
+			Nilai dari (1.0 * 10 + 0.2 * 10) / 10 adalah ....
+			</p>
+			<button onclick="numbers3()">Klik disini</button>
+			<p id="numbers03"></p>
+			</div>
+			</article>	
+			
+</section>
+<section>			
+			<article>
+			<h1> Hexadecimal </h1>
+			<p>
+			JavaScript menterjemahkan nilai terap numeric (klasifikasi) sebagai Hexadecimal 
+			jika mereka didahului dengan <b> 0x</b>.
+			</p>
+			</article>
+			
+			<!-- CONTOH SEDERHANA-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x = 0xFF ;   
+			<span class="grey" style="margin-left:50px">// x akan menjadi 255 </span><br>
+			</div>
+			<h4> output</h4>
+			<div class="example-content">
+			<p>
+			Hexadecimal dari 0xFF adalah ....
+			</p>
+			<button onclick="numbers4()">Klik disini</button>
+			<p id="numbers04"></p>
+			</div>
+			</article>
+			
+			<!--ATTENTION-->
+			<article>
+			<table class="attention">
+			<tr>
+			<td class="td-left">
+			<h1>!</h1>
+			</td>
+			<td class="td-right">
+			Jangan pernah gunakan nomor dengan awalan nol (seperti 07).<br>
+			Beberapa versi JavaScript menterjemahkannya sebagai bilangan <b>octal</b>
+			jika nomor ditulis dengan awalan 0 (nol).
+			</td>
+			</tr>
+			</table>
+			</article>	
+					
+			<article>
+				<p>
+				Oleh default (settingan pabrik), JavaScript menampilkan number sebagai dasar 10 bilangan desimal.<br><br>
+				Tapi kamu bisa menggunakan metode toString() untuk output number sebagai 
+				16 dasar (hexadecimal), 8 dasar (octal), 2 dasar (binary).
+				</p>
+			</article>
+			
+			<!--CONTOH Detail 3-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>CONTOH Sederhana</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> myNumber = 128;<br>
+			myName.toString(16);<br>
+			myName.toString(8);<br>
+			myName.toString(2)
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<p>
+			Nilai 128 menjadi hexadecimal, octal dan binary...
+			</p>
+			<button onclick="numbers5()">Klik disini</button>			
+			<p id="numbers05"></p>
+			</div>
+			</article>
+			
+</section>
+<section>
+			<article>
+				<h1> Infinity (Jumlah Tak Terbatas)</h1>
+				<p>
+				Infinity (atau -Infinity) adalah nilai JavaScript  akan dikembalikan 
+				jika kamu menghitung sebuah number diluar number yang barang kali paling besar:
+				</p>
+			</article>
+			
+			<!--CONTOH Detail 3-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>CONTOH DETAIL</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">p id="waktu"</q> <q lang="code">/p</q><br><br>						
+			<q lang="code">script</q><br><br>
+			<span class="purple"> function</span> tampilkan() {
+			<blockquote cite="http://readbook.co.id/js home.hmtl">
+			<span class="purple">var</span> myNumber = 2;<br>
+			<span class="purple">var</span> teks = "";<br>
+			<span class="purple">while</span> (myNumber != Infinity){ <br>
+			<blockquote>
+			myNumber = myNumber * myNumber;<br>
+			teks = teks + myNumber + "<q lang="code">br</q>"";<br>
+			}<br>
+			</blockquote>
+			x=document.getElementById("waktu").innerHTML=teks;<br><br>
+			</blockquote>
+			}<br><br>
+			<q lang="code">/script</q><br><br><q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>			
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<p>Tekan tombol dibawah ini untuk menampilkan waktu</p>
+			<button onclick="numbers6()">Klik disini</button>			
+			<p id="numbers06"></p>
+			</div>
+			</article>
+			
+			<article>
+				<p>
+				Dibagi dengan 0 (nol) juga menjadi Infinity.
+				</p>
+			</article>
+			
+			<!-- CONTOH DETAIL 2-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Detail</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> myNumber = 2 / 0;<br>
+			<span class="grey" style="margin-left:50px">// x akan menjadi Infinity</span><br>
+			<span class="purple">var</span> myNumber = -2 / 0;<br>
+			<span class="grey" style="margin-left:50px">// x akan menjadi -Infinity</span><br>						
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="numbers7()">Klik disini</button>
+			<p id="numbers07"></p>
+			</div>
+			</article>	
+			
+			<!-- CONTOH DETAIL 2-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Detail</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">typeof</span> Infinity;<br>
+			<span class="grey" style="margin-left:50px">// Infinity adalah sebuah Number, itu dan akan 
+			mengembalikan menjadi Number </span><br>						
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="numbers8()">Klik disini</button>
+			<p id="numbers08"></p>
+			</div>
+			</article>	
+			
+</section>
+<section>
+			<article>
+				<h1> NaN (Not a Numbers)</h1>
+				<p>
+				NaN adalah sebuah kata yang dipesan oleh JavaScript yang mengindikasikan sebuah
+				nilai <b>bukan sebuah nomor</b>.<br><br>
+				Pencobaan menjumlahkan number dengan sebuah string akan menjadi NaN.
+				</p>
+			</article>
+			
+			<!-- CONTOH DETAIL-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x = 100 * "jeruk";<br>
+			<span class="grey" style="margin-left:50px">// x akan menjadi NaN </span><br>						
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="numbers9()">Klik disini</button>
+			<p id="numbers09"></p>
+			</div>
+			</article>	
+			
+			<article>
+				<p>
+				Bagaimanapun jika, jika string berisi sebuah nilai numeric,
+				maka itu akan menjadi number.
+				</p>
+			</article>
+			
+			<!-- CONTOH Sederhana-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x = 100 * "90";<br>
+			<span class="grey" style="margin-left:50px">// x akan menjadi sebuah number </span><br>						
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="numbers10()">Klik disini</button>
+			<p id="numbers10"></p>
+			</div>
+			</article>	
+			
+			<article>
+				<p>
+				Kamu bisa gunakan fungsi javaScrip global <b>isNaN()</b> untuk mencari apakah
+				sebuah nilai termasuk NaN atau tidak.
+				</p>
+			</article>
+			
+			<!-- CONTOH Sederhana-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x = 100 * "apel";<br>
+			isNaN(x);<br>
+			<span class="grey" style="margin-left:50px">// mengembalikan TRUE, karena x bukan merupakan tipe Number. </span><br>						
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="numbers11()">Klik disini</button>
+			<p id="numbers11"></p>
+			</div>
+			</article>	
+			
+			<article>
+				<p>
+				Jika kamu menggunakan NaN sebagai operasi matematika, maka itu akan menjadi NaN juga.
+				</p>
+			</article>
+			
+			<!-- CONTOH Sederhana-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x = NaN;<br>
+			y = 27;<br>
+			z = x + y;<br>
+			<span class="grey" style="margin-left:50px">// akan mengembalikan NaN </span><br>						
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="numbers12()">Klik disini</button>
+			<p id="numbers12"></p>
+			</div>
+			</article>	
+			
+			<article>
+				<p>
+				Atau akan menghasilkan nilai Gabungan (concatenate)
+				</p>
+			</article>
+			
+			<!-- CONTOH Sederhana-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x = NaN;<br>
+			y = "27";<br>
+			z = x + y;<br>
+			<span class="grey" style="margin-left:50px">// akan mengembalikan NaN27 </span><br>						
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="numbers13()">Klik disini</button>
+			<p id="numbers13"></p>
+			</div>
+			</article>	
+			
+			<article>
+				<p>
+				NaN adalah Number, Jadi apabila menggunakan kata kunci typeof maka akan mengembalikan Number
+				</p>
+			</article>
+			
+			<!-- CONTOH Sederhana-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x = NaN;<br>
+			<span class="purple">typeof</span> x;<br>
+			<span class="grey" style="margin-left:50px">// akan mengembalikan Number, karena NaN adalah Number </span><br>						
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="numbers14()">Klik disini</button>
+			<p id="numbers14"></p>
+			</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Number Bisa Menjadi Object</h1>
+				<p>
+				Secara normal number JavaScript adalah nilai sederhana dari literal: <b>var x=123;</b><br><br>
+				Tapi Number bisa juga didefinisikan sebagai object dengan kata kunci: <b>var y = new Number(123)</b>
+				</p>
+			</article>
+			
+			<!-- CONTOH Sederhana-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x = 123;<br>
+			<span class="grey" style="margin-left:50px">// akan mengembalikan Number</span><br>						
+			<span class="purple">var</span> y = new Number(123);<br>
+			<span class="grey" style="margin-left:50px">// akan mengembalikan Object</span><br>						
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="numbers15()">Klik disini</button>
+			<p id="numbers15"></p>
+			</div>
+			</article>
+			
+			<!--ATTENTION-->
+			<article>
+			<table class="attention">
+			<tr>
+			<td class="td-left">
+			<h1>!</h1>
+			</td>
+			<td class="td-right">
+			Jangan membuat Number sebagai objecr karena itu dapat memperlambat kecepatan eksekusi.<br><br>
+			Kata kunci <b>new</b> memperumit kode. Ini bisa memproduksi hasil yang keliru.
+			</td>
+			</tr>
+			</table>
+			</article>			
+			
+			<article>
+				<p>
+				Ketika menggunakan assignment (==) maka kedua variabel tersebut terlihat sama.
+				</p>
+			</article>
+			
+			<!-- CONTOH Sederhana-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x = 123;<br>
+			<span class="purple">var</span> y = new Number(123);<br>
+			<span class="purple">var</span> z = (x==y);<br>
+			<span class="grey" style="margin-left:50px">// mengembalikan TRUE (benar) karena keduanya memiliki nilai yang sama.</span><br>						
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="numbers16()">Klik disini</button>
+			<p id="numbers16"></p>
+			</div>
+			</article>
+			
+			<article>
+				<p>
+				Ketika menggunakan operator equality ====, kedua variabel tidak sama,
+				karena operator === mengekspektasikan kesamaan keduanga antara nilai dan type.
+				</p>
+			</article>
+			
+			<!-- CONTOH Sederhana-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x = 123;<br>
+			<span class="purple">var</span> y = new Number(123);<br>
+			<span class="purple">var</span> z = (x===y);<br>
+			<span class="grey" style="margin-left:50px">
+			// mengembalikan FALSE (salah) karena keduanya memiliki nilai yang sama namun dengan tipe yang berbeda.
+			</span><br>						
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="numbers17()">Klik disini</button>
+			<p id="numbers17"></p>
+			</div>
+			</article>
+			
+			<article>
+				<p>
+				Atau lebih buruk, Object tidak bisa dibandingkan antara satu sama lain.
+				</p>
+			</article>
+			
+			<!-- CONTOH Sederhana-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x = new Number(123);<br>
+			<span class="purple">var</span> y = new Number(123);<br>
+			<span class="purple">var</span> z = (x===y);<br>
+			<span class="grey" style="margin-left:50px">
+			// mengembalikan FALSE (salah) karena Object tidak dapat dibandingkan dengan sesama object.
+			</span><br>						
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="numbers18()">Klik disini</button>
+			<p id="numbers18"></p>
+			</div>
+			</article>
+			
+			<!--ATTENTION-->
+			<article>
+			<table class="attention">
+			<tr>
+			<td class="td-left">
+			<h1>!</h1>
+			</td>
+			<td class="td-right">
+			Object JavaScript tidak bisa dibandingkan. 
+			</td>
+			</tr>
+			</table>
+			</article>			
+</section>
+<section>			
+			<article>
+				<h1> Metode dan Properti Number</h1>
+				<p>
+				Primitive values atau nilai sederhana (seperti 3.14 atau 2004) tidak memiliki
+				metode atau properti (karena mereka bukan merupakan sebuah object).<br><br>
+				Tapi dengan JavaScript, metode dan properti juga tersedia untuk nilai sederhana, 
+				karena JavaScript menganggap nilai sederhana sebagai object ketika 
+				pengeksekusian metode dan properti.
+				</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Properti Number </h1>
+			</article>
+			
+			<table class="explain">
+				<caption> Tabel Floating Point </caption>
+				<thead>
+					<tr>
+						<th> Properti </th>
+						<th> Definisi </th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td> MAX_VALUE</td>
+						<td> Mengembalikan nilai terbesar dalam JavaScript </td>
+					</tr>
+					<tr>
+						<td> MIN_VALUE</td>
+						<td> Mengembalikan nilai terkecil dalam JavaScript </td>
+					</tr>
+					<tr>
+						<td> POSITIVE_VALUE</td>
+						<td> Melambangkan Infinity positif (mengembalikan di overflow) </td>
+					</tr>
+					<tr>
+						<td> NEGATIVE_VALUE</td>
+						<td> Menggambarkan Infinity negatid (mengembalikan di overflow) </td>
+					</tr>
+					<tr>
+						<td> NaN</td>
+						<td> Menggambarkan sebuah nilai "Not-a-Number" (bukan termasuk tipe Number)</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<!-- CONTOH Sederhana-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x = 1234567890;<br>
+			<span class="purple">var</span> y = x.MAX_VALUE;<br>
+			<span class="grey" style="margin-left:50px">
+			// mengembalikan nilai terbesar dari variabel x;
+			</span><br>						
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="numbers19()">Klik disini</button>
+			<p id="numbers19"></p>
+			</div>
+			</article>
+			
+			<article>
+				<p>
+				Properti Number termasuk selubung number object JavaScript yang disebut Number.<br><br>
+				Properti ini bisa juga di akses seperti <i>Number</i><b>.MAX_VALUE</b>. <br><br>
+				Penggunaan <i>Number</i><b>.MAX_VALUE</b>, yang mana myNumber adalah sebuah variabel, ekspresi,
+				atai nilai, akan mengembalikam undefinied
+				</p>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x = 1234567890;<br>
+			<span class="purple">var</span> y = x.MAX_VALUE;<br>
+			<span class="grey" style="margin-left:50px">
+			// Akan menjadi Undefined;
+			</span><br>						
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="numbers20()">Klik disini</button>
+			<p id="numbers20"></p>
+			</div>
+			</article>
+			
+			<!--ATTENTION-->
+			<article>
+			<table class="attention">
+			<tr>
+			<td class="td-left">
+			<h1>!</h1>
+			</td>
+			<td class="td-right">
+			Kamu akan mempelajari Metode dan properti Number di chapter selanjutnya.
+			</td>
+			</tr>
+			</table>
+			</article>			
+</section>
+			<article id="NoB">
+			<a href="js string methods.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="js number methods.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			</article>
+			<article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

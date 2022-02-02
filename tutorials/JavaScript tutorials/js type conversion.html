@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | JavaScript | js type conversion</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="javaScript.js"></script>
+<script type="text/javascript" src="javaScript2.js"></script>
+<script type="text/javascript" src="javaScript3.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical"> <!--open link-->
+		<button onclick="openMenu()" id="menu">Open Menu</button>
+		<button onclick="closeMenu()" id="menu">Close Menu</button>
+		
+		<div id="vertical">
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch()"> JavaScript Tutorial</button>
+			<div class="drop-content" id="myDropdown">
+			<input type="text" class="myInput" id="myInput" placeholder="Cari" onkeyup="filterFunction()"/>
+			<ol>
+				<a href="js home.html"><li> Home </li></a>
+				<a href="js introduction.html"><li> Introduction </li></a>
+				<a href="js where to.html"><li> Where To </li></a>
+				<a href="js output.html"><li> Output </li></a>
+				<a href="js syntax.html"><li> Syntax </li></a>
+				<a href="js statements.html" ><li> Statements </li></a>
+				<a href="js comments.html" ><li> Comments </li></a>
+				<a href="js variables.html"><li> Variable </li></a>
+				<a href="js operators.html"><li> Operators </li></a>
+				<a href="js arithmetic.html"><li> Arithmetic </li></a>
+				<a href="js assignment.html"><li> Assignment </li></a>
+				<a href="js data types.html"><li> Data Types </li></a>
+				<a href="js functions.html"><li> Functions </li></a>
+				<a href="js objects.html"><li> Objects </li></a>
+				<a href="js scope.html"><li> Scope </li></a>
+				<a href="js events.html"><li> Events </li></a>
+				<a href="js strings.html"><li> string </li></a>
+				<a href="js string methods.html"><li> Strings Method </li></a>
+				<a href="js numbers.html"><li> Numbers </li></a>
+				<a href="js number methods.html"><li> Number Methods </li></a>
+				<a href="js math.html"><li> Math </li></a>
+				<a href="js random.html" ><li> Math Random </li></a>
+				<a href="js dates.html"><li> Dates </li></a>
+				<a href="js date formats.html" ><li> Date Formats </li></a>
+				<a href="js date methods.html" ><li> Date Methods </li></a>
+				<a href="js get date methods.html" ><li> Date get Methods </li></a>
+				<a href="js set date methods.html" ><li> Date Set Methods </li></a>
+				<a href="js arrays.html"><li> Arrays </li></a>
+				<a href="js array methods.html" ><li> Array Methods </li></a>
+				<a href="js array sort.html"><li> Array Sort </li></a>
+				<a href="js array iteration.html"><li> Array Iteration </li></a>
+				<a href="js booleans.html" ><li> boolean </li></a>
+				<a href="js comparisons.html" ><li> Comparisons </li></a>
+				<a href="js conditions.html" ><li>Conditions</li></a>
+				<a href="js switch.html" ><li>Switch </li></a>
+				<a href="js loop for.html"><li> Loop For </li></a>
+				<a href="js loop while.html" ><li>Loop while</li></a>
+				<a href="js break.html" ><li>Break</li></a>
+				<a href="js type conversion.html" ><li> Types conversion</li></a>
+				<a href="js bitwise.html" ><li> Bitwise </li></a>
+				<a href="js RegExp.html" ><li>RegExp</li></a>
+				<a href="js errors.html" ><li>Errors </li></a>
+				<a href="js debugging.html"><li>Debugging </li></a>
+				<a href="js hoisting.html" ><li>Hoisting</li></a>
+				<a href="js strict mode.html"><li>Strict mode</li></a>
+				<a href="js this keyword.html" ><li> this Keyword </li></a>
+				<a href="js let.html" ><li> Let </li></a>
+				<a href="js const.html" ><li> Const </li></a>
+				<a href="js style guide.html" ><li>Style guide</li></a>
+				<a href="js best practices.html" ><li>best practices </li></a>
+				<a href="js mistakes.html"><li> Mistakes </li></a>
+				<a href="js performance.html" ><li>Performance</li></a>
+				<a href="js reserved words.html" ><li>Reserved words</li></a>
+				<a href="js versions.html" ><li> Versions </li></a>
+				<a href="js version ES5.html" ><li class="redZone"> Version ES5 </li></a>
+				<a href="js version ES6.html" ><li class="redZone"> Version ES6 </li></a>
+				<a href="js JSON.html"><li>JSON</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch2()"> JavaScript Formulir</button>
+			<div class="drop-content" id="myDropdown2">
+			<input type="text" class="myInput" id="myInput2" placeholder="Cari" onkeyup="filterFunction2()"/>
+			<ol>
+				<a href="forms validation.html" ><li>Forms Validation</li></a>
+				<a href="forms API.html" ><li class="redZone">Forms API</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch3()"> JavaScript Object</button>
+			<div class="drop-content" id="myDropdown3">
+			<input type="text" class="myInput" id="myInput3" placeholder="Cari" onkeyup="filterFunction3()"/>
+			<ol>
+				<a href="object definitions.html" ><li>Object Definitions</li></a>
+				<a href="object properties.html" ><li>Object Properties</li></a>
+				<a href="object methods.html"><li class="redZone">Object Methods</li></a>
+				<a href="object accessors.html" ><li>Object accessors</li></a>
+				<a href="object constructors.html" ><li>Object constructor</li></a>
+				<a href="object prototypes.html" ><li>Object Prototypes</li></a>
+				<a href="object ECMAScript5.html" ><li class="redZone">Object ECMAScript5</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch4()"> JavaScript Function</button>
+			<div class="drop-content" id="myDropdown4">
+			<input type="text" class="myInput" id="myInput4" placeholder="Cari" onkeyup="filterFunction4()"/>
+			<ol>
+				<a href="funtion definitions.html" ><li>Function Definitions</li></a>
+				<a href="function parameters.html" ><li>Function Parameters</li></a>
+				<a href="function invocation.html" ><li>Function Invocation</li></a>
+				<a href="function closures.html" ><li>Function Closures</li></a>
+				<a href="function apply.html" ><li class="redZone">Function Apply</li></a>
+				<a href="function call.html" ><li>Function Call</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch5()">  JavaScript HMTL DOM </button>
+			<div class="drop-content" id="myDropdown5">
+			<input type="text" class="myInput" id="myInput5" placeholder="Cari" onkeyup="filterFunction5()"/>
+			<ol>
+				<a href="DOM intro.html" ><li> DOM Introduction </li></a>
+				<a href="DOM methods.html" ><li> DOM Methods </li></a>
+				<a href="DOM document.html" ><li> DOM Documents</li></a>
+				<a href="DOM elements.html" ><li> DOM Elements  </li></a>
+				<a href="DOM HTML.html" ><li> DOM HTML</li></a>
+				<a href="DOM CSS.html" ><li> DOM CSS  </li></a>
+				<a href="DOM animations.html" ><li> DOM Animations </li></a>
+				<a href="DOM events.html" ><li> DOM Events </li></a>
+				<a href="DOM eventListener.html" ><li> DOM EventListener </li></a>
+				<a href="DOM navigation.html" ><li> DOM Navigation </li></a>
+				<a href="DOM nodes.html" ><li> DOM Nodes </li></a>
+				<a href="DOM nodelist.html" ><li> DOM Nodelist </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch6()"> JavaScript Browser BOM </button>
+			<div class="drop-content" id="myDropdown6">
+			<input type="text" class="myInput" id="myInput6" placeholder="Cari" onkeyup="filterFunction6()"/>
+			<ol>
+				<a href="BOM window.html" ><li> Window </li></a>
+				<a href="BOM screen.html" ><li> Screen </li></a>
+				<a href="BOM location.html" ><li> Location </li></a>
+				<a href="BOM history.html" ><li> History  </li></a>
+				<a href="BOM navigator.html" ><li> Navigator </li></a>
+				<a href="BOM popup alert.html" ><li> Popup Alert </li></a>
+				<a href="BOM timing.html" ><li> Timing </li></a>
+				<a href="BOM cookies.html" ><li> Cookies </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch7()">JavaScript AJAX</button>
+			<div class="drop-content" id="myDropdown7">
+			<input type="text" class="myInput" id="myInput7" placeholder="Cari" onkeyup="filterFunction7()"/>
+			<ol>
+				<a href="AJAX intro.html" ><li> AJAX Introduction</li></a>
+				<a href="AJAX XMLHttpRequest.html" ><li> AJAX XMLHttpRequest </li></a>
+				<a href="AJAX request.html" ><li> AJAX Request </li></a>
+				<a href="AJAX respone.html" ><li class="redZone"> AJAX Response </li></a>
+				<a href="AJAX XML file.html" ><li> AJAX XML File</li></a>
+				<a href="AJAX PHP.html" ><li> AJAX PHP </li></a>
+				<a href="AJAX ASP.html" ><li> AJAX ASP </li></a>
+				<a href="AJAX database.html" ><li> AJAX Database </li></a>
+				<a href="AJAX XML applications.html" ><li> AJAX XML Application </li></a>
+				<a href="AJAX examples.html" ><li> AJAX Example </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch8()">JavaScript JSON</button>
+			<div class="drop-content" id="myDropdown8">
+			<input type="text" class="myInput" id="myInput8" placeholder="Cari" onkeyup="filterFunction8()"/>
+			<ol>
+				<a href="JSON intro.html" ><li class="redZone"> JSON Introduction</li></a>
+				<a href="JSON syntax.html" ><li class="redZone"> JSON Syntax </li></a>
+				<a href="JSON vs XML.html" ><li class="redZone"> JSON vs XML </li></a>
+				<a href="JSON data types.html" ><li class="redZone"> JSON Data Types </li></a>
+				<a href="JSON parse.html" ><li class="redZone"> JSON parse </li></a>
+				<a href="JSON stringify.html" ><li class="redZone"> JSON Stringify</li></a>
+				<a href="JSON objects.html" ><li class="redZone"> JSON Objects </li></a>
+				<a href="JSON arrays.html" ><li class="redZone"> JSON Arrays </li></a>
+				<a href="JSON PHP.html" ><li class="redZone"> JSON PHP </li></a>
+				<a href="JSON HTML.html" ><li class="redZone"> JSON HTML </li></a>
+				<a href="JSON JSONP.html" ><li class="redZone"> JSON JSONP </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch9()">JavaScript Reference</button>
+			<div class="drop-content" id="myDropdown9">
+			<input type="text" class="myInput" id="myInput9" placeholder="Cari" onkeyup="filterFunction9()"/>
+			<ol>
+				<li> <p> JavaScript References </p> </li>
+				<a href="JavaScript references/overview.html" > <li> Overview </li> </a>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch11()">JavaScript</button>
+					<div class="drop-content" id="myDropdown11">
+					<input type="text" class="myInput" id="myInput11" placeholder="Cari" onkeyup="filterFunction11()"/>
+					<ol>
+						<a href="JavaScript references/string reference.html" ><li>String Reference </li></a>
+						<a href="JavaScript references/number reference.html" ><li>Number Reference </li></a>
+						<a href="JavaScript references/operator reference.html" ><li>Operator Reference </li></a>
+						<a href="JavaScript references/statement reference.html" ><li>Statement Reference </li></a>
+						<a href="JavaScript references/math reference.html" ><li>Math Reference </li></a>
+						<a href="JavaScript references/date reference.html" ><li>Date Reference </li></a>
+						<a href="JavaScript references/array reference.html" ><li> Array Reference </li></a>
+						<a href="JavaScript references/boolean reference.html" ><li> Boolean Reference </li></a>
+						<a href="JavaScript references/RegExp reference.html" ><li> RegExp Reference </li></a>
+						<a href="JavaScript references/global reference.html" ><li> Global Reference </li></a>
+						<a href="JavaScript references/conversion reference.html" ><li> Conversion Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()">Browser Object Model (BOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="JavaScript references/BOM window reference.html" ><li> BOM Window Reference </li></a>
+						<a href="JavaScript references/BOM navigator reference.html" ><li> BOM Navigator Reference </li></a>
+						<a href="JavaScript references/BOM screen reference.html" ><li> BOM screen Reference </li></a>
+						<a href="JavaScript references/BOM history reference.html" ><li> BOM History Reference </li></a>
+						<a href="JavaScript references/BOM location reference.html" ><li> BOM Location Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()"> HTML Document Object Model (DOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="JavaScript references/DOM document reference.html" ><li> DOM Documents Reference </li></a>
+						<a href="JavaScript references/DOM element reference.html" ><li> DOM Elements Reference </li></a>
+						<a href="JavaScript references/DOM attribute reference.html" ><li> DOM Attributes Reference </li></a>
+						<a href="JavaScript references/DOM event reference.html" ><li> DOOM Events Reference </li></a>
+						<a href="JavaScript references/DOM style.html" ><li> DOM Style Reference </li></a>
+					</ol>
+					</div>
+			</ol>
+			</div>
+			</div>
+		</div>
+		</div>
+		</div> <!--close Link-->
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> JavaScript Type Conversion</h1>
+				<p>
+				Number() mengubah menjadi sebuah Number, String() mengubah menjadi sebuah String, Boolean() mengubah menjadi sebuah Boolean.
+				</p>
+			</div>
+<section>
+			<article>
+				<h1> Tipe - tipe  Data JavaScript</h1>
+				<p>
+				Di JavaScript ada 5 tipe data berbeda yang bisa berisi nilai:
+				</p>
+				<ul>
+					<li> String </li>
+					<li> Number </li>
+					<li> Boolean </li>
+					<li> Object </li>
+					<li> function </li>
+				</ul>
+				
+				<p>
+				Ada 3 tipe Object:
+				</p>
+				<ul>
+					<li> Object </li>
+					<li> Date </li>
+					<li> Array </li>
+				</ul>
+				
+				<p>
+				Ada 2 tipe data  yang tidak bisa berisi nilai:
+				</p>
+				<ul>
+					<li> null </li>
+					<li> undefined </li>
+				</ul>
+		</article>
+</section>
+<section id="typeof">		
+		<article>
+			<h1> Operator typeof </h1>
+			<p>
+			Kamu bisa menggunakan operator <b>typeof</b> untuk menemukan tipe data dari variabel JavaScript.
+			</p>
+		</article>	
+		<article class="example-box">				
+		<h1 style="text-align:center;"><i> Kamu bisa menulis seperti ini </i></h1>
+		<h4>input</h4>
+		<div class="example-content">
+		<q lang="code">!DOCTYPE html</q><br><br>
+		<q lang="code">html</q><br><br>
+		<q lang="code">head</q><br><br>
+		<q lang="code">/head</q><br><br>
+		<q lang="code">body</q><br><br>
+		<q lang="code">h1</q> Readbook <q lang="code">/h1</q><br><br>
+		<q lang="code">p</q> JavaScript akan mengeluarkan nama hari ini <q lang="code">/p</q><br><br>			
+		<q lang="code">p id="demo"</q> <q lang="code">/p</q><br><br>						
+		<q lang="code">script</q><br>			
+		document.getElementById("demo").innerHTML= 
+		<div class="redZone" >
+		typeof "John"     + "<q lang="code">br</q>" +           <em>// Mengembalikan string </em><br>
+		typeof 3.14     + "<q lang="code">br</q>" +              <em>// Mengembalikan number</em><br>
+		typeof NaN     + "<q lang="code">br</q>" +               <em>// Mengembalikan number</em><br>
+		typeof false      + "<q lang="code">br</q>" +            <em>// Mengembalikan boolean</em><br>
+		typeof [1,2,3,4]    + "<q lang="code">br</q>" +          <em>// Mengembalikan object</em><br>
+		typeof {name:'John', age:34} + "<q lang="code">br</q>" +  <em>// Mengembalikan object</em><br>
+		typeof new Date()    + "<q lang="code">br</q>" +         <em>// Mengembalikan object</em><br>
+		typeof function () {}  + "<q lang="code">br</q>" +       <em>// Mengembalikan function</em><br>
+		typeof myCar   + "<q lang="code">br</q>" +  <em>// Mengembalikan undefined</em><br>
+		typeof null;                   <em>// Returns object</em>
+		</div>
+		<q lang="code">/script</q><br><br>
+		<q lang="code">/body</q><br><br>
+		<q lang="code">/html</q><br>			
+		</div>
+		<h4>output</h4>
+		<div class="example-content">
+		<button onclick="typeConversion1()">Klik disini</button>
+		<p id="typeConversion01"></p>
+		</div>
+		</article>
+		
+		<article>
+			<p>
+			 Amatilah
+			</p>
+			<ul>
+				<li> Tipe data dari NaN adalah Number </li>
+				<li> Tipe data dari Array adalah Object</li>
+				<li> Tipe data dari date (tanggal) adalah Object </li>
+				<li> Tipe data dari null adalah Object </li>
+				<li> Tipe data dari variabel undefined adalah undefined </li>
+			</ul>
+		</article>
+		<!--ATTENTION-->
+		<article>
+		<table class="attention">
+		<tr>
+		<td class="td-left">
+		<h1>!</h1>
+		</td>
+		<td class="td-right">
+		Kamu tidak bisa menggunakan untuk menentukan (determine) jika sebuah object JavaScript adalah array (atau date)
+		</td>
+		</tr>
+		</table>
+		</article>
+</section>
+<section>		
+		<article>
+				<h1> Tipe data dari typeof</h1>
+				<p>
+				typeof bukan merupakan tipe data tapi melainkan sebuah operator seperti +-*/ tidak memiliki tipe data apapun.<br><br>
+				Tapi operator typeof selalu <b>mengembalikan string</b> berisikan tipe operand.
+				</p>
+		</article>		
+</section>
+<section>				
+		<article>
+			<h1> Properti constructor </h1>
+			<p>
+			Properti constructor mengembalikan fungsi pembangun untuk semua variabel JavaScript.
+			</p>
+		</article>
+		
+		<article class="example-box">				
+		<h1 style="text-align:center;"><i> Kamu bisa menulis seperti ini </i></h1>
+		<h4>input</h4>
+		<div class="example-content">
+		<q lang="code">!DOCTYPE html</q><br><br>
+		<q lang="code">html</q><br><br>
+		<q lang="code">head</q><br><br>
+		<q lang="code">/head</q><br><br>
+		<q lang="code">body</q><br><br>
+		<q lang="code">h1</q> Readbook <q lang="code">/h1</q><br><br>
+		<q lang="code">p</q> JavaScript akan mengeluarkan nama hari ini <q lang="code">/p</q><br><br>			
+		<q lang="code">p id="demo"</q> <q lang="code">/p</q><br><br>						
+		<q lang="code">script</q><br>			
+		document.getElementById("demo").innerHTML= 
+		<div class="redZone" >
+		"John".constructor  + "<q lang="code">br</q>" + <em>// Returns function String()  { [native code] }</em><br>
+		(3.14).constructor   + "<q lang="code">br</q>" + <em>// Returns function Number()  { [native code] }</em><br>
+		false.constructor   + "<q lang="code">br</q>" + <em>// Returns function Boolean() { [native code] }</em><br>
+		[1,2,3,4].constructor  + "<q lang="code">br</q>" + <em>// Returns function Array()   { [native code] }</em><br>
+		{name:'John', age:34}.constructor  + "<q lang="code">br</q>" + <em>// Returns function Object()  { [native code] }</em><br>
+		new Date().constructor  + "<q lang="code">br</q>" + <em>// Returns function Date()    { [native code] }</em> <br>
+		function () {}.constructor;   <em>// Returns function Function(){ [native code] }</em>
+		</div>
+		<q lang="code">/script</q><br><br>
+		<q lang="code">/body</q><br><br>
+		<q lang="code">/html</q><br>			
+		</div>
+		<h4>output</h4>
+		<div class="example-content">
+		<button onclick="typeConversion2()">Klik disini</button>
+		<p id="typeConversion02"></p>
+		</div>
+		</article>
+		
+		<article>
+			<p>
+			Kamu bisa mengecek properti constructor (pembangun) untuk mencari jika object adalah Array (berisi kata Array)
+			</p>
+		</article>
+		
+		<article class="example-box">				
+		<h1 style="text-align:center;"><i> Kamu bisa menulis seperti ini </i></h1>
+		<h4>input</h4>
+		<div class="example-content">
+		<q lang="code">!DOCTYPE html</q><br><br>
+		<q lang="code">html</q><br><br>
+		<q lang="code">head</q><br><br>
+		<q lang="code">/head</q><br><br>
+		<q lang="code">body</q><br><br>
+		<q lang="code">h1</q> Readbook <q lang="code">/h1</q><br><br>
+		<q lang="code">p</q> JavaScript akan mengeluarkan nama hari ini <q lang="code">/p</q><br><br>			
+		<q lang="code">p id="demo"</q> <q lang="code">/p</q><br><br>						
+		<q lang="code">script</q><br>
+		<span>var</span> cars = ["Gallardo", "Lamborghini", "Ferarri"];	<br>		
+		document.getElementById("demo").innerHTML= isArray(cars);
+		<div class="redZone" >
+		<span>function</span> isArray(x) { <br>
+		<blockquote>
+		return x.constructor.toString().indexOf("Array") > -1;
+		</blockquote>
+		}
+		</div>
+		<q lang="code">/script</q><br><br>
+		<q lang="code">/body</q><br><br>
+		<q lang="code">/html</q><br>			
+		</div>
+		<h4>output</h4>
+		<div class="example-content">
+		<p> Fungsi "home made" ini, saat digunakan pada sebuah Array (nilai dalam kurung persegi) akan mengembalikan true (benar).</p>
+		<p id="typeConversion03"></p>
+		</div>
+		</article>
+		
+		<article>
+			<p>
+			Kamu bisa mengecek properti constructor (pembangun) untuk mencari jika object adalah date (berisi tanggal atau waktu)
+			</p>
+		</article>
+		
+		<article class="example-box">				
+		<h1 style="text-align:center;"><i> Kamu bisa menulis seperti ini </i></h1>
+		<h4>input</h4>
+		<div class="example-content">
+		<q lang="code">!DOCTYPE html</q><br><br>
+		<q lang="code">html</q><br><br>
+		<q lang="code">head</q><br><br>
+		<q lang="code">/head</q><br><br>
+		<q lang="code">body</q><br><br>
+		<q lang="code">h1</q> Readbook <q lang="code">/h1</q><br><br>
+		<q lang="code">p</q> JavaScript akan mengeluarkan nama hari ini <q lang="code">/p</q><br><br>			
+		<q lang="code">p id="demo"</q> <q lang="code">/p</q><br><br>						
+		<q lang="code">script</q><br>
+		<span>var</span> waktu = new Date()	<br>		
+		document.getElementById("demo").innerHTML= isDate(waktu);
+		<div class="redZone" >
+		<span>function</span> isDate(waktu) { <br>
+		<blockquote>
+		<span class="blue">return</span> waktu.constructor.toString().indexOf("Date") > 1;
+		</blockquote>
+		}
+		</div>
+		<q lang="code">/script</q><br><br>
+		<q lang="code">/body</q><br><br>
+		<q lang="code">/html</q><br>			
+		</div>
+		<h4>output</h4>
+		<div class="example-content">
+		<p> Fungsi "home made" ini, saat digunakan pada sebuah date (tanggal atau waktu) akan mengembalikan true (benar).</p>
+		<p id="typeConversion04"></p>
+		</div>
+		</article>
+</section>
+<section>		
+		<article>
+			<h1>JavaScript Type Conversion </h1>
+			<p>
+			Variabel JavaScrip bisa diubah menjadi variabel baru atau tipe data lain.
+				<ul>
+					<li> Dengan menggunakan Fungsi JavaScript</li>
+					<li> <b>Secara otomatis</b> oleh JavaScript itu sendiri </li>
+				</ul>
+			</p>
+		</article>
+</section>
+<section>		
+		<article>
+			<h1> Pengubahan Number menjadi String </h1>
+			<p>
+			Metode global <b>String()</b> bisa mengubah Number menjadi String. <br><br>
+			Metode ini bisa digunakan pada tipe apa saja Number, Literal, Variabel ataupun Expression.
+			</p>
+		</article>
+		<article class="example-box">				
+		<h1 style="text-align:center;"><i> Kamu bisa menulis seperti ini </i></h1>
+		<h4>input</h4>
+		<div class="example-content">
+		<q lang="code">!DOCTYPE html</q><br><br>
+		<q lang="code">html</q><br><br>
+		<q lang="code">head</q><br><br>
+		<q lang="code">/head</q><br><br>
+		<q lang="code">body</q><br><br>
+		<q lang="code">h1</q> Readbook <q lang="code">/h1</q><br><br>
+		<q lang="code">p</q> JavaScript akan mengeluarkan nama hari ini <q lang="code">/p</q><br><br>			
+		<q lang="code">p id="demo"</q> <q lang="code">/p</q><br><br>						
+		<q lang="code">script</q><br>
+		<span>var</span> x = 123;	<br>		
+		document.getElementById("demo").innerHTML= 
+		<div class="redZone" >
+		String(x)  + "<q lang="code">br</q>" +  <em>// returns a string from a number variable x</em><br>
+		String(123)  + "<q lang="code">br</q>" +  <em>  // returns a string from a number literal 123 </em> <br>
+		String(100 + 23);  <em>// returns a string from a number from an expression </em>
+		</div>
+		<q lang="code">/script</q><br><br>
+		<q lang="code">/body</q><br><br>
+		<q lang="code">/html</q><br>			
+		</div>
+		<h4>output</h4>
+		<div class="example-content">
+		<p> Metode <b>String()</b> bisa mengubah Number menjadi String.</p>
+		<p id="typeConversion05"></p>
+		</div>
+		</article>
+		
+		<article>
+			<p> Metode Number <b>toString()</b> melakukan hal yang sama:</p>
+		</article>
+		
+		<article class="example-box">				
+		<h1 style="text-align:center;"><i> Kamu bisa menulis seperti ini </i></h1>
+		<h4>input</h4>
+		<div class="example-content">
+		<span>var</span> x = 123;	<br>		
+		document.getElementById("demo").innerHTML= 
+		<div class="redZone" >
+		x.toString()  + "<q lang="code">br</q>" +  <br>
+		(123).toString()  + "<q lang="code">br</q>" +  <br>
+		(100+20+3).toString(); 
+		</div>
+		</div>
+		<h4>output</h4>
+		<div class="example-content">
+		<p> Metode <b>toString()</b> juga bisa mengubah Number menjadi String.</p>
+		<p id="typeConversion06"></p>
+		</div>
+		</article>
+		
+		<article>
+			<p> 
+			Di chapter <a href="js number methods.html" > Metode Number</a> kamu akan menemukan banyak 
+			metode yang bisa digunakan untuk mengubah Number menjadi String:
+			</p>
+			<table class="attention explanation">
+				<caption> Tabel Metode Number </caption>
+				<thead>
+					<tr>
+						<th> Metode </th>
+						<th> Deskripsi </th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td> toExponential()</td>
+						<td> 
+						Mengembalikan String, dengan sebuah Number yang dibulatkan dan ditulis dengan notasi exponential (e).
+						</td>
+					</tr>
+					<tr>
+						<td> toFixed() </td>
+						<td> 
+						Mengembalikan String, dengan sebuah number yang dibulatkan dan ditulis dengan sebuah Number tertentu dari desimal.
+						</td>
+					</tr>
+					<tr>
+						<td> toPrecision() </td>
+						<td>
+						Mengembalikan String, dengan sebuah Nomor yang ditulis dengan panjang tertentu
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</article>
+</section>
+<section>
+		<article>
+			<h1> Pengubahan Boolean menjadi String </h1>
+			<p> Dengan metode global <b>String()</b> dapat mengubah nilai Boolean menjasi String:</p>
+		</article>
+		
+		<article class="example-box">				
+		<div class="example-content">
+		String(false)  <em>// Mengembalikan "false"</em><br>
+		String(true)   <em>  // Mengembalikan "true" </em> <br>
+		</div>
+		</article>
+		
+		<article>
+			<p>Metode Boolean <b>toString()</b> melakukan hal yang sama:</p>
+		</article>
+		
+		<article class="example-box">				
+		<div class="example-content">
+		false.toString()  <em>// Mengembalikan "false"</em><br>
+		true.toString()   <em>  // Mengembalikan "true" </em> <br>
+		</div>
+		</article>
+</section>
+<section>		
+		<article>
+			<h1> Pengubahan Date menjadi String </h1>
+			<p> Dengan metode global <b>String()</b> dapat mengubah Date menjadi String:</p>
+		</article>
+		
+		<article class="example-box">				
+		<div class="example-content">
+		String(Date())  <em>// Mengembalikan <span id="typeConversion07"> </span></em><br>
+		</div>
+		</article>
+		
+		<article>
+			<p>Metode Boolean <b>toString()</b> melakukan hal yang sama:</p>
+		</article>
+		
+		<article class="example-box">				
+		<div class="example-content">
+		Date.toString()  <em>//mengembalikan <span id="typeConversion08"></span> </em><br>
+		</div>
+		</article>
+		
+		<article>
+			<p> 
+			Di chapter <a href="js date methods.html" > Metode Date </a> kamu akan menemukan banyak 
+			metode yang bisa digunakan untuk mengubah Date menjadi String:
+			</p>
+			
+			<table class="attention explanation">
+						<caption> Tabel Metode Get Date </caption>
+				<thead>
+					<tr>
+						<th> Time Zone </th>
+						<th> Deskripsi </th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><b> getDate() </b></td>
+						<td>
+						Mendapatkan tanggal sebagai number (1-30)
+						</td>
+					</tr>
+					<tr>
+						<td><b> getDay() </b></td>
+						<td>
+						Mendapatkan hari sebagai number (0-6)
+						</td>
+					</tr>
+					<tr>
+						<td><b> getFullYear() </b></td>
+						<td>
+						Mendapatkan tahun dengan 4 digit number (YYYY)
+						</td>
+					</tr>
+					<tr>
+						<td><b> getHours() </b></td>
+						<td>
+						mendapatkan jam (0-23)
+						</td>
+					</tr>
+					<tr>
+						<td><b> getMilliSeconds() </b></td>
+						<td>
+						Mendapatkan milidetik (0-999)
+						</td>
+					</tr>
+					<tr>
+						<td><b> getMinutes() </b></td>
+						<td>
+						Mendapatkan menit (0-59)
+						</td>
+					</tr>
+					<tr>
+						<td><b> getMonth() </b></td>
+						<td>
+						Mendapatkan bulan (0-11)
+						</td>
+					</tr>
+					<tr>
+						<td><b> getSeconds() </b></td>
+						<td>
+						Mendapatkan detik (0-59)
+						</td>
+					</tr>
+					<tr>
+						<td><b> getTime() </b></td>
+						<td>
+						Mendapatkan waktu (milidetik sejak Januari 1, 1970)
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</article>
+</section>
+<section>		
+		<article>
+			<h1> Pengubahan String menjadi Number </h1>
+			<p> 
+			Dengan metode global <b>Number()</b> dapat mengubah String menjadi Number. <br><br>
+			String berisikan ("3.14") diubah menjadi Number seperti (3.14). <br><br>
+			String Kosong menjadi 0. <br><br>
+			Apapun  merubah lainnya menjadi NaN (Not a Number).
+			</p>
+		</article>
+		
+		<article class="example-box">				
+		<div class="example-content">
+		Number("3.14")  <em>// Mengembalikan 3.14</em><br>
+		Number("")  <em>// Mengembalikan 0</em><br>
+		Number(" ")  <em>// Mengembalikan 0</em><br>
+		Number("99 88")  <em>// Mengembalikan NaN </em><br>
+		</div>
+		</article>
+		
+		<article>
+			<p> 
+			Di chapter <a href="js number methods.html" > Metode Number </a> kamu akan menemukan banyak 
+			metode yang bisa digunakan untuk mengubah String menjadi Number:
+			</p>
+			<table class="attention explanation">
+						<caption> Tabel Metode Global </caption>
+				<thead>
+					<tr>
+						<th> Metode </th>
+						<th> Deskripsi </th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><b> parseFloat() </b></td>
+						<td>
+						Mengurai (parse) argumen itu sendiri dan mengembalikan sebuah floating point number.
+						</td>
+					</tr>
+					<tr>
+						<td><b> parseInt() </b></td>
+						<td>
+						Mengurai argumen dan mengembalikan sebuah integer (bilangan bulat).
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</article>
+</section>
+<section>		
+		<article>
+			<h1> Operator Unary + </h1>
+			<p> 
+			Operator <b>Unary +</b> dapat digunakan untuk mengubah variabel menjadi Number</p>
+			</p>
+		</article>
+		
+		<article class="example-box">				
+		<div class="example-content">
+		<span class="purple">var</span> y = "5"  <em>// y Mengembalikan String</em><br>
+		<span class="purple">var</span> x = + y <em>// x Mengembalikan Number</em><br>
+		</div>
+		<h4>output</h4>
+		<div class="example-content">
+		<p> Operator <b>Unary +</b> bisa mengubah String menjadi Number.</p>
+		<p id="typeConversion09"></p>
+		</div>
+		</article>
+		
+		<article>
+			<p>
+			Jika itu tidak dapat diubah maka ia akan menjadi Number dengan nilai NaN (Not a Number).
+			</p>
+		</article>
+		
+		<article class="example-box">				
+		<div class="example-content">
+		<span class="purple">var</span> y = "Dave"  <em>// y Mengembalikan String</em><br>
+		<span class="purple">var</span> x = + y <em>// x Mengembalikan NaN</em><br>
+		</div>
+		<h4>output</h4>
+		<div class="example-content">
+		<p> Operator <b>Unary +</b> bisa mengubah String menjadi Number.</p>
+		<p id="typeConversion10"></p>
+		</div>
+		</article>
+</section>
+<section>
+		<article>
+			<h1>Mengubah Boolean menjadi Number </h1>
+			<p> 
+			Dengan metode global <b>Number()</b> dapat mengubah Boolean menjadi Number. 
+			</p>
+		</article>
+		
+		<article class="example-box">				
+		<div class="example-content">
+		Number(false)  <em>// Mengembalikan 0 </em><br>
+		Number(true)   <em>// Mengembalikan 1</em><br>
+		</div>
+		</article>
+</section>
+<section>		
+		<article>
+			<h1>Mengubah Date menjadi Number </h1>
+			<p> 
+			Dengan metode global <b>Number()</b> dapat mengubah Date menjadi Number. 
+			</p>
+		</article>
+		
+		<article class="example-box">				
+		<div class="example-content">
+		d = new Date(); <br>
+		Number(d)  <em> // Mwngembalikan <span id="typeConversion11"></span> </em><br>
+		</div>
+		</article>
+		
+		<article>
+			<p> 
+			Metode date <b>getTime()</b> melakukan hal yang sama. 
+			</p>
+		</article>
+		
+		<article class="example-box">				
+		<div class="example-content">
+		d = new Date(); <br>
+		d.getTime()  <em>// Mengembalikan <span id="typeConversion12"></span> </em><br>
+		</div>
+		</article>
+</section>
+<section>		
+		<article>
+			<h1> Perubahan Tipe Otomatis </h1>
+			<p>
+			Ketika JavaScript mnecoba mengoperasikan pada tipe data yang <q>salah</q>, JavaScript akan mencoba untuk mengubah nilai 
+			menjadi tipe yang <q>benar</q>. <br><br>
+			Hasil tidak selalu mengeluarkan apa yang kamu bayangkan.
+			</p>
+		</article>
+		
+		<article class="example-box">				
+		<h1 style="text-align:center;"><i> Kamu bisa menulis seperti ini </i></h1>
+		<h4>input</h4>
+		<div class="example-content">
+		<q lang="code">!DOCTYPE html</q><br><br>
+		<q lang="code">html</q><br><br>
+		<q lang="code">head</q><br><br>
+		<q lang="code">/head</q><br><br>
+		<q lang="code">body</q><br><br>
+		<q lang="code">h1</q> Readbook <q lang="code">/h1</q><br><br>
+		<q lang="code">p</q> JavaScript akan mengeluarkan nama hari ini <q lang="code">/p</q><br><br>			
+		<q lang="code">p id="demo"</q> <q lang="code">/p</q><br><br>						
+		<q lang="code">script</q><br>
+		<span>var</span> x = 123;	<br>		
+		document.getElementById("demo").innerHTML= 
+		<div class="redZone" >
+		
+		5 + null   + "<q lang="code">br</q>" +  <em> //Mengembalikan 5, karena null diubah menjadi 0 </em></em> <br>
+		"5" + null  + "<q lang="code">br</q>" +  <em>// Mengembalikan "5null", karena null diubah menjadi "null" </em></em> <br>
+		"5" + 2    + "<q lang="code">br</q>" +  <em> // Menjadi 52, karena  2 diubah menjadi "2" </em></em> <br>
+		"5" - 2  + "<q lang="code">br</q>" +  <em> // Mengembalikan 3, karena  "5" diubah menjadi 5 </em></em> <br>
+		"5" * "2"  + "<q lang="code">br</q>" +  <em> // Mengembalikan 10, karena "5" dan "2" diubah menjadi 5 dan 2 </em></em> <br>
+		
+		</div>
+		<q lang="code">/script</q><br><br>
+		<q lang="code">/body</q><br><br>
+		<q lang="code">/html</q><br>			
+		</div>
+		<h4>output</h4>
+		<div class="example-content">
+		<button onclick="typeConversion13()">Klik disini </button>
+		<p id="typeConversion13"></p>
+		</div>
+		</article>
+</section>
+<section>		
+		<article>
+			<h1> Perubahan String Otomatis </h1>
+			<p>
+			JavaScript secara otomatis memanggil fungsi toString() variabel untuk mencoba meng-output 
+			sebuah object atau sebuah variabel.
+			</p>
+		</article>
+		
+		<article class="example-box">				
+		<div class="example-content">
+		document.getElementById("<span class="blue">demo</span>").innerHTML= myVar; <br>
+		<span class="grey">// jika myVar = {name:"Fjohn"}  <em>// toString mengubah menjadi "[object Object]"</em></span> <br>
+		<span class="grey">// jika myVar = [1,2,3,4]      <em> // toString mengubah menjadi  "1,2,3,4" </em></span> <br>
+		<span class="grey">// jika myVar = new Date()      <em>// toString mengubah "Fri Jul 18 2014 09:08:55 GMT+0200"</em></span>
+		</div>
+		</article>
+		
+		<article>
+			<p>
+			Number dan Boolean juga diubah, tapi ini sangat tidak visibel (terlihat).
+			</p>
+		</article>
+		
+		<article class="example-box">				
+		<div class="example-content">
+		document.getElementById("<span class="blue">demo</span>").innerHTML= myVar; <br>
+		<span class="grey">// jika myVar = 123 		<em>// toString mengubah menjadi "123" </em></span> <br>
+		<span class="grey">// jika myVar = true      <em> // toString mengubah menjadi "true" </em></span> <br>
+		<span class="grey">// jika myVar = false      <em>// toString mengubah menjadi "false" </em></span>
+		</div>
+		</article>
+</section>
+<section>		
+		<article>
+			<h1> Tabel Perubahan Tipe JavaScript </h1>
+			<p>
+			
+			</p>
+		</article>
+		
+		<article>
+			<p>
+			Tabel ini menunjukan pengubahan nilai JavaScript yang berbeda menjadi Number, String dan Boolean
+			</p>
+			<table class="attention explanation center">
+				<caption> Tabel Metode Number </caption>
+				<thead>
+					<tr>
+						<th> Nilai asli </th>
+						<th> Diubah ke Number </th>
+						<th> Diubah ke String </th>
+						<th> Diubah ke Boolean </th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td> false </td>
+						<td> 0 </td>
+						<td> "false" </td>
+						<td> false </td>
+					</tr>
+					<tr>
+						<td> true </td>
+						<td> 1 </td>
+						<td> "true" </td>
+						<td> true </td>
+					</tr>
+					<tr>
+						<td> 0 </td>
+						<td> 0 </td>
+						<td> "0" </td>
+						<td> false </td>
+					</tr>
+					<tr>
+						<td> 1 </td>
+						<td> 1 </td>
+						<td> "1" </td>
+						<td> true </td>
+					</tr>
+					<tr>
+						<td> "0" </td>
+						<td> 0 </td>
+						<td> "0" </td>
+						<td> true </td>
+					</tr>
+					<tr>
+						<td> "1" </td>
+						<td> 1 </td>
+						<td> "1" </td>
+						<td> true </td>
+					</tr>
+					<tr>
+						<td> NaN </td>
+						<td> NaN </td>
+						<td> "NaN" </td>
+						<td> false </td>
+					</tr>
+					<tr>
+						<td> Infinity </td>
+						<td> Infinity </td>
+						<td> "Infinity" </td>
+						<td> true </td>
+					</tr>
+					<tr>
+						<td> -Infinity </td>
+						<td> -Infinity </td>
+						<td> "-Infinity" </td>
+						<td> true </td>
+					</tr>
+					<tr>
+						<td> "" </td>
+						<td> <span class="justRed">0</span> </td>
+						<td> "" </td>
+						<td> <span class="justRed">false</span> </td>
+					</tr>
+					<tr>
+						<td> "20" </td>
+						<td> 20 </td>
+						<td> "20" </td>
+						<td> true </td>
+					</tr>
+					<tr>
+						<td> "twenty" </td>
+						<td> NaN </td>
+						<td> "twenty" </td>
+						<td> true </td>
+					</tr>
+					<tr>
+						<td> [] </td>
+						<td class="justRed"> 0 </td>
+						<td> "" </td>
+						<td> true </td>
+					</tr>
+					<tr>
+						<td> [20] </td>
+						<td class="justRed"> 20 </td>
+						<td> 20 </td>
+						<td> true </td>
+					</tr>
+					<tr>
+						<td> [10,20] </td>
+						<td> NaN </td>
+						<td> "10,20" </td>
+						<td> true </td>
+					</tr>
+					<tr>
+						<td> ["twenty"] </td>
+						<td> NaN </td>
+						<td> "twenty" </td>
+						<td> true </td>
+					</tr>
+					<tr>
+						<td> ["ten", "twenty"] </td>
+						<td> NaN </td>
+						<td> "ten, twenty" </td>
+						<td> true </td>
+					</tr>
+					<tr>
+						<td> function() {} </td>
+						<td> NaN </td>
+						<td> "function() {}" </td>
+						<td> true </td>
+					</tr>
+					<tr>
+						<td> {} </td>
+						<td> NaN </td>
+						<td> "[object Object]" </td>
+						<td> true </td>
+					</tr>
+					<tr>
+						<td> null </td>
+						<td class="justRed"> 0 </td>
+						<td> "null" </td>
+						<td> false </td>
+					</tr>
+					<tr>
+						<td> undefined </td>
+						<td> NaN </td>
+						<td> "undefined" </td>
+						<td> false </td>
+					</tr>
+				</tbody>
+			</table>
+		</article>
+		
+		<article>
+			<p>
+			Variabel dalam indikasi tanda petik adalah nilai String <br><br>
+			Nilai berindikasi <b class="justRed">warna merah</b> (beberapa) para programer mungkin tidak menyangka.
+			</p>
+		</article>
+</section>
+<section>
+			<article id="NoB">
+			<a href="js break.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="js RegExp.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			</article>
+			<article> 
+			</article>
+</section>
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+
+<script type="text/javascript">
+
+var cars = ["Gallardo", "Lamborghini", "Ferarri"];	
+document.getElementById("typeConversion03").innerHTML= isArray(cars);
+function isArray(x) { 
+	return x.constructor.toString().indexOf("Array") > -1;
+}
+
+var waktu = new Date()	
+document.getElementById("typeConversion04").innerHTML= isDate(waktu);
+function isDate(waktu) { 
+	return waktu.constructor.toString().indexOf("Date") > 1;
+}
+var co = 123;
+document.getElementById("typeConversion05").innerHTML= 
+String(co) + "<br>" + String(123) + "<br>" + String(100+20+3);
+
+document.getElementById("typeConversion06").innerHTML= 
+co.toString() + "<br>" + (123).toString() + "<br>" + (100+20+3).toString();
+
+document.getElementById("typeConversion07").innerHTML= String(Date());
+
+document.getElementById("typeConversion08").innerHTML= Date().toString();
+var oy = "5";
+var ox = + oy;
+document.getElementById("typeConversion09").innerHTML= oy  + "<br>" + ox ;
+var yo = "Dave";
+var xo = + yo;
+document.getElementById("typeConversion10").innerHTML= yo + "<br>" + xo ;
+
+var myDate= new Date();
+document.getElementById("typeConversion11").innerHTML=Number(myDate);
+document.getElementById("typeConversion12").innerHTML= myDate.getTime();
+
+function typeConversion13(){
+	document.getElementById("typeConversion13").innerHTML= 5 + null +"<br>"+
+	"5" + null +"<br>"+ "5" + 2 +"<br>"+ "5" + "2" +"<br>"+ "5" * "2";
+}
+</script>
+</body>
+</html>

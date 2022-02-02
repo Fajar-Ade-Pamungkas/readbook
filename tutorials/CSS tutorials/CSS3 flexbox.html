@@ -1,0 +1,2630 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS3 flexbox </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+
+<style type="text/css">
+article .example-content div {
+	padding:0;
+	
+}
+
+#sembunyikan01 .flex-container { 
+display: -webkit-flex; 
+display: flex; 
+width: 400px; 
+height: 250px; 
+background-color: lightgrey; 
+} 
+
+	#sembunyikan01 .flex-item { 
+	background-color: cornflowerblue; 
+	width: 100px; 
+	height: 100px; 
+	margin: 10px; 
+	} 
+
+
+#sembunyikan02 {
+direction: rtl;
+}
+
+#sembunyikan02 .flex-container {
+display: -webkit-flex;
+display: flex;
+width: 400px;
+height: 250px;
+background-color: lightgrey;
+}
+
+	#sembunyikan02 .flex-item {
+	background-color: cornflowerblue;
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	}
+
+
+#sembunyikan03 .flex-container { 
+display: -webkit-flex; 
+display: flex; 
+-webkit-flex-direction: row-reverse; 
+flex-direction: row-reverse; 
+width: 400px; 
+height: 250px; 
+background-color: lightgrey; 
+} 
+
+	#sembunyikan03 .flex-item { 
+	background-color: cornflowerblue; 
+	width: 100px; 
+	height: 100px; 
+	margin: 10px; 
+	} 
+
+
+#sembunyikan04 .flex-container { 
+display: -webkit-flex; 
+display: flex; 
+-webkit-flex-direction: column; 
+flex-direction: column; 
+width: 400px; 
+height: 250px; 
+background-color: lightgrey; 
+} 
+
+	#sembunyikan04 .flex-item { 
+	background-color: cornflowerblue; 
+	width: 100px; 
+	height: 100px; 
+	margin: 10px; 
+	} 
+
+
+#sembunyikan05 .flex-container { 
+display: -webkit-flex; 
+display: flex; 
+-webkit-flex-direction: column-reverse; 
+flex-direction: column-reverse; 
+width: 400px; 
+height: 250px; 
+background-color: lightgrey; 
+} 
+
+	#sembunyikan05 .flex-item { 
+	background-color: cornflowerblue; 
+	width: 100px; 
+	height: 100px; 
+	margin: 10px; 
+	} 
+
+
+#sembunyikan06 .flex-container { 
+display: -webkit-flex; 
+display: flex; 
+-webkit-justify-content: flex-end; 
+justify-content: flex-end; 
+width: 400px; 
+height: 250px; 
+background-color: lightgrey; 
+} 
+
+	#sembunyikan06 .flex-item { 
+	background-color: cornflowerblue; 
+	width: 100px; 
+	height: 100px; 
+	margin: 10px; 
+	} 
+
+
+#sembunyikan07 .flex-container { 
+display: -webkit-flex; 
+display: flex; 
+-webkit-justify-content: center; 
+justify-content: center; 
+width: 400px; 
+height: 250px; 
+background-color: lightgrey; 
+} 
+
+	#sembunyikan07 .flex-item { 
+	background-color: cornflowerblue; 
+	width: 100px; 
+	height: 100px; 
+	margin: 10px; 
+	} 
+
+
+#sembunyikan08 .flex-container { 
+display: -webkit-flex; 
+display: flex; 
+-webkit-justify-content: space-between; 
+justify-content: space-between; 
+width: 400px; 
+height: 250px; 
+background-color: lightgrey; 
+} 
+
+	#sembunyikan08 .flex-item { 
+	background-color: cornflowerblue; 
+	width: 100px; 
+	height: 100px; 
+	margin: 10px; 
+	} 
+
+
+#sembunyikan09 .flex-container { 
+display: -webkit-flex; 
+display: flex; 
+-webkit-justify-content: space-around; 
+justify-content: space-around; 
+width: 400px; 
+height: 250px; 
+background-color: lightgrey; 
+} 
+
+	#sembunyikan09 .flex-item { 
+	background-color: cornflowerblue; 
+	width: 100px; 
+	height: 100px; 
+	margin: 10px; 
+	} 
+
+
+#sembunyikan10 .flex-container { 
+display: -webkit-flex; 
+display: flex; 
+-webkit-align-items: stretch; 
+align-items: stretch; 
+width: 400px; 
+height: 250px; 
+background-color: lightgrey; 
+} 
+
+	#sembunyikan10 .flex-item { 
+	background-color: cornflowerblue; 
+	width: 100px; 
+	margin: 10px; 
+	} 
+
+
+#sembunyikan11 .flex-container { 
+display: -webkit-flex; 
+display: flex; 
+-webkit-align-items: flex-start; 
+align-items: flex-start; 
+width: 400px; 
+height: 250px; 
+background-color: lightgrey; 
+} 
+
+	#sembunyikan11 .flex-item { 
+	background-color: cornflowerblue; 
+	width: 100px; 
+	margin: 10px; 
+	} 
+
+
+#sembunyikan12 .flex-container { 
+display: -webkit-flex; 
+display: flex; 
+-webkit-align-items: flex-end; 
+align-items: flex-end; 
+width: 400px; 
+height: 250px; 
+background-color: lightgrey; 
+} 
+
+	#sembunyikan12 .flex-item { 
+	background-color: cornflowerblue; 
+	width: 100px; 
+	margin: 10px; 
+	} 
+
+
+#sembunyikan13 .flex-container { 
+display: -webkit-flex; 
+display: flex; 
+-webkit-align-items: center; 
+align-items: center; 
+width: 400px; 
+height: 250px; 
+background-color: lightgrey; 
+} 
+
+	#sembunyikan13 .flex-item { 
+	background-color: cornflowerblue; 
+	width: 100px; 
+	margin: 10px; 
+	} 
+
+
+#sembunyikan14 .flex-container { 
+display: -webkit-flex; 
+display: flex; 
+-webkit-align-items: baseline; 
+align-items: baseline; 
+width: 400px; 
+height: 250px; 
+background-color: lightgrey; 
+} 
+
+	#sembunyikan14 .flex-item { 
+	background-color: cornflowerblue; 
+	width: 100px; 
+	margin: 10px; 
+	} 
+
+
+#sembunyikan15 .flex-container { 
+display: -webkit-flex; 
+display: flex; 
+-webkit-flex-wrap: nowrap; 
+flex-wrap: nowrap; 
+width: 400px; 
+height: 250px; 
+background-color: lightgrey; 
+} 
+
+	#sembunyikan15 .flex-item { 
+	background-color: cornflowerblue; 
+	width: 100px; 
+	height: 100px; 
+	margin: 10px; 
+	} 
+
+
+#sembunyikan16 .flex-container { 
+display: -webkit-flex; 
+display: flex; 
+-webkit-flex-wrap: wrap; 
+flex-wrap: wrap; 
+width: 400px; 
+height: 250px; 
+background-color: lightgrey; 
+} 
+
+	#sembunyikan16 .flex-item { 
+	background-color: cornflowerblue; 
+	width: 100px; 
+	height: 100px; 
+	margin: 10px; 
+	} 
+
+
+#sembunyikan17 .flex-container { 
+display: -webkit-flex; 
+display: flex; 
+-webkit-flex-wrap: wrap-reverse; 
+flex-wrap: wrap-reverse; 
+width: 400px; 
+height: 250px; 
+background-color: lightgrey; 
+} 
+
+	#sembunyikan17 .flex-item { 
+	background-color: cornflowerblue; 
+	width: 100px; 
+	height: 100px; 
+	margin: 10px; 
+	} 
+
+
+#sembunyikan18 .flex-container { 
+display: -webkit-flex; 
+display: flex; 
+-webkit-flex-wrap: wrap; 
+flex-wrap: wrap; 
+-webkit-align-content: center; 
+align-content: center; 
+width: 300px; 
+height: 300px; 
+background-color: lightgrey; 
+} 
+
+	#sembunyikan18 .flex-item { 
+	background-color: cornflowerblue; 
+	width: 100px; 
+	height: 100px; 
+	margin: 10px; 
+	} 
+
+
+#sembunyikan19 .flex-container { 
+display: -webkit-flex; 
+display: flex; 
+width: 400px; 
+height: 250px; 
+background-color: lightgrey; 
+} 
+
+	#sembunyikan19 .flex-item { 
+	background-color: cornflowerblue; 
+	width: 100px; 
+	height: 100px; 
+	margin: 10px; 
+	} 
+	
+		#sembunyikan19 .first { 
+		-webkit-order: -1; 
+		order: -1; 
+		} 
+
+
+#sembunyikan20 .flex-container {
+display: -webkit-flex;
+display: flex;
+width: 400px;
+height: 250px;
+background-color: lightgrey;
+}
+
+	#sembunyikan20 .flex-item {
+	background-color: cornflowerblue;
+	width: 75px;
+	height: 75px;
+	margin: 10px;
+	}
+	
+		#sembunyikan20 .flex-item:first-child {
+		margin-right: auto;
+		}
+
+
+
+#sembunyikan21 .flex-container { 
+display: -webkit-flex; 
+display: flex; 
+width: 400px; 
+height: 250px; 
+background-color: lightgrey; 
+} 
+
+	#sembunyikan21 .flex-item { 
+	background-color: cornflowerblue; 
+	width: 75px; 
+	height: 75px; 
+	margin: auto; 
+	} 
+
+
+#sembunyikan22 .flex-container { 
+display: -webkit-flex; 
+display: flex; 
+width: 400px; 
+height: 250px; 
+background-color: lightgrey; 
+} 
+
+	#sembunyikan22 .flex-item { 
+	background-color: cornflowerblue; 
+	width: 60px; 
+	min-height: 100px; 
+	margin: 10px; 
+	} 
+	
+		#sembunyikan22 .flex-item .item1 { 
+		-webkit-align-self: flex-start; 
+		align-self: flex-start; 
+		} 
+		
+		#sembunyikan22 .flex-item .item2 { 
+		-webkit-align-self: flex-end; 
+		align-self: flex-end; 
+		} 
+		
+		#sembunyikan22 .flex-item .item3 { 
+		-webkit-align-self: center; 
+		align-self: center; 
+		} 
+		
+		#sembunyikan22 .flex-item .item4 { 
+		-webkit-align-self: baseline; 
+		align-self: baseline; 
+		} 
+		
+		#sembunyikan22 .flex-item .item5 { 
+		-webkit-align-self: stretch; 
+		align-self: stretch; 
+		} 
+
+
+#sembunyikan23 .flex-container { 
+display: -webkit-flex; 
+display: flex; 
+width: 400px; 
+height: 250px; 
+background-color: lightgrey; 
+} 
+
+	#sembunyikan23 .flex-item { 
+	background-color: cornflowerblue; 
+	margin: 10px; 
+	} 
+	
+		#sembunyikan23 .item1 { 
+		-webkit-flex: 2; 
+		flex: 2; 
+		} 
+		
+		#sembunyikan23 .item2 { 
+		-webkit-flex: 1; 
+		flex: 1; 
+		} 
+		
+		#sembunyikan23 .item3 { 
+		-webkit-flex: 1; 
+		flex: 1; 
+		} 
+
+
+#sembunyikan24 .flex-container { 
+display: -webkit-flex; 
+display: flex; 
+-webkit-flex-flow: row wrap; 
+flex-flow: row wrap; 
+font-weight: bold; 
+text-align: center; 
+} 
+
+	#sembunyikan24.flex-container > * { 
+	padding: 10px; 
+	flex: 1 100%; 
+	} 
+	
+		#sembunyikan24 .main { 
+		text-align: left; 
+		background: cornflowerblue; 
+		} 
+		
+			#sembunyikan24 .header {background: coral;} 
+			#sembunyikan24 .footer {background: lightgreen;} 
+			#sembunyikan24 .aside1 {background: moccasin;} 
+			#sembunyikan24 .aside2 {background: violet;} 
+
+@media all and (min-width: 600px) { 
+	#sembunyikan24 .aside { flex: 1 auto; } 
+} 
+
+@media all and (min-width: 800px) { 
+	#sembunyikan24 .main { flex: 3 0px; } 
+	#sembunyikan24 .aside1 { order: 1; } 
+	#sembunyikan24 .main { order: 2; } 
+	#sembunyikan24 .aside2 { order: 3; } 
+	#sembunyikan24 .footer { order: 4; } 
+} 
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS3 Flexible Box </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> CSS3 Flexbox </h2>
+				<p> Flexible box atau flexbox adalah sebuah mode tata ruang (layout) baru dalam CSS3.</p>
+				<p> Penggunaan dari flexbox memastikan bahwa element berjalan dengan dapat diperkirakan ketika page layout harus 
+				mengakomondasikan atau menyediakan perbedaan ukuran layar dan perbedaan tampilan perangkat.</p>
+				<p> Untuk aplikasi kebanyakan, flexible box model menyediakan sebuah kemajuan melebihi block model dalam hal itu, flexbox tidak menggunakan <mark>float</mark>, nor melakukan flex container's margin collapse dengan margin dari konten itu sendiri.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Browser Support for Flexbox</h2>
+				<p> Nomor pada tabel menentukan browser versi pertama yang mendukung secara penuh  properti ini.</p>
+				<p> Nomor yang diikut dengan <mark>-ms-</mark>, <mark>-webkit-</mark>, <mark>-moz-</mark> atau <mark>-o-</mark> menentukan versi pertama yang bekerja dengan awalan properti.</p>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> Properti </td>
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> Basic support (single-line flexbox) </td>
+							<td> 29.0 <br> 21.0 -webkit- </td>
+							<td> 12.0 dan 11.0 </td>
+							<td> 22.0 <br> 18.0 -moz- </td>
+							<td> 6.1 -webkit- </td>
+							<td> 12.1 -webkit- </td>
+						</tr>
+						<tr class="center">
+							<td> multi-line flexbox </td>
+							<td> 29.0 <br> 21.0 -webkit- </td>
+							<td> 12.0 dan 11.0 </td>
+							<td> 28.0 </td>
+							<td> 6.1 -webkit- </td>
+							<td> 17.0 <br> 15.0 -webkit- <br> 12.1 -webkit- </td>
+						</tbody>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 Flexbox Concepts</h2>
+				<p> Konsep Flexbox CSS3 </p>
+				
+				<p> Flexbox terdiri dari flex containers (flex penampung) dan flex item (flex pokok).</p>
+				<p> Sebuah flex container dideklarasikan dengan pengaturan properti <mark>display</mark> dari element ke salah satu flex (membuat seperti sebuah block) atau inline-flex (membuat seperti inline).</p>
+				<p> Difalam sebuah flex container ada satu atau lebih flex item.</p>
+				
+				<div class="nasehat">
+					<p><b>Catatan:</b> Segalanya diluar sebuah flex container dan didalam sebuah flex item dibuat seperti biasa. Flexbox mendefinisikan bagaimana flex item disusun didalam sebuah flex container.</p>
+				
+				</div>
+				<p> Flex item ditempatkan didalam sebuah flex container sepanjang flex line (baris flex). Dengan default hanya ada satu flex line per flex container.</p>
+				<p> Contoh berikut menampilkan tiga flex item. Mereka diposisikan dengan default: sepanjang horizontal flex line, dari kiri ke kanan:</p>
+				
+				
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						 <br>
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						margin: 10px; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						 <br>
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						margin: 10px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">class="flex-container"</span>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 1<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 2<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 3<<b>/div</b>>  <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<div class="flex-container">
+							<div class="flex-item">flex item 1</div>
+							<div class="flex-item">flex item 2</div>
+							<div class="flex-item">flex item 3</div> 
+						</div>
+					
+					</div>
+				</article>
+				
+				<p> Itu juga memungkinkan untuk mengubah direction (arah) dari flex line.</p>
+				<p> Jika kita mengatur properti <mark>direction</mark> menjadi <mark>rtl</mark> (right-to-left), 
+				teks ditulis dari kanan ke kiri, dan juga flex line berubah arah, yang mana akan mengubah page layout atau tata ruang halaman:</p>
+				
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						body { <br>
+						direction: rtl; <br>
+						} <br>
+						 <br>
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						 <br>
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						margin: 10px; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+					
+						body { <br>
+						direction: rtl; <br>
+						} <br>
+						 <br>
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						 <br>
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						margin: 10px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">class="flex-container"</span>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 1<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 2<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 3<<b>/div</b>>  <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<div class="flex-container"> 
+						<div class="flex-item">flex item 1</div> 
+						<div class="flex-item">flex item 2</div> 
+						<div class="flex-item">flex item 3</div> 
+						</div> 
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Flex Direction</h2>
+				<p> Properti <mark>flex-direction</mark> menentuksn arah dari flexible item didalam flex container. Nilai default dari <mark>flex-direction</mark> adalah <mark>row</mark> (left-to-right, top-to-bottom).</p>
+				
+				<p> Nilai lainnya sebagai berikut:</p>
+				<ul>
+					<li> <mark>row-reverse</mark> - Jika mode penulisan (arah) adalah kiri ke kanan, flex item akan disusun dari kanan ke kiri</li>
+					<li> <mark>column</mark> - Jika sisitem penulisan adalah horixontal, flex item akan disusun secara vertikal</li>
+					<li> <mark>column-reverse</mark> - Sama seperti <mark>column</mark>, tapi dibalik</li>
+				</ul>
+				
+				<p> Contoh berikut menampilkan hasil dari penggunaan nilai <mark>row-reverse</mark>:</p>
+				
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open03">
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-flex-direction: row-reverse; <br>
+						flex-direction: row-reverse; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+					
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-flex-direction: row-reverse; <br>
+						flex-direction: row-reverse; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						 <br>
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						margin: 10px; <br>
+						} <br>
+					
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">class="flex-container"</span>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 1<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 2<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 3<<b>/div</b>>  <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+						<div class="flex-container"> 
+						<div class="flex-item">flex item 1</div> 
+						<div class="flex-item">flex item 2</div> 
+						<div class="flex-item">flex item 3</div> 
+						</div> 
+					
+					</div>
+				</article>
+				
+				
+				<p> Contoh berikut menampilkan hasil dari penggunaan nilai <mark>column</mark>:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open04">
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-flex-direction: column; <br>
+						flex-direction: column; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close04">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+							.flex-container { <br>
+							display: -webkit-flex; <br>
+							display: flex; <br>
+							-webkit-flex-direction: column; <br>
+							flex-direction: column; <br>
+							width: 400px; <br>
+							height: 250px; <br>
+							background-color: lightgrey; <br>
+							} <br>
+							 <br>
+							.flex-item { <br>
+							background-color: cornflowerblue; <br>
+							width: 100px; <br>
+							height: 100px; <br>
+							margin: 10px; <br>
+							} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">class="flex-container"</span>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 1<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 2<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 3<<b>/div</b>>  <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<button onclick="buka04()" class="exbutton"> Open </button>
+					<button onclick="tutup04()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+						<div class="flex-container"> 
+						<div class="flex-item">flex item 1</div> 
+						<div class="flex-item">flex item 2</div> 
+						<div class="flex-item">flex item 3</div> 
+						</div> 
+					
+					</div>
+				</article>
+				
+				
+				<p> Contoh berikut menampilkan hasil dari penggunaan nilsi <mark>column-reverse</mark>:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open05">
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-flex-direction: column-reverse; <br>
+						flex-direction: column-reverse; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close05">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-flex-direction: column-reverse; <br>
+						flex-direction: column-reverse; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						 <br>
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						margin: 10px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">class="flex-container"</span>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 1<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 2<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 3<<b>/div</b>>  <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan05()" class="exbutton">Klik disini</button>
+					<button onclick="buka05()" class="exbutton"> Open </button>
+					<button onclick="tutup05()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+					
+						<div class="flex-container"> 
+						<div class="flex-item">flex item 1</div> 
+						<div class="flex-item">flex item 2</div> 
+						<div class="flex-item">flex item 3</div> 
+						</div> 
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>The justify-content Property</h2>
+				<p> Properti <mark>justify-content</mark> perataan secara horizontal item (dari) flexible container ketika tidak menggunakan semua ruang yang tersedia pada sumbu utama.</p>
+				<p> Memungkinkan nilai sebagai berikut:</p>
+				<ul>
+					<li> <mark>flex-start</mark> - Nilai default. Item-item ditempatkan di awal dari container</li>
+					<li> <mark>flex-end</mark> - Item-item ditempatkan di akhir dari container</li>
+					<li> <mark>center</mark> - Item-item ditempatkan di tengah dari container</li>
+					<li> <mark>space-between</mark> - Item-item ditempatkan dengan ruang diantara baris</li>
+					<li> <mark>space-around</mark> - Item-item ditempatkan dengan ruang sebelum, diantara dan setelah baris</li>
+				</ul>
+				
+				<p> Contoh berikut menampilkan hasil dari penggunaan nilai <mark>flex-end</mark>:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open06">
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-justify-content: flex-end; <br>
+						justify-content: flex-end; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close06">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-justify-content: flex-end; <br>
+						justify-content: flex-end; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						 <br>
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						margin: 10px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">class="flex-container"</span>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 1<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 2<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 3<<b>/div</b>>  <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan06()" class="exbutton">Klik disini</button>
+					<button onclick="buka06()" class="exbutton"> Open </button>
+					<button onclick="tutup06()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+					
+						<div class="flex-container"> 
+						<div class="flex-item">flex item 1</div> 
+						<div class="flex-item">flex item 2</div> 
+						<div class="flex-item">flex item 3</div> 
+						</div> 
+					
+					</div>
+				</article>
+				
+				
+				<p> Contoh berijut menampilkan hasil dari penggunaan nilai <mark>center</mark>:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open07">
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-justify-content: center; <br>
+						justify-content: center; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close07">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-justify-content: center; <br>
+						justify-content: center; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						 <br>
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						margin: 10px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">class="flex-container"</span>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 1<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 2<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 3<<b>/div</b>>  <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan07()" class="exbutton">Klik disini</button>
+					<button onclick="buka07()" class="exbutton"> Open </button>
+					<button onclick="tutup07()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan07">
+					
+						<div class="flex-container"> 
+						<div class="flex-item">flex item 1</div> 
+						<div class="flex-item">flex item 2</div> 
+						<div class="flex-item">flex item 3</div> 
+						</div> 
+					
+					</div>
+				</article>
+				
+				
+				<p> Contoh berijut menampilkan hasil dari penggunaan nilai <mark>space-between</mark>:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open08">
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-justify-content: space-between; <br>
+						justify-content: space-between; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close08">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-justify-content: space-between; <br>
+						justify-content: space-between; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						 <br>
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						margin: 10px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">class="flex-container"</span>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 1<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 2<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 3<<b>/div</b>>  <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan08()" class="exbutton">Klik disini</button>
+					<button onclick="buka08()" class="exbutton"> Open </button>
+					<button onclick="tutup08()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan08">
+					
+						<div class="flex-container"> 
+						<div class="flex-item">flex item 1</div> 
+						<div class="flex-item">flex item 2</div> 
+						<div class="flex-item">flex item 3</div> 
+						</div> 
+					
+					</div>
+				</article>
+				
+				
+				<p> Contoh berijut menampilkan hasil dari penggunaan nilai <mark>space-around</mark>:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open09">
+						
+							.flex-container { <br>
+							display: -webkit-flex; <br>
+							display: flex; <br>
+							-webkit-justify-content: space-around; <br>
+							justify-content: space-around; <br>
+							width: 400px; <br>
+							height: 250px; <br>
+							background-color: lightgrey; <br>
+							} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close09">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-justify-content: space-around; <br>
+						justify-content: space-around; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						 <br>
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						margin: 10px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">class="flex-container"</span>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 1<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 2<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 3<<b>/div</b>>  <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan09()" class="exbutton">Klik disini</button>
+					<button onclick="buka09()" class="exbutton"> Open </button>
+					<button onclick="tutup09()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan09">
+					
+						<div class="flex-container"> 
+						<div class="flex-item">flex item 1</div> 
+						<div class="flex-item">flex item 2</div> 
+						<div class="flex-item">flex item 3</div> 
+						</div> 
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>The align-items Property</h2>
+				<p> Properti <mark>align-items</mark> perataan secara vertikal item (dari) flexible container ketika item-item tidak mengguankan semua ruang yang tersedia pada sumbu silang (cross-axis).</p>
+				<p> Nilai yang memungkinkan adalah sebagai berikut:</p>
+				<ul>
+					<li> <mark>stretch</mark> - Nilai default. Item-item direnggangkan untuk memperbaiki (fit) container.</li>
+					<li> <mark>flex-start</mark> - Item-item diposisikan di atas dari container</li>
+					<li> <mark>flex-end</mark> - Item-item diposisikan di bawah dari container</li>
+					<li> <mark>center</mark> - Item-item diposisikan du tengah dari container (secara vertikal)</li>
+					<li> <mark>baseline</mark> - Item-item diposisikan di baseline (baris dasar) dari container</li>
+				</ul>
+				
+				<p> Contoh berikut menampilkan hasil dari penggunaan nilai <mark>stretch</mark> (ini adalah nilai default):</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open10">
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-align-items: stretch; <br>
+						align-items: stretch; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close10">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-align-items: stretch; <br>
+						align-items: stretch; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						 <br>
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						width: 100px; <br>
+						margin: 10px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">class="flex-container"</span>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 1<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 2<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 3<<b>/div</b>>  <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan10()" class="exbutton">Klik disini</button>
+					<button onclick="buka10()" class="exbutton"> Open </button>
+					<button onclick="tutup10()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan10">
+					
+						<div class="flex-container"> 
+						<div class="flex-item">flex item 1</div> 
+						<div class="flex-item">flex item 2</div> 
+						<div class="flex-item">flex item 3</div> 
+						</div> 
+					
+					</div>
+				</article>
+				
+				
+				<p> Contoh berikut menampilkan hasil dari penggunaan nilai <mark>flex-start</mark>:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open11">
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-align-items: flex-start; <br>
+						align-items: flex-start; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close11">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-align-items: flex-start; <br>
+						align-items: flex-start; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						 <br>
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						width: 100px; <br>
+						margin: 10px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">class="flex-container"</span>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 1<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 2<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 3<<b>/div</b>>  <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan11()" class="exbutton">Klik disini</button>
+					<button onclick="buka11()" class="exbutton"> Open </button>
+					<button onclick="tutup11()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan11">
+					
+						<div class="flex-container"> 
+						<div class="flex-item">flex item 1</div> 
+						<div class="flex-item">flex item 2</div> 
+						<div class="flex-item">flex item 3</div> 
+						</div> 
+					
+					</div>
+				</article>
+				
+				
+				<p> Contoh berikut menampilkan hasil dari penggunaan nilai <mark>flex-end</mark>:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open12">
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-align-items: flex-end; <br>
+						align-items: flex-end; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close12">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-align-items: flex-end; <br>
+						align-items: flex-end; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						 <br>
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						width: 100px; <br>
+						margin: 10px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">class="flex-container"</span>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 1<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 2<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 3<<b>/div</b>>  <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan12()" class="exbutton">Klik disini</button>
+					<button onclick="buka12()" class="exbutton"> Open </button>
+					<button onclick="tutup12()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan12">
+					
+						<div class="flex-container"> 
+						<div class="flex-item">flex item 1</div> 
+						<div class="flex-item">flex item 2</div> 
+						<div class="flex-item">flex item 3</div> 
+						</div> 
+					
+					</div>
+				</article>
+				
+				
+				<p> Contoh berikut menampilkan hasil dari penggunaan nilai <mark>center</mark>:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open13">
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-align-items: center; <br>
+						align-items: center; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close13">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-align-items: center; <br>
+						align-items: center; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						 <br>
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						width: 100px; <br>
+						margin: 10px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">class="flex-container"</span>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 1<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 2<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 3<<b>/div</b>>  <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan13()" class="exbutton">Klik disini</button>
+					<button onclick="buka13()" class="exbutton"> Open </button>
+					<button onclick="tutup13()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan13">
+					
+						<div class="flex-container"> 
+						<div class="flex-item">flex item 1</div> 
+						<div class="flex-item">flex item 2</div> 
+						<div class="flex-item">flex item 3</div> 
+						</div> 
+					
+					</div>
+				</article>
+				
+				
+				<p> Contoh berikut menampilkan hasil dari penggunaan nilai <mark>baseline</mark>:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open14">
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-align-items: baseline; <br>
+						align-items: baseline; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close14">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-align-items: baseline; <br>
+						align-items: baseline; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						 <br>
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						width: 100px; <br>
+						margin: 10px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">class="flex-container"</span>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 1<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 2<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 3<<b>/div</b>>  <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan14()" class="exbutton">Klik disini</button>
+					<button onclick="buka14()" class="exbutton"> Open </button>
+					<button onclick="tutup14()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan14">
+					
+						<div class="flex-container"> 
+						<div class="flex-item">flex item 1</div> 
+						<div class="flex-item">flex item 2</div> 
+						<div class="flex-item">flex item 3</div> 
+						</div> 
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>The flex-wrap Property</h2>
+				<p> Properti <mark>flex-wrap</mark> menentukan apakah flex items harus diselimuti atau tidak, jika ada yang tidak cukup ruangan untuk mereka (item) pada satu baris flex.</p>
+				
+				<p> Nilai yanh memungkinkan adalah sebagai berikut:</p>
+				<ul>
+					<li> <mark>nowrap</mark> - Nilai default. Flexible items tidak akan diselubungi (no wrap)</li>
+					<li> <mark>wrap</mark> - Flexible items akan diselubungi jika diperlukan</li>
+					<li> <mark>wrap-reverse</mark> - Flexible items akan diselubungi, jika diperlukan, dalam susunan terbalik</li>
+				</ul>
+				
+				<p> Contoh berikut menampilkan hasil dari penggunaan nilai <mark>nowrap</mark> (ini adalah nilai default):</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open15">
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-flex-wrap: nowrap; <br>
+						flex-wrap: nowrap; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close15">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-flex-wrap: nowrap; <br>
+						flex-wrap: nowrap; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						 <br>
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						margin: 10px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">class="flex-container"</span>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 1<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 2<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 3<<b>/div</b>>  <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan15()" class="exbutton">Klik disini</button>
+					<button onclick="buka15()" class="exbutton"> Open </button>
+					<button onclick="tutup15()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan15">
+					
+						<div class="flex-container"> 
+						<div class="flex-item">flex item 1</div> 
+						<div class="flex-item">flex item 2</div> 
+						<div class="flex-item">flex item 3</div> 
+						</div> 
+					
+					</div>
+				</article>
+				
+				
+				<p> Contoh berikut menampilkan hasil dari penggunaan nilai <mark>wrap</mark>:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open16">
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-flex-wrap: wrap; <br>
+						flex-wrap: wrap; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close16">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-flex-wrap: wrap; <br>
+						flex-wrap: wrap; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						 <br>
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						margin: 10px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">class="flex-container"</span>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 1<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 2<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 3<<b>/div</b>>  <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan16()" class="exbutton">Klik disini</button>
+					<button onclick="buka16()" class="exbutton"> Open </button>
+					<button onclick="tutup16()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan16">
+					
+						<div class="flex-container"> 
+						<div class="flex-item">flex item 1</div> 
+						<div class="flex-item">flex item 2</div> 
+						<div class="flex-item">flex item 3</div> 
+						</div> 
+					
+					</div>
+				</article>
+				
+				
+				<p> Contoh berikut menampilkan hasil dari penggunaan nilai <mark>wrap-reverse</mark>:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open17">
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-flex-wrap: wrap-reverse; <br>
+						flex-wrap: wrap-reverse; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close17">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-flex-wrap: wrap-reverse; <br>
+						flex-wrap: wrap-reverse; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						 <br>
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						margin: 10px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">class="flex-container"</span>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 1<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 2<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 3<<b>/div</b>>  <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan17()" class="exbutton">Klik disini</button>
+					<button onclick="buka17()" class="exbutton"> Open </button>
+					<button onclick="tutup17()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan17">
+					
+						<div class="flex-container"> 
+						<div class="flex-item">flex item 1</div> 
+						<div class="flex-item">flex item 2</div> 
+						<div class="flex-item">flex item 3</div> 
+						</div> 
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>The align-content Property</h2>
+				<p> Properti <mark>align-content</mark> memodifikasi tingkah laku dari properti <mark>flex-wrap</mark>. Properti ini mirip dengan <mark>align-items</mark>, tapi sebagai pengganti dari perataan flex items, properti ini meratakan flex lines.</p>
+				
+				<p> Nilai yang memungkinkan adalah sebagai berikut:</p>
+				<ul>
+					<li> <mark>stretch</mark> - Nilai default. Baris direnggangkan untuk mengambil ruang yang tersisa.</li>
+					<li> <mark>flex-start</mark> - Baris diangkut kearah awal dari flex container </li>
+					<li> <mark>flex-end</mark> - Baris diangkut kearah akhri dari flex container</li>
+					<li> <mark>center</mark> - Baris diangkut kearah tengah dari flex container</li>
+					<li> <mark>space-between</mark> - Baris dasar didistribusikan pada flex container, dengan ukuran setengah ruang di salah satu akhiran </li>
+				</ul>
+				
+				<p> Contoh berikut menampilkan hasil dari penggunaan dari nilai <mark>center</mark>:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open18">
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-flex-wrap: wrap; <br>
+						flex-wrap: wrap; <br>
+						-webkit-align-content: center; <br>
+						align-content: center; <br>
+						width: 300px; <br>
+						height: 300px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close18">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						-webkit-flex-wrap: wrap; <br>
+						flex-wrap: wrap; <br>
+						-webkit-align-content: center; <br>
+						align-content: center; <br>
+						width: 300px; <br>
+						height: 300px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						 <br>
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						margin: 10px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">class="flex-container"</span>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 1<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 2<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 3<<b>/div</b>>  <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan18()" class="exbutton">Klik disini</button>
+					<button onclick="buka18()" class="exbutton"> Open </button>
+					<button onclick="tutup18()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan18">
+					
+						<div class="flex-container"> 
+						<div class="flex-item">flex item 1</div> 
+						<div class="flex-item">flex item 2</div> 
+						<div class="flex-item">flex item 3</div> 
+						</div> 
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Flex Item Properties</h2>
+				
+				<h3>Ordering</h3>
+				<p> Properti <mark>order</mark> menentukan susunan dari sebuah flexible item relatif ke sisa lainnya dari flexible items didalam container ysng sama:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open19">
+						
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						margin: 10px; <br>
+						} <br>
+						 <br>
+						.first { <br>
+						-webkit-order: -1; <br>
+						order: -1; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close19">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						 <br>
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						margin: 10px; <br>
+						} <br>
+						 <br>
+						.first { <br>
+						-webkit-order: -1; <br>
+						order: -1; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">class="flex-container"</span>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 1<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item first"</span>>flex item 2<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 3<<b>/div</b>>  <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan19()" class="exbutton">Klik disini</button>
+					<button onclick="buka19()" class="exbutton"> Open </button>
+					<button onclick="tutup19()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan19">
+					
+						<div class="flex-container"> 
+						<div class="flex-item">flex item 1</div> 
+						<div class="flex-item first">flex item 2</div> 
+						<div class="flex-item">flex item 3</div> 
+						</div> 
+						
+					</div>
+				</article>
+				
+				
+				<h3>Margin</h3>
+				<p> Pengaturan <mark>margin: auto;</mark> akan menyerap ruang ekstra. <mark>margin: auto;</mark> akan digunakan untuk mendorong flex item kedalam posisi yang berbeda.</p>
+				<p> Pada contoh berikut kita mengatur <mark>margin-right: auto;</mark> pada flex item pertama. Ini akan mengakibatkan semua ruang ekstra untuk diserap ke kanan dari element itu:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open20">
+						
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						width: 75px; <br>
+						height: 75px; <br>
+						margin: 10px; <br>
+						} <br>
+						 <br>
+						.flex-item:first-child { <br>
+						margin-right: auto; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close20">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						 <br>
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						width: 75px; <br>
+						height: 75px; <br>
+						margin: 10px; <br>
+						} <br>
+						 <br>
+						.flex-item:first-child { <br>
+						margin-right: auto; <br>
+						} <br>
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">class="flex-container"</span>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 1<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 2<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>flex item 3<<b>/div</b>>  <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan20()" class="exbutton">Klik disini</button>
+					<button onclick="buka20()" class="exbutton"> Open </button>
+					<button onclick="tutup20()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan20">
+					
+						<div class="flex-container"> 
+						<div class="flex-item">flex item 1</div> 
+						<div class="flex-item">flex item 2</div> 
+						<div class="flex-item">flex item 3</div> 
+						</div> 
+						
+					</div>
+				</article>
+				
+				
+				<h3>Perfect Centering</h3>
+				<p> Pada contoh berikut kita akan mengatasi masalah yang hampir setiap waktu: perpect centering.</p>
+				<p> Perfect centering sangat mudah dengan flexbox. Pengaturan <mark>margin: auto;</mark> akan membuat item ditengahkan secara sempurna di kedua sumbunya:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open21">
+						
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						width: 75px; <br>
+						height: 75px; <br>
+						margin: auto; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close21">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						 <br>
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						width: 75px; <br>
+						height: 75px; <br>
+						margin: auto; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">class="flex-container"</span>> <br>
+							<<b>div</b> <span class="teal">class="flex-item"</span>>Perfect centering!<<b>/div</b>> <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan21()" class="exbutton">Klik disini</button>
+					<button onclick="buka21()" class="exbutton"> Open </button>
+					<button onclick="tutup21()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan21">
+					
+						<div class="flex-container">
+						<div class="flex-item">Perfect centering!</div>
+						</div>
+					
+					</div>
+				</article>
+				
+				
+				<h3>align-self</h3>
+				<p> Properti <mark>align-self</mark> dari flex items mengesampingkan properti <mark>align-items</mark> flex container untuk item itu. Properti ini memiliki nilai memungkinkan yanh sama seperti properti <mark>align-items</mark>.</p>
+				<p> Contoh berikut mengatur nilai <mark>align-self</mark> berbeda untuk setiap flex item:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open22">
+						
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						width: 60px; <br>
+						min-height: 100px; <br>
+						margin: 10px; <br>
+						} <br>
+						 <br>
+						.item1 { <br>
+						-webkit-align-self: flex-start; <br>
+						align-self: flex-start; <br>
+						} <br>
+						 <br>
+						.item2 { <br>
+						-webkit-align-self: flex-end; <br>
+						align-self: flex-end; <br>
+						} <br>
+						 <br>
+						.item3 { <br>
+						-webkit-align-self: center; <br>
+						align-self: center; <br>
+						} <br>
+						 <br>
+						.item4 { <br>
+						-webkit-align-self: baseline; <br>
+						align-self: baseline; <br>
+						} <br>
+						 <br>
+						.item5 { <br>
+						-webkit-align-self: stretch; <br>
+						align-self: stretch; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close22">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						 <br>
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						width: 60px; <br>
+						min-height: 100px; <br>
+						margin: 10px; <br>
+						} <br>
+						 <br>
+						.item1 { <br>
+						-webkit-align-self: flex-start; <br>
+						align-self: flex-start; <br>
+						} <br>
+						 <br>
+						.item2 { <br>
+						-webkit-align-self: flex-end; <br>
+						align-self: flex-end; <br>
+						} <br>
+						 <br>
+						.item3 { <br>
+						-webkit-align-self: center; <br>
+						align-self: center; <br>
+						} <br>
+						 <br>
+						.item4 { <br>
+						-webkit-align-self: baseline; <br>
+						align-self: baseline; <br>
+						} <br>
+						 <br>
+						.item5 { <br>
+						-webkit-align-self: stretch; <br>
+						align-self: stretch; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">class="flex-container"</span>> <br>
+							<<b>div</b> <span class="teal">class="flex-item item1"</span>>flex item 1<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item item2"</span>>flex item 2<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item item3"</span>>flex item 3<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item item4"</span>>flex item 4<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item item5"</span>>flex item 5<<b>/div</b>>  <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan22()" class="exbutton">Klik disini</button>
+					<button onclick="buka22()" class="exbutton"> Open </button>
+					<button onclick="tutup22()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan22">
+					
+						<div class="flex-container"> 
+						<div class="flex-item item1">flex item 1</div> 
+						<div class="flex-item item2">flex item 2</div> 
+						<div class="flex-item item3">flex item 3</div> 
+						<div class="flex-item item4">flex item 4</div> 
+						<div class="flex-item item5">flex item 5</div> 
+						</div> 
+						
+					</div>
+				</article>
+				
+				
+				<h3>flex</h3>
+				<p> Properti <mark>flex</mark> menentukan panjang dari flex item, relatif ke sisa lainnya dari flex item didalam container yang sama.</p>
+				<p> Pada contoh berikut, flex item pertama akan menghabiskan 2/4 dari ruang kosong, dan dua flex item lainnya akan menghabiskan 1/4 dari setiap ruang kosong:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open23">
+						
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						margin: 10px; <br>
+						} <br>
+						 <br>
+						.item1 { <br>
+						-webkit-flex: 2; <br>
+						flex: 2; <br>
+						} <br>
+						 <br>
+						.item2 { <br>
+						-webkit-flex: 1; <br>
+						flex: 1; <br>
+						} <br>
+						 <br>
+						.item3 { <br>
+						-webkit-flex: 1; <br>
+						flex: 1; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close23">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex; <br>
+						width: 400px; <br>
+						height: 250px; <br>
+						background-color: lightgrey; <br>
+						} <br>
+						 <br>
+						.flex-item { <br>
+						background-color: cornflowerblue; <br>
+						margin: 10px; <br>
+						} <br>
+						 <br>
+						.item1 { <br>
+						-webkit-flex: 2; <br>
+						flex: 2; <br>
+						} <br>
+						 <br>
+						.item2 { <br>
+						-webkit-flex: 1; <br>
+						flex: 1; <br>
+						} <br>
+						 <br>
+						.item3 { <br>
+						-webkit-flex: 1; <br>
+						flex: 1; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">class="flex-container"</span>> <br>
+							<<b>div</b> <span class="teal">class="flex-item item1"</span>>flex item 1<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item item2"</span>>flex item 2<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="flex-item item3"</span>>flex item 3<<b>/div</b>> <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan23()" class="exbutton">Klik disini</button>
+					<button onclick="buka23()" class="exbutton"> Open </button>
+					<button onclick="tutup23()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan23">
+					
+						<div class="flex-container">
+						<div class="flex-item item1">flex item 1</div>
+						<div class="flex-item item2">flex item 2</div>
+						<div class="flex-item item3">flex item 3</div>  
+						</div>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>More Examples</h2>
+				<p> Contoh lainnya</p>
+				<p onclick="tampilkan25()" class="redZone"> Buatlah sebuah responsive website dengan flexbox</p>
+				<p> Contoh ini mempertontonkan bagaiaman untuk membuat sebuah responsive website layout dengan flex box</p>
+				
+				<article class="example-box sembunyikan" id="sembunyikan25">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open24">
+					
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex;   <br>
+						-webkit-flex-flow: row wrap; <br>
+						flex-flow: row wrap; <br>
+						font-weight: bold; <br>
+						text-align: center; <br>
+						} <br>
+						 <br>
+						.flex-container > * { <br>
+						padding: 10px; <br>
+						flex: 1 100%; <br>
+						} <br>
+						 <br>
+						.main { <br>
+						text-align: left; <br>
+						background: cornflowerblue; <br>
+						} <br>
+						 <br>
+						.header {background: coral;} <br>
+						.footer {background: lightgreen;} <br>
+						.aside1 {background: moccasin;} <br>
+						.aside2 {background: violet;} <br>
+						 <br>
+						@media all and (min-width: 600px) { <br>
+						.aside { flex: 1 auto; } <br>
+						} <br>
+						 <br>
+						@media all and (min-width: 800px) { <br>
+						.main    { flex: 3 0px; } <br>
+						.aside1 { order: 1; }  <br>
+						.main    { order: 2; } <br>
+						.aside2 { order: 3; } <br>
+						.footer  { order: 4; } <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close24">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.flex-container { <br>
+						display: -webkit-flex; <br>
+						display: flex;   <br>
+						-webkit-flex-flow: row wrap; <br>
+						flex-flow: row wrap; <br>
+						font-weight: bold; <br>
+						text-align: center; <br>
+						} <br>
+						 <br>
+						.flex-container > * { <br>
+						padding: 10px; <br>
+						flex: 1 100%; <br>
+						} <br>
+						 <br>
+						.main { <br>
+						text-align: left; <br>
+						background: cornflowerblue; <br>
+						} <br>
+						 <br>
+						.header {background: coral;} <br>
+						.footer {background: lightgreen;} <br>
+						.aside1 {background: moccasin;} <br>
+						.aside2 {background: violet;} <br>
+						 <br>
+						@media all and (min-width: 600px) { <br>
+						.aside { flex: 1 auto; } <br>
+						} <br>
+						 <br>
+						@media all and (min-width: 800px) { <br>
+						.main    { flex: 3 0px; } <br>
+						.aside1 { order: 1; }  <br>
+						.main    { order: 2; } <br>
+						.aside2 { order: 3; } <br>
+						.footer  { order: 4; } <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">class="flex-container"</span>> <br>
+							<<b>header</b> <span class="teal">class="header"</span>>Header<<b>/header</b>> <br>
+							<<b>article</b> <span class="teal">class="main"</span>> <br>
+								<<b>p</b>>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ex turpis. Cras luctus nibh lectus, 
+								in ullamcorper ex tempor eleifend. Nulla bibendum, eros a consequat vestibulum, 
+								orci massa fermentum quam, sed commodo nunc ex vitae nisl. Aliquam ullamcorper interdum est nec tincidunt.<<b>/p</b>> <br>
+							<<b>/article</b>> <br>
+							<<b>aside</b> <span class="teal">class="aside aside1"</span>>Aside 1<<b>/aside</b>> <br>
+							<<b>aside</b> <span class="teal">class="aside aside2"</span>>Aside 2<<b>/aside</b>> <br>
+							<<b>footer</b> <span class="teal">class="footer"</span>>Footer<<b>/footer</b>> <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan24()" class="exbutton">Klik disini</button>
+					<button onclick="buka24()" class="exbutton"> Open </button>
+					<button onclick="tutup24()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan24">
+					
+						<div class="flex-container">
+						<header class="header">Header</header>
+						<article class="main">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ex turpis. Cras luctus nibh lectus, in ullamcorper ex tempor eleifend. Nulla bibendum, eros a consequat vestibulum, orci massa fermentum quam, sed commodo nunc ex vitae nisl. Aliquam ullamcorper interdum est nec tincidunt.</p>
+						</article>
+						<aside class="aside aside1">Aside 1</aside>
+						<aside class="aside aside2">Aside 2</aside>
+						<footer class="footer">Footer</footer>
+						</div>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 Flexbox Properties</h2>
+				<p> Daftar tabel berikut adalah properti CSS yang digunakan dengan flexbox:</p>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Properti</th>
+							<th>Deskripsi</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> display </td>
+							<td> Menentukan tipe dari box yanh digunakan untuk sebuah HTML element </td>
+						</tr>
+						<tr>
+							<td> flex-direction </td>
+							<td> Menentukan arah dari flexible item didalam sebuah flex container </td>
+						</tr>
+						<tr>
+							<td> justify-content </td>
+							<td> Perataan secara horizontal flex items ketika item tidak menggunakan semua ruang yang tersedia pada sumbu utama (main-axis) </td>
+						</tr>
+						<tr>
+							<td> align-items </td>
+							<td> Perataan secara vertikal flex items ketika item tidak menggunakan semua ruang yang tersedia pada sumbu silang (cross-axis) </td>
+						</tr>
+						<tr>
+							<td> flex-wrap </td>
+							<td> Menentukan apakah flex items harus diselubungi atau diselimuti atau tidak, jika tidak ada cukup ruangan untuk mereka (item) di satu flex line </td>
+						</tr>
+						<tr>
+							<td> align-content </td>
+							<td> Memodifikasi tingkah laku dari properti <mark>flex-wrap</mark>. Properti ini mirip dengan <mark>align-items</mark>, tapi sebagai pengganti dari perataan flex items, properti ini meratakan flex lines </td>
+						</tr>
+						<tr>
+							<td> flex-flow </td>
+							<td> Sebuah shorthand property untuk <mark>flex-direction</mark> dan <mark>flex-wrap</mark> </td>
+						</tr>
+						<tr>
+							<td> order </td>
+							<td> Menentukan susunan dari sebuah flexible item relatif ke sisa lainnya dari flex items didalam container yang sama </td>
+						</tr>
+						<tr>
+							<td> align-self </td>
+							<td> Digunakan pada flex items. Mengesampingkan properti <mark>align-items</mark> container </td>
+						</tr>
+						<tr>
+							<td> flex </td>
+							<td> Menentukan panjang daru sebuah flex item, relatif ke sisa lainnya dari flex items didalam container yanh sama </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS3 box sizing.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS3 media queries.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

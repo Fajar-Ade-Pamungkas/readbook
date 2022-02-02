@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS3  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+article > h4 {
+	color:white;
+}
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS3 Web Fonts </h1>
+				<p> </p>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2>CSS3 Web Fonts - The @font-face Rule</h2>
+				<p> Web font mengizinkan para pendisain web utuk menggunakan font yang tidak diistall pada komputer pengguna.</p>
+				<p> Ketika kamu telah menemukan/membeli font yang kamu inginkan untuk digunakan, hanya masukan font file pada web server kalian, dan 
+				font tersebut akan secara otomatis didownload untuk pengguna ketika dibutuhkan:</p>
+				<p> Font "milik" kamu didefinisikan dengan aturan <mark>@font-face</mark> CSS3.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Browser Support</h2>
+				<p> Nomor pada tabel menentukan browser versi pertama yang mendukung secara penuh  properti ini.</p>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> Properti </td>
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td>@font-face</td>
+							<td> 4.0 </td>
+							<td> 12.0 dan 9.0</td>
+							<td> 3.5 </td>
+							<td> 3.2 </td>
+							<td> 10.0 </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Different Font Formats</h2>
+				<p>Perbedaan format font</p>
+				<h4>TrueType Fonts (TTF)</h4>
+				<p> TrueType merupakan standar font yang dikembangkan pada akhir 1980-an, oleh Apple dan Miscrosoft. TrueType merupakan format font paling umum untuk Mac OS dan Microsoft Windows operating systems.</p>
+				
+				<h4>OpenType Fonts (OTF)</h4>
+				<p>OpenType adalah sebuah format untuk scalable comouter fonts. OpenType dibangun pada TruType, dan merupakan registered trademark of Microsoft (merk yang terdaftar milik microsoft). OpenType font biasanya 
+				digunakan saat ini pada major computer platforms. </p>
+				
+				<h4>Web Open Font Format (WOFF)</h4>
+				<p> WOFF adalah sebuah format font untuk digunakan dalam web page, WOFF dikembangkan pada tahun 2009, dan sekarang merupakan rekomendasi W3C. WOFF merupakan hal pokok OpenType dan TruType dengan peringkasan dan penambahan metadata. 
+				Tujuannya adalah untuk mendukung pendistribusian font dari server kepada client lewat network dengan bandwidth constraints (batasan bandwidth).</p>
+				
+				<h4>Web Open Font Format (WOFF 2.0)</h4>
+				<p> TrueType/OpenType font yang menyediakan peringkasan (compression) lebih baik daripada WOFF 1.0.</p>
+				
+				<h4>SVG Fonts/Shapes </h4>
+				<p> SVG font mengizinkan SVG untuk digunakan sebagai glyphs (figur simbolis) ketika menampilksn teks. Spesifikasi SVG 1.1 mendefinisikan sebuah modul font yang mengizinkan penciptaan font dengan sebuah dokumen SVG. 
+				Kamu juga bisa menerapkan CSS untuk dokumen SVG, dengan aturan <mark>@font-face</mark> bisa diterapkan untuk teks dalam dokumen SVG.</p>
+				
+				<h4>Embedded OpenType Fonts (EOT)</h4>
+				<p> EOT font merupakan sebuah compact form dari OpenType font yang didesign oleh Microsoft untuk menggunakan font yang ditanam pada web pages.</p>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Browser Support for Font Formats</h2>
+				<p> Nomor dalam tabel menentukan browser versi pertama yang mendukung secara penuh format font.</p>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> Font format </td>
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td>TTF/OTF</td>
+							<td> 4.0 </td>
+							<td> 9.0* </td>
+							<td> 3.5 </td>
+							<td> 3.1 </td>
+							<td> 10.0 </td>
+						</tr>
+						<tr class="center">
+							<td>WOFF</td>
+							<td> 5.0 </td>
+							<td> 9.0 </td>
+							<td> 3.6 </td>
+							<td> 5.0 </td>
+							<td> 11.1 </td>
+						</tr>
+						<tr class="center">
+							<td>WOFF2</td>
+							<td> 36.0 </td>
+							<td> <span class="justRed"> Not supported </span> </td>
+							<td> 35.0* </td>
+							<td> <span class="justRed"> Not supported </span></td>
+							<td> 26.0 </td>
+						</tr>
+						<tr class="center">
+							<td>SVG</td>
+							<td> <span class="justRed"> Not supported </span> </td>
+							<td> 4.0 </td>
+							<td> <span class="justRed"> Not supported </span> </td>
+							<td> 3.2 </td>
+							<td> 9.0 </td>
+						</tr>
+						<tr class="center">
+							<td> EOT </td>
+							<td> <span class="justRed"> Not supported </span></td>
+							<td> 6.0 </td>
+							<td> <span class="justRed"> Not supported </span></td>
+							<td> 3.2 </td>
+							<td> 9.0 </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<p> <b>*IE:</b> Font format hanya bekerja ketika mengatur menjadi "installable".
+				<p> <b>*Firefox:</b> Tidak didukung oleh default (setelan pabrik), tapi bisa dimungkinkan (perlu mengatur sebuah flag menjadi "true" untuk emnggunakan WOFF2).</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Using The Font You Want</h2>
+				<p> Penggunan Font yang Kamu Mau</p>
+				<p> Pada aturan <mark>@font-face</mark> CSS3 kamu pertama kali harus mendefinisikan sebuah nama kepada font (sebagai contoh: <b>myFirstFont</b>), dan kemudian point untuk font file.</p>
+				<div class="nasehat">
+					<p><b>Tip:</b> Selalu gunakan huruf kecil untuk font URL. hpHuruf besar bisa memberikan hasil ekspektasi yang keliru dalam IE.</p>
+				</div>
+				
+				<p> Untuk emnggunakan font kepada sebuah element HTML, arahkanlah pada nama dari font (myFirstFont) sepanjang properti <mark>font-family</mark>:</p>
+				
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						@font-face { <br>
+						font-family: myFirstFont; <br>
+						src: url(sansation_light.woff); <br>
+						} <br>
+						 <br>
+						div { <br>
+						font-family: myFirstFont; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						@font-face { <br>
+						font-family: myFirstFont; <br>
+						src: url(sansation_light.woff); <br>
+						} <br>
+						 <br>
+						div { <br>
+						font-family: myFirstFont; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b>> <br>
+						With CSS3, websites can finally use fonts other than the pre-selected "web-safe" fonts. <br>
+						<<b>/div</b>> <br>
+						<br>
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> Internet Explorer 8 and earlier, do not support the @font-face rule.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<div>
+						With CSS3, websites can finally use fonts other than the pre-selected "web-safe" fonts.
+						</div>
+						
+						<p><b>Note:</b> Internet Explorer 8 and earlier, do not support the @font-face rule.</p>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Using Bold Text</h2>
+				<p> Penggunaan Teks Tebal </p>
+				<p> Kamu harus menambahkan aturan <mark>@font-face</mark> lainnya termasuk descriptor untuk bold text:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						@font-face { <br>
+						font-family: myFirstFont; <br>
+						src: url(sansation_bold.woff); <br>
+						font-weight: bold; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						@font-face { <br>
+						font-family: myFirstFont; <br>
+						src: url(sansation_light.woff); <br>
+						} <br>
+						 <br>
+						@font-face { <br>
+						font-family: myFirstFont; <br>
+						src: url(sansation_bold.woff); <br>
+						font-weight: bold; <br>
+						} <br>
+						 <br>
+						div { <br>
+						font-family: myFirstFont; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b>> <br>
+						With CSS3, websites can <<b>b</b>>finally<<b>/b</b>> use fonts other than the pre-selected "web-safe" fonts. <br>
+						<<b>/div</b>> <br>
+						 <br>
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> Internet Explorer 8 and earlier, do not support the @font-face rule.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<div>
+						With CSS3, websites can <b>finally</b> use fonts other than the pre-selected "web-safe" fonts.
+						</div>
+						
+						<p><b>Note:</b> Internet Explorer 8 and earlier, do not support the @font-face rule.</p>
+					
+					</div>
+				</article>
+				
+				
+				<p> File "sansation_bold.woff" adalah font file lainnya, yang berisikan karakter tebal untuk Sansation font.</p>
+				<p> Browser akan menggunakan ini kapanpun sebuah bagian dari teks dengan <mark>font-family</mark> "myFirstFont" harus lebih memberi seperti bold.</p>
+				<p> Cara ini ksmu bisa memiliki banyakn <mark>@font-face</mark> rule untuk font yang sama.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 Font Descriptors</h2>
+				<p> Daftar tabel berikut adalah semua font descriptor yang bisa didefinisikan didalam <mark>@font-face</mark> rule:</p>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Descriptor</th>
+							<th> Nilai </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>font-family</td>
+							<td> Nama (font)</td>
+							<td> Required. Mendefinisikan nama untuk font</td>
+						</tr>
+						<tr>
+							<td>src</td>
+							<td> <i>URL</i> </td>
+							<td> Required. Mendefinisikan URL dari font file</td>
+						</tr>
+						<tr>
+							<td> font-stretch </td>
+							<td>
+								normal <br>
+								condensed <br>
+								ultra-condensed <br>
+								extra-condensed <br>
+								semi-condensed <br>
+								expanded <br>
+								semi-expanded <br>
+								extra-expanded <br>
+								ultra-expanded
+							</td>
+							<td> Optional. Mendefinisikan bagaimana font haeus direnggangkan. Default (dari ini) adalah "normal" </td>
+						</tr>
+						<tr>
+							<td> font-style </td>
+							<td>
+								normal <br>
+								italic <br>
+								oblique
+							</td>
+							<td> Optional. Mendefinisikan bagaimana font harus di-styled. Default (dari ini) adalah "normal" </td>
+						</tr>
+						<tr>
+							<td> font-weight </td>
+							<td>
+								normal <br>
+								bold <br>
+								100 <br>
+								200 <br>
+								300 <br>
+								400 <br>
+								500 <br>
+								600 <br>
+								700 <br>
+								800 <br>
+								900	
+							</td>
+							<td> Optional. Mendefinisikan ketebalan dari font. Default (dari ini) adalah "normal" </td>
+						</tr>
+						<tr>
+							<td> unicode-range </td>
+							<td> <i>unicode-range</i> </td>
+							<td> Optional. Mendefinisikan  the range of UNICODE characters the font supports. Default (dari ini) adalah "U+0-10FFFF" </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS3 text.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS3 2D transforms.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | JavaScript | js date methods</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="javaScript.js"></script>
+<script type="text/javascript" src="javaScript2.js"></script>
+<script type="text/javascript" src="javaScript3.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<script type="text/javascript" src="javaScript3.js"></script>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> Metode Date JavaScript </h1>
+				<p>
+				Metode Date mengizinkan kamu mendapatkan dan menyeting nilai tanggal (Tahun, Bulan, Hari, Jam, Menit, Detik, dan Milidetik)
+				</p>
+			</div>
+			
+			
+<section>
+			<article>
+				<h1> Metode Get Date  </h1>
+				<p>
+				Metode <b>Get</b> digunakan untuk mendapatkan bagian dari sebuah Date (tanggal). Disini adalah
+				metode get yang paling umum (secara alpabet):
+				</p>
+			</article>
+			<article>
+			<table class="attention explanation">
+						<caption> Tabel Metode Get Date </caption>
+				<thead>
+					<tr>
+						<th> Metode </th>
+						<th> Deskripsi </th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><b> getDate() </b></td>
+						<td>
+						Mendapatkan tanggal sebagai number (1-30)
+						</td>
+					</tr>
+					<tr>
+						<td><b> getDay() </b></td>
+						<td>
+						Mendapatkan hari sebagai number (0-6)
+						</td>
+					</tr>
+					<tr>
+						<td><b> getFullYear() </b></td>
+						<td>
+						Mendapatkan tahun dengan 4 digit number (YYYY)
+						</td>
+					</tr>
+					<tr>
+						<td><b> getHours() </b></td>
+						<td>
+						mendapatkan jam (0-23)
+						</td>
+					</tr>
+					<tr>
+						<td><b> getMilliSeconds() </b></td>
+						<td>
+						Mendapatkan milidetik (0-999)
+						</td>
+					</tr>
+					<tr>
+						<td><b> getMinutes() </b></td>
+						<td>
+						Mendapatkan menit (0-59)
+						</td>
+					</tr>
+					<tr>
+						<td><b> getMonth() </b></td>
+						<td>
+						Mendapatkan bulan (0-11)
+						</td>
+					</tr>
+					<tr>
+						<td><b> getSeconds() </b></td>
+						<td>
+						Mendapatkan detik (0-59)
+						</td>
+					</tr>
+					<tr>
+						<td><b> getTime() </b></td>
+						<td>
+						Mendapatkan waktu (milidetik sejak Januari 1, 1970)
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</article>
+			
+</section>
+<section>						
+			<article>
+				<h1> Metode getTime() </h1>
+				<p>
+				metode <b>getTime()</b> mengembalikan number milidetik sejak 1 Januari 1970:
+				</p>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">						
+			<q lang="code">p id="demo"</q><q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">var</span> x = new Date();<br>
+			document.getElementById(<span class="purple">"demo"</span>).innerHTML=x.getTime();<br><br>
+			<q lang="code">/script</q>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="$datemethods1()">Klik disini</button>
+			<p id="$datemethods01"></p>
+			</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Metode getFullYear() </h1>
+				<p>
+				metode <b>getFullYear()</b> mengembalikan Tahun dari tanggal saat ini seperti 4 digit number:
+				</p>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">						
+			<q lang="code">p id="demo"</q><q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">var</span> x = new Date();<br>
+			document.getElementById(<span class="purple">"demo"</span>).innerHTML=x.getFullYear();<br><br>
+			<q lang="code">/script</q>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="$datemethods2()">Klik disini</button>
+			<p id="$datemethods02"></p>
+			</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Metode getDay() </h1>
+				<p>
+				metode <b>getDay()</b> mengembalikan hari dalam seminggu sebagai number (0-6)
+				</p>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">						
+			<q lang="code">p id="demo"</q><q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">var</span> x = new Date();<br>
+			document.getElementById(<span class="purple">"demo"</span>).innerHTML=x.getDay();<br><br>
+			<q lang="code">/script</q>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="$datemethods3()">Klik disini</button>
+			<p id="$datemethods03"></p>
+			</div>
+			</article>
+			
+			<!--ATTENTION-->
+			<article>
+			<table class="attention">
+			<tr>
+			<td class="td-left">
+			<h1>!</h1>
+			</td>
+			<td class="td-right">
+			Di JavaScript Hari pertama (0) dalam satu pekan adalah <q>hari minggu</q>, 
+			Bahkan jika dibeberapa negara didunia menghitung hari dalam sepekan menjadi <q> hari Senin</q>
+			</td>
+			</tr>
+			</table>
+			</article>
+			
+			<article>
+				<p>
+				Kamu juga bisa menggunakan array dengan nama hari dan getDay() untuk mengembalikan 
+				hari menjadi sebuah nama hari.
+				</p>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">						
+			<q lang="code">p id="demo"</q><q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">var</span> x = new Date();<br>
+			<span class="purple">var</span> hari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu"];<br>
+			document.getElementById(<span class="purple">"demo"</span>).innerHTML=hari[x.getDay()];<br><br>
+			<q lang="code">/script</q>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="$datemethods4()">Klik disini</button>
+			<p id="$datemethods04"></p>
+			</div>
+			</article>
+			
+</section>
+<section>			
+			<article>
+				<h1> Metode Set Date  </h1>
+				<p>
+				Metode <b>Get</b> digunakan untuk menyeting (mengatur) bagian dari sebuah Date (tanggal). Disini adalah
+				metode get yang paling umum (secara alpabet):
+				</p>
+			</article>
+			<article>
+			<table class="attention explanation">
+						<caption> Tabel Metode Set Date </caption>
+				<thead>
+					<tr>
+						<th> Metode </th>
+						<th> Deskripsi </th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><b> setDate() </b></td>
+						<td>
+						Menyeting tanggal sebagai number (1-30)
+						</td>
+					</tr>
+					<tr>
+						<td><b> setDay() </b></td>
+						<td>
+						Menyeting hari sebagai number (0-6)
+						</td>
+					</tr>
+					<tr>
+						<td><b> setFullYear() </b></td>
+						<td>
+						Menyeting tahun dengan 4 digit number (YYYY)
+						</td>
+					</tr>
+					<tr>
+						<td><b> setHours() </b></td>
+						<td>
+						Menyeting jam (0-23)
+						</td>
+					</tr>
+					<tr>
+						<td><b> setMilliSeconds() </b></td>
+						<td>
+						Menyeting milidetik (0-999)
+						</td>
+					</tr>
+					<tr>
+						<td><b> setMinutes() </b></td>
+						<td>
+						Menyeting menit (0-59)
+						</td>
+					</tr>
+					<tr>
+						<td><b> setMonth() </b></td>
+						<td>
+						Menyeting bulan (0-11)
+						</td>
+					</tr>
+					<tr>
+						<td><b> setSeconds() </b></td>
+						<td>
+						Menyeting detik (0-59)
+						</td>
+					</tr>
+					<tr>
+						<td><b> setTime() </b></td>
+						<td>
+						Menyeting waktu (milidetik sejak Januari 1, 1970)
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</article>
+</section>
+<section>						
+			<article>
+			<h1> Metode setFullYear() </h1>
+			<p>
+			metode <b>setFullYear()</b> Menyeting sebuah object date menjadi tanggal tertentu, contoh dibawah mengubah tanggal menjadi
+			14 januari 2020
+			</p>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">						
+			<q lang="code">p id="demo"</q><q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">var</span> x = new Date();<br>
+			x.setFullYear(2020, 0, 14);<br>
+			document.getElementById(<span class="purple">"demo"</span>).innerHTML=x;<br><br>
+			<q lang="code">/script</q>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="$datemethods5()">Klik disini</button>
+			<p id="$datemethods05"></p>
+			</div>
+			</article>
+</section>
+<section>			
+			<article>
+			<h1> Metode setDate() </h1>
+			<p>
+			metode <b>setDate()</b> Menyeting suatu tanggal dalam satu bulan (1-31)
+			</p>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">						
+			<q lang="code">p id="demo"</q><q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">var</span> x = new Date();<br>
+			x.setDate(27);<br>
+			document.getElementById(<span class="purple">"demo"</span>).innerHTML=x;<br><br>
+			<q lang="code">/script</q>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="$datemethods6()">Klik disini</button>
+			<p id="$datemethods06"></p>
+			</div>
+			</article>
+			
+			<article>
+				<p>
+				metode <b>setDate()</b> bisa digunakan untuk <b>menambahkan hari</b> atau <b>memajukan dan memundurkan tanggal</b> untuk sebuah tanggal.
+				</p>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">						
+			<q lang="code">p id="demo"</q><q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">var</span> x = new Date();<br>
+			x.setDate(x.getDate()+50);<br>
+			document.getElementById(<span class="purple">"demo"</span>).innerHTML=x;<br><br>
+			<q lang="code">/script</q>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="$datemethods7()">Klik disini</button>
+			<p id="$datemethods07"></p>
+			</div>
+			</article>
+			
+			<!--ATTENTION-->
+			<article>
+			<table class="attention">
+			<tr>
+			<td class="td-left">
+			<h1>!</h1>
+			</td>
+			<td class="td-right">
+			Jika penambahan hari, maka terjadi pergeseran bulan atau tahun, mengubahnya secara
+			otomatis oleh object Date. 
+			</td>
+			</tr>
+			</table>
+			</article>
+			
+</section>
+<section>			
+			<article>
+				<h1> Input Dates dan Parsing Date </h1>
+				<p>
+				Jika kamu memiliki String date valid, kamu bisa menggunakan metode <b>Date.parse()</b> untuk mengubah tanggal menjadi milidetik:<br><br>
+				Metode <b>Date.parse()</b> mengembalikan number milidetik antara tanggal saat ini dan 1 januari 1970:
+				</p>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">						
+			<q lang="code">p id="demo"</q><q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">var</span> msec = new Date.parse("29 Feb, 2010");<br>
+			document.getElementById(<span class="purple">"demo"</span>).innerHTML=msec;<br><br>
+			<q lang="code">/script</q>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="$datemethods8()">Klik disini</button>
+			<p id="$datemethods08"></p>
+			</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<p>
+				Lalu kamu bisa menggunakan number milidetik untuk <b>mengkonversikanya menjadi Object Date</b>.
+				</p>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">						
+			<q lang="code">p id="demo"</q><q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">var</span> msec = Date.parse("29 Feb, 2010");<br>
+			<span class="purple">var</span> d = new Date(msec);<br>
+			document.getElementById(<span class="purple">"demo"</span>).innerHTML=d;<br><br>
+			<q lang="code">/script</q>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="$datemethods9()">Klik disini</button>
+			<p id="$datemethods09"></p>
+			</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Compare Dates (Tanggal Banding)</h1>
+				<p>
+				Date bisa dengan mudah dibandingkan. <br><br>
+				Contoh berikut membandingkan tanggal sekarang dengan 14 Januari 2100:
+				</p>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">						
+			<q lang="code">p id="demo"</q><q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">var</span> today, someday, text;	<br>		
+			today = new Date();<br>
+			someday = new Date();<br>
+			someday.setFullYear(2100, 0, 14);<br>
+			<span class="purple">if</span>(someday > today){<br>
+				<blockquote>
+				text="Hari ini belum 14 Januari 2100";
+				</blockquote>
+			} else {<br>
+				<blockquote>
+					text="Hari ini sudah 14 Januari 2100";
+				</blockquote>
+			}<br>
+			document.getElementById(<span class="purple">"demo"</span>).innerHTML=d;<br><br>
+			<q lang="code">/script</q>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="$datemethods10()">Klik disini</button>
+			<p id="$datemethods10"></p>
+			</div>
+			</article>
+			
+			<!--ATTENTION-->
+			<article>
+			<table class="attention">
+			<tr>
+			<td class="td-left">
+			<h1>!</h1>
+			</td>
+			<td class="td-right">
+			JavaScript mengihitung bulan dari 0 s/d 11. Januari adalah 0 dan Desember adalah 11.
+			</td>
+			</tr>
+			</table>
+			</article>
+			
+</section>
+<section>			
+			<article>
+				<h1> Metode Date UTC </h1>
+				<p>
+				Metode Date UTC digunakan untuk pengerjaan dengan Date UTC (Universal Time Zone dates):
+				</p>
+			</article>
+			
+			<article>
+				<h1> Metode Set Date  </h1>
+				<p>
+				Metode <b>Get</b> digunakan untuk menyeting (mengatur) bagian dari sebuah Date (tanggal). Disini adalah
+				metode get yang paling umum (secara alpabet):
+				</p>
+			</article>
+			<article>
+			<table class="attention explanation">
+						<caption> Tabel Metode UTC </caption>
+				<thead>
+					<tr>
+						<th> Metode </th>
+						<th> Deskripsi </th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><b> getUTCDate() </b></td>
+						<td>
+						Sama seperti getDate(), tapi dalam zona waktu UTC
+						</td>
+					</tr>
+					<tr>
+						<td><b> getUTCDay() </b></td>
+						<td>
+						Sama seperti getDay(), tapi dalam zona waktu UTC
+						</td>
+					</tr>
+					<tr>
+						<td><b> getUTCFullYear() </b></td>
+						<td>
+						Sama seperti getFullYear(), tapi dalam zona waktu UTC
+						</td>
+					</tr>
+					<tr>
+						<td><b> getUTCHours() </b></td>
+						<td>
+						Sama seperti getHours(), tapi dalam zona waktu UTC
+						</td>
+					</tr>
+					<tr>
+						<td><b> getUTCMilliSeconds() </b></td>
+						<td>
+						Sama seperti getMilliSeconds(), tapi dalam zona waktu UTC
+						</td>
+					</tr>
+					<tr>
+						<td><b> getUTCMinutes() </b></td>
+						<td>
+						Sama seperti getMinutes(), tapi dalam zona waktu UTC
+						</td>
+					</tr>
+					<tr>
+						<td><b> getUTCMonth() </b></td>
+						<td>
+						Sama seperti getMonth(), tapi dalam zona waktu UTC
+						</td>
+					</tr>
+					<tr>
+						<td><b> getUTCSeconds() </b></td>
+						<td>
+						Sama seperti getSeconds(), tapi dalam zona waktu UTC
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1>Referensi Date JavaScript Lengkap</h1>
+				<p>
+				Untuk referensi lengkap, Silahkan kunjungi 
+				<a href="JavaScript references/date reference.html" >Referensi Date JavaScript Lengkap</a>.<br><br>			
+				Referensi berisi penjelasan dan contoh dari semua properti dan metode Date.
+				</p>
+			</article>
+</section>
+<section>
+			<article id="NoB">
+			<a href="js date formats.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="js get date methods.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			</article>
+			<article>
+			</article>
+			
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

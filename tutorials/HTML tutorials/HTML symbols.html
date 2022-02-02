@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML symbols</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML Symbols </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> HTML Symbol Entities </h2>
+				<p> HTML entities didescribsikan dalam chapter sebelumnya. </p>
+				<p> Banyak ilmu Matematika, ilmu teknik dan simbol mata uang, yang tidak dipersembahkan atau disediakan pada keyboard. </p>
+				<p> Untuk menambahkan simbol - simbol ini ke halaman HTML, kamu bisa menggunakansebuah HTML entity name. </p>
+				<p>Jika tidak ada entity name yang tersedia, kamu bisa gunakansebuah entity number; referensi Decimal (atau Hexadecimal). </p>
+				<div class="nasehat"> 
+				Jika kamu menggunakan sebuah HTML entity name atau hexadecimal number, karaktrr akan selalu menampilkan secara benar. <br>
+				Ini adalah kebebasan tentang apa halaman character set (encoding) yang kamu gunakan. 
+				</div>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>p</b>>I will display &<i>euro</i>;<<b>/p</b>> <br>
+								<<b>p</b>>I will display &#<i>8364</i>;<<b>/p</b>> <br>
+								<<b>p</b>>I will display &#<i>x20AC</i>;<<b>/p</b>> <br>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<p class="fontWhite"> Akan ditampilkan menjadi </p>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						
+						<p>I will display &euro;</p>
+						<p>I will display &#8364;</p>
+						<p>I will display &#x20AC;</p>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Some Mathematical Symbols Supported by HTML </h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Char</th>
+							<th>Number</th>
+							<th>Entity</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>∀</td>
+							<td>&#<i>8704</i>;</td>
+							<td>&<i>forall</i>;</td>
+							<td>FOR ALL</td>
+						</tr>
+						<tr>
+							<td>∂</td>
+							<td>&#<i>8706</i>;</td>
+							<td>&<i>part</i>;</td>
+							<td>PARTIAL DIFFERENTIAL </td>
+						</tr>
+						<tr>
+							<td>∃</td>
+							<td>&#<i>8707</i>;	</td>
+							<td>&<i>exist</i>;</td>
+							<td>THERE EXISTS </td>
+						</tr>
+						<tr>
+							<td>∅</td>
+							<td>&#<i>8709</i>;</td>
+							<td>&<i>empty</i>;</td>
+							<td>EMPTY SETS </td>
+						</tr>
+						<tr>
+							<td>∇</td>
+							<td>&#<i>8711</i>;</td>
+							<td>&<i>nabla</i>;</td>
+							<td>NABLA</td>
+						</tr>
+						<tr>
+							<td>∈</td>
+							<td>&#<i>8712</i>;</td>
+							<td>&<i>isin</i>;</td>
+							<td>ELEMENT OF</td>
+						</tr>
+						<tr>
+							<td>∉</td>
+							<td>&#<i>8713</i>;</td>
+							<td>&<i>notin</i>;</td>
+							<td>NOT AN ELEMENT OF</td>
+						</tr>
+						<tr>
+							<td>∋</td>
+							<td>&#<i>8715</i>;</td>
+							<td>&<i>ni</i>;</td>
+							<td>CONTAINS AS MEMBER</td>
+						</tr>
+						<tr>
+							<td>∏</td>
+							<td>&#<i>8719</i>;</td>
+							<td>&<i>prod</i>;</td>
+							<td>N-ARY PRODUCT</td>
+						</tr>
+						<tr>
+							<td>∑</td>
+							<td>&#<i>8721</i>;</td>
+							<td>&<i>sum</i>;</td>
+							<td>N-ARY SUMMATION</td>
+						</tr>
+					</tbody>
+				</table>
+				<a href="full math reference.html" >Full math referensi </a>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Some Greek Letters Supported by HTML </h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Char</th>
+							<th>Number</th>
+							<th>Entity</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Α</td>
+							<td>&#<i>913</i>;</td>
+							<td>&<i>Alpha</i>;</td>
+							<td>GREEK CAPITAL LETTER ALPHA</td>
+						</tr>
+						<tr>
+							<td>Β</td>
+							<td>&#<i>914</i>;</td>
+							<td>&<i>Beta</i>;</td>
+							<td>GREEK CAPITAL LETTER BETA</td>
+						</tr>
+						<tr>
+							<td>Γ</td>
+							<td>&#<i>915</i>;</td>
+							<td>&<i>Gamma</i>;</td>
+							<td>GREEK CAPITAL LETTER GAMMA</td>
+						</tr>
+						<tr>
+							<td>Δ</td>
+							<td>&#<i>916</i>;</td>
+							<td>&<i>Delta</i>;</td>
+							<td>GREEK CAPITAL LETTER DELTA</td>
+						</tr>
+						<tr>
+							<td>Ε</td>
+							<td>&#<i>917</i>;</td>
+							<td>&<i>Epsilon</i>;</td>
+							<td>GREEK CAPITAL LETTER EPSILON</td>
+						</tr>
+						<tr>
+							<td>Ζ</td>
+							<td>&#<i>918</i>;</td>
+							<td>&<i>Zeta</i>;</td>
+							<td>GREEK CAPITAL LETTER ZETA</td>
+						</tr>
+					</tbody>
+				</table>
+							
+				<a href="full greek reference.html" >Full Greek Reference</a>
+				
+				
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Some Other Entities Supported by HTML</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Char</th>
+							<th>Number</th>
+							<th>Entity</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>©</td>
+							<td>&#<i>169</i>;</td>
+							<td>&<i>copy</i>;</td>
+							<td>COPYRIGHT SIGN</td>
+						</tr>
+						<tr>
+							<td>®</td>
+							<td>&#<i>174</i>;</td>
+							<td>&<i>reg</i>;</td>
+							<td>REGISTERED SIGN</td>
+						</tr>
+						<tr>
+							<td>€</td>
+							<td>&#<i>8364</i>;</td>
+							<td>&<i>euro</i>;</td>
+							<td>EURO SIGN</td>
+						</tr>
+						<tr>
+							<td>™</td>
+							<td>&#<i>8482</i>;</td>
+							<td>&<i>trade</i>;</td>
+							<td>TRADEMARK</td>
+						</tr>
+						<tr>
+							<td>←	</td>
+							<td>&#<i>8592</i>;</td>
+							<td>&<i>larr</i>;</td>
+							<td>LEFTWARDS ARROW</td>
+						</tr>
+						<tr>
+							<td>↑</td>
+							<td>&#<i>8593</i>;</td>
+							<td>&<i>uarr</i>;</td>
+							<td>UPWARDS ARROW</td>
+						</tr>
+						<tr>
+							<td>→ </td>
+							<td>&#<i>8594</i>;</td>
+							<td>&<i>rarr</i>;</td>
+							<td>RIGHTWARDS ARROW</td>
+						</tr>
+						<tr>
+							<td>↓</td>
+							<td>&#<i>8595</i>;</td>
+							<td>&<i>darr</i>;</td>
+							<td>DOWNWARDS ARROW</td>
+						</tr>
+						<tr>
+							<td>♠ </td>
+							<td>&#<i>9824</i>;</td>
+							<td>&<i>spades</i>;</td>
+							<td>BLACK SPADE SUIT</td>
+						</tr>
+						<tr>
+							<td>♣</td>
+							<td>&#<i>9827</i>;</td>
+							<td>&<i>clubs</i>;</td>
+							<td>BLACK CLUB SUIT</td>
+						</tr>
+						<tr>
+							<td>♥ </td>
+							<td>&#<i>9829</i>;</td>
+							<td>&<i>hearts</i>;</td>
+							<td>BLACK HEART SUIT</td>
+						</tr>
+						<tr>
+							<td>♦ </td>
+							<td>&#<i>9830</i>;	</td>
+							<td>&<i>diams</i>;	</td>
+							<td>BLACK DIAMOND SUIT</td>
+						</tr>
+					</tbody>
+				</table>
+				<a href="full currency reference.html" >Full Currency Reference</a> <br>
+				<a href="full arrows reference.html" >Full Arrows Reference</a> <br>
+				<a href="full symbols reference.html" >Full Symbols Reference</a>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML entities.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML charset.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

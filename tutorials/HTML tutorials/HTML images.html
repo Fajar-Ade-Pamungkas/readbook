@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+<style type="text/css">
+.img {
+	text-align:center;
+}
+.letter {
+	font-size:16px;
+	font-family:Tahoma,Arial,sans-serif;
+	margin:20px;
+	
+}
+.img1 {
+	width:100%;
+	height:0;
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML images</h1>
+			</div>
+			
+<section>
+			<article class="center">
+				<h4 class="letter">HTML Images Jpg </span> </h4>
+				<img class="img" src="../../pictures/dearYou.jpg" style="width:30%;" />
+				<h4 class="letter">HTML Images Png </span> </h4>
+				<img class="img" src="../../pictures/Rain Fall.png" style="width:30%;" />
+				<h4 class="letter">HTML Images Gif </span> </h4>
+				<img class="img" alt="Image gif" src="../../../Pictures/Gif/rain.gif" style="width:30%;" />
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> HTML Image </h2>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br>
+						<<b>head</b>><br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br> 
+							<br>
+						<<b>h2</b>> Memories of Schooling <<b>/h2</b>> <br>
+						<<b>img</b> <span class="teal">src="../../../Pictures/Ska~1/ska~1.png" alt="ska-1" style="width:200px; height:200px"</span>> <br>
+							<br><br>
+						<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+				
+						
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						<h2>Memories of Schoooling </h2>
+						<img src="../../../Pictures/Ska~1/ska~1.png" alt="ska-1" style="max-width:300px; height:auto">
+					</div>
+				</article>
+				
+				<div class="nasehat"> 
+				Selalu tentukan <b>width</b> (lebar) dan <b>height</b> (tinggi) dari sebuah gambar. Jika width dan height tidak ditentukan, halaman akan menampilkan gambar 
+				sebagaimana ukuran aslinya ketika dimuat.
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML Images Syntax </h2>
+				<p> Pada HTML, gambar didefinisikan dengan tag <<b>img</b>>. </p>
+				<p> Tag <<b>img</b>> itu kosong, ia diisi oleh attribute saja, dan tidak memiliki closing tag (penutup tag). </p>
+				<p> Attribute <b>img</b> menentukan URL (web address) dari sebuah gambar: </p>
+				
+				<div class="simple-example">
+					<<b>img</b> <span class="teal">src="<i>disini url</i>" alt="<i>disini alternatif teks</i>"</span>>
+				</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> The <b class="blue">alt</b> Attribute </h2>
+				<p> Attribute <b>alt</b> menentukan sebuah teks alternatif untuk sebuah gambar, jika ga,bar tidak bisa ditampilkan. </p>
+				<p> 
+				Attribute <b>alt</b> menyediakan informasi altenatif untuk sebuah gambar, jika pengguna tidak bisa meilhat gambar maka akan ada kalimat penerangan. 
+				(sebab koneksi yang lambat, sebuah error dalam attribute srd, atau jika menggunakan sebuah screen reader).
+				</p>
+				
+				<p> Jika sebuah  browser tidak bisa menemukan gambar, browser akan menampilkan teks alt: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>img</b> <span class="teal">src="../../../Pictures/Ska~1/ska~1.png" alt="ska-1" style="width:200px; height:200px"</span>> <br>
+						
+					</div>
+					<button onclick="tampilkan02()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+						<h2>Memories of Schoooling </h2>
+						<img src="../../../Pictures/Ska~1/Men in Blac.jpg" alt="Memories of schooling" style="max-width:300px; height:100px">
+					</div>
+				</article>
+				
+				<div class="nasehat">
+					<p> Attribute <b>alt</b> karena diperlukan, Sebuah halaman web tidak akan mem-validasi secara benar tanpa alternative text. </p>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML Screen Readers </h2>
+				<p> Screen reader (pembaca layar) adalah sebuah program software yang bisa membaca apa yang ditampilkan pada layar. </p>
+				<p> Screen reader sangat berguna untuk orang tuna netra, gangguan penglihatan, atau pembelajaran yang tidak baik. </p>
+				<p> Screen reader bisa membaca attribute <b>alt</b>. </p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Image Size - Width and Height </h2>
+				<p> Kamu bisa menggunakan attribute <b>style</b> untuk menentukan width dan height dari gambar. </p>
+				<p> Nilai ditentukan dalam satuan pixel (menggunakam <b>px</b> setelah nilai): </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>img</b> <span class="teal">src="../../../Pictures/Ska~1/ska~1.png" alt="ska-1" style="width:200px; height:200px"</span>> <br>
+						
+					</div>
+					<button onclick="tampilkan03()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+						<h2>Memories of Schoooling </h2>
+						<img src="../../../Pictures/TKJ OF PUI'S SENIOR HIGH SCHOOL/tkj.jpg" alt="Memories of schooling" style="width:200px; height:200px">
+					</div>
+				</article>
+				
+				<p> Sebagai kemungkinan lain, kamu bisa gunakan attribute <b>width</b> dan <b>height</b>. Disini nilai ditentukan dslam satuan pixel dengan default: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>img</b> <span class="teal">src="../../../Pictures/My Family/family.jpg" alt="Keluarg ku" style="width:200px; height:200px"</span>> <br>
+						
+					</div>
+					<button onclick="tampilkan04()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+						<h2> My Family </h2>
+						<img src="../../../Pictures/My Family/family.jpg" alt="Keluarga ku" style="width:200px; height:200px">
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Width and Height or Style? </h2>
+				<p> Keduanya attribute width, height dan style diperbolehkan dslam standar HTM5 terakhir. </p>
+				<p> Kita suggestikan kamu gunakanlah attribute <b>style</b>. Ini mengatasi style sheet dari perubahan ukuran asli dari gambar: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br>
+						<<b>head</b>><br>
+						<<b>style</b>>
+							<blockquote>
+							width:100%; <br>
+							height:auto; 
+							</blockquote>
+						<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br> 
+							<br>
+						<<b>img</b> <span class="teal">src="../../../Pictures/Ska~1/Men in Black.jpg" alt="MiB" style="width:200px; height:200px"</span>> <br>
+						<<b>img</b> <span class="teal">src="../../../Pictures/Ska~1/ska~1.png" alt="ska-1" style="width:200px; height:200px"</span>> <br>
+							<br><br>
+						<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan05()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+						<h2>Memories of Schoooling </h2>
+						<img class="img1" src="../../../Pictures/Ska~1/Men in black.jpg" alt="ska-1" style="max-width:300px; height:auto">
+						<img class="img1" src="../../../Pictures/Ska~1/ska~1.png" alt="ska-1" style="max-width:300px; height:auto">
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Images in Another Folder </h2>
+				<p> Jika tidak ditentukan, browser mengira untuk mencari gambar dalam folder yang sama seperti web page. </p>
+				<p> Akan tetapi, ini umum untuk menyimpan gambar dalam sebuah sub-folder. Kamu kemudian harus memasukan nama folder dalam attribute <b>	src</b>: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>img</b> <span class="teal">src="../../../Pictures/Ska~1/ska~1.png" alt="ska-1" style="width:200px; height:200px"</span>> 
+						
+					</div>
+					<button onclick="tampilkan06()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+						<h2>Memories of Schoooling </h2>
+						<img class="img1" src="../../../Pictures/Ska~1/ska~1.png" alt="ska-1" style="max-width:300px; height:auto">
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Images on Another Server</h2>
+				<p> Beberapa website menyimoan gambar - gambar mereka dalam image server (server yang menyimpan gambar)</p>
+				<p> Sebenarnya, kmu bisa mengakses gambar dari web address apapun di dunia. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>img</b> <span class="teal">src="http://www.readbook.co.id/images/ska~1.png" alt="ska-1" style="width:200px; height:200px"</span>> 
+						
+					</div>
+					<button onclick="tampilkan07()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan07">
+						<h2>Memories of Schoooling </h2>
+						<img class="img1" src="../../Pictures/Rain Fall.png" alt="ska-1" style="max-width:300px; height:auto">
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Animated Images </h2>
+				<p> Standar GIF mengizinkan gambar animasi: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>img</b> <span class="teal">src="../../../Pictures/Gif/rain.gif" alt="Rainly" style="max-width:300px; height:auto"</span>> 
+						
+					</div>
+					<button onclick="tampilkan08()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan08">
+						<h2>Memories of Schoooling </h2>
+						<img src="../../../Pictures/Gif/rain.gif" alt="Rainly" style="max-width:300px; height:auto">
+					</div>
+				</article>
+				
+				<div class="nasehatX">
+				<p> <b>Ingatlah</b> bahwa sintaksis penyisipan gambar animasi tidak berbeda dari gambar non animasi.</p>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Using an Image as a Link </h2>
+				<p> Untuk menggunakan sebuah gambar sebagai link, cara sederhana ialah menaruh tag <<b>img</b>> didalam tag <<b>a</b>>: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+				
+					<<b>a</b> <span class="teal"> href="HTML images.html" target="_blank" </span>>  <br>
+					<<b>img</b> <span class="teal"> src="../../pictures/Rain Fall.png" alt="Rainly"
+					style="width:42px; height:42px; border:0"</span>> <br>
+						  			<<b>/a</b>> <br>
+				
+					</div>
+					<button onclick="tampilkan09()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan09">
+						<a href="HTML images.html" target="_blank" > 
+							<img src="../../pictures/Rain Fall.png" alt="Rainly" style="width:300px; height:auto; border:0"/>
+						</a>
+						<p> Klik gambar diatas untuk menuju ke sebuah halaman lainnya.</p>
+					</div>
+				</article>
+				
+				<div class="nasehat">
+				<b>border:0</b> ditambahkan untuk mengatasi masalah di IE9 (dan versi sebelumnya) daru penampilan sebuah border sekitar gambar.
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Image Floating </h2>
+				<p> Gunakanlah properti <b>float</b> CSS untuk membiarkan gambar mengapun (float). </p>
+				<p> Gambar bisa mengapung (float) ke kiri atau ke kanan dari sebuah text: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>p</b>> <br>
+						<<b>img</b> <span class="teal">src="../../pictures/Rain Fall.png"" alt="Rainly" style="float:right;width:42px;height:42px;"</span>> <br>
+						The image will float to the right of the text. <br>
+						<<b>/p</b>> <br> <br>
+						
+						<<b>p</b>> <br>
+						<<b>img</b> <span class="teal">src="../../pictures/Rain Fall.png" alt="Rainly" style="float:left;width:42px;height:42px;"</span>> <br>
+						The image will float to the left of the text. <br>
+						<<b>/p</b>>
+						
+					</div>
+					<button onclick="tampilkan10()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan10">
+						<p>
+						<img src="../../pictures/Rain Fall.png" alt="Rainly" style="float:right;width:42px;height:42px;">
+						The image will float to the right of the text.
+						</p>
+						
+						<p>
+						<img src="../../pictures/Rain Fall.png" alt="Rainly" style="float:left;width:42px;height:42px;">
+						The image will float to the left of the text.
+						</p>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Image Maps </h2>
+				<p> Gunakanlah tag <<b>img</b>> untuk mendefinisikan sebuah image-map. Image-map adalah gambar dengan area yang dapat diklik. </p>
+				<p> Attribute nama dari tag <<b>map</b>> dihubungkan dengan attribute usemap <<b>img</b>> dan membuta sebuah hubungkan antara image (gambar) dan map (peta). </p>
+				<p> Tag <<b>map</b>> berisi sebuah nomor dari tag <<b>area</b>>, yang mendefinisikan area yang bisa diklik dalam image-map: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>p</b>>Click on the sun or on one of the planets to watch it closer:<<b>/p</b>> <br><br>
+						
+						<<b>img</b> <span class="teal"> src="planets.gif" alt="Planets" usemap="#planetmap" style="width:145px;height:126px;"</span>> <br><br>
+						
+						<<b>map</b> <span class="teal">name="planetmap"</span>> <br>
+						<<b>area</b> <span class="teal">shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm"</span>> <br>
+						<<b>area</b> <span class="teal">shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm"</span>> <br>
+						<<b>area</b> <span class="teal">shape="circle" coords="124,58,8" alt="Venus" href="venus.htm"</span>> <br>
+						<<b>/map</b>>
+						
+					</div>
+					<button onclick="tampilkan11()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan11">
+						<p>Click on the sun or on one of the planets to watch it closer:</p>
+						
+						<img src="planets.gif" alt="Planets" usemap="#planetmap" style="width:145px;height:126px;">
+						
+						<map name="planetmap">
+						<area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+						<area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+						<area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+						</map>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Ringkasan Materi </h2>
+				
+				<ul>
+					<li> Gunakanlah element <<b>img</b>> HTML untuk mendefinisikan sebuah gambar </li>
+					<li> Gunakanlah attribute <b>src</b> HTML untuk mendefinisikan URL dari gambar </li>
+					<li> Gunakanlah attribute <b>alt</b>> HTML untuk mendefinisikan alternative text untuk gambar. jika gambar tidak bisa ditampilkan </li>
+					<li> Gunakanlah attribute <b>width</b> dan <b>height</b> HTML untuk mendefinisikan ukuran dari gambar </li>
+					<li> Gunakanlah properti <b>width</b> dan <b>height</b> CSS untuk mendefinisikan ukuran dari gambar (untuk kemungkinan lainnya)</li>
+					<li> Gunakanlah properti <b>float</b> CSS untuk membiarkan gambar mengambang (float)</li>
+					<li> Gunakanlah element <<b>map</b>> HTML untuk mendefinisikan sebuah image-map (gambar-peta) </li>
+					<li> Gunakanlah element <<b>area</b>> HTML untuk mendefinisikan area yang bisa diklik (clickable areas) dalam image-map </li>
+					<li> Gunakanlah attribute <b>usemap</b> element <<b>img</b>> HTML untuk titik (point) ke image-map </li>
+				</ul>
+				
+				<div class="nasehat">
+					Pemuatan (loading) gambar mengambil waktu. Semakin besar suatu gambar maka semakin lambat halaman kamu dimuat. Gunakanlah gambar secara hati - hati.
+				</div>
+</section>
+<section>
+				<article>
+					<h2> HTML Image Tags </h2>
+					
+					<table>
+						<thead>
+							<tr>
+								<th> Tag </th>
+								<th> Deskripsi </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td> <<b>img</b>> </td>
+								<td> Mendefinisikan sebuah gambar </td>
+							</tr>
+							<tr>
+								<td> <<b>map</b>> </td>
+								<td> Mendefinisikan sebuah image-map </td>
+							</tr>
+							<tr>
+								<td> <<b>area</b>> </td>
+								<td> Mendefinisikan sebuah area yang dapat di klik (clickable area) didalam sebuah image-map </td>
+							</tr>
+						</tbody>
+					</table>
+				</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML CSS.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML tables.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

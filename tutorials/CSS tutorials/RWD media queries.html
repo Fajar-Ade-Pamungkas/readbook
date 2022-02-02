@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | RWD media queries </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="buka.js"></script>
+<style type="text/css">
+#rwd td, #rwd th{
+	background-color:gold;
+	border-collapse:separate;
+}
+#rwd, #rwd tr {
+	border-collapse:separate;
+	border-spacing:20px;
+}
+#rwd {
+	width:80%;
+	color:white;
+	position:relative;
+	left:10%;
+}
+#rwd td:nth-child(even) {
+	width:60%;
+}
+
+/*for tablet*/
+#rwdM td, #rwdM th{
+	background-color:gold;
+	border-collapse:separate;
+}
+#rwdM, #rwdM tr {
+	border-collapse:separate;
+	border-spacing:20px;
+}
+#rwdM {
+	width:50%;
+	color:white;
+	position:relative;
+	left:25%;
+}
+#rwdM td:nth-child(even) {
+	width:60%;
+}
+ 
+/*for smartphone */
+#rwdS td, #rwdS th, #rwdS tr{
+	background-color:gold;
+	border-collapse:separate;
+	padding: 5px;
+	text-align:center;
+	font-size:9px;
+}
+#rwdS, #rwdS tr {
+	border-collapse:separate;
+	border-spacing:5px;
+}
+#rwdS {
+	width:45%;
+	color:white;
+	position:relative;
+	left:30%;
+}
+</style>
+<style type="text/css">
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> Responsive Web Design - Media Query </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> What is a Media Query? </h2>
+				<p> Apa itu Media Query ? </p>
+				<p> Media queri adalah suatu teknik CSS yang diperkenalkan di CSS3. </p>
+				<p> Media query menggunakan aturan <mark>@media</mark> untuk memasukan sebuah blok properti CSS hanya jika suatu kondisi tertentu itu benar.</p>
+				
+				<article class="example-box">
+					<h4>Contoh</h4>
+					<p class="fontWhite">Jika browser window itu lebih kecil dari 500px, background akan berubah menjadi lightblue</p>
+					<div class="example-content">
+						@media only screen and (max-width: 500px) {
+						<blockquote>
+						    body {
+							<blockquote>
+						        background-color: lightblue;
+							</blockquote>
+						    }
+						</blockquote>
+						}
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Add a Breakpoint </h2>
+				<p> Di chapter sebelumnya, kita membuat sebuah web oage dengan rows (baris) dan columns (kolom), dan itu merespon, tapi itu tidak terlihat bagus di small screen (layar kecil). </p>
+				<p> Media query bisa membantu dengan itu. Kita bisa menambahkan sebuah breakpoint dimana bagian tertentu dari design akan berprilaku dengan berbeda pada setiap sisi dari breakpoint. </p>
+				
+				<div>
+					<table id="rwd" class="table">
+						<caption> Desktop </caption>
+						<thead>
+							<tr>
+								<th colspan="9"> Heading </th>
+							</tr>
+						</thead>
+						<tr>
+							<td> Menu </td>
+							<td rowspan="4" colspan="3" style="background:black;"> Content </td>
+							<td rowspan="2" colspan="3"> Aside </td>
+						</tr>
+						<tr>
+							<td> Profile </td>
+						</tr>
+						<tr>
+							<td> About Us </td>
+						</tr>
+						<tr>
+							<td colspan="9"> Footer </td>
+						</tr>
+					</table>
+				</div>
+				
+				
+				<div>
+					<table id="rwdS" class="table">
+						<caption> Smartphones </caption>
+						<thead>
+							<tr>
+								<th> Heading </th>
+							</tr>
+						</thead>
+						<tr>
+							<td> Menu </td>
+						</tr>
+						<tr>
+							<td> Profile </td>
+						</tr>
+						<tr>
+							<td> About Us </td>
+						</tr>
+						<tr>
+							<td style="height:180px; background:black;"> Content </td>
+						</tr>
+						<tr>
+							<td style="height:50px;"> Aside </td>
+						</tr>
+						<tr>
+							<td> Footer </td>
+						</tr>
+					</table>
+				</div>
+				
+				<p> Gunakanlah media query untuk menambahkan breakpoint di 768px: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<p class="fontWhite"> Ketika layar (browser window) menjadi lebih kecil daripada 768px, setiap kolom harus memiliki width: 100% </p>
+					<div class="example-content" id="content-open01">
+					/* For desktop */ <br>
+					.col-1 {width: 8.33%;} <br>
+					.col-2 {width: 16.66%;} <br>
+					.col-3 {width: 25%;} <br>
+					.col-4 {width: 33.33%;} <br>
+					.col-5 {width: 41.66%;} <br>
+					.col-6 {width: 50%;} <br>
+					.col-7 {width: 58.33%;} <br>
+					.col-8 {width: 66.66%;} <br>
+					.col-9 {width: 75%;} <br>
+					.col-10 {width: 83.33%;} <br>
+					.col-11 {width: 91.66%;} <br>
+					.col-12 {width: 100%;} <br>
+					<br>
+					@media only screen and (max-width: 768px) {
+					<blockquote>
+					    /* For mobile phones: */ <br>
+					    [class*="col-"] {
+						<blockquote>
+					        width: 100%; 
+						</blockquote>
+					    }
+					</blockquote>
+					}
+					
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+					* { <br>
+					box-sizing: border-box; <br>
+					} <br>
+					<br>
+					.row:after { <br>
+					content: ""; <br>
+					clear: both; <br>
+					display: block; <br>
+					}<br>
+					<br>
+					[class*="col-"] { <br>
+					float: left; <br>
+					padding: 15px; <br>
+					}<br>
+					<br>
+					html { <br>
+					font-family: "Lucida Sans", sans-serif;<br>
+					}<br>
+					<br>
+					.header {<br>
+					background-color: #9933cc;<br>
+					color: #ffffff;<br>
+					padding: 15px;<br>
+					}<br>
+					<br>
+					.menu ul {<br>
+					list-style-type: none;<br>
+					margin: 0;<br>
+					padding: 0;<br>
+					}<br>
+					<br>
+					.menu li {<br>
+					padding: 8px;<br>
+					margin-bottom: 7px;<br>
+					background-color :#33b5e5;<br>
+					color: #ffffff;<br>
+					box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);<br>
+					}<br>
+					<br>
+					.menu li:hover {<br>
+					background-color: #0099cc;<br>
+					}<br>
+					<br>
+					.aside {<br>
+					background-color: #33b5e5;<br>
+					padding: 15px;<br>
+					color: #ffffff;<br>
+					text-align: center;<br>
+					font-size: 14px;<br>
+					box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);<br>
+					}<br>
+					<br>
+					.footer {<br>
+					background-color: #0099cc;<br>
+					color: #ffffff;<br>
+					text-align: center;<br>
+					font-size: 12px;<br>
+					padding: 15px;<br>
+					}<br>
+					<br>
+					/* For desktop */ <br>
+					.col-1 {width: 8.33%;} <br>
+					.col-2 {width: 16.66%;} <br>
+					.col-3 {width: 25%;} <br>
+					.col-4 {width: 33.33%;} <br>
+					.col-5 {width: 41.66%;} <br>
+					.col-6 {width: 50%;} <br>
+					.col-7 {width: 58.33%;} <br>
+					.col-8 {width: 66.66%;} <br>
+					.col-9 {width: 75%;} <br>
+					.col-10 {width: 83.33%;} <br>
+					.col-11 {width: 91.66%;} <br>
+					.col-12 {width: 100%;} <br>
+					<br>
+					@media only screen and (max-width: 768px) {
+					<blockquote>
+					    /* For mobile phones: */ <br>
+					    [class*="col-"] {
+						<blockquote>
+					        width: 100%; 
+						</blockquote>
+					    }
+					</blockquote>
+					}
+					<br>
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						<<b>div</b> <span class="teal">class="header"</span>> <br>
+						<<b>h1</b>>Chania<<b</div>/h1</b>> <br>
+						<<b>/div</b>><br>
+						<br>
+						<<b>div</b> <span class="teal">class="row"</span>> <br>
+						<<b>div</b> <span class="teal">class="col-3 menu"</span>> <br>
+						<<b>ul</b>><br>
+						<<b>li</b>>The Flight<<b>/li</b>> <br>
+						<<b>li</b>>The City<<b>/li</b>> <br>
+						<<b>li</b>>The Island<<b>/li</b>> <br>
+						<<b>li</b>>The Food<<b>/li</b>> <br>
+						<<b>/ul</b>> <br>
+						<<b>/div</b>> <br>
+						<br>
+						<<b>div</b> <span class="teal">class="col-6"</span>> <br>
+						<<b>h1</b>>The City<<b>/h1</b>>
+						<<b>p</b>>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.<<b>/p</b>><br>
+						<<b>/div</b>> <br>
+						<br>
+						<<b>div</b> <span class="teal">class="col-3 right"</span>> <br>
+						<<b>div</b> <span class="teal">class="aside"</span>> <br>
+						<<b>h2</b>>What?<<b>/h2</b>><br>
+						<<b>p</b>>Chania is a city on the island of Crete.<<b>/p</b>> <br>
+						<<b>h2</b>>Where?<<b>/h2</b>> <br>
+						<<b>p</b>>Crete is a Greek island in the Mediterranean Sea.<<b>/p</b>> <br>
+						<<b>h2</b>>How?<<b>/h2</b>> <br>
+						<<b>p</b>>You can reach Chania airport from all over Europe.<<b>/p</b>><br>
+						<<b>/div</b>><br>
+						<<b>/div</b>><br>
+						<br>
+						<<b>/div</b>> <br>
+						<br>
+						<<b>div</b> <span class="teal">class="footer"</span>> <br>
+						<<b>p</b>>Resize the browser window to see how the content respond to the resizing.<<b>/p</b>><br>
+						<<b>/div</b>> <br>
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Always Design for Mobile First </h2>
+				<p> Selalu Design untuk Mobile pertama kali. </p>
+				<p> Mobile First berarti perancangan untuk mobile sebelum perancangan untuk dekstop dan perangkat lainnya (Ini akan membuat halaman menampilkan lebih xepat di browser yang lebih kecil). </p>
+				<p> Ini berarti bahwa kita harus membuat beberapa perubahaan dalam CSS kita. </p>
+				<p> Sebagai pengganti dari pengubahan style ketika width pada layar lebih kecil dibandingkan 768px, kita harus mengubah design ketika width menjadi lebih besar dibandingkan 768px. Ini akan membuat design mobile kita pertama kali dimuat: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+				    /* For mobile phones: */ <br>
+				    [class*="col-"] {
+					<blockquote>
+				        width: 100%; 
+					</blockquote>
+				    } <br>
+					<br>
+					@media only screen and (min-width: 768px) {
+					<blockquote>
+					/* For desktop */  <br>
+					.col-1 {width: 8.33%;} <br>
+					.col-2 {width: 16.66%;} <br>
+					.col-3 {width: 25%;} <br>
+					.col-4 {width: 33.33%;} <br>
+					.col-5 {width: 41.66%;} <br>
+					.col-6 {width: 50%;} <br>
+					.col-7 {width: 58.33%;} <br>
+					.col-8 {width: 66.66%;} <br>
+					.col-9 {width: 75%;} <br>
+					.col-10 {width: 83.33%;} <br>
+					.col-11 {width: 91.66%;} <br>
+					.col-12 {width: 100%;} <br>
+					</blockquote>
+					}<br>
+					
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+					* { <br>
+					box-sizing: border-box; <br>
+					} <br>
+					<br>
+					.row:after { <br>
+					content: ""; <br>
+					clear: both; <br>
+					display: block; <br>
+					}<br>
+					<br>
+					[class*="col-"] { <br>
+					float: left; <br>
+					padding: 15px; <br>
+					}<br>
+					<br>
+					html { <br>
+					font-family: "Lucida Sans", sans-serif;<br>
+					}<br>
+					<br>
+					.header {<br>
+					background-color: #9933cc;<br>
+					color: #ffffff;<br>
+					padding: 15px;<br>
+					}<br>
+					<br>
+					.menu ul {<br>
+					list-style-type: none;<br>
+					margin: 0;<br>
+					padding: 0;<br>
+					}<br>
+					<br>
+					.menu li {<br>
+					padding: 8px;<br>
+					margin-bottom: 7px;<br>
+					background-color :#33b5e5;<br>
+					color: #ffffff;<br>
+					box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);<br>
+					}<br>
+					<br>
+					.menu li:hover {<br>
+					background-color: #0099cc;<br>
+					}<br>
+					<br>
+					.aside {<br>
+					background-color: #33b5e5;<br>
+					padding: 15px;<br>
+					color: #ffffff;<br>
+					text-align: center;<br>
+					font-size: 14px;<br>
+					box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);<br>
+					}<br>
+					<br>
+					.footer {<br>
+					background-color: #0099cc;<br>
+					color: #ffffff;<br>
+					text-align: center;<br>
+					font-size: 12px;<br>
+					padding: 15px;<br>
+					}<br>
+					<br>
+					/* For mobile phones: */<br>
+					[class*="col-"] {<br>
+					width: 100%;<br>
+					}<br>
+					<br>
+					@media only screen and (min-width: 768px) {<br>
+					/* For desktop: */<br>
+					.col-1 {width: 8.33%;}<br>
+					.col-2 {width: 16.66%;}<br>
+					.col-3 {width: 25%;}<br>
+					.col-4 {width: 33.33%;}<br>
+					.col-5 {width: 41.66%;}<br>
+					.col-6 {width: 50%;}<br>
+					.col-7 {width: 58.33%;}<br>
+					.col-8 {width: 66.66%;}<br>
+					.col-9 {width: 75%;}<br>
+					.col-10 {width: 83.33%;}<br>
+					.col-11 {width: 91.66%;}<br>
+					.col-12 {width: 100%;}<br>
+					}<br>
+					<br>
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						<<b>div</b> <span class="teal">class="header"</span>> <br>
+						<<b>h1</b>>Chania<<b</div>/h1</b>> <br>
+						<<b>/div</b>><br>
+						<br>
+						<<b>div</b> <span class="teal">class="row"</span>> <br>
+						<<b>div</b> <span class="teal">class="col-3 menu"</span>> <br>
+						<<b>ul</b>><br>
+						<<b>li</b>>The Flight<<b>/li</b>> <br>
+						<<b>li</b>>The City<<b>/li</b>> <br>
+						<<b>li</b>>The Island<<b>/li</b>> <br>
+						<<b>li</b>>The Food<<b>/li</b>> <br>
+						<<b>/ul</b>> <br>
+						<<b>/div</b>> <br>
+						<br>
+						<<b>div</b> <span class="teal">class="col-6"</span>> <br>
+						<<b>h1</b>>The City<<b>/h1</b>> <br>
+						<<b>p</b>>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.<<b>/p</b>><br>
+						<<b>/div</b>> <br>
+						<br>
+						<<b>div</b> <span class="teal">class="col-3 right"</span>> <br>
+						<<b>div</b> <span class="teal">class="aside"</span>> <br>
+						<<b>h2</b>>What?<<b>/h2</b>><br>
+						<<b>p</b>>Chania is a city on the island of Crete.<<b>/p</b>> <br>
+						<<b>h2</b>>Where?<<b>/h2</b>> <br>
+						<<b>p</b>>Crete is a Greek island in the Mediterranean Sea.<<b>/p</b>> <br>
+						<<b>h2</b>>How?<<b>/h2</b>> <br>
+						<<b>p</b>>You can reach Chania airport from all over Europe.<<b>/p</b>><br>
+						<<b>/div</b>><br>
+						<<b>/div</b>><br>
+						<br>
+						<<b>/div</b>> <br>
+						<br>
+						<<b>div</b> <span class="teal">class="footer"</span>> <br>
+						<<b>p</b>>Resize the browser window to see how the content respond to the resizing.<<b>/p</b>><br>
+						<<b>/div</b>> <br>
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Another Breakpoint </h2>
+				<p> Kamu bisa manambahkan breakpoint sebanyak yang kamu suka. </p>
+				<p> Kamu juga akan menyisipkan sebuah breakpoint diantara tablet dan mobile phones. </p> 
+				
+				
+				<div>
+					<table id="rwd" class="table">
+						<caption> Desktop </caption>
+						<thead>
+							<tr>
+								<th colspan="9"> Heading </th>
+							</tr>
+						</thead>
+						<tr>
+							<td> Menu </td>
+							<td rowspan="4" colspan="3" style="background:black;"> Content </td>
+							<td rowspan="2" colspan="3"> Aside </td>
+						</tr>
+						<tr>
+							<td> Profile </td>
+						</tr>
+						<tr>
+							<td> About Us </td>
+						</tr>
+						<tr>
+							<td colspan="9"> Footer </td>
+						</tr>
+					</table>
+				</div>
+				
+				<div>
+					<table id="rwdM" class="table">
+						<caption> Tablet </caption>
+						<thead>
+							<tr>
+								<th colspan="4"> Heading </th>
+							</tr>
+						</thead>
+						<tr>
+							<td> Menu </td>
+							<td rowspan="4" colspan="3" style="background:black;"> Content </td>
+						</tr>
+						<tr>
+							<td> Profile </td>
+						</tr>
+						<tr>
+							<td> About Us </td>
+						</tr>
+						<tr>
+							<td colspan="4"> Aside </td>
+						</tr>
+						<tr>
+							<td colspan="4"> Footer </td>
+						</tr>
+					</table>
+				</div>
+				
+				<div>
+					<table id="rwdS" class="table">
+						<caption> Smartphones </caption>
+						<thead>
+							<tr>
+								<th> Heading </th>
+							</tr>
+						</thead>
+						<tr>
+							<td> Menu </td>
+						</tr>
+						<tr>
+							<td> Profile </td>
+						</tr>
+						<tr>
+							<td> About Us </td>
+						</tr>
+						<tr>
+							<td style="height:180px; background:black;"> Content </td>
+						</tr>
+						<tr>
+							<td style="height:50px;"> Aside </td>
+						</tr>
+						<tr>
+							<td> Footer </td>
+						</tr>
+					</table>
+				</div>
+				
+				<p> Kita melakukan ini dengan penambahan satu lagi media query (di 600px), dan sebuah aturan dari class baru 
+				untuk perangkat yang lebih besar daripada 600px (tapi lebih kecil daripada 768px): </p> 
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<p class="fontWhite"> Perhatikanlah bahwa dua aturan dari class hampir sama, Perbedaanya hanyalah nama (col- and col-m-):</p>
+					<div class="example-content" id="content-open03">
+				    /* For mobile phones: */ <br>
+				    [class*="col-"] {
+					<blockquote>
+				        width: 100%; 
+					</blockquote>
+				    } <br>
+					<br>
+					@media only screen and (min-width: 600px) {
+					<blockquote>
+					/* For tablet: */<br>
+					.col-m-1 {width: 8.33%;}<br>
+					.col-m-2 {width: 16.66%;}<br>
+					.col-m-3 {width: 25%;}<br>
+					.col-m-4 {width: 33.33%;}<br>
+					.col-m-5 {width: 41.66%;}<br>
+					.col-m-6 {width: 50%;}<br>
+					.col-m-7 {width: 58.33%;}<br>
+					.col-m-8 {width: 66.66%;}<br>
+					.col-m-m-9 {width: 75%;}<br>
+					.col-m-10 {width: 83.33%;}<br>
+					.col-m-11 {width: 91.66%;}<br>
+					.col-m-12 {width: 100%;}
+					</blockquote>
+					}<br>
+					<br>
+					@media only screen and (min-width: 768px) {
+					<blockquote>
+					/* For desktop */  <br>
+					.col-1 {width: 8.33%;} <br>
+					.col-2 {width: 16.66%;} <br>
+					.col-3 {width: 25%;} <br>
+					.col-4 {width: 33.33%;} <br>
+					.col-5 {width: 41.66%;} <br>
+					.col-6 {width: 50%;} <br>
+					.col-7 {width: 58.33%;} <br>
+					.col-8 {width: 66.66%;} <br>
+					.col-9 {width: 75%;} <br>
+					.col-10 {width: 83.33%;} <br>
+					.col-11 {width: 91.66%;} <br>
+					.col-12 {width: 100%;} <br>
+					</blockquote>
+					}<br>
+					
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+					* { <br>
+					box-sizing: border-box; <br>
+					} <br>
+					<br>
+					.row:after { <br>
+					content: ""; <br>
+					clear: both; <br>
+					display: block; <br>
+					}<br>
+					<br>
+					[class*="col-"] { <br>
+					float: left; <br>
+					padding: 15px; <br>
+					}<br>
+					<br>
+					html { <br>
+					font-family: "Lucida Sans", sans-serif;<br>
+					}<br>
+					<br>
+					.header {<br>
+					background-color: #9933cc;<br>
+					color: #ffffff;<br>
+					padding: 15px;<br>
+					}<br>
+					<br>
+					.menu ul {<br>
+					list-style-type: none;<br>
+					margin: 0;<br>
+					padding: 0;<br>
+					}<br>
+					<br>
+					.menu li {<br>
+					padding: 8px;<br>
+					margin-bottom: 7px;<br>
+					background-color :#33b5e5;<br>
+					color: #ffffff;<br>
+					box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);<br>
+					}<br>
+					<br>
+					.menu li:hover {<br>
+					background-color: #0099cc;<br>
+					}<br>
+					<br>
+					.aside {<br>
+					background-color: #33b5e5;<br>
+					padding: 15px;<br>
+					color: #ffffff;<br>
+					text-align: center;<br>
+					font-size: 14px;<br>
+					box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);<br>
+					}<br>
+					<br>
+					.footer {<br>
+					background-color: #0099cc;<br>
+					color: #ffffff;<br>
+					text-align: center;<br>
+					font-size: 12px;<br>
+					padding: 15px;<br>
+					}<br>
+					<br>
+					/* For mobile phones: */<br>
+					[class*="col-"] {<br>
+					width: 100%;<br>
+					}<br>
+					<br>
+					@media only screen and (min-width: 600px) {<br>
+					/* For tablet: */<br>
+					.col-m-1 {width: 8.33%;}<br>
+					.col-m-2 {width: 16.66%;}<br>
+					.col-m-3 {width: 25%;}<br>
+					.col-m-4 {width: 33.33%;}<br>
+					.col-m-5 {width: 41.66%;}<br>
+					.col-m-6 {width: 50%;}<br>
+					.col-m-7 {width: 58.33%;}<br>
+					.col-m-8 {width: 66.66%;}<br>
+					.col-m-m-9 {width: 75%;}<br>
+					.col-m-10 {width: 83.33%;}<br>
+					.col-m-11 {width: 91.66%;}<br>
+					.col-m-12 {width: 100%;}<br>
+					}<br>
+					<br>
+					@media only screen and (min-width: 768px) {<br>
+					/* For desktop: */<br>
+					.col-1 {width: 8.33%;}<br>
+					.col-2 {width: 16.66%;}<br>
+					.col-3 {width: 25%;}<br>
+					.col-4 {width: 33.33%;}<br>
+					.col-5 {width: 41.66%;}<br>
+					.col-6 {width: 50%;}<br>
+					.col-7 {width: 58.33%;}<br>
+					.col-8 {width: 66.66%;}<br>
+					.col-9 {width: 75%;}<br>
+					.col-10 {width: 83.33%;}<br>
+					.col-11 {width: 91.66%;}<br>
+					.col-12 {width: 100%;}<br>
+					}<br>
+					<br>
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						<<b>div</b> <span class="teal">class="header"</span>> <br>
+						<<b>h1</b>>Chania<<b</div>/h1</b>> <br>
+						<<b>/div</b>><br>
+						<br>
+						<<b>div</b> <span class="teal">class="row"</span>> <br>
+						<<b>div</b> <span class="teal">class="col-m-3 col-3 menu"</span>> <br>
+						<<b>ul</b>><br>
+						<<b>li</b>>The Flight<<b>/li</b>> <br>
+						<<b>li</b>>The City<<b>/li</b>> <br>
+						<<b>li</b>>The Island<<b>/li</b>> <br>
+						<<b>li</b>>The Food<<b>/li</b>> <br>
+						<<b>/ul</b>> <br>
+						<<b>/div</b>> <br>
+						<br>
+						<<b>div</b> <span class="teal">class="col-m-6 col-9"</span>> <br>
+						<<b>h1</b>>The City<<b>/h1</b>> <br> 
+						<<b>p</b>>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.<<b>/p</b>><br>
+						<<b>/div</b>> <br>
+						<br>
+						<<b>div</b> <span class="teal">class="col-m-12 col-12 right"</span>> <br>
+						<<b>div</b> <span class="teal">class="aside"</span>> <br>
+						<<b>h2</b>>What?<<b>/h2</b>><br>
+						<<b>p</b>>Chania is a city on the island of Crete.<<b>/p</b>> <br>
+						<<b>h2</b>>Where?<<b>/h2</b>> <br>
+						<<b>p</b>>Crete is a Greek island in the Mediterranean Sea.<<b>/p</b>> <br>
+						<<b>h2</b>>How?<<b>/h2</b>> <br>
+						<<b>p</b>>You can reach Chania airport from all over Europe.<<b>/p</b>><br>
+						<<b>/div</b>><br>
+						<<b>/div</b>><br>
+						<br>
+						<<b>/div</b>> <br>
+						<br>
+						<<b>div</b> <span class="teal">class="footer"</span>> <br>
+						<<b>p</b>>Resize the browser window to see how the content respond to the resizing.<<b>/p</b>><br>
+						<<b>/div</b>> <br>
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					</div>
+				</article>
+				
+				<p> Ini mungkin terlihat aneh (odd) yang kita milikidua set dari class yang identik, tapi ini memberikan mereka (kode-kode) keuntungan 
+				<i>dalam HTML</i>, untuk memutuskan apa yang akan terjadi dengan kolo di setiap breakpoint: </p>
+				<article class="example-box">
+					<h4>Contoh HTML</h4>
+					<p class="fontWhite"> Untuk dekstop:</p>
+					<p class="fontWhite"> Sesi pertama dan ketika akan men-span (merentangkan) 3 kolom masing-masing, sesi bagian tengah akan me-span 6 kolom.</p>
+					<p class="fontWhite"> Untuk tablet:</p>
+					<p class="fontWhite"> Sesi pertama akan me-span 3 kolom, sesi kedua akan me-span 9 dan sesi ketiga akan ditampilkan dibawah dua sesi (tersebut) pertama, dan ia akan me-span 12 kolom: </p>
+					<div class="example-content">
+						<<b>div</b> <span class="teal">class="row"</span>> <br>
+						<<b>div</b> <span class="teal">class="col-3 col-m-3"</span>>...<<b>/div</b>> <br>
+						<<b>div</b> <span class="teal">class="col-6 col-m-9"</span>>...<<b>/div</b>> <br>
+						<<b>div</b> <span class="teal">class="col-3 col-m-12"</span>>...<<b>/div</b>> <br>
+						<<b>/div</b>>
+					</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Orientation: Portrait / Landscape </h2>
+				<p> Media query bisa juga digunakan untuk mengubah layout dari halaman tergantung pada orientasi dari browser. </p>
+				<p> Kamu bisa memiliki sebuah set dari properti CSS yang hanya akan diterapkan ketika borwser window lebih luas (lebar) daripada tingginya, yang disebut juga  "Landscape" orientation:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<p class="fontWhite"> Web page akan memiliki background warna lightblue jika orientasi berada dalam mode landscape:</p>
+					<div class="example-content" id="content-open04">
+					
+					@media only screen and (orientation: landscape) {
+						<blockquote>
+					    body {
+							<blockquote>
+					        background-color: lightblue;
+							</blockquote>
+					    }
+						</blockquote>
+					}
+					
+					</div>
+					<div class="example-content sembunyikan" id="content-close04">
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+					<br>
+					body {
+						<blockquote>
+						background-color: lightgreen;
+						</blockquote>
+					}<br>
+					<br>
+					@media only screen and (orientation: landscape) {
+						<blockquote>
+					    body {
+							<blockquote>
+					        background-color: lightblue;
+							</blockquote>
+					    }
+						</blockquote>
+					} <br>
+					<br>
+
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						<<b>p</b>>Resize the browser window. When the width of this document is larger than the height, the background-color is "lightblue", 
+						otherwise it is "lightgreen".<<b>/p</b>> <br>
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<button onclick="buka04()" class="exbutton"> Open </button>
+					<button onclick="tutup04()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					</div>
+				</article>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="RWD grid view.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="RWD images.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

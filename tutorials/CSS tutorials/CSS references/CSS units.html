@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS references | CSS units  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="../tutorial.css">
+<link rel="stylesheet" type="text/css" href="../style.css">
+<script type="text/javascript" src="../buka.js"></script>
+<script type="text/javascript" src="../../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../.,/HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+.browser-support td{
+	text-align:center;
+}
+.browser-support span{
+	color:red;
+}
+
+.table a{
+	padding:5px;
+	background-color:yellow;
+	color:black;
+}
+.table td:nth-child(3){
+	text-align:right;
+}
+
+
+
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Units </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> CSS Units</h2>
+				
+				<p> CSS memiliki beberapa units (satuan-satuan) yang berbeda untuk pengekspresian/pengukuran panjang.</p>
+				<p> Banyak properti CSS mengambil nikai units (satuan-satuan) "panjang", seperti width, margin, padding, font-size, border-width, dan sebagainya.</p>
+				<p> Panjang merupakan nomor yang diikuti oleh satuan panjang, seperti 10px, 2em, dan sebagainya.</p>
+				<p> Whitespace (spasi) tidak diperlihatkan diantara nomor dan unit. Akan tetapi, jika nilainya 0, unit bisa dihilangkan.</p>
+				<p> Untuk beberapa properti CSS, (nilai) panjang negatif tidak diperbolehkan.</p>
+				<p> Ada dua tipe dari satuan panjang: <mark>relative</mark> dan <mark>absolute</mark>.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Browser Support</h2>
+				
+				<p> Nomor dalam tabel menentukan browser versi pertama yang mendukung secara penuh satuan panjang.</p>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="7" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> Length units </td>
+							<td> <img src="../../logos/Chrome.png"> </td>
+							<td> <img src="../../logos/IE.png"> </td>
+							<td> <img src="../../logos/Firefox.png"> </td>
+							<td> <img src="../../logos/Safari.png"> </td>
+							<td> <img src="../../logos/Opera.png"> </td>
+						</tr>
+						<tr>
+							<td> em, ex, %, px, cm, mm, in, pt, pc </td>
+							<td> 1.0 </td>
+							<td> 3.0 </td>
+							<td> 1.0 </td>
+							<td> 1.0 </td>
+							<td> 3.5 </td>
+						</tr>
+						<tr>
+							<td> ch </td>
+							<td> 27.0 </td>
+							<td> 9.0 </td>
+							<td> 1.0 </td>
+							<td> 7.0 </td>
+							<td> 20.0 </td>
+						</tr>
+						<tr>
+							<td> rem </td>
+							<td> 4.0 </td>
+							<td> 9.0 </td>
+							<td> 3.6 </td>
+							<td> 4.1 </td>
+							<td> 11.6 </td>
+						</tr>
+						<tr>
+							<td> vh, vw </td>
+							<td> 20.0 </td>
+							<td> 9.0 </td>
+							<td> 19.0 </td>
+							<td> 6.0 </td>
+							<td> 20.0 </td>
+						</tr>
+						<tr>
+							<td> vmin </td>
+							<td> 20.0 </td>
+							<td> 9.0* </td>
+							<td> 19.0 </td>
+							<td> 6.0 </td>
+							<td> 20.0 </td>
+						</tr>
+						<tr>
+							<td> vmax </td>
+							<td> 26.0 </td>
+							<td> <span>Not supported</span> </td>
+							<td> 19.0 </td>
+							<td> <span>Not supported </td>
+							<td> 20.0 </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<div class="nasehat">
+					<p> <b>Catatan:</b> Internet Explorer 9 mendukung <mark>vmin</mark> dengan nama non-standard: <mark>vm</mark>.</p>
+				</div>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Relative Lengths</h2>
+				
+				<p> Satuan panjang Relatif menentukan panjang relatif untuk properti panjang lainnya. Satuan panjang relatif menskala lebih baik diantara rendering mediums yang berbeeda.</p>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Unit</th>
+							<th>Deskripsi</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> em </td>
+							<td> Relatif (cenderung) untuk font-size dari element (2em berarti 2 times ukuran dari font saat ini) <a href="units/em.html" target="_blank" >Klik disini</a></td>
+						</tr>
+						<tr>
+							<td> ex </td>
+							<td> Relatif (cenderung) x-height dari font saat ini (rarely used) <a href="units/ex.html" target="_blank"> Klik disini </a> </td>
+						</tr>
+						<tr>
+							<td> ch </td>
+							<td> Relatif (cenderung) untuk width (lebar) dari "0" (nol) </td>
+						</tr>
+						<tr>
+							<td> rem </td>
+							<td> Relatif (cenderung) untuk font-size dari root element  </td>
+						</tr>
+						<tr>
+							<td> vw </td>
+							<td> Relatif (cenderung) untuk 1% dari width (lebar) viewport*  <a href="units/vw.html" target="_blank"> Klik disini </a> </td>
+						</tr>
+						<tr>
+							<td> vh </td>
+							<td> Relatif (cenderung) untuk 1% dari height (tinggi) viewport* <a href="units/vh.html" target="_blank"> Klik disini </a> </td>
+						</tr>
+						<tr>
+							<td> vmin </td>
+							<td> Relatif (cenderung) untuk 1% dari viewport's* smaller dimension (dimensi viewport yang lebih kecil) <a href="units/vmin.html" target="_blank"> Klik disini </a> </td>
+						</tr>
+						<tr>
+							<td> vmax </td>
+							<td> Relatif (cenderung) untuk 1% dari viewport's* larger dimension (dimensi viewport yang lebih besar) <a href="units/vmax.html" target="_blank"> Klik disini </a> </td>
+						</tr>
+						<tr>
+							<td> % </td>
+							<td>  </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<div class="nasehat">
+					<p><b>Tips:</b> Satuan <mark>em</mark> dan <mark>rem</mark> merupakan latihan dalam pembuatan perfectly scalable layout!</p>
+				</div>
+				
+				<p>* Viewport = Ukuran window browser. Jika viewport adalah 50cm lebar, 1vw = 0.5 cm.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Absolute Lengths</h2>
+				
+				<p> Satuan-satuan panjang absolut (mutlak) diperbaiki dan sebuah panjang yang diekpresikan dalam segala dari ini akan diperlihatkan sebagai ukuran tepat.</p>
+				<p> Satuan-satuan panjang absokut tidak direkomendasi untuk digunakan pada screen (layar), karena ukuran layar yang bervariasi. Akan tetapi, itu bisa digunakan jika output medium yang diketahui, seperti untuk print layout.</p>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Unit</th>
+							<th>Deksripsi</th>
+							<th>  </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> cm </td>
+							<td> Centimeter </td> 
+							<td> <a href="units/cm.html" target="_blank" >Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> mm </td>
+							<td> milimeters </td> 
+							<td> <a href="units/mm.html" target="_blank" >Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> in </td>
+							<td> inches (1in = 96px = 2.54cm)</td> 
+							<td> <a href="units/in.html" target="_blank" >Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> px* </td>
+							<td> Pixels (1px = 1/96th dari 1in) </td> 
+							<td> <a href="units/px.html" target="_blank" >Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> pt </td>
+							<td> points (1pt = 1/72 dari 1in) </td> 
+							<td> <a href="units/pt.html" target="_blank" >Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> pc </td>
+							<td> picas (1pc = 12pt) </td> 
+							<td> <a href="units/pc.html" target="_blank" >Klik disini</a> </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<p> * Pixels (px) merupakan (satuan panjang) relatif untuk perangkat tampilan. Untuk low-dpi devixpces, 
+				1px merupakan one device pixel (dot) dari display. Untuk printer dan layar resolusi tinggi 1px menyatakan 
+				multiple device pixels.</p>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS animatable.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS color values.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML attributes</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML Attributes</h1>
+				<p>
+				Attribute menyediakan informasi tambahan tentang elemen HTML.
+				</p>
+			</div>
+			
+			
+<section>
+			<article>
+				<h1> HTML Attributes </h1>
+				<ul>
+					<li> Attribut HTML bisa memiliki <b>attribute</b> </li>
+					<li> Attribute menyediakan <b>informasi tambahan</b> tentang sebauh elemen</li>
+					<li> Attribute selalu ditentapkan pada <b>start tag</b></li>
+					<li> Attribute datang dalam sepasang nama/nilai seperti: <b>nama="nilai"</b>
+				</ul>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> <b clas="blu">lang</b> Attribute </h1>
+				<p> Bahasa dokumen bisa dideklarasikan dalam tag <<b>html</b>>. </p>
+				<p> Bahasa dideklarasikan dalam attribute <b>lang</b>.</p>
+				<p> Pendeklarasian sebuah bahasa itu penting untuk accessibility application (pembaca layar) dan search engines (mesin pencari):</p>
+				
+				<article class="example-box">
+					<h2 class="center">Contoh</h2>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b> <span class="teal">lang="en-US"</span>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br><br>
+								<<b>h1</b>> Ini heading <<b>/h1</b>><br><br>
+								<<b>p</b>> Ini paragraf <<b>/p</b>><br><br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+					</div>
+				</article>
+				
+				<p> Kata pertama dari kedua kata menentukan bahasa (en). Jika ada dialek, gunakan kata kedua (US).</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> <b class="blue">title</b> Attribute </h1>
+				<p>Paragraf HTML didefinisikan dengan tag <<b>p</b>>.</p>
+				<p> Pada contoh ini, elemen <<b>p</b>> memiliki attribute <b>tiitle</b>. Nilai daru attribute adalah "About Readbook"</p>
+				
+				<article class="example-box">
+					<h2 class="center">Contoh</h2>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b> <span class="teal">lang="en-US"</span>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br><br>
+								<<b>p</b> <span class="teal">title="About W3Schools"</span>> <br>
+								W3Schools is a web developer's site. <br>
+								It provides tutorials and references covering <br>
+								many aspects of web programming, <br>
+								including HTML, CSS, JavaScript, XML, SQL, PHP, ASP, etc. <br>
+								<<b>/p</b>> <br><br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						<p title="About W3Schools">
+						W3Schools is a web developer's site.
+						It provides tutorials and references covering
+						many aspects of web programming,
+						including HTML, CSS, JavaScript, XML, SQL, PHP, ASP, etc.
+						</p>
+					</div>
+				</article>
+				<div class="nasehat"> 
+					<p> Ketika kamu mengerakkan mouse diatas element, <b>title</b> akan ditamoilkan sepeeti sebuah tooltip (alat tip). </p>
+				</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> <b class="blue">href</b> Attribute </h1>
+				<p> Link HTML didefinisikan dengan tag <<b>a</b>>. Alamat link ditentukan dalam attribute <b>href</b>:</p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>a</b> <span class="teal">href="HTML HOME.html"</span>> Readbook.co.id <<b>/a</b>>
+								<br><br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+					</div>
+					<button onclick="tampilkan02()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+						<a href="HTML HOME.html" > Readbook.co.id </a>
+					</div>
+				</article>
+				
+				<p> Kamu akan mempelajari link dan rag <<b>a</b>> pada lain chapter. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> <b class="blue">Size</b> Attribute </h1>
+				<p> Gambar HTML didefinsikan dengan tag <<b>img</b>>. </p>
+				<p> nama file dari sumber atau source (<b>src</b>), dan ukuran gambar (<b>widt</b> dan <b>height</b>) semua disediakan sebagai attrbite:</p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br><br>
+								<<b>img</b> <span class="teal">src="../../pictures/Rain Fall.png" alt="Rainly" width="100" height="100"</span>>
+								<br><br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan03()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+						<img src="../../pictures/Rain Fall.png" alt="Rainly" width="100" height="100">
+					</div>
+				</article>
+				
+				<p>Ukuran gambar ditentukan dalam satuan pixel: width="100" berarti 100 pixel lebar layar.</p>
+				<p> Kamu akan mempelajari lebih banyak tentang gambar dan tag <<b>img</b>> di tutorial ini. </p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> <b class="blue">alt</b> Attribute </h1>
+				<p> Attribute <b>alt</b> menentukan sebuah teks alternatif untuk digunakan, ketika sebuah elemen HTML tidak bisa ditampilkan. </p>
+				<p> Nilai dari attribute bisa disediakan oleh "screen reader". Cara jni, sesorang  "mendengarkan" webpage, sebagai contoh seorang tunanetra, bisa "mendengar" element. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br><br>
+								<<b>img</b> <span class="teal">src="../../pictures/Rain Fall.png" alt="Rainly" width="100" height="100"</span>>
+								<br><br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan04()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+						<img src="../../pictures/Rain Fall.png" alt="Rainly" width="100" height="100">
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Kita Sarankan: Gunakanlah Selalu Attribute Lowercase</h1>
+				<p> Standar HTML5 tidak mengharuskan attribute nama dengan lowercase (huruf kecil).</p>
+				<p> Attribute title bisa ditulis dengan upper atau lower case seperti <b>Title</b> dan atau <b>TITLE</b>. </p>
+				<p>Kita <b>rekomendasikan</b> lowercase di HTML4, dan <b>dituntut</b> lowercase untuk tipe dokumen akurat seperti XHTML. </p>
+				<p> Lowercase paling umum digunakan. Lowercase lebih mudah untuk tipe. </p>
+				<p> Di Readbook kita selalu gunakan nama attribut lowercase. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Kita Sarankan: Selalu Kutipkan Nilai Attribute</h1>
+				<p> Standar HTML5 tidak mengharuskan menaruh nilai attribute diantara tanda kutp. </p>
+				<p> Attrivute <b>href</b>, ditunjukan keatas, bisa ditulis seperti: </p>
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>a</b> <span class="teal">href="HTML HOME.html"</span>> Readbook.co.id <<b>/a</b>>
+								<br><br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+					</div>
+					<button onclick="tampilkan05()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+						<a href=HTML HOME.html> Readbook.co.id </a>
+					</div>
+				</article>
+				
+				<p> Kita rekomendasikan Kutipkan pada HTML4 dan <b>dituntut</b> untuk tipe dokumen yang lebih akurat seperti XHTML. </p>
+				<p> Terkadang ini dibutuhkan untuk menggunakan kutip. Ini tidak akan menampilkan secara benar, karena ini berisi sebuah spasi: </p>
+				
+				<article class="example-box">
+					<h2 class="center">Contoh</h2>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b> <span class="teal">lang="en-US"</span>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br><br>
+								<<b>p</b> <span class="teal">title=About W3Schools</span>> <br>
+								W3Schools is a web developer's site. <br>
+								It provides tutorials and references covering <br>
+								many aspects of web programming, <br>
+								including HTML, CSS, JavaScript, XML, SQL, PHP, ASP, etc. <br>
+								<<b>/p</b>> <br><br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+					</div>
+					<button onclick="tampilkan06()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+						<p title=About W3Schools>
+						W3Schools is a web developer's site.
+						It provides tutorials and references covering
+						many aspects of web programming,
+						including HTML, CSS, JavaScript, XML, SQL, PHP, ASP, etc.
+						</p>
+					</div>
+				</article>
+				
+				<div class="nasehat">
+					Selalu sarankan selalu gunakan kutip untuk nilai attibute. Menghilangkan kutip akan mengeluarkan sebuah error.
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Single atau Double Qoutes ? </h1>
+				<p> Doubelquote merupakan yang paling umum pada HTML, tapi single quote bisa juga digunakan. </p>
+				<p> Pada beberapa situasi, ketika nilai attribute itu sendiri berisikan double quotes, ini diperlukan untuk menggunakan single quotes: </p>
+				<div class="simple-example">
+					<<b>p</b> <span class="teal">title='John "Menembak" seekor Angsa'</span>>
+				</div>
+				<p>Atau</p>
+				<div class="simple-example">
+					<<b>p</b> <span class="teal">title="John 'Menembak' seekor Angsa"</span>>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Chapter Summary atau Ringkasan Bab </h1>
+				<ul>
+					<li>Semua elemen HTML bisa memiliki <b>Attribute</b> </li>
+					<li> Attribute <b>title</b> HTML menyediakan <b>Informasi "tooltip" tambahan</b></li>
+					<li> Attribute <b>href</b> menyediakan informasi <b>alamat</b> untuk link </li>
+					<li> Attribute <b>width</b> dan <b>height</b> HTML menyediakan informasi <b>ukuran</b> untuk Gambar </li> 
+					<li> Attribute <b>alt</b> HTML menyediakan teks untuk screen reader</li>
+					<li> Di Readbook kita selalu gunakan lowercase untuk nama attribute HTML</li>
+					<li> Di Readbook kita selalu gunakan quote untuk nilai attribute dengan doubel quotes</li>
+				</ul>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> HTML Attributes </h1>
+				<p> Dibawah jnj adalah sebuah daftar alfabet dari beberapa attribute yang serinhkali digunakan pada HTML:</p>
+				
+				<table>
+					<thead>
+						<tr>
+							<th>Attribute</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>alt</td>
+							<td> Menentukan sebuah alternative text untuk sebuah gambar</td>
+						</tr>
+						<tr>
+							<td>disabled</td>
+							<td> Menentukan sebauh element input harus <b>dilumpuhkan</b> atau <b>dinonaktifkan</b></td>
+						</tr>
+						<tr>
+							<td>href</td>
+							<td> Menentukan URL (alamat web) untuk sebuah link</td>
+						</tr>
+						<tr>
+							<td>id</td>
+							<td> Menentukan sebuah id unik untuk sebuah element</td>
+						</tr>
+						<tr> 
+							<td>src</td> 
+							<td> Menentukan URL (alamat web) untuk sebuah gambar</td>
+						</tr>
+						<tr>
+							<td> style</td>
+							<td> Menentukan sebuah inline CSS stule untuk sebuah element </td>
+						</tr>
+						<tr>
+							<td>title</td>
+							<td> Menentukan informasi extra tentang sebuah element </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<p> 
+				Daftar lengkap tentang semua attribute untuk setiap element HTML, didaftarkan di: 
+				<a href="HTML Tag Reference.html" >HTML Tag Reference</a>
+				</p>
+			</article>
+</section>
+<section>		
+			
+			<article id="NoB">
+			<a href="HTML elements.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML headings.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

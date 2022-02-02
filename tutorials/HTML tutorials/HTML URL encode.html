@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML URL encode</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML Uniform Resource Locators</h1>
+				<p> URL merupakan kata lain dari web address (alamat web). </p>
+				<p> URL bisa berupa nama (www.google.com), atau sebuah Internet Protocol (IP) address (192.68.20.50).</p>
+				<p> Kebanyakan orang memasukan nama ketika surfing (menelusuri internet) karena nama lebih mudah untuk diingat daripada nomor (IP). </p>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> URL - Uniform Resource Locator </h2>
+				<p> Web browser meminta halaman dari web server dengan menggunakan sebuah URL. </p>
+				<p> Ketika kamu mengklik pada sebuah link pada halaman HTML, yang mendasari tag <<b>a</b>> bermaksud untuk sebah alamant pada web. </p>
+				<p> Uniform Resource Locator (URL) digunakan untuk alamat dokumen (atau data lainnya) pada web. </p>
+				<p> Sebuah web address, seperti <a href="http://www.w3schools.com/html/default.asp">http://www.w3schools.com/html/default.asp</a> mengikuti aturan sintaksis: </p>
+				<article class="example-box">
+					<p class="fontWhite">Sintaksis URL: </p>
+					<div class="example-content">
+						<kbd>scheme://prefix.domain:port/path/filename</kbd>
+					</div>
+				</article>
+				<p>Keterangan: </p>
+				
+				<ul>
+					<li> <b>scheme</b> - mendefinisikan <b>tipe</b> dari internet service (yang paling umum adalah <b>http</b>)</li>
+					<li> <b>prefix</b> - mendefinisikan sebuah domain prefix (default untuk http adalah <b>www</b>) </li>
+					<li> <b>domain</b> - mendefinisikan internet domain name (w3schools.com.com) </li>
+					<li> <b>port</b> - mendefinisikan sebuah port number atau host (default untuk http adalah <b>80</b>) </li>
+					<li> <b>path</b> - mendefinisikan path pada server (If omitted: the root directory of the site) </li>
+					<li> <b>filename</b> - mendefinisikan nama dari sebuah dokumen atau resource (sumber) </li>
+				</ul>
+				
+				<div class="nasehat">
+				Password yang dilindungi site mungkin menggunakan <b>https</b> dan/atau username dan password seperti: <br>
+				https://username:password@www.w3schools.com/html/default.asp
+				</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Common URL Schemes </h2>
+				<p> Tabel dibawah ini adalah daftar beberapa schemes yang umum digunakan: </p>
+				<table>
+					<thead>
+						<tr>
+							<th> Scheme </th>
+							<th> Singkatan dari </th>
+							<th> digunakan untuk </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> http </td>
+							<td> HyperText Transfer Protocol </td>
+							<td> web pages umum. Tidak dienkripsi </td>
+						</tr>
+						<tr>
+							<td> https </td>
+							<td> Secure HyperText Transfer Protocol</td>
+							<td> web pages terkunci dan aman</td>
+						</tr>
+						<tr>
+							<td> ftp </td>
+							<td> File Transfer Protocol </td>
+							<td> Downloading (pengunduhan) atau uploading (pengungahan) file </td>
+						</tr>
+						<tr>
+							<td> file </td>
+							<td> </td>
+							<td> File pada komputer kamu </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> URL Encoding </h2>
+				<p> URL juga bisa dikirim lebih ke Internet menggunakan ASCII character-set. Jika sebuah URL berisikan karakter diluar ASCII set, URL tidak harus dikonversikan (ditafsirkan). </p>
+				<p> URL encoding mengkonversikan karakter non-ASCII kedalam sebuah formst yang bisa ditransmisikan (dikirimkan) lebih ke internet. </p>
+				<p> URL encoding menggantikan karakter non-ASCII dengan sebuah simbol "<b>%</b>" diikuti dengan hexadecimal digit. </p>
+				<p> URL tidak bisa berisi spasi. URL encoding secara normal mengganti spasi dengan tanda plus (<b>+</b>) atau <b>%20</b>. </p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Try It Yourself </h2>
+				<input type="text" placeholder="Enter Your Name">
+				<button>Submit</button>
+				
+				<p> Jika kamu mengklik "Submit", browser akan URL encode inout sebelum ia dikirim menuju server. </p>
+				<p> Halaman pada server akan menampilkan input yang diterima.</p>
+				<p> Coba beberapa input (masukan) lain dan klik Submit lagi. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> ASCII Encoding Examples </h2>
+				<p> Browser kamu akan menyandi input, berdasarkan character-set yang digunakan pada halaman kamu. </p>
+				<p> Default character-set dalam HTML5 adalah UTF-8. </p>
+				
+				<table>
+					<thead>
+						<tr>
+							<th> Karakter </th>
+							<th> Dari Windows-1252</th>
+							<th> Dari UTF-8 </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> €</td>
+							<td>%80</td>
+							<td>%E2%82%AC</td>
+						</tr>
+						<tr>
+							<td>£</td>
+							<td>%A3</td>
+							<td>%C2%A3</td>
+						</tr>
+						<tr>
+							<td>©</td>
+							<td>%A9</td>
+							<td>%C2%A9</td>
+						</tr>
+						<tr>
+							<td>®</td>
+							<td>%AE</td>
+							<td>%C2%AE</td>
+						</tr>
+						<tr>
+							<td>À</td>
+							<td>%C0</td>
+							<td>%C3%80</td>
+						</tr>
+						<tr>
+							<td>Á</td>
+							<td>%C1</td>
+							<td>%C3%81</td>
+						</tr>
+						<tr>
+							<td>Â</td>
+							<td>%C2</td>
+							<td>%C3%82</td>
+						</tr>
+						<tr>
+							<td>Ã</td>
+							<td>%C3</td>
+							<td>%C3%83</td>
+						</tr>
+						<tr>
+							<td>Ä</td>
+							<td>%C4</td>
+							<td>%C3%84</td>
+						</tr>
+						<tr>
+							<td>Å</td>
+							<td>%C5</td>
+							<td>%C3%85</td>
+						</tr>
+					</tbody>
+				</table>
+				<p> Untuk referensi lengkap dari semua URL encoding, kunjungilah <a href="" >URL Encoding Referencs</a>. </p>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML charset.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML XHTML.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

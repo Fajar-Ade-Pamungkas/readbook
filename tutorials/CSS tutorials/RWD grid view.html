@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | RWD grid view </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="buka.js"></script>
+<style type="text/css">
+#tabGridView td, #tabGridView tr{
+	border:0px 5px;
+	border-color:white;
+	border-width: 0px 5px;
+	background-color:gold;
+	padding:10px;
+	border-collapse:collapse;
+}
+
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> Responsive Web Design - Grid View </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> What is a Grid-View? </h2>
+				<p> Apa itu Grid-View ? </p>
+				<p> Banyak halaman web yang didasari pada grid-view, yang mana artinya bahwa hal,an dibagi kedalam colom - colom:</p>
+				<img src="../gridView1.png" alt="grid blank" width="100%" height="auto">
+				<p> Penggunaan grid-view sangat bermanfaat ketika perancangan web page. Ini membuatnya lebih mudah untuk tempat elemet pada halaman. </p>
+				<p> Responsive grid-view seringkali memiliki 12 colom, dan memiliki lebar total 100% dan akan menyusutkan dan memperluas seperti kamu mengukur ulang browser window. </p>
+				<img src="../girdView2.png" alt="grid colom" width="100%" height="auto">
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Responsive Grid View </h2>
+				<p> Mulailah pembangunan responsive grud-view.</p>
+				<p> Pertama pastikan bahwa semua element HTML memiliki properti <mark>box-sizing</mark> dan atur nilainya menjadi <b>border-box</b>. Ini memastikan bahwa padding 
+				dan border dimasukan dalam lebar dan tinggi total (total width and height) dari element. </p>
+				<p> Tambahkan kode berikut ini dalam CSS kamu: </p>
+				<div class="example-content">
+				* {
+				    <blockquote>
+					box-sizing: border-box;
+					</blockquote>
+				}
+				</div>
+				<p> Bacalah lebih tentang properti <mark>box-sizing</mark> di chapter <a href="" >CSS3 Box Sizing</a>.</p>
+				<p> Contoh berikut menampilkan sebuah responsive web page sederhana, dengan dua kolom: </p>
+				
+				<article class="example-box">
+					<h4>Input</h4>
+					<div class="example-content">
+					.menu {
+					<blockquote>
+					    width: 25%; <br>
+					    float: left;
+					</blockquote>
+					} <br>
+					.main {
+					<blockquote>
+					    width: 75%; <br>
+					    float: left;
+					</blockquote>
+					}
+					</div>
+				</article>
+				
+				<p> Contoh diatas itu baik jika web page hanya benrisikan dua kolom. </p>
+				<p> Akan tetapi, kita ingin menggunakan responsive grid-view dengan 12 kolom, yang memiliki kendali lebih terhadap web page. </p>
+				<p> Pertama kita harus mengkalkulasikan (menghitung) persentase untuk satu kolom: 100% / 12 kolom = 8.33%. </p>
+				<p> Lalu kita buat sebuah class untuk setiap kolom dari 12 kolom tersebut, <b>class="col-"</b> dan sebuah nomor mendefinisikan berapa banyak (persen) kolom per sesi yang harus di-span: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<p class="fontWhite">Bagian yang berkedip merupakan CSS yang dimaksud</p>
+					<div class="example-content" id="content-open01">
+						.col-1 {width: 8.33%;} <br>
+						.col-2 {width: 16.66%;} <br>
+						.col-3 {width: 25%;} <br>
+						.col-4 {width: 33.33%;} <br>
+						.col-5 {width: 41.66%;} <br>
+						.col-6 {width: 50%;} <br>
+						.col-7 {width: 58.33%;} <br>
+						.col-8 {width: 66.66%;} <br>
+						.col-9 {width: 75%;} <br>
+						.col-10 {width: 83.33%;} <br>
+						.col-11 {width: 91.66%;} <br>
+						.col-12 {width: 100%;} <br>
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+					* {
+						<blockquote>box-sizing: border-box;</blockquote>
+					}<br>
+					
+					.header {
+					<blockquote>
+						border: 1px solid red; <br>
+						padding: 15px;
+					</blockquote>
+					}<br>
+					.row:after {
+					<blockquote>
+						content: ""; <br>
+						clear: both; <br>
+						display: block;
+					</blockquote>
+					} <br>
+					[class*="col-"] {
+					<blockquote>
+						float: left; <br>
+						padding: 15px; <br>
+						border: 1px solid red;
+					</blockquote>
+					} <br>
+					.col-1 {width: 8.33%;} <br>
+					.col-2 {width: 16.66%;} <br>
+					.col-3 {width: 25%;} <br>
+					.col-4 {width: 33.33%;} <br>
+					.col-5 {width: 41.66%;} <br>
+					.col-6 {width: 50%;} <br>
+					.col-7 {width: 58.33%;} <br>
+					.col-8 {width: 66.66%;} <br>
+					.col-9 {width: 75%;} <br>
+					.col-10 {width: 83.33%;} <br>
+					.col-11 {width: 91.66%;} <br>
+					.col-12 {width: 100%;} <br>
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						<<b>div</b> <span class="teal">class="header"</span>> <br>
+						<<b>h1</b>>Chania<<b>/h1</b>> <br>
+						<<b>/div</b>> <br>
+						<br>
+						<<b>div</b> <span class="teal">class="row"</span>> <br>
+						<br>
+						<<b>div</b> <span class="teal">class="col-3"</span>> <br>
+						<<b>ul</b>>
+						<blockquote>
+							<<b>li</b>>The Flight<<b>/li</b>> <br>
+							<<b>li</b>>The City<<b>/li</b>> <br>
+							<<b>li</b>>The Island<<b>/li</b>> <br>
+							<<b>li</b>>The Food<<b>/li</b>>
+						</blockquote>
+						<<b>/ul</b>> <br>
+						<<b>/div</b>> <br>
+						<br>
+						<<b>div</b> <span class="teal">class="col-9"</span>> <br>
+							<<b>h1</b>>The City<<b>/h1</b>> <br>
+							<<b>p</b>>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.<<b>p</b>>
+							<<b>p</b>>Resize the browser window to see how the content respond to the resizing.<<b>/p</b>> <br>
+						<<b>/div</b>> <br>
+						<br>
+						<<b>/div</b>> <br>
+						<<b>/body</b>><br>
+					<<b>/html</b>><br>
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					<p> Untuk contoh yang kebih jelasnya silahkan salin kode diatas lalu pindahkan pada halaman html kalian, terimakasih</p>
+					</div>
+				</article>
+				
+				
+				<p> Semua kolom ini harus di-floating (diapung) menjadi left, dan memiliki padding dengan nilai 15px: </p>
+				
+				<article class="example-box">
+					<h4>CSS:</h4>
+					<div class="example-content">
+						[class*="col-"] {
+						<blockquote>
+						    float: left; <br>
+						    padding: 15px; <br>
+						    border: 1px solid red;
+						</blockquote>
+						}
+					</div>
+				</article>
+				
+				<p> Setiap baris (row) harus dibalut (wrapped) dalam sebuah element <<b>div</b>> . Nomor saei kolom didalam sebuah row harus selalu ditambahkan menjadi 12: </p>
+				
+				<article class="example-box">
+					<h4>HTML:</h4>
+					<div class="example-content">
+					
+						<<b>div</b> <span class="teal">class="row"</span>><br>
+						  <<b>div</b> <span class="teal">class="col-3"</span>>...<<b>/div</b>> <br>
+						  <<b>div</b> <span class="teal">class="col-9"</span>>...<<b>/div</b>> <br>
+						<<b>/div</b>>
+						
+					</div>
+				</article>
+				
+				<p> Kolom didalam sebuah row (baris) semuanya di-floating menjadi left, dan oleh karena itu mengambil keluar aliran page, dan element lainnya akan 
+				ditempatkan sebagai jika kolom tidak ada. Untuk mengatasi ini, kita akan menambahkan style yang membereskan (clears) aliran (the flow): </p>
+				
+				<article class="example-box">
+					<h4>CSS:</h4>
+					<div class="example-content">
+						.row:after {
+						<blockquote>
+						    content: ""; <br>
+						    clear: both; <br>
+						    display: block;
+						</blockquote>
+						}
+				</div>
+				</article>
+				
+				<p> Kita juga ingin menambahkan beberapa style dan color untuk membuatnya terlihat lebih bagus: </p>
+				
+				<article class="example-box">
+					<h4>Contoh</h4>
+					<p class="fontWhite">Gabungkan kode CSS ini dengan kode lengkap diatas.</p>
+					<div class="example-content">
+						html {
+						<blockquote>
+						    font-family: "Lucida Sans", sans-serif;
+						</blockquote>
+						} <br>
+						.header {
+						<blockquote>
+						    background-color: #9933cc; <br>
+						    color: #ffffff; <br>
+						    padding: 15px;
+						</blockquote>
+						} <br>
+						.menu ul {
+						<blockquote>
+						    list-style-type: none; <br>
+						    margin: 0; <br>
+						    padding: 0;
+						</blockquote>
+						} <br>
+						.menu li {
+						<blockquote>
+						    padding: 8px; <br>
+						    margin-bottom: 7px; <br>
+						    background-color :#33b5e5; <br>
+						    color: #ffffff; <br>
+						    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+						</blockquote>
+						} <br>
+						.menu li:hover {
+						<blockquote>
+						    background-color: #0099cc;
+						</blockquote>
+						}
+				</div>
+				</article>
+				
+				<p> Perhatikanlah bahwa webpage dalam contoh tidak terliat bagus ketika kamu mengukur kembali 
+				browser window ke sebuah very small width (lebar yang sangat kecil). Pada chapter selanjutnya kamu akan 
+				mempelajari bagaimana untuk membuatnya layak. </p>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="RWD viewport.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="RWD media queries.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

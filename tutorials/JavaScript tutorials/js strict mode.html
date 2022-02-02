@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | JavaScript | js strict mode</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="javaScript.js"></script>
+<script type="text/javascript" src="javaScript2.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+			<div class="dropdown"> 
+			<button class="drop-button">Tutorial javaScript</button>
+			<div class="drop-content">
+			<ol>
+				<a href="js home.html"><li> Home </li></a>
+				<a href="js introduction.html"><li> Introduction </li></a>
+				<a href="js where to.html"><li> Where To </li></a>
+				<a href="js output.html"><li> Output </li></a>
+				<a href="js syntax.html"><li> Syntax </li></a>
+				<a href="js statements.html" ><li> Statements </li></a>
+				<a href="js comments.html" ><li> Comments </li></a>
+				<a href="js variables.html"><li> Variable </li></a>
+				<a href="js operators.html"><li> Operators </li></a>
+				<a href="js arithmetic.html"><li> Arithmetic </li></a>
+				<a href="js assignment.html"><li> Assignment </li></a>
+				<a href="js data types.html"><li> Data Types </li></a>
+				<a href="js functions.html"><li> Functions </li></a>
+				<a href="js objects.html"><li> Objects </li></a>
+				<a href="js scope.html"><li> Scope </li></a>
+				<a href="js events.html"><li> Events </li></a>
+				<a href="js strings.html"><li> string </li></a>
+				<a href="js string methods.html"><li> Strings Method </li></a>
+				<a href="js numbers.html"><li> Numbers </li></a>
+				<a href="js number methods.html"><li> Number Methods </li></a>
+				<a href="js math.html"><li> Math </li></a>
+				<a href="js random.html" ><li> Math Random </li></a>
+				<a href="js dates.html"><li> Dates </li></a>
+				<a href="js date formats.html" ><li> Date Formats </li></a>
+				<a href="js date methods.html" ><li> Date Methods </li></a>
+				<a href="js date get methods.html" ><li> Date get Methods </li></a>
+				<a href="js date set methods.html" ><li> Date Set Methods </li></a>
+				<a href="js arrays.html"><li> Arrays </li></a>
+				<a href="js array methods.html" ><li> Array Methods </li></a>
+				<a href="js booleans.html" ><li> boolean </li></a>
+				<a href="js comparisons.html" ><li> Comparisons </li></a>
+				<a href="js conditions.html" ><li>Conditions</li></a>
+				<a href="js switch.html" ><li>Switch </li></a>
+				<a href="js loop for.html"><li> Loop For </li></a>
+				<a href="js loop while.html" ><li>Loop while</li></a>
+				<a href="js break.html" ><li>Break</li></a>
+				<a href="js types conversion.html" ><li> Types conversion</li></a>
+				<a href="js bitwise.html" ><li> Bitwise </li></a>
+				<a href="js RegExp.html" ><li>RegExp</li></a>
+				<a href="js errors.html" ><li>Errors </li></a>
+				<a href="js debugging.html"><li>Debugging </li></a>
+				<a href="js hoisting.html" ><li>Hoisting</li></a>
+				<a href="js strict mode.html"><li>Strict mode</li></a>
+				<a href="js this keyword.html" ><li> this Keyword </li></a>
+				<a href="js let.html" ><li> Let </li></a>
+				<a href="js const.html" ><li> Const </li></a>
+				<a href="js debugging.html" ><li> Debugging </li></a>
+				<a href="js style guide.html" ><li>Style guide</li></a>
+				<a href="js best practices.html" ><li>best practices </li></a>
+				<a href="js mistakes.html"><li> Mistakes </li></a>
+				<a href="js performance.html" ><li>Performance</li></a>
+				<a href="js reserved words.html" ><li>Reserved words</li></a>
+				<a href="js versions.html" ><li> Versions </li></a>
+				<a href="js version ES5.html" ><li> Version ES5 </li></a>
+				<a href="js version ES6.html" ><li> Version ES6 </li></a>
+				<a href="js JSON.html"><li>JSON</li></a>
+			</ol>
+			</div>
+			</div>
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> JavaScript Use Strict</h1>
+				<p>
+				<b class="blue">use strict;</b> mendefinisikan bahwa kode JavaScript harus dieksekusi di "strict mode".
+				</p>
+			</div>
+			
+			
+<section>
+			<article>
+				<h1> The "use strict" Directive </h1>
+				<p>
+				<q>use strict</q> merupakan baru pada JavaScript 1.8.5 (ECMAScript versi 5).<br><br>
+				Ini bukan merupakan sebuah pernyataan, tapi sebuah ekspresi tetap (literal expression), Tapi diabaikna oleh JavaScript versi terdahulu. <br><br>
+				Tujuan dari <q>use strict</q> adalah untuk mengindikasikan bahwa kode harus dieksekusi di "strict mode" (mode teliti).<br>
+				Dengan mode teliti, kamu tidak bisa, untuk contoh, menggunakan variabel - variabel tanpa dideklarasikan.<br>
+				Semua browser modern mendujung <q>use strict</q> kecuali Internet Explorer 9 dan versi sebelumnya:
+				</p>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> Direktive </td>
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr>
+							<td> <q>use strict</q> </td>
+							<td> 13.0 </td>
+							<td> 10.0 </td>
+							<td> 4.0 </td>
+							<td> 6.0 </td>
+							<td> 12.1 </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<p>
+				Nomor - nomor pada tabel menentukan browser pertama yang mendukung secara penuh perintah (directive).
+				</p>
+				
+				<div class="nasehat">
+					<p>
+					Kamu bisa menggunakan strict mode di semua program kamu. itu membantu kamu untuk menulis kode pembersih 
+					(cleaner code), seperti mencegah kamu dari penggunaan variabel tanpa deklarasi. <br>
+					"use strict" juga merupakan string, jadi IE 9 tidak akan melempaarkan sebuah error bahkan jika IE 9 tidak mengerti strict mode.
+					</p>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Pendeklarasian strict mode </h1>
+				<p>
+				Strict mode dideklarasikan dengan penambahan tanda kutip dan titik koma menjadi <b class="blue">"strict mode";</b> 
+				untuk permulaan dari sebuah naskah (script) atau fungsi JavaScript. <br><br>
+				Mendeklarasikan di permulaan script JavaScript, membuatnya memiliki global scope 
+				(semua kode akan mengeksekusi pada strict mode).	
+				</p>
+				
+				<article class="example-box">
+					<h1 style="text-align:center;"><i>Contoh</i></h1>
+					<h4>input</h4>
+					<div class="example-content">
+						<span class="maroon">"use strict"</span>; <br>
+						<span class="purple">var</span> x = 3.14;
+						<em> // ini akan menyebabkan sebuah error sebab x tidak dideklarasikan</em>
+					</div>
+					<h4>output</h4>
+					<div class="example-content">
+						<button onclick=" myStrictMode1()">Klik disini</button>
+						<p id="myStrictMode01"></p>
+					</div>
+				</article>
+				
+				<article class="example-box">
+					<h1 style="text-align:center;"><i>Contoh</i></h1>
+					<h4>input</h4>
+					<div class="example-content">
+						<span class="maroon">"use strict"</span>; <br>
+						myFunction(); <br><br>
+						<span class="purple">function</span> myFunction() { <br>
+							<blockquote>
+							<span class="purple">var</span> y = 3.14;
+							<em> // ini akan menyebabkan sebuah error sebab y tidak dideklarasikan</em> <br>
+							</blockquote>
+						}
+					</div>
+					<h4>output</h4>
+					<div class="example-content">
+						<button onclick=" myStrictMode2()">Klik disini</button>
+						<p id="myStrictMode02"></p>
+					</div>
+				</article>
+				
+				<p>
+				"strict mode" dideklarasikan didalam  sebuah function, membuatnya memiliki cakupan lokal 
+				(hanya kode dalam fungsi yang beda di strict mode):
+				</p>
+				
+				<article class="example-box">
+					<h1 style="text-align:center;"><i>Contoh</i></h1>
+					<h4>input</h4>
+					<div class="example-content">
+						<span class="purple">var</span> x = 3.14; <br>
+						<em> // ini tidak akan menyebabkan sebuah error </em> <br>
+						myFunction(); <br><br>
+						<span class="purple">function</span> myFunction() { <br>
+							<blockquote>
+							<span class="maroon">"use strict"</span>; <br>
+							<span class="purple">var</span> y = 3.14;
+							<em> // ini akan menyebabkan sebuah error</em> <br>
+							</blockquote>
+						}
+					</div>
+					<h4>output</h4>
+					<div class="example-content">
+						<button onclick=" myStrictMode3()">Klik disini</button>
+						<p id="myStrictMode03"></p>
+					</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1>Sintaksis "use strict"; </h1>
+				<p>
+				Penulisan, untuk pendeklarasian strict mode, didesign untuk kecocokan dengan versi JavaScript terdahulu. <br>
+				Penyusunan sebuah numeric literal (4 + 5;) atau sebuah string literal ("john Doe") pada sebuah program JavaScript 
+				tidak memiliki efek samping. Secara sederhana menyusun bukaj untuk variabel yang ada dan mati. <br>
+				Jadi "use strict"; hanya hal yang penting  untuk penyusun - penyusun baru yang "mengerti" arti dari ini.
+				</p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Kenapa Mode Strict ?</h1>
+				<p>
+				Strict mode mambuatnya lebih mudah untuk menulis "secure" (keamanan) JavaScript. <br>
+				Strict mode mengubah dulu penerimaan "sintaksis buruk" masuk ke error yang sesungguhnya. <br>
+				Sebagai contoh, pada JavaScript normal, kesalahan pengetikan nama variabel menciptakan sebuah variabel global. Pada mode strict, ini akan mengeluarkan 
+				sebuah error, pembuatan itu tidak mungkin secara kebetulan menciptakan sebuah variabel global. <br>
+				Pada JavaScript normal, Seorang pengembang tidak akan menerima nilai - nilai penugasan feedback error apapun 
+				(error feedback assigning values) untuk properti yang tidak bisa dibaca. <br>
+				Pada mode strict, assignment apapun menjadi sebuah properti yang tidak dapat dibaca, hanya sebuah properti penyerapan, 
+				sebuah properti yang tidak ada, sebuah variabel yang tidak ada atau object yang tidak ada, akan melemparkan sebuah error.
+				</p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Yang Tidak Diizinkan Dalam Mode Strict </h1>
+				<p>
+				Penggunaan variabel tanpa pendeklarasiannya (kata kunci var) tidak diperbolehkan:
+				</p>
+				
+				<article class="example-box">
+					<h1 style="text-align:center;"><i>Contoh</i></h1>
+					<h4>input</h4>
+					<div class="example-content">
+
+						<span class="maroon">"use strict"</span>; <br>
+						x  = 3.14;
+						<em> // ini akan menyebabkan sebuah error</em> <br>
+							
+					</div>
+					<h4>output</h4>
+					<div class="example-content">
+						<button onclick=" myStrictMode4()">Klik disini</button>
+						<p id="myStrictMode04"></p>
+					</div>
+				</article>
+				
+				<div class="nasehat">
+					<p>
+					Object merupakan variabel juga
+					</p>
+				</div>
+				
+				<p>
+				Penggunaan object tanpa pendeklarasiannya (kata kunci var) tidak diperbolehkan:
+				</p>
+				
+				<article class="example-box">
+					<h1 style="text-align:center;"><i>Contoh</i></h1>
+					<h4>input</h4>
+					<div class="example-content">
+				
+						<span class="maroon">"use strict"</span>; <br>
+						x  = {p1 : 10, p2 : 20 };
+						<em> // ini akan menyebabkan sebuah error</em> <br>
+							
+					</div>
+					<h4>output</h4>
+					<div class="example-content">
+						<button onclick=" myStrictMode5()">Klik disini</button>
+						<p id="myStrictMode05"></p>
+					</div>
+				</article>
+				
+				<p>
+				Penghapusan variabel (atau object) tidak diperbolehkan:
+				</p>
+				
+				<article class="example-box">
+					<h1 style="text-align:center;"><i>Contoh</i></h1>
+					<h4>input</h4>
+					<div class="example-content">
+				
+						<span class="maroon">"use strict"</span>; <br>
+						<span class="purple">var</span> x  = 3.14; <br>
+						<span class="purple">delete</span> x ;
+						<em> // ini akan menyebabkan sebuah error</em> <br>
+							
+					</div>
+					<h4>output</h4>
+					<div class="example-content">
+						<button onclick=" myStrictMode6()">Klik disini</button>
+						<p id="myStrictMode06"></p>
+					</div>
+				</article>
+				
+				<p>
+				Penghapusan sebuah fungsi tidak diperbolehkan:
+				</p>
+				
+				<article class="example-box">
+					<h1 style="text-align:center;"><i>Contoh</i></h1>
+					<h4>input</h4>
+					<div class="example-content">
+				
+						<span class="maroon">"use strict"</span>; <br>
+						<span class="purple">function</span> x(pi1, pi2) {};
+						<span class="purple">delete</span> x(p1, p2) ;
+						<em> // ini akan menyebabkan sebuah error</em> <br>
+							
+					</div>
+					<h4>output</h4>
+					<div class="example-content">
+						<button onclick="myStrictMode7()">Klik disini</button>
+						<p id="myStrictMode07"></p>
+					</div>
+				</article>
+				
+				<p>
+				Penyalinan sebuah nama parameter tidak diperbolehkan:
+				</p>
+				
+				<article class="example-box">
+					<h1 style="text-align:center;"><i>Contoh</i></h1>
+					<h4>input</h4>
+					<div class="example-content">
+				
+						<span class="maroon">"use strict"</span>; <br>
+						<span class="purple">function</span>   x(p1, p2);
+						<em> // ini akan menyebabkan sebuah error</em> <br>
+							
+					</div>
+					<h4>output</h4>
+					<div class="example-content">
+						<button onclick="myStrictMode8()">Klik disini</button>
+						<p id="myStrictMode08"></p>
+					</div>
+				</article>
+				
+				<p>
+				Nilai tetap numeric oktal (Octal Numeric Literals) tidak diperbolehkan:
+				</p>
+				
+				<article class="example-box">
+					<h1 style="text-align:center;"><i>Contoh</i></h1>
+					<h4>input</h4>
+					<div class="example-content">
+				
+						<span class="maroon">"use strict"</span>; <br>
+						<span class="purple">var</span> x  = 010;
+						<em> // ini akan menyebabkan sebuah error</em> <br>
+							
+					</div>
+					<h4>output</h4>
+					<div class="example-content">
+						<button onclick="myStrictMode9()">Klik disini</button>
+						<p id="myStrictMode09"></p>
+					</div>
+				</article>
+				
+				<p>
+				Karakter escape octal tidak diperbolehkan:
+				</p>
+				
+				<article class="example-box">
+					<h1 style="text-align:center;"><i>Contoh</i></h1>
+					<h4>input</h4>
+					<div class="example-content">
+				
+						<span class="maroon">"use strict"</span>; <br>
+						<span class="purple">var</span> x  =  "\010";
+						<em> // ini akan menyebabkan sebuah error</em> <br>
+							
+					</div>
+					<h4>output</h4>
+					<div class="example-content">
+						<button onclick="myStrictMode10()">Klik disini</button>
+						<p id="myStrictMode10"></p>
+					</div>
+				</article>
+				
+				<p>
+				Penulisan untuk sebuah properti read-only tidak diperbolehkan:
+				</p>
+				
+				<article class="example-box">
+					<h1 style="text-align:center;"><i>Contoh</i></h1>
+					<h4>input</h4>
+					<div class="example-content">
+				
+						<span class="maroon">"use strict"</span>; <br>
+						<span class="purple">var</span> obj = {}; <br>
+						Object.defineProperty(obj, "x", {value:0, writable:<span class="purple">false</span>}); <br>
+						obj.x = 3.14;
+						<em> // ini akan menyebabkan sebuah error</em> <br>
+							
+					</div>
+					<h4>output</h4>
+					<div class="example-content">
+						<button onclick="myStrictMode11()">Klik disini</button>
+						<p id="myStrictMode11"></p>
+					</div>
+				</article>
+				
+				<p>
+				Penulisan untuk sebuah properti get-only tidak diperbolehkan:
+				</p>
+				
+				<article class="example-box">
+					<h1 style="text-align:center;"><i>Contoh</i></h1>
+					<h4>input</h4>
+					<div class="example-content">
+				
+						<span class="maroon">"use strict"</span>; <br>
+						<span class="purple">var</span> obj = {get x() {<span class="purple">return</span> 0} }; <br>
+						obj.x = 3.14;
+						<em> // ini akan menyebabkan sebuah error</em> <br>
+							
+					</div>
+					<h4>output</h4>
+					<div class="example-content">
+						<button onclick="myStrictMod12()">Klik disini</button>
+						<p id="myStrictMode12"></p>
+					</div>
+				</article>
+				
+				<p>
+				Penghapusan sebuah properti yang tidak bisa dihapus tidak diperbolehkan:
+				</p>
+				
+				<article class="example-box">
+					<h1 style="text-align:center;"><i>Contoh</i></h1>
+					<h4>input</h4>
+					<div class="example-content">
+				
+						<span class="maroon">"use strict"</span>; <br>
+						<span class="purple">delete</span> Object.prototype ;
+						<em> // ini akan menyebabkan sebuah error</em> <br>
+							
+					</div>
+					<h4>output</h4>
+					<div class="example-content">
+						<button onclick="myStrictMode13()">Klik disini</button>
+						<p id="myStrictMode13"></p>
+					</div>
+				</article>
+				
+				<p>
+				String "eval" tidak bisa digunakan sebagai variabel:
+				</p>
+				
+				<article class="example-box">
+					<h1 style="text-align:center;"><i>Contoh</i></h1>
+					<h4>input</h4>
+					<div class="example-content">
+				
+						<span class="maroon">"use strict"</span>; <br>
+						<span class="purple">var</span>  <span class="purple">eval</span> = 3.14;
+						<em> // ini akan menyebabkan sebuah error</em> <br>
+							
+					</div>
+					<h4>output</h4>
+					<div class="example-content">
+						<button onclick="myStrictMode14()">Klik disini</button>
+						<p id="myStrictMode14"></p>
+					</div>
+				</article>
+				
+				<p>
+				String "arguments" tidak bisa digunakan sebagai variabel:
+				</p>
+				
+				<article class="example-box">
+					<h1 style="text-align:center;"><i>Contoh</i></h1>
+					<h4>input</h4>
+					<div class="example-content">
+				
+						<span class="maroon">"use strict"</span>; <br>
+						<span class="purple">var</span>  <span class="purple">arguments</span> = 3.14;
+						<em> // ini akan menyebabkan sebuah error</em> <br>
+							
+					</div>
+					<h4>output</h4>
+					<div class="example-content">
+						<button onclick="myStrictMode15()">Klik disini</button>
+						<p id="myStrictMode15"></p>
+					</div>
+				</article>
+				
+				<p>
+				Pernyataan with tidak diperbolehkan:
+				</p>
+				
+				<article class="example-box">
+					<h1 style="text-align:center;"><i>Contoh</i></h1>
+					<h4>input</h4>
+					<div class="example-content">
+				
+						<span class="maroon">"use strict"</span>; <br>
+						<span class="purple">with</span> (Math) {x = cos(2)};
+						<em> // ini akan menyebabkan sebuah error</em> <br>
+							
+					</div>
+					<h4>output</h4>
+					<div class="example-content">
+						<button onclick="myStrictMode16()">Klik disini</button>
+						<p id="myStrictMode16"></p>
+					</div>
+				</article>
+				
+				<p>
+				Untuk alasan keamanan, eval() tidak diperbolehkan untuk menciptakan 
+				variabel - variabel pada scope dari yang mana ia dipanggil
+				</p>
+				
+				<article class="example-box">
+					<h1 style="text-align:center;"><i>Contoh</i></h1>
+					<h4>input</h4>
+					<div class="example-content">
+				
+						<span class="maroon">"use strict"</span>; <br>
+						<span class="purple">eval</span>("var x = 3.14"); <br>
+						alert(x)
+						<em> // ini akan menyebabkan sebuah error</em> <br>
+							
+					</div>
+					<h4>output</h4>
+					<div class="example-content">
+						<button onclick="myStrictMode17()">Klik disini</button>
+						<p id="myStrictMode17"></p>
+					</div>
+				</article>
+				
+				<p>
+				Pada function memanggil seperti f(), nilai ini asala objet global. 
+				Pada mode strict, ia sekarang tak terdefinisi.
+				</p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Future Proof! </h1>
+				<p>
+				Kata kunci yang dipesan untuk versi JavaScript masa depan 
+				TIDAK bisa digunakan sebagai nama variabel pada mode strict. <br><br>
+				Mereka adalah:
+				</p>
+				<ul>
+					<li>implements</li>
+					<li>interface</li>
+					<li>let</li>
+					<li>package</li>
+					<li>private</li>
+					<li>protected</li>
+					<li>public</li>
+					<li>static</li>
+					<li>yield</li>
+				</ul>
+				
+				<article class="example-box">
+					<h1 style="text-align:center;"><i>Contoh</i></h1>
+					<h4>input</h4>
+					<div class="example-content">
+				
+						<span class="maroon">"use strict"</span>; <br>
+						<span class="purple">var</span> <span class="purple">public</span> = 300;
+						<em> // ini akan menyebabkan sebuah error</em> <br>
+							
+					</div>
+					<h4>output</h4>
+					<div class="example-content">
+						<button onclick=" strictMod18()">Klik disini</button>
+						<p id="myStrictMode18"></p>
+					</div>
+				</article>
+				
+				<div class="nasehat">
+					<h1> PERHATIKANLAH! </h1>
+					<p>
+					Directive <b>"use strict"</b> hanya dianggap di <b>permulaan</b> dari sebuah naskah (script) 
+					atau sebuah fungsi (function).
+					</p>
+				</div>
+			</article>
+			
+			
+			<article id="NoB">
+			<a href="js hoisting.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="js this keyword.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+
+<script type="text/javascript">
+"use strict";
+x = 3.14;
+document.getElementById("myStrictMode01").innerHTML= x;
+</script>
+</body>
+</html>

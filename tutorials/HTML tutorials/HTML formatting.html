@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML formatting</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML Formatting</h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<article class="example-box">
+					<h1> Text Formatting</h1>
+					<div class="example-content">
+					<p><b> Ini teks tebal </b></p>
+					<p><i> Ini teks miring </i></p>
+					<p>Ini adalah <sup>superscript</sup> </p>
+					</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> HTML Formatting Elements </h1>
+				<p> Pada chapter sebelumnya, kamu memepelajari tentang penggayaan HTML, menggunakan attribute style. </p>
+				<p> HTML juga mendefinisikan element special untuk pendefinisian teks dengan sebuah arti istimewa. </p>
+				<p> HTML menggunakan elemen seperti <<b>b</b>> dan <<b>i</b>> untuk formatting input, seperti teks <b>tebal</b> atau <i>miring</i>. </p>
+				<p> Formatting elements didesign untuk menampilkan tipe istimewa teks: </p>
+				
+				<ul>
+					<li> Bold text </li>
+					<li>Important text</li>
+					<li>Italic text</li>
+					<li>Emphasized text</li>
+					<li>Marked text</li>
+					<l>Small text</l>
+					<li>Deleted text</li>
+					<li>Inserted text</li>
+					<li>Subscripts</li>
+					<li>Superscripts</li>
+				</ul>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> HTML Bold dan Strong Formatting </h1>
+				<p> Element <<b>b</b>> mendefinisikan teks tebal, tanpa penambahan ekstra. </p>
+				<article class="example-box">
+				<h1>HTML Formatting</h1>
+				<h4>Input:</h4>
+				<div class="example-content">
+					
+					<<b>!DOCTYPE html</b>><br><br>
+					<<b>html</b>><br><br>
+						<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+						<<b>/head</b>><br><br>
+						<<b>body</b>><br> 
+						<br>
+							<<b>p</b>>> Ini teks biasa <<b>/p</b>> <br>
+							<<b>p</b>> <<b>b</b>>Ini teks bold <<b>/b</b>><<b>/p</b>> <br>
+						<br>
+						<<b>/body</b>><br><br>
+					<<b>/html</b>><br>
+					
+				</div>
+				<button onclick="tampilkan02()">Output:</button>
+				<div class="simple-example sembunyikan" id="sembunyikan02">
+					<p>Ini teks biasa </p>
+					<p><b>Ini teks bold</b></p>
+				</div>
+				</article>
+				
+				<p>
+				Element <<b>strong</b>> mendefinisikan teks strong (tebal), dengan ditambahakan semantic "strong" importance.
+				</p>
+				
+				<article class="example-box">
+				<h1>HTML Formatting</h1>
+				<h4>Input:</h4>
+				<div class="example-content">
+					
+					<<b>!DOCTYPE html</b>><br><br>
+					<<b>html</b>><br><br>
+						<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+						<<b>/head</b>><br><br>
+						<<b>body</b>><br> 
+						<br>
+							<<b>h3</b>>> Ini teks biasa <<b>/h3</b>> <br>
+							<<b>p</b>> <<b>strong</b>>Ini teks strong <<b>/strong</b>><<b>/p</b>> <br>
+						<br>
+						<<b>/body</b>><br><br>
+					<<b>/html</b>><br>
+					
+				</div>
+				<button onclick="tampilkan01()">Output:</button>
+				<div class="example-content sembunyikan" id="sembunyikan01">
+					<p> Ini teks biasa </p>
+					<p> <strong>Ini teks strong</strong> </p>
+				</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> HTML <i>Italic</i> dan <i>Emphasized</i> Formatting </h1>
+				<p> Element <<b>i</b>> mendefinisikan teks miring, tanpa penambahan ekstra. </p>
+				
+				<article class="example-box">
+				<h1>HTML Formatting</h1>
+				<h4>Input:</h4>
+				<div class="example-content">
+					
+					<<b>!DOCTYPE html</b>><br><br>
+					<<b>html</b>><br><br>
+						<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+						<<b>/head</b>><br><br>
+						<<b>body</b>><br> 
+						<br>
+							<<b>h3</b>>> Ini teks biasa <<b>/h3</b>> <br>
+							<<b>p</b>> <<b>i</b>>Ini teks italic <<b>/i</b>><<b>/p</b>> <br>
+						<br>
+						<<b>/body</b>><br><br>
+					<<b>/html</b>><br>
+				
+				</div>
+				<button onclick="tampilkan03()">Output:</button>
+				<div class="example-content sembunyikan" id="sembunyikan03">
+					<p> Ini teks biasa </p>
+					<p> <i>Ini teks italic</i> </p>
+				</div>
+				</article>
+				
+				<p>Element <<b>em</b>> mendefinisikan teks emphasized, dengan ditambahkan semantic importance. </p>
+				
+				<article class="example-box">
+				<h1>HTML Formatting</h1>
+				<h4>Input:</h4>
+				<div class="example-content">
+					
+					<<b>!DOCTYPE html</b>><br><br>
+					<<b>html</b>><br><br>
+						<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+						<<b>/head</b>><br><br>
+						<<b>body</b>><br> 
+						<br>
+							<<b>h3</b>> Ini teks biasa <<b>/h3</b>> <br>
+							<<b>p</b>> <<b>i</b>>Ini teks emphasized <<b>/i</b>><<b>/p</b>> <br>
+						<br>
+						<<b>/body</b>><br><br>
+					<<b>/html</b>><br>
+				
+				</div>
+				<button onclick="tampilkan04()">Output:</button>
+				<div class="simple-example sembunyikan" id="sembunyikan04">
+					<p> Ini teks biasa </p>
+					<p> <em>Ini teks emphasized</em> </p>
+				</div>
+				</article>
+				
+				<div class="nasehatX">
+				Browser menampilkan <<b>strong</b>> sebagai <<b>b</b>> dan <<b>em</b>> sebagai <<b>i</b>>. <br><br>
+				Akan tetapi, Disini ada sebuah perbedaan dalam arti tag ini: <<b>b</b>> dan <<b>i</b>> mendefinisikan teks bold dan italic, 
+				tapi <<b>strong</b>> dan <<b>em</b>> mengartikan bahwa teks itu <b>"Penting"</b>.
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> HTML <small>Small</small> Formatting </h1>
+				<p> Element <<b>smal</b> mendefinisikan teks <b>kecil</b>: </p>
+				
+				<article class="example-box">
+				<h1>HTML Formatting</h1>
+				<h4>Input:</h4>
+				<div class="example-content">
+					
+					<<b>h3</b>> HTML <<b>small</b>> Small <<b>/smal</b>> Formatting<<b>/h3</b>> <br>
+
+				</div>
+				<button onclick="tampilkan05()">Output:</button>
+				<div class="simple-example sembunyikan" id="sembunyikan05">
+					<h3>HTML <small>Small</small> Formatting </h3>
+				</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> HTML <mark>Mark</mark> Formatting </h1>
+				<p> Element <<b>mark</b> mendefinisikan teks <b>yang ditandai</b> atau <b>higlighted</b>: </p>
+				
+				<article class="example-box">
+				<h1>HTML Formatting</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+						
+						<<b>h3</b>> HTML <<b>mark</b>> Mark <<b>/mark</b>> Formatting<<b>/h3</b>> <br>
+					
+					</div>
+					<button onclick="tampilkan06()">Output:</button>
+					<div class="simple-example sembunyikan" id="sembunyikan06">
+						<h3>HTML <mark>Mark</mark> Formatting </h3>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> HTML <del>Delete</del> Formatting </h1>
+				<p> Element <<b>del</b>> mendefinisikan teks yang <b>dicoret</b> atau <b>di-delete</b>: </p>
+				
+				<article class="example-box">
+					<h1>HTML Formatting</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+						
+						<<b>h3</b>> HTML <<b>del</b>> Delete <<b>/del</b>> Formatting<<b>/h3</b>> <br>
+					
+					</div>
+					<button onclick="tampilkan07()">Output:</button>
+					<div class="simple-example sembunyikan" id="sembunyikan07">
+						<h3>HTML <del>Delete</del> Formatting </h3>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> HTML <ins>Inserted</ins> Formatting </h1>
+				<p> Element <<b>ins</b>> mendefinisikan <b>inserted</b> text atau teks yang <b>disisipkan</b>: </p>
+				
+				<article class="example-box">
+					<h1>HTML Formatting</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+						
+						<<b>h3</b>> HTML <<b>ins</b>> Inserted <<b>/ins</b>> Formatting<<b>/h3</b>> <br>
+					
+					</div>
+					<button onclick="tampilkan08()">Output:</button>
+					<div class="simple-example sembunyikan" id="sembunyikan08">
+						<h3>HTML <ins>Inserted</ins> Formatting </h3>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> HTML <sub>Subscript</sub> Formatting </h1>
+				<p> Element <<b>sub</b>> mendefinisikan teks yang <b>diturunkan</b>: </p>
+				
+				<article class="example-box">
+					<h1>HTML Formatting</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+						
+						<<b>h3</b>> HTML <<b>sub</b>> Subscript <<b>/sub</b>> Formatting<<b>/h3</b>> <br>
+					
+					</div>
+					<button onclick="tampilkan09()">Output:</button>
+					<div class="simple-example sembunyikan" id="sembunyikan09">
+						<h3>HTML <sub>Subscript</sub> Formatting </h3>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> HTML <sup>Superscript</sup> Formatting </h1>
+				<p> Element <<b>sup</b>> mendefinisikan teks yang <b>dinaikan</b>: </p>
+				
+				<article class="example-box">
+					<h1>HTML Formatting</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+						
+						<<b>h3</b>> HTML <<b>sup</b>> Superscript <<b>/sup</b>> Formatting<<b>/h3</b>> <br>
+					
+					</div>
+					<button onclick="tampilkan10()">Output:</button>
+					<div class="simple-example sembunyikan" id="sembunyikan10">
+						<h3>HTML <sup>Superscript</sup> Formatting </h3>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1>HTML Text Formatting Elements </h1>
+				
+				<table>
+					<thead>
+						<tr>
+							<th> Tag</th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr> 
+							<td><<b>b</b>> </td>
+							<td> Mendefinisikan teks bold (tebal)</td>
+						</tr>
+						<tr>
+							<td> <<b>em</b>> </td>
+							<td> Mendefinisikan teks emphasized (miring khusus) </td>
+						</tr>
+						<tr>
+							<td> <<b>i</b>> </td>
+							<td> Mendefinisikan teks italic (miring)</td>
+						</tr>
+						<tr>
+							<td> <<b>strong</b>> </td>
+							<td> Mendefinisikan sebuah teks strong (tebal khusus) </td>
+						</tr>
+						<tr>
+							<td> <<b>small</b>> </td>
+							<td> Mendefinisikan sebuah teks kecil </td>
+						</tr>
+						<tr>
+							<td> <<b>sub</b>> </td>
+							<td> Mendefinisikan sebuah teks subscripted (diturunkan) </td>
+						</tr>
+						<tr>
+							<td> <<b>sup</b>> </td>
+							<td> Mendefinisikan sebuah teks superscripted (dinaikan) </td>
+						</tr>
+						<tr>
+							<td> <<b>ins</b>> </td>
+							<td> Mendefinisikan sebuah teks inserted (disisipkan garis bawah) </td>
+						</tr>
+						<tr>
+							<td> <<b>del</b>> </td>
+							<td> Mendefinisikan sebuah teks delete (coret teks) </td>
+						</tr>
+						<tr>
+							<td> <<b>mark</b>> </td>
+							<td> Mendefinisikan sebuah teks yang ditandai/disoroti </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML styles.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML quotations.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

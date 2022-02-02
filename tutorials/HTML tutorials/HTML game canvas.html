@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML Game Introducdtion  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="../CSS tutorials/buka.js"></script>
+<style type="text/css">
+p > mark, .example-content > mark  {
+	padding:3px;
+	border-radius:50px;
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+	
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML - Game Canvas  </h1>
+				<p> Element <<b>canvas</b>> HTML ditampilkan sebagai rectangular object (object persegi) pada halaman web:</p>
+			</div>
+			
+			
+<section>			
+			<article>
+				<h2> HTML Canvas </h2>
+				<p> Element <<b>canvas</b>> sempurna untuk pembuatan game dalam HTML. </p>
+				<p> Element <<b>canvas</b>> menamwarkan semua fungsionalitas yang kamu perlukan untuk membuat game. </p>
+				<p> Gunakan JavaScript utuk menggambar, menulis, menyisipkan gambar, dan banyak lagi. kedalam <<b>canvas</b>>. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>.getContext("2d")</h2>
+				<p> Element <mark><<b>canvas</b>></mark> memiliki suatu built-in object, yang disebut <mark>getContext("2d")</mark> object, dengan metode dan properti untuk menggambar. </p>
+				<p> Kamu bisa mempelajari banyak tentang element <mark><<b>canvas</b>></mark> dan <mark>getContext("2d")</mark> object, pada <a href="canvas HOME.html" > Tutorial Canvas</a> kita.</p>
+
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Get Started</h2>
+				<p> Ayo Mulai</p>
+				<p> Untuk membuat game, mulailah dengan pembuatan gaming area (area permainan) dan membuatnya siap untuk menggambar:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						<code>function</code> startGame() {
+						<blockquote>
+						myGameArea.start();
+						</blockquote>
+						} <br>
+						<br>
+						<code>var</code> myGameArea = {
+							<blockquote>
+							canvas : document.createElement("canvas"), <br>
+							start : function() { 
+								<blockquote>
+								this.canvas.width = 480; <br>
+								this.canvas.height = 270; <br>
+								this.context = this.canvas.getContext("2d"); <br>
+								document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+								</blockquote>
+							}
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						canvas {
+						<blockquote>
+							border: 1px solid #d3d3d3; <br>
+							background-color: #f1f1f1;
+						</blockquote>
+						}<br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b> <span class="teal">onload="startGame()"</span>><br><br>
+					
+					<<b>script</b>><br>
+					<code>function</code> startGame() {
+					<blockquote>
+						myGameArea.start();
+					</blockquote>
+					} <br>
+					<br>
+					<code>var</code> myGameArea = {
+						<blockquote>
+						canvas : document.createElement("canvas"), <br>
+						start : function() { 
+							<blockquote>
+							this.canvas.width = 480; <br>
+							this.canvas.height = 270; <br>
+							this.context = this.canvas.getContext("2d"); <br>
+							document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+							</blockquote>
+						}
+						</blockquote>
+					}<br>
+					<<b>/script</b>> <br><br>
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<button onclick="startGame()" class="exbutton">Show </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+					<p><a href="HTML Games/example 2.1.html" target="_blank"> Tripy it!</a></p>
+					
+					</div>
+				</article>
+				
+				
+				<p> Object <mark>myGameArea</mark> akan memiliki banyak properti dsn metode nantinya di tutorial ini.</p>
+				<p> Fungsi <mark>startGame()</mark> memanggil metode <mark>start()</mark> dari myGameArea object.</p>
+				<p> Metode <mark>start()</mark> membuat sebuah element <mark><<b>canvas</b>></mark> dan menyisipkannya sebagai 
+				<mark>first childnode</mark> dari element <mark><<b>body</b>></mark>. </p>
+				
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML game intro.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML game components.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			</article>
+			<article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+canvas {
+    border: 1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
+</style>
+</head>
+<body onload="startGame()">
+<script>
+
+function startGame() {
+    myGameArea.start();
+}
+
+var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 480;
+        this.canvas.height = 270;
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+    }
+}
+
+</script>
+
+<p>We have created a game area! (or at least an empty canvas)</p>
+
+</body>
+</html>
+
+
+-->
+</body>
+</html>

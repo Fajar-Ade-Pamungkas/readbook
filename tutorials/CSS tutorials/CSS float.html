@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS float </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Layout - Float and Clear Properties </h1>
+				<p> Properti <mark>float</mark> menentukan apakah iya atau tidak suatu element harus float (mengapung). </p>
+				<p> Properti <mark>clear</mark> digunakan untuk mengontrol tingkah laku dari floating element. </p>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> The float Property </h2>
+				<p> Pada penggunaan paling sederhananya, properti <mark>float</mark> bisa digunakan untuk membungkus (wrap) teks disekitar image. </p>
+				<p> Contoh berikut menentukan bahkan sebuah image harus mengapung (float) ke kanan dalam sebuah teks: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						img {
+						<blockquote>
+						    float: right; <br>
+						    margin: 0 0 10px 10px;
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						img {
+						<blockquote>
+						    float: right; <br>
+						    margin: 0 0 10px 10px;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						<<b>p</b>>Pada Contoh ini, image atau gambar akan mengapung (float) ke kanan dalam paragraf, dan teks dalam paragraf akan membungkus (wrap) sekitar image. <<b>/p</b>> <br>
+						<<b>p</b>><<b>img</b> <span class="teal">src="w3school.gif" alt="W3Schools.com" width="100" height="140"</span>> <br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. 
+						Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. 
+						Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. 
+						Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.<<b>/p</b>><br>
+						<br>
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<p style="margin-bottom: 10px; color: white;"> Pada Contoh ini, image atau gambar akan mengapung (float) ke kanan dalam paragraf, dan teks dalam paragraf akan membungkus (wrap) sekitar image. </p>
+						
+						<p><img style="float: right; margin:0 0 10px 10px;" src="../logos/Java.png" alt="W3Schools.com" width="100" height="140">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. 
+						Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. 
+						Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. 
+						Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+						
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>The clear Property </h2>
+				<p> Properti <mark>clear</mark> digunakan untuk mengontrol tingkah laku dari floating element (element apung).</p>
+				<p> Element setelah sebuah floating element akan mengalir (flow) disekitarnya. Untuk menghindari ini, gunakanlah properti <mark>clear</mark>. </p>
+				<p> Properti <mark>clear</mark> menentukan pada sisi yang mana dari suatu element, floating element tidak diperbolehkan untutuk mrngapung (float): </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						div {
+						<blockquote>
+						    clear: left;
+						</blockquote>
+						} 
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.div1 {
+						<blockquote>
+							float: left; <br>
+							width: 100px; <br>
+							height: 50px; <br>
+							margin: 10px; <br>
+							border: 3px solid #73AD21;
+						</blockquote>
+						} <br>
+						<br>
+						.div2 {
+						<blockquote>
+							border: 1px solid red;
+						</blockquote>
+						}<br>
+						<br>
+						.div3 {
+						<blockquote>
+							float: left; <br>
+							width: 100px; <br>
+							height: 50px; <br>
+							margin: 10px; <br>
+							border: 3px solid #73AD21;
+						</blockquote>
+						} <br>
+						<br>
+						.div4 {
+						<blockquote>
+							border: 1px solid red; <br>
+							clear: left;
+						</blockquote>
+						}<br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>h2</b>>Without clear<<b>/h2</b>> <br>
+						<<b>div</b> <span class="teal">class="div1"</span>>div1<<b>/div</b>> <br>
+						<<b>div</b> <span class="teal">class="div2"</span>>div2 - Notice that the div2 element is after div1, in the HTML code. 
+						However, since div1 is floated to the left, this happens: the text in div2 is floated around div1, and div2 surrounds the whole thing.<<b>/div</b>> <br>
+						<br>
+						<<b>h2</b>>Using clear<<b>/h2</b>> <br>
+						<<b>div</b> <span class="teal">class="div3"</span>>div3<<b>/div</b>> <br>
+						<<b>div</b> <span class="teal">class="div4"</span>>div4 - Using clear moves div4 down below the floated div3. 
+						The value "left" clears elements floated to the left. You can also clear "right" and "both".<<b>/div</b>> <br>
+						<br>
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+						
+						<h2>Without clear</h2>
+						<div class="div1">div1</div>
+						<div class="div2">div2 - Notice that the div2 element is after div1, in the HTML code. However, since div1 is floated to the left, this happens: the text in div2 is floated around div1, and div2 surrounds the whole thing.</div>
+						
+						<h2>Using clear</h2>
+						<div class="div3">div3</div>
+						<div class="div4">div4 - Using clear moves div4 down below the floated div3. The value "left" clears elements floated to the left. You can also clear "right" and "both".</div>
+						
+						
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>The clearfix Hack - overflow: auto; </h2>
+				<p> Jika suatu element tinggi atau ramping daripada penampung element tersebut. dan element itu diapungkan (floated), element akan meluap (overflow) keluar dari penampungnya (container). </p>
+				<p> Kemudian kita bisa menambahkan <mark>overflow: auto;</mark> untuk penampung element untuk memperbaiki masalah ini:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open03">
+						
+						.clearfix {
+						<blockquote>
+							overflow: auto;
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div {
+						<blockquote>
+							border: 3px solid #73AD21;
+						</blockquote>
+						} <br>
+						<br>
+						.img1 {
+						<blockquote>
+							float: right;
+						</blockquote>
+						} <br>
+						<br>
+						.clearfix {
+						<blockquote>
+							overflow: auto;
+						</blockquote>
+						} <br>
+						<br>
+						.img2 { 
+						<blockquote>
+							float: right;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>p</b>>In this example, the image is taller than the element containing it, and it is floated, so it overflows outside of its container:<<b>/p</b>> <br>
+						<br>
+						<<b>div</b>><<b>img</b> <span class="teal">class="img1" src="w3css.gif" alt="W3Schools.com" width="100" height="140"</span>> 
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...<<b>/div</b>> <br>
+						<br>
+						<<b>p</b> <span class="teal">style="clear:right"</span>>Add a clearfix class with overflow: auto; to the containing element, to fix this problem:<<b>/p</b>> <br>
+						<br>
+						<<b>div</b> <span class="teal">class="clearfix"</span>><<b>img</b> <span class="teal">class="img2" src="w3css.gif" alt="W3Schools.com" width="100" height="140"</span>> 
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...<<b>/div</b>> <br>
+						<br>
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+						<p>In this example, the image is taller than the element containing it, and it is floated, so it overflows outside of its container:</p>
+						
+						<div class="border"><img class="img1" src="../../Pictures/cool image.jpg" alt="W3Schools.com" width="100" height="140">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...</div>
+						
+						<p style="clear:right">Add a clearfix class with overflow: auto; to the containing element, to fix this problem:</p>
+						
+						<div class="clearfix border"><img class="img2" src="../../Pictures/cool image.jpg" alt="W3Schools.com" width="100" height="140">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...</div>
+						
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Web Layout Example </h2>
+				<p> Contoh rancangan web umum untuk melakukan keseluruhan tata ruang web menggunakan properti <mark>float</mark>: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open04">
+						
+						div {
+						<blockquote>
+						    border: 3px solid blue;
+						</blockquote>
+						} <br>
+						<br>
+						.clearfix {
+						<blockquote>
+						    overflow: auto;
+						</blockquote>
+						} <br>
+						<br>
+						nav {
+						<blockquote>
+						    float: left; <br>
+						    width: 200px; <br>
+						    border: 3px solid #73AD21;
+						</blockquote>
+						} <br>
+						<br>
+						section {
+						<blockquote>
+						    margin-left: 206px; <br>
+						    border: 3px solid red;
+						</blockquote>
+						} 
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close04">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+						div {
+						<blockquote>
+						    border: 3px solid blue;
+						</blockquote>
+						} <br>
+						<br>
+						.clearfix {
+						<blockquote>
+						    overflow: auto;
+						</blockquote>
+						} <br>
+						<br>
+						nav {
+						<blockquote>
+						    float: left; <br>
+						    width: 200px; <br>
+						    border: 3px solid #73AD21;
+						</blockquote>
+						} <br>
+						<br>
+						section {
+						<blockquote>
+						    margin-left: 206px; <br>
+						    border: 3px solid red;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>div</b> <span class="teal">class="clearfix"</span>> <br>
+						<br>
+						<<b>nav</b>>
+						<blockquote>
+							<<b>span</b>>nav<<b>/span</b>> <br>
+							<<b>ul</b>>
+							<blockquote>
+								<<b>li</b>><<b>a</b> <span class="teal">target="_blank" href="../default.html"</span>>Home<<b>/a</b>><<b>/li</b>> <br>
+								<<b>li</b>><<b>a</b> <span class="teal">target="_blank" href="default.html"</span>>CSS<<b>/a</b>><<b>/li</b>> <br>
+								<<b>li</b>><<b>a</b> <span class="teal">target="_blank" href="../html/default.html"</span>>HTML<<b>/a</b>><<b>/li</b>> <br>
+								<<b>li</b>><<b>a</b> <span class="teal">target="_blank" href="../js/default.html"</span>>JavaScript<<b>/a</b>><<b>/li</b>>
+							</blockquote>
+							<<b>/ul</b>>
+						</blockquote>
+						<<b>/nav</b>> <br>
+						<br>
+						<<b>section</b>>
+						<blockquote>
+							<<b>span</b>>section<<b>/span</b>> <br>
+							<<b>p</b>>Notice we have put a clearfix on the div container. It is not needed in this example, but it would be if the nav element was longer than the non-floated section content.<<b>/p</b>> 
+						</blockquote>
+						<<b>/section</b>><br>
+						<br>
+						<<b>section</b>>
+						<blockquote>
+							<<b>span</b>>section<<b>/span</b>> <br>
+							<<b>p</b>>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. 
+							Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.<<b>/p</b>>
+						</blockquote>
+						<<b>/section</b>><br>
+						<br>
+						<<b>/div</b>> <br><br>
+						
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<button onclick="buka04()" class="exbutton"> Open </button>
+					<button onclick="tutup04()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+						<div class="clearfix border">
+						
+						<div class="hyperlink" style="float: left; width: 200px; border: 3px solid #73ad21;">
+							<span>nav</span>
+							<ul>
+								<li><a target="_blank" href="../default.html">Home</a></li>
+								<li><a target="_blank" href="default.html">CSS</a></li>
+								<li><a target="_blank" href="../html/default.html">HTML</a></li>
+								<li><a target="_blank" href="../js/default.html">JavaScript</a></li>
+							</ul>
+						</div>
+						
+						<div class="sesi" style="margin-left: 206px; border: 3px solid red;">
+							<span>section</span>
+							<p>Notice we have put a clearfix on the div container. It is not needed in this example, but it would be if the nav element was longer than the non-floated section content.</p>
+						</div>
+						
+						<div class="sesi" style="margin-left: 206px; border: 3px solid red;">
+							<span>section</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.</p>
+						</div>
+						
+						</div>
+						
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> More Examples </h2>
+				<p class="redZone" style="border: 3px silver groove;" onclick="tampilkan06()"> Sebuah image dengan border dan margin yang mengapung ke kanan dalam paragraf</p>
+				<p> Mengizinkan suatu image mengapung ke kanan dalam paragraf. Tambahkan border dan margin untuk iamge.</p>
+				<article class="example-box sembunyikan" id="sembunyikan06">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open05">
+						
+						img {
+						<blockquote>
+							float: right; <br>
+							border: 1px dotted black; <br>
+							margin: 0px 0px 15px 20px;
+						</blockquote>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close05">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						img {
+						<blockquote>
+							float: right; <br>
+							border: 1px dotted black; <br>
+							margin: 0px 0px 15px 20px;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<p>In the paragraph below, the image will float to the right. A dotted black border is added to the image. 
+						We have also added margins to the image to push the text away from the image:
+						0 px margin on the top and right side, 15 px margin on the bottom, and 20 px margin on the left side of the image.
+						</p>
+						
+						<<b>p</b>><<b>img</b> <span class="teal">src="../logos/Firefox.png" width="100" height="140"</span>> <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						<<b>/p</b>> <br> <br>
+						
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan05()" class="exbutton">Klik disini</button>
+					<button onclick="buka05()" class="exbutton"> Open </button>
+					<button onclick="tutup05()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+					
+						<p style="margin-bottom: 30px;">In the paragraph below, the image will float to the right. A dotted black border is added to the image. 
+						We have also added margins to the image to push the text away from the image:
+						0 px margin on the top and right side, 15 px margin on the bottom, and 20 px margin on the left side of the image.
+						</p>
+						
+						<p><img src="../logos/Firefox.png" style="float: right; border: 1px dotted black; margin: 0px 0px 15px 15px;" width="100" height="140">
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						</p>
+						
+					</div>
+				</article>
+				
+				<p class="redZone" style="border: 3px silver groove;" onclick="tampilkan07()"> Sebuah iamge dengan caption yang mengapung ke kanan</p>
+				<p> Mengizinkan image dengan caption mengapung ke kanan. </p>
+				<article class="example-box sembunyikan" id="sembunyikan07">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open08">
+						
+						div {
+						<blockquote>
+							float: right; <br>
+							width: 120px; <br>
+							margin: 0 0 15px 20px; <br>
+							padding: 15px; <br>
+							border: 1px solid black; <br>
+							text-align: center;
+						</blockquote>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close08">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div {
+						<blockquote>
+							float: right; <br>
+							width: 120px; <br>
+							margin: 0 0 15px 20px; <br>
+							padding: 15px; <br>
+							border: 1px solid black; <br>
+							text-align: center;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>div</b>> 
+						<blockquote>
+						<<b>img</b> <span class="teal">src="w3css.gif" width="100" height="140"</span>><<b>br</b>>CSS is fun! 
+						</blockquote>
+						<<b>/div</b>> <br>
+						<br>
+						<<b>p</b>><br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						<<b>/p</b>> <br> <br>
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan08()" class="exbutton">Klik disini</button>
+					<button onclick="buka08()" class="exbutton"> Open </button>
+					<button onclick="tutup08()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan08">
+					
+						<div style="float: right; width: 120px; margin: 0 0 15px 20px; padding: 15px; border: 1px solid black; text-align: center;">
+						<img src="../../Pictures/cool image.jpg" width="100" height="140"><br>CSS is fun!
+						</div>
+						
+						<p>This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						</p>
+					</div>
+				</article>
+				
+				<p class="redZone" onclick="tampilkan09()" style="border: 3px silver groove;"> Mengizinkan huruf pertama dari suatu paragraf mengapung ke kiri</p>
+				<p> Mengizinkan huruf pertama dari suatu paragraf mengapung ke kiri dan me-style huruf</p>
+				<article class="example-box sembunyikan" id="sembunyikan09">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open10">
+						
+						span {
+						<blockquote>
+							float: left; <br>
+							width: 0.7em; <br>
+							font-size: 400%; <br>
+							font-family: algerian, courier; <br>
+							line-height: 80%;
+						</blockquote>
+						} 
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close10">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						span {
+						<blockquote>
+							float: left; <br>
+							width: 0.7em; <br>
+							font-size: 400%; <br>
+							font-family: algerian, courier; <br>
+							line-height: 80%;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>p</b>><br>
+						<<b>span</b>>T<<b>/span</b>>his is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						This is some text. This is some text. This is some text. <br>
+						<<b>/p</b>> <br> 
+						<br>
+						<<b>p</b>><br>
+						Pada paragraf diatas, huruf pertama dari teks ditanamkan dalam element span. <br>
+						Element span memikiki lebar 0.7 em ukuran dari font saat ini.  <br>
+						Font-size dari element span adalah 400% (agak lebih besar) dan line-height adalah 80%. <br>
+						Font dsri huruf dalam span akan menjadi "Algerian". <br>
+						<<b>/p</b>> <br><br>
+						
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan10()" class="exbutton">Klik disini</button>
+					<button onclick="buka10()" class="exbutton"> Open </button>
+					<button onclick="tutup10()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan10">
+						
+						<p>
+						<span style="float: left; width: 0.7em; font-size: 400%; font-family: algerian, courier; line-height: 80%;">T</span>his is some text.
+						This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						This is some text. This is some text. This is some text.
+						</p>
+						
+						<p>
+						Pada paragraf diatas, huruf pertama dari teks ditanamkan dalam element span. 
+						Element span memikiki lebar 0.7 em ukuran dari font saat ini. 
+						Font-size dari element span adalah 400% (agak lebih besar) dan line-height adalah 80%. 
+						Font dsri huruf dalam span akan menjadi "Algerian". 
+						</p>
+						
+					</div>
+				</article>
+				
+				<p class="redZone" style="border: 3px groove silver;" onclick="tampilkan11()"> Pembuatan horizontal menu</p>
+				<p> Gunakanlah float dengan daftar hyperlink untuk membuat horizontal menu.</p>
+				<article class="example-box sembunyikan" id="sembunyikan11">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open12">
+						
+						ul {
+						<blockquote>
+							list-style-type: none; <br>
+							margin: 0; <br>
+							padding: 0; <br>
+							overflow: hidden; <br>
+							background-color: #333;
+						</blockquote>
+						} <br>
+						<br>
+						li {
+						<blockquote>
+							float: left;
+						</blockquote>
+						} <br>
+						<br>
+						li a {
+						<blockquote>
+							display: inline-block; <br>
+							color: white; <br>
+							text-align: center; <br>
+							padding: 14px 16px; <br>
+							text-decoration: none;
+						</blockquote>
+						} <br>
+						<br>
+						li a:hover {
+						<blockquote>
+							background-color: #111; 
+						</blockquote>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close12">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						ul {
+						<blockquote>
+							list-style-type: none; <br>
+							margin: 0; <br>
+							padding: 0; <br>
+							overflow: hidden; <br>
+							background-color: #333;
+						</blockquote>
+						} <br>
+						<br>
+						li {
+						<blockquote>
+							float: left;
+						</blockquote>
+						} <br>
+						<br>
+						li a {
+						<blockquote>
+							display: inline-block; <br>
+							color: white; <br>
+							text-align: center; <br>
+							padding: 14px 16px; <br>
+							text-decoration: none;
+						</blockquote>
+						} <br>
+						<br>
+						li a:hover {
+						<blockquote>
+							background-color: #111; 
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>ul</b>>
+						<blockquote>
+							<<b>li</b>><<b>a</b> <span class="teal">class="active" href="#home"</span>>Home<<b>/a</b>><<b>/li</b>> <br>
+							<<b>li</b>><<b>a</b> <span class="teal">href="#news"</span>>News<<b>/a</b>><<b>/li</b>> <br>
+							<<b>li</b>><<b>a</b> <span class="teal">href="#contact"</span>>Contact<<b>/a</b>><<b>/li</b>> <br>
+							<<b>li</b>><<b>a</b> <span class="teal">href="#about"</span>>About<<b>/a</b>><<b>/li</b>> 
+						</blockquote>
+						<<b>/ul</b>> <br><br>
+						
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan12()" class="exbutton">Klik disini</button>
+					<button onclick="buka12()" class="exbutton"> Open </button>
+					<button onclick="tutup12()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan12">
+					
+						<ul class="unordered">
+							<li><a class="active" href="#home">Home</a></li>
+							<li><a href="#news">News</a></li>
+							<li><a href="#contact">Contact</a></li>
+							<li><a href="#about">About</a></li>
+						</ul>
+						
+						div.container {
+						<blockquote>
+							width: 100%; <br>
+							margin: 0px; <br>
+							border: 1px solid gray; <br>
+							line-height: 150%;
+						</blockquote>
+						} <br>
+						<br>
+						div.header, div.footer {
+						<blockquote>
+							padding: 0.5em; <br>
+							color: white; <br>
+							background-color: gray; <br>
+							clear: left;
+						</blockquote>
+						} <br>
+						<br>
+						h1.header {
+						<blockquote>
+							padding: 0; <br>
+							margin: 0;
+						</blockquote>
+						} <br>
+						<br>
+						div.left {
+						<blockquote>
+							float: left; <br>
+							width: 160px; <br>
+							margin: 0; <br>
+							padding: 1em;
+						</blockquote>
+						} <br>
+						<br>
+						div.content { 
+						<blockquote>
+							margin-left: 190px; <br>
+							border-left: 1px solid gray; <br>
+							padding: 1em;
+						</blockquote>
+						} <br>
+						
+					</div>
+				</article>
+				
+				<p class="redZone" style="birder silver groove" onclick="tampilkan13()"> Pembuatan homepage tanpa tabel</p>
+				<p> Gunakanlah float untuk membuat homepage dengan header, footer, left content dan main content. </p>
+				<article class="example-box sembunyikan" id="sembunyikan13">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open14">
+						
+						div.container {
+						<blockquote>
+							width: 100%; <br>
+							margin: 0px; <br>
+							border: 1px solid gray; <br>
+							line-height: 150%;
+						</blockquote>
+						} <br>
+						<br>
+						div.header, div.footer {
+						<blockquote>
+							padding: 0.5em; <br>
+							color: white; <br>
+							background-color: gray; <br>
+							clear: left;
+						</blockquote>
+						} <br>
+						<br>
+						h1.header {
+						<blockquote>
+							padding: 0; <br>
+							margin: 0;
+						</blockquote>
+						} <br>
+						<br>
+						div.left {
+						<blockquote>
+							float: left; <br>
+							width: 160px; <br>
+							margin: 0; <br>
+							padding: 1em;
+						</blockquote>
+						} <br>
+						<br>
+						div.content { 
+						<blockquote>
+							margin-left: 190px; <br>
+							border-left: 1px solid gray; <br>
+							padding: 1em;
+						</blockquote>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close14">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>div</b> <span class="teal">class="container"</span>>
+						<blockquote>
+							<<b>div</b> <span class="teal">class="header"</span>><<b>h1</b> <span class="teal">class="header"</span>>W3Schools.com<<b>/h1</b>><<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="left"</span>><<b>p</b>>"Never increase, beyond what is necessary, the number of entities required to explain anything." William of Ockham (1285-1349)<<b>/p</b>><<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="content"</span>>
+							<blockquote>
+								<<b>h2</b>>Free Web Building Tutorials<<b>/h2</b>> <br>
+								<<b>p</b>>At W3Schools you will find all the Web-building tutorials you need.<<b>/p</b>> <br>
+								<<b>p</b>>W3Schools.com - The largest Web Developers' Site on the internet!<<b>/p</b>> 
+							</blockquote>
+							<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">class="footer"</span>>© Copyright by Refsnes Data.<<b>/div</b>>
+						</blockquote>
+						<<b>/div</b>>
+						
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan14()" class="exbutton">Klik disini</button>
+					<button onclick="buka14()" class="exbutton"> Open </button>
+					<button onclick="tutup14()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan14">
+						
+						<div class="containery">
+							<div class="headery"><h3 class="headery" style="font-size: larger;">W3Schools.com</h3></div>
+							<div class="lefty"><p>"Never increase, beyond what is necessary, the number of entities required to explain anything." William of Ockham (1285-1349)</p></div>
+							<div class="contenty">
+								<h3>Free Web Building Tutorials</h3>
+								<p>At W3Schools you will find all the Web-building tutorials you need.</p>
+								<p>W3Schools.com - The largest Web Developers' Site on the internet!</p>
+							</div>
+							<div class="footery">© Copyright by Anonymous Data.</div>
+						</div>
+						
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>All CSS Float Properties</h2>
+				<table class="table">
+					<thead>
+						<tr>
+							<th> Properti </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> clear </td>
+							<td> Menentukan pada sisi yang mana dari sebuah element dimana floating element tidak diizinkan untuk mengapung (float) <br>
+								<b>Nilai:</b>
+								<ul>
+									<li> none - Default, Mengizinkan  floating element pada kedua sisi</li>
+									<li> left - Tidak ada floating element yang diperbolehkan pada sisi kiri</li>
+									<li> right - Tidak ada floating element yang diperbolehkan pada sisi kanan</li>
+									<li> both - Tidak ada floating element yang diperbolehkan pada salah satu dsri kedua sisi kiri dan kanan
+									<li> inherit - Mewariskan (nilai) properti ini dari parent element (elemen induk) </li>
+									<li> initial -  Mengatur (agar) properti ini menjadi nilai default.</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> float </td>
+							<td> Menentukan apakah iya atau tidak suatu element harus mengapung (float) <br>
+								<b>Nilai:</b>
+								<ul>
+									<li> none - Element tidak diapungkan (not floated), dan akan ditampilkan hanya dimana element terjadi dalsm teks. Ini merupakan nilai default </li>
+									<li> left - Element mengapung ke kiri </li>
+									<li> right - Element mengapung ke kanan </li>
+									<li> inherit - Mewariskan (nilai) properti ini dari parent element (elemen induk) </li>
+									<li> initial -  Mengatur (agar) properti ini menjadi nilai default.</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> overflow </td>
+							<td> Menentukan apa yang terjadi jika konten melebihi batas (overflow) box element <br>
+								<b>Nilai:</b>
+								<ul>
+									<li> visible - nilai default. Konten tidak di-clip dan ini mungkin menyumbang keluar content box </li>
+									<li> hidden - Konten di-clip dan tidak ada scrolling mechanim yang disediakan </li>
+									<li> scroll - Konten di-clip dan ada scrolling mechanism yang disediakan </li>
+									<li> auto - Harus meyebabkan ada scrolling mechanism yang disediakan </li>
+									<li> inherit - Mewariskan (nilai) properti ini dari parent element (elemen induk) </li>
+									<li> initial -  Mengatur (agar) properti ini menjadi nilai default.</li>
+								</ul>
+							</td> 
+						</tr>
+						<tr>
+							<td>overflow-x</td>	
+							<td>Menentukan apa yang dilakukan dengan tepi kiri/kanan dari kontent jika ia melebihi batas area konten element <br>
+								<b>Nilai:</b>
+								<ul>
+									<li> visible - nilai default. Konten tidak di-clip dan ini mungkin menyumbang keluar content box </li>
+									<li> hidden - Konten di-clip dan tidak ada scrolling mechanim yang disediakan </li>
+									<li> scroll - Konten di-clip dan ada scrolling mechanism yang disediakan </li>
+									<li> auto - Harus meyebabkan ada scrolling mechanism yang disediakan </li>
+									<li> inherit - Mewariskan (nilai) properti ini dari parent element (elemen induk) </li>
+									<li> initial -  Mengatur (agar) properti ini menjadi nilai default.</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>overflow-y</td>
+							<td>Menentukan apa yang dilakukan dengan tepi atas/bawah dari kontent jika ia melebihi batas area konten element <br>
+								<b>Nilai:</b>
+								<ul>
+									<li> visible - nilai default. Konten tidak di-clip dan ini mungkin menyumbang keluar content box </li>
+									<li> hidden - Konten di-clip dan tidak ada scrolling mechanim yang disediakan </li>
+									<li> scroll - Konten di-clip dan ada scrolling mechanism yang disediakan </li>
+									<li> auto - Harus meyebabkan ada scrolling mechanism yang disediakan </li>
+									<li> inherit - Mewariskan (nilai) properti ini dari parent element (elemen induk) </li>
+									<li> initial -  Mengatur (agar) properti ini menjadi nilai default.</li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS position.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS inline-block.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+<style type="text/css">
+/* Properti clear*/
+.div1 {
+	float: left;
+	width: 100px;
+	height: 50px;
+	margin: 10px;
+	border: 3px solid #73AD21;
+}
+
+.div2 {
+	border: 1px solid red;
+}
+
+
+.div3 {
+	float: left;
+	width: 100px;
+	height: 50px;
+	margin: 10px;
+	border: 3px solid #73AD21;
+}
+
+.div4 {
+	border: 1px solid red;
+	clear: left;
+}
+
+/* prefix hack */
+div.border {
+border: 3px solid #73AD21;
+} 
+
+.img1 {
+float: right;
+} 
+
+.clearfix {
+overflow: auto;
+} 
+
+.img2 {
+float: right;
+} 
+
+/* Contoh 4 - Membua web layout*/
+.hyperlink {
+    float: left; 
+    width: 200px; 
+    border: 3px solid #73AD21;
+} 
+
+.sesi {
+    margin-left: 206px; 
+    border: 3px solid red;
+}
+
+/* Horizontal menu*/
+
+ul.unordered {
+	list-style-type: none; 
+	margin: 0; 
+	padding: 0; 
+	overflow: hidden; 
+	background-color: #333;
+} 
+
+.unordered  li {
+	float: left;
+} 
+
+.unordered li a {
+	display: inline-block; 
+	color: white; 
+	text-align: center; 
+	padding: 14px 16px; 
+	text-decoration: none;
+} 
+
+.unordered li a:hover {
+	background-color: #111;
+} 
+
+/**/
+div.containery {
+width: 100%; 
+margin: 0px; 
+border: 1px solid gray; 
+line-height: 150%;
+} 
+
+div.headery, div.footery {
+padding: 0.5em; 
+color: white; 
+background-color: gray; 
+clear: left;
+} 
+
+h1.headery {
+padding: 0; 
+margin: 0;
+} 
+
+div.lefty {
+float: left; 
+width: 160px; 
+margin: 0; 
+padding: 1em;
+} 
+
+div.contenty {
+margin-left: 190px; 
+border-left: 1px solid gray; 
+padding: 1em;
+} 
+
+.table td:first-child {
+	vertical-align:top;
+}
+</style>
+</body>
+</html>

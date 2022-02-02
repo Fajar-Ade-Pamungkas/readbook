@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS References | CSS Aural  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="../tutorial.css">
+<link rel="stylesheet" type="text/css" href="../style.css">
+<script type="text/javascript" src="../buka.js"></script>
+<script type="text/javascript" src="../../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../.,/HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+.table tr:hover i{
+	color:gray;
+}
+.table td {
+	vertical-align:top;
+}
+h1, h2, h3, h4{
+voice-family: male; 
+richness: 80; 
+}
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Aural Reference </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> Aural Style Sheets </h2>
+				<p> Aural style sheet menggunakan sebuah kombinasi dari perpaduan bicara dan efek suara untuk membuat pengguna mendengar informasi, pengganti dari informasi bacaan.</p>
+				<p> Penyajian aural bisa digunakan:</p>
+				
+				<ul>
+					<li>Oleh orang tuna netra</li>
+					<li>Untuk membantu para pengguna untuk belajar membaca</li>
+					<li>Untuk membantu para pengguna yang memikiki masalah membaca</li>
+					<li>Untuk home entertaiment</li>
+					<li>Dalam mobil</li>
+					<li>Oleh komunitas-komunitas print-impaired</li>
+				</ul>
+				
+				<p>Penyajian aural mengubah dokumen menjadi teks penjelasan dan umpan ini untuk screen reader (sebuah program yang membaca semua karakter pada layar).</p>
+				<p> Sebuah contoh dari Aural style sheet:</p>
+				
+				<article class="simple-example">
+					h1, h2, h3, h4{
+						<blockquote>
+						voice-family: male; <br>
+						richness: 80; <br>
+						cue-before: url("beep.au");
+						</blockquote>
+					}
+				</article>
+				
+				<p> Contoh diatas akan membuat speech synthesizer memutar suara, lalu membicarakan (mengeja) headers dalam setiap rich male voice.</p>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS Aural Reference</h2>
+				<p> Kolom "CSS" mengindikasikan di CSS versi yang mana properti didefinisikan (CSS1 atau CSS2).</p>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th> Properti </th>
+							<th> Deskripsi </th>
+							<th> Nilai </th>
+							<th> CSS </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> azimuth </td>
+							<td> Mengatur dimana suara (sound) harus datang </td>
+							<td>
+								<i>angle/sudut</i> <br>
+								left-side <br>
+								far-left <br>
+								left <br>
+								center-left <br>
+								center <br>
+								center-right <br>
+								right <br>
+								far-right <br>
+								far-aside <br>
+								leftwards <br>
+								rightwards <br>
+							</td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> cue </td>
+							<td> Mengatur properti <b>cue</b> (isyarat/petunjuk) dalam satu deklarasi </td>
+							<td>
+								<i>cue-before</i> <br>
+								<i>cue-after</i>
+							</td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> cue-after </td>
+							<td> Menentukan suara untuk dimainkan setelah pembicaraan/pembacaan sebuah konten element </td>
+							<td>
+								none <br>
+								<i>url</i>
+							</td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> cue-before </td>
+							<td> Menentukan suara untuk dimainkan sebelum pembicaraan/pembacaan sebuah konten element </td>
+							<td>
+								none <br>
+								<i>url</i>
+							</td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> elevation </td>
+							<td> Mengatur dimana suara harus datang </td>
+							<td>
+								<i>angle/sudut</i> <br>
+								below <br>
+								level <br>
+								above <br>
+								higher <br>
+								lower 
+							</td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> pause </td>
+							<td> Mengatur properti <b>pause</b> (penjedaan) dalam satu deklarasi  </td>
+							<td>
+								<i>pause-before</i> <br>
+								<i>pause-after</i>
+							</td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> pause-after </td>
+							<td> Menentukan sebuah penjedaan (pause) suara setelah pembicaraan/pembacaan suatu konten element  </td>
+							<td>
+								<i>time</i> <br>
+								% <br>
+							</td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> pause-before </td>
+							<td> Menentukan sebuah penjedaan (pause) suara sebelum pembicaraan/pembacaan suatu konten element  </td>
+							<td>
+								<i>time</i> <br>
+								% <br>
+							</td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> pitch </td>
+							<td> Menentukan suara percakapan </td>
+							<td> 
+								<i>frequency</i> <br>
+								x-low <br>
+								low <br>
+								high <br>
+								x-high <br>
+							</td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> pitch-range </td>
+							<td> Menentukan variasi/perbedaan pada suara percakapan. (monotone voice atau animated voice?) </td>
+							<td> <i>number</i> </td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> play-during </td>
+							<td> Menentukan suara yang dimainkan selama pembacaan konten element </td>
+							<td>  
+								auto <br>
+								none <br>
+								<i>url</i> <br>
+								mix <br>
+								repeat 
+							</td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> richness </td>
+							<td> Menentukan richness (kesempurnaan/kesuburan) dari suara percakapan. (Rich voice atau thin voice?) </td>
+							<td> <i>number</i> </td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> speak </td>
+							<td> Menentukan apakah konten akan menyumbang secara aural </td>
+							<td>
+								normal <br>
+								none <br>
+								spell-out
+							</td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> speak-header </td>
+							<td> Menentukan bagaimana cara untuk mengatasi table headers. Haruskah headers dibacakan sebelum setiap cel, atau sebelum sebuah cell hanya dengan sebuah header yang berbeda daripada cell sebelumnya   </td>
+							<td> 
+								always <br>
+								once 
+							</td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> speak-numeral </td>
+							<td> Menentukan bagaimana untuk mengatakan numbers </td>
+							<td> 
+								digits <br>
+								continuous
+							</td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> speak-punctuation </td>
+							<td> Menentukan bagaimana (cara) untuk membaca karakter tanda baca (punctuation characters) </td>
+							<td>
+								none <br>
+								code 
+							</td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> speech-rate </td>
+							<td> Menentukan kecepatan dari pembacaan number </td>
+							<td>
+								x-slow <br>
+								slow <br>
+								medium <br>
+								fast <br>
+								x-fast <br>
+								faster <br>
+								slower
+							</td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> stress </td>
+							<td> Menentuksn "stress" dalam suara pembacaan </td>
+							<td> <i>number</i> </td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> voice-family </td>
+							<td> Menentukan voice family dari pembacaan </td>
+							<td>
+								<i>specific-voice</i> <br>
+								<i>generic-voice</i>
+							</td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> volume </td>
+							<td> Menentukan volumen dari pembacaan </td>
+							<td> 
+								<i>number</i>  <br>
+								% <br>
+								silent <br>
+								x-soft <br>
+								soft <br>
+								medium <br>
+								loud <br>
+								x-loud
+							</td>
+							<td> 2 </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS functions.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS web safe fonts.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | JavaScript | BOM cookies</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="javaScript.js"></script>
+<script type="text/javascript" src="javaScript2.js"></script>
+<script type="text/javascript" src="javaScript3.js"></script>
+</head>
+<body onload="checkCookie()">
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical"> <!--open link-->
+		<button onclick="openMenu()" id="menu">Open Menu</button>
+		<button onclick="closeMenu()" id="menu">Close Menu</button>
+		
+		<div id="vertical">
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch()"> JavaScript Tutorial</button>
+			<div class="drop-content" id="myDropdown">
+			<input type="text" class="myInput" id="myInput" placeholder="Cari" onkeyup="filterFunction()"/>
+			<ol>
+				<a href="js home.html"><li> Home </li></a>
+				<a href="js introduction.html"><li> Introduction </li></a>
+				<a href="js where to.html"><li> Where To </li></a>
+				<a href="js output.html"><li> Output </li></a>
+				<a href="js syntax.html"><li> Syntax </li></a>
+				<a href="js statements.html" ><li> Statements </li></a>
+				<a href="js comments.html" ><li> Comments </li></a>
+				<a href="js variables.html"><li> Variable </li></a>
+				<a href="js operators.html"><li> Operators </li></a>
+				<a href="js arithmetic.html"><li> Arithmetic </li></a>
+				<a href="js assignment.html"><li> Assignment </li></a>
+				<a href="js data types.html"><li> Data Types </li></a>
+				<a href="js functions.html"><li> Functions </li></a>
+				<a href="js objects.html"><li> Objects </li></a>
+				<a href="js scope.html"><li> Scope </li></a>
+				<a href="js events.html"><li> Events </li></a>
+				<a href="js strings.html"><li> string </li></a>
+				<a href="js string methods.html"><li> Strings Method </li></a>
+				<a href="js numbers.html"><li> Numbers </li></a>
+				<a href="js number methods.html"><li> Number Methods </li></a>
+				<a href="js math.html"><li> Math </li></a>
+				<a href="js random.html" ><li> Math Random </li></a>
+				<a href="js dates.html"><li> Dates </li></a>
+				<a href="js date formats.html" ><li> Date Formats </li></a>
+				<a href="js date methods.html" ><li> Date Methods </li></a>
+				<a href="js get date methods.html" ><li> Date get Methods </li></a>
+				<a href="js set date methods.html" ><li> Date Set Methods </li></a>
+				<a href="js arrays.html"><li> Arrays </li></a>
+				<a href="js array methods.html" ><li> Array Methods </li></a>
+				<a href="js array sort.html"><li> Array Sort </li></a>
+				<a href="js array iteration.html"><li> Array Iteration </li></a>
+				<a href="js booleans.html" ><li> boolean </li></a>
+				<a href="js comparisons.html" ><li> Comparisons </li></a>
+				<a href="js conditions.html" ><li>Conditions</li></a>
+				<a href="js switch.html" ><li>Switch </li></a>
+				<a href="js loop for.html"><li> Loop For </li></a>
+				<a href="js loop while.html" ><li>Loop while</li></a>
+				<a href="js break.html" ><li>Break</li></a>
+				<a href="js type conversion.html" ><li> Types conversion</li></a>
+				<a href="js bitwise.html" ><li> Bitwise </li></a>
+				<a href="js RegExp.html" ><li>RegExp</li></a>
+				<a href="js errors.html" ><li>Errors </li></a>
+				<a href="js debugging.html"><li>Debugging </li></a>
+				<a href="js hoisting.html" ><li>Hoisting</li></a>
+				<a href="js strict mode.html"><li>Strict mode</li></a>
+				<a href="js this keyword.html" ><li> this Keyword </li></a>
+				<a href="js let.html" ><li> Let </li></a>
+				<a href="js const.html" ><li> Const </li></a>
+				<a href="js style guide.html" ><li>Style guide</li></a>
+				<a href="js best practices.html" ><li>best practices </li></a>
+				<a href="js mistakes.html"><li> Mistakes </li></a>
+				<a href="js performance.html" ><li>Performance</li></a>
+				<a href="js reserved words.html" ><li>Reserved words</li></a>
+				<a href="js versions.html" ><li> Versions </li></a>
+				<a href="js version ES5.html" ><li class="redZone"> Version ES5 </li></a>
+				<a href="js version ES6.html" ><li class="redZone"> Version ES6 </li></a>
+				<a href="js JSON.html"><li>JSON</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch2()"> JavaScript Formulir</button>
+			<div class="drop-content" id="myDropdown2">
+			<input type="text" class="myInput" id="myInput2" placeholder="Cari" onkeyup="filterFunction2()"/>
+			<ol>
+				<a href="forms validation.html" ><li>Forms Validation</li></a>
+				<a href="forms API.html" ><li class="redZone">Forms API</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch3()"> JavaScript Object</button>
+			<div class="drop-content" id="myDropdown3">
+			<input type="text" class="myInput" id="myInput3" placeholder="Cari" onkeyup="filterFunction3()"/>
+			<ol>
+				<a href="object definitions.html" ><li>Object Definitions</li></a>
+				<a href="object properties.html" ><li>Object Properties</li></a>
+				<a href="object methods.html"><li class="redZone">Object Methods</li></a>
+				<a href="object accessors.html" ><li>Object accessors</li></a>
+				<a href="object constructors.html" ><li>Object constructor</li></a>
+				<a href="object prototypes.html" ><li>Object Prototypes</li></a>
+				<a href="object ECMAScript5.html" ><li class="redZone">Object ECMAScript5</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch4()"> JavaScript Function</button>
+			<div class="drop-content" id="myDropdown4">
+			<input type="text" class="myInput" id="myInput4" placeholder="Cari" onkeyup="filterFunction4()"/>
+			<ol>
+				<a href="funtion definitions.html" ><li>Function Definitions</li></a>
+				<a href="function parameters.html" ><li>Function Parameters</li></a>
+				<a href="function invocation.html" ><li>Function Invocation</li></a>
+				<a href="function closures.html" ><li>Function Closures</li></a>
+				<a href="function apply.html" ><li class="redZone">Function Apply</li></a>
+				<a href="function call.html" ><li>Function Call</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch5()">  JavaScript HMTL DOM </button>
+			<div class="drop-content" id="myDropdown5">
+			<input type="text" class="myInput" id="myInput5" placeholder="Cari" onkeyup="filterFunction5()"/>
+			<ol>
+				<a href="DOM intro.html" ><li> DOM Introduction </li></a>
+				<a href="DOM methods.html" ><li> DOM Methods </li></a>
+				<a href="DOM document.html" ><li> DOM Documents</li></a>
+				<a href="DOM elements.html" ><li> DOM Elements  </li></a>
+				<a href="DOM HTML.html" ><li> DOM HTML</li></a>
+				<a href="DOM CSS.html" ><li> DOM CSS  </li></a>
+				<a href="DOM animations.html" ><li> DOM Animations </li></a>
+				<a href="DOM events.html" ><li> DOM Events </li></a>
+				<a href="DOM eventListener.html" ><li> DOM EventListener </li></a>
+				<a href="DOM navigation.html" ><li> DOM Navigation </li></a>
+				<a href="DOM nodes.html" ><li> DOM Nodes </li></a>
+				<a href="DOM nodelist.html" ><li> DOM Nodelist </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch6()"> JavaScript Browser BOM </button>
+			<div class="drop-content" id="myDropdown6">
+			<input type="text" class="myInput" id="myInput6" placeholder="Cari" onkeyup="filterFunction6()"/>
+			<ol>
+				<a href="BOM window.html" ><li> Window </li></a>
+				<a href="BOM screen.html" ><li> Screen </li></a>
+				<a href="BOM location.html" ><li> Location </li></a>
+				<a href="BOM history.html" ><li> History  </li></a>
+				<a href="BOM navigator.html" ><li> Navigator </li></a>
+				<a href="BOM popup alert.html" ><li> Popup Alert </li></a>
+				<a href="BOM timing.html" ><li> Timing </li></a>
+				<a href="BOM cookies.html" ><li> Cookies </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch7()">JavaScript AJAX</button>
+			<div class="drop-content" id="myDropdown7">
+			<input type="text" class="myInput" id="myInput7" placeholder="Cari" onkeyup="filterFunction7()"/>
+			<ol>
+				<a href="AJAX intro.html" ><li> AJAX Introduction</li></a>
+				<a href="AJAX XMLHttpRequest.html" ><li> AJAX XMLHttpRequest </li></a>
+				<a href="AJAX request.html" ><li> AJAX Request </li></a>
+				<a href="AJAX respone.html" ><li class="redZone"> AJAX Response </li></a>
+				<a href="AJAX XML file.html" ><li> AJAX XML File</li></a>
+				<a href="AJAX PHP.html" ><li> AJAX PHP </li></a>
+				<a href="AJAX ASP.html" ><li> AJAX ASP </li></a>
+				<a href="AJAX database.html" ><li> AJAX Database </li></a>
+				<a href="AJAX XML applications.html" ><li> AJAX XML Application </li></a>
+				<a href="AJAX examples.html" ><li> AJAX Example </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch8()">JavaScript JSON</button>
+			<div class="drop-content" id="myDropdown8">
+			<input type="text" class="myInput" id="myInput8" placeholder="Cari" onkeyup="filterFunction8()"/>
+			<ol>
+				<a href="JSON intro.html" ><li class="redZone"> JSON Introduction</li></a>
+				<a href="JSON syntax.html" ><li class="redZone"> JSON Syntax </li></a>
+				<a href="JSON vs XML.html" ><li class="redZone"> JSON vs XML </li></a>
+				<a href="JSON data types.html" ><li class="redZone"> JSON Data Types </li></a>
+				<a href="JSON parse.html" ><li class="redZone"> JSON parse </li></a>
+				<a href="JSON stringify.html" ><li class="redZone"> JSON Stringify</li></a>
+				<a href="JSON objects.html" ><li class="redZone"> JSON Objects </li></a>
+				<a href="JSON arrays.html" ><li class="redZone"> JSON Arrays </li></a>
+				<a href="JSON PHP.html" ><li class="redZone"> JSON PHP </li></a>
+				<a href="JSON HTML.html" ><li class="redZone"> JSON HTML </li></a>
+				<a href="JSON JSONP.html" ><li class="redZone"> JSON JSONP </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch9()">JavaScript Reference</button>
+			<div class="drop-content" id="myDropdown9">
+			<input type="text" class="myInput" id="myInput9" placeholder="Cari" onkeyup="filterFunction9()"/>
+			<ol>
+				<li> <p> JavaScript References </p> </li>
+				<a href="JavaScript references/overview.html" > <li> Overview </li> </a>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch11()">JavaScript</button>
+					<div class="drop-content" id="myDropdown11">
+					<input type="text" class="myInput" id="myInput11" placeholder="Cari" onkeyup="filterFunction11()"/>
+					<ol>
+						<a href="JavaScript references/string reference.html" ><li>String Reference </li></a>
+						<a href="JavaScript references/number reference.html" ><li>Number Reference </li></a>
+						<a href="JavaScript references/operator reference.html" ><li>Operator Reference </li></a>
+						<a href="JavaScript references/statement reference.html" ><li>Statement Reference </li></a>
+						<a href="JavaScript references/math reference.html" ><li>Math Reference </li></a>
+						<a href="JavaScript references/date reference.html" ><li>Date Reference </li></a>
+						<a href="JavaScript references/array reference.html" ><li> Array Reference </li></a>
+						<a href="JavaScript references/boolean reference.html" ><li> Boolean Reference </li></a>
+						<a href="JavaScript references/RegExp reference.html" ><li> RegExp Reference </li></a>
+						<a href="JavaScript references/global reference.html" ><li> Global Reference </li></a>
+						<a href="JavaScript references/conversion reference.html" ><li> Conversion Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()">Browser Object Model (BOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="JavaScript references/BOM window reference.html" ><li> BOM Window Reference </li></a>
+						<a href="JavaScript references/BOM navigator reference.html" ><li> BOM Navigator Reference </li></a>
+						<a href="JavaScript references/BOM screen reference.html" ><li> BOM screen Reference </li></a>
+						<a href="JavaScript references/BOM history reference.html" ><li> BOM History Reference </li></a>
+						<a href="JavaScript references/BOM location reference.html" ><li> BOM Location Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()"> HTML Document Object Model (DOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="JavaScript references/DOM document reference.html" ><li> DOM Documents Reference </li></a>
+						<a href="JavaScript references/DOM element reference.html" ><li> DOM Elements Reference </li></a>
+						<a href="JavaScript references/DOM attribute reference.html" ><li> DOM Attributes Reference </li></a>
+						<a href="JavaScript references/DOM event reference.html" ><li> DOOM Events Reference </li></a>
+						<a href="JavaScript references/DOM style.html" ><li> DOM Style Reference </li></a>
+					</ol>
+					</div>
+			</ol>
+			</div>
+			</div>
+		</div>
+		</div>
+		</div> <!--close Link-->
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> JavaScript Cookies</h1>
+				<p>
+				Cookies membiarkan kamu untuk menyusun atau menyimpan 
+				informasi pengguna pada web page.
+				</p>
+			</div>
+			
+<section>
+			<article>
+				<h1> Apa itu Cookies? </h1>
+				<p>
+				Cookies adalah ada, yang disimpan atau disusun di small text files, pada komputer kamu. <br><br>
+				Ketika sebuah web server telah mengirim sebuah web page ke browser, Koneksi dalam keadaan mati (shut down), dan 
+				server melupakan segalanya tentang pengguna. <br><br>
+				Cookies diciptakan untuk mencegah masalah "Bagaimana untuk mengingat informasi (tentang) pengguna":
+				</p>
+				
+				<ul>
+					<li> Ketika seorang pengguna mengunjungi sebuah web page, nama si pengguna akan disimpan dalam cookie.</li>
+					<li> Dilain waktu pengguna mengunjungihalaman (page), cookie "mengingat" nama pengguna tersebut.</li>
+				</ul>
+				
+				<p> Cookies disimpan dalam sepasang <i>nama=nilai</i> seperti:</p>
+				
+				<div class="simple-example">
+					username = John Doe
+				</div>
+				<p> 
+				Ketika sebuah browser meminta sebuah web page dari server, cookie termasuk ke page yang dimuat untuk permintaan. 
+				Cara ini server mendapatkan data yang diperlukan untuk "mengingat" informasi (tentang) pengguna.
+				</p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Memciptakan sebuah Cookie dengan JavaScript  </h1>
+				<p>
+				JavaScript bisa membuat, membacw dan menghapus cookies dengan properti <b>document.cookie</b>. <br><br>
+				Dengan JavaScript, cookie bisa dibuat atau diciptakan seperti ini:
+				</p>
+				
+				<div class="simple-example">
+					document.cookie=<q class="blue">username=Fajar Ade</q>;
+				</div>
+				
+				<p> Kamu bisa juga menambahkam sebuah waktu terakhir (pada UTC time). Dengan default, cookie dihaous ketika browser ditutup:
+				
+				<div class="simple-example">
+					document.cookie=<q class="blue">username=Fajar Ade; expires=Thu, 18 Dec 2013 12:00:00 UTC</q>;
+				</div>
+				
+				<p>Dengan sebuah path parameter, kamu bisa memberitahu browser apa path (jalan setapak) cookie semestinya. Dehgan default, cookie beserta ke halaman saat ini.</p>
+				
+				<div class="simple-example">
+					document.cookie=<q class="blue">username=Fajar Ade; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/</q>;
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Membaca sebuah Cookie dengan JavaScript </h1>
+				<p>
+				Dengan JavaScript, cookies bisa dibaca seperti ini:
+				</p>
+				<article class="example-box">
+					<div class="example-content">
+					<span class="purple">var</span> x = document.cookie;
+					</div>
+				</article>
+				
+				<div class="nasehat">
+				<p>
+				document.cookie akan mengembalikan semua cookies pada satu string seperti: 
+				cookie1=nilai; cookie2=nilai; cookie3=nilai; 
+				</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Mengubah sebuah Cookie dengan JavaScript </h1>
+				<p>
+				Dengan JavaScript, kamu bisa mengubah sebuah cookie dengan cara yang sama seperti membuat cookie:
+				</p>
+				
+				<div class="simple-example">
+					document.cookie=<q class="blue"><b class="justRed">username=Fajar Ade pamungkas</b>; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/</q>;
+				</div>
+				
+				<p>
+				Cookie yang lama ditulis terlalu banyak (overwritten). <br><br>
+				contoh diatas ditambahkan nama belakang "pamungkas".
+				</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Penghapusam sebuah Cookie dengan JavaScript </h1>
+				<p>
+				 Penghapusam sebuah cookie sangat sederhana. Hanya mengatur expires parameter ke sebuah tanggal dilewati:
+				</p> 
+				
+				<div class="simple-example">
+					document.cookie=<q class="blue"><b class="justRed">username=</b>; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/</q>;
+				</div>
+				
+				<div class="nasehat">
+					<p>
+					<b>Note:</b> Bahwa kamu tidak harus menentukan sebuah nilai cookie ketika kamu menghapus sebuah cookie.
+					</p>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> String Cookie </h1>
+				<p>
+				Properti <b>document.cookie</b> terlihat seperti teks string normal. Tapi padahal tidak. <br><br>
+				Bahkan jika kamu menulis sejumlah string cookie untuk document.cookie, ketika kamu menulisnya diluar (lagi),
+				 kamu hanya bis melihat pasangan name-value dari itu.<br><br>
+				Jika kamu me-setting cookie baru, cookie yang lebih lama tidak ditulis lebih (overwritten). Cookie baru 
+				ditambahkan ke document.cookie, jadi jika kamu membaca document.cookie lagi kamu akan mendapatkan sesuatu seperti: <br><br>
+				cookie1=nilai; cookie2=nilai;
+				</p>
+				<button> Tampilkan Semua Cookie </button>
+				<button> Buat Cookie 1 </button>
+				<button> Buat Cookie 2 </button>
+				<button> Hapus Cookie 1 </button>
+				<button> Hapus Cookie 2 </button>
+				
+				<p>
+				Jika kamu mau mencari nilai dari satu cookie tertentu, kamu harus menulis sebuah  fungsi JavaScript yang mencari nilai cookie dalam string cookie.
+				</p>
+			</article>
+</section>
+<section>		
+			<article>
+				<h1> Contoh Cookie JavaScript </h1>
+				<p>
+				Pada contoh untuk mengikuti, kita akan membuat sebuah cookie yang menyimpan atau menyusun nama dari seorang pengunjung. <br><br>
+				Waktu pertama pengunjung datang di halaman yang sama, pengunjung akan diminta untuk mengisi namanya. Nama kemudian disimpan pada sebuah cookie. <br><br>
+				Waktu selanjutnya pengunjung datang pada halaman yang sama, pengunjung akan mendapatkan sebuah pesan selamat datang. <br><br>
+				Untuk contoh kita akan membuat 3 fungsi JavaScript:
+				</p>
+				
+				<ul>
+					<li> Sebuah fungsi untuk mengatur sebuah nilai cookie </li>
+					<li> Sebuah fungsi untuk mendapatkan sebuah nilai cookie </li>
+					<li> Sebuah fungsi untuk mengecek sebuah nilai cookie </li>
+				</ul>
+			</article>
+</section>			
+<section>
+			<article>
+				<h1> Fungsi untuk Mengatur Cookie </h1>
+				<p>
+				Pertama - tama, kita membuat sebuah fungsi yang menyimpan nama dari pengunjung di sebuah variabel cookie:
+				</p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+						<span>function</span> setCookie(cname, cvalue, exdays) {
+							<blockquote>
+							<span class="purple">var</span> d = new Date(); <br>
+							d.setTime(d.getTime() + (exdays*24*60*60*1000)); <br>
+							<span class="purple">var</span> expires = "expires=" + d.toUTCString(); <br>
+							document.cookie = cname + "=" + cvalue + "; " + expires;
+							</blockquote>
+						}
+					</div>
+					<h4>Output:</h4>
+					<div class="example-content">
+						<button onclick="myCookie1()">Klik disini</button>
+						<p id="myCookie1"></p>
+					</div>
+				</article>
+				
+				<h5> Penjelasan Contoh: </h5>
+				<p>
+				Parameter dari fungsi diatas adalah nama dari cookie (cname), nilai dari cookie (cname), 
+				dan nomor dari hari sampai cookie harus berakhir atau expires (exdays). <br><br>
+				Fungsi mengatur sebuah cookie dengan penambahan bersama cookie name, cookie value dan expires string.
+				</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Fungsi untuk Mendapatkan Cookie </h1>
+				<p>
+				Lalu, kita buat sebuah fungsi yang mengembalikan nilai dari sebuah cookie tertentu:
+				</p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+						<span class="purple">function</span> getCookie(cname) {
+							<blockquote>
+							<span class="purple">var</span> name = cname + "="; <br>
+							<span class="purple">var</span> ca = document.cookie.split(';'); <br>
+							<span class="purple">for</span> (<span class="purple">var</span> i = 0; i = <q lang="no"><</q>ca.length; i++) {
+								<blockquote>
+								<span class="purple">var</span> c = ca[i]; <br>
+								<span class="purple">while</span> (c.charAt(0) == ' ') c = c.substring(1); <br>
+								<span class="purple">if</span> (c.indexOf(name) == 0) <span class="purple">return</span> c.substring(name.length, c.length); <br>
+								</blockquote>
+							} <br>
+							<span class="purple">return</span> ""; 
+							</blockquote>
+						}
+					</div>
+					<h4>Output:</h4>
+					<div class="example-content">
+						<button onclick="myCookie2()">Klik disini</button>
+						<p id="myCookie2"></p>
+					</div>
+				</article>
+				
+				<h5>Fungsi Menjelaskan</h5>
+				
+				<p>
+				Membawa cookiename sebagai parameter (cname). <br><br>
+				Buatlah sebuah variabel (name) dengan teks untuk mencari (cname + "="). <br><br>
+				Splite atau robeklah document.cookie pada semicolon masuk kedalam sebuah array dengan nama <b>ca</b> (ca = document.cookie.split(";")). <br><br>
+				Loop through atau simpul sepanjang array <b>ca</b> (i = 0; i <q lang="no"><</q> ca.length; i++), dan bacalah setiap nilai c = ca[i]).<br><br>
+				Jika cookie ditemukan (c.indexOf(name) == 0), kembalikan nilai dari cookie (c.substring(name.length, c.length, c.length)). <br><br>
+				Jika cookie ditemukan, kembalikan "".
+				</p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Fungsi untuk Mengecek sebuah Cookie </h1>
+				<p>
+				Terakhir, kita buat fungsi yang mengekcek jikasebuah cookie diatur. <br><br>
+				Jika cookie diatur, cookie akan menampilakn sebuah sambutan. <br><br>
+				Jika cookie tidak diatur, cookie akan menampilkan sebuah prompt box, permintaan untuk nama dari pengguna, dan menyimpan username cookie untuk 365 hari 
+				atau selama 1 tahun, dengan pemanggilan fungsi <b>setCookie</b>: 
+				</p>
+				
+				<article class="example-box">
+					<h1> Contoh </h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+						<span class="purple">function</span> checkCookie(){
+							<blockquote>
+							<span class="purple">var</span> username = getCookie("username"); <br>
+							<span class="purple">if</span> (username != "") {
+								<blockquote>
+								<span class="purple">alert</span>("Welcome again " + username);
+								</blockquote>
+							} <span class="purple">else</span>{
+								<blockquote>
+								username = prompt("Please enter your name:", ""); <br>
+								<span class="purple">if</span> (username != "" && username != null) {
+									<blockquote>
+									setCookie("username", username, 365);
+									</blockquote>
+								}
+								</blockquote>
+							}
+							</blockquote>
+						}
+					</div>
+					<h4>Output:</h4>
+					<div class="example-content">
+						<button onclick="myCookie3()">Klik disini</button>
+						<p id="myCookie3"></p>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> All Together Now </h1>
+				
+				<article class="example-box">
+					<h1> Contoh </h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+						<span class="purple">function</span> setCookie(cname, cvalue, exdays) {
+							<blockquote>
+							<span class="purple">var</span> d = new Date(); <br>
+							d.setTime(d.getTime() + (exdays*24*60*60*100)); <br>
+							<span class="purple">var</span> expires = "expires = " + d.toUTCString(); <br>
+							document.cookie = cname + " = " cvalue + "; " + expires;
+							</blockquote>
+						} <br><br>
+						
+						<span class="purple">function</span> getCookie(cname) {
+							<blockquote>
+							<span class="purple">var</span> name = cname + " = "; <br>
+							<span class="purple">var</span> ca = document.cookie.split(";"); <br>
+							<span class="purple">for</span>(<span class="purple">var</span> i = 0; i <q lang="no"><</q> ca.length; i++ ) {
+								<blockquote>
+								<span class="purple">var</span> c = ca[i]; <br>
+								<span class="purple">while</span> (c.charAt(0) == ' ') c = c.substring(1); <br>
+								<span class="purple">if</span> (c.indexOf(name) == 0) <span class="purple">return</span> c.substring(name.length, c.length); 
+								
+								</blockquote>
+							} <br>
+							<span class="purple">return</span> "";
+							</blockquote>
+						} <br><br>
+						
+						<span class="purple">function</span> checkCookie() {
+							<blockquote>
+							<span class="purple">var</span> user = getCookie("username"); <br>
+							<span class="purple">if</span> (user != "") {
+								<blockquote>
+								<span class="purple">alert</span>("Welcome again " + user);
+								</blockquote>
+							}<span class="purple">else</span>{
+								<blockquote>
+								<span class="purple">user</span> = prompt("Please enter your name: ", ""); <br>
+								<span class="purple">if</span>(user != "" && user != null) {
+									<blockquote>
+									setCookie("username ", user, 365);
+									</blockquote>
+								}
+								</blockquote>
+							}
+							</blockquote>
+						}
+					</div>
+					<h4>Output:</h4>
+					<div class="example-content">
+						<button onclick="myCookie4()">Klik disini</button>
+						<p id="myCookie4"></p>
+					</div>
+				</article>
+				
+				<p>
+				Contoh diatas menjalankan function <b>checkCookie()</b> ketika halaman memuat.
+				</p>
+				
+				<div class="nasehat">
+					<h3>Ingatlah!!! </h3>
+					<p>
+					Untuk dapat menampilkan fungsi tersebut anda harus menyertakan 
+					<b>onload="checkCookie()"</b> didalam elemen <b><<b>body</b>></b>.
+					</p>
+				</div>
+			</article>
+</section>
+<section>
+			<article id="NoB">
+			<a href="BOM timing.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="AJAX intro.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			</article>
+			<article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+<script>
+
+function setCookie(cname,cvalue,exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function checkCookie() {
+    var user=getCookie("username");
+    if (user != "") {
+        alert("Welcome again " + user);
+    } else {
+       user = prompt("Please enter your name:","");
+       if (user != "" && user != null) {
+           setCookie("username", user, 30);
+       }
+    }
+}
+
+</script>
+</body>
+</html>

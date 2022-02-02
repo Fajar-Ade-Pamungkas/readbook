@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML paragraphs</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML Paragpraphs</h1>
+				<p>
+				Dokumen HTMK dibagi kedalam paragraf - paragraf.
+				</p>
+			</div>
+			
+<section>
+			<article>
+				<h1> HTML Paragraf </h1>
+				<p> Elemen <<b>p</b>> mendefinisikan sebuah paragraf. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+						<<b>body</b>><br> 
+							<br>
+							<<b>p</b>> This is a paragraph <<b>/p</b>> <br>
+							<<b>p</b>> This is another paragraph <<b>/p</b>> 
+							<br><br>
+						<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+				
+						
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						<p>This is a paragraph</p>
+						<p>This is another paragraph</p>
+					</div>
+				</article>
+				
+				<div class="nasehat">
+					Browser secara otomatis menambahkan beberapa spasi seeblum atau sesudah paragraf.
+				</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> HTML Display </h1>
+				<p> Kamu tidak bisa memastikan bahwa HTML akan ditampilkan. </p>
+				<p> Layar hesar atau kecil dan resized windows (window mengukur ulang) akan membuat hasi, yang herbeda. </p>
+				<p> Dengan HTML, kamu tidak bisa mengubah output (keluaran) dengsn penambahan spasi ekstra atau ekstra baris pada kode HTML kamu. </p>
+				<p> Browser akan meganti ekstra spasi dan ekstra baris ktika halaman telah ditampilkan. </p>
+				<p> Berapapun spasi dan berapapun garis baru, <b> dihitung hanya sebagai satu spasi</b>. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+						<<b>body</b>><br> 
+							<br>
+							<<b>p</b>> <br>
+							Paragraph ini <br>
+							berisikan banyak garis baru <br>
+							pada sumber kode, <br>
+							tapi browser akan <br>
+							mengabaikannya. <br>
+							<<b>/p</b>><br><br>
+							
+<pre>
+<<b>p</b>> 
+Paragraph ini 
+bersi    banyak        spasi 
+pada    sumber      kode 
+tapi        browser akan 
+mengabaikan    nya  
+<<b>/p</b>>
+</pre>
+							<br><br>
+						<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+				
+						
+					</div>
+					<button onclick="tampilkan02()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+						<p>
+						Paragraf ini 
+						berisikan banyak garis baru
+						tapi browser
+						akan mengabaikannya.
+						</p>
+						<p>
+						Paragraf    ini 
+						berisikan     banyak    spasi
+						tapi     browser
+						akan     mengabaikannya.
+						</p>
+					</div>
+				</article>
+				
+
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Jangan Lupa Diakhiri dengan End Tag </h1>
+				<p> Kebanyakan browser akan menampilkan HTML secara benar bahkan jika kamu lupa untuk mengakhirinya dengan<b>end tag</b>: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+						<<b>body</b>><br> 
+							<br>
+							<<b>p</b>> This is a paragraph  <br>
+							<<b>p</b>> This is another paragraph  <br>
+							<br>
+						<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+				
+						
+					</div>
+					<button onclick="tampilkan03()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+						<p>This is a paragraph</p>
+						<p>This is another paragraph</p>
+					</div>
+				</article>
+				
+				<p> Contoh diatas akan bekerja pada kebanyakan browser, tapi jangan percaya akan cara ini.</p>
+				<p> Kelupaan akan end tag bisa mengeluarkan hasil yang keliru bahkan error. </p>
+				
+				<div class="nasehatX">
+					Versi lebih akurat (lebih teliti) HTML, seperti XHTML, tidak mengizinkan kamu untuk men-skip atau melewati end tag. 
+				</div>
+				
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> HTML Link Break  </h1>
+				<p> HTML <<b>br</b>> element mendefinisikan sebuah garis baru (line break). </p>
+				<p> Gunakanlah <<b>br</b>> jika kamu mau garis baru (line break) tanpa memualainya dengan sebuah paragraf baru. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+						<<b>body</b>><br> 
+							<br>
+							<<b>p</b>> This is<<b>br</b>>a par<<b>br</b>>agraph  with line <<b>br</b>>break <<b>/p</b> <br>
+							<br>
+						<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+				
+						
+					</div>
+					<button onclick="tampilkan04()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+						<p>This is<br>a para<br>graph with line <br>breaks</p>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Masalah Puisi </h1>
+				<p> Puisi ini akan ditampilkan sebagai satu garis. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+						<<b>body</b>><br> 
+							<br>
+							<<b>p</b>> <br>
+							  My Bonnie lies over the ocean. <br>
+							<br>
+							  My Bonnie lies over the sea. <br>
+							<br>
+							  My Bonnie lies over the ocean. <br>
+							<br>
+							  Oh, bring back my Bonnie to me.<br>
+							<<b>/p</b>> <br>
+							<br>
+						<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+				
+						
+					</div>
+					<button onclick="tampilkan05()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+						<p>
+						  My Bonnie lies over the ocean.
+						
+						  My Bonnie lies over the sea.
+						
+						  My Bonnie lies over the ocean.
+						
+						  Oh, bring back my Bonnie to me.
+						</p>
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> HTML <<b class="blue">pre</b>> Element </h1>
+				<p> HTML <<b>pre</b>> element mendefinisikan preformatted text (teks sebelum diformat). </p>
+				<p> Teks didalam element <<b>pre</b>> akan ditampilkan dalam sebuah fixed-width font (biasanya courier), dan ia memelihara kedua dari spasi dsn line break. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+						<<b>body</b>><br> 
+							<br>
+							<<b>pre</b>> <br>
+							  My Bonnie lies over the ocean. <br>
+							<br>
+							  My Bonnie lies over the sea. <br>
+							<br>
+							  My Bonnie lies over the ocean. <br>
+							<br>
+							  Oh, bring back my Bonnie to me.<br>
+							<<b>/pre</b>> <br>
+							<br>
+						<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+				
+						
+					</div>
+					<button onclick="tampilkan06()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+<pre>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+</pre>
+					</div>
+				</article>
+			</article>
+			
+</section>
+<section>
+			<article>
+				<h1> Referensi Tag HTML </h1>
+				<p> Referensi ini berisikan informasi tambahan tentang element HTML dan attribute-attribute mereka. </p>
+				
+				<table>
+					<thead>
+						<tr>
+							<th>Tag </th>
+							<th>Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr> 
+							<td><a href="" ><<b>p</b>></a></td>
+							<td> Mendefinisikan sebuah paragraf</td>
+						</tr>
+						<tr>
+							<td><a href="" ><<b>br</b>></a></td>
+							<td> Menyisipkan sebuah satu garis baru </td>
+						</tr>
+						<tr>
+							<td><a href="" ><<b>pre</b>></a></td>
+							<td> Mendefinisikan pre-formatted text </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML headings.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML styles.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

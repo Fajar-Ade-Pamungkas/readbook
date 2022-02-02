@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML5  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch()"> HTML Tutorial</button>
+			<div class="drop-content" id="myDropdown">
+			<input type="text" class="myInput" id="myInput" placeholder="Cari" onkeyup="filterFunction()"/>
+			<ol>
+				<a href="HTML HOME.html" > <li>HOME</li> </a>
+				<a href="HTML introduction.html" > <li> Pengenalan </li> </a>
+				<a href="HTML textEditor.html" > <li> Text Editor </li> </a>
+				<a href="HTML basic.html" > <li> Dasar </li> </a>
+				<a href="HTML elements.html" > <li> Element </li> </a>
+				<a href="HTML attributes.html" > <li> Attribute </li> </a>
+				<a href="HTML headings.html" > <li> Heading </li> </a>
+				<a href="HTML paragraphs.html" > <li> Paragraf </li> </a>
+				<a href="HTML styles.html" > <li> Style </li> </a>
+				<a href="HTML formatting.html" > <li> Formatting </li> </a>
+				<a href="HTML quotations.html" > <li> Tanda Petik </li> </a>
+				<a href="HTML computercode.html" > <li> Kode Komputer </li> </a>
+				<a href="HTML comments.html" > <li> Komentar </li> </a>
+				<a href="HTML colors.html" > <li> Warna </li> </a>
+				<a href="HTML CSS.html" > <li> CSS </li> </a>
+				<a href="HTML links.html" > <li> Link </li> </a>
+				<a href="HTML images.html" > <li> Gambar </li> </a>
+				<a href="HTML tables.html" > <li> Tabel </li> </a>
+				<a href="HTML lists.html" > <li> Daftar </li> </a>
+				<a href="HTML blocks.html" > <li> Blok </li> </a>
+				<a href="HTML classes.html" > <li> Class </li> </a>
+				<a href="HTML layout.html" > <li> Layout </li> </a>
+				<a href="HTML responsive.html" > <li> Respon </li> </a>
+				<a href="HTML iframes.html" > <li class="redZone"> Iframes </li> </a>
+				<a href="HTML JavaScript.html" > <li> JavaScript </li> </a>
+				<a href="HTML head.html" > <li> Head </li> </a>
+				<a href="HTML entities.html" > <li> Entities </li> </a>
+				<a href="HTML symbols.html" > <li> Simbol </li> </a>
+				<a href="HTML charset.html" > <li> Charset </li> </a>
+				<a href="HTML URL encode.html" > <li> URL Encode </li> </a>
+				<a href="HTML XHTML.html" > <li> XHTML </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch2()"> HTML Form</button>
+			<div class="drop-content" id="myDropdown2">
+			<input type="text" class="myInput" id="myInput2" placeholder="Cari" onkeyup="filterFunction2()"/>
+			<ol>
+				<a href="HTML forms.html" > <li> Formulir </li> </a>
+				<a href="HTML form elements.html" > <li> Elemen Formulir </li> </a>
+				<a href="HTML input types.html" > <li> Tipe Input </li> </a>
+				<a href="HTML input attributes.html" > <li> Attribute input </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch3()"> HTML5 </button>
+			<div class="drop-content" id="myDropdown3">
+			<input type="text" class="myInput" id="myInput3" placeholder="Cari" onkeyup="filterFunction3()"/>
+			<ol>
+				<a href="HTML5 intro.html" > <li> Pengenalan HTM5 </li> </a>
+				<a href="HTML5 support.html" > <li> Support HTML5</li> </a>
+				<a href="HTML5 elements.html" > <li> Element HTML5 </li> </a>
+				<a href="HTML5 semantics.html" > <li> Semantik HTML5</li> </a>
+				<a href="HTML5 migration.html" > <li> Migrasi HTML5</li> </a>
+				<a href="HTML5 style guide.html" > <li> Panduan Style HTML5  </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch4()"> HTML5 Graphics </button>
+			<div class="drop-content" id="myDropdown4">
+			<input type="text" class="myInput" id="myInput4" placeholder="Cari" onkeyup="filterFunction4()"/>
+			<ol>
+				<a href="HTML5 canvas.html" > <li> Canvas </li> </a>
+				<a href="HTML5 SVG.html" > <li> SVG </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch5()"> HTML Media </button>
+			<div class="drop-content" id="myDropdown5">
+			<input type="text" class="myInput" id="myInput5" placeholder="Cari" onkeyup="filterFunction5()"/>
+			<ol>
+				<a href="HTML media.html" > <li> HTML Media </li> </a>
+				<a href="HTML5 video.html" > <li> HTML Video </li> </a>
+				<a href="HTML5 audio.html" > <li> HTML Audio </li> </a>
+				<a href="HTML plug-ins.html" > <li> HTML Plug-ins </li> </a>
+				<a href="HTML YouTube.html" > <li> HTML Youtube </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch6()"> HTML5 APIs </button>
+			<div class="drop-content" id="myDropdown6">
+			<input type="text" class="myInput" id="myInput6" placeholder="Cari" onkeyup="filterFunction6()"/>
+			<ol>
+				<a href="HTML5 geolocation.html" > <li> Geolocation </li> </a>
+				<a href="HTML5 drag or down.html" > <li> Drag or Down </li> </a>
+				<a href="HTML5 local storage.html" > <li> Penyimpanan Lokal </li> </a>
+				<a href="HTML5 application cache.html" > <li> Application Cache </li> </a>
+				<a href="HTML5 web worker.html" > <li> Web Worker </li> </a>
+				<a href="HTML5 SSE.html" > <li> SSE </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch7()"> Canvas Tutorials </button>
+			<div class="drop-content" id="myDropdown7">
+			<input type="text" class="myInput" id="myInput7" placeholder="Cari" onkeyup="filterFunction7()"/>
+			<ol>
+				<li class="title-nav"> Canvas Tutorial</li>
+				<a href="canvas HOME.html" > <li> Canvas Home </li> </a>
+				<a href="canvas drawing.html" > <li> Canvas Drawing </li> </a>
+				<a href="canvas coordinates.html" > <li> Canvas Coordinates </li> </a>
+				<a href="canvas gradients.html" > <li> Canvas Gradient </li> </a>
+				<a href="canvas text.html" > <li> Canvas Text </li> </a>
+				<a href="canvas images.html" > <li> Canvas Images </li> </a>
+			</ol>
+		
+			<ol>
+				<li class="title-nav"> Canvas Clock </li>
+				<a href="canvas clock intro.html" > <li> Clock Intorduction </li> </a>
+				<a href="canvas clock face.html" > <li> Clock Face </li> </a>
+				<a href="canvas clock numbers.html" > <li> Clock Numbers </li> </a>
+				<a href="canvas clock hands.html" > <li> Clock Hands </li> </a>
+				<a href="canvas clock start.html" > <li> Clock Start </li> </a>
+			</ol>
+		
+			<ol>
+				<li class="title-nav"> Canvas Reference </li>
+				<a href="canvas reference.html" > <li> Canvas Reference </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch8()"> SVG Tutorials</button>
+			<div class="drop-content" id="myDropdown8">
+			<input type="text" class="myInput" id="myInput8" placeholder="Cari" onkeyup="filterFunction8()"/>
+			<ol>
+				<li class="title-nav">SVG Tutorials</li>
+				<a href="SVG HOME.html" > <li> SVG Home </li> </a>
+				<a href="SVG in HTML5.html" > <li> SVG in HTML5 </li> </a>
+				<a href="SVG rectangle.html" > <li> SVG Rectangle </li> </a>
+				<a href="SVG circle.html" > <li> SVG Circle </li> </a>
+				<a href="SVG ellipse.html" > <li> SVG Ellipse </li> </a>
+				<a href="SVG line.html" > <li> SVG Line </li> </a>
+				<a href="SVG polygon.html" > <li> SVG Polygon </li> </a>
+				<a href="SVG polyline.html" > <li> SVG Polyline </li> </a>
+				<a href="SVG path.html" > <li> SVG Path </li> </a>
+				<a href="SVG text.html" > <li> SVG Text </li> </a>
+				<a href="SVG stroking.html" > <li> SVG Stroking </li> </a>
+			</ol>
+			
+			<ol>
+				<li class="title-nav">SVG Filter Introduction</li>
+				<a href="SVG filters intro.html" > <li> SVG Filter intoduction </li> </a>
+				<a href="SVG blur effects.html" > <li> SVG Blur Effects </li> </a>
+				<a href="SVG drop shadows.html" > <li> SVG Drop Shadows </li> </a>
+			</ol>
+			
+			<ol>
+				<li class="title-nav">SVG Gradient</li>
+				<a href="SVG linier.html" > <li> SVG Linier </li> </a>
+				<a href="SVG radial.html" > <li> SVG Radial </li> </a>
+			</ol>
+			
+			<ol>
+				<li class="title-nav">SVG Examples</li>
+				<a href="SVG examples.html" > <li> SVG Examples </li> </a>
+			</ol>
+			
+			<ol>
+				<li class="title-nav">SVG Reference</li>
+				<a href="SVG reference.html" > <li> SVG Reference </li> </a>
+			</ol>
+			</div>
+			</div>
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> SVG Gradients - Linear  </h1>
+				
+			</div>
+			
+			
+<section>			
+			<article>
+				<h2> SVG Gradients </h2>
+				<p> Gradient merupakan sebuah smooth transition (perpindahan lembut) dari satu warna ke warna lainnya. Pada penambahannya, beberapa transisi warna bisa diterapkan untuk element yang sama. </p>
+				<p> Disini adalah dua tipe utama dari gradients dalam SVG: </p>
+				<ul>
+					<li> Linear </li>
+					<li> Radial </li>
+				</ul>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> SVG Linear Gradient - <mark><<b>linearGradient</b>></mark> </h2>
+				<p> Element <<b>linearGradient</b>> digunakan untuk mendefinisikan sebuah linear gradient. </p>
+				<p> Element <<b>linearGradient</b>> harus dikurung (nested) dengan sebuah tag <<b>defs</b>>. Tag <<b>defs</b>> merupakan singkatan untuk definition dari element spesial (demikian sebagai gradient).</p>
+				<p> Linear gradient busa didiefinisikan sebagai horizontal, vertikal atau angular gradient: </p>
+				<ul>
+					<li> Hrozontal gradient dibuat ketika y1 dan y2 sama dan x1 dan x2 berbeda</li>
+					<li> Vertical gradient dibuat ketiks x1 dan x2 sama  dan y1 dan y2 berbeda</li>
+					<li> Angular gradient dibuat ketika x1 dan x2 berbeda dan y1 dan y2 berbeda</li>
+				</ul>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Example 1 </h2>
+				<p> Contoh 1 </p>
+				<p> Definisikan sebuah ellipse dengan sebuah horizontal linear gradient dari kuning menjadi merah: </p>
+				
+				<svg height="150" width="400">
+				  <defs>
+				    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+				      <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+				      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+				    </linearGradient>
+				  </defs>
+				  <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+				</svg>
+				
+				<p> Disini adalah kode SVG: </p>
+				<article class="example-box">
+					<h4>Contoh SVG</h4>
+					<div class="example-content">
+					
+					<<b>svg</b> <span class="teal">height="150" width="400"</span>>
+					<blockquote>
+					  <<b>defs</b>>
+						<blockquote>
+					    <<b>linearGradient</b> <span class="teal">id="grad1" x1="0%" y1="0%" x2="100%" y2="0%"</span>>
+							<blockquote>
+					      <<b>stop</b> <span class="teal">offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" </span>/> <br>
+					      <<b>stop</b> <span class="teal">offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" </span>/> 
+							</blockquote>
+					    <<b>/linearGradient</b>>
+						</blockquote>
+					  <<b>/defs</b>> <br>
+					  <<b>ellipse</b> <span class="teal">cx="200" cy="70" rx="85" ry="55" fill="url(#grad1)" </span>/>
+					</blockquote>
+					<<b>/svg</b>>
+					
+					</div>
+				</article>
+				
+				<p> <b>Penjelasan kode:</b> </p>
+				<ul>
+					<li> Attribute <b>id</b> dari tag <<b>linearGradient</b>> mendefinsikan sebuah unique name kepada gradient</li>
+					<li> Attribute <b>x1</b>, <b>x2</b>, <b>y1</b>, <b>y2</b> dari tag <<b>linearGradient</b>> mendefinisikan posisi awal dan akhir dari gradient</li>
+					<li> Jangkauan warna untuk gradient bisa ditenangkan (composed) dari dua warna atau lebih. Setiap warna ditentukan dengan tag <<b>stop</b>>. Attribute <b>offset</b> digunakan untuk mendefinisikan kemana warna gradient dimulai dan diakhiri</li>
+					<li> Attribute <b>fill</b> me-link element ellipse menjadi gradient</li>
+				</ul>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Example 2</h2>
+				<p> Definisikan sebuah ellipse dengan verticak linear gradient dari kuning menjadi merah: </p>
+				
+				<svg height="150" width="400">
+				  <defs>
+				    <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+				      <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+				      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+				    </linearGradient>
+				  </defs>
+				  <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad2)" />
+				</svg>
+				
+				<p> Disini adalah kode SVG: </p>
+				<article class="example-box">
+					<h4>Contoh SVG</h4>
+					<div class="example-content">
+					
+					<<b>svg</b> <span class="teal">height="150" width="400"</span>>
+					<blockquote>
+					  <<b>defs</b>>
+						<blockquote>
+					    <<b>linearGradient</b> <span class="teal">id="grad2" x1="0%" y1="0%" x2="0%" y2="100%"</span>>
+							<blockquote>
+					      <<b>stop</b> <span class="teal">offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" </span>/> <br>
+					      <<b>stop</b> <span class="teal">offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" </span>/> 
+							</blockquote>
+					    <<b>/linearGradient</b>>
+						</blockquote>
+					  <<b>/defs</b>> <br>
+					  <<b>ellipse</b> <span class="teal">cx="200" cy="70" rx="85" ry="55" fill="url(#grad2)" </span>/>
+					</blockquote>
+					<<b>/svg</b>>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Example 3 </h2>
+				<p> Definisikan sebuah ellipse dengan horizontal linear gradient dari kuning menjadi merah, dan tambahkan teks didalam ellipse: </p>
+				
+				<svg height="150" width="400">
+				  <defs>
+				    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+				      <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+				      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+				    </linearGradient>
+				  </defs>
+				  <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad3)" />
+				  <text fill="#ffffff" font-size="45" font-family="Verdana" x="150" y="86">
+				  SVG</text>
+				</svg>
+				
+				<p> Disini adalah kode SVG: </p>
+				<article class="example-box">
+					<h4>Contoh SVG</h4>
+					<div class="example-content">
+					
+					<<b>svg</b> <span class="teal">height="150" width="400"</span>>
+					<blockquote>
+					  <<b>defs</b>>
+						<blockquote>
+					    <<b>linearGradient</b> <span class="teal">id="grad3" x1="0%" y1="0%" x2="100%" y2="0%"</span>>
+							<blockquote>
+					      <<b>stop</b> <span class="teal">offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" </span>/> <br>
+					      <<b>stop</b> <span class="teal">offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" </span>/> 
+							</blockquote>
+					    <<b>/linearGradient</b>>
+						</blockquote>
+					  <<b>/defs</b>> <br>
+					  <<b>ellipse</b> <span class="teal">cx="200" cy="70" rx="85" ry="55" fill="url(#grad3)" </span>/> <br>
+				 	 <<b>text</b> <span class="teal">fill="#ffffff" font-size="45" font-family="Verdana" x="150" y="86"</span>>
+					</blockquote>
+					<<b>/svg</b>>
+					
+					</div>
+				</article>
+				
+				<p> <b>Penjelasan kode:</b> </p>
+				<ul>
+					<li> Element <<b>text</b>> digunakan untuk menambahkan teks</li>
+				</ul>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="SVG drop shadows.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="SVG radial.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			</article>
+			<article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML quotations</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML Quotations and Citation Elements</h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<article class="example-box">
+					<h1>Quotation / Kutipan </h1>
+					<div class="example-content">
+					<p>Here is a quote from WWF's website:</p>
+					<blockquote cite="http://www.worldwildlife.org/who/index.html">
+					For 50 years, WWF has been protecting the future of nature. 
+					The world's leading conservation organization, 
+					WWF works in 100 countries and is supported by 1.2 million members in 
+					the United States and close to 5 million globally.
+					</blockquote>
+					</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> HTML <<b class="blue">q</b>> for Short Quotations </h1>
+				<p> Elment <<b>q</b>> mendefinisikan kutipan pendek. </p>
+				<p> Browser biasanya menyisipkan tandai <b>kutip</b> disekitar element <<b>q</b>>. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+						
+						<<b>p</b>>WWF's goal is to: <<b>q</b>>Build a future where people live in harmony with nature.<<b>/q</b>><<b>/p</b>>
+					
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="simple-example sembunyikan" id="sembunyikan01">
+						<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> HTML <<b class="blue">blockquote</b>> for Long Quotations </h1>
+				<p> Element <<b>blockquote</b>> mendefinisikan sebuah sesi yang dikutip. </p>
+				<p> Browser biasanya membuat jarak (indent). </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+						
+						<<b>p</b>>Here is a quote from WWF's website:<<b>/p</b>> <br>
+						<<b>blockquote</b> <span class="teal">cite="http://www.worldwildlife.org/who/index.html"</span>> <br>
+						For 50 years, WWF has been protecting the future of nature. <br>
+						The world's leading conservation organization, <br>
+						WWF works in 100 countries and is supported by <br>
+						1.2 million members in the United States and <br>
+						close to 5 million globally. <br>
+						<<b>/blockquote</b>>
+					
+					</div>
+					<button onclick="tampilkan02()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+						<p>Here is a quote from WWF's website:</p>
+						<blockquote cite="http://www.worldwildlife.org/who/index.html">
+						For 50 years, WWF has been protecting the future of nature.
+						The world's leading conservation organization,
+						WWF works in 100 countries and is supported by
+						1.2 million members in the United States and
+						close to 5 million globally.
+						</blockquote>
+					</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> HTML <<b class="blue">abbr</b>> for Abbreviation </h1>
+				<p> Element <<b>abbr</b>> mendefinisikan sebuah <b>singkatan</b> atau <b>ringkasan</b> suatu kata. </p>
+				<p> Penandaan singkatan bisa memberikan informasi yang berguna untuk browser, translation system (sistem penterjemah) dan seacrh engine (mesin pencari). </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+						
+						<<b>p</b>>The <<b>abbr</b> <span class="teal">title="World Health Organization"</span>>WHO<<b>/abbr</b>> was founded in 1948.<<b>/p</b>>
+					
+					</div>
+					<button onclick="tampilkan03()">Output:</button>
+					<div class="simple-example sembunyikan" id="sembunyikan03">
+						<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h1>HTML <<b class="blue">address</b>> for Contact Information </h1>
+				<p> Element <b>address</b>> mendefinisikan informasi kontak (penulis atau pemilik) dsei sebuah dokumen atau artikel. </p>
+				<p> 
+				Element <<b>address</b>> biasanya ditsmpilkan dalam bentuk huruf <i>italic</i>. 
+				Kebanyakan browser akan menambahkan sebuah line break (garis baru) sesudah dan sebelum element. 
+				</p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+						
+						<<b>address</b>> <br>
+						Written by John Doe.<<b>br</b>><br> 
+						Visit us at: <<b>br</b>><br>
+						Example.com<<b>br</b>><br>
+						Box 564, Disneyland<<b>br</b>><br>
+						USA <br>
+						<<b>/address</b>>
+					
+					</div>
+					<button onclick="tampilkan04()">Output:</button>
+					<div class="simple-example sembunyikan" id="sembunyikan04">
+					
+						<address>
+						Written by John Doe.<br> 
+						Visit us at:<br>
+						Example.com<br>
+						Box 564, Disneyland<br>
+						USA
+						</address>
+						
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> HTML <<b class="blue">cite</b>> for Work Title </h1>
+				<p> Element <<b>cite</b>> mendefinisikan judul suatu pekerjaan. </p>
+				<p> Browser biasanya menampilkan element <<b>cite</b>> dalam bentuk italic.</p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+						
+						<<b>p</b>>The HTML cite element defines the title of a work.<<b>/p</b>> <br>
+						<<b>p</b>>Browsers usually display cite elements in italic.<<b>/p</b>> <br><br>
+						
+						<<b>img</b> <span class="teal">src="../../pictures/Rain Fall.png" width="220" height="277" alt="The Scream"</span>> <br>
+						<<b>p</b>><<b>cite</b>>The Scream<<b>/cite</b>> by Edvard Munch. Painted in 1893.<<b>/p</b>>
+						
+					
+					</div>
+					<button onclick="tampilkan05()">Output:</button>
+					<div class="simple-example sembunyikan" id="sembunyikan05">
+					
+						<p>The HTML cite element defines the title of a work.</p>
+						<p>Browsers usually display cite elements in italic.</p>
+						
+						<img src="../../pictures/Rain Fall.png" width="220" height="277" alt="The Scream">
+						<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+						
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1>HTML <<b class="blue">bdo</b>> for Bi-Directional Override </h1>
+				<p> Element <<b>bdo</b>> mendefinisikan bi-directional override (metode penulisan atau kanan atau kiri). </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+						
+						<<b>bdo</b> <span class="teal">dir="rtl"</span>>This text will be written from right to left<<b>/bdo</b>>
+					
+					</div>
+					<button onclick="tampilkan06()">Output:</button>
+					<div class="simple-example sembunyikan" id="sembunyikan06">
+					
+						<bdo dir="rtl">This text will be written from right to left</bdo>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> HTML Quotation and Citation Elements </h1>
+				
+				<table>
+					<thead>
+						<tr>
+							<th> Tag </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> <<b>abbr</b>></td>
+							<td> Mendefinisikan sebuah singkatan atau ringkasan kata</td>
+						</tr>
+						<tr>
+							<td> <<b>address</b>> </td>
+							<td> Mendefinisikan informasi kontak untuk penulis atau pemilik dokument. </td>
+						</tr>
+						<tr>
+							<td> <<b>bdo</b>></td>
+							<td> Mendefinisikan text direction (pengawasan teks)</td>
+						</tr>
+						<tr>
+							<td> <<b>blockquote</b>> </td>
+							<td> Mendefinisikan sebuah sesi yang dikutipkan dari sumber lain </td>
+						</tr>
+						<tr>
+							<td> <<b>cite</b>></td>
+							<td> Mendefinisikan title of a work (judul dari sebuah tugas)</td>
+						</tr>
+						<tr>
+							<td> <<b>q</b>> </td>
+							<td> Mendefinisikan sebuah kutipan pendek (short quotation)</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML formatting.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML computercode.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

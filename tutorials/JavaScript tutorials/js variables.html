@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | JavaScript | js variables</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="javaScript.js"></script>
+<script type="text/javascript" src="javaScript2.js"></script>
+<script type="text/javascript" src="javaScript3.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical"> <!--open link-->
+		<button onclick="openMenu()" id="menu">Open Menu</button>
+		<button onclick="closeMenu()" id="menu">Close Menu</button>
+		
+		<div id="vertical">
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch()"> JavaScript Tutorial</button>
+			<div class="drop-content" id="myDropdown">
+			<input type="text" class="myInput" id="myInput" placeholder="Cari" onkeyup="filterFunction()"/>
+			<ol>
+				<a href="js home.html"><li> Home </li></a>
+				<a href="js introduction.html"><li> Introduction </li></a>
+				<a href="js where to.html"><li> Where To </li></a>
+				<a href="js output.html"><li> Output </li></a>
+				<a href="js syntax.html"><li> Syntax </li></a>
+				<a href="js statements.html" ><li> Statements </li></a>
+				<a href="js comments.html" ><li> Comments </li></a>
+				<a href="js variables.html"><li> Variable </li></a>
+				<a href="js operators.html"><li> Operators </li></a>
+				<a href="js arithmetic.html"><li> Arithmetic </li></a>
+				<a href="js assignment.html"><li> Assignment </li></a>
+				<a href="js data types.html"><li> Data Types </li></a>
+				<a href="js functions.html"><li> Functions </li></a>
+				<a href="js objects.html"><li> Objects </li></a>
+				<a href="js scope.html"><li> Scope </li></a>
+				<a href="js events.html"><li> Events </li></a>
+				<a href="js strings.html"><li> string </li></a>
+				<a href="js string methods.html"><li> Strings Method </li></a>
+				<a href="js numbers.html"><li> Numbers </li></a>
+				<a href="js number methods.html"><li> Number Methods </li></a>
+				<a href="js math.html"><li> Math </li></a>
+				<a href="js random.html" ><li> Math Random </li></a>
+				<a href="js dates.html"><li> Dates </li></a>
+				<a href="js date formats.html" ><li> Date Formats </li></a>
+				<a href="js date methods.html" ><li> Date Methods </li></a>
+				<a href="js get date methods.html" ><li> Date get Methods </li></a>
+				<a href="js set date methods.html" ><li> Date Set Methods </li></a>
+				<a href="js arrays.html"><li> Arrays </li></a>
+				<a href="js array methods.html" ><li> Array Methods </li></a>
+				<a href="js array sort.html"><li> Array Sort </li></a>
+				<a href="js array iteration.html"><li> Array Iteration </li></a>
+				<a href="js booleans.html" ><li> boolean </li></a>
+				<a href="js comparisons.html" ><li> Comparisons </li></a>
+				<a href="js conditions.html" ><li>Conditions</li></a>
+				<a href="js switch.html" ><li>Switch </li></a>
+				<a href="js loop for.html"><li> Loop For </li></a>
+				<a href="js loop while.html" ><li>Loop while</li></a>
+				<a href="js break.html" ><li>Break</li></a>
+				<a href="js type conversion.html" ><li> Types conversion</li></a>
+				<a href="js bitwise.html" ><li> Bitwise </li></a>
+				<a href="js RegExp.html" ><li>RegExp</li></a>
+				<a href="js errors.html" ><li>Errors </li></a>
+				<a href="js debugging.html"><li>Debugging </li></a>
+				<a href="js hoisting.html" ><li>Hoisting</li></a>
+				<a href="js strict mode.html"><li>Strict mode</li></a>
+				<a href="js this keyword.html" ><li> this Keyword </li></a>
+				<a href="js let.html" ><li> Let </li></a>
+				<a href="js const.html" ><li> Const </li></a>
+				<a href="js style guide.html" ><li>Style guide</li></a>
+				<a href="js best practices.html" ><li>best practices </li></a>
+				<a href="js mistakes.html"><li> Mistakes </li></a>
+				<a href="js performance.html" ><li>Performance</li></a>
+				<a href="js reserved words.html" ><li>Reserved words</li></a>
+				<a href="js versions.html" ><li> Versions </li></a>
+				<a href="js version ES5.html" ><li class="redZone"> Version ES5 </li></a>
+				<a href="js version ES6.html" ><li class="redZone"> Version ES6 </li></a>
+				<a href="js JSON.html"><li>JSON</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch2()"> JavaScript Formulir</button>
+			<div class="drop-content" id="myDropdown2">
+			<input type="text" class="myInput" id="myInput2" placeholder="Cari" onkeyup="filterFunction2()"/>
+			<ol>
+				<a href="forms validation.html" ><li>Forms Validation</li></a>
+				<a href="forms API.html" ><li class="redZone">Forms API</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch3()"> JavaScript Object</button>
+			<div class="drop-content" id="myDropdown3">
+			<input type="text" class="myInput" id="myInput3" placeholder="Cari" onkeyup="filterFunction3()"/>
+			<ol>
+				<a href="object definitions.html" ><li>Object Definitions</li></a>
+				<a href="object properties.html" ><li>Object Properties</li></a>
+				<a href="object methods.html"><li class="redZone">Object Methods</li></a>
+				<a href="object accessors.html" ><li>Object accessors</li></a>
+				<a href="object constructors.html" ><li>Object constructor</li></a>
+				<a href="object prototypes.html" ><li>Object Prototypes</li></a>
+				<a href="object ECMAScript5.html" ><li class="redZone">Object ECMAScript5</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch4()"> JavaScript Function</button>
+			<div class="drop-content" id="myDropdown4">
+			<input type="text" class="myInput" id="myInput4" placeholder="Cari" onkeyup="filterFunction4()"/>
+			<ol>
+				<a href="funtion definitions.html" ><li>Function Definitions</li></a>
+				<a href="function parameters.html" ><li>Function Parameters</li></a>
+				<a href="function invocation.html" ><li>Function Invocation</li></a>
+				<a href="function closures.html" ><li>Function Closures</li></a>
+				<a href="function apply.html" ><li class="redZone">Function Apply</li></a>
+				<a href="function call.html" ><li>Function Call</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch5()">  JavaScript HMTL DOM </button>
+			<div class="drop-content" id="myDropdown5">
+			<input type="text" class="myInput" id="myInput5" placeholder="Cari" onkeyup="filterFunction5()"/>
+			<ol>
+				<a href="DOM intro.html" ><li> DOM Introduction </li></a>
+				<a href="DOM methods.html" ><li> DOM Methods </li></a>
+				<a href="DOM document.html" ><li> DOM Documents</li></a>
+				<a href="DOM elements.html" ><li> DOM Elements  </li></a>
+				<a href="DOM HTML.html" ><li> DOM HTML</li></a>
+				<a href="DOM CSS.html" ><li> DOM CSS  </li></a>
+				<a href="DOM animations.html" ><li> DOM Animations </li></a>
+				<a href="DOM events.html" ><li> DOM Events </li></a>
+				<a href="DOM eventListener.html" ><li> DOM EventListener </li></a>
+				<a href="DOM navigation.html" ><li> DOM Navigation </li></a>
+				<a href="DOM nodes.html" ><li> DOM Nodes </li></a>
+				<a href="DOM nodelist.html" ><li> DOM Nodelist </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch6()"> JavaScript Browser BOM </button>
+			<div class="drop-content" id="myDropdown6">
+			<input type="text" class="myInput" id="myInput6" placeholder="Cari" onkeyup="filterFunction6()"/>
+			<ol>
+				<a href="BOM window.html" ><li> Window </li></a>
+				<a href="BOM screen.html" ><li> Screen </li></a>
+				<a href="BOM location.html" ><li> Location </li></a>
+				<a href="BOM history.html" ><li> History  </li></a>
+				<a href="BOM navigator.html" ><li> Navigator </li></a>
+				<a href="BOM popup alert.html" ><li> Popup Alert </li></a>
+				<a href="BOM timing.html" ><li> Timing </li></a>
+				<a href="BOM cookies.html" ><li> Cookies </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch7()">JavaScript AJAX</button>
+			<div class="drop-content" id="myDropdown7">
+			<input type="text" class="myInput" id="myInput7" placeholder="Cari" onkeyup="filterFunction7()"/>
+			<ol>
+				<a href="AJAX intro.html" ><li> AJAX Introduction</li></a>
+				<a href="AJAX XMLHttpRequest.html" ><li> AJAX XMLHttpRequest </li></a>
+				<a href="AJAX request.html" ><li> AJAX Request </li></a>
+				<a href="AJAX respone.html" ><li class="redZone"> AJAX Response </li></a>
+				<a href="AJAX XML file.html" ><li> AJAX XML File</li></a>
+				<a href="AJAX PHP.html" ><li> AJAX PHP </li></a>
+				<a href="AJAX ASP.html" ><li> AJAX ASP </li></a>
+				<a href="AJAX database.html" ><li> AJAX Database </li></a>
+				<a href="AJAX XML applications.html" ><li> AJAX XML Application </li></a>
+				<a href="AJAX examples.html" ><li> AJAX Example </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch8()">JavaScript JSON</button>
+			<div class="drop-content" id="myDropdown8">
+			<input type="text" class="myInput" id="myInput8" placeholder="Cari" onkeyup="filterFunction8()"/>
+			<ol>
+				<a href="JSON intro.html" ><li class="redZone"> JSON Introduction</li></a>
+				<a href="JSON syntax.html" ><li class="redZone"> JSON Syntax </li></a>
+				<a href="JSON vs XML.html" ><li class="redZone"> JSON vs XML </li></a>
+				<a href="JSON data types.html" ><li class="redZone"> JSON Data Types </li></a>
+				<a href="JSON parse.html" ><li class="redZone"> JSON parse </li></a>
+				<a href="JSON stringify.html" ><li class="redZone"> JSON Stringify</li></a>
+				<a href="JSON objects.html" ><li class="redZone"> JSON Objects </li></a>
+				<a href="JSON arrays.html" ><li class="redZone"> JSON Arrays </li></a>
+				<a href="JSON PHP.html" ><li class="redZone"> JSON PHP </li></a>
+				<a href="JSON HTML.html" ><li class="redZone"> JSON HTML </li></a>
+				<a href="JSON JSONP.html" ><li class="redZone"> JSON JSONP </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch9()">JavaScript Reference</button>
+			<div class="drop-content" id="myDropdown9">
+			<input type="text" class="myInput" id="myInput9" placeholder="Cari" onkeyup="filterFunction9()"/>
+			<ol>
+				<li> <p> JavaScript References </p> </li>
+				<a href="JavaScript references/overview.html" > <li> Overview </li> </a>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch11()">JavaScript</button>
+					<div class="drop-content" id="myDropdown11">
+					<input type="text" class="myInput" id="myInput11" placeholder="Cari" onkeyup="filterFunction11()"/>
+					<ol>
+						<a href="JavaScript references/string reference.html" ><li>String Reference </li></a>
+						<a href="JavaScript references/number reference.html" ><li>Number Reference </li></a>
+						<a href="JavaScript references/operator reference.html" ><li>Operator Reference </li></a>
+						<a href="JavaScript references/statement reference.html" ><li>Statement Reference </li></a>
+						<a href="JavaScript references/math reference.html" ><li>Math Reference </li></a>
+						<a href="JavaScript references/date reference.html" ><li>Date Reference </li></a>
+						<a href="JavaScript references/array reference.html" ><li> Array Reference </li></a>
+						<a href="JavaScript references/boolean reference.html" ><li> Boolean Reference </li></a>
+						<a href="JavaScript references/RegExp reference.html" ><li> RegExp Reference </li></a>
+						<a href="JavaScript references/global reference.html" ><li> Global Reference </li></a>
+						<a href="JavaScript references/conversion reference.html" ><li> Conversion Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()">Browser Object Model (BOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="JavaScript references/BOM window reference.html" ><li> BOM Window Reference </li></a>
+						<a href="JavaScript references/BOM navigator reference.html" ><li> BOM Navigator Reference </li></a>
+						<a href="JavaScript references/BOM screen reference.html" ><li> BOM screen Reference </li></a>
+						<a href="JavaScript references/BOM history reference.html" ><li> BOM History Reference </li></a>
+						<a href="JavaScript references/BOM location reference.html" ><li> BOM Location Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()"> HTML Document Object Model (DOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="JavaScript references/DOM document reference.html" ><li> DOM Documents Reference </li></a>
+						<a href="JavaScript references/DOM element reference.html" ><li> DOM Elements Reference </li></a>
+						<a href="JavaScript references/DOM attribute reference.html" ><li> DOM Attributes Reference </li></a>
+						<a href="JavaScript references/DOM event reference.html" ><li> DOOM Events Reference </li></a>
+						<a href="JavaScript references/DOM style.html" ><li> DOM Style Reference </li></a>
+					</ol>
+					</div>
+			</ol>
+			</div>
+			</div>
+		</div>
+		</div>
+		</div> <!--close Link-->
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> Variabel JavaScript</h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h1> Variabel JavaScript </h1>
+				<p>
+				variabel JavaScript adalah Isian untuk menyimpan (storing) nilai data.<br><br>
+				Pada contoh ini, x, y dan z merupakan variabel.
+				</p>
+			</article>
+			
+			<!-- kotak contoh 1-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="grey"> var</span> x= 2;<br>
+			<span class="grey"> var</span> y= 8;<br>
+			<span class="grey"> var</span> z= 16;<br>
+			<span class="grey"> var</span> a= x + y + z;<br>
+			</div>
+			
+			<h4>output</h4>			
+			<div class="example-content">
+			<h1>Readbook</h1>
+			<p>
+			Nilai dari a adalah :
+			</p>
+			<button onclick="variables1()">Klik disini</button>			
+			<p id="nilaiZ"></p>
+			</div>
+			</article>
+			
+			<article>
+				<p>
+					Dari contoh diatas kita dapat mengetahui bahwa :
+				</p>
+				<ull>
+					<li>
+					variabel x memiliki nilai 2
+					</li>
+					<li>
+					variabel y memiliki nilai 8
+					</li>
+					<li>
+					variabel z memiliki nilai 16
+					</li>
+					<li>
+					Dan variabel a memiliki nilai 26 dari penjumlahan x + y + z.
+				</ul>
+			</article>
+
+			
+</section>
+
+<section>
+			<article>
+				<h1> Banyak Yang Menyukai Algebra </h1>
+				<p>
+				Algebra (aljabar) merupakan pemberian nama variabel dengan nama yang mendefinisikan suatu variabel.<br>
+				Contoh <b>price1</b>, <b>price2</b>, <b>price3</b> dan <b>total</b> (untuk menentukan hasil penjumlahan).
+				</p>
+			</article>
+			
+			<!-- kotak contoh 2-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">			
+			<span class="grey">var</span> price1 = 1000;<br>
+			<span class="grey">var</span> price2 = 2000;<br>
+			<span class="grey">var</span> price3 = 3000;<br>
+			<span class="grey">var</span> total = price1 + price2 + price3;
+			</div>
+			
+			<h4>output</h4>			
+			<div class="example-content">
+			<h1>Readbook</h1>
+			<p>
+			Harga semuanya adalah 
+			</p>
+			<button onclick="variables2()">Klik disini</button>			
+			<p id="allTotal"></p>
+			</div>
+			</article>	
+			
+			<article>
+				<p>
+				Dalam pemrograman, hanya seperti dalam algebra, kita menggunakan variabel (seperti price1) 
+				pemberian nama variabel.<br><br>
+				Dalam pemrograman, hanya seperti dalam algebra, kita menggunakan variabel untuk
+				mengekpresikan (total = price1+price2+price3).<br><br>
+				Dari contoh diatas kita bisa menghitung total menjadi 10600.
+				</p>
+			</article>
+			
+			<!--ATTENTION-->
+			<article>
+			<table class="attention">
+			<tr>
+			<td class="td-left">
+			<h1>!</h1>
+			</td>
+			<td class="td-right">
+				variabel JavaScript adalah Isian untuk menyimpan (storing) nilai data.
+			</td>
+			</tr>
+			</table>
+			</article>
+			
+</section>
+
+<section>
+			<article>
+				<h1>Pengidentifikasi JavaScript</h1>
+				<p>
+				Semua variabel JavaScript harus diidentifikasi dengan nama - nama yang unik<br><br>
+				Nama - nama yang unik ini disebut <b>identifiers</b><br><br>
+				Identifier bisa berisi singkatan (seperti x dan y), atau dengan nama yang 
+				mengidentifikasikan sebuah variabel (seperti umur, nilaiVolume, nilaiPhi).
+				Aturan umum pembangunan nama untuk variabel (unique identifiers) adalah :
+				</p>
+				<ul>
+					<li>
+					Nama variabel bisa berisi kata, number, simbol dolar, garis bawah.
+					</li>
+					<li>
+					Nama variabel harus diawali dengan sebuah kata.
+					</ul>
+					<li>
+					Nama variabel bisa juga diawali oleh $ dan _ (kita jarang menggunakan cara ini).
+					</li>
+					<li>
+					Nama sangat sensitif (antara y dan Y merupakan nama berbeda).
+					</li>
+					<li>
+					Reserved word atau nama sudah ditetapkan oleh JavaScript menjadi sebuah kata kunci
+					tidak boleh dipakai sebagai nama variabel.
+					</li>
+				</ul>
+			</article>
+
+			<!--ATTENTION-->
+			<article>
+			<table class="attention">
+			<tr>
+			<td class="td-left">
+			<h1>!</h1>
+			</td>
+			<td class="td-right">
+			JavaScript Identifier merupakan huruf sensitif (case sensitive) apabila terjadi perbedaan sedikit saja pada kata
+			akan terjadi error
+			</td>
+			</tr>
+			</table>
+			</article>
+			
+</section>
+
+<section>			
+			<article>
+				<h1> Operator Kepemilikan</h1>
+				<p>
+				Di JavaScript, tanda (=) merupakan assignment operator (operator kepemilikan) dan bukan tanda sama dengan.<br><br>
+				Berikut ini perbedaan dari algebra. Berikut tidak membuat pengertian kedalam aljabar (algebra).
+				</p>
+			</article>
+			<!-- KOTAK CONTOH 3-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<blockquote cite="http://readbook.co.id/js home.hmtl">
+			<span class="purple">var</span> x = x+7;<br>
+			</div>
+			</blockquote>
+			
+			<h4>output</h4>			
+			<div class="example-content">
+			<h1>Readbook</h1>
+			<p>
+			Nilai dari x = x+7 adalah :
+			</p>
+			<button onclick="variables3()">Klik disini</button>			
+			<p id="nilaiX"></p>
+			</div>
+			</article>
+			
+			<article>
+			<p>
+			Di JavaScript. Bagaimanapun, Operator kepemilikan membuat pengertian yang sempurna.
+			cara itu menandakan x + 7 menjadi nilai x;<br><br>
+			(cara itu menjumlahkan nilai x + 7 dan dimasukan kedalam nilai x. sehingga nilai x ditambah 5 )
+			</p>
+			</article>
+			
+			<!--ATTENTION-->
+			<article>
+			<table class="attention">
+			<tr>
+			<td class="td-left">
+			<h1>!</h1>
+			</td>
+			<td class="td-right">
+			Tanda <q>sama dengan </q> ditulis dengan tanda == dalam JavaSdript
+			</td>
+			</tr>
+			</table>
+			</article>
+
+</section>			
+<section>			
+			<article>
+			<h1>
+			Tipe - tipe Data JavaScript
+			</h1>
+			<p>
+			Variabel JavaScript bisa memasangkan nomor seperti 100 dan nilai text seperti "David Beckham".<br><br>
+			Di JavaScript nilai berupa teks disebut dengan <b>string</b>.<br>
+			JavaScript dapat menangani banyak type data. Namun untuk sekarang, hanya berfikir tentang 
+			NUMBER dan STRING<br><br>
+			String ditulis didalam tanda petik (") dan ('), sedangkan number ditulis tanpa tanda petik.<br><br>
+			Jika kamu menaruh tanda petik diantara Number maka itu akan memperlakukannya menjadi data type
+			String (nilai teks) bukan Number (nilai angka).
+			</p>
+			</article>
+			
+			<!-- KOTAK CONTOH 4-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<blockquote cite="http://readbook.co.id/js home.hmtl">
+			<span class="grey">var</span> phi = 3.14; <span class="grey" style="margin-left:70px">// data type Number</span><br>
+			<span class="grey">var</span> nama = "Fajar";<span class="grey" style="margin-left:50px">// data type String</span><br>
+			<span class="grey">var</span> hari  = "10";<span class="grey" style="margin-left:70px">// data type String</span><br>
+			</blockquote>
+			</div>			
+			
+			</article>	
+			
+</section>
+<section>			
+			<article>
+			<h1> 
+			Pengumuman (Menciptakan) Variabel JavaScript
+			</h1>
+			<p>
+			Pembuatan atau penciptaan sebuah variabel JavaScript disebut dengan <q>Pengumuman</q> sebuah variabel.<br><br>
+			Kamu mengumumkan sebuah variabel JavaScript dengan kata kunci <b>var</b>.
+			</p>
+			</article>
+			
+			<!-- kotak contoh 5-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<blockquote cite="http://readbook.co.id/js home.hmtl">
+			<span class="grey">var</span> nama;<br>
+			</blockquote>
+			</div>			
+			</article>	
+
+			<article>
+			<p>
+			Contoh diatas mengartikan bahwa variabel nama belum memiliki nilai.
+			(Secara teknik cara ini digunakan untuk variabel yang tidak <b>terdeifinisi</b> atau belum memiliki nilai)<br><br>
+			Untuk <b>memberikan</b> (assign) nilai ke Variabel gunakan tanda (=)
+			</p>
+			</article>
+			
+			<!-- kotak contoh 6-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<blockquote cite="http://readbook.co.id/js home.hmtl">
+			nama = "Fajar";<br>
+			</blockquote>
+			</div>			
+			</article>	
+			
+			<article>
+				<p>
+				Kamu juga boleh memberikan nilai saat menggunakan kata kunci <b>var</b>.
+				</p>
+			</article>
+			
+			<!-- kotak contoh 7-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<blockquote cite="http://readbook.co.id/js home.hmtl">
+			<span class="grey">var</span> nama = "Fajar";<br>
+			</blockquote>
+			</div>			
+			</article>	
+			
+			<article>
+				<p>
+				Pada contoh dibawah ini, variabel bernama carName dan diberi nilai Chorvette.<br><br>
+				Ketika kita tampilkan dengan kode HTML maka akan keluar hasilnya.
+				</p>
+			</article>
+			
+			<!--KOTAK CONTOH 8-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Readbook</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">h1</q> Readbook <q lang="code">/h1</q><br><br>
+			<q lang="code">p</q> Saya ingin memiliki mobil jenis <q lang="code">/p</q><br><br>			
+			<q lang="code">p id="namaMobil"</q> <q lang="code">/p</q><br><br>						
+			<q lang="code">script</q><br><br>
+			<blockquote cite="http://readbook.co.id/js home.hmtl">
+			<span class="grey">var</span> carName = "Corvette";<br>			
+			x=document.getElementById("namaMobil").innerHTML= carName;<br><br>	
+			</blockquote>
+			<q lang="code">/script</q><br><br><q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>			
+			</div>
+			
+			<h4>output</h4>			
+			<div class="example-content">
+			<h1>Readbook</h1>
+			<p>
+			Saya ingin memiliki mobil ?
+			</p>
+			<button onclick="variables8()">Klik disini</button>			
+			<p id="namaMobil"></p>
+			</div>
+			</article>
+			
+			<!--ATTENTION-->
+			<article>
+			<table class="attention">
+			<tr>
+			<td class="td-left">
+			<h1>!</h1>
+			</td>
+			<td class="td-right">
+			ini merupakan praktik  pemrograman yang baik mendeklarasikan semua variabel di awalan <b>script</b>.
+			</td>
+			</tr>
+			</table>
+			</article>
+</section>
+
+<section>			
+			<article>
+			<h1> 
+			Satu Pernyataan Banyak Variabel
+			</h1>
+			<p>
+			Kamu dapat mendeklarasikan banyak variabel dalam satu pernyataan (statement).<br><br>
+			Mulailah sebuah pernyataan dengan kata kunci <b>var</b> dan pisahkan tiap variabel dengan menggunakan <b>koma</b>.
+			</p>
+			</article>
+			
+			<!--KOTAK CONTOH 9-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Readbook</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">h1</q> Readbook <q lang="code">/h1</q><br><br>
+			<q lang="code">p</q> Jika aku diberi permintaan, maka aku mau<q lang="code">/p</q><br><br>			
+			<q lang="code">p id="namaMobil"</q> <q lang="code">/p</q><br><br>						
+			<q lang="code">script</q><br><br>
+			<blockquote cite="http://readbook.co.id/js home.hmtl">
+			<span class="grey">var</span> carName = "BMW", home="rumah", any="YOU";<br>			
+			x=document.getElementById("namaMobil").innerHTML= any;<br><br>	
+			</blockquote>
+			<q lang="code">/script</q><br><br><q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>			
+			</div>
+			
+			<h4>output</h4>			
+			<div class="example-content">
+			<h1>Readbook</h1>
+			<p>
+			Jika aku diberi permintaan, maka aku mau 
+			</p>
+			<button onclick="variables9()">Klik disini</button>			
+			<p id="choice"></p>
+			</div>
+			</article>
+			
+			<article>
+				<p>
+				Variabel bisa dideklarasikan di baris yang baru bila tidak mau memanjang kalimat dan membuanya mudah dibaca.
+				</p>
+			</article>
+			
+			<!--KOTAK CONTOH 10-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Readbook</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">h1</q> Readbook <q lang="code">/h1</q><br><br>
+			<q lang="code">p</q> Anatara humoris atau romantis saya lebih memilih ...<q lang="code">/p</q><br><br>			
+			<q lang="code">p id="choice2"</q> <q lang="code">/p</q><br><br>						
+			<q lang="code">script</q><br><br>
+			<blockquote cite="http://readbook.co.id/js home.hmtl">
+			<span class="grey">var</span> sifat = "humoris";<br>
+			 sifat1="romantis";<br>			
+			x=document.getElementById("choice2").innerHTML= any;<br><br>	
+			</blockquote>
+			<q lang="code">/script</q><br><br><q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>			
+			</div>
+			
+			<h4>output</h4>			
+			<div class="example-content">
+			<h1>Readbook</h1>
+			<p>
+			Humoris atau Romantis <br> Saya lebih memilih menjadi :
+			</p>
+			<button onclick="variables10()">Klik disini</button>			
+			<p id="choice2"></p>
+			</div>
+			</article>
+</section>
+<section>	
+			<article>
+				<h1>
+				Nilai = undefined (nilai belum terdefinisi.)	
+				</h1>
+				<p>
+				Dalam program komputer, variabel sering dideklarasikan tanpa nilai (undefined). Nilai bisa menjadi
+				sesuatu yang harus dieksekusi, atau nilainya akan disediakan nanti. Seperti input dari pengguna.<br><br>
+				Sebuah variabel tanpa nilai akan diidentifikasi sebagai <b>undefined</b><br><br>
+				Variabel carName memiliki nilai undefined, lalu akan dieksekusi sehinga dapat memiliki nilai.
+				</p>
+			</article>
+			
+			<!-- kotak contoh 11-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br>
+			<q lang="code">title</q>Readbook<q lang="code">/title</q><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">h1</q>JavaScript dapat mengesahkan masukan <q lang="code">/h1</q><br><br>
+			<q lang="code">p</q> Silahkan masukan nama anda. <q lang="code">/p</q><br><br>
+			<q lang="code">input type="text" id="numb"</q> <br><br>
+			<q lang="code"> button onclick="inputNumb()"</q> Submit <q lang="code">/button</q><br><br>
+			<q lang="code">p id="notiv"</q><q lang="code">/p</q>
+			<q lang="code">script</q><br><br>
+			<span class="purple">function</span> inputNumb() {<br><br>
+			<blockquote cite="http://redbook.co.id/JavaScript/js introduce.html">
+			<span class="purple">var</span> nama, text;<br><br>
+			 nama = document.getElementById("<span class="purple"> name </span>").value;<br><br>
+			<span class="purple">if </span>( nama != isNaN(nama)){<br><br>
+			text="Masukan gagal" + " " + nama;<br><br>
+			} <span class="purple">else</span>{<br><br>
+			text="Masukan berhasil";<br><br>
+			}<br><br>
+			document.getElementById("notiv").innerHTML=text;
+			</blockquote>
+			}<br><br>
+			<q lang="code">/script</q><br><br>
+			<q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>
+			
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<h1>JavaScript dapat mengesahkan sebuah masukan</h1>
+			<p> silahkan masukan nama anda</p>
+			<input type="text" id="name">
+			<button onclick="variables11()"> button </button>
+			<p id="notiv"></p>
+			</div>
+			</article>	
+</section>			
+<section>
+			<article>
+				<h1>
+				Mendeklarasikan Kembali Variabel JavaScript.
+				</h1>
+				<p>
+				Jika kamu mendeklarasikan kembali sebuah variabel, itu tidak akan
+				menghilangkan nilai nya.<br><br>
+				variabel carName masih akan bernilai <q>Volvo</q>. Setelah pengeksekusian
+				statement ini.
+				</p>
+			</article>
+			
+			<!--KOTAK CONTOH 12-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Readbook</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">h1</q> Readbook <q lang="code">/h1</q><br><br>
+			<q lang="code">p</q> Saya ingin memiliki mobil jenis <q lang="code">/p</q><br><br>			
+			<q lang="code">p id="merkMobil"</q> <q lang="code">/p</q><br><br>						
+			<q lang="code">script</q><br><br>
+			<blockquote cite="http://readbook.co.id/js home.hmtl">
+			<span class="grey">var</span> carName = "Corvette";<br>
+			carName;			
+			x=document.getElementById("namaMobil").innerHTML= carName;<br><br>	
+			</blockquote>
+			<q lang="code">/script</q><br><br><q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>			
+			</div>
+			
+			<h4>output</h4>			
+			<div class="example-content">
+			<h1>Readbook</h1>
+			<p>
+			Saya ingin memiliki mobil ?
+			</p>
+			<button onclick="variables12()">Klik disini</button>			
+			<p id="merkMobil"></p>
+			</div>
+			</article>
+			
+</section>
+<section>
+		<article>
+			<h1>
+			Aritmatika JavaScript
+			</h1>
+			<p>
+			Seperti dengan aljabar, kamu dapat melakukan penghitungan variabel javaScript 
+			dengan menggunakan operator (= + - / *)seperti pada contoh 
+			</p>
+		</article>
+		<!--KOTAK CONTOH 13-->
+		<article class="example-box">
+		<h1 style="text-align:center;"><i>Readbook</i></h1>
+		<h4>input</h4>
+		<div class="example-content">
+		
+		<q lang="code">!DOCTYPE html</q><br><br>
+		<q lang="code">html</q><br><br>
+		<q lang="code">head</q><br><br>
+		<q lang="code">/head</q><br><br>
+		<q lang="code">body</q><br><br>
+		<q lang="code">h1</q> Readbook <q lang="code">/h1</q><br><br>
+		<q lang="code">p</q> 
+			Penghitungan JavaScript 
+		<q lang="code">/p</q><br><br>			
+		<q lang="code">p id="jumlah"</q> <q lang="code">/p</q><br><br>						
+		<q lang="code">script</q><br><br>
+		<blockquote cite="http://readbook.co.id/js home.hmtl">
+		<span class="grey">var</span> x = 2 + 2 * 1 / 2 ;<br>
+		x=document.getElementById("namaMobil").innerHTML= x;<br><br>	
+		</blockquote>
+		<q lang="code">/script</q><br><br><q lang="code">/body</q><br><br>
+		<q lang="code">/html</q><br>			
+		</div>
+		
+		<h4>output</h4>			
+		<div class="example-content">
+		<h1>Readbook</h1>
+		<p>
+		Penghitungan JavaScript x = 2 + 2 - 2 * 2 / 2 adalah ....
+		</p>
+		<button onclick="variables13()">Klik disini</button>			
+		<p id="jumlah"></p>
+		</div>
+		</article>
+		
+		<article>
+			<p>
+			Kamu juga bisa menambahkan String, tapi String harus digabungkan 
+			(concatenate) (ditambahkan akhir ke akhir).<br><br>
+			</p>
+		</article>
+		<!--KOTAK CONTOH 14-->
+		<article class="example-box">
+		<h1 style="text-align:center;"><i>Readbook</i></h1>
+		<h4>input</h4>
+		<div class="example-content">
+		
+		<q lang="code">!DOCTYPE html</q><br><br>
+		<q lang="code">html</q><br><br>
+		<q lang="code">head</q><br><br>
+		<q lang="code">/head</q><br><br>
+		<q lang="code">body</q><br><br>
+		<q lang="code">h1</q> Readbook <q lang="code">/h1</q><br><br>
+		<q lang="code">p</q> 
+		Nama saya 
+		<q lang="code">/p</q><br><br>			
+		<q lang="code">p id="namaku"</q> <q lang="code">/p</q><br><br>						
+		<q lang="code">script</q><br><br>
+		<blockquote cite="http://readbook.co.id/js home.hmtl">
+		<span class="grey">var</span> myName = "Fajar" + " " + "Ade" + " " + "Pamungkas";<br>
+		x=document.getElementById("namaku").innerHTML= myName;<br><br>	
+		</blockquote>
+		<q lang="code">/script</q><br><br><q lang="code">/body</q><br><br>
+		<q lang="code">/html</q><br>			
+		</div>
+		
+		<h4>output</h4>			
+		<div class="example-content">
+		<h1>Readbook</h1>
+		<p>
+		Nama saya 
+		</p>
+		<button onclick="variables14()">Klik disini</button>			
+		<p id="namaku"></p>
+		</div>
+		</article>
+		
+		<article>
+			<p>
+			Coba juga yang ini
+			</p>
+		</article>
+		<!--KOTAK CONTOH 15-->
+		<article class="example-box">
+		<h1 style="text-align:center;"><i>Readbook</i></h1>
+		<h4>input</h4>
+		<div class="example-content">
+		
+		<q lang="code">!DOCTYPE html</q><br><br>
+		<q lang="code">html</q><br><br>
+		<q lang="code">head</q><br><br>
+		<q lang="code">/head</q><br><br>
+		<q lang="code">body</q><br><br>
+		<q lang="code">h1</q> Readbook <q lang="code">/h1</q><br><br>
+		<q lang="code">p</q> 
+		Hasilnya Adalah 
+		<q lang="code">/p</q><br><br>			
+		<q lang="code">p id="jumlahX"</q> <q lang="code">/p</q><br><br>						
+		<q lang="code">script</q><br><br>
+		<blockquote cite="http://readbook.co.id/js home.hmtl">
+		<span class="grey">var</span> x = "5" + 2 + 9;<br>
+		x=document.getElementById("jumlahX").innerHTML= x;<br><br>	
+		</blockquote>
+		<q lang="code">/script</q><br><br><q lang="code">/body</q><br><br>
+		<q lang="code">/html</q><br>			
+		</div>
+		
+		<h4>output</h4>			
+		<div class="example-content">
+		<h1>Readbook</h1>
+		<p>
+		Hasilnya adalah 
+		</p>
+		<button onclick="variables15()">Klik disini</button>			
+		<p id="jumlahX"></p>
+		</div>
+		</article>
+		
+		<!--ATTENTION-->
+		<article>
+		<table class="attention">
+		<tr>
+		<td class="td-left">
+		<h1>!</h1>
+		</td>
+		<td class="td-right">
+		Jika kamu menambahkan Number kedalam String, maka akan membuat Number menjadi sebuat String 
+		dan akan menggabungkannya bukan menjumlahkannya.
+		</td>
+		</tr>
+		</table>
+		</article>
+</section>
+<section>			
+		<article id="NoB">
+		<a href="js comments.html">
+		<div class="back">&larr; Kembali </div>
+		</a>
+		<a href="js operators.html" >
+		<div class="next">Selanjutnya &rarr;</div>
+		</a>
+		</article>
+		<article>
+		</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

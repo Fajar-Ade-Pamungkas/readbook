@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS Combinators </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+div.div01 p {
+	background-color: yellow;
+	color:black;
+}
+
+div.div02 > p {
+	background-color: yellow;
+	color:black;
+}
+
+div.div03 + p {
+	background-color: yellow;
+	color:black;
+}
+
+div.div04 ~ p {
+	background-color: yellow;
+	color:black;
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Combinators </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> CSS Combinators </h2>
+				<p> Combinator adalag sesuatu yang menjelaskan hubungan antara selector. </p>
+				<p> CSS selector bisa berisikan lebih dari satu selector. Diantara selector, kita bisa memasukan  sebuah combinator. </p>
+				<p> Ada empat combinator yang berbeda-beda dalam CSS3:</p> 
+				<ul>
+					<li> descendant selector (space) </li>
+					<li> child selector (>) </li>
+					<li> adjacent sibling selector (+) </li>
+					<li> general sibling selector (~) </li>
+				</ul>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Descendant Selector</h2>
+				<p> Descendant selector mencocokan semua element yang merupakan descendant (keturunan) dari suatu element tertentu. </p>
+				<p> Contoh berikut menyeleksi semua eleemnt <<b>p</b>> didalam element <<b>div</b>>: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						div p {
+						<blockquote>
+						    background-color: yellow;
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div p {
+						<blockquote>
+						    background-color: yellow;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>div</b>>
+						<blockquote>
+							<<b>p</b>>Paragraph 1 in the div.<<b>/p</b>> <br>
+							<<b>p</b>>Paragraph 2 in the div.<<b>/p</b>> <br>
+							<<b>span</b>><<b>p</b>>Paragraph 3 in the div.<<b>/p</b>><<b>/span</b>> 
+						</blockquote>
+						<<b>/div</b>> <br>
+						<br>
+						<<b>p</b>>Paragraph 4. Not in a div.<<b>/p</b>> <br>
+						<<b>p</b>>Paragraph 5. Not in a div.<<b>/p</b>> <br><br>
+						
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<div class="div01">
+							<p>Paragraph 1 in the div.</p>
+							<p>Paragraph 2 in the div.</p>
+							<span><p>Paragraph 3 in the div.</p></span>
+						</div>
+						
+						<p>Paragraph 4. Not in a div.</p>
+						<p>Paragraph 5. Not in a div.</p>
+					</div>
+				</article>
+				
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Child Selector</h2>
+				<p> Child selector menyeleksi semua element yang merupakan anak yang dekat (immediate children) dari suatu element tertentu: </p>
+				<p> Contoh berikut menyeleksi semua element <<b>p</b>>  yang merupakan anak yang dekat (immediate children) dari sebuah element <<b>div</b>>: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						div > p {
+						<blockquote>
+						    background-color: yellow;
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div > p {
+						<blockquote>
+						    background-color: yellow;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>div</b>>
+						<blockquote>
+							<<b>p</b>>Paragraph 1 in the div.<<b>/p</b>> <br>
+							<<b>p</b>>Paragraph 2 in the div.<<b>/p</b>> <br>
+							<<b>span</b>><<b>p</b>>Paragraph 3 in the div.<<b>/p</b>><<b>/span</b>> <<b>!-- not Child but Descendant--</b>> 
+						</blockquote>
+						<<b>/div</b>> <br>
+						<br>
+						<<b>p</b>>Paragraph 4. Not in a div.<<b>/p</b>> <br>
+						<<b>p</b>>Paragraph 5. Not in a div.<<b>/p</b>> <br><br>
+						
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<div class="div02">
+							<p>Paragraph 1 in the div.</p>
+							<p>Paragraph 2 in the div.</p>
+							<span><p>Paragraph 3 in the div.</p></span> <!-- not Child but Descendant -->
+						</div>
+						
+						<p>Paragraph 4. Not in a div.</p>
+						<p>Paragraph 5. Not in a div.</p>
+						
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Adjacent Sibling Selector</h2>
+				<p> Adjacent sibling selector menyeleksi semua element yang merupakan kakak/adik yang berdekatan (adjacent sibling) dari suatu element tertentu.</p>
+				<p> Sibling element harus memiliki element induk (parent element) yang sama dan  "adjacent" (berdekatan) berarti "immediately following" (berikut dengan segera). </p>
+				<p> Contoh berikut menyeleksi semua element <<b>p</b>> yang ditempatkan dengan segera setelah element <<b>div</b>>: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open03">
+						
+						div + p {
+						<blockquote>
+						    background-color: yellow;
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div + p {
+						<blockquote>
+						    background-color: yellow;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>div</b>>
+						<blockquote>
+							<<b>p</b>>Paragraph 1 in the div.<<b>/p</b>> <br>
+							<<b>p</b>>Paragraph 2 in the div.<<b>/p</b>> 
+						</blockquote>
+						<<b>/div</b>> <br>
+						<br>
+						<<b>p</b>>Paragraph 5. Not in a div.<<b>/p</b>> <br>
+						<<b>p</b>>Paragraph 4. Not in a div.<<b>/p</b>> <br><br>
+						
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+						<div class="div03">
+							<p>Paragraph 1 in the div.</p>
+							<p>Paragraph 2 in the div.</p>
+						</div>
+						
+						<p>Paragraph 3. Not in a div.</p>
+						<p>Paragraph 4. Not in a div.</p>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>General Sibling Selector </h2>
+				<p> General sibling selector menyeleksi semua element yang merupakan kakak/adik (sibling) dari suatu element tertentu. </p>
+				<p> Contoh berikut menyeleksi semua element <<b>p</b>> yang merupakan kakak/adik (sibling) dari element <<b>div</b>>: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open04">
+						
+						div ~ p {
+						<blockquote>
+						    background-color: yellow;
+						</blockquote>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close04">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div ~ p {
+						<blockquote>
+						    background-color: yellow;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>div</b>>
+						<blockquote>
+							<<b>p</b>>Paragraph 1 in the div.<<b>/p</b>> <br>
+							<<b>p</b>>Paragraph 2 in the div.<<b>/p</b>> <br>
+						</blockquote>
+						<<b>/div</b>> <br>
+						<br>
+						<<b>p</b>>Paragraph 3. Not in a div.<<b>/p</b>> <br>
+						<<b>p</b>>Paragraph 4. Not in a div.<<b>/p</b>> <br><br>
+						
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<button onclick="buka04()" class="exbutton"> Open </button>
+					<button onclick="tutup04()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+						<div class="div04">
+							<p>Paragraph 1 in the div.</p>
+							<p>Paragraph 2 in the div.</p>
+						</div>
+						
+						<p>Paragraph 3. Not in a div.</p>
+						<p>Paragraph 4. Not in a div.</p>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS align.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS pseudo-class.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

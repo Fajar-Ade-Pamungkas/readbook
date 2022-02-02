@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS3 Media Queries </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+#sembunyikan01  { 
+background-color: pink; 
+} 
+
+@media screen and (min-width: 480px) {
+	#sembunyikan01 {
+		background-color: lightgreen;
+	}
+}
+
+
+#sembunyikan02 .wrapper {overflow:auto;} 
+
+	#sembunyikan02 #main {margin-left: 4px;} 
+	#sembunyikan02 #leftsidebar {float: none;width: auto;} 
+	#sembunyikan02 #menulist {margin:0;padding:0;} 
+	
+	#sembunyikan02 .menuitem { 
+	background:#CDF0F6; 
+	border:1px solid #d4d4d4; 
+	border-radius:4px; 
+	list-style-type:none; 
+	margin:4px; 
+	padding:2px; 
+	} 
+
+@media screen and (min-width: 480px) {
+	#sembunyikan02 #leftsidebar {width:200px;float:left;} 
+	#sembunyikan02 #main {margin-left:216px;}
+} 
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS3 Media Queries </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2>CSS2 Introduced Media Types</h2>
+				<p> Perintah <mark>@media</mark>, diperkenalkan dalam CSS2, membuat media query memungkinkan untuk mendefinisikan perintah style yang berbeda untuk ripe media yang berbeda.</p>
+				<p> <b>Contoh:</b> Kamu bisa memiliki satu set dari perintah style untuk layar komputer, satu untuk printer, satu untuk handheld devices, satu untuk perangkat tipe TV dan sebagainya.</p>
+				<p> Sayangnya tipe media tipe ini tidak pernah mendapat banyak support oleh devices, lainnya daripada tipe media print.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 Introduces Media Queries</h2>
+				<p> Media queries bisa digunakan untuk memeriksa banyak hal, seperti:</p>
+				<ul>
+					<li>Width (lebar) dan height (tinggi) dari viewport</li>
+					<li>Width (lebar) dan height (tinggi) dari perangkat</li>
+					<li>Orientasi (adalah tablet/phone dalam mode lanscapd atau portrait?)</li>
+					<li>Resolusi</li>
+				</ul>
+				
+				<p> Penggunaan media queries merupakan sebuah teknik populer untuk pengiriman sebuah style sheet yang dikhususkan untuk tablet, iPhone dan Android.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Browser Support for User Interface</h2>
+				<p> Nomor pada tabel menentukan browser versi pertama yang mendukung secara penuh  properti ini.</p>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> Properti </td>
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> @media </td>
+							<td> 21.0 </td>
+							<td> 12.0 dan 9.0 </td>
+							<td> 3.5 </td>
+							<td> 4.0 </td>
+							<td> 9.0 </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Media Query Syntax</h2>
+				<p> Sintaksis Media Queries</p>
+				<p> Sebuah media query terdiri dari sebuah tipe media dan bisa berisikan satu atau lebih expressions, yang mana memecahkan untuk salah satu dari true atau false.</p>
+				<div class="simple-example">
+					@media not|only <i>mediatype</i> and (<i>expressions</i>) {
+						<blockquote class="grey">
+					    CSS-Code;
+						</blockquote>
+					}
+				</div>
+				
+				<p> Hasil dari query adalah true jika tipe media tertentu cocok dengan tipe dari perangkat, dokumen sedang ditampilkan aktif dan semua expressions dalam media query adalah true (benar). Ketika sebuha media query itu true, style sheet yang tersambung atau perintah style diterapkan, berikut perintah cascading (css) normal.</p>
+				<p> Tanpa kamu menggunakan operator <mark>not</mark> atau <mark>only</mark>, tipe media merupakan optional dan semua tipe akan disirat/dimaksud.</p>
+				<p> Kamu juga bisa memiliki stylesheet berbeda untuk media berbeda:</p>
+				
+				<div class="simple-example">
+					<<b>link</b> <span class="teal">rel="stylesheet" media="mediatype and|not|only (expressions)" href="print.css"</span>>
+				</div></i>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 Media Types</h2>
+				<p> Tipe-tipe Media CSS3</p>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Nilai</th>
+							<th>Deskripsi</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> all </td>
+							<td> Digunakan untuk semua tipe media perangkat </td>
+						</tr>
+						<tr>
+							<td> print </td>
+							<td> Digunakan untuk printer </td>
+						</tr>
+						<tr>
+							<td> screen </td>
+							<td> Digunakan untuk layar komputer, tablet, smartphones dan sebagainya </td>
+						</tr>
+						<tr>
+							<td> speech </td>
+							<td> Digunakan untuk screenreader (pembaca layar) yang "membaca" page out loud (halaman keluar nyaring) </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Media Queries Simple Examples</h2>
+				<p> Satu cara untuk menggunakan media queries ialah untuk memiliki sebuah bagian CSS alternatif yang benar didalam style sheet kamu.</p>
+				<p> Contoh berikut mengubah <mark>background-color</mark> menjadi lightgreen jika (lebar) viewport nya adalah 480 pixel atau lebih lebar (Jika viewport lebih kecil diabndingkan 480 pixel, menu akan berada diatas konten):</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						@media screen and (min-width: 480px) {
+							<blockquote>
+							body {
+								<blockquote>
+								background-color: lightgreen;
+								</blockquote>
+							}
+							</blockquote>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						body { <br>
+						background-color: pink; <br>
+						} <br>
+						 <br>
+						@media screen and (min-width: 480px) { 
+							<blockquote>
+							body {
+								<blockquote>
+								background-color: lightgreen;
+								</blockquote>
+							}
+							</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>h1</b>>Resize the browser window to see the effect!<<b>/h1</b>> <br>
+						<<b>p</b>>The media query will only apply if the media type is screen and the viewport is 480px wide or wider.<<b>/p</b>><br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<h3>Resize the browser window to see the effect!</h3>
+						<p>The media query will only apply if the media type is screen and the viewport is 480px wide or wider.</p>
+					
+					</div>
+				</article>
+				
+				
+				<p> Contoh berikut menampilkan sebuah menu yang akan mengapung (float) ke kiri halaman jika (lebar) viewport 480 pixel atau lebih lebar (jika viewport lebih kecil dibandingkan 480 pixel, menu akan berada diatas konten):</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						@media screen and (min-width: 480px) {
+							<blockquote>
+							#leftsidebar {width: 200px; float: left;} <br>
+							#main {margin-left:216px;}
+							</blockquote>
+						}<br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.wrapper {overflow:auto;} <br>
+						 <br>
+						#main {margin-left: 4px;} <br>
+						#leftsidebar {float: none;width: auto;} <br>
+						#menulist {margin:0;padding:0;} <br>
+						 <br>
+						.menuitem { <br>
+						background:#CDF0F6; <br>
+						border:1px solid #d4d4d4; <br>
+						border-radius:4px; <br>
+						list-style-type:none; <br>
+						margin:4px; <br>
+						padding:2px; <br>
+						} <br>
+						 <br>
+						@media screen and (min-width: 480px) {
+							<blockquote>
+							#leftsidebar {width:200px;float:left;} <br>
+							#main {margin-left:216px;}
+							</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">class="wrapper"</span>> 
+							<blockquote>
+							<<b>div</b> <span class="teal">id="leftsidebar"</span>> 
+								<blockquote>
+								<<b>ul</b> <span class="teal">id="menulist"</span>>
+									<blockquote>
+									<<b>li</b> <span class="teal">class="menuitem"</span>>Menu-item 1<<b>/li</b>> <br>
+									<<b>li</b> <span class="teal">class="menuitem"</span>>Menu-item 2<<b>/li</b>> <br>
+									<<b>li</b> <span class="teal">class="menuitem"</span>>Menu-item 3<<b>/li</b>> <br>
+									<<b>li</b> <span class="teal">class="menuitem"</span>>Menu-item 4<<b>/li</b>> <br>
+									<<b>li</b> <span class="teal">class="menuitem"</span>>Menu-item 5<<b>/li</b>>
+									</blockquote>
+								<<b>/ul</b>>
+								</blockquote>
+							<<b>/div</b>> <br>
+							<<b>div</b> <span class="teal">id="main"</span>>
+								<blockquote>
+								<<b>h1</b>>Resize the browser window to see the effect!<<b>/h1</b>> <br>
+								<<b>p</b>>This example shows a menu that will float to the left of the page 
+								if the viewport is 480 pixels wide or wider. If the viewport is less than 480 pixels, the menu will be on top of the content.<<b>/p</b>>
+								</blockquote>
+							<<b>/div</b>>
+							</blockquote>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<div class="wrapper">
+							<div id="leftsidebar">
+								<ul id="menulist">
+									<li class="menuitem">Menu-item 1</li>
+									<li class="menuitem">Menu-item 2</li>
+									<li class="menuitem">Menu-item 3</li>
+									<li class="menuitem">Menu-item 4</li>
+									<li class="menuitem">Menu-item 5</li>
+								</ul>
+							</div>
+							<div id="main">
+								<h3>Resize the browser window to see the effect!</h3>
+								<p>This example shows a menu that will float to the left of the page if the viewport is 480 pixels wide or wider. If the viewport is less than 480 pixels, the menu will be on top of the content.</p>
+							</div>
+						</div>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 @media Reference</h2>
+				<p> Untuk peninjauan yang lebih luas dari semua tipe-tipe media dan fitur-fitur/ekspresi-ekspresi, Silahkan lihatlah perintah 
+				<a href="#" target="_blank" >@media</a> pada CSS referensi kita.</p>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS3 flexbox.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS3 MQ examples.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

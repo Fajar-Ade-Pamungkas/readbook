@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML5 Drag or Drop</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+<style>
+#div1 {
+	width:128px;
+	height:128px;
+	padding:10px;
+	border:1px solid #aaaaaa;
+}
+#div2, #div3{
+	float:left; 
+	width:100px; 
+	height:35px; 
+	margin:10px;
+	padding:10px;
+	border:1px solid #aaaaaa;
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML5 Drag and Drop </h1>
+				<p> Drag and drop adalah bagian dari standar HTML5. </p>
+				Drag and drop is a part of the HTML5 standard.
+			</div>
+			
+			
+<section>			
+			<article>
+				<h2> Drag and Drop </h2>
+				<p> Drag (geser) dan drop (jatuhkan) adalah feature yang sangat umum. 
+				Ketika kamu "mengangkut" sebuah object dan menyeretnya ke lokasi yang berbeda. </p>
+				<p> Di HTML5, Drag and Drop adalah bagian dari standar, dan element apapun bisa di seret (draggable). </p>
+</section>
+<section>
+			<article>
+				<h2> Browser Support </h2>
+				<p> Nomor pada tabel menentukan browser versi pertama yang mendukung secara penuh <b>Drag</b> and <b>Drop</b>. </p>
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td class="left"> API </td>
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> <b>Drag</b> and <b>Drop</b> </td>
+							<td> 4.0 </td>
+							<td> 9.0 </td>
+							<td> 3.5 </td>
+							<td> 6.0 </td>
+							<td> 12.0 </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML Drag and Drop Example </h2>
+				<p> Contoh <b>Drag</b> dan <b>Drop</b> HTML</p>
+				<p> Contoh dibawah ini adalah sebuah contoh sederhana <b>drag</b> dan <b>drop</b>: </p>
+				
+				<article class="example-box">
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br>
+						<<b>html</b>><br>
+							<<b>head</b>><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+							<<b>style</b>>
+							#div1 {
+								<blockquote>
+								width:350px; <br>
+								height:70px; <br>
+								padding:10px; <br>
+								border:1px solid #aaaaaa;
+								</blockquote>
+							} <br>
+							<<b>/style</b>> <br>
+							<<b>script</b>>
+							<blockquote>
+							<code>function</code> allowDrop(ev) {
+							    <blockquote>ev.preventDefault();</blockquote>
+							}<br>
+							<br>
+							<code>function</code> drag(ev) {
+							    <blockquote>ev.dataTransfer.setData("text", ev.target.id);</blockquote>
+							}<br>
+							<br>
+							<code>function</code> drop(ev) {
+								<blockquote>
+							    ev.preventDefault(); <br>
+							    <code>var</code> data = ev.dataTransfer.getData("text"); <br>
+							    ev.target.appendChild(document.getElementById(data));
+								</blockquote>
+							} <br>
+							</blockquote>
+							<<b>/script</b>><br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br><br>
+							
+								<<b>div</b> <span class="teal">id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"</span>><<b>/div</b>> <br>
+								<<b>img</b> <span class="teal">id="drag1" src="img_logo.gif" draggable="true" 
+								ondragstart="drag(event)" width="336" height="69"</span>> <br><br>
+								
+							<<b>/body</b>><br>
+						<<b>/html</b>>
+						
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+							<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+							
+							<img id="drag1" src="../../Pictures/Rain Fall.png" draggable="true"
+							ondragstart="drag(event)" width="128" height="128">
+					</div>
+				</article>
+				<p> Ini mungkin terlihat rumit, tapi ayo pergi semua bagian - bagian dari event drag dan drop. </p>
+				<p class="grey"> It might seem complicated, but lets go through all the different parts of a drag and drop event. </p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Make an Element Draggable </h2>
+				<p> Buatlah sebuah element yang dapat digeser</p>
+				<p> Pertama - tama: Untuk membuah element draggable, setel attribute <b>draggable</b> menjadi <b class="justRed">true</b>: </p>
+				<div class="example-content">
+				<<b>img</b> <span class="teal">draggable="true"</span>>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>What to Drag - ondragstart and setData() </h2>
+				<p> Bagaimana untuk Menggeser - <b>ondragstart</b> dan <b>setData()</b> </p>
+				<p> Lalu tentukan apa yang harus terjadi ketika element digeser. </p>
+				<p> Pada contoh diatas, attribute <b>ondragstart</b> memanggil sebuah fungsi, <b>drag(<i>event</i>)</b>, yang menentukan bagaimana data digeser. </p>
+				<p> Metode <b>dataTransfer.setData()</b> menyetel tipe data dan nilai dsri dragged data (data yang digeser): </p>
+				
+				<div class="example-content">
+				<code>function</code> drag(ev) {
+				    <blockquote>ev.dataTransfer.setData("text", ev.target.id);</blockquote>
+				}
+				</div>
+				<p>Pada kasus ini, tipe data adalah "text" dan nilainya adalah <b>id</b> dari dragged element ("drag1"). </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Where to Drop - ondragover </h2>
+				<p> Kemana harus di taruh - <b>ondragover</b> </p>
+				<p> Event <b>ondragover</b> menentukan kemana dragged data (data yang digeser) bisa digeser.</p>
+				<p> Dengan default, data/element tidak bisa didrop (taruh) di element lainnya. Untuk mengizinkan sebuah drop, kita harus mencegah default handling dari element. </p>
+				<p> Ini dilakukan dengan pemanggilan metode <b>event.preventDefault()</b> untuk event <b>ondragover</b>: </p>
+				
+				<div class="example-content">
+				event.preventDefault()
+				</div>
+			</article>
+</section>
+<section>
+			<article>		
+				<h2>Do the Drop - ondrop </h2>
+				<p> Lakukan Drop - ondrop </p>
+				<p> Ketika dragged data ditaruh (dropped), sebuah event drop terjadi. </p>
+				<p> Pada contoh diatas, attribute <b>ondrop</b> memanggil sebuah fungsi, <b>drop(<i>event</i>)</b>: </p>
+				<div class="example-content">
+				<code>function</code> drop(ev) {
+					<blockquote>
+				    ev.preventDefault(); <br>
+				    <code>var</code> data = ev.dataTransfer.getData("text"); <br>
+				    ev.target.appendChild(document.getElementById(data));
+					</blockquote>
+				}
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Kode Menjelaskan:</h2>
+				<ul>
+					<li> Panggillah <b>preventDefault()</b> untuk mencegah browser default handling dari data (default itu terbuka seperti link pada drop)</li>
+					<li> Dapatkan dragged data dengan metode <b>dataTransfer.getData()</b>. Metode ini akan mengembalikan data apapun yang disetel menjadi tipe yang sama dalsm metode <b>setData()</b></li>
+					<li> Dragged data adalah <b>id</b> dari dragged element ("drag1") </li>
+					<li> Lampirkanlah element yang dapat digeser kedalam element drop</li>
+				</ul>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> More Examples </h2>
+				<p> <button onclick="tampilkan25()"> Drag image back and forth </button> </p>
+				<p> Bagaimana untuk drag (dan drop) sebuah gambar kembali dan seterusnya diantara dua element <<b>div</b>>. </p>
+				<article class="example-box sembunyikan" id="sembunyikan25">
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br>
+						<<b>html</b>><br>
+							<<b>head</b>><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+							<<b>style</b>> <br>
+							#div1 {
+								<blockquote>
+								width:350px; <br>
+								height:70px; <br>
+								padding:10px; <br>
+								border:1px solid #aaaaaa;
+								</blockquote>
+							} <br>
+							<<b>/style</b>>
+							<<b>script</b>>
+							<blockquote>
+							<code>function</code> allowDrop(ev) {
+							    <blockquote>ev.preventDefault();</blockquote>
+							}<br>
+							<br>
+							<code>function</code> drag(ev) {
+							    <blockquote>ev.dataTransfer.setData("text", ev.target.id);</blockquote>
+							}<br>
+							<br>
+							<code>function</code> drop(ev) {
+								<blockquote>
+							    ev.preventDefault(); <br>
+							    <code>var</code> data = ev.dataTransfer.getData("text"); <br>
+							    ev.target.appendChild(document.getElementById(data));
+								</blockquote>
+							} <br>
+							</blockquote>
+							<<b>/script</b>><br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br><br>
+							
+								<<b>div</b> <span class="teal">id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"</span>><<b>/div</b>> <br>
+								<<b>img</b> <span class="teal">id="drag1" src="img_logo.gif" draggable="true"
+								ondragstart="drag(event)" width="336" height="69"</span>> <br><br>
+								
+							<<b>/body</b>><br>
+						<<b>/html</b>>
+						
+					</div>
+					<button onclick="tampilkan02()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+						<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+						<img src="../lamborghini.jpeg" draggable="true" ondragstart="drag(event)" id="drag2" width="88" height="31">
+						</div>
+						
+						<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					</div>
+				</article>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML5 geolocation.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML5 local storage.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+
+}
+// Drop and Drag Image
+/*
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+*/
+</script>
+</body>
+</html>

@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS3 images </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+.kolom {
+	border:1px yellow solid;
+	-webkit-column-count:3;
+	-moz-column-count:3;
+	column-count:3;
+	text-align:left;
+	
+}
+
+#sembunyikan01 div { 
+-webkit-column-count: 3; /* Chrome, Safari, Opera */ 
+-moz-column-count: 3; /* Firefox */ 
+column-count: 3; 
+} 
+
+
+#sembunyikan02 div { 
+-webkit-column-count: 3; /* Chrome, Safari, Opera */ 
+-moz-column-count: 3; /* Firefox */ 
+column-count: 3; 
+-webkit-column-gap: 40px; /* Chrome, Safari, Opera */ 
+-moz-column-gap: 40px; /* Firefox */ 
+column-gap: 40px; 
+} 
+
+
+#sembunyikan03 div { 
+-webkit-column-count: 3; /* Chrome, Safari, Opera */ 
+-moz-column-count: 3; /* Firefox */ 
+column-count: 3; 
+-webkit-column-gap: 40px; /* Chrome, Safari, Opera */ 
+-moz-column-gap: 40px; /* Firefox */ 
+column-gap: 40px; 
+-webkit-column-rule-style: solid; /* Chrome, Safari, Opera */ 
+-moz-column-rule-style: solid; /* Firefox */ 
+column-rule-style: solid; 
+}
+
+
+#sembunyikan04 div { 
+-webkit-column-count: 3; /* Chrome, Safari, Opera */ 
+-moz-column-count: 3; /* Firefox */ 
+column-count: 3; 
+-webkit-column-gap: 40px; /* Chrome, Safari, Opera */ 
+-moz-column-gap: 40px; /* Firefox */ 
+column-gap: 40px; 
+-webkit-column-rule-style: solid; /* Chrome, Safari, Opera */ 
+-moz-column-rule-style: solid; /* Firefox */ 
+column-rule-style: solid; 
+-webkit-column-rule-width: 1px; /* Chrome, Safari, Opera */ 
+-moz-column-rule-width: 1px; /* Firefox */ 
+column-rule-width: 1px; 
+} 
+
+#sembunyikan05 div { 
+-webkit-column-count: 3; /* Chrome, Safari, Opera */ 
+-moz-column-count: 3; /* Firefox */ 
+column-count: 3; 
+-webkit-column-gap: 40px; /* Chrome, Safari, Opera */ 
+-moz-column-gap: 40px; /* Firefox */ 
+column-gap: 40px; 
+-webkit-column-rule-style: solid; /* Chrome, Safari, Opera */ 
+-moz-column-rule-style: solid; /* Firefox */ 
+column-rule-style: solid; 
+-webkit-column-rule-width: 1px; /* Chrome, Safari, Opera */ 
+-moz-column-rule-width: 1px; /* Firefox */ 
+column-rule-width: 1px; 
+-webkit-column-rule-color: lightblue; /* Chrome, Safari, Opera */ 
+-moz-column-rule-color: lightblue; /* Firefox */ 
+column-rule-color: lightblue; 
+} 
+
+
+#sembunyikan06 div { 
+-webkit-column-count: 3; /* Chrome, Safari, Opera */ 
+-moz-column-count: 3; /* Firefox */ 
+column-count: 3; 
+-webkit-column-gap: 40px; /* Chrome, Safari, Opera */ 
+-moz-column-gap: 40px; /* Firefox */ 
+column-gap: 40px; 
+-webkit-column-rule: 1px solid lightblue; /* Chrome, Safari, Opera */ 
+-moz-column-rule: 1px solid lightblue; /* Firefox */ 
+column-rule: 1px solid lightblue; 
+} 
+
+
+#sembunyikan07 div { 
+-webkit-column-count: 3; /* Chrome, Safari, Opera */ 
+-moz-column-count: 3; /* Firefox */ 
+column-count: 3; 
+-webkit-column-gap: 40px; /* Chrome, Safari, Opera */ 
+-moz-column-gap: 40px; /* Firefox */ 
+column-gap: 40px; 
+-webkit-column-rule: 1px solid lightblue; /* Chrome, Safari, Opera */ 
+-moz-column-rule: 1px solid lightblue; /* Firefox */ 
+column-rule: 1px solid lightblue; 
+} 
+
+#sembunyikan07 h2 { 
+-webkit-column-span: all; /* Chrome, Safari, Opera */ 
+column-span: all; 
+} 
+
+
+#sembunyikan08 div.newspaper { 
+-webkit-column-count: 3; /* Chrome, Safari, Opera */ 
+-moz-column-count: 3; /* Firefox */ 
+column-count: 3; 
+-webkit-column-width: 100px; /* Chrome, Safari, Opera */ 
+-moz-column-width:100px; /* Mozilla */
+column-width: 100px; 
+} 
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS3 Multiple Columns </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> CSS3 Multi-column Layout </h2>
+				<p> CSS3 multi-column layout memperbolehkan definisi mudah tentang multiple columns dari teks - seperti dalam koran:</p>
+				
+				<div class="kolom">
+					<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+					Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+					Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros 
+					et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta 
+					nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+					</p>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Browser Support for Animation</h2>
+				<p> Nomor pada tabel menentukan browser versi pertama yang mendukung secara penuh  properti ini.</p>
+				<p> Nomor yang diikut dengan <mark>-ms-</mark>, <mark>-webkit-</mark>, <mark>-moz-</mark> atau <mark>-o-</mark> menentukan versi pertama yang bekerja dengan awalan properti.</p>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> Properti </td>
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> column-count </td>
+							<td> 4.0 -webkit- </td>
+							<td> 12.0 dan 10.0 </td>
+							<td> 2.0 -moz- </td>
+							<td> 3.1 -webkit-</td>
+							<td> 15.0 -webkit- <br> 11.1</td>
+						</tr>
+						<tr class="center">
+							<td> column-gap </td>
+							<td> 4.0 -webkit- </td>
+							<td> 12.0 dan 10.0 </td>
+							<td> 2.0 -moz- </td>
+							<td> 3.1 -webkit-</td>
+							<td> 15.0 -webkit- <br> 11.1</td>
+						</tr>
+						<tr class="center">
+							<td> column-rule </td>
+							<td> 4.0 -webkit- </td>
+							<td> 12.0 dan 10.0 </td>
+							<td> 2.0 -moz- </td>
+							<td> 3.1 -webkit-</td>
+							<td> 15.0 -webkit- <br> 11.1 </td>
+						</tr>
+						<tr class="center">
+							<td> column-rule-color </td>
+							<td> 4.0 -webkit- </td>
+							<td> 12.0 dan 10.0 </td>
+							<td> 2.0 -moz- </td>
+							<td> 3.1 -webkit-</td>
+							<td> 15.0 -webkit- <br> 11.1</td>
+						</tr>
+						<tr class="center">
+							<td> column-rule-style </td>
+							<td> 4.0 -webkit- </td>
+							<td> 12.0 dan 10.0 </td>
+							<td> 2.0 -moz- </td>
+							<td> 3.1 -webkit-</td>
+							<td> 15.0 -webkit- <br> 11.1 </td>
+						</tr>
+						<tr class="center">
+							<td> column-rule-width </td>
+							<td> 4.0 -webkit- </td>
+							<td> 12.0 dan 10.0 </td>
+							<td> 2.0 -moz- </td>
+							<td> 3.1 -webkit-</td>
+							<td> 15.0 -webkit- <br> 11.1 </td>
+						</tr>
+						<tr class="center">
+							<td> column-width </td>
+							<td> 4.0 -webkit- </td>
+							<td> 12.0 dan 10.0 </td>
+							<td> 2.0 -moz- </td>
+							<td> 3.1 -webkit-</td>
+							<td> 15.0 -webkit- <br> 11.1 </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> 
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 Multi-column Properties</h2>
+				<p> Pada chapter ini kamu akan mempelajari tentang properti multi-column berikut:</p>
+				
+				<ul>
+					<li>column-count</li>
+					<li>column-gap</li>
+					<li>column-rule-style</li>
+					<li>column-rule-width</li>
+					<li>column-rule-color</li>
+					<li>column-rule</li>
+					<li>column-span</li>
+					<li>column-width</li>
+				</ul>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 Create Multiple Columns</h2>
+				<p> Properti <mark>column-count</mark> menentukan nomor kolom suatu elemen harus dibagi kedalamnya.</p>
+				<p> Contoh berikut akan membagi teks dalam element <<b>div</b>> kedalam 3 kolom:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						div { <br>
+						-webkit-column-count: 3; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-count: 3; <em>/* Firefox */</em> <br>
+						column-count: 3; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div.newspaper { <br>
+						-webkit-column-count: 3; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-count: 3; <em>/* Firefox */</em> <br>
+						column-count: 3; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> Internet Explorer 9, and earlier versions, does not support the column-count property.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b> <span class="teal">class="newspaper"</span>> <br>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
+						dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
+						lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit 
+						esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim 
+						qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta 
+						nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<p><b>Note:</b> Internet Explorer 9, and earlier versions, does not support the column-count property.</p>
+						
+						<div class="newspaper">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
+						dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
+						lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit 
+						esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim 
+						qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta 
+						nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+						</div>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 Specify the Gap Between Columns</h2>
+				<p> Properti <mark>column-gap</mark> menentukan gap (celah) diantara kolom.</p>
+				<p> Contoh berikut menentukan celah 40 pixel diantara kolom:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						div { <br>
+						-webkit-column-gap: 40px; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-gap: 40px; <em>/* Firefox */</em> <br>
+						column-gap: 40px; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div.newspaper { <br>
+						-webkit-column-count: 3; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-count: 3; <em>/* Firefox */</em> <br>
+						column-count: 3; <br>
+						-webkit-column-gap: 40px; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-gap: 40px; <em>/* Firefox */</em> <br>
+						column-gap: 40px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> Internet Explorer 9, and earlier versions, does not support the column-gap property.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b> <span class="teal">class="newspaper"</span>> <br>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
+						dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
+						lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit 
+						esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim 
+						qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta 
+						nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<p><b>Note:</b> Internet Explorer 9, and earlier versions, does not support the column-gap property.</p>
+						
+						<div class="newspaper">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
+						dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
+						lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit 
+						esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim 
+						qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta 
+						nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+						</div>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> CSS3 Column Rules</h2>
+				<p> Properti <mark>column-rule-style</mark> menentukan style dari rule (peraturan) diantara kolom:</p>
+				The column-rule-style property specifies the style of the rule between columns:
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open03">
+						
+						div { <br>
+						-webkit-column-rule-style: solid; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-rule-style: solid; <em>/* Firefox */</em> <br>
+						column-rule-style: solid; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div.newspaper { <br>
+						-webkit-column-count: 3; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-count: 3; <em>/* Firefox */</em> <br>
+						column-count: 3; <br>
+						-webkit-column-gap: 40px; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-gap: 40px; <em>/* Firefox */</em> <br>
+						column-gap: 40px; <br>
+						-webkit-column-rule-style: solid; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-rule-style: solid; <em>/* Firefox */</em> <br>
+						column-rule-style: solid; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> Internet Explorer 9, and earlier versions, does not support the column-rule-style property.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b> <span class="teal">class="newspaper"</span>> <br>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
+						dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
+						lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit 
+						esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim 
+						qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta 
+						nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+						<p><b>Note:</b> Internet Explorer 9, and earlier versions, does not support the column-rule-style property.</p>
+						
+						<div class="newspaper">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
+						dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
+						lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit 
+						esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim 
+						qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta 
+						nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+						</div>
+					
+					</div>
+				</article>
+				
+				<p> Properti <mark>column-rule-width</mark> menentukan ketebalan dari rule diantara kolom:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open04">
+						
+						div.newspaper { <br>
+						-webkit-column-rule-width: 1px; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-rule-width: 1px; <em>/* Firefox */</em> <br>
+						column-rule-width: 1px; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close04">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div.newspaper { <br>
+						-webkit-column-count: 3; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-count: 3; <em>/* Firefox */</em> <br>
+						column-count: 3; <br>
+						-webkit-column-gap: 40px; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-gap: 40px; <em>/* Firefox */</em> <br>
+						column-gap: 40px; <br>
+						-webkit-column-rule-style: solid; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-rule-style: solid; <em>/* Firefox */</em> <br>
+						column-rule-style: solid; <br>
+						-webkit-column-rule-width: 1px; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-rule-width: 1px; <em>/* Firefox */</em> <br>
+						column-rule-width: 1px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> Internet Explorer 9, and earlier versions, does not support the column-rule-width property.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b> <span class="teal">class="newspaper"</span>> <br>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
+						dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
+						lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit 
+						esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim 
+						qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta 
+						nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<button onclick="buka04()" class="exbutton"> Open </button>
+					<button onclick="tutup04()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+						<p><b>Note:</b> Internet Explorer 9, and earlier versions, does not support the column-rule-width property.</p>
+						
+						<div class="newspaper">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
+						dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
+						lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit 
+						esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim 
+						qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta 
+						nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+						</div>
+					
+					</div>
+				</article>
+				
+				<p> Properti <mark>column-rule-color</mark> menentukan warna dari rule diantara kolom:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open05">
+						
+						div { <br>
+						-webkit-column-rule-color: lightblue; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-rule-color: lightblue; <em>/* Firefox */</em> <br>
+						column-rule-color: lightblue; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close05">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div.newspaper { <br>
+						-webkit-column-count: 3; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-count: 3; <em>/* Firefox */</em> <br>
+						column-count: 3; <br>
+						-webkit-column-gap: 40px; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-gap: 40px; <em>/* Firefox */</em> <br>
+						column-gap: 40px; <br>
+						-webkit-column-rule-style: solid; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-rule-style: solid; <em>/* Firefox */</em> <br>
+						column-rule-style: solid; <br>
+						-webkit-column-rule-width: 1px; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-rule-width: 1px; <em>/* Firefox */</em> <br>
+						column-rule-width: 1px; <br>
+						-webkit-column-rule-color: lightblue; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-rule-color: lightblue; <em>/* Firefox */</em> <br>
+						column-rule-color: lightblue; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> Internet Explorer 9, and earlier versions, does not support the column-rule-color property.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b> <span class="teal">class="newspaper"</span>> <br>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
+						dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
+						lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit 
+						esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim 
+						qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta 
+						nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan05()" class="exbutton">Klik disini</button>
+					<button onclick="buka05()" class="exbutton"> Open </button>
+					<button onclick="tutup05()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+					
+						<p><b>Note:</b> Internet Explorer 9, and earlier versions, does not support the column-rule-color property.</p>
+						
+						<div class="newspaper">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
+						dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
+						lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit 
+						esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim 
+						qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta 
+						nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+						</div>
+					
+					</div>
+				</article>
+				
+				<p> Properti <mark>column-rule</mark> adalah sebuah shorthand property untuk pengaturan semua properti <i>column-rule-*</i> diatas.</p>
+				<p> Contoh berikut mengatur width, style dan color dari rule antara kolom:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open06">
+						
+						div { <br>
+						-webkit-column-rule: 1px solid lightblue; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-rule: 1px solid lightblue; <em>/* Firefox */</em> <br>
+						column-rule: 1px solid lightblue; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close06">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div.newspaper { <br>
+						-webkit-column-count: 3; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-count: 3; <em>/* Firefox */</em> <br>
+						column-count: 3; <br>
+						-webkit-column-gap: 40px; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-gap: 40px; <em>/* Firefox */</em> <br>
+						column-gap: 40px; <br>
+						-webkit-column-rule: 1px solid lightblue; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-rule: 1px solid lightblue; <em>/* Firefox */</em> <br>
+						column-rule: 1px solid lightblue; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> Internet Explorer 9, and earlier versions, does not support the column-rule property.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b> <span class="teal">class="newspaper"</span>> <br>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
+						dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
+						lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit 
+						esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim 
+						qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta 
+						nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan06()" class="exbutton">Klik disini</button>
+					<button onclick="buka06()" class="exbutton"> Open </button>
+					<button onclick="tutup06()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+					
+						<p><b>Note:</b> Internet Explorer 9, and earlier versions, does not support the column-rule property.</p>
+						
+						<div class="newspaper">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
+						dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
+						lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit 
+						esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim 
+						qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta 
+						nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+						</div>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Specify How Many Columns an Element Should Span</h2>
+				<p> Menentukan Berapa Banyak Kolom (dalam) sebuah Element harus di-Span</p>
+				<p> Properti <mark>column-span</mark> menentukan berapa banyak kolom sebuah element harus di-span dari satu sisi ke sisi lainnya.</p>
+				<p> Contoh berijut menentukan bahwa element <<b>h2</b>> harus me-span semua kolom dari satu sisi ke sisi lainnya:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open07">
+						
+						h2 { <br>
+						-webkit-column-span: all; <em>/* Chrome, Safari, Opera */</em> <br>
+						column-span: all; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close07">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div.newspaper { <br>
+						-webkit-column-count: 3; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-count: 3; <em>/* Firefox */</em> <br>
+						column-count: 3; <br>
+						-webkit-column-gap: 40px; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-gap: 40px; <em>/* Firefox */</em> <br>
+						column-gap: 40px; <br>
+						-webkit-column-rule: 1px solid lightblue; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-rule: 1px solid lightblue; <em>/* Firefox */</em> <br>
+						column-rule: 1px solid lightblue; <br>
+						} <br>
+						 <br>
+						h2 { <br>
+						-webkit-column-span: all; <em>/* Chrome, Safari, Opera */</em> <br>
+						column-span: all; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> Firefox and Internet Explorer 9 (and earlier versions) do not support the column-span property.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b> <span class="teal">class="newspaper"</span>> <br>
+						<<b>h2</b>>Lorem Ipsum Dolor Sit Amet<<b>/h2</b>> <br>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
+						aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip 
+						ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum 
+						dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit 
+						augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id 
+						quod mazim placerat facer possim assum. <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan07()" class="exbutton">Klik disini</button>
+					<button onclick="buka07()" class="exbutton"> Open </button>
+					<button onclick="tutup07()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan07">
+					
+						<p><b>Note:</b> Firefox and Internet Explorer 9 (and earlier versions) do not support the column-span property.</p>
+						
+						<div class="newspaper">
+						<h2>Lorem Ipsum Dolor Sit Amet</h2>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
+						aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip 
+						ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum 
+						dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit 
+						augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id 
+						quod mazim placerat facer possim assum.
+						</div>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Specify The Column Width</h2>
+				<p> Menentukan Lebar Kolom </p>
+				<p> Properti <mark>column-width</mark> menentukan sebuah anjuran, lebar yang sesuai untuk kolom.</p>
+				<p> Contoh berikut menentukan bahwa anjuran, lebar yang sesuai untuk kolom harus menjadi 100px:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open08">
+						
+						div { <br>
+						-webkit-column-width: 100px; <em>/* Chrome, Safari, Opera */</em> <br>
+						column-width: 100px; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close08">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div.newspaper { <br>
+						-webkit-column-count: 3; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-count: 3; <em>/* Firefox */</em> <br>
+						column-count: 3; <br>
+						-webkit-column-width: 100px; <em>/* Chrome, Safari, Opera */</em> <br>
+						-moz-column-width: 100px; <em>/* Mozilla */</em> <br>
+						column-width: 100px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> Firefox and Internet Explorer 9 (and earlier versions) do not support the column-width property.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b> <span class="teal">class="newspaper"</span>> <br>
+						<<b>h2</b>>Lorem Ipsum Dolor Sit Amet<<b>/h2</b>> <br>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
+						aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip 
+						ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum 
+						dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit 
+						augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id 
+						quod mazim placerat facer possim assum. <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan08()" class="exbutton">Klik disini</button>
+					<button onclick="buka08()" class="exbutton"> Open </button>
+					<button onclick="tutup08()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan08">
+					
+						<p><b>Note:</b> Firefox and Internet Explorer 9 (and earlier versions) do not support the column-width property.</p>
+						
+						<div class="newspaper">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
+						aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip 
+						ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum 
+						dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit 
+						augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id 
+						quod mazim placerat facer possim assum.
+						</div>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 Multi-columns Properties</h2>
+				<p> Daftar tabel berikut adalah semua properti multi-columns:</p>
+				 
+				 <table class="table">
+				 	<thead>
+				 		<tr>
+				 			<th>Properti</th>
+				 			<th>Deskripsi</th>
+				 		</tr>
+				 	</thead>
+				 	<tbody>
+				 		<tr>
+				 			<td> column-count </td>
+				 			<td> Menentukan nomor kolom dari suatu elemen yang harus dibagi kedalamnya</td>
+				 		</tr>
+				 		<tr>
+				 			<td> column-fill </td>
+				 			<td> Menentukan bagaimana untuk mengisi kolom </td>
+				 		</tr>
+				 		<tr>
+				 			<td> column-gap </td>
+				 			<td> Menentukan celah antara kolom </td>
+				 		</tr>
+				 		<tr>
+				 			<td> column-rule </td>
+				 			<td> Sebuah shorthand property untuk pengaturan semua properti <i>column-rule-*</i> </td>
+				 		</tr>
+				 		<tr>
+				 			<td> column-rule-color </td>
+				 			<td> Menentukan warna dari rule antara kolom </td>
+				 		</tr>
+				 		<tr>
+				 			<td> column-rule-style </td>
+				 			<td> Menentukan style dari rule antara kolom </td>
+				 		</tr>
+				 		<tr>
+				 			<td> column-rule-width </td>
+				 			<td> Menentukan lebar dari rule antara kolom </td>
+				 		</tr>
+				 		<tr>
+				 			<td> column-span </td>
+				 			<td> Menentukan berapa banyak kolom sebuah elemen harus men-span dari satu sisi ke sisi lainnya </td>
+				 		</tr>
+				 		<tr>
+				 			<td> column-width </td>
+				 			<td> Menentukan sebuah anjuran, optimal width untuk kolom </td>
+				 		</tr>
+				 		<tr>
+				 			<td> column </td>
+				 			<td> Sebuah shorthand property untuk pengaturan column-widjth dan column-count </td>
+				 		</tr>
+				 	</tbody>
+				 </table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS3 pagination.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS3 user interface.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

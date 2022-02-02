@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-US" id="showA">
+<head>
+<title>Home | HTML | HTML styles</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<script type="text/javascript">
+function myBgColor(){
+	x = document.getElementById("showA");
+	x.style.backgroundColor= "lightGrey";
+}
+</script>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML Styles </h1>
+			</div>
+			
+<section>			
+			<article class="example-box">
+				<h1>HTML Styles</h1>
+				<h4>Input:</h4>
+				<div class="example-content sembunyikan" id="sembunyikan01">
+				
+					<<b>!DOCTYPE html</b>><br><br>
+					<<b>html</b>><br><br>
+					<<b>head</b>><br><br>
+					<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+					<<b>/head</b>><br><br>
+					<<b>body</b>><br> 
+						<br>
+						<<b>h3</b> <span class="teal">style="color:red;"</span> > Aku merah <<b>/h3</b>> <br>
+						<<b>h3</b> <span class="teal">style="color:blue;"</span>> Aku biru <<b>/h3</b>> <br>
+						<br>
+					<<b>/body</b>><br><br>
+					<<b>/html</b>><br>
+					
+				</div>
+				<button onclick="tampilkan01()">Output:</button>
+				<div class="example-content">
+					<h3 style="color:red;">Aku merah </h3>
+					<h3 style="color:blue;"> Aku biru </h3>
+				</div>
+			</article>
+</section>			
+<section>
+			<article>
+				<h1> Attribute <b style="blue">Style</b> HTML </h1>
+				<p> Pengaturan gaya dari sebuah element HTML, bisa dilakukan dengan attribute <b>style</b>. </p>
+				<p> Attribute style HTML memiliki sintaksis berikut: </p>
+				
+				<div class="simple-example">style=<i>"properti:value;"</i> </div>
+				
+				<p> Properti sebuah properti (pelengkap) CSS. Value merupakan sebuah nilai CSS. </p>
+				<p> Kamu akan mempelajari lebih tentsng CSS dilain waktu di tutorial ini. </p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> HTML Background Color </h1>
+				<p> Properti <b>background-color</b> mendefinisikan warna latar belakang untuk sebuah elemen HTML: </p>
+				<p> Contoh ini mengatur latar belakang (background) untuk sebuah halaman menjadi warna abu-abu:</p>
+					
+				<article class="example-box">
+					<h1>Background-color Style</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b> <span class="teal"> style="background-color:lightGray"</span>><br><br>
+						<<b>head</b>><br><br>
+						<<b>/head</b>><br> <br>
+						<<b>body</b>> <br> <br>
+						<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="myBgColor()">Output:</button>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> HTML Text Color </h1>
+				<p> Properti <b>color</b> mendefinisikan warna teks untuk sebuah element HTML. </p>
+				<article class="example-box">
+				<h1>HTML Styles</h1>
+				<h4>Input:</h4>
+				<div class="example-content">
+				
+				<<b>!DOCTYPE html</b>><br><br>
+				<<b>html</b>><br><br>
+					<<b>head</b>><br><br>
+						<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+					<<b>/head</b>><br><br>
+					<<b>body</b>><br> 
+						<br>
+						<<b>h3</b> <span class="teal">style="color:red;"</span> > Ini adalah heading <<b>/h3</b>> <br>
+						<<b>p</b> <span class="teal">style="color:blue;"</span>> Ini adalah paragraf <<b>/p</b>> <br>
+						<br>
+					<<b>/body</b>><br><br>
+				<<b>/html</b>><br>
+				
+				</div>
+				<button onclick="tampilkan02()">Output:</button>
+				<div class="example-content sembunyikan" id="sembunyikan02">
+				<h3 style="color:red;"> Ini adalah heading </h3>
+				<p style="color:blue;"> Ini adalah paragraf </p>
+				</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> HTML Fonts </h1>
+				<p> Properti <b>font-family</b> mendefinisikan bentuk huruf untuk digunakan pada element HTML. </p>
+				
+				<article class="example-box">
+				<h1>HTML Styles</h1>
+				<h4>Input:</h4>
+				<div class="example-content">
+				
+				<<b>!DOCTYPE html</b>><br><br>
+				<<b>html</b>><br><br>
+					<<b>head</b>><br><br>
+						<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+					<<b>/head</b>><br><br>
+					<<b>body</b>><br> 
+					<br>
+						<<b>h3</b> <span class="teal">style="font-family:verdana;"</span> > Ini adalah heading <<b>/h3</b>> <br>
+						<<b>p</b> <span class="teal">style="font-family:courier;"</span>> Ini adalah paragraf <<b>/p</b>> <br>
+					<br>
+					<<b>/body</b>><br><br>
+				<<b>/html</b>><br>
+				
+				</div>
+				<button onclick="tampilkan03()">Output:</button>
+				<div class="example-content sembunyikan" id="sembunyikan03">
+					<h3 style="font-family:verdana;"> Ini adalah heading </h3>
+					<p style="font-family:courier;"> Ini adalah paragraf </p>
+				</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h1> HTML Text Size </h1>
+				<p> Properti <b>font-size</b> mendefinisikan ukuran huruf untuk digunakan pada element HTML. </p>
+				
+				<article class="example-box">
+				<h1>HTML Styles</h1>
+				<h4>Input:</h4>
+				<div class="example-content">
+				
+				<<b>!DOCTYPE html</b>><br><br>
+				<<b>html</b>><br><br>
+					<<b>head</b>><br><br>
+						<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+					<<b>/head</b>><br><br>
+					<<b>body</b>><br> 
+					<br>
+						<<b>h3</b> <span class="teal">style="font-size:300%;"</span> > Ini adalah heading <<b>/h3</b>> <br>
+						<<b>p</b> <span class="teal">style="font-size:160%;"</span>> Ini adalah paragraf <<b>/p</b>> <br>
+					<br>
+					<<b>/body</b>><br><br>
+				<<b>/html</b>><br>
+				
+				</div>
+				<button onclick="tampilkan04()">Output:</button>
+				<div class="example-content sembunyikan" id="sembunyikan04">
+					<h3 style="font-size:300%;"> Ini adalah heading </h3>
+					<p style="font-size:160%;"> Ini adalah paragraf </p>
+				</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> HTML Text Alignment </h1>
+				<p> Properti <b>text-align</b> mendefinisikan perataan teks secara horizontal (horizontal text alignment) untuk digunakan pada element HTML. </p>
+				
+				<article class="example-box">
+				<h1>HTML Styles</h1>
+				<h4>Input:</h4>
+				<div class="example-content">
+				
+				<<b>!DOCTYPE html</b>><br><br>
+				<<b>html</b>><br><br>
+					<<b>head</b>><br><br>
+						<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+					<<b>/head</b>><br><br>
+					<<b>body</b>><br> 
+					<br>
+						<<b>h3</b> <span class="teal">style="text-align:center;"</span> > Ini adalah heading <<b>/h3</b>> <br>
+						<<b>p</b> <span class="teal">style="text-align:right;"</span>> Ini adalah paragraf <<b>/p</b>> <br> <br>
+				<<b>p</b> <span class="teal">style="text-align:left;"</span>> Ini adalah paragraf <<b>/p</b>> <br>
+					<br>
+					<<b>/body</b>><br><br>
+				<<b>/html</b>><br>
+				
+				</div>
+				<button onclick="tampilkan05()">Output:</button>
+				<div class="example-content sembunyikan" id="sembunyikan05">
+					<h3 style="text-align:center;"> Ini adalah heading </h3>
+					<p style="text-align:right;"> Ini adalah paragraf </p>
+					<p style="text-align:left;"> Ini adalah paragraf </p>
+				</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Ringkasan Materi </h1>
+				<ul>
+					<li> Gunakanlah attribute <b>style</b> untuk penggayaan element HTML</li>
+					<li> Gunakanlah <b>background-color</b> untuk warna latar belakang</li>
+					<li> Gunakanlah <b>color</b> untuk pewarnaan </li>
+					<li> Gunakanlah <b>font-size</b> untuk ukuran teks </li>
+					<li> Gunakanlah <b>font-family</b> untuk jenis (atau bentuk) teks </li>
+					<li> Gunakanlah <b>text-align</b> untuk perataan teks </li>
+				</ul>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML paragraphs.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML formatting.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

@@ -1,0 +1,246 @@
+/* ALL ELEMENTS */
+
+* {
+   padding:0;
+   margin:0;
+   box-sizing:border-box;
+}
+body {
+   font-family:'arial' sans-serif;
+   font-size:15px;
+   line-height:2em;
+}
+[class*="col-"] {
+   float:left;
+   padding:15px;
+}
+h1, h2, h3, h4, h5, h6{
+   font-weight:bold;
+   font-style:italic;
+   margin-bottom:10px;
+   color:white;
+}
+a {
+   text-decoration:underline;
+   cursor:pointer;
+}
+a:active{
+   color:blue;
+   text-decoration:line-through;
+}
+a:visited:{
+   color:orange;
+}
+.note {
+   font-size:9px;
+   padding:10px;
+   line-height:1.0;
+   margin:10px 0 10px 0;
+}
+
+/* HEADER */
+header {
+   width:100%;
+   padding:15px;
+   background:red;
+   float:left;
+   max-height:100px;
+}
+header p  {
+   color:white;
+}
+header .heading #head{
+  float:left
+}
+.heading nav {
+  float:right;
+  margin-top:17px;
+}
+header ul{
+  list-style:none;
+}
+header ul li {
+  float:left;
+  display:inline;
+  padding:0 12px;
+  text-shadow:5px 5px 5px white;
+  font-weight:bold;
+  text-transform:capitalize;
+}
+header a {color:white;}
+
+/* SOCMED LOGOS */
+nav.nav {
+   padding:5px;
+   float:left;
+}
+nav .socmed { margin-left:15px;}
+nav img {
+    width:2em;
+    height:2em; 
+     border-radius:50px;
+}
+
+
+
+/* ASIDE */
+
+aside ul {
+  list-style:none;
+}
+aside ul li {
+  text-align:center;
+  cursor:pointer;
+  margin:15px;
+  font-size:15px;
+  background-color: red ;
+  text-transform:capitalize;
+} 
+aside a {
+   color:white;
+}
+img.poster {
+   position:static;
+   width:7em;
+}
+
+
+
+/* SECTION */
+
+
+section #main .title {
+   padding:10px;
+   text-align:center;
+}
+section #main article {
+   padding:10px;
+   border-bottom:1px #c6c6c6 solid;
+   margin:10px 0 10px 0;
+   column-count:1; /* membuat kolom/paragraf seperti koran */
+}
+section #main article p {
+   text-align:justify;
+   text-indent:3.5em;
+}
+
+
+/* SECTION - TUTORIAL LOGOS */
+
+section .tutorials {
+   width:100%;
+   text-align:center;
+}
+ .box {
+  width:30%;
+  padding:20px;
+  text-align:center;
+  float:left;
+  font-size:9px;
+  height:24em;
+}
+.box p {
+  line-height:1.5;
+}
+.box img {
+  width:5.5em;
+}
+
+
+
+/* FOOTER */
+footer {
+   text-align:center;
+   text-transform:capitalize;
+   background:red;
+   padding:10px;
+}
+
+
+
+/* SIZING FOR TABLET */
+
+@media only screen and (max-width:600px) {
+
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    
+    aside ul li {
+         float:left;
+         padding:0px 10px 0px 10px;
+         text-align:center;
+         word-spacing:10px;
+         display:none;
+         border-bottom:2px #cccccc solid;
+         display:none;
+    }
+    aside {float:left;} 
+    nav #container {
+        position:relative;
+        right:-22em;
+     }
+} 
+
+
+/* SIZING FOR DEKSTOP */
+
+@media only screen and (min-width:768px) {
+
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    aside {
+       border-right:1px #cccccc solid;
+    }
+    nav #container {
+      position:relative;
+       right:-50em;
+   }
+
+} 
+
+/* FOR LINK */
+.white{color:white;}
+.red{color:red;}
+.darkred{color:darkred;}
+.blue{color:blue;}
+.skyblue{color:skyblue;}
+.darkblue{color:darkblue;}
+.yellow{color:yellow;}
+.green{color:green;}
+.limegreen{color:limegreen;}
+.darkgreen{color:darkgreen;}
+.orange{color:orange}
+.deepskyblue{color:deepskyblue;}
+.purple{color:purple;}
+.black{color:black;}
+.bg-skyblue { background-color: red ;}
+.bg-lavender { 
+      background-color:lavender; 
+      padding:15px; font-weight:bold;}
+.important {
+    background-color:red;
+    color:white;
+}
+.left {float:left}
+.right {float:right}
+.code {color:white;background:blue;font-weight:bold;}

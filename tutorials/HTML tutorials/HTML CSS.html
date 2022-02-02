@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+
+<style type="text/css">
+.parentMain{
+    height:170px;
+    margin-top:0;
+    position:static;
+    border-bottom:1px #cccccc solid;
+}
+.first {
+    width:300px;
+    border: 6px purple solid;
+    border-radius:20px;
+    height:80px;
+    box-shadow:5px 9px 8px silver;
+}
+.second {
+	position:relative;
+	width:100px;
+	height:100px;
+	opacity:0.3;
+	left:200px;
+	top:-70px;
+	border-radius:20px;
+	background:navy;
+}
+.third{
+    position:relative;
+    width:80px;
+    height:120px;
+    opacity:0.5;
+    background:yellow;
+    top:-90px;
+    left:100px;
+}
+.fourth {
+    position:relative;
+    top:-240px;
+}
+.one {
+    font-size:30px;
+    color:purple;
+    text-shadow:5px 10px 5px silver;
+}
+    .oneA{
+        color:orange;
+        font-size:20px;
+        text-shadow:1px 1px 5px black;
+    }
+.two {
+    color:maroon;
+    position:relative;
+    left:50px;
+}
+.boxes {
+    background-color:navy;
+    color:white;
+}
+.color {
+   color:red;
+   font-weight:bold;
+   margin-right:10px;
+}
+.dan{
+   font-size:16px;
+   position:relative;
+   top:-20px;
+   left:100px;
+}
+.bor {
+	border: 1px black solid;
+}
+.borA {
+	border: 1px black solid;
+	padding:10px;
+}
+.borAB {
+	border: 1px black solid;
+	padding:10px;
+	margin:30px;
+}
+#p01 { color:blue;}
+.error{ color:blue}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML CSS</h1>
+			</div>
+			
+			
+			<article class="parentMain">
+				<div class="first">
+				<div class="second"></div>
+					<div class="third"></div>
+					<div class="fourth">
+					<span class="one">CSS = Styles</span><br> <span class="oneA">and Colors</span> <br>
+					<span class="two">Manipulate Text</span>
+					<div class="dan"><span class="color">Colors,</span> <span class="boxes"> Boxes</span></div>
+					</div>
+				</div>
+			</article>
+			
+<section>			
+			<article>
+				<h1 id="myStyling"> Styling HTML with CSS </h1>
+				<p> CSS berbidang untuk <b>C</b>ascading <b>S</b>tyle <b>S</b>heets </p>
+				<p> Penggayaan bisa ditambahkan ke element HTML dalam 3 cara: </p>
+				<br>
+				<ul>
+					<li> Inline - penggunaan attribute <b>style</b> dalam element HMTL </li>
+					<li> Internal - penggunaan element <<b>style</b>> di bagian <<b>head</b>> </li>
+					<li> External - penggunaan satu atau lebih <b>file CSS external</b> </li>
+				</ul>
+				<br>
+				<p> 
+				Cara yang paling umum untuk menambahkan styling atau penggayaan, ialah selalu  style 
+				dalam file CSS terpisah. Tapi, pada tutorial ini, kita gunakan internal styling, karena ini mudah untuk ditinjau 
+				dan lebih mudah untuk kamu coba sendiri.
+				</p>
+				
+				<div class="nasehat">
+					<p> Kamu akan mempelajari banyak tentang CSS di <a href="../CSS tutorials/CSS HOME.html" >Tutorials CSS</a>. </p>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Inline Styling (Inline CSS) </h1>
+				<p> Inline styling (dalam element) digunakan untuk menerapkan style unik untuk satu element HTML: </p>
+				<p> Inline styling menggunakan attribute <b>style</b>. </p>
+				<p> Contoh jni mengubah warna teks dari element <<b>h1</b>> menjadi biru:</p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+							<<b>h1</b> <span class="teal">style="color:blue;"</span>> Ini adalah Heading Biru <<b>/p</b>> <br>
+							
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						<h3 style="color:blue;"> Ini adalah Heading Blue </h3>
+					</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Internal Styling (Internal CSS) </h1>
+				<p> Internal styling (dalam file HTML) digunakan untuk mendefinisikan sebuah style (gaya) untuk satu halaman HTML. </p>
+				<p> Internal styling didefinisikan dalam bagian <<b>head</b>> dari sebuah halaman HTML, dengan sebuah element <<b>style</b>>: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br>
+						<<b>head</b>><br>
+						<<b>style</b>> <br>
+						
+							body {background-color:lightgrey;} <br>
+							h1   {color:blue;} <br>
+							p    {color:green;} <br>
+						
+						<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br> 
+							<br>
+							<<b>h1</b>> This is a heading <<b>/h1</b>> <br>
+							<<b>p</b>> This is another paragraph <<b>/p</b>> 
+							<br><br>
+						<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+				
+						
+					</div>
+					<button onclick="tampilkan02()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan02" style="background:lightgrey">
+						<h1 style="color:blue;">This is a heading</h1>
+						<p style="color:green;">This is a paragraph.</p>
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h1> External Styling (External CSS) </h1>
+				<p> Sebuah External style (diluar file HTML) digunakan untuk mendefinisikan style untuk banyak halaman. </p>
+				<p> Dengan sebuah <b>external style sheet</b>, kamu bisa mengubah penampilan dari keselurahan web site dengan mengubah satu file. </p>
+				<p> Untuk menggunakan sebuah external style sheet, tambahkan sebuah link menuju file CSS tersebut di bagian <<b>head</b>> dari halaman HTML: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br>
+						<<b>head</b>><br>
+						
+							<<b>link</b> <span class="teal">rel="stylesheet" type="text/css" href="style.css"</span>> <br>
+							
+						<<b>/head</b>><br>
+						<<b>body</b>><br> 
+							<br>
+							<<b>h1</b>> This is a heading <<b>/h1</b>> <br>
+							<<b>p</b>> This is another paragraph <<b>/p</b>> 
+							<br><br>
+						<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+				
+						
+					</div>
+					<button onclick="tampilkan03()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+						<h3>This is a heading</h3>
+						<p>This is a paragraph.</p>
+					</div>
+				</article>
+				
+				<p> 
+				Sebuah external styel sheet bisa ditulis dalam text editor apapun. File tidak harus berisi tag HTML. 
+				style sheet file harus disimpan dengan extension <b>.css</b> 
+				</p>
+				<p> Disini adalah bagaikana "style.css" terlihat: </p>
+				
+				<div class="example-content">
+					
+							body {
+								<blockquote>
+								background-color:lightgrey;
+								</blockquote>
+							} <br>
+							h1   {
+								<blockquote>
+								color:blue;
+								</blockquote>
+							} <br>
+							p    {
+								<blockquote>
+								color:green;
+							</blockquote>} 
+						
+					</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> CSS Fonts </h1>
+				<p> Properti <b>color</b> CSS mendefinisikan warna teks untuk digunakan kepada element HTML. </p>
+				<p> Properti <b>font-family</b> CSS mendefinisikan font untuk digunakan kepada elment HTML. </p>
+				<p> Properti <b>font-size</b> CSS mendefinisikan ukuran teks untuk digunsksn kepada element HTML. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br>
+						<<b>head</b>><br>
+						<<b>style</b>> <br>
+						
+							h1 {
+							    <blockquote>
+								color: blue; <br>
+							    font-family: verdana; <br>
+							    font-size: 300%;
+								</blockquote>
+							} <br>
+							p  {
+							    <blockquote>
+								color: red; <br>
+							    font-family: courier; <br>
+							    font-size: 160%;
+								</blockquote>
+							}<br>
+						
+						<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br> 
+							<br>
+							<<b>h1</b>> This is a heading <<b>/h1</b>> <br>
+							<<b>p</b>> This is another paragraph <<b>/p</b>> 
+							<br><br>
+						<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+										
+					</div>
+					<button onclick="tampilkan04()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+						<h1 style="color:blue; font-family:verdana; font-size:300%">This is a heading</h1>
+						<p style="color:red; font-family:courier; font-size:160%">This is a paragraph.</p>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1>The CSS Box Model </h1>
+				<p> Setiap element HTML memiliki sebuah box around, bahkan jika kamu tidak melihatnya. </p>
+				<p> Properti <b>border</b> CSS mendefinisikan sekitar border yang dapat dilihat untuk sebuah element HTML: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br>
+						<<b>head</b>><br>
+						<<b>style</b>> <br>
+						
+							p  {
+							    <blockquote>
+								border: 1px black solid;
+								</blockquote>
+							}<br>
+						
+						<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br> 
+							<br>
+							<<b>h1</b>> This is a heading <<b>/h1</b>> <br>
+							<<b>p</b>> This is a paragraph <<b>/p</b>> <br>
+							<<b>p</b>> This is a paragraph <<b>/p</b>> <br>
+							<<b>p</b>> This is a paragraph <<b>/p</b>> 
+							<br><br>
+						<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+										
+					</div>
+					<button onclick="tampilkan05()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+						<h2>This is a heading</h2>
+						<p class="bor">This is a paragraph.</p>
+						<p class="bor">This is a paragraph.</p>
+						<p class="bor">This is a paragraph.</p>
+					</div>
+				</article>
+				
+				<p> Properti <b>padding</b> CSS mendefinisikan sebuah padding (spasi) didalam border: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br>
+						<<b>head</b>><br>
+						<<b>style</b>> <br>
+						
+							p  {
+							    <blockquote>
+								border: 1px black solid; <br>
+								padding: 10px;
+								</blockquote>
+							}<br>
+						
+						<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br> 
+							<br>
+							<<b>h1</b>> This is a heading <<b>/h1</b>> <br>
+							<<b>p</b>> This is a paragraph <<b>/p</b>> <br>
+							<<b>p</b>> This is a paragraph <<b>/p</b>> <br>
+							<<b>p</b>> This is a paragraph <<b>/p</b>> 
+							<br><br>
+						<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+										
+					</div>
+					<button onclick="tampilkan06()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+						<h2>This is a heading</h2>
+						<p class="borA">This is a paragraph.</p>
+						<p class="borA">This is a paragraph.</p>
+						<p class="borA">This is a paragraph.</p>
+					</div>
+				</article>
+				
+				<p> Properti <b>margin</b> CSS mendefinisikan sebuah margin (spasi) diluar border: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br>
+						<<b>head</b>><br>
+						<<b>style</b>> <br>
+						
+							p  {
+							    <blockquote>
+								border: 1px black solid; <br>
+								padding: 10px; <br>
+								margin:30px;
+								</blockquote>
+							}<br>
+						
+						<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br> 
+							<br>
+							<<b>h1</b>> This is a heading <<b>/h1</b>> <br>
+							<<b>p</b>> This is a paragraph <<b>/p</b>> <br>
+							<<b>p</b>> This is a paragraph <<b>/p</b>> <br>
+							<<b>p</b>> This is a paragraph <<b>/p</b>> 
+							<br><br>
+						<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+										
+					</div>
+					<button onclick="tampilkan07()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan07">
+						<h2>This is a heading</h2>
+						<p class="borAB">This is a paragraph.</p>
+						<p class="borAB">This is a paragraph.</p>
+						<p class="borAB">This is a paragraph.</p>
+					</div>
+				</article>
+				
+				<div class="nasehat">
+				Contoh CSS diatas menggunakan <b>px</b> untuk mendefinisikan ukuran dalam satuan <b>pixel</b>.
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> The <b class="blue">id</b> Attribute </h1>
+				<p> Semua contoh diats menggunakan CSS untuk style (gaya) element HTML dengan cara umum. </p>
+				<p> Untuk mendefinisikan special style kepada satu element spesial, pertama tambahakan attribute <b>id</b> kepada element: </p>
+				
+				<div class="simple-example">
+				<<b>p</b> <span class="teal">id="p01"</span>>I am different<<b>/p</b>>
+				</div>
+				
+				<p> Lalu definisikan sebuah style kepada element dengan spesifikasi <b>id</b>: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br>
+						<<b>head</b>><br>
+						<<b>style</b>> <br>
+						
+							#p01  {
+							    <blockquote>
+								color:blue;
+								</blockquote>
+							}<br>
+						
+						<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br> 
+							<br>
+							<<b>p</b>> This is a paragraph <<b>/p</b>> <br>
+							<<b>p</b>> This is a paragraph <<b>/p</b>> <br>
+							<<b>p</b> <span class="teal">id="p01"</span>> I am diferrent<<b>/p</b>> 
+							<br><br>
+						<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+										
+					</div>
+					<button onclick="tampilkan08()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan08">
+						<p>This is a paragraph.</p>
+						<p>This is a paragraph.</p>
+						<p id="p01"> I am diferrent.</p>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> The <b class="bkue">class</b> Attribute </h1>
+				<p> Untuk mendefinisikan sebuah style kepada type special (class) dari element, tambahkan sebuah attribute <b>class</b> kepada element: </p>
+				
+				<div class="simple-example">
+				<<b>p</b> <span class="teal">class="error"</span>>I am different<<b>/p</b>>
+				</div>
+				
+				<p> Sekarang kamu bisa mendefinisikan style yang berbeda kepada element dengan spesifikasi <b>class</b>: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br>
+						<<b>head</b>><br>
+						<<b>style</b>> <br>
+						
+							.error  {
+							    <blockquote>
+								color:blue;
+								</blockquote>
+							}<br>
+						
+						<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br> 
+							<br>
+							<<b>p</b>> This is a paragraph <<b>/p</b>> <br>
+							<<b>p</b>> This is a paragraph <<b>/p</b>> <br>
+							<<b>p</b> <span class="teal">class="error"</span>> I am diferrent<<b>/p</b>> 
+							<b>p</b>> This is a paragraph <<b>/p</b>> <br>
+							<<b>p</b> <span class="teal">class="error"</span>> I am diferrent too<<b>/p</b>> 
+							<br><br>
+						<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+										
+					</div>
+					<button onclick="tampilkan09()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan09">
+						<p>This is a paragraph.</p>
+						<p>This is a paragraph.</p>
+						<p class="error"> I am diferrent.</p>
+						<p>This is a paragraph.</p>
+						<p class="error"> I am diferrent too.</p>
+					</div>
+				</article>
+				
+				<div class="nasehat">
+				Gunakanlah <b>id</b> untuk <b> styling element tunggal</b>. Gunakanlah <b>class</b> untuk element yang ingin <b>styling sama</b>.
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Ringkasan Materi </h1>
+				<ul>
+					<li> Gunakanlah attribute <b>style</b> HTML untuk inline styling (styling dalam sebuah element) </li>
+					<li> Gunakanlah element <<b>style</b>> HTML untuk mendefinisikan internal CSS (styling dalam sebuah dokumen HTML)</li>
+					<li> Gunakanlah element <<b>link</b>> HTML untuk mengarah ke sebuah external CSS file (styling diluar dokumen HTML)</li>
+					<li> Gunakanlah element <<b>head</b>> HTML untuk menyimpan element <<b>style</b>> dan <<b>link</b>> </li>
+					<li> Gunakanlah properti <b>color</b> CSS untuk pewarnaan teks </li>
+					<li> Gunakanlah properti <b>font-family</b> CSS untuk jenis bentuk huruf </li>
+					<li> Gunakanlah properti <b>font-size</b> CSS untuk mangatur ukuran teks </li>
+					<li> Gunakanlah properti <b>border</b> CSS untuk mendefinisikan border </li>
+					<li> Gunakanlah properti <b>padding</b> CSS untuk spasi didalam border </li>
+					<li> Gunakanlah properti <b>margin</b> CSS untuk spasi diluar border </li>
+				</ul>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> HTML Style Tags </h1>
+				
+				<table>
+					<thead>
+						<tr>
+							<th>Tag </th>
+							<th>Deskripsi</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> <<b>style</b>> </td>
+							<td> Mendefinisikan informasi style kepada sebuah dokumen HTML </td>
+						</tr>
+						<tr>
+							<td> <<b>link</b>> </td>
+							<td> Mendefinisikan sebuah link diantara sebuah dokumen dan sebuah external resource (sumber luar)</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML colors.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML links.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

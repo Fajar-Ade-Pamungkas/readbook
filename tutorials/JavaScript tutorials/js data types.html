@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | JavaScript | js data types</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="javaScript.js"></script>
+<script type="text/javascript" src="javaScript2.js"></script>
+<script type="text/javascript" src="javaScript3.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical"> <!--open link-->
+		<button onclick="openMenu()" id="menu">Open Menu</button>
+		<button onclick="closeMenu()" id="menu">Close Menu</button>
+		
+		<div id="vertical">
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch()"> JavaScript Tutorial</button>
+			<div class="drop-content" id="myDropdown">
+			<input type="text" class="myInput" id="myInput" placeholder="Cari" onkeyup="filterFunction()"/>
+			<ol>
+				<a href="js home.html"><li> Home </li></a>
+				<a href="js introduction.html"><li> Introduction </li></a>
+				<a href="js where to.html"><li> Where To </li></a>
+				<a href="js output.html"><li> Output </li></a>
+				<a href="js syntax.html"><li> Syntax </li></a>
+				<a href="js statements.html" ><li> Statements </li></a>
+				<a href="js comments.html" ><li> Comments </li></a>
+				<a href="js variables.html"><li> Variable </li></a>
+				<a href="js operators.html"><li> Operators </li></a>
+				<a href="js arithmetic.html"><li> Arithmetic </li></a>
+				<a href="js assignment.html"><li> Assignment </li></a>
+				<a href="js data types.html"><li> Data Types </li></a>
+				<a href="js functions.html"><li> Functions </li></a>
+				<a href="js objects.html"><li> Objects </li></a>
+				<a href="js scope.html"><li> Scope </li></a>
+				<a href="js events.html"><li> Events </li></a>
+				<a href="js strings.html"><li> string </li></a>
+				<a href="js string methods.html"><li> Strings Method </li></a>
+				<a href="js numbers.html"><li> Numbers </li></a>
+				<a href="js number methods.html"><li> Number Methods </li></a>
+				<a href="js math.html"><li> Math </li></a>
+				<a href="js random.html" ><li> Math Random </li></a>
+				<a href="js dates.html"><li> Dates </li></a>
+				<a href="js date formats.html" ><li> Date Formats </li></a>
+				<a href="js date methods.html" ><li> Date Methods </li></a>
+				<a href="js get date methods.html" ><li> Date get Methods </li></a>
+				<a href="js set date methods.html" ><li> Date Set Methods </li></a>
+				<a href="js arrays.html"><li> Arrays </li></a>
+				<a href="js array methods.html" ><li> Array Methods </li></a>
+				<a href="js array sort.html"><li> Array Sort </li></a>
+				<a href="js array iteration.html"><li> Array Iteration </li></a>
+				<a href="js booleans.html" ><li> boolean </li></a>
+				<a href="js comparisons.html" ><li> Comparisons </li></a>
+				<a href="js conditions.html" ><li>Conditions</li></a>
+				<a href="js switch.html" ><li>Switch </li></a>
+				<a href="js loop for.html"><li> Loop For </li></a>
+				<a href="js loop while.html" ><li>Loop while</li></a>
+				<a href="js break.html" ><li>Break</li></a>
+				<a href="js type conversion.html" ><li> Types conversion</li></a>
+				<a href="js bitwise.html" ><li> Bitwise </li></a>
+				<a href="js RegExp.html" ><li>RegExp</li></a>
+				<a href="js errors.html" ><li>Errors </li></a>
+				<a href="js debugging.html"><li>Debugging </li></a>
+				<a href="js hoisting.html" ><li>Hoisting</li></a>
+				<a href="js strict mode.html"><li>Strict mode</li></a>
+				<a href="js this keyword.html" ><li> this Keyword </li></a>
+				<a href="js let.html" ><li> Let </li></a>
+				<a href="js const.html" ><li> Const </li></a>
+				<a href="js style guide.html" ><li>Style guide</li></a>
+				<a href="js best practices.html" ><li>best practices </li></a>
+				<a href="js mistakes.html"><li> Mistakes </li></a>
+				<a href="js performance.html" ><li>Performance</li></a>
+				<a href="js reserved words.html" ><li>Reserved words</li></a>
+				<a href="js versions.html" ><li> Versions </li></a>
+				<a href="js version ES5.html" ><li class="redZone"> Version ES5 </li></a>
+				<a href="js version ES6.html" ><li class="redZone"> Version ES6 </li></a>
+				<a href="js JSON.html"><li>JSON</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch2()"> JavaScript Formulir</button>
+			<div class="drop-content" id="myDropdown2">
+			<input type="text" class="myInput" id="myInput2" placeholder="Cari" onkeyup="filterFunction2()"/>
+			<ol>
+				<a href="forms validation.html" ><li>Forms Validation</li></a>
+				<a href="forms API.html" ><li class="redZone">Forms API</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch3()"> JavaScript Object</button>
+			<div class="drop-content" id="myDropdown3">
+			<input type="text" class="myInput" id="myInput3" placeholder="Cari" onkeyup="filterFunction3()"/>
+			<ol>
+				<a href="object definitions.html" ><li>Object Definitions</li></a>
+				<a href="object properties.html" ><li>Object Properties</li></a>
+				<a href="object methods.html"><li class="redZone">Object Methods</li></a>
+				<a href="object accessors.html" ><li>Object accessors</li></a>
+				<a href="object constructors.html" ><li>Object constructor</li></a>
+				<a href="object prototypes.html" ><li>Object Prototypes</li></a>
+				<a href="object ECMAScript5.html" ><li class="redZone">Object ECMAScript5</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch4()"> JavaScript Function</button>
+			<div class="drop-content" id="myDropdown4">
+			<input type="text" class="myInput" id="myInput4" placeholder="Cari" onkeyup="filterFunction4()"/>
+			<ol>
+				<a href="funtion definitions.html" ><li>Function Definitions</li></a>
+				<a href="function parameters.html" ><li>Function Parameters</li></a>
+				<a href="function invocation.html" ><li>Function Invocation</li></a>
+				<a href="function closures.html" ><li>Function Closures</li></a>
+				<a href="function apply.html" ><li class="redZone">Function Apply</li></a>
+				<a href="function call.html" ><li>Function Call</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch5()">  JavaScript HMTL DOM </button>
+			<div class="drop-content" id="myDropdown5">
+			<input type="text" class="myInput" id="myInput5" placeholder="Cari" onkeyup="filterFunction5()"/>
+			<ol>
+				<a href="DOM intro.html" ><li> DOM Introduction </li></a>
+				<a href="DOM methods.html" ><li> DOM Methods </li></a>
+				<a href="DOM document.html" ><li> DOM Documents</li></a>
+				<a href="DOM elements.html" ><li> DOM Elements  </li></a>
+				<a href="DOM HTML.html" ><li> DOM HTML</li></a>
+				<a href="DOM CSS.html" ><li> DOM CSS  </li></a>
+				<a href="DOM animations.html" ><li> DOM Animations </li></a>
+				<a href="DOM events.html" ><li> DOM Events </li></a>
+				<a href="DOM eventListener.html" ><li> DOM EventListener </li></a>
+				<a href="DOM navigation.html" ><li> DOM Navigation </li></a>
+				<a href="DOM nodes.html" ><li> DOM Nodes </li></a>
+				<a href="DOM nodelist.html" ><li> DOM Nodelist </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch6()"> JavaScript Browser BOM </button>
+			<div class="drop-content" id="myDropdown6">
+			<input type="text" class="myInput" id="myInput6" placeholder="Cari" onkeyup="filterFunction6()"/>
+			<ol>
+				<a href="BOM window.html" ><li> Window </li></a>
+				<a href="BOM screen.html" ><li> Screen </li></a>
+				<a href="BOM location.html" ><li> Location </li></a>
+				<a href="BOM history.html" ><li> History  </li></a>
+				<a href="BOM navigator.html" ><li> Navigator </li></a>
+				<a href="BOM popup alert.html" ><li> Popup Alert </li></a>
+				<a href="BOM timing.html" ><li> Timing </li></a>
+				<a href="BOM cookies.html" ><li> Cookies </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch7()">JavaScript AJAX</button>
+			<div class="drop-content" id="myDropdown7">
+			<input type="text" class="myInput" id="myInput7" placeholder="Cari" onkeyup="filterFunction7()"/>
+			<ol>
+				<a href="AJAX intro.html" ><li> AJAX Introduction</li></a>
+				<a href="AJAX XMLHttpRequest.html" ><li> AJAX XMLHttpRequest </li></a>
+				<a href="AJAX request.html" ><li> AJAX Request </li></a>
+				<a href="AJAX respone.html" ><li class="redZone"> AJAX Response </li></a>
+				<a href="AJAX XML file.html" ><li> AJAX XML File</li></a>
+				<a href="AJAX PHP.html" ><li> AJAX PHP </li></a>
+				<a href="AJAX ASP.html" ><li> AJAX ASP </li></a>
+				<a href="AJAX database.html" ><li> AJAX Database </li></a>
+				<a href="AJAX XML applications.html" ><li> AJAX XML Application </li></a>
+				<a href="AJAX examples.html" ><li> AJAX Example </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch8()">JavaScript JSON</button>
+			<div class="drop-content" id="myDropdown8">
+			<input type="text" class="myInput" id="myInput8" placeholder="Cari" onkeyup="filterFunction8()"/>
+			<ol>
+				<a href="JSON intro.html" ><li class="redZone"> JSON Introduction</li></a>
+				<a href="JSON syntax.html" ><li class="redZone"> JSON Syntax </li></a>
+				<a href="JSON vs XML.html" ><li class="redZone"> JSON vs XML </li></a>
+				<a href="JSON data types.html" ><li class="redZone"> JSON Data Types </li></a>
+				<a href="JSON parse.html" ><li class="redZone"> JSON parse </li></a>
+				<a href="JSON stringify.html" ><li class="redZone"> JSON Stringify</li></a>
+				<a href="JSON objects.html" ><li class="redZone"> JSON Objects </li></a>
+				<a href="JSON arrays.html" ><li class="redZone"> JSON Arrays </li></a>
+				<a href="JSON PHP.html" ><li class="redZone"> JSON PHP </li></a>
+				<a href="JSON HTML.html" ><li class="redZone"> JSON HTML </li></a>
+				<a href="JSON JSONP.html" ><li class="redZone"> JSON JSONP </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch9()">JavaScript Reference</button>
+			<div class="drop-content" id="myDropdown9">
+			<input type="text" class="myInput" id="myInput9" placeholder="Cari" onkeyup="filterFunction9()"/>
+			<ol>
+				<li> <p> JavaScript References </p> </li>
+				<a href="JavaScript references/overview.html" > <li> Overview </li> </a>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch11()">JavaScript</button>
+					<div class="drop-content" id="myDropdown11">
+					<input type="text" class="myInput" id="myInput11" placeholder="Cari" onkeyup="filterFunction11()"/>
+					<ol>
+						<a href="JavaScript references/string reference.html" ><li>String Reference </li></a>
+						<a href="JavaScript references/number reference.html" ><li>Number Reference </li></a>
+						<a href="JavaScript references/operator reference.html" ><li>Operator Reference </li></a>
+						<a href="JavaScript references/statement reference.html" ><li>Statement Reference </li></a>
+						<a href="JavaScript references/math reference.html" ><li>Math Reference </li></a>
+						<a href="JavaScript references/date reference.html" ><li>Date Reference </li></a>
+						<a href="JavaScript references/array reference.html" ><li> Array Reference </li></a>
+						<a href="JavaScript references/boolean reference.html" ><li> Boolean Reference </li></a>
+						<a href="JavaScript references/RegExp reference.html" ><li> RegExp Reference </li></a>
+						<a href="JavaScript references/global reference.html" ><li> Global Reference </li></a>
+						<a href="JavaScript references/conversion reference.html" ><li> Conversion Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()">Browser Object Model (BOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="JavaScript references/BOM window reference.html" ><li> BOM Window Reference </li></a>
+						<a href="JavaScript references/BOM navigator reference.html" ><li> BOM Navigator Reference </li></a>
+						<a href="JavaScript references/BOM screen reference.html" ><li> BOM screen Reference </li></a>
+						<a href="JavaScript references/BOM history reference.html" ><li> BOM History Reference </li></a>
+						<a href="JavaScript references/BOM location reference.html" ><li> BOM Location Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()"> HTML Document Object Model (DOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="JavaScript references/DOM document reference.html" ><li> DOM Documents Reference </li></a>
+						<a href="JavaScript references/DOM element reference.html" ><li> DOM Elements Reference </li></a>
+						<a href="JavaScript references/DOM attribute reference.html" ><li> DOM Attributes Reference </li></a>
+						<a href="JavaScript references/DOM event reference.html" ><li> DOOM Events Reference </li></a>
+						<a href="JavaScript references/DOM style.html" ><li> DOM Style Reference </li></a>
+					</ol>
+					</div>
+			</ol>
+			</div>
+			</div>
+		</div>
+		</div>
+		</div> <!--close Link-->
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> Tipe Data JavaScript</h1>
+					<p>
+					String, Number, Boolean, Array, Object.
+					</p>
+			</div>
+			
+			
+<section>
+			<article>
+				<h1> Tipe - Tipe Data JavaScript </h1>
+				<p>
+				Variabel JavaScript dapat memegang (hold) banyak <b>tipe data</b> : Number, String,
+				Object, Array, dan sebagainya.
+				</p>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> Panjang = 155 ;
+			<span class="grey" style="margin-left:50px;"> //Number </span><br><br>
+			<span class="purple">var</span> lastName = "Pamungkas" ;
+			<span class="grey" style="margin-left:50px"> // String </span><br><br>
+			<span class="purple">var</span> carName = ["BMW", "Ferarri", "RX-7", "Nissan Skyline"] ;
+			<span class="grey" style="margin-left:50px">//Array </span><br><br>
+			<span class="purple">var</span> orang = {firstName :"Fajar", lastName:"Ade Pamungkas"} ;
+			<span class="grey" style="margin-left:50px"> //Object </span>			
+			</div>
+</section>
+
+<section>
+			<article>
+				<h1> Konsep Dari Tipe - Tipe Data</h1>
+				<p>
+				Dalam pemrograman, tipe data merupakan sebuah konsep penting. <br><br>
+				Untuk dapat mengoperasikan pada variabel. Ini penting untuk mengetahui sesuatu tentang <b>tipe</b>.<br><br>
+				Tanpa tipe data, computer tidak dapat memecahkan masalah dengan benar.
+				</p>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x = 6 + "Halo";
+			</div>
+			</article>
+			
+			<article>
+				<p>
+				Apa yang akan terjadi jika nilai 6 ditambah dengan nilai "Halo". Apa akan menjadi error atau akan menjadi hasil ?<br><br>
+				JavaScript akan memperlakukan contoh diatas seperti :
+				</p>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x = "6" + "Halo";
+			</div>
+			</article>
+			<!--ATTENTION-->
+			<article>
+			<table class="attention">
+			<tr>
+			<td class="td-left">
+			<h1>!</h1>
+			</td>
+			<td class="td-right">
+			Ketika kamu menambahkan Number dengan String, maka JavaScript akan memperlakukan
+			Number menjadi String.
+			</td>
+			</tr>
+			</table>
+			</article>
+			
+			<!-- kotak contoh 1-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x = 6 + "Halo";
+			</div>
+			
+			<h4>output</h4>
+			<div class="example-content">
+			<h1>Readbook</h1>
+			<p>
+			Saat Number dan string digabungkan maka akan menjadi
+			</p>
+			<button onclick="dataTypes1()">Klik disini</button>			
+			<p id="dataTypes01"></p>
+			</div>
+			</article>
+			</article>
+			
+			<!-- kotak contoh 2-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x = "Halo" + 6;
+			</div>
+			
+			<h4>output</h4>
+			<div class="example-content">
+			<h1>Readbook</h1>
+			<p>
+			Saat Number dan string digabungkan maka akan menjadi
+			</p>
+			<button onclick="dataTypes2()">Klik disini</button>			
+			<p id="dataTypes02"></p>
+			</div>
+			</article>
+			</article>
+			
+			<article>
+				<p>
+				Evaluasi JavaScript mengekspresikan dari kiri ke kanan. Urutan yang berbeda maka akan membuat
+				hasil yang berbeda pula.
+				</p>
+			</article>
+			
+			<!-- kotak contoh 3-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>Input:</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x = 4  + 6 + "Halo";
+			</div>
+			
+			<h4>Output:</h4>
+			<div class="example-content">
+			<h1>Readbook</h1>
+			<p>
+			Saat Number dan string digabungkan maka akan menjadi
+			</p>
+			<button onclick="dataTypes3()">Klik disini</button>			
+			<p id="dataTypes03"></p>
+			</div>
+			</article>
+			</article>
+			
+			<!-- kotak contoh 4-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>Input:</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x = "Halo" + 4  + 6 ;
+			</div>
+			
+			<h4>Output:</h4>
+			<div class="example-content">
+			<p>
+			Saat Number dan string digabungkan maka akan menjadi
+			</p>
+			<button onclick="dataTypes4()">Klik disini</button>			
+			<p id="dataTypes04"></p>
+			</div>
+			</article>
+
+			
+			<article>
+				<p>
+				Di contoh pertama nilai 4 dan 6 akan dijumlahkan terlebih dahulu lalu ke "Halo".<br><br>
+				Di contoh kedua, ketika string "Halo" diletakan di operand pertama semua Number 4 dan 6 diperlakukan
+				sebagai String.
+				</p>
+			</article>
+			
+			
+</section>
+
+<section>
+			<article>
+				<h1> JavaScript Memiliki Tipe Dinamis</h1>
+				<p>
+				JavaScript memiliki tipe dinamis (berubah). Maksudnya adalah variabel yang sama bisa digunakan 
+				sebagai tipe - tipe yang berbeda.
+				</p>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x;
+			<span class="grey" style="margin-left:50px;"> //Undefinined (belum terdefinisi)</span><br><br>
+			<span class="purple">var</span> x = "Good luck";
+			<span class="grey" style="margin-left:50px"> // String </span><br><br>
+			<span class="purple">var</span> x = 10;
+			<span class="grey" style="margin-left:50px">//Number  </span><br><br>
+			</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> String JavaScript </h1>
+				<p>
+				String (atau teks) adalah rangkaian karakter seperti "David Beckham".<br><br>
+				String ditulis dengan menggunakan tanda petik (quotes). Kamu bisa gunakan petik satu (') ataupun petik dua (").
+				</p>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x = "Halo! Apa kabar ?";
+			<span class="grey" style="margin-left:50px;"> // menggunalan petik dua (double quotes)</span><br><br>
+			<span class="purple">var</span> x = 'Halo! Apa kabar ?';
+			<span class="grey" style="margin-left:50px"> // menggunakan petik satu (single quotes)</span><br><br>
+			</div>
+			</article>
+			
+			<article>
+				<p>
+				Kamu juga bisa menggunakan tanda petik pada String. Selama tanda petik tersebut 
+				tersusun terampit secara benar.
+				</p>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x = "Halo! Apa kabar ? 'Kamu disana' ";
+			<span class="grey" style="margin-left:50px;"> // menggunakan petik satu (single quotes) didalam petik dua (double quotes)</span><br><br>
+			<span class="purple">var</span> x = 'Halo! Apa kabar ? "Kamu disana" ';
+			<span class="grey" style="margin-left:50px"> // menggunakan petik dua (double quotes) didalam petik satu (single quotes)</span><br><br>
+			</div>
+			<h4>Hasil</h4>
+			<div class="example-content">
+			<h1>Readbook</h1>
+			<p>
+			Penggunakan kedua petik ( single dan double quotes) dalam satu String.
+			</p>
+			<button onclick="dataTypes5()">Klik disini</button>			
+			<p id="dataTypes05X"></p>
+			<p id="dataTypes05Y"></p>
+			</div>
+			</article>
+			
+			<article>
+				<p> Kamu akan mempelajari lebih lagi di lain chapter </p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Number JavaScript </h1>
+				<p>
+				JavaScript hanya memiliki satu tipe Number.<br><br>
+				Number bisa ditulis dengan atau tanpa desimal (bilangan yang memiliki titik)
+				</p>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x = 32.00;
+			<span class="grey" style="margin-left:50px;"> // dengan decimal</span> <br><br>
+			<span class="purple">var</span> y = 32;
+			<span class="grey" style="margin-left:50px"> // tanpa desimal</span>
+			</div>
+			</article>
+			
+			<article>
+				<p>
+				ekstra besar atau ekstra kecil bisa ditulis dengan ilmu pengetahuan (exponential atau ilmu aljabar).
+				</p>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x = 123e5;
+			<span class="grey" style="margin-left:50px;"> // 12300000</span><br><br>
+			<span class="purple">var</span> y = 123e-5;
+			<span class="grey" style="margin-left:50px"> // 0.00123</span>
+			</div>
+			</article>
+			
+			<article>
+				<p>Kamu akan belajar lebih tentang number di lain chapter</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Boolean JavaScript </h1>
+				<p>
+				Boolean hanya bisa memiliki 2 (dua) nilai antara true (benar) atau salah (false).
+				</p>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> x = true; <br>
+			<span class="purple">var</span> y = false;
+			</div>
+			</article>
+			
+			<article>
+				<p>
+				Boolean sering digunakan dalam pengetesan Kondisi.<br><br>
+				Kamu akan belajar lebih tentang Boolean di lain chapter.
+				</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Array JavaScript </h1>
+				<p>
+				Array ditulis dengan tanda <b>kurung persegi [] </b> (square bracket).<br><br>
+				Item (barang atau isi) array dipisahkan dengan tanda koma.<br><br>
+				Berikut adalah kode yang mendeklarasikan (menciptakan) sebuah array yang disebut cars,
+				yang berisikan tiga item (nama mobil).
+				</p>
+			</article>
+			
+			<!-- KOTAK CONTOH 6-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br>
+			<q lang="code">title</q>coba<q lang="code">/title</q><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">button <span class="purple">onclick="dataTypes6()"</span></q>Klik disini<q lang="code">/button</q><br><br>
+			<q lang="code">p <span class="purple">id="dataTypes06"</span></q> Saya menyukai mobil <q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">function</span> dataTypes6() {<br><br>
+			<span class="purple">var</span> cars =["corvette", "BMW", "RX-8", "Nissan Skyline", "Lamborghini", "GTO Twin-Turbo"];<br><br>
+			document.getElementById("<span class="purple">dataTypes06</span>").innerHTML=cars[2];<br><br>
+			}<br><br>
+			<q lang="code">/script</q><br><br>
+			<q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="dataTypes6()">Klik disini</button>
+			<p id="dataTypes06">Saya menyukai mobil</p>
+			</div>
+			</article>	
+			
+			<article>
+				<p>
+				Daftar nama array (array indexes) adalah 0 untuk pertama. Yang mana artinya
+				item pertama nilainya adalah 0, item kedua nilainya adalah 1 dan seterusnya.<br><br>
+				Kamu akan mempelajari lebih tentang Array di lain chapter.
+				</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Object JavaScript </h1>
+				<p>
+				Object JavaScript ditulis didalam <b> kurung kurawal {}</b> (curly braces).<br><br>
+				Properti object ditulis seperti name:nilai  dan dipisahkan dengan koma.
+				</p>
+			</article>
+			
+			<!-- KOTAK CONTOH 7-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br>
+			<q lang="code">title</q>coba<q lang="code">/title</q><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">button <span class="purple">onclick="dataTypes7()"</span></q>Klik disini<q lang="code">/button</q><br><br>
+			<q lang="code">p <span class="purple">id="dataTypes07"</span></q> Halo <q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">function</span> dataTypes7() {<br><br>
+			<span class="purple">var</span> person = { firstName="Fajar", <br>
+			lastName:"Ade Pamungkas", <br>
+			age: 20, <br>
+			eyeColor:"Brown"<br>
+			};<br><br>
+			document.getElementById("<span class="purple">dataTypes07</span>").innerHTML="Nama saya"+" "+person.firstName;<br><br>
+			}<br><br>
+			<q lang="code">/script</q><br><br>
+			<q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="dataTypes7()">Klik disini</button>
+			<p id="dataTypes07"> Halo, perkenalkan</p>
+			</div>
+			</article>	
+			
+			<article>
+				<p>
+				Object (person) pada contoh diatas memiliki 4 properti yaitu firsrName, lastName, age, dan eyeColor.<br><br>
+				Kamu akan mempelajari tentang object di lain chapter.
+				</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Operator typeof</h1>
+				<p>
+				Kamu bisa menggunakan <b>typeof</b> untuk mencari tipe dari sebuah variabel JavaSdript :
+				</p>
+			</article>
+			
+			<!--KOTAK CONTOH 8-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<span class="purple">var</span> typeof 123;
+			<span class="grey" style="margin-left:50px;"> // mengembalikan Number </span><br><br>
+			<span class="purple">var</span> typeof "Ade";
+			<span class="grey" style="margin-left:50px"> // mengembalikan String </span><br><br>
+			<span class="purple">var</span> typeof false;
+			<span class="grey" style="margin-left:50px;"> // mengembalikan Boolean</span><br><br>
+			<span class="purple">var</span> typeof {nama:"ade", kelas:"3", warna:"biru"};
+			<span class="grey" style="margin-left:50px"> // mengembalikan Object</span><br><br>
+			<span class="purple">var</span> typeof ["merah", "biru", "kuning"];
+			<span class="grey" style="margin-left:50px;"> // mengembalikan Object</span><br><br>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="dataTypes8()">Klik disini</button>
+			<p id="dataTypes08O"></p>
+			<p id="dataTypes08P"></p>
+			<p id="dataTypes08Q"></p>
+			<p id="dataTypes08R"></p>
+			<p id="dataTypes08S"></p>
+			</div>
+			</article>
+			
+			<article>
+				<p>
+					Di JavaScript, Array merupakan tipe special dari Object. Oleh karena itu, 
+					typeof ["merah", "biru", "kuning"] akan mengembalikan ke Object.
+				</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Tidak Didefinisikan (Undefined)</h1>
+				<p>
+				Dalam JavaScript, sebuah variabel tanpa sebuah nilai, memiliki nilai <b>undefined</b>.
+				typeof nya pun <b>undefined</b>.
+				</p>
+			</article>
+			
+			<!-- KOTAK CONTOH 9-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br>
+			<q lang="code">title</q>coba<q lang="code">/title</q><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">button <span class="purple">onclick="dataTypes9()"</span></q>Klik disini<q lang="code">/button</q><br><br>
+			<q lang="code">p <span class="purple">id="dataTypes09"</span></q> Halo <q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">function</span> dataTypes9() {<br><br>
+			<span class="purple">var</span> person; 
+			<span class="grey" style="margin-left:50px">// nilai tidak terdefini, tipe tidak terdefinisi</span><br><br>
+			document.getElementById("<span class="purple">dataTypes09</span>").innerHTML=person+<br>+typeof person;<br><br>
+			}<br><br>
+			<q lang="code">/script</q><br><br>
+			<q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="dataTypes9()">Klik disini</button>
+			<p id="dataTypes09"> Halo, perkenalkan</p>
+			</div>
+			</article>	
+			
+			<article>
+				<p>Variabel apapun bisa dikosongkan, dengan mengatur nilai menjadi <b>undefined</b>
+				maka typeof nya akan menjadi <b>undefined</b></p>
+			</article>
+			
+			<!-- KOTAK CONTOH 10-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br>
+			<q lang="code">title</q>coba<q lang="code">/title</q><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">button <span class="purple">onclick="dataTypes9()"</span></q>Klik disini<q lang="code">/button</q><br><br>
+			<q lang="code">p <span class="purple">id="dataTypes09"</span></q> Halo <q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">function</span> dataTypes9() {<br><br>
+			<span class="purple">var</span> person = undefined;
+			<span class="grey" style="margin-left:50px">// nilai tidak terdefini, tipe tidak terdefinisi</span><br><br>
+			document.getElementById("<span class="purple">dataTypes10</span>").innerHTML=person+<br>+typeof  person;<br><br>
+			}<br><br>
+			<q lang="code">/script</q><br><br>
+			<q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="dataTypes10()">Klik disini</button>
+			<p id="dataTypes10"> Halo, perkenalkan</p>
+			</div>
+			</article>	
+</section>
+<section>			
+			<article>
+				<h1>Nilai Kosong</h1>
+				<p>
+				Nilai kosong tidak memiliki sesuatu untuk melakukan dengan tidak terdefinisi.<br><br>
+				Sebuah String kosong memiliki keduanya antara nilai dan tipe.
+				</p>
+			</article>
+			
+			<!-- KOTAK CONTOH 11-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br>
+			<q lang="code">title</q>coba<q lang="code">/title</q><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">button <span class="purple">onclick="dataTypes9()"</span></q>Klik disini<q lang="code">/button</q><br><br>
+			<q lang="code">p <span class="purple">id="dataTypes09"</span></q> Halo <q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">function</span> dataType11() {<br><br>
+			<blockquote cite="http://Readbook.co.id/js home.html">
+			<span class="purple">var</span> car = " ";
+			<span class="grey" style="margin-left:50px">// nilai " ", tipe String</span><br><br>
+			document.getElementById("<span class="purple">dataTypes11</span>").innerHTML=<br>
+			"The value is: " +<br>
+			car + "<br>" +
+			"The type is:" + typeof car;<br>
+			</blockquote>
+			}<br><br>
+			
+			<q lang="code">/script</q><br><br>
+			<q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="dataTypes11()">Klik disini</button>
+			<p id="dataTypes11"> Halo, perkenalkan</p>
+			</div>
+			</article>	
+</section>
+<section>
+			<article>
+				<h1>Null</h1>
+				<p>
+				Di JavaScript, null artinya "nothing" (bukan apa apa). Andaikata (suppose) ini menjadi sesuatu yang tidak ada (doesn't exist).<br><br>
+				Sayangnya (unfortunately), di JavaScript. tipe data <b>null</b> adalah sebuah <b>object</b>.
+				</p>
+			</article>
+			
+			<!--ATTENTION-->
+			<article>
+			<table class="attention">
+			<tr>
+			<td class="td-left">
+			<h1>!</h1>
+			</td>
+			<td class="td-right">
+			Kamu bisa mempertimbangkannya (consider) suatu bug dalam JavaScript yang tipe null adalah sebuah object.
+			Seharusnya atau lebih baik null
+			</td>
+			</tr>
+			</table>
+			</article>
+			
+			<article>
+				<p>Kamu bisa mengosongkan sebuah object dengan membuatnya menjadi null.</p>
+			</article>
+			
+			<!-- KOTAK CONTOH 12-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br>
+			<q lang="code">title</q>coba<q lang="code">/title</q><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">button <span class="purple">onclick="dataTypes12()"</span></q>Klik disini<q lang="code">/button</q><br><br>
+			<q lang="code">p <span class="purple">id="dataTypes12"</span></q> Halo <q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">function</span> dataTypes12() {<br><br>
+			<blockquote cite="http://Readbook.co.id/js home.html">
+			<span class="purple">var</span> car = null;
+			<span class="grey" style="margin-left:50px">// nilai null, tipe Object</span><br><br>
+			document.getElementById("<span class="purple">dataTypes12</span>").innerHTML=
+			"The value is: " +<br>
+			car + "<br>" +
+			"The type is:" + typeof car;<br>
+			</blockquote>
+			}<br><br>
+			
+			<q lang="code">/script</q><br><br>
+			<q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="dataTypes12()">Klik disini</button>
+			<p id="dataTypes12"></p>
+			</div>
+			</article>	
+			
+			<article>
+				<p>Kamu juga bisa mengosongkan sebuah object dengan menjadikanya undefined.</p>
+			</article>
+			
+			<!-- KOTAK CONTOH 11-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br>
+			<q lang="code">title</q>coba<q lang="code">/title</q><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">button <span class="purple">onclick="dataTypes12()"</span></q>Klik disini<q lang="code">/button</q><br><br>
+			<q lang="code">p <span class="purple">id="dataTypes12"</span></q> Halo <q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">function</span> dataTypes12() {<br><br>
+			<blockquote cite="http://Readbook.co.id/js home.html">
+			<span class="purple">var</span> car = undefined;
+			<span class="grey" style="margin-left:50px">// nilai undefined, tipe Undefined</span><br><br>
+			document.getElementById("<span class="purple">dataTypes12</span>").innerHTML=
+			"The value is: " +<br>
+			car + "<br>" +
+			"The type is:" + typeof car;<br>
+			</blockquote>
+			}<br><br>
+			
+			<q lang="code">/script</q><br><br>
+			<q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<button onclick="dataTypes13()">Klik disini</button>
+			<p id="dataTypes13"></p>
+			</div>
+			</article>	
+</section>
+<section>			
+			<article>
+				<h1> Perbedaan Antara Null dan Undefined</h1>
+			</article>
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			typeof null;
+			<span class="grey" style="margin-left:50px;"> // object</span><br><br>
+			typeof undefined;
+			<span class="grey" style="margin-left:50px"> // undefined</span><br><br>
+			null == undefined;
+			<span class="grey" style="margin-left:50px;"> // true </span><br><br>
+			null === undefined;
+			<span class="grey" style="margin-left:50px"> // false </span>
+			</div>
+			</article>
+</section>
+<section>
+			<article id="NoB">
+			<a href="js assignment.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="js functions.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			</article>
+			<article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

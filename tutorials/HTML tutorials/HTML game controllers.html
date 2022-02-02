@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML Game Control  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="../CSS tutorials/buka.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<style type="text/css">
+.example-content mark {
+	padding:5px;
+	border-radius:50px;
+}
+.mark {
+	padding:5px;
+	border-radius:10px;
+	background-color:yellow;
+}
+p > mark {
+	padding:5px;
+	border-radius:50px;
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+	
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML Game Controllers  </h1>
+				
+			</div>
+			
+			
+<section>			
+			<article>
+				<h2> Game Controllers </h2>
+				<p> Tekan tombol untuk menggerakan persegi merah:</p>
+				<div>
+				UP <br>
+				 <br>
+				LEFT  RIGHT <br>
+				<br>
+				DOWN
+				</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Get in Control </h2>
+				<p> Dapatkan Kontrol </p>
+				<p> Sekarang kita ingin mengontrol red square (persegi merah). </p>
+				<p> Tambahkan empat button (tombol) up, down, left, dan right. </p>
+				<p> Tulislah sebuah fungsi untuk setiap button untuk menggerakan komponen pada arah tertentu (selected direction). </p>
+				<p> Buatlah dua properti baru pada component constructor dan sebut mereka <mark>speedX</mark> dan <mark>speedY</mark>. Properti-properti ini sedang digunakan sebagai indikator kecepatan: </p>
+				<p> Tambahkanlah sebuah fungsi dalam component constructor, yang disebut <mark>newPos()</mark>, yang mana menggunakan properti <mark>speedX</mark> dan <mark>speedY</mark> untuk mengubah posisi komponen. </p>
+				<p> Fungsi <mark>newpost</mark> dipanggil dari fungsi <mark>updateGaneArea</mark> sebelum penggambaran (atau gambar) komponen:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						<<b>script</b>> <br>
+						function component(width, height, color, x, y) {
+						<blockquote>
+						this.width = width; <br>
+						this.height = height; <br>
+						<mark>this.speedX = 0;</mark> <br>
+						<mark>this.speedY = 0;</mark> <br>
+						this.x = x; <br>
+						this.y = y;  <br>
+						this.update = function() {
+						<blockquote>
+						ctx = myGameArea.context; <br>
+						ctx.fillStyle = color; <br>
+						ctx.fillRect(this.x, this.y, this.width, this.height);
+						</blockquote>
+						} <br>
+						<span class="mark">this.newPos = function() {
+						<blockquote>
+						<mark>this.x += this.speedX;</mark> <br>
+						<mark>this.y += this.speedY; </mark>
+						</blockquote>
+						} </span>
+						</blockquote>
+						} <br>
+						<br>
+						function updateGameArea() {
+						<blockquote>
+						myGameArea.clear(); <br>
+						<mark>myGamePiece.newPos();</mark> <br>
+						myGamePiece.update();
+						</blockquote>
+						} <br>
+						<br>
+						function moveup() {
+						<blockquote>
+							<mark>myGamePiece.speedY -= 1;</mark> 
+						</blockquote>
+						} <br>
+						<br>
+						function movedown() {
+						<blockquote>
+							<mark>myGamePiece.speedY += 1; </mark>
+						</blockquote>
+						} <br>
+						<br>
+						function moveleft() {
+						<blockquote>
+							<mark>myGamePiece.speedX -= 1;</mark>
+						</blockquote>
+						} <br>
+						<br>
+						function moveright() {
+						<blockquote>
+							<mark>myGamePiece.speedX += 1;</mark>
+						</blockquote>
+						} <br>
+						<<b>/script</b>> <br><br>
+						
+						<<b>button</b> <span class="teal">onclick="moveup()"</span>>UP<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">onclick="movedown()"</span>>DOWN<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">onclick="moveleft()"</span>>LEFT<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">onclick="moveright()"</span>>RIGHT<<b>/button</b>> <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+
+					<<b>!DOCTYPE html</b>> <br>
+					<<b>html</b>> <br>
+					<<b>head</b>> <br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>/> <br>
+					<<b>style</b>> <br>
+					canvas {
+					<blockquote>
+					    border:1px solid #d3d3d3;
+					    background-color: #f1f1f1;
+					</blockquote>
+					} <br>
+					<<b>/style</b>> <br>
+					<<b>/head</b>> <br>
+					<<b>body</b> <span class="teal">onload="startGame()"</span>> <br>
+					<<b>script</b>><br><br>
+					
+					var myGamePiece; <br><br>
+					
+					function startGame() {
+					<blockquote>
+					    myGamePiece = new component(30, 30, "red", 10, 120); <br>
+					    myGameArea.start();
+					</blockquote>    
+					}<br><br>
+					
+					var myGameArea = {
+					<blockquote>
+					    canvas : document.createElement("canvas"), <br>
+					    start : function() { 
+					    <blockquote>
+					        this.canvas.width = 480; <br>
+					        this.canvas.height = 270; <br>
+					        this.context = this.canvas.getContext("2d"); <br>
+					        document.body.insertBefore(this.canvas, document.body.childNodes[0]); <br>
+					        this.interval = setInterval(updateGameArea, 20);
+					    </blockquote>
+					    }, <br>
+					    clear : function() {
+					    <blockquote>
+					    this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+					    </blockquote>
+					    }
+					</blockquote>
+					} <br><br>
+					    
+					function component(width, height, color, x, y) {
+					<blockquote>
+					    this.width = width; <br>
+					    this.height = height; <br>
+					    this.speedX = 0; <br>
+					    this.speedY = 0; <br>
+					    this.x = x; <br>
+					    this.y = y; <br>
+					    this.update = function() { 
+					    <blockquote>
+						    ctx = myGameArea.context; <br>
+						    ctx.fillStyle = color; <br>
+						    ctx.fillRect(this.x, this.y, this.width, this.height);
+						</blockquote>
+					    } <br>
+					    this.newPos = function() {
+					    <blockquote>
+						    this.x += this.speedX; <br>
+						    this.y += this.speedY;     
+						</blockquote>   
+					    }    
+					</blockquote>
+					} <br><br>
+					   
+					function updateGameArea() {
+					<blockquote>
+					myGameArea.clear(); <br>
+					<mark>myGamePiece.newPos();</mark> <br>
+					myGamePiece.update();
+					</blockquote>
+					} <br>
+					<br>
+					function moveup() {
+					<blockquote>
+						<mark>myGamePiece.speedY -= 1;</mark> 
+					</blockquote>
+					} <br>
+					<br>
+					function movedown() {
+					<blockquote>
+						<mark>myGamePiece.speedY += 1; </mark>
+					</blockquote>
+					} <br>
+					<br>
+					function moveleft() {
+					<blockquote>
+						<mark>myGamePiece.speedX -= 1;</mark>
+					</blockquote>
+					} <br>
+					<br>
+					function moveright() {
+					<blockquote>
+						<mark>myGamePiece.speedX += 1;</mark>
+					</blockquote>
+					} <br>
+					
+					<<b>/script</b>> <br><br>
+					
+					<<b>div</b> <span class="teal">style="text-align:center;width:480px;"</span>>
+					<blockquote>
+						<<b>button</b> <span class="teal">onclick="moveup()"</span>>UP<<b>/button</b>><<b>br</b>><<b>br</b>> <br>
+						<<b>button</b> <span class="teal">onclick="moveleft()"</span>>LEFT<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">onclick="moveright()"</span>>RIGHT<<b>/button</b>><<b>br></b><<b>br</b>> <br>
+						<<b>button</b> <span class="teal">onclick="movedown()"</span>>DOWN<<b>/button</b>>
+					</blockquote>
+					<<b>/div</b>> <br><br>
+					
+					<<b>p</b>>If you click a button the red square will start moving. Click the same button many times, and it will move faster and faster.<<b>/p</b>> <br>
+					<<b>/body</b>> <br>
+					<<b>/html</b>>
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+					<p><a href="HTML Games/example 4.1.html" >Try it!</a></p>
+						
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Stop Moving</h2>
+				<p>Menghentikan pergerakan</p>
+				<p> Jika kamu mau, kamu bisa membuat persegu merah berhenti ketika kamu melepas (release) button. </p>
+				<p> Tambahkan fungsu yang akan mengatur indikator kecepatan menjadi <b>0</b>. </p>
+				<p> Untuk menyetujui dengan kedua normal screen (layar normal) dan touch screen (layar sentuh), kita akan menambahkan kode untuk kedua perangkat: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						<<b>script</b>> <br>
+				<div class="mark">	
+						function stopMove() {
+						<blockquote>
+						myGamePiece.speedX = 0; <br>
+						myGamePiece.speedY = 0;  
+						</blockquote>
+						} 
+				</div><br>
+						<<b>/script</b>> <br><br>
+						
+						<<b>button</b> <span class="teal">onmousedown="moveup()" <mark>onmouseup="stopMove()"</mark> <mark>ontouchstart="moveup()"</mark> </span>>UP<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">onmousedown="movedown()" <mark>onmouseup="stopMove()"</mark> <mark>ontouchstart="movedown()"</mark> </span>>DOWN<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">onmousedown="moveleft()" <mark>onmouseup="stopMove()"</mark> <mark>ontouchstart="moveleft()"</mark> </span>>LEFT<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">onmousedown="moveright()" <mark>onmouseup="stopMove()"</mark> <mark>ontouchstart="moveright()"</mark> </span>>RIGHT<<b>/button</b>>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					
+					<<b>!DOCTYPE html</b>> <br>
+					<<b>html</b>> <br>
+					<<b>head</b>> <br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>/> <br>
+					<<b>style</b>> <br>
+					canvas {
+					<blockquote>
+						border:1px solid #d3d3d3;
+						background-color: #f1f1f1;
+					</blockquote>
+					} <br>
+					<<b>/style</b>> <br>
+					<<b>/head</b>> <br>
+					<<b>body</b> <span class="teal">onload="startGame()"</span>> <br>
+					<<b>script</b>> <br>
+					var myGamePiece; <br><br>
+					
+					function startGame() {
+					<blockquote>
+					    myGamePiece = new component(30, 30, "red", 10, 120); <br>
+					    myGameArea.start();
+					</blockquote>    
+					}<br><br>
+					
+					var myGameArea = {
+					<blockquote>
+					    canvas : document.createElement("canvas"), <br>
+					    start : function() { 
+					    <blockquote>
+					        this.canvas.width = 480; <br>
+					        this.canvas.height = 270; <br>
+					        this.context = this.canvas.getContext("2d"); <br>
+					        document.body.insertBefore(this.canvas, document.body.childNodes[0]); <br>
+					        this.interval = setInterval(updateGameArea, 20);
+					    </blockquote>
+					    }, <br>
+					    clear : function() {
+					    <blockquote>
+					    this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+					    </blockquote>
+					    }
+					</blockquote>
+					} <br><br>
+					    
+					function component(width, height, color, x, y) {
+					<blockquote>
+					    this.width = width; <br>
+					    this.height = height; <br>
+					    this.speedX = 0; <br>
+					    this.speedY = 0; <br>
+					    this.x = x; <br>
+					    this.y = y; <br>
+					    this.update = function() { 
+					    <blockquote>
+						    ctx = myGameArea.context; <br>
+						    ctx.fillStyle = color; <br>
+						    ctx.fillRect(this.x, this.y, this.width, this.height);
+						</blockquote>
+					    } <br>
+					    this.newPos = function() {
+					    <blockquote>
+						    this.x += this.speedX; <br>
+						    this.y += this.speedY;     
+						</blockquote>   
+					    }    
+					</blockquote>
+					} <br><br>
+					    
+					function updateGameArea() {
+					<blockquote>
+						myGameArea.clear(); <br>
+						myGamePiece.newPos(); <br> 
+						myGamePiece.update();
+					</blockquote>
+					} <br><br>
+					
+					function moveup() {
+					<blockquote>
+						myGamePiece.speedY = -1; 
+					</blockquote>
+					} <br><br>
+					
+					function movedown() { 
+					<blockquote>
+						myGamePiece.speedY = 1; 
+					</blockquote>
+					} <br><br>
+					
+					function moveleft() {
+					<blockquote>
+						myGamePiece.speedX = -1; 
+					</blockquote>
+					} <br><br>
+					
+					function moveright() {
+					<blockquote>
+						myGamePiece.speedX = 1; 
+					</blockquote>
+					} <br><br>
+					
+			<div class="mark">	
+					function stopMove() {
+					<blockquote>
+					myGamePiece.speedX = 0; <br>
+					myGamePiece.speedY = 0;  
+					</blockquote>
+					} 
+			</div><br>
+					<<b>/script</b>> <br><br>
+					
+					<<b>div</b> <span class="teal">style="text-align:center;width:480px;"</span>>
+					<blockquote>
+						<<b>button</b> <span class="teal">onmousedown="moveup()" <mark>onmouseup="stopMove()"</mark> <mark>ontouchstart="moveup()"</mark> </span>>UP<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">onmousedown="movedown()" <mark>onmouseup="stopMove()"</mark> <mark>ontouchstart="movedown()"</mark> </span>>DOWN<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">onmousedown="moveleft()" <mark>onmouseup="stopMove()"</mark> <mark>ontouchstart="moveleft()"</mark> </span>>LEFT<<b>/button</b>> <br>
+						<<b>button</b> <span class="teal">onmousedown="moveright()" <mark>onmouseup="stopMove()"</mark> <mark>ontouchstart="moveright()"</mark> </span>>RIGHT<<b>/button</b>>
+					</blockquote>
+					<<b>/div</b>> <br><br>
+					<<b>p</b>>If you click a button the red square will start moving. The movement will stop when you stop pressing th button.<<b>/p</b>> <br>
+					<<b>p</b>>We have added the ontouchstart event on the buttons, to make this example work for touch devices.<<b>/p</b>>
+					<<b>/body</b>> <br>
+					<<b>/html</b>>
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+					<p><a href="HTML Games/example 4.2.html" >Try it!</a></p>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Keyboard as Controller </h2>
+				<p> Keyboard sebagai Controller (Pengontrol)</p>
+				<p> Kita juga bisa mengontrol red square dengan menggunakan arrow key (kunci tanda panah) pada keyboard. </p>
+				<p> Buatlah sebuah metode yang mengecek jika sebuah kunci ditekan, dan mengatur properti <mark>key</mark> dari 
+				<mark>myGameArea</mark> object untuk key code. Ketika kunci ditekan, aturlah properti <mark>key</mark> menjadi <mark>false</mark>:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content">
+						
+						var myGameArea = {
+						<blockquote>
+						canvas : document.createElement("canvas"),
+						start : function() {
+						<blockquote>
+							this.canvas.width = 480; <br>
+							this.canvas.height = 270; <br>
+							this.context = this.canvas.getContext("2d"); <br>
+							document.body.insertBefore(this.canvas, document.body.childNodes[0]); <br>
+							this.interval = setInterval(updateGameArea, 20); <br>
+							<mark>window.addEventListener('keydown', function (e) {</mark>
+							<blockquote>
+								<mark>myGameArea.key = e.keyCode; </mark>
+							</blockquote>
+							<mark>})</mark> <br>
+							<mark>window.addEventListener('keyup', function (e) {</mark>
+							<blockquote>
+								<mark>myGameArea.key = false;</mark>
+							</blockquote>
+							<mark>}) </mark>
+						</blockquote>
+						},  <br>
+						clear : function(){
+						<blockquote>
+						this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+						</blockquote>
+						}
+						</blockquote>
+						}
+						
+					</div>
+				</article>
+				
+				<p> Lalu kita bisa menggerakan red square jika salah satu dari arrow key ditekan:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open03">
+						
+						function updateGameArea() {
+						<blockquote>
+							myGameArea.clear(); <br>
+							<div class="mark">
+							myGamePiece.speedX = 0; <br>
+							myGamePiece.speedY = 0;  <br>
+							if (myGameArea.key && myGameArea.key == 37) {myGamePiece.speedX = -1; } <br>
+							if (myGameArea.key && myGameArea.key == 39) {myGamePiece.speedX = 1; } <br>
+							if (myGameArea.key && myGameArea.key == 38) {myGamePiece.speedY = -1; } <br>
+							if (myGameArea.key && myGameArea.key == 40) {myGamePiece.speedY = 1; } <br>
+							</div>
+							myGamePiece.newPos();  <br>
+							myGamePiece.update(); 
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						canvas {
+						<blockquote>
+							border:1px solid #d3d3d3; <br>
+							background-color: #f1f1f1;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b> <span class="teal">onload="startGame()"</span>><br><br>
+					
+					<<b>script</b>> <br>
+					var myGamePiece; <br><br>
+					
+					function startGame() {
+					<blockquote>
+					    myGamePiece = new component(30, 30, "red", 10, 120); <br>
+					    myGameArea.start();
+					</blockquote>    
+					}<br><br>
+					
+					var myGameArea = {
+					<blockquote>
+					    canvas : document.createElement("canvas"), <br>
+					    start : function() { 
+					    <blockquote>
+					        this.canvas.width = 480; <br>
+					        this.canvas.height = 270; <br>
+					        this.context = this.canvas.getContext("2d"); <br>
+					        document.body.insertBefore(this.canvas, document.body.childNodes[0]); <br>
+					        this.interval = setInterval(updateGameArea, 20);
+					    </blockquote>
+					    }, <br>
+					    clear : function() {
+					    <blockquote>
+					    this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+					    </blockquote>
+					    }
+					</blockquote>
+					} <br><br>
+					    
+					function component(width, height, color, x, y) {
+					<blockquote>
+					    this.width = width; <br>
+					    this.height = height; <br>
+					    this.speedX = 0; <br>
+					    this.speedY = 0; <br>
+					    this.x = x; <br>
+					    this.y = y; <br>
+					    this.update = function() { 
+					    <blockquote>
+						    ctx = myGameArea.context; <br>
+						    ctx.fillStyle = color; <br>
+						    ctx.fillRect(this.x, this.y, this.width, this.height);
+						</blockquote>
+					    } <br>
+					    this.newPos = function() {
+					    <blockquote>
+						    this.x += this.speedX; <br>
+						    this.y += this.speedY;     
+						</blockquote>   
+					    }    
+					</blockquote>
+					} <br><br>
+					    
+					function updateGameArea() {
+						<blockquote>
+						myGameArea.clear(); <br>
+						<div class="mark">
+						myGamePiece.speedX = 0; <br>
+						myGamePiece.speedY = 0;  <br>
+						if (myGameArea.key && myGameArea.key == 37) {myGamePiece.speedX = -1; } <br>
+						if (myGameArea.key && myGameArea.key == 39) {myGamePiece.speedX = 1; } <br>
+						if (myGameArea.key && myGameArea.key == 38) {myGamePiece.speedY = -1; } <br>
+						if (myGameArea.key && myGameArea.key == 40) {myGamePiece.speedY = 1; } <br>
+						</div>
+						myGamePiece.newPos();  <br>
+						myGamePiece.update(); 
+					</blockquote>
+					} <br><br>
+					<<b>/script</b>> <br><br>
+					<<b>p</b>>Make sure this window has focus, then you can use the arrow keys on you keyboard to move the red square.<<b>/p</b>> <br>
+					<<b>/body</b>> <br>
+					<<b>/html</b>>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+					<p><a href="HTML Games/example 4.3.html" >Try it!</a></p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Multiple Keys Pressed</h2>
+				<p> Kunci Lebih dari satu ditekan (secara bersamaan)</p>
+				<p> Apa (yang terjadi) jika lebih dsri satu kunci ditekan pada waktu yang sama? </p>
+				<p> Pada contoh diatas, komponen hanya bisa bergerak secara horizontal data secara vertikal saja. 
+				Sekarang kita ingin komponen untuk juga bergerak secara diagonal. </p>
+				<p> Buatlah keys array untuk <mark>myGameArea</mark> object, dan sisipkan satu element untuk setisp kunci yang ditekan, 
+				dan berilah ia nilai <b>true</b>, nilai yang sama yaitu true sampai kunci tidak lebih lama ditekan, 
+				nilai menjadi <b>false</b> dalam fungsi event listener <mark>keyup</mark>: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open04">
+						
+						var myGameArea = {
+						<blockquote>
+							canvas : document.createElement("canvas"), <br>
+							start : function() {
+							<blockquote>
+								this.canvas.width = 480; <br>
+								this.canvas.height = 270; <br>
+								this.context = this.canvas.getContext("2d"); <br>
+								document.body.insertBefore(this.canvas, document.body.childNodes[0]); <br>
+								this.interval = setInterval(updateGameArea, 20); <br>
+							<div class="mark">
+								window.addEventListener('keydown', function (e) {
+								<blockquote>
+									myGameArea.keys = (myGameArea.keys || []); <br>
+									myGameArea.keys[e.keyCode] = true;
+								</blockquote>
+								}) <br>
+								window.addEventListener('keyup', function (e) {
+								<blockquote>
+									myGameArea.keys[e.keyCode] = false; 
+								</blockquote>
+								}) 
+							</div>
+							</blockquote>
+							}, <br>
+							clear : function(){
+							<blockquote>
+								this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+							</blockquote>
+							}
+						</blockquote>
+						} <br>
+						<br>
+						function updateGameArea() {
+						<blockquote>
+							myGameArea.clear(); <br>
+							myGamePiece.speedX = 0; <br>
+							myGamePiece.speedY = 0;  <br>
+							if (<mark>myGameArea.keys && myGameArea.keys[37])</mark> {myGamePiece.speedX = -1; } <br>
+							if (<mark>myGameArea.keys && myGameArea.keys[39])</mark> {myGamePiece.speedX = 1; } <br>
+							if (<mark>myGameArea.keys && myGameArea.keys[38])</mark> {myGamePiece.speedY = -1; } <br>
+							if (<mark>myGameArea.keys && myGameArea.keys[40])</mark> {myGamePiece.speedY = 1; } <br>
+							myGamePiece.newPos(); <br>
+							myGamePiece.update();
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close04">
+					
+					<<b>!DOCTYPE html</b>> <br>
+					<<b>html</b>> <br>
+					<<b>head</b>> <br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>/> <br>
+					<<b>style</b>> <br>
+					canvas {
+					<blockquote>
+					    border:1px solid #d3d3d3;
+					    background-color: #f1f1f1;
+					</blockquote>
+					} <br>
+					<<b>/style</b>> <br>
+					<<b>/head</b>> <br>
+					<<b>body</b> <span class="teal">onload="startGame()"</span>> <br> <br>
+					<<b>script</b>> <br>
+					<br>
+					var myGamePiece; <br>
+					
+					function startGame() {
+					<blockquote>
+					    myGameArea.start(); <br>
+					    myGamePiece = new component(30, 30, "red", 10, 120);
+					</blockquote>
+					} <br>
+					<br>
+					var myGameArea = {
+					<blockquote>
+					    canvas : document.createElement("canvas"), <br>
+					    start : function() {
+					    <blockquote>
+					        this.canvas.width = 480; <br>
+					        this.canvas.height = 270; <br>
+					        this.context = this.canvas.getContext("2d"); <br>
+					        document.body.insertBefore(this.canvas, document.body.childNodes[0]); <br>
+					        this.interval = setInterval(updateGameArea, 20); <br>
+					        window.addEventListener('keydown', function (e) {
+							<blockquote>
+					            myGameArea.keys = (myGameArea.keys || []); <br>
+					            myGameArea.keys[e.keyCode] = (e.type == "keydown");
+					        </blockquote>
+					        }) <br>
+					        window.addEventListener('keyup', function (e) { 
+					        <blockquote>
+					            myGameArea.keys[e.keyCode] = (e.type == "keydown"); 
+					        </blockquote>        
+					        }) 
+					     </blockquote>
+					    },  <br>
+					    clear : function(){
+					    <blockquote>
+					        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+					    </blockquote>
+					    }
+					</blockquote>
+					} <br>
+					<br>
+					function component(width, height, color, x, y) {
+					<blockquote>
+					    this.gamearea = myGameArea; <br>
+					    this.width = width; <br>
+					    this.height = height; <br>
+					    this.speedX = 0; <br>
+					    this.speedY = 0; <br>
+					    this.x = x; <br>
+					    this.y = y;    <br>
+					    this.update = function() {
+					    <blockquote>
+					        ctx = myGameArea.context; <br>
+					        ctx.fillStyle = color; <br>
+					        ctx.fillRect(this.x, this.y, this.width, this.height);
+					    </blockquote>
+					    } <br>
+					    this.newPos = function() {
+					    <blockquote>
+					        this.x += this.speedX; <br>
+					        this.y += this.speedY;     
+					    </blockquote>   
+					    }    
+					</blockquote>
+					} <br>
+					<br>
+					function updateGameArea() {
+					<blockquote>
+					    myGameArea.clear(); <br>
+					    myGamePiece.speedX = 0; <br>
+					    myGamePiece.speedY = 0; <br>
+					    if (myGameArea.keys && myGameArea.keys[37]) {myGamePiece.speedX = -1; } <br>
+					    if (myGameArea.keys && myGameArea.keys[39]) {myGamePiece.speedX = 1; } <br>
+					    if (myGameArea.keys && myGameArea.keys[38]) {myGamePiece.speedY = -1; } <br>
+					    if (myGameArea.keys && myGameArea.keys[40]) {myGamePiece.speedY = 1; } <br>
+					    myGamePiece.newPos(); <br>
+					    myGamePiece.update();
+					</blockquote>
+					} <br>
+					<<b>/script</b>> <br><br>
+					<<b>p</b>>Make sure this window has focus, then use the arrow keys on you keyboard to move the red square.<<b>/p</b>> <br>
+					<<b>p</b>>When pressing both the left and the down arrow, the red square will move both down and to the left.<<b>/p</b>> <br><br>
+					<<b>/body</b>> <br>
+					<<b>/html</b>>
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<button onclick="buka04()" class="exbutton"> Open </button>
+					<button onclick="tutup04()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+					<p><a href="HTML Games/example 4.4.html" >Try it!</a></p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Using The Mouse Cursor as a Controller </h2>
+				<p> Penggunaan Mouse Cursor sebagai Pengendali</p>
+				<p> Jika kamu ingin mengontrol red square dengan menggunakan mouse cursor, tambahkanlah sebuah metode dalam 
+				<mark>myGameArea</mark> object yang memperbaharui koordinat x dan y dari mouse cursor:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content">
+						
+						var myGameArea = {
+						<blockquote>
+							canvas : document.createElement("canvas"), <br>
+							start : function() {
+							<blockquote>
+								this.canvas.width = 480; <br>
+								this.canvas.height = 270; <br>
+								<mark>this.canvas.style.cursor = "none"; <em>//hide the original cursor</em></mark> <br>
+								this.context = this.canvas.getContext("2d"); <br>
+								document.body.insertBefore(this.canvas, document.body.childNodes[0]); <br>
+								this.interval = setInterval(updateGameArea, 20); <br>
+								<div class="mark">
+								window.addEventListener('mousemove', function (e) {
+								<blockquote>
+									myGameArea.x = e.pageX; <br>
+									myGameArea.y = e.pageY; 
+								</blockquote>
+								})
+								</div>
+							</blockquote>
+							}, <br>
+							clear : function(){
+							<blockquote>
+								this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+							</blockquote>
+							}
+						</blockquote>
+						}
+						
+					</div>
+				</article>
+				
+				<p> Kemudian kita bisa menggerakan red square menggunakan mouse cursor: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open05">
+						
+						function updateGameArea() { 
+						<blockquote>
+							myGameArea.clear(); <br>
+						<div class="mark">
+							if (myGameArea.x && myGameArea.y) {
+							<blockquote>
+								myGamePiece.x = myGameArea.x; <br>
+								myGamePiece.y = myGameArea.y; 
+							</blockquote>
+							}<br>
+						</div>
+							myGamePiece.update();
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close05">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>script</b>> <br>
+					
+					<<b>/script</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan05()" class="exbutton">Klik disini</button>
+					<button onclick="buka05()" class="exbutton"> Open </button>
+					<button onclick="tutup05()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+					
+					<p><a href="HTML Games/example 4.5.html" >Try it!</a></p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Touch The Screen to Control The Game </h2>
+				<p> Menyentuh Layar untuk Mengontrol Game </p>
+				<p> Kita juga bisa mengendalikan red square dalam sebuah touch screen (layar sentuh). </p>
+				<p> Tambahkanlah sebuah metode dalam <mark>myGameArea</mark> object yang menggunakan koordinat x dan y tentang dimana layar disentuh: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content">
+						
+						var myGameArea = {
+						<blockquote>
+							canvas : document.createElement("canvas"), <br>
+							start : function() { 
+							<blockquote>
+								this.canvas.width = 480; <br>
+								this.canvas.height = 270; <br>
+								this.context = this.canvas.getContext("2d"); <br>
+								document.body.insertBefore(this.canvas, document.body.childNodes[0]); <br>
+								this.interval = setInterval(updateGameArea, 20); <br>
+						<div class="mark">
+								window.addEventListener('touchmove', function (e) {
+								<blockquote>
+									myGameArea.x = e.touches[0].screenX; <br>
+									myGameArea.y = e.touches[0].screenY;
+								</blockquote>
+								})
+						</div>
+							</blockquote>
+							},  <br>
+							clear : function(){
+							<blockquote>
+								this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+							</blockquote>
+							}
+						</blockquote>
+						}
+						
+					</div>
+				</article>
+				
+				<p> Lalu kita bisa menggerakan red square jika pengguna menyentuh layar, dengan menggunakan kode yang sama seperti yang kita lakukan untuk mouse cursor: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open06">
+						
+						function updateGameArea() {
+						<blockquote>
+							myGameArea.clear(); <br>
+						<div class="mark">
+							if (myGameArea.touchX && myGameArea.touchY) {
+							<blockquote>
+							myGamePiece.x = myGameArea.x; <br>
+							myGamePiece.y = myGameArea.y;  
+							</blockquote>
+							} <br>
+						</div>
+								myGamePiece.update();
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close06">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>script</b>> <br>
+					
+					<<b>/script</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan06()" class="exbutton">Klik disini</button>
+					<button onclick="buka06()" class="exbutton"> Open </button>
+					<button onclick="tutup06()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+					
+					<p><a href="HTML Games/example 4.6.html" >Try it!</a></p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Controllers on The Canvas</h2>
+				<p> Pengendali pada Canvas </p>
+				<p> Kita juga bisa menggambar button milik kita pada canvas, dan menggunakannya sebagai pengendali:</p> 
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content">
+						
+						function startGame() {
+						<blockquote>
+						<div class="mark">
+							myGamePiece = new component(30, 30, "red", 10, 120); <br>
+							myUpBtn = new component(30, 30, "blue", 50, 10);  <br>
+							myDownBtn = new component(30, 30, "blue", 50, 70); <br>
+							myLeftBtn = new component(30, 30, "blue", 20, 40); <br>
+							myRightBtn = new component(30, 30, "blue", 80, 40);  <br>
+						</div>
+							myGameArea.start();
+						</blockquote>
+						}
+						
+					</div>
+				</article>
+				
+				<p> Tambahkanlah sebuah fungsi baru yang menggambarkan (jika) sebuah komponen, pada kasus ini ialah button di klik. </p>
+				<p> Mulailah dengan menambahkan event listener untuk mengecek jika tombol mouse diklik (mousedown dan mouseup). 
+				Untuk menyetujui dengan touch screen, juga tambahkanlah event listener untuk emngecek jika layar diclik (touchstart dan touchend): </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content">
+						
+						var myGameArea = {
+						<blockquote>
+							canvas : document.createElement("canvas"), <br>
+							start : function() {
+							<blockquote>
+							this.canvas.width = 480; <br>
+							this.canvas.height = 270; <br>
+							this.context = this.canvas.getContext("2d"); <br>
+							document.body.insertBefore(this.canvas, document.body.childNodes[0]); <br>
+							this.interval = setInterval(updateGameArea, 20); <br>
+						<div class="mark">
+							window.addEventListener('mousedown', function (e) {
+							<blockquote>
+								myGameArea.x = e.pageX; <br>
+								myGameArea.y = e.pageY; 
+							</blockquote>
+							}) <br>
+							window.addEventListener('mouseup', function (e) {
+							<blockquote>
+								myGameArea.x = false; <br>
+								myGameArea.y = false; 
+							</blockquote>
+							}) <br>
+							window.addEventListener('touchstart', function (e) { 
+							<blockquote>
+								myGameArea.x = e.pageX; <br>
+								myGameArea.y = e.pageY;
+							</blockquote>
+							}) <br>
+							window.addEventListener('touchend', function (e) {
+							<blockquote>
+								myGameArea.x = false; <br>
+								myGameArea.y = false; 
+							</blockquote>
+							})
+						</div>
+							</blockquote>
+							}, <br>
+							clear : function(){
+							<blockquote>
+								this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+							</blockquote>
+							}
+						</blockquote>
+						}
+						
+					</div>
+				</article>
+				
+				<p> Sekarang <mark>myGameArea</mark> object memiliki properti 
+				yang memberitahukan kita koordinat x dan y tentang suatu klik. Kita gunakan properti-properti ini 
+				untuk mengecek jika klik dimainkan pada salah satu tombol biru kita. </p>
+				<p> Metode baru disebut dengan <mark>clicked</mark>, merupakan sebuah metode tentang component constructor dan checked mengecek jika komponen sedang diklik. </p>
+				<p> Pada fungsi <mark>updateGameArea</mark>, kita menambil aksi yang diperlukan jika salah satu tombol biru diklik: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open07">
+						
+						function component(width, height, color, x, y) {
+						<blockquote>
+						this.width = width; <br>
+						this.height = height; <br>
+						this.speedX = 0; <br>
+						this.speedY = 0; <br>
+						this.x = x; <br>
+						this.y = y;  <br>
+						this.update = function() {
+						<blockquote>
+						ctx = myGameArea.context; <br>
+						ctx.fillStyle = color; <br>
+						ctx.fillRect(this.x, this.y, this.width, this.height);
+						</blockquote>
+						} <br>
+					<div class="mark">
+						this.clicked = function() {
+						<blockquote>
+						var myleft = this.x; <br>
+						var myright = this.x + (this.width); <br>
+						var mytop = this.y; <br>
+						var mybottom = this.y + (this.height); <br>
+						var clicked = true; <br>
+						if ((mybottom <b><</b> myGameArea.y) || (mytop > myGameArea.y) || (myright <b><</b> myGameArea.x) || (myleft > myGameArea.x)) {
+						<blockquote>
+						clicked = false; 
+						</blockquote>
+						} <br>
+						return clicked; 
+						</blockquote>
+						}
+					</div>
+						</blockquote>
+						} <br>
+						<br>
+						function updateGameArea() {
+						<blockquote>
+							myGameArea.clear(); <br>
+					<div class="mark">
+							if (myGameArea.x && myGameArea.y) {
+							<blockquote>
+								if (myUpBtn.clicked()) {
+								<blockquote>
+									myGamePiece.y -= 1;
+								</blockquote>
+								} <br>
+								if (myDownBtn.clicked()) {
+								<blockquote>
+									myGamePiece.y += 1;
+								</blockquote>
+								} <br>
+								if (myLeftBtn.clicked()) {
+								<blockquote>
+									myGamePiece.x += -1;
+								</blockquote>
+								} <br>
+								if (myRightBtn.clicked()) {
+								<blockquote>
+									myGamePiece.x += 1;
+								</blockquote>
+								} 
+							</blockquote>
+							} <br>
+							myUpBtn.update(); <br>
+							myDownBtn.update();  <br>
+							myLeftBtn.update(); <br>
+							myRightBtn.update(); <br>
+					</div>
+							myGamePiece.update();
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close07">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>script</b>> <br>
+					
+					<<b>/script</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan07()" class="exbutton">Klik disini</button>
+					<button onclick="buka07()" class="exbutton"> Open </button>
+					<button onclick="tutup07()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan07">
+					
+					<p><a href="HTML Games/example 4.3.html" >Try it!</a></p>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML game components.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML game obstacles.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			</article>
+			<article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+<script> 
+</script> 
+
+</body>
+</html>

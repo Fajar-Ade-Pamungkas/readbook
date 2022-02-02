@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS properties | CSS3 filter </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="../tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="../buka.js"></script>
+<script type="text/javascript" src="../../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../.,/HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+img {
+	width: 33%;
+	height: auto;
+	float: left; 
+	max-width: 235px;
+}
+
+.blur {-webkit-filter: blur(4px);filter: blur(4px);}
+.brightness {-webkit-filter: brightness(250%);filter: brightness(250%);}
+.contrast {-webkit-filter: contrast(180%);filter: contrast(180%);}
+.grayscale {-webkit-filter: grayscale(100%);filter: grayscale(100%);}
+.huerotate {-webkit-filter: hue-rotate(180deg);filter: hue-rotate(180deg);}
+.invert {-webkit-filter: invert(100%);filter: invert(100%);}
+.opacity {-webkit-filter: opacity(50%);filter: opacity(50%);}
+.saturate {-webkit-filter: saturate(7); filter: saturate(7);}
+.sepia {-webkit-filter: sepia(100%);filter: sepia(100%);}
+.shadow {-webkit-filter: drop-shadow(8px 8px 10px green);filter: drop-shadow(8px 8px 10px green);}
+		
+.table tr:hover  b{
+	font-weight:bolder;
+	color:maroon;
+}
+.table tr:hover  span{
+	color:red;
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS3 filter Property </h1>
+			</div>
+			
+			
+
+<section>
+			<article>
+				<h2>Contoh</h2>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<p> Mengubah warna dari semua gambar menjadi hitam putih (100% gray): </p>
+					<div class="example-content" id="content-open01">
+						
+						img { <br>
+						-webkit-filter: grayscale(100%); <em>/* Chrome, Safari, Opera */</em> <br>
+						filter: grayscale(100%); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<div>
+							<img src="../../../Pictures/Rain Fall.png"/>
+							<span>Original image</span>
+						</div>
+						
+						<div class="grayscale">
+							<img src="../../../Pictures/Rain Fall.png"/>
+							<span>grayscale 100%</span>
+						</div>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Definisi dan Penggunaan</h2>
+				
+				<p>Properti <mark>filter</mark> mendefinisikan efek visual (seperti blur dan saturation) untuk sebuah element (seringkali untuk <<b>img</b>>).</p>
+				
+				<table class="definition">
+					<tr>
+						<th> Default value: </th>
+						<td> none </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<th> Inherited: </th>
+						<td> no </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<th> Animatable: </th>
+						<td> Yes. <a href="../CSS references/CSS animatable.html" > Read about animatable</a> </td> 
+						<td>  </td>
+					</tr>
+					<tr>
+						<th> Version </th>
+						<td> CSS3 </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<th> JavaScript syntax: </th>
+						<td> <i>object</i>.style.WebkitFilter="<i>grayscale(100%)</i>" </td>
+						<td> <a href="JavaScript syntax/.html" target="_blank" >Try it</a> </td>
+					</tr>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Browser Support</h2>
+				
+				<p> Nomor dalam tabel menentukan browser versi pertama yang mendukung properti secara penuh.</p>
+				<p> Nomor yang diikuti oleh <mark>-webkit-</mark>, <mark>-moz-</mark> atau <mark>-o-</mark> menentukan versi pertama yang bekerja dengan awalan kata.</p>
+				
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="7" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> Properti </td>
+							<td> <img src="../../logos/Chrome.png" alt="Chrome"> </td>
+							<td> <img src="../../logos/IE.png" alt="Internet Explorer"> </td>
+							<td> <img src="../../logos/Firefox.png" alt="Firefox"> </td>
+							<td> <img src="../../logos/Safari.png" alt="Safari"> </td>
+							<td> <img src="../../logos/Opera.png" alt="Opera"> </td>
+						</tr>
+						<tr>
+							<td> filter </td>
+							<td> 18.0 -webkit- </td>
+							<td> <span>Not supported</span> </td>
+							<td> 3.5 </td>
+							<td> 6.0 -webkit- </td>
+							<td> 15.0 -webkit- </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<p> <b>Catatan:</b> Versi lama dari Internet Explorer (4.0 sampai 8.0) mendukung sebuah properti 
+				<mark>filter</mark> non-standar yang diprotes. Ini paling sering digunakan untuk <a href="opacity.html" >opacity</a> 
+				ketika memerlukan dukungan dari versi E8 kebawah.</p>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Sintaksis CSS</h2>
+				
+				<div class="simple-example">
+					<b>filter</b>: none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | saturate() | sepia() | url();
+				</div>
+				
+				<p><b>Tip:</b> Untuk menggunakan multiple filter, memisahkan masing-masing filter dengan sebuah spaci (lihatlah "Contoh lebih" dibawah ini).</p>
+				
+				<h2>Fungsi-Fungsi Filter</h2>
+				
+				<p><b>Catatan:</b> Filter yang menggunakan nilai percen (seperti contoh 75%), juga menerima nilai seperti decimal (contoh. 0.75).</p>
+				
+				
+				<h2>Nilai Properti</h2>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Nilai</th>
+							<th>Deskripsi</th>
+							<th>Mainkan</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> none </td>
+							<td> Nilai default. Menentukan tidak ada efek </td>
+							<td> <a href="values/filter-none.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> blur(<i>px</i>) </td>
+							<td> Menerapkan sebuah efek blur pada gambar. Semakin besar nilai akan membuatnya lebih blur. <br>
+								 Jika tidak ada nilai yang ditentukan. 0 akan digunakan
+							</td>
+							<td> <a href="values/filter-blur.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> brightness(<i>%</i>) </td>
+							<td> Menyesuaikan kecemerlangan (brightness) gambar. <br>
+								 0% akan membuat gambar (menjadi) hitam secara keseluruhan. <br>
+								 100% (1) adalah default dan merepresentasikan gambar aslinya. <br>
+								 Nilai lebih dari 100% akan menyediakan hasil yang lebih cemerlang (brighter).
+							</td>
+							<td> <a href="values/filter-brightness.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> drop-shadow(<i>h-shadow v-shadow blur spread color</i>) </td>
+							<td> Menerapkan sebuah efek bayangan untuk gambar.
+								<b>Nilai yang diperbolehkan:</b> <br>
+								<b>h-shadow</b> - Diperlukan. Menentukan sebuah nilai pixel untuk bayangan horizontal. Nilai negatif menempatkan bayangan ke kiri dari gambar. <br>
+								<b>v-shadow</b> - Diperlukan. Menentukan sebuah nilai pixel untuk bayangan vertikal. Nilai negatif menempatkan bayangan ke atas dari gambar. <br>
+								<b>blur</b> - Optional. Ini adalah nilai ketiga, dan harus dalam satuan pixel. Menambahkan sebuah efek blur untuk bayangan. Semakin besar nilai akan membuat semakin blur (bayanhan menjadi lebih besar dan lebih cerah). Nilai negatif diperbolehkan. jika tidak ada nilai. 0 akan digunakan (tepi bayangan runcing). <br>
+								<b>spread</b> - Optional. Ini adalah nilai keempat. dan harus dalam  satuan pixel. Nilai positif akan mengakibatkan bayangan menjadi meluas dan tumbuh lebih besar, dan nilai negatid mengakibatkan bayangan menyusut. Jika tidak ditentukan, ia akan menjadi 0 (bayangan akan berukuran sama seperti element). <br>
+								<span>Catatan:</span> Chrome, Safari, dan Opera dan mungkin browser lainnya tidak mendukung panjang keempat; ini tidak akan terjemahkan jika ditambahkan. <br>
+								<b>color</b> - Optional. Menambahkan warna pada bayangan. Jika tidak ditentukan, warna ditentukan oleh browser (biasanya hitam). <br>
+								Sebuah contoh pembuata  bayangan warna merah, yang mana besarnya 8px secara horizontal dan vertikal, dengan sebuah efek blur 10px: <br>
+								<mark>filter: drop-shadow(8px 8px 10px red);</mark> <br>
+								<span>Tip:</span> Filter ini mirip dengan properti <a href="box-shadow.html" >box-shadow</a>.
+							</td>
+							<td> <a href="values/filter-dropShadow.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> grayscale(<i>%</i>) </td>
+							<td> Mengkonversikan atau mengubah gambar menjadi grayscale. <br>
+								 0% (0) adalah default dan merepresentasikan gambar aslinya. <br>
+								 100% akan membuat gambar menjadi abu-abu secara keseluruhan (digunakan untuk gambar hitam dan putih). <br>
+								 <span>Catatan:</span> Nilai negatif tidak diperbolehkan.
+							</td>
+							<td> <a href="values/filter-grayscale.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> opacity(<i>%</i>) </td>
+							<td> Mengatur level sifat tembus cahaya untuk gambar. opacity-level mendeskripsikan transparency-level, dimana: <br>
+								 0% adalah transparan penuh. <br>
+								 100% (1) adalah nilai default dan merepresentasikan gambar aslinya (tidak ada transparency). <br>
+								 <span>Catatan:</span> Nilai negatid tidak diperbolehkan. <br>
+								 <span>Tip:</span> Filter ini mirip dengan properti <a href="opacity.html" >opacity</a>. <br>
+							</td>
+							<td> <a href="values/filter-opacity.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> sepia(<i>%</i>) </td>
+							<td> Mengkonversikan/mengubah gambar menjadi sepia (warna coklat tua).  <br>
+								 0% (0) adalah default dan merepresentasikan gambar aslinya. <br>
+								 100% akan membuat gambar menjadi sepia seutuhnya. <br>
+								 <span>Catatan:</span> Nilai negatif tidak diperbolehkan
+							</td>
+							<td> <a href="values/filter-sepia.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> url() </td>
+							<td> Fungsi url() mengambil lokasi dari sebuah file XML yang menentukan filter SVG, dan boleh memasukan sebuah anchor untuk element filter tertentu. Contoh: <br>
+								 <mark>filter: url(svg-url#element-id);</mark>
+							</td>
+							<td> <a href="values/filter-url.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> initial </td>
+							<td> Mengatur properti ini untuk nilai defaultnya. <a href="initial.html" target="_blank" > Read about initial</a> </td>
+							<td>  </td>
+						</tr>
+						<tr>
+							<td> inherit </td>
+							<td> Mewarisi properti ini dari nilai element induknya. <a href="inherit.html" target="_blank" > Read about initial</a> </td>
+							<td>  </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Contoh Lebih</h2>
+				
+				<article class="example-box">
+					<h4>Blur</h4>
+					<p> Menerapkan efek blur untuk gambar: </p>
+					<div class="example-content" id="content-open02">
+						
+						img { <br>
+						-webkit-filter: blur(5px); <em>/* Chrome, Safari, Opera */</em> <br>
+						filter: grayscale(100%); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<div>
+							<img src="../../../Pictures/Rain Fall.png"/>
+							<span>Original image</span>
+						</div>
+						
+						<div class="grayscale">
+							<img src="../../../Pictures/Rain Fall.png"/>
+							<span>grayscale 100%</span>
+						</div>
+					
+					</div>
+				</article>
+				
+				
+				
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<p> Menyesuaikan kecemerlangan (brightness) gamabr: </p>
+					<div class="example-content" id="content-open03">
+						
+						img { <br>
+						-webkit-filter: brightness(200%); <em>/* Chrome, Safari, Opera */</em> <br>
+						filter: brightness(200%); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+						<div>
+							<img src="../../../Pictures/Rain Fall.png"/>
+							<span>Original image</span>
+						</div>
+						
+						<div class="grayscale">
+							<img src="../../../Pictures/Rain Fall.png"/>
+							<span>grayscale 100%</span>
+						</div>
+					
+					</div>
+				</article>
+				
+				
+				
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<p> Menyesuaikan kontras pada gambar: </p>
+					<div class="example-content" id="content-open04">
+						
+						img { <br>
+						-webkit-filter: contrast(200%); <em>/* Chrome, Safari, Opera */</em> <br>
+						filter: contrast(200%); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close04">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<button onclick="buka04()" class="exbutton"> Open </button>
+					<button onclick="tutup04()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+						<div>
+							<img src="../../../Pictures/Rain Fall.png"/>
+							<span>Original image</span>
+						</div>
+						
+						<div class="grayscale">
+							<img src="../../../Pictures/Rain Fall.png"/>
+							<span>grayscale 100%</span>
+						</div>
+					
+					</div>
+				</article>
+				
+				
+				
+				<article class="example-box">
+					<h4>Drop-shadow:</h4>
+					<p> Menerapkan efek bayangan untuk gambar: </p>
+					<div class="example-content" id="content-open05">
+						
+						img { <br>
+						-webkit-filter: drop-shadow(8px 8px 10px red); <em>/* Chrome, Safari, Opera */</em> <br>
+						filter: drop-shadow(8px 8px 10px red); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close05">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan05()" class="exbutton">Klik disini</button>
+					<button onclick="buka05()" class="exbutton"> Open </button>
+					<button onclick="tutup05()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+					
+						<div>
+							<img src="../../../Pictures/Rain Fall.png"/>
+							<span>Original image</span>
+						</div>
+						
+						<div class="grayscale">
+							<img src="../../../Pictures/Rain Fall.png"/>
+							<span>grayscale 100%</span>
+						</div>
+					
+					</div>
+				</article>
+				
+				
+				
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<p> Mengkonversikan gambar menjadi grayscale: </p>
+					<div class="example-content" id="content-open06">
+						
+						img { <br>
+						-webkit-filter: grayscale(50%); <em>/* Chrome, Safari, Opera */</em> <br>
+						filter: grayscale(50%); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close06">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan06()" class="exbutton">Klik disini</button>
+					<button onclick="buka06()" class="exbutton"> Open </button>
+					<button onclick="tutup06()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+					
+						<div>
+							<img src="../../../Pictures/Rain Fall.png"/>
+							<span>Original image</span>
+						</div>
+						
+						<div class="grayscale">
+							<img src="../../../Pictures/Rain Fall.png"/>
+							<span>grayscale 100%</span>
+						</div>
+					
+					</div>
+				</article>
+				
+				
+				<article class="example-box">
+					<h4>Hue Rotation:</h4>
+					<p> Menerapkan rotasi hue pada gambar: </p>
+					<div class="example-content" id="content-open07">
+						
+						img { <br>
+						-webkit-filter: hue-rotate(90deg); <em>/* Chrome, Safari, Opera */</em> <br>
+						filter: hue-rotate(90deg); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close07">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan07()" class="exbutton">Klik disini</button>
+					<button onclick="buka07()" class="exbutton"> Open </button>
+					<button onclick="tutup07()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan07">
+					
+						<div>
+							<img src="../../../Pictures/Rain Fall.png"/>
+							<span>Original image</span>
+						</div>
+						
+						<div class="grayscale">
+							<img src="../../../Pictures/Rain Fall.png"/>
+							<span>grayscale 100%</span>
+						</div>
+					
+					</div>
+				</article>
+				
+				
+				
+				
+				<article class="example-box">
+					<h4>Inverts:</h4>
+					<p> Menginvert (membalik) sampel dalam gambar: </p>
+					<div class="example-content" id="content-open08">
+						
+						img { <br>
+						-webkit-filter: invert(100%); <em>/* Chrome, Safari, Opera */</em> <br>
+						filter: invert(100%); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close08">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan08()" class="exbutton">Klik disini</button>
+					<button onclick="buka08()" class="exbutton"> Open </button>
+					<button onclick="tutup08()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan08">
+					
+						<div>
+							<img src="../../../Pictures/Rain Fall.png"/>
+							<span>Original image</span>
+						</div>
+						
+						<div class="grayscale">
+							<img src="../../../Pictures/Rain Fall.png"/>
+							<span>grayscale 100%</span>
+						</div>
+					
+					</div>
+				</article>
+				
+				
+				
+				<article class="example-box">
+					<h4>Opacity:</h4>
+					<p> Mengatur level opacity untuk gambar: </p>
+					<div class="example-content" id="content-open09">
+						
+						img { <br>
+						-webkit-filter: opacity(30%); <em>/* Chrome, Safari, Opera */</em> <br>
+						filter: opacity(30%); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close09">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan09()" class="exbutton">Klik disini</button>
+					<button onclick="buka09()" class="exbutton"> Open </button>
+					<button onclick="tutup09()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan09">
+					
+						<div>
+							<img src="../../../Pictures/Rain Fall.png"/>
+							<span>Original image</span>
+						</div>
+						
+						<div class="grayscale">
+							<img src="../../../Pictures/Rain Fall.png"/>
+							<span>grayscale 100%</span>
+						</div>
+					
+					</div>
+				</article>
+				
+				
+				
+				
+				<article class="example-box">
+					<h4>Saturation:</h4>
+					<p> Menjenuhkaj gambar: </p>
+					<div class="example-content" id="content-open10">
+						
+						img { <br>
+						-webkit-filter: saturate(800%); <em>/* Chrome, Safari, Opera */</em> <br>
+						filter: saturate(800%); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close10">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan10()" class="exbutton">Klik disini</button>
+					<button onclick="buka10()" class="exbutton"> Open </button>
+					<button onclick="tutup10()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan10">
+					
+						<div>
+							<img src="../../../Pictures/Rain Fall.png"/>
+							<span>Original image</span>
+						</div>
+						
+						<div class="grayscale">
+							<img src="../../../Pictures/Rain Fall.png"/>
+							<span>grayscale 100%</span>
+						</div>
+					
+					</div>
+				</article>
+				
+				
+				
+				
+				<article class="example-box">
+					<h4>Sepia:</h4>
+					<p> Mengkonversikan gambar menjadi sepia: </p>
+					<div class="example-content" id="content-open11">
+						
+						img { <br>
+						-webkit-filter: sepia(100%); <em>/* Chrome, Safari, Opera */</em> <br>
+						filter: sepia(100%); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close11">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan11()" class="exbutton">Klik disini</button>
+					<button onclick="buka11()" class="exbutton"> Open </button>
+					<button onclick="tutup11()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan11">
+					
+						<div>
+							<img src="../../../Pictures/Rain Fall.png"/>
+							<span>Original image</span>
+						</div>
+						
+						<div class="grayscale">
+							<img src="../../../Pictures/Rain Fall.png"/>
+							<span>grayscale 100%</span>
+						</div>
+					
+					</div>
+				</article>
+				
+				
+				
+				<article class="example-box">
+					<h4>Mengkombinasikan Filter:</h4>
+					<p> Untuk menggunakan multiple filter, memisahkan setisp filter dengan sebuah spaci.: </p>
+					<p> catatan: Urutan itu penting (jadi gunakanlah grayscale() setelah sepia() akan hasil dalam completely gray image)</p>
+					<div class="example-content" id="content-open12">
+						
+						img { <br>
+						-webkit-filter: contrast(200%) brightness(150%); <em>/* Chrome, Safari, Opera */</em> <br>
+						filter: contrast(200%) brightness(150%); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close12">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan12()" class="exbutton">Klik disini</button>
+					<button onclick="buka12()" class="exbutton"> Open </button>
+					<button onclick="tutup12()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan12">
+					
+						<div>
+							<img src="../../../Pictures/Rain Fall.png"/>
+							<span>Original image</span>
+						</div>
+						
+						<div class="grayscale">
+							<img src="../../../Pictures/Rain Fall.png"/>
+							<span>grayscale 100%</span>
+						</div>
+					
+					</div>
+				</article>
+				
+				
+				
+				<article class="example-box">
+					<h4>Semua filter:</h4>
+					<p> Mendemonstariskan semua fungsi filter: </p>
+					<div class="example-content" id="content-open13">
+						
+						.blur { <br>
+						-webkit-filter: blur(4px); <br>
+						filter: blur(4px); <br>
+						} <br>
+						 <br>
+						.brightness { <br>
+						-webkit-filter: brightness(0.30); <br>
+						filter: brightness(0.30); <br>
+						} <br>
+						 <br>
+						.contrast { <br>
+						-webkit-filter: contrast(180%); <br>
+						filter: contrast(180%); <br>
+						} <br>
+						 <br>
+						.grayscale { <br>
+						-webkit-filter: grayscale(100%); <br>
+						filter: grayscale(100%); <br>
+						} <br>
+						 <br>
+						.huerotate { <br>
+						-webkit-filter: hue-rotate(180deg); <br>
+						filter: hue-rotate(180deg); <br>
+						} <br>
+						 <br>
+						.invert { <br>
+						-webkit-filter: invert(100%); <br>
+						filter: invert(100%); <br>
+						} <br>
+						 <br>
+						.opacity { <br>
+						-webkit-filter: opacity(50%); <br>
+						filter: opacity(50%); <br>
+						} <br>
+						 <br>
+						.saturate { <br>
+						-webkit-filter: saturate(7); <br>
+						filter: saturate(7); <br>
+						} <br>
+						 <br>
+						.sepia { <br>
+						-webkit-filter: sepia(100%); <br>
+						filter: sepia(100%); <br>
+						} <br>
+						 <br>
+						.shadow { <br>
+						-webkit-filter: drop-shadow(8px 8px 10px green); <br>
+						filter: drop-shadow(8px 8px 10px green); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close13">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan13()" class="exbutton">Klik disini</button>
+					<button onclick="buka13()" class="exbutton"> Open </button>
+					<button onclick="tutup13()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan13">
+					
+						<p><strong>Note:</strong> The filter property is not supported in Internet Explorer, Edge 12, or Safari 5.1 and earlier.</p>
+						
+						<img src="../../../Pictures/Rain Fall.png" alt="Pineapple" width="300" height="300">
+						<img class="blur" src="../../../Pictures/Rain Fall.png" alt="Pineapple" width="300" height="300">
+						<img class="brightness" src="../../../Pictures/Rain Fall.png" alt="Pineapple" width="300" height="300">
+						<img class="contrast" src="../../../Pictures/Rain Fall.png" alt="Pineapple" width="300" height="300">
+						<img class="grayscale" src="../../../Pictures/Rain Fall.png" alt="Pineapple" width="300" height="300">
+						<img class="huerotate" src="../../../Pictures/Rain Fall.png" alt="Pineapple" width="300" height="300">
+						<img class="invert" src="../../../Pictures/Rain Fall.png" alt="Pineapple" width="300" height="300">
+						<img class="opacity" src="../../../Pictures/Rain Fall.png" alt="Pineapple" width="300" height="300">
+						<img class="saturate" src="../../../Pictures/Rain Fall.png" alt="Pineapple" width="300" height="300">
+						<img class="sepia" src="../../../Pictures/Rain Fall.png" alt="Pineapple" width="300" height="300">
+						<img class="shadow" src="../../../Pictures/Rain Fall.png" alt="Pineapple" width="300" height="300">
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Halaman yang Berhubungan</h2>
+				<ul>
+					<li>HTML DOM reference: <a href="DOM/filter.html" > filter property </a></li>
+				</ul>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="cursor.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="empty-cells.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

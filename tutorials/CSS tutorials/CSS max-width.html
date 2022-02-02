@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS Max-Width </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+div.ex1 {
+    width: 500px;
+    margin: auto;
+    border: 3px solid #73AD21;
+}
+
+div.ex2 {
+    max-width: 500px;
+    margin: auto;
+    border: 3px solid #73AD21;
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Layout - width dan max -width  </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2>CSS Layout - <mark>width</mark> and <mark>max-width</mark> </h2>
+				<p> Penggunaan <mark>width</mark>, <mark>max-width</mark> dan <mark>margin: auto;</mark> </p>
+				<p> Seperti yang sudah disebutkan di chapter sebelumnya, block-level element selalu mengambil penuh lebar yang tersedia (merengkangkan kiri dan kanan sepanjang yang ia bisa). </p>
+				<p> Pengaturan <mark>width</mark> dari block-level element akan mencegahnya dsri peregangan  ke tepi kontainernya. Lalu, kamu buss mengatur margin menjadi auti, untuk posisi tengah ekement dengan kontainernya. Element akan mrhgambil lebar tertentu dan sisa ruang akan di-split (potong) dengan ssma antara dua margin: </p>
+				<div style="width: 500px; margin:auto; border: 3px solid #73AD21;">
+					<p> Element <<b>div</b>> memiliki <mark>width: 500px;</mark> dan margin diatur menjadi auto. </p>
+				</div>
+				<div class="nasehat">
+					<p> <b>Catatan:</b> Masalah dengan <<b>div</b>> diatas terjadi ketika browser window lebih kecil daripada lebar element. browser lalu menambahkan horizontal scrollbar untuk halaman. </p>
+				</div>
+				<p> Penggunaan <mark>max-width</mark> pengganti, pada situasi ini, akan meningkatkan browser's handling untuk small window. Ini penting ketika pembuatan situs yang dapat berguna di small device (perangkat kecil).</p>
+				<div style="max-width: 500px; margin:auto; border: 3px solid #73AD21;">
+					<p> Element <<b>div</b>> ini memiliki <mark>max-width:500px;</mark> dan margin diatur menjadi auto. </p>
+				</div>
+				<p> <b>Tip</b> Ukuran ulanglah browser window menjadi lebih kecil daripada lebar 500px, untuj melihat perbedaan antara dua div! </p>
+				<p> Disini adalah contoh tentang dua div diatas: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						div.ex1 {
+						<blockquote>
+						    width: 500px; <br>
+						    margin: auto; <br>
+						    border: 3px solid #73AD21;
+						</blockquote>
+						} <br>
+						<br>
+						div.ex2 {
+						<blockquote>
+						    max-width: 500px; <br>
+						    margin: auto; <br>
+						    border: 3px solid #73AD21;
+						</blockquote>
+						} 
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div.ex1 {
+						<blockquote>
+						    width: 500px; <br>
+						    margin: auto; <br>
+						    border: 3px solid #73AD21;
+						</blockquote>
+						} <br>
+						<br>
+						div.ex2 {
+						<blockquote>
+						    max-width: 500px; <br>
+						    margin: auto; <br>
+						    border: 3px solid #73AD21;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						<<b>div</b> <span class="teal">class="ex1"</span>>
+						<blockquote>
+							<<b>p</b>> Element <<b>div</b>> memiliki <<b>mark</b>>width: 500px;<<b>/mark</b>> dan margin diatur menjadi auto. <<b>/p</b>> 
+						</blockquote>
+						<<b>/div</b>> <br> <br>
+						<<b>div</b> <span class="teal">class="ex2"</span>>
+						<blockquote>
+							<<b>p</b>> Element <<b>div</b>> ini memiliki <<b>mark</b>>max-width:500px;<<b>/mark</b>> dan margin diatur menjadi auto. <<b>/p</b>>
+						</blockquote>
+						<<b>/div</b>> <br>
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						
+						<div style="width: 500px; margin:auto; border: 3px solid #73AD21;">
+							<p> Element <<b>div</b>> memiliki <mark>width: 500px;</mark> dan margin diatur menjadi auto. </p>
+						</div>
+						<div style="max-width: 500px; margin:auto; border: 3px solid #73AD21;">
+							<p> Element <<b>div</b>> ini memiliki <mark>max-width:500px;</mark> dan margin diatur menjadi auto. </p>
+						</div>
+						
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS display.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS position.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

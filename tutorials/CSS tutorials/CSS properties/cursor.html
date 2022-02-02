@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS properties | CSS cursor </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="../tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="../buka.js"></script>
+<script type="text/javascript" src="../../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../.,/HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+
+
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS cursor Property </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2>Contoh</h2>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<p> Beberapa perbedaan cursor </p>
+					<div class="example-content" id="content-open01">
+						
+						span.crosshair { <br>
+						cursor: crosshair; <br>
+						} <br>
+						 <br>
+						span.help { <br>
+						cursor: help; <br>
+						} <br>
+						 <br>
+						span.wait { <br>
+						cursor: wait; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Definisi dan Penggunaan</h2>
+				
+				<p>Properti <mark>cursor</mark> menentukan tipe dari cursor untukditampilkan ketika pointing (penunjukan) dalam sebuah element.</p>
+				
+				
+				<table class="definition">
+					<tr>
+						<th> Default value: </th>
+						<td> auto </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<th> Inherited: </th>
+						<td> Yes </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<th> Animatable: </th>
+						<td> no. <a href="../CSS references/CSS animatable.html" > Read about animatable</a> </td> 
+						<td>  </td>
+					</tr>
+					<tr>
+						<th> Version </th>
+						<td> CSS2 </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<th> JavaScript syntax: </th>
+						<td> <i>object</i>.style.cursor="<i>crosshair</i>" </td>
+						<td> <a href="JavaScript syntax/.html" target="_blank" >Try it</a> </td>
+					</tr>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Browser Support</h2>
+				
+				<p> Nomor dalam tabel menentukan browser versi pertama yang mendukung properti secara penuh.</p>
+				<p> Nomor yang diikuti oleh <mark>-webkit-</mark>, <mark>-moz-</mark> atau <mark>-o-</mark> menentukan versi pertama yang bekerja dengan awalan kata.</p>
+				
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="7" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> Properti </td>
+							<td> <img src="../../logos/Chrome.png" alt="Chrome"> </td>
+							<td> <img src="../../logos/Edge.png" alt="Edge"> </td>
+							<td> <img src="../../logos/IE.png" alt="Internet Explorer"> </td>
+							<td> <img src="../../logos/Firefox.png" alt="Firefox"> </td>
+							<td> <img src="../../logos/Safari.png" alt="Safari"> </td>
+							<td> <img src="../../logos/Opera.png" alt="Opera"> </td>
+						</tr>
+						<tr>
+							<td> cursor </td>
+							<td> 5.0 </td>
+							<td> 12.0 </td>
+							<td> 5.5 </td>
+							<td> 4.0 </td>
+							<td> 5.0 </td>
+							<td> 9.6 </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Sintaksis CSS</h2>
+				
+				<div class="simple-example">
+					<b>cursor</b>: <i>Nilai</i>;
+				</div>
+				
+				<h2>Nilai Properti</h2>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Nilai</th>
+							<th>Deskripsi</th>
+							<th>Mainkan</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr>
+							<td> alias </td>
+							<td> Cursor mengindikasikan sebuah nama sebutan tentang sesuatu yang sedang dibuat </td>
+							<td> <a href="values/cursor-alias.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> all-scroll </td>
+							<td> Cursor mengindikasikan bahwa sesuatu bisa di-scroll dalam arah (direction) apapun </td>
+							<td> <a href="values/cursor-allScroll.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> auto </td>
+							<td> nilai default. Browser yang mengatur cursor </td>
+							<td> <a href="values/cursor-auto.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> cell </td>
+							<td> Cursor mengindikasikan bahwa sebuah cell (atau mengatur cell) boleh diseleksi </td>
+							<td> <a href="values/cursor-cell.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> context-menu </td>
+							<td> Cursor mengindikasikan bahwa sebuah context-menu tersedia </td>
+							<td> <a href="values/cursor-contextMenu.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> col-resize </td>
+							<td> Cursor mengindikasika bahwa kolom bisa diukur ulang secara horizontal </td>
+							<td> <a href="values/cursor-colResize.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> copy </td>
+							<td> Cursor mengindikasikan sesuatu yang disalin </td>
+							<td> <a href="values/cursor-copy.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> crosshair </td>
+							<td> The cursor render as a crosshair </td>
+							<td> <a href="values/cursor-crosshair.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> default </td>
+							<td> Default cursor </td>
+							<td> <a href="values/cursor-default.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> e-resize </td>
+							<td> Cursor mengindikasikan bahwa sebuah tepi dari sebuah box yang sedang digerakan ke kanan (east/timur) </td>
+							<td> <a href="values/cursor-eResize.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> ew-resize </td>
+							<td> Mengindikasikan sebuah bidirectional resize cursor </td>
+							<td> <a href="values/cursor-ewResize.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> grab </td>
+							<td> Cursor mengindikasikan bahwa sesuatu bisa diangkut </td>
+							<td> <a href="values/cursor-grab.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> grabbing </td>
+							<td> Cursor mengindikasikan bahwa sesuatu bisa diangkut </td>
+							<td> <a href="values/cursor-grabbing.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> help </td>
+							<td> Cursor mengindikasikan bahwa bantuan tersedia </td>
+							<td> <a href="values/cursor-help.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> move </td>
+							<td> Cursor mengindikasikan sesuatu yang sedang digerakan </td>
+							<td> <a href="values/cursor-move.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> n-resize </td>
+							<td> Cursor mengindikasikan bawah tepi dsri sebuah bix sedang digerakan keatas (north/utara) </td>
+							<td> <a href="values/cursor-nResize.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> ne-resize </td>
+							<td> Cursor mengindikasikan bahwa tepi box sedang digerakan keatas dan kekanan (north/east) </td>
+							<td> <a href="values/cursor-neResize.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> nesw-resize </td>
+							<td> Mengindikasikan sebuah bidirectional resize cursor </td>
+							<td> <a href="values/cursor-neswResize.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> ns-resize </td>
+							<td> Mengindikasikan sebuah bidirectional resize cursor </td>
+							<td> <a href="values/cursor-nsResize.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> nw-resize </td>
+							<td> Cursor mengindikasikan tepu box sedang digerkan keatas dan kiri (north/west)  </td>
+							<td> <a href="values/cursor-nwResize.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> nwse-resize </td>
+							<td> Mengindikasikan sebuah bidirectional resize cursor </td>
+							<td> <a href="values/cursor-nwseResize.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> no-drop </td>
+							<td> Cursor mengindikasikan bahwa dragged item tidak bisa ditaruh/diturunkan disini </td>
+							<td> <a href="values/cursor-noDrop.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> none </td>
+							<td> Tidak ada cursor yang diberikan untuk element  </td>
+							<td> <a href="values/cursor-none.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> not-allowed </td>
+							<td> Cursor mengindikasikan bahwa requested action tidak akan dieksekusi/dijalankan </td>
+							<td> <a href="values/cursor-notAlllwed.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> pointer </td>
+							<td> Cursor adalah sebuah pointer (penunjuk) dan mengindikasikan sebuah link </td>
+							<td> <a href="values/cursor-pointer.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> progress </td>
+							<td> Cursor mengindikasikan bahwa program sedang sibuk (dalam progress)  </td>
+							<td> <a href="values/cursor-progress.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> row-resize </td>
+							<td> Cursor mengindikasikan bahwa barus bisa diukur ulang (resize) secara vertikal </td>
+							<td> <a href="values/cursor-rowResize.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> s-resize </td>
+							<td> Cursor mengindikasikan bahwa sebuah tepi box sedang digerakkan ke bawah (south)  </td>
+							<td> <a href="values/cursor-sResize.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> se-resize </td>
+							<td> Cursor mengindikasikan bahwa sebuah tepi box sedang digerakkan kebawah dan ke kanan (south/east) </td>
+							<td> <a href="values/cursor-seResize.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> sw-resize </td>
+							<td> Cursor mengindikasikan bahwa sebuah tepi box sedang digerakan kebawah dan kekiri (south/west) </td>
+							<td> <a href="values/cursor-swResize.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> text </td>
+							<td> Cursor mengindikasikan teks yang boleh diseleksi  </td>
+							<td> <a href="values/cursor-text.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> <i>URL</i> </td>
+							<td> Sebuah comma separated list dari URL-URL untuk custom cursor. <b>Catatan:</b> Tetaplah tentukan generic cursor di akhir list, dalam kasus none tentang URL cursor yang didefinisi bisa digunakan </td>
+							<td> <a href="values/cursor-url.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> vertical-text </td>
+							<td> Cursor mengindikasikan teks vertikal (menurun) yang bokeh diseleksi  </td>
+							<td> <a href="values/cursor-verticalText.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> w-resize </td>
+							<td> Cursor mengindikasikan bahwa sebuah tepi box sedang digerakan ke kiri (west) </td>
+							<td> <a href="values/cursor-wResize.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> wait </td>
+							<td> Cursor mengindikasikan bahwa program sedang sibuk </td>
+							<td> <a href="values/cursor-wait.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> zoom-in </td>
+							<td> Cursor mengindikasikan bahwa sesuatu bisa di-zoom in (dilihat lebih besar) </td>
+							<td> <a href="values/cursor-zoomIn.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> zoom-out </td>
+							<td> Cursor mengindikasikan bahwa sesuatu bisa di-zoom out (dilihat lebih kecil) </td>
+							<td> <a href="values/cursor-zoomOut.html" target="_blank">Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> initial </td>
+							<td> Mengatur properti ini untuk nilai defaultnya. <a href="initial.html" target="_blank" > Read about initial</a> </td>
+							<td>  </td>
+						</tr>
+						<tr>
+							<td> inherit </td>
+							<td> Mewarisi properti ini dari nilai element induknya. <a href="inherit.html" target="_blank" > Read about initial</a> </td>
+							<td>  </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Halaman yang Berhubungan</h2>
+				<ul>
+					<li>HTML DOM reference: <a href="DOM/cursor.html" > cursor property </a></li>
+				</ul>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="counter-reset.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="direction.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

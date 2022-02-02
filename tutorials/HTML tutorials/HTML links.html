@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML links</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+
+<style type="text/css">
+
+a[target="blank"]:link    {
+	color:green; 
+	background-color:transparent; 
+	text-decoration:none
+}
+a[target="blank"]:visited {
+	color:pink; 
+	background-color:transparent; 
+	text-decoration:none
+}
+a[target="blank"]:hover   {
+	color:red; 
+	background-color:transparent; 
+	text-decoration:underline
+}
+a[target="blank"]:active  {
+	color:yellow; 
+	background-color:transparent; 
+	text-decoration:underline
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML Links</h1>
+				<p> 
+				Link ditemukan hampir di semua halaman web. Link mengizinkan prngguna untuk mengklik mereka, 
+				jalan untuk berpindah dari satu halaman ke halaman yang lain.
+				</p>
+			</div>
+			
+<section>
+			<article>
+				<h1> HTML Links - Hyperlinks </h1>
+				<p> HTML link merupakan hyperlink. </p>
+				<p> Hyper link adalah teks atau gambar yang kamu bisa klik dan melompat ke dokumen yang lain. </p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> HTML Links - Syntax </h1>
+				<p> Pada HTML, link didefinisikan dngan tag <<b>a</b>>. </p>
+				<p> <<b>a</b> <span class="teal">href=<i>"url"</i></span>><i>Teks link</i><<b>/a</b>>. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+
+						<<b>a</b> <span class="teal">href="http://www.readbook.co.id/HTML HOME.html"</span>> Visit our HTML tutorial <<b>/a</b>> <br>
+
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						<a href="HTML HOME.html" > Visit our HTML tutorial</a>
+					</div>
+				</article>
+				
+				<p> Attrihute <b>hre</b> menentukan alamat tujuan (http://www.readbook.co.id/HTML HOME.html) </p>
+				<p> <b>Link text</b> adalah bagian yang terlihat (Visit our HTML tutorial). </p>
+				<p> Pengklikan pada <b>link text</b>, akan mengirimkan kamu ke alamat tertentu. </p>
+				
+				<div class="nasehat">
+				Link text tidak harus berupa teks, link text bisa sebuah gambar HTML atau element HTML lainnya. 
+				</div>
+				
+				<div class="nasehat">
+				 Tanpa sebuah trailing slash pada alamat subfolder, kamu mungkin menghasilkan dua permintaan kepada server. <br>
+				 Kebanyakan server akan secara otomatis menambahkan sebuah trailing slash menuju address, dan setelah itu membuat permintaan baru. 
+				 </div>
+			</article>
+</section>
+<section>
+			<article>
+				<h1 id="localInk"> Local Links </h1>
+				<p> <b>local links</b> adalah sebuah link lokal yang pengalamatannya berada dijangkauan lokal.</p>
+				<p> Contoh diatas menggunakan sebuah absolute URL (sebuah alamat web penuh). </p>
+				<p> sebuah link lokal (link menuju web site yang sama) ditentukan dengan URL yang relatif (tanpa <b>http://www....</b>). </p>
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+				
+						<<b>a</b> <span class="teal">href="http://www.readbook.co.id/HTML HOME.html"</span>>  Global link <<b>/a</b>> <br>
+						<<b>a</b> <span class="teal">href="../CSS tutorials/CSS HOME.html"</span>> Local link<<b>/a</b>> <br>
+						
+					</div>
+					<button onclick="tampilkan02()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+						<p><a href="http://www.readbook.co.id/HTML HOME.html" >Global link</a></p>
+						<p><a href="../CSS tutorials/CSS HOME.html" > Local link </a></p>
+					</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> HTML Links - Colors </h1>
+				<p> Ketika kamu menggerakan mouse pada sebuah link, dua hal yang normalnya akan terjadi: </p> <br>
+				<ul> 
+					<li> Arah panah mouse akan berganti menjadi sebuah tangan kecil </li>
+					<li> Warna element link akan berubah </li>
+				</ul> <br>
+				<p>Dengan default, sebuah link akan tampak seperti ini (pada semua browser): </p> <br>
+				<ul>
+					<li> sebuah unvisited link (link yang belum dikunjungi) digaris bawahi dan berwarna biru </li>
+					<li> sebuah visited link (link yang sudah dikunjungi) digaris bawahi dan berwarna ungu </li>
+					<li> sebuah active link (link yang aktif) digaris bawahi dan berwarna merah </li>
+				</ul>
+				<p> kamu bisa mengubah warna defaul, dengan memggunakan style: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br>
+							<<b>head</b>><br>
+							<<b>style</b>> <br>
+							a:link    {
+								<blockquote>
+								color:green; <br> 
+								background-color:transparent; <br>
+								text-decoration:none
+								</blockquote>
+							} <br>
+							a:visited {
+								<blockquote>
+								color:pink; <br>
+								background-color:transparent; <br>
+								text-decoration:none
+								</blockquote>
+							}<br>
+							a:hover   {
+								<blockquote>color:red; <br>
+								background-color:transparent; <br>
+								text-decoration:underline
+								</blockquote>
+							} <br>
+							a:active  {
+								<blockquote>
+								color:yellow; <br>
+								background-color:transparent; <br>
+								text-decoration:underline
+								</blockquote>
+							}<br>
+							<<b>/style</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>a</b> <span class="teal">href="HTML CSS.html"</span>> This is a link <<b>/a</b>> <br>
+								<br>
+							<<b>/body</b>><br>
+						<<b>/html</b>>
+						
+				
+						
+					</div>
+					<button onclick="tampilkan03()">Output:</button>
+					<div class="simple-example sembunyikan" id="sembunyikan03">
+						<a href="HTML CSS.html" target="_blank"> HTML CSS</a>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> HTML Links - The target Attribute </h1>
+				<p> Attribute <b>target</b> menentukan kemana untuk membuka dokument link.</p>
+				<p> Contoh ini akan membuka dokument link dalam sebua browser window atau dalam sebuah new tab: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+				
+						<<b>a</b> <span class="teal">href="http://www.readbook.co.id/HTML HOME.html" target="_blank"</span>> Visit our HTML tutorial <<b>/a</b>> <br>
+				
+					</div>
+					<button onclick="tampilkan04()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+						<a href="HTML HOME.html" target="_blank" > Visit our HTML tutorial</a>
+					</div>
+				</article>
+				
+				<table>
+					<thead>
+						<tr>
+							<th>Nilai Target</th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> _blank</td>
+							<td> Membuka dokument link dalam window atau tab baru </td>
+						</tr>
+						<tr>
+							<td> _self</td>
+							<td> Membuka dokument link dalam frame (bingkai) yang sama seperti ia diklik (ini default) </td>
+						</tr>
+						<tr>
+							<td> _parent</td>
+							<td> Membuka dokument link dalam parent frame (bingkai induk)</td>
+						</tr>
+						<tr>
+							<td> _top</td>
+							<td> Membuka dokument link dalam full body dari window </td>
+						</tr>
+						<tr>
+							<td> framename</td>
+							<td> Membuka dokument link dalam sebuah named frame (bingkai yang dinamai) </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<p>
+				Jika webpage kamu kamu dikunci dalam sebuah frame, kamu busa menggunakna <b>target="_top"</b> untuk menjeda keluar dari frame:
+				</p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+				
+						<<b>a</b> <span class="teal">href="http://www.readbook.co.id/HTML5.html" target="_top"</span>>  HTML5 <<b>/a</b>> <br>
+				
+					</div>
+					<button onclick="tampilkan05()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+						<a href="HTML5 intro.html" target="_top" > HTML5 Introduction</a>
+					</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> HTML Links - Image as Link </h1>
+				<p> Ini sudah umum digunakan untuk gambar sebagai link: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+				
+					<<b>a</b> <span class="teal"> href="HTML images.html" target="_blank" </span>>  <br>
+					<<b>img</b> <span class="teal"> src="../../pictures/Rain Fall.png" alt="Rainly"
+					style="width:42px; height:42px; border:0"</span>> <br>
+		  			<<b>/a</b>> <br>
+				
+					</div>
+					<button onclick="tampilkan06()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+						<a href="HTML images.html" target="_blank" > 
+							<img src="../../pictures/Rain Fall.png" alt="Rainly" style="width:300px; height:auto; border:0"/>
+						</a>
+						<p> Klik gambar diatas untuk menuju ke sebuah halaman lainnya.</p>
+					</div>
+				</article>
+				
+				<div class="nasehat">
+				<b>border:0</b> ditambahkan untuk mengatasi masalah di IE9 (dan versi sebelumnya) daru penampilan sebuah border sekitar gambar.
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> HTML Links - Create a Bookmark </h1>
+				<p> HTML bookmark digunakan untuk memperbolekan pembaca untuk melompati ke bagian - bagian yang spesifik dari sebuah Web page. </p>
+				<p> Bookmark itu praktis jika website kamu memiliki halaman yang panjang. </p>
+				<p> Untuk membuat sebuah bookmark, kamu pertama-tama harus membuat bookmark, dan kemudian menambahkan sebuah link untuk untuk bookmark tersebut. </p>
+				<p> Ketika link dikelik, halaman akan mengulung (scroll) ke lokasi dengan bookmark. </p>
+				
+				<h4> Contoh </h4>
+				<p> Pertama, buatlah sebuah bookmark drngan attribute <b>id</b>: </p>
+				
+				<div class="simple-example">
+					<<b>h2</b> <span class="teal">id="localInk"</span>>Local link<<b>/h2</b>>
+				</div>
+				
+				<p>Lalu tambahkan sebuah link menuju bookmark ("Local link"), dari dengan halaman yang sama: </p>
+				
+				<div class="simple-example">
+					<<b>a</b> <span class="teal">href="#localInk"</span>>Local link<<b>/a</b>>
+				</div>
+				
+				<p> Atau tambahkan sebuah link menuju bookmark ("localInk"), dari halaman lainnya. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+				
+					<<b>a</b> <span class="teal"> href="HTML CSS.html#myStyling" target="_blank" </span>> menuju ke id="myStyling" di halaman lainnya. <<b>/a</b>><br>
+				
+					</div>
+					<button onclick="tampilkan07()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan07">
+						<a href="HTML CSS.html#myStyling" target="_blank" > menuju ke id="myStyling" di halaman lainnya.</a>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Ringkasan Materi</h2>
+				<ul>
+					<li> Gunakanlah element <<b>a</b>> HTML untuk mendefinisikan sebuah link </li>
+					<li> Gunakanlah attribute <b>href</b> HTML untuk mendefinisikan alamat link </li>
+					<li> Gunakanlah attribute <b>target</b> HTML untuk mendefinisikan kemana untuk membuka dokument link </li>
+					<li> Gunakanlah element <<b>img</b>> HTML (didalam <<b>a</b>>) untuk menggunakan gambar sebagai link </li> 
+					<li> Gunakanlah attribute <b>id</b> HTML (id=<i>"nilai"</i>) untuk mendefinisikan bookmark dalam halaman</li>
+					<li> Gunakanlah attribute <b>href</b> HTML (href=<i>"#value"</i>) untuk link yang menuju bookmark</li>
+				</ul>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML Link Tags </h2>
+				
+				<table>
+					<thead>
+						<tr>
+							<th> Tag </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> <<b>a</b>> </td>
+							<td> Mendefinisikan sebuah hyperlink </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML CSS.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML images.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML5 Audio </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML5  </h1>
+				<p> HTML Geolocation APU digunakan untuk (mengetahui) lokasi posisi pengguna. </p>
+			</div>
+			
+			
+<section>			
+			<article>
+				<h2>Locate the User's Position </h2>
+				<p> Lokasi Posisi Pengguna </p>
+				<p> HTML Geolocation API digunakan untuk mendapatkan posisi geografis dari seorang pengguna. </p>
+				<p> Sejak itu, kita bisa berkompromi secara rahasia, posisi tidak disediakan tanpa pengguna yang mensetujuinya. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Browser Support </h2>
+				<p> Nomor pada tabel menentukan browser versi pertama yang mendukung secara penuh <b>Geolocation</b>. </p>
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td class="left"> API </td>
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> <b>Geolocation</b> </td>
+							<td> 5.0 </td>
+							<td> 9.0 </td>
+							<td> 3.5 </td>
+							<td> 5.0 </td>
+							<td> 16.0 </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Using HTML Geolocation </h2>
+				<p> Metode <b>getCurrentPosition()</b> digunakan untuk mendapatkan posisi pengguna. </p>
+				<p> Contoh dibawah ini mengembalikan latitude (garis lintang) dan longitude (garis bujur) tentang posisi pengguna. </p>
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br>
+						<<b>html</b>><br>
+							<<b>head</b>><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br><br>
+							
+								<<b>p</b>>Click the button to get your coordinates.<<b>/p</b>> <br>
+								<<b>button</b> <span class="teal">onclick="getLocation()"</span>>Try It<<b>/button</b>> <br>
+								<<b>p</b> <span class="teal">id="demo"</span>><<b>/p</b>> <br>
+								<<b>script</b>>
+								<blockquote>
+								<code>var</code> x = document.getElementById("demo"); <br>
+								<code>function</code> getLocation() {
+								<blockquote>
+								    <code>if</code> (navigator.geolocation) {
+										<blockquote>
+								        navigator.geolocation.getCurrentPosition(showPosition);
+										</blockquote>
+								    } <code>else</code> {
+										<blockquote>
+								        x.innerHTML = "Geolocation is not supported by this browser.";
+										</blockquote>
+								    }
+								</blockquote>
+								} <br>
+								<code>function</code> showPosition(position) {
+									<blockquote>
+								    x.innerHTML = "Latitude: " + position.coords.latitude + <br>
+								    "<<b>br</b>>Longitude: " + position.coords.longitude; 
+									</blockquote>
+								}
+								</blockquote>
+								<<b>/script</b>><br> <br>
+							<<b>/body</b>><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						<p>Click the button to get your coordinates.</p>
+						<button onclick="getLocation01()">Try It</button>
+						<p id="demo01"></p>
+					</div>
+				</article>
+				
+				<h4> Contoh menjelaskan:</h4>
+				<ul> 
+					<li> Periksalah jika <b>Geolocation</b> didukung oleh web browser kamu</li>
+					<li> Jika didukung, jalankan metode <b>getCurrentPosition()</b>, Jika tidak didukung, tampilkan pesan pada user.</li>
+					<li> Jika metode <b>getCurrentPosition()</b> berhasil, ia akan mengembalikan 
+					sebuah koordinat object  ke fungsi yang ditentukan dalam parameter (<b>showPosition</b>). </li>
+					<li> Fungsi <b>showPosition()</b> mengeluarkan Latitude (garis lintang) dan Longitude (garis bujur). </li>
+				</ul>
+				
+				<p> Contoh diatas merupkan setiap dasar Geolocation script, dengan tidak ada error handling (penanganan error). </p>
+			</article>
+			
+</section>
+<section>
+			<article>
+				<h2> Handling Errors and Rejections </h2>
+				<p> Penanganan Error dan Penolakan </p>
+				<p> Parameter kedua dari metode <b>getCurrentPosition()</b> digunakan untuk handle error. Parameter kedua menentukan sebuah fungsi untuk dijalankan jika ia gagal mendapatkan lokasi pengguna. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+					<<b>!DOCTYPE html</b>><br>
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+						<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+							<<b>p</b>>Click the button to get your coordinates.<<b>/p</b>> <br>
+							<<b>button</b> <span class="teal">onclick="getLocation()"</span>>Try It<<b>/button</b>> <br>
+							<<b>p</b> <span class="teal">id="demo"</span>><<b>/p</b>> <br>
+							<<b>script</b>>
+							<blockquote>
+							<code>var</code> x = document.getElementById("demo"); <br>
+							<code>function</code> getLocation() {
+							<blockquote>
+							    <code>if</code> (navigator.geolocation) {
+									<blockquote>
+							        navigator.geolocation.getCurrentPosition(showPosition, <span class="redZone">showError()</span>);
+									</blockquote>
+							    } <code>else</code> {
+									<blockquote>
+							        x.innerHTML = "Geolocation is not supported by this browser.";
+									</blockquote>
+							    }
+							</blockquote>
+							} <br>
+							<code>function</code> showPosition(position) {
+								<blockquote>
+							    x.innerHTML = "Latitude: " + position.coords.latitude + <br>
+							    "<<b>br</b>>Longitude: " + position.coords.longitude; 
+								</blockquote>
+							} <br><br>
+							
+							<code>function</code> showError(error) {
+								<blockquote>
+							    switch(error.code) {
+									<blockquote>
+							        <code>case</code> error.PERMISSION_DENIED:
+										<blockquote>
+							            x.innerHTML = "User denied the request for Geolocation." <br>
+							            <code>break</code>;
+										</blockquote>
+							        <code>case</code> error.POSITION_UNAVAILABLE:
+										<blockquote>
+							            x.innerHTML = "Location information is unavailable." <br>
+							            <code>break</code>;
+										</blockquote>
+							        <code>case</code> error.TIMEOUT:
+										<blockquote>
+							            x.innerHTML = "The request to get user location timed out." <br>
+							            <code>break</code>;
+										</blockquote>
+							        <code>case</code> error.UNKNOWN_ERROR:
+										<blockquote>
+							            x.innerHTML = "An unknown error occurred." <br>
+							            <code>break</code>;
+										</blockquote>
+									</blockquote>
+							    }
+								</blockquote>
+							}
+							</blockquote>
+							<<b>/script</b>> <br><br>
+						<<b>/body</b>><br>
+					<<b>/html</b>><br>
+					
+					</div>
+					<button onclick="tampilkan02()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+							<p>Click the button to get your coordinates.</p>
+							<button onclick="getLocation02()">Try It</button>
+							<p id="demo02"></p>
+						</div>
+					</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Displaying the Result in a Map </h2>
+				<p> Penampilan Hasil dalam Map </p>
+				<p> Untuk menampilkan hasil dalam sebuah map (peta), kamu membutuhkan akses menuju layanan map, seperti Google Maps. </p>
+				<p> Pada contoh dibawah, latitude dan longitude yang didapatkan lalu digunakan untuk menampilkan lokasi dslam Google Map (penggunaan sebuah gambar statik): </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+					<<b>!DOCTYPE html</b>><br>
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+						<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+							<<b>p</b>>Click the button to get your coordinates.<<b>/p</b>> <br>
+							<<b>button</b> <span class="teal">onclick="getLocation()"</span>>Try It<<b>/button</b>> <br>
+							<<b>p</b> <span class="teal">id="demo"</span>><<b>/p</b>> <br>
+							<<b>div</b> <span class="teal">id="myholder"</span>><<b>/div</b>> <br><br>
+							<<b>script</b>>
+							<blockquote>
+							<code>var</code> x = document.getElementById("demo"); <br>
+							<code>function</code> getLocation() {
+							<blockquote>
+							    <code>if</code> (navigator.geolocation) {
+									<blockquote>
+							        navigator.geolocation.getCurrentPosition(showPosition);
+									</blockquote>
+							    } <code>else</code> {
+									<blockquote>
+							        x.innerHTML = "Geolocation is not supported by this browser.";
+									</blockquote>
+							    }
+							</blockquote>
+							} <br> <br>
+							<div class="redZone">
+							<code>function</code> showPosition(position) {
+								<blockquote>
+								    <code>var</code> latlon = position.coords.latitude + "," + position.coords.longitude;<br>
+								    <code>var</code> img_url = "http://maps.googleapis.com/maps/api/staticmap?center=
+								    "+latlon+"&zoom=14&size=400x300&sensor=false"; <br>
+								    document.getElementById("mapholder").innerHTML = "<<b>img</b> <span class="teal">src='"+img_url+"'</span>>";
+								</blockquote>
+							} 
+							</div><br><br>
+							
+							<code>function</code> showError(error) {
+								<blockquote>
+							    switch(error.code) {
+									<blockquote>
+							        <code>case</code> error.PERMISSION_DENIED:
+										<blockquote>
+							            x.innerHTML = "User denied the request for Geolocation." <br>
+							            <code>break</code>;
+										</blockquote>
+							        <code>case</code> error.POSITION_UNAVAILABLE:
+										<blockquote>
+							            x.innerHTML = "Location information is unavailable." <br>
+							            <code>break</code>;
+										</blockquote>
+							        <code>case</code> error.TIMEOUT:
+										<blockquote>
+							            x.innerHTML = "The request to get user location timed out." <br>
+							            <code>break</code>;
+										</blockquote>
+							        <code>case</code> error.UNKNOWN_ERROR:
+										<blockquote>
+							            x.innerHTML = "An unknown error occurred." <br>
+							            <code>break</code>;
+										</blockquote>
+									</blockquote>
+							    }
+								</blockquote>
+							}
+							</blockquote>
+							<<b>/script</b>> <br><br>
+						<<b>/body</b>><br>
+					<<b>/html</b>><br>
+					
+					</div>
+					<button onclick="tampilkan03()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+							<p>Click the button to get your coordinates.</p>
+							<button onclick="getLocation03()">Try It</button>
+							<p id="demo03"></p>
+							<div id="mapholder">
+						</div>
+					</article>
+					
+					
+				<!-- Google Map Script-->
+				<p> <button onclick="tampilkan25()" class="redZone">Google Map Script</button> </p>
+				<p> Bagaimana untuk menampilkan sebuah interaktif Google Map dengan sebuah marker, zoom dan drag options. </p>
+					
+				<article class="example-box sembunyikan" id="sembunyikan25">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+					<<b>!DOCTYPE html</b>><br>
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+						<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+							<<b>p</b>>Click the button to get your coordinates.<<b>/p</b>> <br>
+							<<b>button</b> <span class="teal">onclick="getLocation()"</span>>Try It<<b>/button</b>> <br>
+							<<b>p</b> <span class="teal">id="demo"</span>><<b>/p</b>> <br>
+							<<b>div</b> <span class="teal">id="myholder"</span>><<b>/div</b>> <br>
+							<span class="redZone">
+							<<b>script</b> <span class="teal">src="http://maps.google.com/maps/api/js?sensor=false"</span>><<b>/script</b>>
+							</span>
+							<br>
+							<br>
+							<<b>script</b>>
+							<blockquote>
+							<code>var</code> x = document.getElementById("demo"); <br>
+							<code>function</code> getLocation() {
+							<blockquote>
+							    <code>if</code> (navigator.geolocation) {
+									<blockquote>
+							        navigator.geolocation.getCurrentPosition(showPosition);
+									</blockquote>
+							    } <code>else</code> {
+									<blockquote>
+							        x.innerHTML = "Geolocation is not supported by this browser.";
+									</blockquote>
+							    }
+							</blockquote>
+							} <br> <br>
+							<div class="redZone">
+							<code>function</code> showPosition(position) {
+								<blockquote>
+								lat = position.coords.latitude; <br>
+								lon = position.coords.longitude; <br>
+								latlon = <code>new</code> google.maps.LatLng(lat, lon) <br>
+								mapholder = document.getElementById('mapholder') <br>
+								mapholder.style.height = '250px'; <br>
+								mapholder.style.width = '500px'; <br>
+								<br>
+								<code>var</code> myOptions = {
+								<blockquote>
+								center:latlon,zoom:14, <br>
+								mapTypeId:google.maps.MapTypeId.ROADMAP, <br>
+								mapTypeControl:false, <br>
+								navigationControlOptions:{
+									<blockquote>
+									style:google.maps.NavigationControlStyle.SMALL
+									</blockquote>
+								}
+								</blockquote>
+							}<br>
+								
+								var map = new google.maps.Map(document.getElementById("mapholder"), myOptions); <br>
+								var marker = new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
+								</blockquote>
+							} 
+							</div><br><br>
+							
+							<code>function</code> showError(error) {
+								<blockquote>
+							    switch(error.code) {
+									<blockquote>
+							        <code>case</code> error.PERMISSION_DENIED:
+										<blockquote>
+							            x.innerHTML = "User denied the request for Geolocation." <br>
+							            <code>break</code>;
+										</blockquote>
+							        <code>case</code> error.POSITION_UNAVAILABLE:
+										<blockquote>
+							            x.innerHTML = "Location information is unavailable." <br>
+							            <code>break</code>;
+										</blockquote>
+							        <code>case</code> error.TIMEOUT:
+										<blockquote>
+							            x.innerHTML = "The request to get user location timed out." <br>
+							            <code>break</code>;
+										</blockquote>
+							        <code>case</code> error.UNKNOWN_ERROR:
+										<blockquote>
+							            x.innerHTML = "An unknown error occurred." <br>
+							            <code>break</code>;
+										</blockquote>
+									</blockquote>
+							    }
+								</blockquote>
+							}
+							</blockquote>
+							<<b>/script</b>> <br><br>
+						<<b>/body</b>><br>
+					<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						<p id="demo25">Click the button to get your position.</p>
+						<button onclick="getLocation25()">Try It</button>
+						<div id="mapholder"></div>
+						<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Location-specific Information </h2>
+				<p> Informasi Lokasi Spesifik </p>
+				<p> Halaman ini menampilkan bagaimana menunjukan posisi user pada sebuah map. </p>
+				<p> Geolocation juga sangat berguna untuk informasi lokasi yang lebih spesifik, seperti: </p>
+				
+				<ul>
+					<li> Up-to-date local information </li>
+					<li> Penunjukan points-of-interest near the user </li>
+					<li> Turn-by-turn navigation (GPS) </li>
+				</ul>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The getCurrentPosition() Method - Return Data </h2>
+				<p> Metode <b>getCurrentPosition()</b> - Mengembalikan Data </p>
+				<p> Metode <b>getCurrentPosition()</b> mengembalikan sebuah object jika ia successful (berhasil). 
+				Properti <b>latitude</b>, <b>Longitude</b> dan <b>accuracy</b> selalu dikembalikan. 
+				Properti lain dikembalikan jika tersedia: </p>
+				
+				<table>
+					<thead>
+						<tr>
+							<th> Properti </th>
+							<th> Mengembalikan (returns)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> coords.latitude </td>
+							<td> Latitude (garis lintang) sebagai nomor desimal</td>
+						</tr>
+						<tr>
+							<td> coords.longitude </td>
+							<td> Longitude (garis bujur) sebagai nomor desimal</td>
+						</tr>
+						<tr>
+							<td> coords.accuracy </td>
+							<td> Akurasi dari posisi </td>
+						</tr>
+						<tr>
+							<td> coords.altitude </td>
+							<td> altitude (ketinggian) dalam (satuan / Mdpl) meter diatas permukaan laut (meters above of mean sea level) </td>
+						</tr>
+						<tr>
+							<td> coords.altitudeAccuracy </td>
+							<td> Akurasi ketinggian dari posisi </td>
+						</tr>
+						<tr>
+							<td> coords.heading </td>
+							<td> Heading (kepala) derajat degrees clockwise (derajat searah jarum jam) dari Utara </td>
+						</tr>
+						<tr>
+							<td> coords.speed </td>
+							<td> Kecepatan dalam meter per detik </td>
+						</tr>
+						<tr>
+							<td> timestamp </td>
+							<td> tanggal/waktu dari respon </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Geolocation object - Other interesting Methods </h2>
+				<p> Object Geolocation - Metode Peminatan Lainnya </p>
+				<p> <b>watchPosition()</b> - Mengembalikan posisi saat ini 
+				dari pengguna dan meneruskan untuk mengembalikan posisi terbaru 
+				seperti pergerakan pengguna (seperti GPS di sebuah mobil). </p>
+				<p> <b>clearWatch()</b> - Menghentikan metode watchPosition. </p>
+				<p> Contoh dibawah menunjukkan metode <b>watchPosition()</b>. 
+				kamu memerlukan sebuah akurasi perangkat GPS untuk mengetes ini (seperti iPhone): </p>
+
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+					<<b>!DOCTYPE html</b>><br>
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+						<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+							<<b>p</b>>Click the button to get your coordinates.<<b>/p</b>> <br>
+							<<b>button</b> <span class="teal">onclick="getLocation()"</span>>Try It<<b>/button</b>> <br>
+							<<b>p</b> <span class="teal">id="demo"</span>><<b>/p</b>> <br>
+							<<b>script</b>>
+							<blockquote>
+							<code>var</code> x = document.getElementById("demo"); <br>
+							<code>function</code> getLocation() {
+							<blockquote>
+							    <code>if</code> (navigator.geolocation) {
+									<blockquote>
+							        navigator.geolocation.<span class="redZone">watchPosition</span>(showPosition);
+									</blockquote>
+							    } <code>else</code> {
+									<blockquote>
+							        x.innerHTML = "Geolocation is not supported by this browser.";
+									</blockquote>
+							    }
+							</blockquote>
+							} <br> <br>
+
+
+							<code>function</code> showPosition(position) {
+								<blockquote>
+								    x.innerHTML = "Latitude: " + position.coords.latitude + <br>
+								    "<<b>br</b>>Longitude: " + position.coords.longitude; 
+								</blockquote>
+							} <br><br>
+							
+							</blockquote>
+							<<b>/script</b>> <br><br>
+						<<b>/body</b>><br>
+					<<b>/html</b>><br>
+					
+					</div>
+					<button onclick="tampilkan04()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+						<p>Click the button to get your coordinates.</p>
+						<button onclick="getLocation04()">Try It</button>
+						<p id="demo04"></p>
+						</div>
+					</article>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML YouTube.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML5 drag or drop.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+<script>
+// Script Dasar Geolocation
+var x = document.getElementById("demo01");
+
+function getLocation01() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition01);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+function showPosition01(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude; 
+}
+
+
+
+
+//Geolocation  Error Handler
+var x = document.getElementById("demo02");
+
+
+function getLocation02() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition02, showError02);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition02(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;	
+}
+
+function showError02(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            x.innerHTML = "User denied the request for Geolocation."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML = "Location information is unavailable."
+            break;
+        case error.TIMEOUT:
+            x.innerHTML = "The request to get user location timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            x.innerHTML = "An unknown error occurred."
+            break;
+    }
+}
+
+//Geolocation - Displaying in a Map
+
+var x = document.getElementById("demo03");
+
+function getLocation03() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition03, showError03);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition03(position) {
+    var latlon = position.coords.latitude + "," + position.coords.longitude;
+
+    var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="
+    +latlon+"&zoom=14&size=400x300&sensor=false";
+    document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+}
+
+function showError03(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            x.innerHTML = "User denied the request for Geolocation."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML = "Location information is unavailable."
+            break;
+        case error.TIMEOUT:
+            x.innerHTML = "The request to get user location timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            x.innerHTML = "An unknown error occurred."
+            break;
+    }
+}
+
+//Geolocation - watchPosition() Method
+var x = document.getElementById("demo04");
+function getLocation04() {
+    if (navigator.geolocation) {
+        navigator.geolocation.watchPosition(showPosition04);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+function showPosition04(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude; 
+}
+
+
+
+//Google Map script 
+var x = document.getElementById("demo25");
+function getLocation25() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition25, showError25);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition25(position) {
+    lat = position.coords.latitude;
+    lon = position.coords.longitude;
+    latlon = new google.maps.LatLng(lat, lon)
+    mapholder = document.getElementById('mapholder')
+    mapholder.style.height = '250px';
+    mapholder.style.width = '500px';
+
+    var myOptions = {
+    center:latlon,zoom:14,
+    mapTypeId:google.maps.MapTypeId.ROADMAP,
+    mapTypeControl:false,
+    navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
+    }
+    
+    var map = new google.maps.Map(document.getElementById("mapholder"), myOptions);
+    var marker = new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
+}
+
+function showError25(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            x.innerHTML = "User denied the request for Geolocation."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML = "Location information is unavailable."
+            break;
+        case error.TIMEOUT:
+            x.innerHTML = "The request to get user location timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            x.innerHTML = "An unknown error occurred."
+            break;
+    }
+}
+</script>
+</body>
+</html>

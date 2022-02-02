@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML5 SVG Drop Shadows </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch()"> HTML Tutorial</button>
+			<div class="drop-content" id="myDropdown">
+			<input type="text" class="myInput" id="myInput" placeholder="Cari" onkeyup="filterFunction()"/>
+			<ol>
+				<a href="HTML HOME.html" > <li>HOME</li> </a>
+				<a href="HTML introduction.html" > <li> Pengenalan </li> </a>
+				<a href="HTML textEditor.html" > <li> Text Editor </li> </a>
+				<a href="HTML basic.html" > <li> Dasar </li> </a>
+				<a href="HTML elements.html" > <li> Element </li> </a>
+				<a href="HTML attributes.html" > <li> Attribute </li> </a>
+				<a href="HTML headings.html" > <li> Heading </li> </a>
+				<a href="HTML paragraphs.html" > <li> Paragraf </li> </a>
+				<a href="HTML styles.html" > <li> Style </li> </a>
+				<a href="HTML formatting.html" > <li> Formatting </li> </a>
+				<a href="HTML quotations.html" > <li> Tanda Petik </li> </a>
+				<a href="HTML computercode.html" > <li> Kode Komputer </li> </a>
+				<a href="HTML comments.html" > <li> Komentar </li> </a>
+				<a href="HTML colors.html" > <li> Warna </li> </a>
+				<a href="HTML CSS.html" > <li> CSS </li> </a>
+				<a href="HTML links.html" > <li> Link </li> </a>
+				<a href="HTML images.html" > <li> Gambar </li> </a>
+				<a href="HTML tables.html" > <li> Tabel </li> </a>
+				<a href="HTML lists.html" > <li> Daftar </li> </a>
+				<a href="HTML blocks.html" > <li> Blok </li> </a>
+				<a href="HTML classes.html" > <li> Class </li> </a>
+				<a href="HTML layout.html" > <li> Layout </li> </a>
+				<a href="HTML responsive.html" > <li> Respon </li> </a>
+				<a href="HTML iframes.html" > <li class="redZone"> Iframes </li> </a>
+				<a href="HTML JavaScript.html" > <li> JavaScript </li> </a>
+				<a href="HTML head.html" > <li> Head </li> </a>
+				<a href="HTML entities.html" > <li> Entities </li> </a>
+				<a href="HTML symbols.html" > <li> Simbol </li> </a>
+				<a href="HTML charset.html" > <li> Charset </li> </a>
+				<a href="HTML URL encode.html" > <li> URL Encode </li> </a>
+				<a href="HTML XHTML.html" > <li> XHTML </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch2()"> HTML Form</button>
+			<div class="drop-content" id="myDropdown2">
+			<input type="text" class="myInput" id="myInput2" placeholder="Cari" onkeyup="filterFunction2()"/>
+			<ol>
+				<a href="HTML forms.html" > <li> Formulir </li> </a>
+				<a href="HTML form elements.html" > <li> Elemen Formulir </li> </a>
+				<a href="HTML input types.html" > <li> Tipe Input </li> </a>
+				<a href="HTML input attributes.html" > <li> Attribute input </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch3()"> HTML5 </button>
+			<div class="drop-content" id="myDropdown3">
+			<input type="text" class="myInput" id="myInput3" placeholder="Cari" onkeyup="filterFunction3()"/>
+			<ol>
+				<a href="HTML5 intro.html" > <li> Pengenalan HTM5 </li> </a>
+				<a href="HTML5 support.html" > <li> Support HTML5</li> </a>
+				<a href="HTML5 elements.html" > <li> Element HTML5 </li> </a>
+				<a href="HTML5 semantics.html" > <li> Semantik HTML5</li> </a>
+				<a href="HTML5 migration.html" > <li> Migrasi HTML5</li> </a>
+				<a href="HTML5 style guide.html" > <li> Panduan Style HTML5  </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch4()"> HTML5 Graphics </button>
+			<div class="drop-content" id="myDropdown4">
+			<input type="text" class="myInput" id="myInput4" placeholder="Cari" onkeyup="filterFunction4()"/>
+			<ol>
+				<a href="HTML5 canvas.html" > <li> Canvas </li> </a>
+				<a href="HTML5 SVG.html" > <li> SVG </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch5()"> HTML Media </button>
+			<div class="drop-content" id="myDropdown5">
+			<input type="text" class="myInput" id="myInput5" placeholder="Cari" onkeyup="filterFunction5()"/>
+			<ol>
+				<a href="HTML media.html" > <li> HTML Media </li> </a>
+				<a href="HTML5 video.html" > <li> HTML Video </li> </a>
+				<a href="HTML5 audio.html" > <li> HTML Audio </li> </a>
+				<a href="HTML plug-ins.html" > <li> HTML Plug-ins </li> </a>
+				<a href="HTML YouTube.html" > <li> HTML Youtube </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch6()"> HTML5 APIs </button>
+			<div class="drop-content" id="myDropdown6">
+			<input type="text" class="myInput" id="myInput6" placeholder="Cari" onkeyup="filterFunction6()"/>
+			<ol>
+				<a href="HTML5 geolocation.html" > <li> Geolocation </li> </a>
+				<a href="HTML5 drag or down.html" > <li> Drag or Down </li> </a>
+				<a href="HTML5 local storage.html" > <li> Penyimpanan Lokal </li> </a>
+				<a href="HTML5 application cache.html" > <li> Application Cache </li> </a>
+				<a href="HTML5 web worker.html" > <li> Web Worker </li> </a>
+				<a href="HTML5 SSE.html" > <li> SSE </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch7()"> Canvas Tutorials </button>
+			<div class="drop-content" id="myDropdown7">
+			<input type="text" class="myInput" id="myInput7" placeholder="Cari" onkeyup="filterFunction7()"/>
+			<ol>
+				<li class="title-nav"> Canvas Tutorial</li>
+				<a href="canvas HOME.html" > <li> Canvas Home </li> </a>
+				<a href="canvas drawing.html" > <li> Canvas Drawing </li> </a>
+				<a href="canvas coordinates.html" > <li> Canvas Coordinates </li> </a>
+				<a href="canvas gradients.html" > <li> Canvas Gradient </li> </a>
+				<a href="canvas text.html" > <li> Canvas Text </li> </a>
+				<a href="canvas images.html" > <li> Canvas Images </li> </a>
+			</ol>
+		
+			<ol>
+				<li class="title-nav"> Canvas Clock </li>
+				<a href="canvas clock intro.html" > <li> Clock Intorduction </li> </a>
+				<a href="canvas clock face.html" > <li> Clock Face </li> </a>
+				<a href="canvas clock numbers.html" > <li> Clock Numbers </li> </a>
+				<a href="canvas clock hands.html" > <li> Clock Hands </li> </a>
+				<a href="canvas clock start.html" > <li> Clock Start </li> </a>
+			</ol>
+		
+			<ol>
+				<li class="title-nav"> Canvas Reference </li>
+				<a href="canvas reference.html" > <li> Canvas Reference </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch8()"> SVG Tutorials</button>
+			<div class="drop-content" id="myDropdown8">
+			<input type="text" class="myInput" id="myInput8" placeholder="Cari" onkeyup="filterFunction8()"/>
+			<ol>
+				<li class="title-nav">SVG Tutorials</li>
+				<a href="SVG HOME.html" > <li> SVG Home </li> </a>
+				<a href="SVG in HTML5.html" > <li> SVG in HTML5 </li> </a>
+				<a href="SVG rectangle.html" > <li> SVG Rectangle </li> </a>
+				<a href="SVG circle.html" > <li> SVG Circle </li> </a>
+				<a href="SVG ellipse.html" > <li> SVG Ellipse </li> </a>
+				<a href="SVG line.html" > <li> SVG Line </li> </a>
+				<a href="SVG polygon.html" > <li> SVG Polygon </li> </a>
+				<a href="SVG polyline.html" > <li> SVG Polyline </li> </a>
+				<a href="SVG path.html" > <li> SVG Path </li> </a>
+				<a href="SVG text.html" > <li> SVG Text </li> </a>
+				<a href="SVG stroking.html" > <li> SVG Stroking </li> </a>
+			</ol>
+			
+			<ol>
+				<li class="title-nav">SVG Filter Introduction</li>
+				<a href="SVG filters intro.html" > <li> SVG Filter intoduction </li> </a>
+				<a href="SVG blur effects.html" > <li> SVG Blur Effects </li> </a>
+				<a href="SVG drop shadows.html" > <li> SVG Drop Shadows </li> </a>
+			</ol>
+			
+			<ol>
+				<li class="title-nav">SVG Gradient</li>
+				<a href="SVG linier.html" > <li> SVG Linier </li> </a>
+				<a href="SVG radial.html" > <li> SVG Radial </li> </a>
+			</ol>
+			
+			<ol>
+				<li class="title-nav">SVG Examples</li>
+				<a href="SVG examples.html" > <li> SVG Examples </li> </a>
+			</ol>
+			
+			<ol>
+				<li class="title-nav">SVG Reference</li>
+				<a href="SVG reference.html" > <li> SVG Reference </li> </a>
+			</ol>
+			</div>
+			</div>
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> SVG Drop Shadows </h1>
+				
+			</div>
+			
+			
+<section>			
+			<article>
+				<h2> <<b>defs</b>> and <<b>filter</b>> </h2>
+				<p> Semua internet SVG filters didefinisikan dengan sebuah element <<b>defs</b>>. Element <<b>defs</b>> adalah singkatan untuk definitions dan 
+				berisikan definisi tentang element spesial (demikian sebagai filters). </p>
+				<p> Element <<b>filter</b>> digunakan untuk mendefinisikan sebuah filter SVG. Element <<b>filter</b>> memiliki sebuah attribute <b>id</b> yang diharuskan 
+				yang mana untuk mengidentifikasi filter. Grafik lalu menitikan pada filter untuk digunakan. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> SVG <mark><<b>feOffset</b>></mark> </h2>
+				<h2>Example 1</h2>
+				<p> Contoh 1 </p>
+				<p> Element <<b>feOffset</b>> digunakan untuk membuat efek bayangan belakang. Ide untuj membawa sebuah grafik SVG (image atau element) dan menggerakkan itu bit kecil pada xy plane. </p>
+				<p> Offset contoh pertama sebuah rectangle (dengan <<b>feOffset</b>>), lalu mencampurkan original di atas dari offset image (dengan element <<b>feBlend</b>>): </p>
+				
+
+				<svg height="120" width="120">
+				  <defs>
+				    <filter id="f1" x="0" y="0" width="200%" height="200%">
+				      <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+				      <feBlend in="SourceGraphic" in2="offOut" mode="normal" />
+				    </filter>
+				  </defs>
+				  <rect width="90" height="90" stroke="green" stroke-width="3"
+				  fill="yellow" filter="url(#f1)" />
+				</svg>
+				
+				<p> Disini adalah kode SVG: </p>
+				<article class="example-box">
+					<h4>Contoh SVG</h4>
+					<div class="example-content">
+					
+					<<b>svg</b> <span class="teal">height="120" width="120"</span>>
+					<blockquote>
+					  <<b>defs</b>>
+						<blockquote>
+					    <<b>filter</b> <span class="teal">id="f1" x="0" y="0" width="200%" height="200%"</span>>
+							<blockquote>
+					      <<b>feOffset</b> <span class=":teal">result="offOut" in="SourceGraphic" dx="20" dy="20" </span>/> <br>
+				    	  <<b>feBlend</b> <span class="teal">in="SourceGraphic" in2="offOut" mode="normal" </span>/>
+							</blockquote>
+					    <<b>/filter</b>>
+						</blockquote>
+					  <<b>/defs</b>> <br>
+					  <<b>rect</b> <span class="teal">width="90" height="90" stroke="green" stroke-width="3" <br>
+					  fill="yellow" filter="url(#f1)" </span>/>
+					</blockquote>
+					<<b>/svg</b>>
+					
+					</div>
+				</article>
+				
+				<p> <b>Penjelasan kode:</b> </p>
+				<ul>
+					<li> Attribute <b>id</b> dari element <<b>filter</b>> mendefinisikan sebuah unique name kepada filter</li>
+					<li> Attribute <b>filter</b> dari element <<b>rect</b>> me-link element menuju "f1" filter</li>
+				</ul>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Example 2</h2>
+				<p> Contoh 2</p>
+				<p> Sekarang, offset image bisa diblurkan (dengan element <<b>feGuassianBlur</b>>): </p>
+				
+				<svg height="140" width="140">
+				  <defs>
+				    <filter id="f2" x="0" y="0" width="200%" height="200%">
+				      <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+				      <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+				      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+				    </filter>
+				  </defs>
+				  <rect width="90" height="90" stroke="green" stroke-width="3"
+				  fill="yellow" filter="url(#f2)" />
+				</svg>
+				
+				<p> Disini adalah kode SVG: </p>
+				<article class="example-box">
+					<h4>Contoh SVG</h4>
+					<div class="example-content">
+					
+					<<b>svg</b> <span class="teal">height="140" width="140"</span>>
+					<blockquote>
+					  <<b>defs</b>>
+						<blockquote>
+					    <<b>filter</b> <span class="teal">id="f2" x="0" y="0" width="200%" height="200%"</span>>
+							<blockquote>
+					      <<b>feOffset</b> <span class=":teal">result="offOut" in="SourceGraphic" dx="20" dy="20" </span>/> <br>
+				    	  <<b>feGaussianBlur</b> <span class="teal">result="blurOut" in="offOut" stdDeviation="10" </span>/>
+				    	  <<b>feBlend</b> <span class="teal">in="SourceGraphic" in2="blurOut" mode="normal" </span>/>
+							</blockquote>
+					    <<b>/filter</b>>
+						</blockquote>
+					  <<b>/defs</b>> <br>
+					  <<b>rect</b> <span class="teal">width="90" height="90" stroke="green" stroke-width="3" <br>
+					  fill="yellow" filter="url(#f2)" </span>/>
+					</blockquote>
+					<<b>/svg</b>>
+					
+					</div>
+				</article>
+				
+				<p> <b>Penjelasan kode:</b> </p>
+				
+				<ul>
+					<li> Attribute <b>stdDeviation</b> dari element <<b>feGaussianBlur</b>> mendefinisikan jumlah blur </li>
+				</ul>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Example 3 </h2>
+				<p> Sekarang, buatlah bayangan hitam: </p>
+				
+				<svg height="140" width="140">
+				  <defs>
+				    <filter id="f3" x="0" y="0" width="200%" height="200%">
+				      <feOffset result="offOut" in="SourceAlpha" dx="20" dy="20" />
+				      <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+				      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+				    </filter>
+				  </defs>
+				  <rect width="90" height="90" stroke="green" stroke-width="3"
+				  fill="yellow" filter="url(#f3)" />
+				</svg>
+				
+				<p> Disini adalah kode SVG: </p>
+				<article class="example-box">
+					<h4>Contoh SVG</h4>
+					<div class="example-content">
+					
+					<<b>svg</b> <span class="teal">height="140" width="140"</span>>
+					<blockquote>
+					  <<b>defs</b>>
+						<blockquote>
+					    <<b>filter</b> <span class="teal">id="f3" x="0" y="0" width="200%" height="200%"</span>>
+							<blockquote>
+					      <<b>feOffset</b> <span class=":teal">result="offOut" in="SourceAlpha" dx="20" dy="20" </span>/> <br>
+				    	  <<b>feGaussianBlur</b> <span class="teal">result="blurOut" in="offOut" stdDeviation="10" </span>/>
+				    	  <<b>feBlend</b> <span class="teal">in="SourceGraphic" in2="blurOut" mode="normal" </span>/>
+							</blockquote>
+					    <<b>/filter</b>>
+						</blockquote>
+					  <<b>/defs</b>> <br>
+					  <<b>rect</b> <span class="teal">width="90" height="90" stroke="green" stroke-width="3" <br>
+					  fill="yellow" filter="url(#f3)" </span>/>
+					</blockquote>
+					<<b>/svg</b>>
+					
+					</div>
+				</article>
+				
+				<p> <b>Penjelasan kode:</b> </p>
+				<ul>>
+					<li> Attribute <b>in</b> dari element <<b>feOffset</b>> diubah menjadi <b>"SourceAlpha"</b> yang mana menggunakan Alpha Channel untuk blur pengganti dari entire RGBA pixel</li>
+				</ul>
+
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Example 4 </h2>
+				<p> Contoh 4</p>
+				<p> Sekarang, perlakukan bayangan menjadi  berwarna: </p>
+				
+				<svg height="140" width="140">
+				  <defs>
+				    <filter id="f4" x="0" y="0" width="200%" height="200%">
+				      <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+				      <feColorMatrix result="matrixOut" in="offOut" type="matrix"
+				      values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0" />
+				      <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10" />
+				      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+				    </filter>
+				  </defs>
+				  <rect width="90" height="90" stroke="green" stroke-width="3"
+				  fill="yellow" filter="url(#f4)" />
+				</svg>
+				
+				<p> Disini adalah kode SVG: </p>
+				<article class="example-box">
+					<h4>Contoh SVG</h4>
+					<div class="example-content">
+					
+					<<b>svg</b> <span class="teal">height="140" width="140"</span>>
+					<blockquote>
+					  <<b>defs</b>>
+						<blockquote>
+					    <<b>filter</b> <span class="teal">id="f4" x="0" y="0" width="200%" height="200%"</span>>
+							<blockquote>
+					      <<b>feOffset</b> <span class=":teal">result="offOut" in="SourceGraphic" dx="20" dy="20" </span>/> <br>
+				          <<b>feColorMatrix</b> <span class="teal">result="matrixOut" in="offOut" type="matrix" <br>
+				     	 values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0" </span>/>	 <br> 
+						  <<b>feGaussianBlur</b> <span class="teal">result="blurOut" in="matrixOut" stdDeviation="10" </span>/>
+				    	  <<b>feBlend</b> <span class="teal">in="SourceGraphic" in2="blurOut" mode="normal" </span>/>
+							</blockquote>
+					    <<b>/filter</b>>
+						</blockquote>
+					  <<b>/defs</b>> <br>
+					  <<b>rect</b> <span class="teal">width="90" height="90" stroke="green" stroke-width="3" <br>
+					  fill="yellow" filter="url(#f4)" </span>/>
+					</blockquote>
+					<<b>/svg</b>>
+					
+					</div>
+				</article>
+				
+				<p> <b>Penjelasan kode:</b> </p>
+				
+				<ul>
+					<li> Ffilter <<b>feColorMatrix</b>> digunakan untuk transformasi warna pada offset image closer menjadi hitam. 
+					Tiga nilai daru '0.2' pada matrix all get multiplied dengan red, green, dan blue channel. pengurangan nilai - nilai itu 
+					membawa color closer menjadi hitam (black is 0)</li>
+				</ul>
+				
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="SVG blur effects.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="SVG linier.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			</article>
+			<article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

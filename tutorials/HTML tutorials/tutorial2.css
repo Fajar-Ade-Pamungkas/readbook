@@ -1,0 +1,580 @@
+*{
+	box-sizing:border-box;
+}
+body{
+	font-family:Tahoma,Arial,sans-serif;
+}
+[class="padd"]{
+	text-align:center;
+}
+a {
+	font-size:12px;
+}
+
+/* HEADER PART */
+branding{
+	width:100%;
+	border-bottom:3px silver solid;
+}	
+	.branding-padd{
+		margin-bottom:50px;
+	}
+	.branding-padd h1{
+		text-align:left;
+	}
+	img.branded{
+		float:left;
+		width:22%;
+		position:static;
+	}
+	.branding-title{
+		float:left;
+		width:80%;
+	}
+/* NAV PART */
+#nav-vertical {
+	/*margin-bottom:15px;*/
+
+}
+#nav-vertical li {
+	/*margin-top:1px;
+	background:navy;
+	display:block;
+	color:white;*/
+	padding:10px;
+	
+}
+#nav-vertical .title-nav  {
+	background-color:maroon;
+	font-weight:bold;
+}
+.title-nav:hover  {
+	text-decoration:line-through;
+	background-color:maroon;
+	font-weight:bold;
+}
+
+/*DROPDOWN PART*/
+.dropdown {
+	position:relative;
+	display:inline-block;
+	width:100%;
+}
+	.drop-button {
+		width:100%;
+		background-color:navy;
+		cursor:pointer;
+		font-size:20px;
+		border:none;
+		color:white;
+		padding:10px;
+		position:relative;
+		margin-top:0;
+	}
+	.dropdown input[type="text"] {
+		width:100%;
+	}
+	.drop-content{
+		display: none;
+		position:relative;
+		width: 100%;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		font-size:11px;
+		margin-top:10px;
+		padding-bottom:20px;
+	}
+		.dropdown-content a {
+			color: black;
+			padding: 10px 10px;
+			text-decoration: none;
+			display: block;
+			width:100%;
+		}
+			.drop-content a:hover {
+				color:red;
+			}
+		.myInput{
+			border-box: box-sizing;
+			background-image:url('../logos/database-search.png');
+			background-size:20px  auto;
+			background-position: 14px 12px;
+			background-repeat: no-repeat;
+			font-size: 12px;
+			padding: 14px 20px 12px 45px;
+			width:100%;
+		}
+	.dropdown:hover  .drop-button{ 
+		background-color:black;
+		box-shadow:5px 13px 1px #cccccc;
+	}
+	.dropdown:hover .drop-content {
+		display:block;
+	}
+	/*CSS ini bisa digunakan agar tombol tidak hilang*/
+	.show {display:block;}
+	
+	
+	
+/* MAIN PART*/
+#main section{
+	border-bottom:1px silver solid;
+	font-family:times new roman, sans-serif;
+	line-height:1.5;
+	margin-bottom:10px;
+}
+	section article{
+		padding:15px;
+		margin:10px 0;
+	}	
+		article p, ol li{
+			line-height:2.0;
+		}
+		article > ol, li{	
+			font-size:12px;
+			list-style-position:inside;
+			margin-left:10px;
+		}
+		#main p{
+			font-size:12px;
+			text-align:justify;
+		}
+		article ul{
+			margin:10px 0px
+		}
+	.example-box{
+		width:100%;
+		background:red;
+	}
+		.example-box h1, .example-box h4{
+			color:white;
+		}
+		.simple-example {
+			width:100%;
+			background:white;
+			border:1px black solid;	
+			font-size:12px;
+			text-align:justify;
+			border-left:5px gold solid;
+			margin:10px 0px;
+		}
+		p > mark, .example-content > mark  {
+			padding:3px;
+			border-radius:50px;
+		}
+		.example-box .example-content:nth-child() mark{
+			display:none;
+		}
+		.example-box .example-content:nth-child(2) mark:hover {
+			display:;
+		}
+		.example-content{
+			width:100%;
+			background:white;
+			border:1px black solid;	
+			font-size:12px;
+			text-align:left;
+			border-left:5px black solid;
+		} 
+		
+			.example-content  div {
+				margin:0;
+				padding:0;
+			}
+			.example-content blockquote{
+				margin-left:15px;
+			}
+			.example-content code {
+				color:purple;
+				font-weight:bold;
+			}
+			.example-content h1, .example-content h4 {
+				color:black;
+			}
+			button, input[type="button"], input[type="submit"]{
+				padding:5px;
+				font-size:12px;
+				margin:10px;
+				width:auto;
+			}
+				 button, input[type="button"] {
+					width:20%;
+					background-color:orange;
+					color:white;
+					padding:10px;
+				}
+				/*menampilkan contoh*/
+				.sembunyikan {
+					display:none;
+				}
+				.example-content b {
+					color:blue;
+				}
+				.example-content em {
+					color:gray;
+					margin-left:30px;
+				}
+		table {
+			border-collapse:collapse;
+			width:100%;
+			margin:10px 0px;
+			border:1px #cccccc solid;
+		}
+			table th, table td {
+				font-size:12px;
+				padding:10px;
+				border-collapse:;
+			}
+			table th {
+				color:white;
+			}
+			
+			.vertOp {
+				vertical-align:top;
+				text-align:left;
+			}
+			.vertOm {
+				vertical-align:bottom;
+			}
+			
+			/*tabel untuk peringatan*/
+			table.attention{
+				border:1px black solid; 
+				border-collapse:collapse; 
+
+			}
+				.td-left {
+					font-size:xx-large; 
+					text-align:center; 
+					padding:5px 10px;
+				}
+				.td-right {
+					font-size:12px;
+					text-align:justify;
+				}
+			
+			table.extable td{
+				background-color:white;
+			}
+				table.extable span {
+					background-color:yellow;
+					padding:10px;
+					box-shadow:1px 1px 10px #cccccc;
+				}
+			table.myFloatX td {
+				padding:10px 0px;
+				text-align:center;
+			}
+			table.explain{
+				border-collapse:collapse;
+				margin-bottom:10px;
+			}
+			table.explanations {
+				border-collapse:collapse;
+				
+			}
+			table.vertical-top td {
+				vertical-align:top;
+			}
+			
+				table.explanations thead, tbody, th, td{
+					border-collapse:collapse;
+				}
+				table.explanations thead, th{
+					background-color:teal; 
+					padding:10px 5px;
+				}
+			table.browser-support {
+				background-color:white;
+				border-collapse:collapse;
+				margin:10px 0px;
+			}
+				table.browser-support  th, .browser td {
+					border-style:inset;
+				}
+					table.browser-support td img {
+						width:30px;
+						height:auto;
+					}
+					table.browser-support tr.browser-logos td{
+						background-color:;
+						padding:0;
+						text-align:center;
+					}
+					table.browser-support th {
+						text-align:center;
+					}
+				table.browser-support th.caption {
+					background-color:blue;
+					color:white;
+					padding:10px;
+				}
+			/*
+			td:first-child, th{
+				text-align:center;
+			}
+			*/
+			tr:nth-child(even){
+				background-color:#cccccc;
+			}
+			/*TABEL LAMPU*/
+			table.lamp {
+			    width:100%;
+			    border:1px solid #d4d4d4;
+			}
+			table.lamp th, td {
+			    padding:10px;
+			}
+			table.lamp th {
+			    width:40px;
+			}
+			/* TUTUP TABEL LAMPU*/
+		#NoB .back, .next{ 
+			box-shadow:1px -1px 10px black;
+		}
+			#NoB div:hover{
+				box-shadow:1px 5px 10px black;
+			}
+			#NoB .back{
+				text-align:left;
+				float:left;
+				width:50%;
+				padding:15px;
+			}	
+			#NoB .next{
+				text-align:right;
+				float:left;
+				width:50%;
+			}
+#NoB a, #nav-vertical a, #header{
+	color:white;
+}
+#header,#nav-vertical ol li, #main .example-box, .next, .back{
+background-color:SeaGreen;
+}
+.a-Link{
+	background-color:blue;
+	color:white;
+	padding:10px;
+	margin:5px;
+}
+
+.grey{
+	color:grey;
+}
+.tagged:hover{
+	border-bottom: 1px indigo solid;
+}
+[alt="lamborghini"]{
+	width:100%;
+}
+.white{
+	background-color:white;
+}
+.lime {
+	color:teal;
+}
+.yellow {
+	color:yellow;
+	text-shadow:1px 1px 10px black;
+}
+.teal {
+	color:teal;
+}
+.blue{
+	color:blue;
+}
+.fontWhite {
+	color:white;
+}
+.center {
+	text-align:center;
+}
+.darkGreen{
+	color:darkgreen;
+}
+.magenta {
+	color:magenta;
+}
+
+/*OBJECT DOCUMENT*/
+ .docKeyword {
+	color:blue;
+}
+/* Untuk menandai kode utama*/
+.redZone {
+	background-color:white;
+	padding:5px;	
+	font-weight:bold;
+	width:100%;
+	-webkit-animation-name:rainbow;
+	-webkit-animation-duration:3s;
+	-webkit-animation-iteration-count:infinite;
+	-o-animation-name:rainbow;
+	-o-animation-duration:3s;
+	-o-animation-iteration-count:infinite;
+	-moz-animation-name:rainbow;
+	-moz-animation-duration:3s;
+	-moz-animation-iteration-count:infinite;
+	animation-name: rainbow;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}	
+	@-webkit-keyframes rainbow{
+		0% {background:pink;}
+		25% {background:lightblue;}
+		50% {background:lightyellow;}
+		75% {background-color:lightgreen;}
+		100% {background-color:skybkue;}
+	}
+	@-moz-keyframes rainbow{
+		0% {background:pink;}
+		25% {background:lightblue;}
+		50% {background:lightyellow;}
+		75% {background-color:lightgreen;}
+		100% {background-color:skybkue;}
+	}
+	@-o-keyframes rainbow{
+		0% {background:pink;}
+		25% {background:lightblue;}
+		50% {background:lightyellow;}
+		75% {background-color:lightgreen;}
+		100% {background-color:skybkue;}
+	}
+	@keyframes rainbow{
+		0% {background:pink;}
+		25% {background:lightblue;}
+		50% {background:lightyellow;}
+		75% {background-color:lightgreen;}
+		100% {background-color:skybkue;}
+	}
+.backRed {
+	background-color:red;
+}	
+q:lang(code){
+	quotes:"<" ">";
+}
+.purple{
+	color:purple;
+}
+.maroon {
+	color:maroon;
+}
+div{
+	padding:15px;
+}
+q:lang(no){
+	quotes:" " " ";
+}
+caption{
+	font-size:small;
+	font-style:oblique;
+}
+.justRed {
+	color:red;
+}
+.center {
+	text-align:center;
+}
+.left {
+	text-align:left;
+}
+a:hover  {
+	text-decoration:underline;
+}
+.noscript {
+    padding:15px;
+    margin-bottom:15px;
+    color:maroon;
+    font:12px courier;
+}
+[class*="nasehat"] {
+	background-color:olive;
+	border-left:5px yellow solid;
+	color:white;
+	margin:10px 0px;
+	font-size:12px;
+}
+.nasehatX {
+	background-color:DarkSlateGray;
+	border-left:5px red solid;
+	color:white;
+}
+	[class*="nasehat"] b {
+		color:yellow;
+	}
+	[class*="nasehat"] h2 {
+		text-shadow:1px 1px 1px white;
+		font-family:Courier new,monospace;
+		font-size:20px;
+	}
+	.nasehatX a, .nasehat a {
+		text-decoration:underline;
+		color:white;
+	}
+	
+
+/*BAGIAN PENGATURAN LEBAR LAYAR UNTUK SETIAP PERANGKAT*/
+[class*="col"]{
+	padding:0px;
+	float:left;
+	content:"";
+}
+@media only screen and
+(min-width:600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    
+    .drop-button{
+    	font-size:15px;
+    }
+}
+
+
+@media only screen and
+(min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    
+    	#nav-vertical{
+    	display:inline-block;
+    	}
+}
+
+
+/*
+		penyeleksi element
+a[target]			:	menyeleksi link dengan mempunyai attr target.
+a[target="_blank"] 	:	menyekeksi link dengan attr target = blank.
+[title~="flower"] 	:	menyeleksi attr title = flower tidak dengan 
+						title = myflower dan title=flowers.
+[class|="brand"] 	:	menyeleksi attr class = brand- .
+[class^="brand"] 	:	menyeleksi  attr class paling depan seperti 
+						class= brandos dan brand-article.
+[class$="test"] 	:	menyeleksi attr class paling belakang 
+					 	seperti class= mytest dan class= next-test
+[class*="pro"] 		:	menyeleksi attr class apa saja selagi 
+						nilai classnya terdapat / tersisip kata "pro" 
+						contoh class=profesi, pro-aktif, memproses.
+*/

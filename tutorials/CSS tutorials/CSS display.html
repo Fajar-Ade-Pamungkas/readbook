@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS Display </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+.cont01 li{
+	display:inline;
+}
+.div01 {
+	background-color:gold;
+	width:100%;
+	text-align:center;
+	padding:5px;
+	font-size:medium;
+	margin:10px 0px;
+	border:3px silver groove;
+}
+.imgbox {
+	float: left; 
+	text-align: center; 
+	width: 120px; 
+	height: 145px; 
+	border: 1px solid gray; 
+	margin: 4px; 
+	padding: 0;
+} 
+
+.thumbnail {
+	width: 110px; 
+	height: 90px; 
+	margin: 3px;
+} 
+
+.box {
+	width: 30%; 
+	padding: 0;
+} 
+#panel, .flip {
+	font-size: 16px; 
+	padding: 10px; 
+	background-color: #4CAF50; 
+	color: white; 
+	border: solid 1px #a6d8a8; 
+	margin: auto;
+	text-align:center;
+} 
+
+#panel {
+	display: none;
+} 
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Layout - The Display Property </h1>
+				<p> Properti <mark>display</mark> merupakan properti CSS paling penting untuk controlling layout.</p>
+				
+			</div>
+			
+			
+<section>
+			<article>
+				<h2>The display Property</h2>
+				<p> Ptoperti <mark>dispkay</mark> menentukan jika/bagaimana suatu element ditampilkan. </p>
+				<p> Setiap elemen HTML memiliki nilai display default tergantung pada tipe apa element itu, nilai display default untuk kebanyakan element adalah block atau inline. </p>
+				
+				<div class="flip" onclick="myAction02()">Click to show panel</div> 
+				
+				<div id="panel"> 
+					<p> Panel ini berisikan element <<b>div</b>>, yang mana ini dihilangkan dengan default (<mark>default: none;</mark>). </p>
+					<p> Ini di-style dengan CSS, dan kita menggunakan JavaScript untuk menampilkannya (mengubahnya menjadi <mark>display: block;</mark>)</p>
+				</div> 
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Block-level Elements </h2>
+				<p> Block-level element selalu dimulai di baris baru dan mengambil penuh lebar yang tersedia (merenggang sampai kiri dan kanan sejauh yang ia bisa). </p>
+				<p style="border: 3px gold groove; padding: 5px;"> Element <<b>div</b> merupakan element block-level.</p>
+				<p> Berikut adalah contoh block-level elements: </p>
+				<ul>
+					<li> <<b>div</b>> </li>
+					<li> <<b>h1</b>> - <<b>h6</b>> </li>
+					<li> <<b>p</b>> </li>
+					<li> <<b>form</b>> </li>
+					<li> <<b>header</b>> </li>
+					<li> <<b>footer</b>> </li>
+					<li> <<b>section</b>> </li>
+				</ul>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Inline Elements </h2>
+				<p> Inline element tidak memulai pada garis baru dan hanya mengambil selebar yang diperlukan. </p>
+				<p> Ini merupakan <span style="border: 3px gold groove" padding:5px;>inline <<b>span</b>> element</span> didalam paragraf. </p>
+				<p> Berikut adalah contoh inline elements (element pada baris):</p> 
+				<ul>
+					<li> <<b>span</b>> </li>
+					<li> <<b>a</b>> </li>
+					<li> <<b>img</b>> </li>
+				</ul>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Display: none; </h2>
+				<p> Properti <mark>display: none;</mark> secara umum digunakan dengan JavaSfript utuk menyembunyikan dan menampilkan element tanpa penghapusan atau pembuatan ulang elemen. 
+				Coba lihatlah di contoh terakhir kita pada halaman ini jika kamu ingin tahu ini bisa dicapai. </p>
+				<p> Element <<b>script</b>> menggunakan <mark>display: none;</mark> sebagau defaultnya. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Override The Default Display Value </h2>
+				<p> Mengesampingkan Nilai Display Default</p>
+				<p> Seperti yang telah disebutkan, setiap element memiliki nilai display default. Akan tetapu, kamu bisa mengabaikan ini. </p>
+				<p> Pengubahan suatu inline element untuk block element atau vice versa, bisa berguna untuk pembuatan halaman agar terlihat spesifik, dan masil mengikuti standar web. </p>
+				<p> Contoh umum membuat inline <<b>li</b>> element untuk horizontal menu: </p>
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						li {
+						<blockquote>
+						    display: inline;
+						</blockquote>
+						} 
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						li {
+						<blockquote>
+						    display: inline;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						<<b>p</b>>Display a list of links as a horizontal menu:<<b>/p</b>> <br>
+						<br>
+						<<b>ul</b>>
+						<blockquote>
+							<<b>li</b>><<b>a</b> <span class="teal">href="../HTML tutorials/HTML HOME.html" target="_blank"</span>>HTML<<b>/a</b>><<b>/li</b>> <br>
+							<<b>li</b>><<b>a </b> <span class="teal">href="CSS HOME.html" target="_blank"</span>>CSS<<b>/a</b>><<b>/li</b>> <br>
+							<<b>li</b>><<b>a</b> <span class="teal">href="../JavaScript/js HOME.html" target="_blank"</span>>JavaScript<<b>/a</b>><<b>/li</b>> 
+						</blockquote>
+						<<b>/ul</b>> <br><<br>
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<p>Display a list of links as a horizontal menu:</p>
+						
+						<ul class="cont01">
+							<li><a href="../HTML tutorials/HTML HOME.html" target="_blank">HTML</a></li>
+							<li><a href="CSS HOME.html" target="_blank">CSS</a></li>
+							<li><a href="../JavaScript/js HOME.html" target="_blank">JavaScript</a></li>
+						</ul>
+					</div>
+				</article>
+				
+				<div class="nasehat">
+				<p> <b>Catatan:</b> Pengaturan properti display dari suatu element hanya mengubah bagaimana element ditampilkan, BUKAN apa jenis dari elementnya. 
+				Jadi, suatu inline element dengan <mark>display: block;</mark> tidak diperbolehkan untuk memiliki block element lainnya didalam element tersebut. </p>
+				</div>
+				<p> Contoh berikut menampilkan element <<b>span</b>> sebagai block element: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						span {
+						<blockquote>
+						    display: block;
+						</blockquote>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						span {
+						<blockquote>
+						    display: block;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						<<b>span</b>>A display property with a value of "block" results in<<b>/span</b>> <<b>span</b>>a line break between the two elements.<<b>/span</b>> <br><br>
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<span style="display:block;">A display property with a value of "block" results in</span> <span style="display:block;">a line break between the two elements.</span>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Hide an Element - display:none or visibility:hidden? </h2>
+				<p> Menyembunyikan suatu element (dengan) display: none; atau visibility: hidden; ? </p>
+				<p> Penghilangan suatu element busa dilakukan dengan pengatran properti display menjadi none. Element akan disembunyikan, 
+				dan halaman akan disembunyikan seperti jika element tidak ada: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open03">
+						
+						h1.hidden {
+						<blockquote>
+						    display: none;
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						h1.hidden {
+						<blockquote>
+						    display: none;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						<<b>h1</b>>This is a visible heading<<b>/h1</b>> <br>
+						<<b>h1</b> <span class="teal">class="hidden"</span>>This is a hidden heading<<b>/h1</b>> <br>
+						<<b>p</b>>Notice that the h1 element with display: none; does not take up any space.<<b>/p</b>> <br><br>
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+						<h3>This is a visible heading</h3>
+						<h3 style="display:none;">This is a hidden heading</h3>
+						<p>Notice that the h1 element with display: none; does not take up any space.</p>
+						
+					</div>
+				</article>
+				
+				<p> <mark>visibility: hidden;</mark> juga menyembunyikan element. </p>
+				<p> Akan tetapi, element masih akan mengambil ruang yang sama seperti sebelumnya. element akan disembunyikan, tapi masih memiliki efek pada layout: </p>
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open04">
+						
+						h1.hidden {
+						<blockquote>
+						    visibility: hidden;
+						</blockquote>
+						} 
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close04">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						h1.hidden {
+						<blockquote>
+						    visibility: hidden;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						<<b>h1</b>>This is a visible heading<<b>/h1</b>> <br>
+						<<b>h1</b> <span class="teal">class="hidden"</span>>This is a hidden heading<<b>/h1</b>> <br>
+						<<b>p</b>>Notice that the h1 element with display: none; does not take up any space.<<b>/p</b>> <br><br>
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<button onclick="buka04()" class="exbutton"> Open </button>
+					<button onclick="tutup04()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+						<h3>This is a visible heading</h3>
+						<h3 style="visibility: hidden;">This is a hidden heading</h3>
+						<p>Notice that the h1 element with display: none; does not take up any space.</p>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>More Examples</h2>
+				<div onclick="tampilkan05()" class="redZone div01">display: none; <i>versus</i> visibility: hidden;</div>
+				<article class="example-box sembunyikan" id="sembunyikan05">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open06">
+						<em> /* Kode CSS */ </em>
+						.imgbox {
+						<blockquote>
+							float: left; <br>
+							text-align: center; <br>
+							width: 120px; <br>
+							height: 145px; <br>
+							border: 1px solid gray; <br>
+							margin: 4px; <br>
+							padding: 0;
+						</blockquote>
+						} <br>
+						<br>
+						.thumbnail {
+						<blockquote>
+							width: 110px; <br>
+							height: 90px; <br>
+							margin: 3px; 
+						</blockquote>
+						} <br>
+						<br>
+						.box { 
+						<blockquote>
+							width: 110px; <br>
+							padding: 0; 
+						</blockquote>
+						}<br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close06">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.imgbox {
+						<blockquote>
+							float: left; <br>
+							text-align: center; <br>
+							width: 120px; <br>
+							height: 145px; <br>
+							border: 1px solid gray; <br>
+							margin: 4px; <br>
+							padding: 0;
+						</blockquote>
+						} <br>
+						<br>
+						.thumbnail {
+						<blockquote>
+							width: 110px; <br>
+							height: 90px; <br>
+							margin: 3px; 
+						</blockquote>
+						} <br>
+						<br>
+						.box { 
+						<blockquote>
+							width: 110px; <br>
+							padding: 0; 
+						</blockquote>
+						}<br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>div</b> <span slcass="teal">style="text-align:center"</span>> 
+						<blockquote>
+							<<b>div</b> <span slcass="teal">style="width:394px;height:160px;margin-left:auto;margin-right:auto;text-align:left;border:1px solid gray;"</span>>
+							<blockquote>
+								<<b>div</b> <span slcass="teal">class="imgbox" id="imgbox1"</span>>Box 1<<b>br</b>>
+								<blockquote>
+									<<b>img</b> <span slcass="teal">class="thumbnail" src="klematis_small.jpg" width="107" height="90" alt="Klematis"</span>> <br>
+									<<b>input</b> <span slcass="teal">class="box" type="button" onclick="removeElement()" value="Remove"</span>> 
+								</blockquote>
+								<<b>/div</b>> <br>
+								<<b>div</b> <span slcass="teal">class="imgbox" id="imgbox2"</span>>Box 2<<b>br</b>> 
+								<blockquote>
+									<<b>img</b> <span slcass="teal">class="thumbnail" src="klematis2_small.jpg" width="107" height="90" alt="Klematis"</span>> <br>
+									<<b>input</b> <span slcass="teal">class="box"  type="button" onclick="changeVisibility()" value="Hide"</span>> 
+								</blockquote>
+								<<b>/div</b>> <br>
+								<<b>div</b> <span slcass="teal">class="imgbox"</span>>Box 3<<b>br</b>> 
+								<blockquote>
+									<<b>img</b> <span slcass="teal">class="thumbnail" src="klematis3_small.jpg" width="107" height="90" alt="Klematis"</span>> <br>
+									<<b>input</b> <span slcass="teal">class="box"  type="button" onclick="resetElement()" value="Reset All"</span>> 
+								</blockquote>
+								<<b>/div</b>> 
+							</blockquote>
+							<<b>/div</b>>
+						</blockquote>
+						<<b>/div</b>> <br>
+						<br>
+						<<b>script</b>> <br>
+						<code>function</code> removeElement() {
+						<blockquote>
+							document.getElementById("imgbox1").style.display = "none";
+						</blockquote>
+						} <br>
+						<br>
+						<code>function</code> changeVisibility() {
+						<blockquote>
+							document.getElementById("imgbox2").style.visibility = "hidden";
+						</blockquote>
+						} <br>
+						<br>
+						<code>function</code> resetElement() {
+						<blockquote>
+							document.getElementById("imgbox1").style.display = "block"; <br>
+							document.getElementById("imgbox2").style.visibility = "visible";
+						</blockquote>
+						}<br>
+						<<b>/script</b>> <br>
+						
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan06()" class="exbutton">Klik disini</button>
+					<button onclick="buka06()" class="exbutton"> Open </button>
+					<button onclick="tutup06()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+
+						<div style="text-align:center"> 
+							<div style="width:394px;height:160px;margin-left:auto;margin-right:auto;text-align:left;border:1px solid gray;"> 
+								<div class="imgbox" id="imgbox1">Box 1<br> 
+									<img class="thumbnail" src="klematis_small.jpg" width="107" height="90" alt="Klematis"> 
+									<input class="box" type="button" onclick="removeElement()" value="Remove"> 
+								</div> 
+								<div class="imgbox" id="imgbox2">Box 2<br> 
+									<img class="thumbnail" src="klematis2_small.jpg" width="107" height="90" alt="Klematis"> 
+									<input class="box" type="button" onclick="changeVisibility()" value="Hide">
+								</div> 
+								<div class="imgbox">Box 3<br> 
+									<img class="thumbnail" src="klematis3_small.jpg" width="107" height="90" alt="Klematis"> 
+									<input class="box" type="button" onclick="resetElement()" value="Reset All"> 
+								</div> 
+							</div> 
+						</div> 
+						
+						
+					</div>
+				</article>
+				
+				<p> Contoh ini mempertontonkan <mark>display: none;</mark> vs <mark>visibility: hidden;</mark> </p>
+				
+				<div onclick="tampilkan07()" class="redZone div01">Using CSS together with JavaScript to show content </div>
+				<article class="example-box sembunyikan" id="sembunyikan07">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open08">
+						
+						#panel, .flip {
+							<blockquote>
+							font-size: 16px; <br>
+							padding: 10px; <br>
+							text-align: center; <br>
+							background-color: #4CAF50; <br>
+							color: white; <br>
+							border: solid 1px #a6d8a8; <br>
+							margin: auto;
+							</blockquote>
+						} <br>
+						<br>
+						#panel {
+							<blockquote>
+							display: none;
+							</blockquote>
+						} 
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close08">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#panel, .flip {
+							<blockquote>
+							font-size: 16px; <br>
+							padding: 10px; <br>
+							text-align: center; <br>
+							background-color: #4CAF50; <br>
+							color: white; <br>
+							border: solid 1px #a6d8a8; <br>
+							margin: auto;
+							</blockquote>
+						} <br>
+						<br>
+						#panel {
+							<blockquote>
+							display: none;
+							</blockquote>
+						} <br>
+						<br>
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						<<b>p</b> <span class="teal">class="flip" onclick="myFunction()"</span>>Click to show panel<<b>/p</b>> <br>
+						<br>
+						<<b>div</b> <span class="teal">id="panel"</span>> <br>
+						<<b>p</b>>This panel contains a div element, which is hidden by default (display: none).</p>
+						<<b>p</b>>It is styled with CSS and we use JavaScript to show it (display: block).</p>
+						<<b>p</b>>How it works: Notice that the p element with class="flip" has an onclick attribute attached to it. When the user clicks on the p element, a function called myFunction() is executed, which changes the style of the div with id="panel" from display:none (hidden) to display:block (visible).</p>
+						<<b>p</b>>You will learn more about JavaScript in our JavaScript Tutorial.</p>
+						<<b>/div</b>> <br>
+						<br>
+						<<b>script</b>> <br>
+						<code>function</code> myFunction() {
+						<blockquote>
+						document.getElementById("panel").style.display = "block";
+						</blockquote>
+						} <br>
+						<<b>/script</b>> <br>
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan08()" class="exbutton">Klik disini</button>
+					<button onclick="buka08()" class="exbutton"> Open </button>
+					<button onclick="tutup08()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan08">
+					
+						<p class="flip" onclick="myAction02()">Click to show panel</p> 
+						
+						<div id="panel"> 
+							<p>This panel contains a div element, which is hidden by default (display: none).
+							<p>It is styled with CSS and we use JavaScript to show it (display: block).
+							<p>How it works: Notice that the p element with class="flip" has an onclick attribute attached to it. When the user clicks on the p element, a function called myFunction() is executed, which changes the style of the div with id="panel" from display:none (hidden) to display:block (visible).
+							<p>You will learn more about JavaScript in our JavaScript Tutorial.
+						</div> 
+
+					</div>
+				</article>
+				<p> Contoh ini mempertontonkan bagaimana menggunakan CSS dan JavaScript untuk menampilkan Element saat diklik.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS Display/Visibility Properties </h2>
+				<table class="table vertOp">
+					<thead>
+						<tr>
+							<th> Properti </th>
+							<th>Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr> 
+							<td>display</td>
+							<td> Menentukan bagaimana element harus ditampilkan </td>
+						</tr>
+						<tr>
+						 	<td> visibility </td>
+						 	<td> Menentukan apakah iya atau tidak element harus ditampilkan (visible) <br>
+							 	<b>Nilai:</b>
+							 	<ul>
+							 		<li> visible - element ditampilkan </li>
+							 		<li> hidden - element disembunyikan </li>
+							 		<li> inherit - element mewariskan nilai properti yang sama dari parent element </li>
+							 		<li> initial - (nilai) properti dijadikan sebagai nilai default</li>
+							 	</ul>
+						 	</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS outline.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS max-width.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+<script type="text/javascript">
+function tampilkan01A() {
+	x = document.getElementById("sembunyikan01A").style;
+	x.display = "inline-block";
+	x.marginBottomt="250px";
+}
+function myAction02() {
+	document.getElementById("panel").style.display = "block";
+} 
+
+function removeElement() {
+	document.getElementById("imgbox1").style.display = "none";
+} 
+
+function changeVisibility() {
+	document.getElementById("imgbox2").style.visibility = "hidden";
+} 
+
+function resetElement() {
+	document.getElementById("imgbox1").style.display = "block"; document.getElementById("imgbox2").style.visibility = "visible";
+}
+</script>
+</body>
+</html>

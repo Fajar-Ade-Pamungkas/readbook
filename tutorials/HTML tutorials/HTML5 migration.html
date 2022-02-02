@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML5 migration </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML5 Migration  </h1>
+
+			</div>
+			
+			
+<section>			
+			<article>
+				<h2> Migration from HTML4 to HTML5 </h2>
+				<p> Chapter ini adalah seutuhnya tentsng bagaimana berpindah (bermigrasi) dari tipikal halaman HTML4 ke tipikal halaman HTML5. </p>
+				<p> Chapter ini mempertunjukan bagaimana untuk mengubah halaman HTML4  kedalam  halaman HTML5, tanpa menghancurkan apapun tentsng konten atau struktur aslinya. </p>
+				<p> Kamu bisa bermingrasi ke HTML5 dari HTML4 atau XHTML menggunakan resep atau cara yang sama. </p>
+				
+				<table>
+					<thead>
+						<tr>
+							<th> <h4>Typical HTML4</h4> </th>
+							<th> <h4>Typical HTML5</h4> </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> <<b>div</b> <span class="teal">id="header"</span>> </td>
+							<td> <<b>header</b>> </td>
+						</tr>
+						<tr>
+							<td> <<b>div</b> <span class="teal">id="menu"</span>> </td>
+							<td> <<b>nav</b>> </td>
+						</tr>
+						<tr>
+							<td> <<b>div</b> <span class="teal">id="content"</span>> </td>
+							<td> <<b>section</b>> </td>
+						</tr>
+						<tr>
+							<td> <<b>div</b> <span class="teal">id="post"</span>> </td>
+							<td> <<b>article</b>> </td>
+						</tr>
+						<tr>
+							<td> <<b>div</b> <span class="teal">id="footer"</span>> </td>
+							<td> <<b>footer</b>> </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> A Typical HTML4 Page </h2>
+				
+				<article class="example-box">
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE</b> <span class="teal">html HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"</span>><br><br>
+						<<b>html</b> <span class="teal">lang="en-US"</span>><br><br>
+							<<b>head</b>><br>
+							<<b>title</b>> HTML4 <<b>/title</b>> <br>
+							<<b>meta</b> <span class="teal">http-equiv="Content-Type" content="text/html;charset=utf-8"</span>> <br>
+							<<b>style</b>><br>
+								  <span class="magenta">body</span> {font-family:Verdana,sans-serif;font-size:0.8em;} <br>
+								  <span class="magenta">div#header,div#footer,div#content,div#post</span>  
+								  {border:1px solid grey;margin:5px;margin-bottom:15px;padding:8px;background-color:white;} <br>
+								  <span class="magenta">div#header,div#footer</span> {color:white;background-color:#444;margin-bottom:5px;} <br>
+								  <span class="magenta">div#content</span> {background-color:#ddd;} <br>
+								  <span class="magenta">div#menu ul</span> {margin:0;padding:0;} <br>
+								  <span class="magenta">div#menu ul li</span> {display:inline; margin:5px;} <br>
+							<<b>/style</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br><br>
+							
+								<<b>div</b> <span class="teal">id="header"</span>> 
+								  <blockquote><<b>h1</b>>Monday Times<<b>/h1</b>></blockquote>
+								<<b>/div</b>> <br><br>
+								
+								<<b>div</b> <span class="teal">id="menu"</span>> 
+								<blockquote>
+								  <<b>ul</b>>
+								<blockquote>
+								    <<b>li</b>>News<<b>/li</b>> <br>
+								    <<b>li</b>>Sports<<b>/li</b>> <br>
+								    <<b>li</b>>Weather<<b>/li</b>> 
+								</blockquote>
+								  <<b>/ul</b>>
+								</blockquote>
+								<<b>/div</b>> <br><br>
+								
+								<<b>div</b> <span class="teal">id="content"</span>>
+								<blockquote>
+								<<b>h2</b>>News Section<<b>/h2</b>> <br><br>
+								
+								<<b>div</b> <span class="teal">id="post"</span>>
+								<blockquote>
+								  <<b>h2</b>>News Article<<b>/h2</b>> <br>
+								  <<b>p</b>>Ipsum lurum hurum turum ipsum lurum hurum turum ipsum lurum hurum turum ipsum 
+								  lurum hurum turum.<<b>/p</b>> <br>
+								  <<b>p</b>>Ipsum lurum hurum turum ipsum lurum hurum turum ipsum lurum hurum turum ipsum 
+								  lurum hurum turum.<<b>/p</b>>
+								</blockquote>
+								<<b>/div</b>> <br><br>
+								
+								<<b>div</b> <span class="teal">id="post"</span>>
+								<blockquote>
+								  <<b>h2</b>>News Article<<b>/h2</b>> <br>
+								  <<b>p</b>>Ipsum lurum hurum turum ipsum lurum hurum turum ipsum lurum hurum turum ipsum 
+								  lurum hurum turum.<<b>/p</b>> <br>
+								  <<b>p</b>>Ipsum lurum hurum turum ipsum lurum hurum turum ipsum lurum hurum turum ipsum 
+								  lurum hurum turum.<<b>/p</b>>
+								</blockquote>
+								<<b>/div</b>>
+								</blockquote>
+								<<b>/div</b>>
+								
+								<<b>div</b> <span class="teal">id="footer"</span>>
+								  <blockquote><<b>p</b>>&<i>amp</i>;copy; 2014 Monday Times. All rights reserved.<<b>/p</b>></blockquote>
+								<<b>/div</b>>  <br><br>
+	
+							<<b>/body</b>><br>
+						<<b>/html</b>><br>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Change to HTML5 Doctype </h2>
+				<p> Ubahlah <b>doctype</b>, dari doctype HTML4: 
+				
+				<article class="example-box">
+					<h4>HTML4</h4>
+					<div class="example-content">
+				<<b>!DOCTYPE html</b> <span class="teal">HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"</span>><br><br>
+					</div>	
+				</article>
+				
+				<p> Menjadi doctype HTML5: </p>
+				
+				<article class="example-box">
+					<h4>HTML5</h4>
+					<div class="example-content">
+				<<b>!DOCTYPE</b> <span class="teal">html</span>>
+					</div>	
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Change to HTML5 Encoding </h2>
+				<p> Ubahlah informasi <b>encoding</b>, dari HTML4: </p>
+				
+				<article class="example-box">
+					<h4>HTML4</h4>
+					<div class="example-content">
+				<<b>meta</b> <span class="teal">http-equiv="Content-Type" content="text/html;charset=utf-8"</span>> <br>
+					</div>	
+				</article>
+				
+				<p> Menjadi HTML5: </p>
+				
+				<article class="example-box">
+					<h4>HTML5</h4>
+					<div class="example-content">
+				<<b>meta</b> <span class="teal">charset="UTF-8"</span>>
+					</div>	
+				</article>
+			</article>
+</section> 
+<section>			
+			<article>
+				<h2> Add The <b class="justRed">Shiv</b> </h2>
+				<p> Element semantik HTML5 didukung pada semua browser modern. </p>
+				<p> Pada penambahannya, kamu bisa "mengajarkan" browser lama bagaimana untuk menangani "element - element yang tidak diketahui". </p>
+				<p> Tambahkan <b>shiv</b> untuk Internet Explorer support: </p>
+				
+				<article class="example-box">
+					<h4> HTML5 Enabling JavaScript</h4>
+					<div class="simple-example grey">
+					<<b>!--[if lt IE 9]</b>>
+					  <br>
+					  <<b>script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"</b>><<b>/script</b>>
+					  </br>
+					<<b>![endif]--</b>
+					</div>
+				</article>
+				
+				<p> Bacalah tentang <b>shiv</b> di <a href="HTML5 support.html" > HTML Browser Support</a>. </p>
+			</article>
+</section> 
+<section>
+			<article>
+				<h2> Add CSS for HTML5 Semantic Elements </h2>
+				<p> Lihatlah pada style CSS kamu yang sudah : </p>
+				
+				<article class="example-box">
+					<h4>HTML4</h4>
+					<div class="example-content">
+				  <span class="magenta">body</span> {font-family:Verdana,sans-serif;font-size:0.8em;} <br>
+				  <span class="magenta">div#header,div#footer,div#content,div#post</span>  
+				  {border:1px solid grey;margin:5px;margin-bottom:15px;padding:8px;background-color:white;} <br>
+				  <span class="magenta">div#header,div#footer</span> {color:white;background-color:#444;margin-bottom:5px;} <br>
+				  <span class="magenta">div#content</span> {background-color:#ddd;} <br>
+				  <span class="magenta">div#menu ul</span> {margin:0;padding:0;} <br>
+				  <span class="magenta">div#menu ul li</span> {display:inline; margin:5px;} <br>
+					</div>	
+				</article>
+				
+				<p> Duplikat dengan style CSS yang sama untuk element - element semantik HTML5: </p>
+				
+				<article class="example-box">
+					<h4>HTML5</h4>
+					<div class="example-content">
+				  <span class="magenta">body</span> {font-family:Verdana,sans-serif;font-size:0.8em;} <br>
+				  <span class="magenta">header,footer,section,article</span>  
+				  {border:1px solid grey;margin:5px;margin-bottom:15px;padding:8px;background-color:white;} <br>
+				  <span class="magenta">header,footer</span> {color:white;background-color:#444;margin-bottom:5px;} <br>
+				  <span class="magenta">section</span> {background-color:#ddd;} <br>
+				  <span class="magenta">nav ul</span> {margin:0;padding:0;} <br>
+				  <span class="magenta">nav ul li</span> {display:inline; margin:5px;} <br>
+					</div>	
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Change to HTML5 <b class="blue"><<b>header</b>></b> and <b class="blue"><<b>footer</b>></b> </h2>
+				<p> Ubahlah element div dengan <b>id="header"</b> dan <b>id="footer"</b>: </p>
+				
+				<article class="example-box">
+					<h4>HTML4</h4>
+					<div class="example-content">
+					
+					<<b>div</b> <span class="teal">id="header"</span>> 
+					  <blockquote><<b>h1</b>>Monday Times<<b>/h1</b>></blockquote>
+					<<b>/div</b>> <br><br>
+					. <br>
+					.<br>
+					. <br>
+					<<b>div</b> <span class="teal">id="footer"</span>>
+					  <blockquote><<b>p</b>>&<i>amp</i>;copy; 2014 Monday Times. All rights reserved.<<b>/p</b>></blockquote>
+					<<b>/div</b>>
+					
+					</div>
+				</article>
+			
+			<p> Menjadi element semantik HTML5 <<b>heaeer</b>> dan <<b>footer</b>>: </p>
+			
+			<article class="example-box">
+				<h4>HTML5</h4>
+				<div class="example-content">
+				
+				<<b>header</b>> 
+				  <blockquote><<b>h1</b>>Monday Times<<b>/h1</b>></blockquote>
+				<<b>/header</b>> <br><br>
+				. <br>
+				.<br>
+				. <br>
+				<<b>footer</b>>
+				  <blockquote><<b>p</b>>&<i>amp</i>;copy; 2014 Monday Times. All rights reserved.<<b>/p</b>></blockquote>
+				<<b>/footer</b>>
+				
+				</div>
+			</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Change to HTML5 <b class="blue"><<b>nav</b>></b>  </h2>
+				<p> Ubahlah element div dengan <b>id="menu"</b>: </p>
+				
+				<article class="example-box">
+					<h4>HTML4</h4>
+					<div class="example-content">
+					
+					<<b>div</b> <span class="teal">id="menu"</span>> 
+					<blockquote>
+					  <<b>ul</b>>
+					<blockquote>
+					    <<b>li</b>>News<<b>/li</b>> <br>
+					    <<b>li</b>>Sports<<b>/li</b>> <br>
+					    <<b>li</b>>Weather<<b>/li</b>> 
+					</blockquote>
+					  <<b>/ul</b>>
+					</blockquote>
+					<<b>/div</b>> 
+					
+					</div>
+				</article>
+			
+			<p> Menjadi element semantik HTML5 <<b>nav</b>>: </p>
+			
+			<article class="example-box">
+				<h4>HTML5</h4>
+				<div class="example-content">
+				
+				<<b>nav</b>> 
+				<blockquote>
+				  <<b>ul</b>>
+				<blockquote>
+				    <<b>li</b>>News<<b>/li</b>> <br>
+				    <<b>li</b>>Sports<<b>/li</b>> <br>
+				    <<b>li</b>>Weather<<b>/li</b>> 
+				</blockquote>
+				  <<b>/ul</b>>
+				</blockquote>
+				<<b>/nav</b>> 
+				
+				</div>
+			</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Change to HTML5 <b class="blue"><<b>section</b>></b>  </h2>
+				<p> Ubahlah element div dengan <b>id=content"</b>: </p>
+				
+				<article class="example-box">
+					<h4>HTML4</h4>
+					<div class="example-content">
+					
+					<<b>div</b> <span class="teal">id="content"</span>>
+					. <br>
+					. <br>
+					. <br>
+					<<b>/div</b>>
+					
+					</div>
+				</article>
+			
+			<p> Menjadi element semantik HTML5 <<b>section</b>>: </p>
+			
+			<article class="example-box">
+				<h4>HTML5</h4>
+				<div class="example-content">
+				
+				<<b>section</b>>
+				. <br>
+				. <br>
+				. <br>
+				<<b>/section</b>>
+				
+				</div>
+			</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Change to HTML5 <b class="blue"><<b>article</b>></b>  </h2>
+				<p> Ubahlah element div dengan <b>id=post"</b>: </p>
+				
+				<article class="example-box">
+					<h4>HTML4</h4>
+					<div class="example-content">
+					
+					<<b>div</b> <span class="teal">id="post"</span>>
+					<blockquote>
+					  <<b>h2</b>>News Article<<b>/h2</b>> <br>
+					  <<b>p</b>>Ipsum lurum hurum turum ipsum lurum hurum turum ipsum lurum hurum turum ipsum 
+					  lurum hurum turum.<<b>/p</b>> <br>
+					  <<b>p</b>>Ipsum lurum hurum turum ipsum lurum hurum turum ipsum lurum hurum turum ipsum 
+					  lurum hurum turum.<<b>/p</b>>
+					</blockquote>
+					<<b>/div</b>>
+					
+					</div>
+				</article>
+			
+			<p> Menjadi element semantik HTML5 <<b>article</b>>: </p>
+			
+			<article class="example-box">
+				<h4>HTML5</h4>
+				<div class="example-content">
+				
+				<<b>article</b>>
+				<blockquote>
+				  <<b>h2</b>>News Article<<b>/h2</b>> <br>
+				  <<b>p</b>>Ipsum lurum hurum turum ipsum lurum hurum turum ipsum lurum hurum turum ipsum 
+				  lurum hurum turum.<<b>/p</b>> <br>
+				  <<b>p</b>>Ipsum lurum hurum turum ipsum lurum hurum turum ipsum lurum hurum turum ipsum 
+				  lurum hurum turum.<<b>/p</b>>
+				</blockquote>
+				<<b>/article</b>> <br><br>
+				
+				</div>
+			</article>
+			
+			<p> Dan gantilah tulisan yang tidak perlu (<b>div#</b>) pada element <<b>style</b>> : </p>
+			
+				<article class="example-box">
+					<h4>Style sebelum dimodifikasi</h4>
+					<div class="example-content">
+					
+					<<b>style</b>><br>
+						  <span class="magenta">body</span> {font-family:Verdana,sans-serif;font-size:0.8em;} <br>
+						  <span class="magenta">div#header,div#footer,div#content,div#post</span>  
+						  {border:1px solid grey;margin:5px;margin-bottom:15px;padding:8px;background-color:white;} <br>
+						  <span class="magenta">div#header,div#footer</span> {color:white;background-color:#444;margin-bottom:5px;} <br>
+						  <span class="magenta">div#content</span> {background-color:#ddd;} <br>
+						  <span class="magenta">div#menu ul</span> {margin:0;padding:0;} <br>
+						  <span class="magenta">div#menu ul li</span> {display:inline; margin:5px;} <br>
+					<<b>/style</b>> <br>
+					
+					</div>
+				</article>
+							
+			<p> Menjadi: </p>
+							
+			<article class="example-box">
+				<h4>Style sesudah dimodifikasi</h4>
+				<div class="example-content">
+				
+				<<b>style</b>><br>
+					  <span class="magenta">body</span> {font-family:Verdana,sans-serif;font-size:0.8em;} <br>
+					  <span class="magenta">header,footer,section, article</span>  
+					  {border:1px solid grey;margin:5px;margin-bottom:15px;padding:8px;background-color:white;} <br>
+					  <span class="magenta">header,footer</span> {color:white;background-color:#444;margin-bottom:5px;} <br>
+					  <span class="magenta">section</span> {background-color:#ddd;} <br>
+					  <span class="magenta">nav ul</span> {margin:0;padding:0;} <br>
+					  <span class="magenta">nav ul li</span> {display:inline; margin:5px;} <br>
+				<<b>/style</b>> <br>
+				
+				</div>
+			</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> A Typical HTML5 Page </h2>
+				<p> Terakhir kamu bisa mencopot tag <<b>head</b>>. mereka tidak dibutuhkan di HTML5. </p>
+				<p> (namun kami sarankan untuk selalu menyertakan tag <<b>head</b>> terutama pada file XHTML dan XML). </p>
+				
+				<article class="example-box">
+				<h4>Input:</h4>
+				<div class="example-content">
+				
+				<<b>!DOCTYPE</b> <span class="teal">html HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"</span>><br><br>
+				<<b>html</b> <span class="teal">lang="en-US"</span>><br><br>
+				<<b>title</b>> HTML4 <<b>/title</b>> <br>
+				<<b>meta</b> <span class="teal">charset="utf-8"</span>> <br>
+				<div class="grey"> 
+				<<span>!--[if lt IE 9]</span>>
+				  <br>
+				  <<span>script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"</span>><<span>/script</span>>
+				  </br>
+				<<span>![endif]--</span> 
+				</div><br>
+				<<b>style</b>><br>
+				  <span class="magenta">body</span> {font-family:Verdana,sans-serif;font-size:0.8em;} <br>
+				  <span class="magenta">header,footer,section,article</span>  
+				  {border:1px solid grey;margin:5px;margin-bottom:15px;padding:8px;background-color:white;} <br>
+				  <span class="magenta">header,footer</span> {color:white;background-color:#444;margin-bottom:5px;} <br>
+				  <span class="magenta">section</span> {background-color:#ddd;} <br>
+				  <span class="magenta">nav ul</span> {margin:0;padding:0;} <br>
+				  <span class="magenta">nav ul li</span> {display:inline; margin:5px;} <br>
+				<<b>/style</b>> <br>
+				<<b>body</b>><br><br>
+				
+				<<b>header</b>> 
+				  <blockquote><<b>h1</b>>Monday Times<<b>/h1</b>></blockquote>
+				<<b>/header</b>> <br><br>
+				
+				<<b>nav</b>> 
+				<blockquote>
+				  <<b>ul</b>>
+				<blockquote>
+				    <<b>li</b>>News<<b>/li</b>> <br>
+				    <<b>li</b>>Sports<<b>/li</b>> <br>
+				    <<b>li</b>>Weather<<b>/li</b>> 
+				</blockquote>
+				  <<b>/ul</b>>
+				</blockquote>
+				<<b>/nav</b>> <br><br>
+				
+				<<b>section</b>>
+				<blockquote>
+				<<b>h2</b>>News Section<<b>/h2</b>> <br><br>
+				
+				<<b>article</b>>
+				<blockquote>
+				  <<b>h2</b>>News Article<<b>/h2</b>> <br>
+				  <<b>p</b>>Ipsum lurum hurum turum ipsum lurum hurum turum ipsum lurum hurum turum ipsum 
+				  lurum hurum turum.<<b>/p</b>> <br>
+				  <<b>p</b>>Ipsum lurum hurum turum ipsum lurum hurum turum ipsum lurum hurum turum ipsum 
+				  lurum hurum turum.<<b>/p</b>>
+				</blockquote>
+				<<b>/article</b>> <br><br>
+				
+				<<b>article</b>>
+				<blockquote>
+				  <<b>h2</b>>News Article<<b>/h2</b>> <br>
+				  <<b>p</b>>Ipsum lurum hurum turum ipsum lurum hurum turum ipsum lurum hurum turum ipsum 
+				  lurum hurum turum.<<b>/p</b>> <br>
+				  <<b>p</b>>Ipsum lurum hurum turum ipsum lurum hurum turum ipsum lurum hurum turum ipsum 
+				  lurum hurum turum.<<b>/p</b>>
+				</blockquote>
+				<<b>/article</b>>
+				</blockquote>
+				<<b>/section</b>>
+				
+				<<b>footer</b>>
+				  <blockquote><<b>p</b>>&<i>amp</i>;copy; 2014 Monday Times. All rights reserved.<<b>/p</b>></blockquote>
+				<<b>/footer</b>> <br><br>
+				
+				<<b>/body</b>><br>
+				<<b>/html</b>><br>
+				
+				</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Perbedaan Antara <b class="blue"><b>article</b>> <<b>section</b>></h2> dan <b class="blue>"<<b>div</b>></b> </h2>
+				<p> Ini perbedaan cukup membingungkan (lack of) dalam standar HTML5, antara  <<b>article</b>>, <<b>section</b>> dan <<b>div</b>>. </p>
+				<p> Pada standar HTML5, <<b>seftion</b>> didefinisikan sebagai sebuah blok dari element - elemen yang terhubung (block of related elements). </p>
+				<p> Element <<b>article</b>> didefinisikan sebagai sebuah kelengkapan, blok berisikan dirinya dari element - element yang terhubung (self-contained block of related elements). </p>
+				<p> Element <<b>div</b>> didefinisikan sebagai sebuah blok dari element - element turunan (blok of children elements). </p>
+				<p> Bagaimana untuk menterjemahkannya? </p>
+				<p> Pada contoh diatas, keta telah menggunakan <<b>section</b>> sebagai sebuah container (tempat pengisian) untuk <<b>article</b>> terhubung. </p>
+				<p> Tapi, kita bisa menggunakan <<b>article</b>> sebagai contsiner untuk article sama baiknya. </p>
+				<p> Disini adalah beberapa contoh perbedaan:</p>
+				
+				<article class="example-box">
+					<h4> <<b>article</b>> dalam <<b>article</b>></h4>
+					<div class="example-content">
+					<<b>article</b>> <br>
+					
+					<<b>h2</b>>Famous Cities<<b>/h2</b>> <br><br>
+					
+					<<b>article</b>> <br>
+					<<b>h2</b>>London<<b>/h2</b>> <br>
+					<<b>p</b>>London is the capital city of England. It is the most populous city in the United Kingdom,
+					with a metropolitan area of over 13 million inhabitants.<<b>/p</b>> <br>
+					<<b>/article</b>> <br>
+					
+					<<b>article</b>> <br>
+					<<b>h2</b>>Paris<<b>/h2</b>> <br>
+					<<b>p</b>>Paris is the capital and most populous city of France.<<b>/p</b>> <br>
+					<<b>/article</b>> <br><br>
+					
+					<<b>article</b>> <br>
+					<<b>h2</b>>Tokyo<<b>/h2</b>> <br>
+					<<b>p</b>>Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
+					and the most populous metropolitan area in the world.<<b>/p</b>> <br>
+					<<b>/article</b>> <br><br>
+					
+					<<b>/article</b>>
+					
+					</div>
+				</article>
+				
+				<article class="example-box">
+					<h4> <<b>div</b>> dalam <<b>article</b>></h4>
+					<div class="example-content">
+					
+					<<b>article</b>> <br>
+					
+					<<b>h2</b>>Famous Cities<<b>/h2</b>> <br><br>
+					
+					<<b>div</b> <span class="teal">class="city"</span>> <br>
+					<<b>h2</b>>London<<b>/h2</b>> <br>
+					<<b>p</b>>London is the capital city of England. It is the most populous city in the United Kingdom,
+					with a metropolitan area of over 13 million inhabitants.<<b>/p</b>> <br>
+					<<b>/div</b>> <br>
+					
+					<<b>div</b> <span class="teal">class="city"</span>> <br>
+					<<b>h2</b>>Paris<<b>/h2</b>> <br>
+					<<b>p</b>>Paris is the capital and most populous city of France.<<b>/p</b>> <br>
+					<<b>/div</b>> <br><br>
+					
+					<<b>div</b> <span class="teal">class="city"</span>> <br>
+					<<b>h2</b>>Tokyo<<b>/h2</b>> <br>
+					<<b>p</b>>Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
+					and the most populous metropolitan area in the world.<<b>/p</b>> <br>
+					<<b>/div</b>> <br><br>
+					
+					<<b>/article</b>>
+					
+					</div>
+				</article>
+				
+				<article class="example-box">
+					<h4> <<b>div</b>> dalam <<b>section</b>> dalam <<b>article</b>></h4>
+					<div class="example-content">
+					
+					<<b>article</b>> <br><br>
+					
+					<<b>section</b>> <br><br>
+					<<b>h2</b>>Famous Cities<<b>/h2</b>> <br><br>
+					
+					<<b>div</b> <span class="teal">class="city"</span>> <br>
+					<<b>h2</b>>London<<b>/h2</b>> <br>
+					<<b>p</b>>London is the capital city of England. It is the most populous city in the United Kingdom,
+					with a metropolitan area of over 13 million inhabitants.<<b>/p</b>> <br>
+					<<b>/div</b>> <br> <br>
+					
+					<<b>div</b> <span class="teal">class="city"</span>> <br>
+					<<b>h2</b>>Paris<<b>/h2</b>> <br>
+					<<b>p</b>>Paris is the capital and most populous city of France.<<b>/p</b>> <br>
+					<<b>/div</b>> <br><br>
+					
+					<<b>div</b> <span class="teal">class="city"</span>> <br>
+					<<b>h2</b>>Tokyo<<b>/h2</b>> <br>
+					<<b>p</b>>Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
+					and the most populous metropolitan area in the world.<<b>/p</b>> <br>
+					<<b>/div</b>> <br><br>
+					
+					<<b>/section</b>> <br><br>
+					
+					<<b>section</b>> <br><br>
+					<<b>h2</b>>Famous Countries<<b>/h2</b>> <br><br>
+					
+					<<b>div</b> <span class="teal">class="country"</span>> <br>
+					<<b>h2</b>>England<<b>/h2</b>> <br>
+					<<b>p</b>>London is the capital city of England. It is the most populous city in the United Kingdom,
+					with a metropolitan area of over 13 million inhabitants.<<b>/p</b>> <br>
+					<<b>/div</b>> <br><br>
+					
+					<<b>div</b> <span class="teal">class="country"</span>> <br>
+					<<b>h2</b>>France<<b>/h2</b>> <br>
+					<<b>p</b>>Paris is the capital and most populous city of France.<<b>/p</b>> <br>
+					<<b>/div</b>> <br><br>
+					
+					<<b>div</b> <span class="teal">class="country"</span>> <br>
+					<<b>h2</b>>Japan<<b>/h2</b>> <br>
+					<<b>p</b>>Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
+					and the most populous metropolitan area in the world.<<b>/p</b>> <br>
+					<<b>/div</b>> <br><br>
+					<<b>/section</b>> <br><br>
+					
+					<<b>/article</b>>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article id="NoB">
+			<a href="HTML5 semantics.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML5 style guide.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

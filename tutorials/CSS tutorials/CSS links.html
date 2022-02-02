@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS links </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+.linksOne :hover {
+	background-color:black;
+	text-decoration:none;
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Links </h1>
+				<p> Dengan CSS, kink bisa digayakan (style) dalam cara yang berbeda-beda.</p>
+				<div style="margin-top:10px;">
+				<a href="" class="link01 ">Text Link</a> <a href="" class="link02">Text Link</a> 
+				<a href="" class="link03">Link Button</a> <a href="" class="link04">Link Button</a>
+				</div>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2>Styling Links</h2>
+				<p> Link bisa digayakan (style) dengan dengan properti CSS apapun (contoh color, font-famiky, background dan sebagainya).</p>
+				<article class="example-box">
+					<h4>Contoh</h4>
+					<div class="example-content">
+					
+						a {
+						<blockquote>
+						    color: hotpink;
+						</blockquote>
+						}
+						
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+					<a href="CSS HOME.html" class="hotpink" >CSS tutorial</a>
+					
+					</div>
+				</article>
+				
+				<p> Pada penambahan, Link bisa di-style secara berbeda tergantung pada inginan anda.</p>
+				<p> Empat keadaan link adalah: </p>
+				<ul>
+					<li> a:hover - normal, link yang belum dikunjungi</li>
+					<li> a:visited - Link yang sudah pengguna kunjungi</li>
+					<li> a:hover - Link ketika pengguna menggerakan mouse pada link</li>
+					<li> a:active - Link saat link diklik</li>
+				</ul>
+				
+				<article class="example-box">
+					<h4>Contoh</h4>
+					<div class="example-content">
+					
+						<em>/* unvisited link */</em> <br>
+						a:link {
+						<blockquote>
+						    color: red;
+						</blockquote>
+						}<br>
+						<br>
+						<em>/* visited link */</em><br>
+						a:visited {
+						<blockquote>
+						    color: green;
+						</blockquote>
+						}<br>
+						<br>
+						<em>/* mouse over link */</em> <br>
+						a:hover {
+						<blockquote>
+						    color: hotpink;
+						</blockquote>
+						}<br>
+						<br>
+						<em>/* selected link */</em> <br>
+						a:active {
+						<blockquote>
+						    color: blue;
+						</blockquote>
+						}
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+					<p><b><a href="CSS HOME.html" class="link05" target="_blank">This is a link</a></b></p>
+					<p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+					<p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+					
+					</div>
+				</article>
+				
+				<p> Ketika pengaturan styke untuk beberapa keadaan link, ada beberapa urutan peraturan: </p>
+				<ul> 
+					<li><b>a:hover</b> HARUS tiba setelah a:link dan a:visited</li>
+					<li><b>a:active</b> HARUS tiba setelah a:hover</li>
+				</ul>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Text Decoration</h2>
+				<p> Properti <mark>text-decoration</mark> paling banyak digunakan untuk menghapus garis bawah dari link:</p>
+				
+				<article class="example-box">
+					<h4>Contoh</h4>
+					<div class="example-content">
+					
+					a:link {
+					<blockquote>
+					    text-decoration: none;
+					</blockquote>
+					}<br>
+					<br>
+					a:visited {
+					<blockquote>
+					    text-decoration: none;
+					</blockquote>
+					}<br>
+					<br>
+					a:hover {
+					<blockquote>
+					    text-decoration: underline;
+					</blockquote>
+					}<br>
+					<br>
+					a:active {
+					<blockquote>
+					    text-decoration: underline;
+					</blockquote>
+					}
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+					<p><b><a href="CSS HOME.html" class="link05A" target="_blank">This is a link</a></b></p>
+					<p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+					<p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Background Color</h2>
+				<p> Properti<mark>background-color</mark> bisa digunakan untuk menentukan warna latar belakang untuk link:</p>
+				
+				<article class="example-box">
+					<h4>Contoh</h4>
+					<div class="example-content">
+					
+					a:link {
+					<blockquote>
+					    background-color: yellow;
+					</blockquote>
+					}<br>
+					<br>
+					a:visited {
+					<blockquote>
+					    background-color: cyan;
+					</blockquote>
+					}<br>
+					<br>
+					a:hover {
+					<blockquote>
+					    background-color: lightgreen;
+					</blockquote>
+					}<br>
+					<br>
+					a:active {
+					<blockquote>
+					    background-color: hotpink;
+					</blockquote>
+					} 
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+					<p><b><a href="CSS HOME.html" class="link05B" target="_blank">This is a link</a></b></p>
+					<p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+					<p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Advanced - Link Buttons </h2>
+				<p> Dikembangkan - Tombol link </p>
+				<p> Contoh ini mempertontonkan contoh kemajuan lebih dimana kita mengkombinasikan bebebrapa properti CSS untuk menampilkan link sebagau box/button: </p>
+				
+				<article class="example-box">
+					<h4>Contoh</h4>
+					<div class="example-content">
+					
+					a:link, a:visited {
+					<blockquote>
+					    background-color: #f44336; <br>
+					    color: white; <br>
+					    padding: 14px 25px; <br>
+					    text-align: center;  <br>
+					    text-decoration: none; <br>
+					    display: inline-block;
+					</blockquote>
+					}<br>
+					<br>
+					a:hover, a:active {
+					<blockquote>
+					    background-color: red;
+					</blockquote>
+					}
+					
+					</div>
+					<button onclick="tampilkan05()" class="exbutton">Klik disini</button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+					
+					<p><b><a href="CSS HOME.html" class="link" target="_blank">This is a link</a></b></p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS fonts.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS lists.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

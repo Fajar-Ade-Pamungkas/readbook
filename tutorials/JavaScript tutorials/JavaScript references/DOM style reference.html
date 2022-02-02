@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | JavaScript | JavaScript </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="../tutorial.css">
+<script type="text/javascript" src="../../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../javaScript3.js"></script>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> The HTML DOM Style Object </h1>
+			</div>
+<section>
+			<article>
+				<h2> Style object </h2>
+				<p> Style object mempersembahkan sebuah pernyataan individual style. </p>
+				
+				<div>
+					<h3>Access a Style Object</h3>
+					<p> Style object bisa diakses dari bagian <b>head</b> dokumen, atau dari ketentuan HTML element(s). </p>
+					<p> Pengaksesan style object(s) dari bagian head dokumen: </p>
+					
+					<div class="example-content">
+					<code>var</code> x = document.getElementsByTagName("<span class="justRed">STYLE</span>");
+					</div>
+					
+					<p> Pengaksesan suatu object style element tertentu: </p>
+					<div class="example-content">
+					<code>var</code> x = document.getElementById("<span class="justRed">myH1</span>").style;
+					</div>
+				</div>
+				<div>
+					<h3>Create a Style Object</h3>
+					<p> Kamu bisa membuat sebuah element <<b>style</b>> dengan penggunaan metode <b>document.createElement()</b>:
+					<div class="example-content">
+					<code>var</code> x = document.createElement("<span class="justRed">STYLE</span>"); 
+					</div>
+					
+					<p> Kamu juga bisa mengatur properti style dsri sebuah element yangnsudsh ada: </p>
+					<div class="example-content">
+					document.getElementById("<span class="justRed">myH1</span>").style.color = "red";
+					</div>
+				</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Style Object Properties </h2>
+				<p> Colom "CSS" mengindikasikan versi CSS manakah properti didefinisikan (CSS1, CSS2, or CSS3).</p>
+				
+		<table>
+			<thead>
+				<tr>
+					<th> Properti </th>
+					<th> Deskripsi </th>
+					<th> CSS </th>
+				</tr>
+			</thead>
+		<tbody>
+			<tr>
+				<td>alignContent</td>
+				<td> Mengatur perataan teks antara baris didalam suatu flexible container 
+				ketika item - item tidak menggunakan semua spasi yang tersedia </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td>alignItems</td>
+				<td> Mengatur perataan teks untuk item - item didalam flexible container </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td>  </td>
+				<td>  </td>
+				<td>  </td>
+			</tr>
+			<tr>
+				<td> alignSelf </td>
+				<td> Mengatur perataan untuk item - item yang terseleksi didalam suatu flexible container </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> animation </td>
+				<td> Suatu properti shorthand (tulisan cepat) untuk semua properti animation dibawah, kecuali properti <b>animationPlayState</b></td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> animationDelay </td>
+				<td> Mengatur ketika animasi memulai </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> animationDirection </td>
+				<td> Mengatur apakah (iya) atau tidak animasi harus dimainkan dalam terbalik pada siklus  </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> animationDuration </td>
+				<td> Mengatur berapa banyak detik atau milidetik suatu animasi selesai melengkapi satu siklus </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> animationFillMode </td>
+				<td> Mengatur apakah nilai diberlakukan oleh animasi diluar waktu animasi sedang pengeksekusian </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> animasionIterationCount </td>
+				<td> Mengatur nomor (berapa kali dijalankan) waktu suatu animasi harus dimainkan </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> animationName </td>
+				<td> Mengatur sebuah nama untuk <b>@keyframes animation</b> </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> animationTimingFunction </td>
+				<td> Mengatur kurva kecepatan dsri animasi </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> animationPlayState </td>
+				<td> Mengatur apakah animasi sedsng berjalan atau dihentikan (pause)  </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> background </td>
+				<td> Mengatur semua properti background dalam satu diklarasi  </td>
+				<td> 1 </td>
+			</tr>
+			<tr>
+				<td> backgroundAttachment </td>
+				<td> Mengatur apakah sebuah background-image diperbaiki atau men-scroll dengan page </td>
+				<td> 1 </td>
+			</tr>
+			<tr>
+				<td> backgroundColor </td>
+				<td> Mengatur warna background dari suatu element </td>
+				<td> 1 </td>
+			</tr>
+			<tr>
+				<td> backgroundImage </td>
+				<td> Mengatur bacground gambar untuk suatu element </td>
+				<td> 1 </td>
+			</tr>
+			<tr>
+				<td> backgroundPosition </td>
+				<td> Mengatur posisi awal dari background gambar </td>
+				<td> 1 </td>
+			</tr>
+			<tr>
+				<td> backgroundRepeat </td>
+				<td> Mengatur bagaimana untuk me-repeat atau membolak - balik (tile) sebuah background gambar </td>
+				<td> 1 </td>
+			</tr>
+			<tr>
+				<td> backgroundClip </td>
+				<td> Mengatur (menjepit) area gambar dari background gambar </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> backgroundOrigin </td>
+				<td> Mengatur area penempatan dari background gambar </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> backgroundSize </td>
+				<td> Mengatur ukuran dari background gambar </td>
+				<td>  </td>
+			</tr>
+			<tr>
+				<td> backfaceVisibility </td>
+				<td> Mengatur apakah (iya) atau tidak sebuah element harus diperlihatkan bukan ketika facing the screen (menyeberang layar) </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> border </td>
+				<td> mengatur borderWidth, borderStyle, dan borderColor dalam satu deklarasi </td>
+				<td> 1 </td>
+			</tr>
+			<tr>
+				<td> borderBottom </td>
+				<td> Mengatur semua properti borderBottom* dalam satu deklarasi </td>
+				<td> 1 </td>
+			</tr>
+			<tr>
+				<td> borderBottomColor </td>
+				<td> Mengatur warna untuk border-bottom </td>
+				<td> 1 </td>
+			</tr>
+			<tr>
+				<td> borderBottomLeftRadius </td>
+				<td> Mengatur bentuk dari border tentsng border-left corner </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> borderBottomStyle </td>
+				<td> Mengatur style dari border-bottom </td>
+				<td> 1 </td>
+			</tr>
+			<tr>
+				<td> borderBottomWidth </td>
+				<td> Mengatur tebal dari border-bottom </td>
+				<td> 1 </td>
+			</tr>
+			<tr>
+				<td> borderCollapse </td>
+				<td> Mengatur apakah table border harus dirapatkan (dilekatkan) kedalam satu border atau tidak </td>
+				<td> 2 </td>
+			</tr>
+			<tr>
+				<td> borderColor </td>
+				<td> Mengatur warna dari sebuah border element (bisa memiliki 4 nilai dalam setiap sisi border) </td>
+				<td> 1 </td>
+			</tr>
+			<tr>
+				<td> borderImage </td>
+				<td> Sebuah properti shorthand untuk pengaturan atau pengembalian semua properti borderImage* </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> borderImageOutset </td>
+				<td> Mengembalikan jumlah oleh yang mana border image area memperpanjang melebihi border box </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> borderImageRepeat </td>
+				<td> Mengatur apakah (iya) image-border harus dibolak - balik, dibulatkan atau diruncingkan </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> borderImageSlice </td>
+				<td> Mengatur dalam hati (inward) mengimbangi image-border </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> borderImageSource </td>
+				<td> Mengatur ganbar untuk digunakan sebagi border </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> borderImageWidth </td>
+				<td> Mengatur lebar dari image-border </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> borderRadius </td>
+				<td> Sebuah properti shorthand untuk pengaturan dan pengembaliansemua properti empat border*Radius </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> borderSpacing </td>
+				<td> Mengatur spasi diantara cell (tabel) dalam sebuah tabel </td>
+				<td> 2 </td>
+			</tr>
+			<tr>
+				<td> bottom </td>
+				<td> Mengatur posisi bawah dari suatu posisi element  </td>
+				<td> 2 </td>
+			</tr>
+			<tr>
+				<td> boxDecorationBreak </td>
+				<td> Mengatur perilaku dari background dan border daei sebuah element di page-break, atau kepada in-line element (dalam baris), di line-break (baris baris) </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> boxShadow </td>
+				<td> Melampirkan satu atau lebih bayangan untuk box </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> boxSizing </td>
+				<td> Memperbolehkan kamu untuk mendefinisikan elemen - elemen tertentu ke suatu area pantas dalam suatu cara yang pasti </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> captionSide </td>
+				<td> Mengatur psisi dari table caption </td>
+				<td> 2 </td>
+			</tr>
+			<tr>
+				<td> clear </td>
+				<td> mengatur posisi dari element relative ke floating objects (object mengapung) </td>
+				<td> 2 </td>
+			</tr>
+			<tr>
+				<td> clip </td>
+				<td> Mengatur yang mana bagian dari element berposisi diperlihatkan </td>
+				<td> 2 </td>
+			</tr>
+			<tr>
+				<td> columnCount </td>
+				<td> Mengatur nomor colom sebuah elemnt yang harus dibagi kedalam </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> columnFill </td>
+				<td> Mengatur bagaimana mengisi colom </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> columnGap </td>
+				<td> Mengatur gap (celah) diantara colom </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> columnRule </td>
+				<td> suatu properti shorthand untuk oengaturan atau pengembalian semua properti columnRule* </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> columnRuleColor </td>
+				<td> Mengatur warna dari rule antara colom </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> columnRuleStyle </td>
+				<td> Mengatur style dari rule antara colom </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> columnRuleWidth </td>
+				<td> Mengatur lebar dari rule antara colom </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> column </td>
+				<td> Sebuah properti shorthand untuk pengaturan columnWidth dan columnCount </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> columnSpan </td>
+				<td> Mengatur berapa banyak kolom suatu element (tabel) harus dispan (digabungkan)</td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> columnWidth </td>
+				<td> Mengatur lebar colom </td>
+				<td> 3 </td>
+			</tr>
+			<tr>
+				<td> content </td>
+				<td> Digunakan dengan <b>:before</b> dan <b>:after</b> pseudo-element, untuk menyisipkan generated content (konten yang di hasilkan) </td>
+				<td> 2 </td>
+			</tr>
+			<tr>
+				<td> counterIncrement </td>
+				<td> Menaikan satu atau lebih counter </td>
+				<td> 2 </td>
+			</tr>
+			<tr>
+				<td> counterReset </td>
+				<td> Membuat atau me-reset satu atau lebih counter </td>
+				<td> 2 </td>
+			</tr>
+			<tr>
+				<td> cursor </td>
+				<td> Mengatur tipe dari cursor untuk menampilkan pointer (penunjuk) mouse </td>
+				<td> 2 </td>
+			</tr>
+			<tr>
+				<td> direction </td>
+				<td> Mengatur atau mengembalikan direksi teks  </td>
+				<td> 2 </td>
+			</tr>
+			<tr>
+				<td> display </td>
+				<td> Mengatur suatu tipe tampilan element  </td>
+				<td> 1 </td>
+			</tr>
+			<tr>
+				<td> emptyCells </td>
+				<td> Mengatur apakah uhtuk menampilkan border dan background dari empty cell atau tidak </td>
+				<td> 2 </td>
+			</tr>
+			<!--
+filter	Sets or returns image filters (visual effects, like blur and saturation)	3
+flex	Sets or returns the length of the item, relative to the rest	3
+flexBasis	Sets or returns the initial length of a flexible item	3
+flexDirection	Sets or returns the direction of the flexible items	3
+flexFlow	A shorthand property for the flexDirection and the flexWrap properties	3
+flexGrow	Sets or returns how much the item will grow relative to the rest	3
+flexShrink	Sets or returns how the item will shrink relative to the rest	3
+flexWrap	Sets or returns whether the flexible items should wrap or not	3
+cssFloat	Sets or returns the horizontal alignment of an element	1
+font	Sets or returns fontStyle, fontVariant, fontWeight, fontSize, lineHeight, and fontFamily in one declaration	1
+fontFamily	Sets or returns the font family for text	1
+fontSize	Sets or returns the font size of the text	1
+fontStyle	Sets or returns whether the style of the font is normal, italic or oblique	1
+fontVariant	Sets or returns whether the font should be displayed in small capital letters	1
+fontWeight	Sets or returns the boldness of the font	1
+fontSizeAdjust	Preserves the readability of text when font fallback occurs	3
+fontStretch	Selects a normal, condensed, or expanded face from a font family	3
+hangingPunctuation	Specifies whether a punctuation character may be placed outside the line box	3
+height	Sets or returns the height of an element	1
+hyphens	Sets how to split words to improve the layout of paragraphs	3
+icon	Provides the author the ability to style an element with an iconic equivalent	3
+imageOrientation	Specifies a rotation in the right or clockwise direction that a user agent applies to an image	3
+justifyContent	Sets or returns the alignment between the items inside a flexible container when the items do not use all available space.	3
+left	Sets or returns the left position of a positioned element	2
+letterSpacing	Sets or returns the space between characters in a text	1
+lineHeight	Sets or returns the distance between lines in a text	1
+listStyle	Sets or returns listStyleImage, listStylePosition, and listStyleType in one declaration	1
+listStyleImage	Sets or returns an image as the list-item marker	1
+listStylePosition	Sets or returns the position of the list-item marker	1
+listStyleType	Sets or returns the list-item marker type	1
+margin	Sets or returns the margins of an element (can have up to four values)	1
+marginBottom	Sets or returns the bottom margin of an element	1
+marginLeft	Sets or returns the left margin of an element	1
+marginRight	Sets or returns the right margin of an element	1
+marginTop	Sets or returns the top margin of an element	1
+maxHeight	Sets or returns the maximum height of an element	2
+maxWidth	Sets or returns the maximum width of an element	2
+minHeight	Sets or returns the minimum height of an element	2
+minWidth	Sets or returns the minimum width of an element	2
+navDown	Sets or returns where to navigate when using the arrow-down navigation key	3
+navIndex	Sets or returns the tabbing order for an element	3
+navLeft	Sets or returns where to navigate when using the arrow-left navigation key	3
+navRight	Sets or returns where to navigate when using the arrow-right navigation key	3
+navUp	Sets or returns where to navigate when using the arrow-up navigation key	3
+opacity	Sets or returns the opacity level for an element	3
+order	Sets or returns the order of the flexible item, relative to the rest	3
+orphans	Sets or returns the minimum number of lines for an element that must be left at the bottom of a page when a page break occurs inside an element	2
+outline	Sets or returns all the outline properties in one declaration	2
+outlineColor	Sets or returns the color of the outline around a element	2
+outlineOffset	Offsets an outline, and draws it beyond the border edge	3
+outlineStyle	Sets or returns the style of the outline around an element	2
+outlineWidth	Sets or returns the width of the outline around an element	2
+overflow	Sets or returns what to do with content that renders outside the element box	2
+overflowX	Specifies what to do with the left/right edges of the content, if it overflows the element's content area	3
+overflowY	Specifies what to do with the top/bottom edges of the content, if it overflows the element's content area	3
+padding	Sets or returns the padding of an element (can have up to four values)	1
+paddingBottom	Sets or returns the bottom padding of an element	1
+paddingLeft	Sets or returns the left padding of an element	1
+paddingRight	Sets or returns the right padding of an element	1
+paddingTop	Sets or returns the top padding of an element	1
+pageBreakAfter	Sets or returns the page-break behavior after an element	2
+pageBreakBefore	Sets or returns the page-break behavior before an element	2
+pageBreakInside	Sets or returns the page-break behavior inside an element	2
+perspective	Sets or returns the perspective on how 3D elements are viewed	3
+perspectiveOrigin	Sets or returns the bottom position of 3D elements	3
+position	Sets or returns the type of positioning method used for an element (static, relative, absolute or fixed)	2
+quotes	Sets or returns the type of quotation marks for embedded quotations	2
+resize	Sets or returns whether or not an element is resizable by the user	3
+right	Sets or returns the right position of a positioned element	2
+tableLayout	Sets or returns the way to lay out table cells, rows, and columns	2
+tabSize	Sets or returns the length of the tab-character	3
+textAlign	Sets or returns the horizontal alignment of text	1
+textAlignLast	Sets or returns how the last line of a block or a line right before a forced line break is aligned when text-align is "justify"	3
+textDecoration	Sets or returns the decoration of a text	1
+textDecorationColor	Sets or returns the color of the text-decoration	3
+textDecorationLine	Sets or returns the type of line in a text-decoration	3
+textDecorationStyle	Sets or returns the style of the line in a text decoration	3
+textIndent	Sets or returns the indentation of the first line of text	1
+textJustify	Sets or returns the justification method used when text-align is "justify"	3
+textOverflow	Sets or returns what should happen when text overflows the containing element	3
+textShadow	Sets or returns the shadow effect of a text	3
+textTransform	Sets or returns the capitalization of a text	1
+top	Sets or returns the top position of a positioned element	2
+transform	Applies a 2D or 3D transformation to an element	3
+transformOrigin	Sets or returns the position of transformed elements	3
+transformStyle	Sets or returns how nested elements are rendered in 3D space	3
+transition	A shorthand property for setting or returning the four transition properties	3
+transitionProperty	Sets or returns the CSS property that the transition effect is for	3
+transitionDuration	Sets or returns how many seconds or milliseconds a transition effect takes to complete	3
+transitionTimingFunction	Sets or returns the speed curve of the transition effect	3
+transitionDelay	Sets or returns when the transition effect will start	3
+unicodeBidi	Sets or returns whether the text should be overridden to support multiple languages in the same document	2
+verticalAlign	Sets or returns the vertical alignment of the content in an element	1
+visibility	Sets or returns whether an element should be visible	2
+whiteSpace	Sets or returns how to handle tabs, line breaks and whitespace in a text	1
+width	Sets or returns the width of an element	1
+wordBreak	Sets or returns line breaking rules for non-CJK scripts	3
+wordSpacing	Sets or returns the spacing between words in a text	1
+wordWrap	Allows long, unbreakable words to be broken and wrap to the next line	3
+widows	Sets or returns the minimum number of lines for an element that must be visible at the top of a page	2
+zIndex	Sets or returns the stack order of a positioned element	2
+-->
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="DOM event reference.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			</article>
+			<article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS3 Backgrounds </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+.background {
+	background-image: url("../wallpaper/pirateship.jpeg"), url("../png/border.png"); 
+	background-position: right bottom, left top; 
+	background-repeat: no-repeat, repeat; 
+	background-size:100% auto, 100px auto;
+}
+.example1 { 
+background-image: url("../wallpaper/pirateship.jpeg"), url("../../Pictures/kids.jpg"); 
+background-position: right bottom, left top; 
+background-repeat: no-repeat, repeat; 
+} 
+.example2 { 
+background: url(../../Pictures/kids.jpg) right bottom no-repeat, url(paper.gif) left top repeat; 
+} 
+
+#sembunyikan03 .example1 { 
+border: 1px solid black; 
+background-image: url("../wallpaper/pirateship.jpeg"); 
+background-repeat: no-repeat; 
+padding:15px; 
+} 
+
+#sembunyikan03 .example2 { 
+border: 1px solid black; 
+background-image: url("../wallpaper/pirateship.jpeg"); 
+background-size: 100px 80px; 
+background-repeat: no-repeat; 
+padding:15px; 
+} 
+
+#sembunyikan04 .div1 { 
+border: 1px solid black; 
+height:150px; 
+width:180px; 
+background-image: url("../wallpaper/pirateship.jpeg"); 
+background-repeat: no-repeat; 
+} 
+
+#sembunyikan04 .div2 { 
+border: 1px solid black; 
+height:150px; 
+width:180px; 
+background-image: url("../wallpaper/pirateship.jpeg"); 
+background-repeat: no-repeat; 
+background-size: contain; 
+} 
+
+#sembunyikan04 .div3 { 
+border: 1px solid black; 
+height:150px; 
+width:180px; 
+background-image: url("../wallpaper/pirateship.jpeg"); 
+background-repeat: no-repeat; 
+background-size: cover; 
+} 
+
+#sembunyikan06 .example1 { 
+background: url(img_flwr.gif) left top no-repeat, url("../wallpaper/pirateship.jpeg") right bottom no-repeat, url("../../Pictures/kids.jpg") left top repeat; 
+background-size: 50px, 130px, auto; 
+} 
+
+#sembunyikan08 .example1 { 
+border: 10px solid black; 
+padding: 35px; 
+background: url("../wallpaper/pirateship.jpeg"); 
+background-repeat: no-repeat; 
+} 
+
+#sembunyikan08 .example2 { 
+border: 10px solid black; 
+padding: 35px; 
+background: url("../wallpaper/pirateship.jpeg"); 
+background-repeat: no-repeat; 
+background-origin: border-box; 
+} 
+
+#sembunyikan08 .example3 { 
+border: 10px solid black; 
+padding: 35px; 
+background: url("../wallpaper/pirateship.jpeg"); 
+background-repeat: no-repeat; 
+background-origin: content-box; 
+} 
+
+#sembunyikan09 .example1 { 
+border: 10px dotted black; 
+padding: 35px; 
+background: yellow; 
+background-clip: border-box; 
+} 
+
+#sembunyikan09 .example2 { 
+border: 10px dotted black; 
+padding: 35px; 
+background: yellow; 
+background-clip: padding-box; 
+} 
+
+#sembunyikan09 .example3 { 
+border: 10px dotted black; 
+padding: 35px; 
+background: yellow; 
+background-clip: content-box; 
+} 
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS3 Backgrounds  </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<div class="background">
+				<h2> CSS3 Backgrounds</h2>
+				<p> CSS3 berisikan beberapa properti background baru, yang mana memperbolehkan kontrol besar tentang element background.</p>
+				<p> Pada chapter ini kamu akan mempelajari bagaimana untuk menambahkan multiple background image ke satu element.</p>
+				<p> Kamu juga akan mempelajari tentang properti-properti baru CSS3 berikut:</p>
+				<ul>
+					<li>background-size</li>
+					<li>background-origin</li>
+					<li>background-clip</li>
+				</ul>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Browser Support</h2>
+				<p> Nomor pada tabel menentukan browser versi pertama yang mendukung secara penuh  properti <mark>background</mark> CSS3.</p>
+				<p> Nomor yang diikut dengan <mark>-webkit-</mark>, <mark>-moz-</mark> atau <mark>-o-</mark> menentukan versi pertama yang bekerja dengan awalan properti.</p>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> Properti </td>
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td>background-image (dengan multiple background)</td>
+							<td> 4.0 </td>
+							<td> 12.0 dan 9.0</td>
+							<td> 3.5 </td>
+							<td> 3.1 </td>
+							<td> 11.5 </td>
+						</tr>
+						<tr class="center">
+							<td>background-size</td>
+							<td> 4.0 <br> 1.0 -webkit- </td>
+							<td> 12.0 dan 9.0</td>
+							<td> 4.0 <br> 3.6 -moz- </td>
+							<td> 4.1 <br>3.0 -webkit- </td>
+							<td> 10.5 <br> 10.0 -o-</td>
+						</tr>
+						<tr class="center">
+							<td>background-origin</td>
+							<td> 1.0 </td>
+							<td> 12.0 dan 9.0</td>
+							<td> 4.0 </td>
+							<td> 3.0 </td>
+							<td> 10.5 </td>
+						</tr>
+						<tr class="center">
+							<td>background-clip</td>
+							<td> 4.0 </td>
+							<td> 12.0 dan 9.0</td>
+							<td> 4.0 </td>
+							<td> 3.0 </td>
+							<td> 10.5 </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 Multiple Backgrounds</h2>
+				<p> CSS3 memperbolehkan kamu untuk menambahkan multiple background image untuk sebuah element, melalui properti <mark>background-image</mark>.</p>
+				<p> Background image yang berbeda dipisahkan dengan koma, dsn image ditumpukan diatas dari setiap (background) lainnya, dimana image pertama paling ditutup untuk viewer.</p>
+				<p> Contoh berikut memiliki dua background image, image pertama adalah flower (diratakan ke bawah dan kanan) dan image kedua merupakan paper background (diratakan ke sudut atas-kiri):</p>
+				
+				
+				<div class="example1">
+				<h4>Lorem Ipsum Dolor</h4>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+				<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+				</div>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						#example1 { <br>
+						background-image: url(img_flwr.gif), url(paper.gif); <br>
+						background-position: right bottom, left top; <br>
+						background-repeat: no-repeat, repeat; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#example1 { <br>
+						background-image: url(img_flwr.gif), url(paper.gif); <br>
+						background-position: right bottom, left top; <br>
+						background-repeat: no-repeat, repeat; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>div</b> <span class="teal">id="example1"</span>> <br>
+					<<b>h1</b>>Lorem Ipsum Dolor<<b>/h1</b>> <br>
+					<<b>p</b>>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<<b>/p</b>> <br>
+					<<b>p</b>>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<<b>/p</b>> <br>
+					<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<div class="example1">
+						<h4>Lorem Ipsum Dolor</h4>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+						<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+						</div>
+					
+					</div>
+				</article>
+				
+				
+				<p> Multiple background image bisa ditentukan menggunakan salah satu dari properti background individu (seperri diatas) atau <mark>background</mark> shorthand property.</p>
+				<p> Contoh berikut menggunakan <mark>background</mark> shorthand property (hasilnya sama sepertu contoh diatas):</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						#example1 { <br>
+						background: url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#example2 { <br>
+						background: url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+				
+					<<b>div</b> <span class="teal">id="example2"</span>> <br>
+					<<b>h1</b>>Lorem Ipsum Dolor<<b>/h1</b>> <br>
+					<<b>p</b>>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<<b>/p</b>> <br>
+					<<b>p</b>>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<<b>/p</b>> <br>
+					<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<div class="example2">
+						<h4>Lorem Ipsum Dolor</h4>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+						<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+						</div>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 Background Size</h2>
+				<p> Properti <mark>background-size</mark> CSS3 memperbolehkan kamu untuk mengatur ukuran dari background image.</p>
+				<p> Sebelum CSS3, ukuran dari sebuah background image merupkan ukuran sebenarnya dari image. CSS3 memperbolehkan kita untuk menggunakan kembali background image pada konteks yang berbeda.</p>
+				<p> Ukuran bisa ditentukan dalam satuan <b>length (seperti px, pt, em, dan sebagainya)</b>, <b>percentages (%)</b> atau dengan menggunakan dua kata kunci: <mark>contain</mark> atau <mark>cover</mark>.</p>
+				<p>Contoh herikut me-resize sebuah bacjground image menjadu sangat lebih kecil daripada image aslinya (menggunakan pixel):</p>
+				
+				<p>Original background image:</p>
+				
+				<p>Lorem Ipsum Dolor</p>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+				<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+				
+				
+				<p>Resized background image:</p>
+				
+				<div class="div1">
+				<p>Lorem Ipsum Dolor</p>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+				<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+				</div>
+				
+				<p> Disini adalah kodenya:</p>
+
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open03">
+						
+						#div3 { <br>
+						background: url(img_flower.jpg); <br>
+						background-size: 100px 80px; <br>
+						background-repeat: no-repeat; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#example1 { <br>
+						border: 1px solid black; <br>
+						background:url(img_flwr.gif); <br>
+						background-repeat: no-repeat; <br>
+						padding:15px; <br>
+						} <br>
+						 <br>
+						#example2 { <br>
+						border: 1px solid black; <br>
+						background:url(img_flwr.gif); <br>
+						background-size: 100px 80px; <br>
+						background-repeat: no-repeat; <br>
+						padding:15px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>p</b>>Original background-image:<<b>/p</b>> <br>
+					<<b>div</b> <span class="teal">id="example3"</span>> <br>
+					<<b>h1</b>>Lorem Ipsum Dolor<<b>/h1</b>> <br>
+					<<b>p</b>>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<<b>/p</b>> <br>
+					<<b>p</b>>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<<b>/p</b>> <br>
+					<<b>/div</b>> <br>
+					<br>
+					<<b>p</b>>Resized background-image:<<b>/p</b>> <br>
+					<<b>div</b> <span class="teal">id="example1"</span>> <br>
+					<<b>h1</b>>Lorem Ipsum Dolor<<b>/h1</b>> <br>
+					<<b>p</b>>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<<b>/p</b>> <br>
+					<<b>p</b>>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<<b>/p</b>> <br>
+					<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+						
+						<p>Original background-image:</p>
+						<div class="example1">
+						<h4>Lorem Ipsum Dolor</h4>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+						<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+						</div>
+						
+						<p>Resized background-image:</p>
+						<div class="example2">
+						<h4>Lorem Ipsum Dolor</h4>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+						<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+						</div>
+					
+					</div>
+				</article>
+				
+				
+				<p> Dua nilai lainyya memungkinkan untuk <mark>background-size: contain;</mark> dan <mark>background-size: cover;</mark></p>
+				<p> Kata kunci <mark>contain</mark> men-skala background image menjadi sebesar mungkin (tapi keduanya lebar dan tinggi harus fit didalam area konten). 
+				Seperti itu, tergantung pada proporsi dari background image dsn area penempatan background, Mungkin ada beberapa area dari background yang mana tidak di-cover oleh background image.</p>
+				<p> Kata kunci <mark>cover</mark> men-skala background image jadi area konten di-cover secara penuh oleh background image (keduanya lebar dan tinggu sama atau melebihi area konten). 
+				Seperti itu, beberapa bagian dari background image mungkin tidak diperlihatkan dalam area penempatan background.</p>
+				<p> Contoh berikut mengillustrasikan penggunaan dari <mark>contain</mark> dan <mark>cover</mark>:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open04">
+						
+						#div4 { <br>
+						background: url(img_flower.jpg); <br>
+						background-size: contain; <br>
+						background-repeat: no-repeat; <br>
+						} <br>
+						#div5 { <br>
+						background: url(img_flower.jpg); <br>
+						background-size: cover; <br>
+						background-repeat: no-repeat; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close04">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#div1 { <br>
+						border: 1px solid black; <br>
+						height:150px; <br>
+						width:180px; <br>
+						background:url(img_flwr.gif); <br>
+						background-repeat: no-repeat; <br>
+						} <br>
+						 <br>
+						#div2 { <br>
+						border: 1px solid black; <br>
+						height:150px; <br>
+						width:180px; <br>
+						background:url(img_flwr.gif); <br>
+						background-repeat: no-repeat; <br>
+						background-size: contain; <br>
+						} <br>
+						 <br>
+						#div3 { <br>
+						border: 1px solid black; <br>
+						height:150px; <br>
+						width:180px; <br>
+						background:url(img_flwr.gif); <br>
+						background-repeat: no-repeat; <br>
+						background-size: cover; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>p</b>>Original image:<<b>/p</b>> <br>
+					<<b>div</b> <span class="teal">id="example3"</span>> <br>
+					<<b>p</b>>Lorem Ipsum Dolor<<b>/p</b>> <br>
+					<<b>/div</b>> <br> <br>
+					<br>
+					<<b>p</b>>Using the "contain" keyword:<<b>/p</b>> <br>
+					<<b>div</b> <span class="teal">id="example1"</span>> <br>
+					<<b>p</b>>Lorem Ipsum Dolor<<b>/p</b>> <br>
+					<<b>/div</b>> <br> 
+					<br>
+					<<b>p</b>>Using the "cover" keyword:<<b>/p</b>> <br>
+					<<b>div</b> <span class="teal">id="example1"</span>> <br>
+					<<b>p</b>>Lorem Ipsum Dolor<<b>/p</b>> <br>
+					<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<button onclick="buka04()" class="exbutton"> Open </button>
+					<button onclick="tutup04()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+						
+						<p>Original image:</p>
+						<div class="div1">
+						<p>Lorem ipsum dolor sit amet.</p>
+						</div>
+						
+						<p>Using the "contain" keyword:</p>
+						<div class="div2">
+						<p>Lorem ipsum dolor sit amet.</p>
+						</div>
+						
+						<p>Using the "cover" keyword:</p>
+						<div class="div3">
+						<p>Lorem ipsum dolor sit amet.</p>
+						</div>
+						
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Define Sizes of Multiple Background Images</h2>
+				<p> Mendefinisikan Ukuran dari Multiple Background Images</p>
+				<p> Properti <mark>background-size</mark> juga mensetujui nilai multiple (lebih dari dari satu) untuk ukuran background (Menggunakan comma-separated list), ketika bekerja dengan multiple background.</p>
+				<p> Contoh berikut memiliki 3 bakcground image yang ditentukan, dengan nilai <mark>background-size</mark> berbeda untuk setiap iamge:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open06">
+						
+						#example6 { <br>
+						background: url(img_flwr.gif) left top no-repeat, url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat; <br>
+						background-size: 50px, 130px, auto; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close06">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#example1 { <br>
+						background: url(img_flwr.gif) left top no-repeat, url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat; <br>
+						background-size: 50px, 130px, auto; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>div</b> <span class="teal">id="example1"</span>> <br>
+					<<b>h1</b>>Lorem Ipsum Dolor<<b>/h1</b>> <br>
+					<<b>p</b>>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<<b>/p</b>> <br>
+					<<b>p</b>>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<<b>/p</b>> <br>
+					<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan06()" class="exbutton">Klik disini</button>
+					<button onclick="buka06()" class="exbutton"> Open </button>
+					<button onclick="tutup06()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+						
+						<div class="example1">
+						<h4>Lorem Ipsum Dolor</h4>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+						<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+						</div>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Full Size Background Image</h2>
+				<p> Background Image Ukuran Penuh</p>
+				<p> Sekarang kita ingin background image pada sebuah website yang meng-cover keseluruhan browser window pada semua waktu.</p>
+				<p> The requirements are as follows (Syarat-syarat yang harus diikuti):</p>
+				<ul>
+					<li>Isilah keseluruhan halaman dengan image (tidaka da white space)</li>
+					<li> Me-skala image diperlukan</li>
+					<li> Center image pada halaman</li>
+					<li> Tidak mengakibatkan scrollbar</li>
+				</ul>
+				<p> Contoh berikut menampilkan bagaimana untuk melakukan itu: Gunakanlah element <mark>html</mark> (elemen html selalu paling kurang tinggi dari browser window). 
+				Kemudian aturlah sebuah fixed dan centered background padanya, Lalu sesuaikan ukurannya dengan properti <mark>background-size</mark>:</p>
+				
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open07">
+						
+						html { <br>
+						background: url(img_flower.jpg) no-repeat center fixed; <br>
+						background-size: cover;<br>
+						}<br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close07">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						html { <br>
+						background: url(img_flower.jpg) no-repeat center fixed; <br>
+						background-size: cover;<br>
+						}<br>
+						<br>
+						body { <br>
+						color: white; <br> 
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>h1</b>>Full Page Background Image<<b>/h1</b>> <br>
+					<<b>p</b>>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<<b>/p</b>> <br>
+					<<b>p</b>>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<<b>/p</b>> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan07()" class="exbutton">Klik disini</button>
+					<button onclick="buka07()" class="exbutton"> Open </button>
+					<button onclick="tutup07()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan07">
+						
+						<h4>Full Page Background Image</h4>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+						Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 background-origin Property</h2>
+				<p> Properti <mark>background-origin</mark> CSS3 menentukan dimana backgroun image diposisikan/ditempatkan.</p>
+				<p> Properti menambil 3 nilai berbeda, yaitu:</p>
+				<ul>
+					<li> <mark>border-box</mark> - background image dimulai dari sudut kiri atas dari border</li>
+					<li> <mark>padding-box</mark> - (default) background image dimulai dari sudut kiri atas dari tepi padding</li>
+					<li> <mark>content-box</mark> - background image dimulai dari sudut kiri atas dari konten</li>
+				</ul>
+				<p> Contoh berikut mengillustrasikan properti <mark>background-origin</mark>:</p>
+				
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open08">
+						
+						#example1 { <br>
+						border: 10px solid black; <br>
+						padding: 35px; <br>
+						background: url(img_flwr.gif); <br>
+						background-repeat: no-repeat; <br>
+						background-origin: content-box; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close08">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#example1 { <br>
+						border: 10px solid black; <br>
+						padding: 35px; <br>
+						background: url(img_flwr.gif); <br>
+						background-repeat: no-repeat; <br>
+						} <br>
+						 <br>
+						#example2 { <br>
+						border: 10px solid black; <br>
+						padding: 35px; <br>
+						background: url(img_flwr.gif); <br>
+						background-repeat: no-repeat; <br>
+						background-origin: border-box; <br>
+						} <br>
+						 <br>
+						#example3 { <br>
+						border: 10px solid black; <br>
+						padding: 35px; <br>
+						background: url(img_flwr.gif); <br>
+						background-repeat: no-repeat; <br>
+						background-origin: content-box; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>p</b>>No background-origin (padding-box is default):<<b>/p</b>> <br>
+					<<b>div</b> <span class="teal">id="example3"</span>> <br>
+					<<b>h1</b>>Lorem Ipsum Dolor<<b>/h1</b>> <br>
+					<<b>p</b>>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<<b>/p</b>> <br>
+					<<b>p</b>>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<<b>/p</b>> <br>
+					<<b>/div</b>> <br>
+					<br>
+					<<b>p</b>>background-origin: border-box:<<b>/p</b>> <br>
+					<<b>div</b> <span class="teal">id="example1"</span>> <br>
+					<<b>h1</b>>Lorem Ipsum Dolor<<b>/h1</b>> <br>
+					<<b>p</b>>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<<b>/p</b>> <br>
+					<<b>p</b>>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<<b>/p</b>> <br>
+					<<b>/div</b>> <br>
+					<br>
+					<<b>p</b>>background-origin: content-box:<<b>/p</b>> <br>
+					<<b>div</b> <span class="teal">id="example3"</span>> <br>
+					<<b>h1</b>>Lorem Ipsum Dolor<<b>/h1</b>> <br>
+					<<b>p</b>>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<<b>/p</b>> <br>
+					<<b>p</b>>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<<b>/p</b>> <br>
+					<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan08()" class="exbutton">Klik disini</button>
+					<button onclick="buka08()" class="exbutton"> Open </button>
+					<button onclick="tutup08()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan08">
+					
+						<p>No background-origin (padding-box is default):</p>
+						<div class="example1">
+						<h4>Lorem Ipsum Dolor</h4>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+						<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+						</div>
+						
+						<p>background-origin: border-box:</p>
+						<div class="example2">
+						<h4>Lorem Ipsum Dolor</h4>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+						<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+						</div>
+						
+						<p>background-origin: content-box:</p>
+						<div class="example3">
+						<h4>Lorem Ipsum Dolor</h4>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+						<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+						</div>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 background-clip Property</h2> 
+				<p>Properti <mark>bacjgrouhd-clip</mark> CSS3 menentukan painting area dari background.</p>
+				<p> Properti mengambil/memebawa tuga nilai berbeda:</p>
+				<ul>
+					<li> <mark>border-box</mark> - (default) background dilukis keluar tepi dari border</li>
+					<li> <mark>padding-box</mark> - background dilukis keluar tepi dari padding</li>
+					<li> <mark>content-box</mark> - background dilukis dengan content box</li>
+				</ul>
+				<p> Contoh berikutnmengillusitrasiksn properti <mark>background-clip</mark>:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open09">
+						
+						#example9 { <br>
+						border: 10px dotted black; <br>
+						padding: 35px; <br>
+						background: yellow; <br>
+						background-clip: content-box; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close09">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#example1 { <br>
+						border: 10px dotted black; <br>
+						padding: 35px; <br>
+						background: yellow; <br>
+						background-clip: border-box; <br>
+						} <br>
+						<br>#example2 { <br>
+						border: 10px dotted black; <br>
+						padding: 35px; <br>
+						background: yellow; <br>
+						background-clip: padding-box; <br>
+						} <br>
+						<br>
+						#example3 { <br>
+						border: 10px dotted black; <br>
+						padding: 35px; <br>
+						background: yellow; <br>
+						background-clip: content-box; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>p</b>>background-clip: border-box:<<b>/p</b>> <br>
+					<<b>div</b> <span class="teal">id="example1"</span>> <br>
+					<<b>h1</b>>Lorem Ipsum Dolor<<b>/h1</b>> <br>
+					<<b>p</b>>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<<b>/p</b>> <br>
+					<<b>p</b>>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<<b>/p</b>> <br>
+					<<b>/div</b>> <br> <br>
+					
+					<<b>p</b>>background-clip: padding-box:<<b>/p</b>> <br>
+					<<b>div</b> <span class="teal">id="example2"</span>> <br>
+					<<b>h1</b>>Lorem Ipsum Dolor<<b>/h1</b>> <br>
+					<<b>p</b>>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<<b>/p</b>> <br>
+					<<b>p</b>>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<<b>/p</b>> <br>
+					<<b>/div</b>> <br> <br>
+					
+					<<b>p</b>>background-clip: content-box:<<b>/p</b>> <br>
+					<<b>div</b> <span class="teal">id="example3"</span>> <br>
+					<<b>h1</b>>Lorem Ipsum Dolor<<b>/h1</b>> <br>
+					<<b>p</b>>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<<b>/p</b>> <br>
+					<<b>p</b>>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<<b>/p</b>> <br>
+					<<b>/div</b>> <br> <br>
+					
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan09()" class="exbutton">Klik disini</button>
+					<button onclick="buka09()" class="exbutton"> Open </button>
+					<button onclick="tutup09()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan09">
+					
+						<p> background-clip: border-box (bord-box is default):</p>
+						<div class="example1">
+						<h4>Lorem Ipsum Dolor</h4>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+						<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+						</div>
+						
+						<p>background-clip: padding-box:</p>
+						<div class="example2">
+						<h4>Lorem Ipsum Dolor</h4>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+						<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+						</div>
+						
+						<p>background-clip: content-box:</p>
+						<div class="example3">
+						<h4>Lorem Ipsum Dolor</h4>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+						<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 Background Properties</h2>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Properti </th>
+							<th>Deskripsi</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>background</td>
+							<td> Sebuah shorthand property untuk mengatur semua properti background dalam satu deklarasi</td>
+						</tr>
+						<tr>
+							<td>background-clip</td>
+							<td> Menentukan painting area (daerah lukisan) dari background</td>
+						</tr>
+						<tr>
+							<td>background-image</td>
+							<td> Menentukan satu atau lebih gambar latar belakang untuk suatu element</td>
+						</tr>
+						<tr>
+							<td>background-origin</td>
+							<td> Menentukan dimana background image(s) diposisikan</td>
+						</tr>
+						<tr>
+							<td>background-size</td>
+							<td> Menentukan ukuran dari background image(s)</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS3 border images.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS3 colors.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

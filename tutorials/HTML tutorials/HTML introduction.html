@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> Pengenalan HTML </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h1> Apa itu HTML ? </h1>
+				<p> 
+				HTML adalah sebuah bahasa pembangun konten - konten web page (atau Markup Language) untuk
+				mendeskripsikan dokumen web (webpage).
+				</p>
+				<ul>
+					<li>Standar - standar HTML untuk <b>H</b>yper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage </li>
+					<li> Sebuah bahasa markup adalah sebuah pengaturan <b>markup tags</b> </li>
+					<li> Dokumen HTML dideskripsikan oleh <b>tag - tag HTML</b> </li>
+					<li> Setiap tag HTML <b>mendeskripsikan</b> konten dokumen yang berbeda - beda</li>
+				</ul>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Contoh HTML Sederhana </h1>
+				
+				<article class="example-box">
+					<h2 class="center">Contoh</h2>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br><br>
+								<<b>h1</b>> Ini heading <<b>/h1</b>><br><br>
+								<<b>p</b>> Ini paragraf <<b>/p</b>><br><br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						<h1>Ini Heading </h1>
+						<p> Ini paragraf </p>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Contoh menjelaskan </h1>
+				<ul>
+					<li> Pendekalarasian <b>DOCTYPE</b> mendefinisikan tipe dokumen menjadi HTML</li>
+					<li> Teks diantara <<b>html</b>> dan <<b>/html</b>> mendeskripsikan sebuah dokumen HTML </li>
+					<li> Teks diantara <<b>head</b>> dan <<b>/head</b>> menyediakan informasi tentang dokumen </li>
+					<li> Teks diantara <<b>title</b>> dan <<b>/title</b>> menyediakan sebuah judul (title) untuk dokumen </li>
+					<li> Teks diantara <<b>body</b>> dan <<b>/body</b>> mendeskripsikan konten halaman yang terlihat </li>
+					<li> Teks diantara <<b>h1</b>> dan <<b>/h1</b>> mendeskripsikan sebuah heading </li>
+					<li> Teks diantara <<b>p</b>> dan <<b>/p</b>> mendeskripsikan sebuah paragraf </li>
+				</ul>
+				
+				<p>
+				Gunakanlah pendeksripsian ini, sebauh web browser bisa menampilkan sebuah dokumen dengan sebuah heading dan sebauh paragraf.
+				</p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> HTML Tags </h1>
+				<p>
+				HTML tag adalah kata kunci (tag names) yang dihimpit oleh angle brackets atau kurung segitiga.
+				</p>
+				<h1><<span class="maroon">tagname</span>> Kontent <<span class="maroon">/tagname</span>></h1>
+				<ul> 
+					<li> HTML tag normalnya <b>berpasangan</b> seperti <<b>p</b>> dan <<b>p</b>> </li>
+					<li> Tag pertama pada adalah start tag, dan tag kedua adalah end tag </li>
+					<li> end tag ditulis seperti start tag, namun dengan simbol <b>garis miring</b> sebelum tag nama </li>
+					<li> start tag seringkali disebut dengan <b>opening tag</b>, dan end tag disebut <b>closing tag</b>. </li>
+				</ul>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Web Browser </h1>
+				<p> Maksud dari sebuah web browser (seperti Chrome, IE, Firefox, Safari) adalah untuk membaca dokumen HTML dan menampilkannya. </p>
+				<p> Browser tidak menampilkan HTML tag, tapi menggunakannya untuk memutuskan bagaimana menampilkan dokumen.</p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> struktur Halaman HTML </h1>
+				<p>
+				Dibawah ini adalah visualisasi tentang strultru halaman HTML:
+				</p>
+				
+				<div class="a">
+				<<b>html</b>>
+					<div class="b">
+					<<b>head</b>>
+						<div class="c"><<b>title</b>>Page title<<b>/title</b>></div>
+					<<b>/head</b>> <br><br>
+					<<b>body</b>>
+						<div class="d">
+						<<b>h1</b>>This is a heading<<b>/h1</b>> <br>
+						<<b>p</b>>This is a paragraph.<<b>/p</b>> <br>
+						<<b>p</b>>This is another paragraph.<<b>/p</b>>
+						</div>
+					<<b>/body</b>> <br>
+					</div>
+				<<b>/html</b>>
+				</div>
+				
+				<div class="nasehat">
+					Hanya area <<b>body</b>> (the white area) yang ditampilkan oleh browser.
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h1>Pendeklarasian <<b>!DOCTYPE</b>> </h1>
+				
+				<p> Pendeklarasian <<b>!DOCTYPE</b>> membantu browser unthk menampilkan webpage secara benar.</p>
+				<p> Disini ada tipe dokumen berbeda pada web </p>
+				<p> Untuk menampilkan sebuah dokumen secara benar, browser harus tahu tipe dan versi. </p>
+				<p> pendeklarasian doctype tidak termasuk case sensitive (kata yang sensitif). Semua case bisa diterima:</p>
+				
+				<div class="simple-example">
+					<<b>!DOCTYPE</b> html> <br><br>
+					<<b>!DOCTYPE</b> HTML> <br><br>
+					<<b>!doctype</b> html> <br><br>
+					<<b>!Doctype</b> Html> <br><br>
+				</div>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Common Declarations </h1>
+				
+				<h4>HTML5</h4>
+				<div class="simple-example">
+					<<b>!DOCTYPE</b> <span class="maroon">html</span>>
+				</div>
+				
+				<h4>HTML 4.01</h4>
+				<div class="simple-example">
+				<<b>!DOCTYPE</b> <span class="maroon">HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"</span>>
+				</div>
+				
+				<h4>XHTML 1.0</h4>
+				<div class="simple-example">
+					<<b>!DOCTYPE</b> <span class="maroon">html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"</span>>
+				</div>
+				
+				<div class="nasehat">
+					Semua tutorial dan contoh di disini menggunakan HTML5.
+				</div>
+			</article>
+</section>
+<section>
+		<article>
+			<h1> Versi - Versi HTML </h1>
+			<p> HTML memiliki banyak versi yaitu: </p>
+			
+			<table>
+				<thead>
+					<tr>
+						<th>Version</th>
+						<th>Year</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>HTML</td>
+						<td>1991</td>
+					</tr>
+					<tr>
+						<td>HTML 2.0</td>
+						<td>1995</td>
+					</tr>
+					<tr>
+						<td>HTML 3.2</td>
+						<td>1997</td>
+					</tr>
+					<tr>
+						<td>HTML 4.01</td>
+						<td>1999</td>
+					</tr>
+					<tr>
+						<td>XHTML</td>
+						<td>2000</td>
+					</tr>
+					<tr>
+						<td>HTML5</td>
+						<td>2014</td>
+					</tr>
+				</tbody>
+			</table>
+		</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML HOME.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML textEditor.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+
+<style type="text/css">
+.a {margin:10px 0px;}
+.a b{
+	color:blue;
+}
+.a, .b, .c, .d {
+	width:100%;
+	padding:15px;
+	text-align:left;
+	border:1px black solid;
+}
+</style>
+</body>
+</html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS backgrounds </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/javaScript3.js"></script>
+<style type="text/css">
+.background{
+	background-image:url("../../Pictures/Rain Fall.png");
+	background-repeat:no-repeat;
+	background-size:100%;
+	text-shadow:1px 1px 5px black;
+	box-shadow:5px 5px 5px red;
+}
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Background </h1>
+				<div class="background">
+				<p> Properti <b>background</b> CSS digunakan untuk mendefinisikan efek latar belakang kepada element.</p>
+				<p> Properti <b>background</b> CSS: </p>
+				<ul>
+					<li> background-color</li>
+					<li> background-image</li>
+					<li> background-repeat</li>
+					<li> background-attachment</li>
+					<li> background-position </li>
+				</ul>
+				</div>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> Background Color </h2>
+				<p> Warna Latar Belakang </p>
+				<p> Properti <mark>background-color</mark> menentukan warna latar belakang dsei suatu element. </p>
+				<p> Warna latar belakang dsri halaman bisa diatur seperti ini : </p>
+				
+				<article class="example-box">
+					<h4> Input </h4>
+					<div class="example-content">
+					body {
+						<blockquote>background-color:blue;</blockquote>
+					}
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan01">
+						
+						<div style="background-color: blue;">
+							<h2> This a heading </h2>
+							<p> This is a paragraph </p>							
+							<p> This is a paragraph.</p>
+							<p> This is a paragraph </p>
+						</div>
+						
+					</div>
+				</article>
+				
+				<p> Dengan CSS, sebuah warna adalah yang paling sering ditentukan dengan : </p>
+				<ul>
+					<li> sebuah nama warna valid - seperti <b>"red"</b> </li>
+					<li> Sebuah nilai HEX - seperti <b>"#ff0000"</b> </li>
+					<li> Sebuah nilai RGB - seperti <b>"rgb(255,0,0)" </b></li>
+				</ul>
+				<p> Lihatlah di <a href="" >CSS Color Values</a> untuk daftar lengkap tentang nilai color yang memungkinkan. </p>
+				<p> Pada contoh dibawah ini, element <<b>h1</b>>, <<b>p</b>> dan <<b>div</b>> memiliki warna latar belakang yang berbeda</p>
+				
+				<article class="example-box">
+					<h4> Input </h4>
+					<div class="example-content">
+					div {
+						<blockquote>background-color:blue;</blockquote>
+					} <br>
+					h1 {
+						<blockquote>background-color:red;</blockquote>
+					} <br>
+					p {
+						<blockquote>background-color:green;</blockquote>
+					}
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan02">
+							
+						<h3 style="background-color:red;"> Readbook </h3>
+						<div style="background-color:blue;">
+							<p> This is a paragraph </p>							
+							<p style="background-color:green;"> I'm different paragraph.</p>
+							<p> This is a paragraph </p>
+						</div>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Background Image </h2>
+				<p> Gambar Latar Belakang </p>
+				<p> Properti <mark>background-image</mark> menentukan sebuah gambar untuk digunakan sebagai latar belakang suatu element.</p>
+				<p> Dengan defualt, Gambar akan di-repeat (dicetak banyak) jadi ia akan menyampul element sepenuhnya. </p>
+				<p> Gambar latar belakang untuk sebuah halaman bisa diatur seperti ini : </p>
+				
+				<article class="example-box">
+					<h4> Input </h4>
+					<div class="example-content">
+					body {,
+						<blockquote>
+						background-image:url("Rain Fall.png");
+						</blockquote>
+					}
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan03">
+						
+						<div class="bgImage-rainFall">
+							<h2> This a heading </h2>
+							<p> This is a paragraph </p>							
+							<p> This is a paragraph.</p>
+							<p> This is a paragraph </p>
+						</div>
+						
+					</div>
+				</article>
+				
+				
+				<p> Dibawah adalah sebuah contoh tentang kombinasi yang buruk dsri teks dsn gambar background. 
+				Teks dibawah ini sulit untuk dibaca: </p>
+				
+				<article class="example-box">
+					<h4> Input </h4>
+					<div class="example-content">
+					body {
+						<blockquote>
+						background-image:url("night.png");
+						</blockquote>
+					}
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan04">
+						
+						<div style="background-image: url('../../pictures/Night.jpg');">
+							<h2> This a heading </h2>
+							<p> Ini merupakan teks yang buruk, karena background merusak teks sehingga teks tidak dapat dibaca. </p>
+						</div>
+						
+					</div>
+				</article>
+				
+				<div class="nasehat">
+				<p> Ketika penggunaan background usahakan jangan menggunakan background yang dapat mengganggu kejelasan warna dari teks. </p>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Background Image - Repeat Horizontally or Vertically </h2>
+				<p> Dengan default, properti <mark>background-image</mark> me-repeat sebuah gambar background secara horizontal dan vertikal. </p>
+				<p> Beberapa gambar harus di-repeat (ulang) secara horizontal atau vertikal saja, atau merek akan terlihat aneh atau tidak baik, seperti ini: </p>
+				
+				<article class="example-box">
+					<h4> Input </h4>
+					<div class="example-content">
+					body {
+						<blockquote>
+						background-image:url("Rain Fall.png"); <br>
+						</blockquote>
+					}
+					</div>
+					<button onclick="tampilkan05()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan05">
+						<div class="bgImage-rainFall bg50px repeat">
+							<h2> This a heading </h2>
+							<p> This is a paragraph </p>							
+							<p> This is a paragraph.</p>
+							<p> This is a paragraph </p>
+						</div>
+					</div>
+				</article>
+				
+				<p> Jika gambar diatas di-repeat secara horizontal saja (background-repeat:repeat-x;), background akan terlihat kebih baik: </p>
+				
+				<article class="example-box">
+					<h4> Input </h4>
+					<div class="example-content">
+					body {
+						<blockquote>
+						background-image:url("Rain Fall.png");
+						background-repeat:repeat-x;						
+						</blockquote>
+					}
+					</div>
+					<button onclick="tampilkan06()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan06">
+						<div class="bgImage-rainFall bg50px repeatX">
+							<h2> This a heading </h2>
+							<p> This is a paragraph </p>							
+							<p> This is a paragraph.</p>
+							<p> This is a paragraph </p>
+						</div>
+					</div>
+				</article>
+				
+				<div class="nasehat"> 
+				<p> <b>Catatan:</b> Untuk me-repeat sebuah gambar secara vertikal aturlah menjadi <b>background-repeat: repeat-y; </b> </p>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Background Image - Set position and no-repeat </h2>
+				<p> Penunjukan gambar latar belakang hanya seklai ditentukan oleh properti <mark>background-repeat</mark> :</p>
+				<article class="example-box">
+					<h4> Input </h4>
+					<div class="example-content">
+					body {
+						<blockquote>
+						background-image:url("Rain Fall.png"); <br>
+				 	    background-repeat: no-repeat;
+						</blockquote>
+					}
+					</div>
+					<button onclick="tampilkan07()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan07">
+						<div class="bgImage-rainFall bg50px">
+							<h2> This a heading </h2>
+							<p> This is a paragraph </p>							
+							<p> This is a paragraph.</p>
+							<p> This is a paragraph </p>
+						</div>
+					</div>
+				</article>
+				
+				<p> Pada contih diatas, bakcground image ditampilkan dalam temoat yang sama sepertu teks. 
+				kita ingin mengubah posisi dari image, jadi ia tidak menggangu teks yang terlalu banyak. </p>
+				<p> Posisi dari image ditentukan oleh properti <mark>background-position</mark>: </p>
+				
+				<article class="example-box">
+					<h4> Input </h4>
+					<div class="example-content">
+					body {
+						<blockquote>
+						background-image:url("Rain Fall.png"); <br>
+				 	    background-repeat: no-repeat; <br>
+					    background-position: right top;
+						</blockquote>
+					}
+					</div>
+					<button onclick="tampilkan08()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan08">
+						<div class="bgImage-rainFall bg50px bgPosition-right-top">
+							<h2> This a heading </h2>
+							<p> This is a paragraph </p>							
+							<p> This is a paragraph.</p>
+							<p> This is a paragraph </p>
+						</div>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Background Image - Fixed position </h2>
+				<p> Untuk menentukan bahwa background inage harus di perbaikai (fixed) (tidak akan di-scroll dengan rest of the page),
+				 gunakanlah properti <mark>background-attachment</mark>: </p>
+				 
+				<article class="example-box">
+					<h4> Input </h4>
+					<div class="example-content">
+					body {
+						<blockquote>
+						background-image:url("Rain Fall.png"); <br>
+				 	    background-repeat: no-repeat; <br>
+					    background-position: right top; <br>
+					    background-attachment: fixed;
+						</blockquote>
+					}
+					</div>
+					<button onclick="tampilkan09()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan09">
+						<div class="bgImage-rainFall bg50px bgAttach-fixed bgPosition-right-top">
+							<h2> This a heading </h2>
+							<p> This is a paragraph </p>							
+							<p> This is a paragraph.</p>
+							<p> This is a paragraph </p>
+						</div>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Background - Shorthand property </h2>
+				<p> Untuk mempersingkat kode, Shorthand properti (background) memungkinkan untuk menentukan semua properti background dalam properti tunggal. 
+				Ini dipanggil dengan <b>shorthand porperti</b> </p>
+				<p> Shorthand properti untuk <mark>background</mark> merupakan semua background: </p>
+				
+				<article class="example-box">
+					<h4> Input </h4>
+					<div class="example-content">
+					body {
+						<blockquote>
+				    background: #ff0000 url("Rain Fall.png") no-repeat right top;
+						</blockquote>
+					}
+					</div>
+					<button onclick="tampilkan10()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan10">
+						<div class="bgImage-rainFall bgColor-red bg100px bgPosition-right-top">
+							<h2> This a heading </h2>
+							<p> This is a paragraph </p>							
+							<p> This is a paragraph.</p>
+							<p> This is a paragraph </p>
+						</div>
+					</div>
+				</article>
+				
+				<p> Ketika penggunaan <b>shorthand property</b> menyimpan nilai - nilai properti: </p>
+				<ul>
+					<li><mark>background-color</mark></li>
+					<li><mark>background-image</mark></li>
+					<li><mark>background-repeat</mark></li>
+					<li><mark>background-attachment</mark></li>
+					<li><mark>background-position</mark></li>
+				</ul>
+				
+				<p> Shorthand property tidak masalah jika salah satu nilai properti dihilangkan, selama satu dari yang lainnya berada dalam urutan ini. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> All CSS Background Properties </h2>
+				<p> Semua properti Background CSS </p> 
+				<table class="table">
+					<thead>
+						<tr>
+							<th> Properti  </th>
+							<th> Nilai </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> background </td>
+							<td> </td>
+							<td> Mengatur semua properti background dalam satu deklarasi </td>
+						</tr>
+						<tr>
+							<td> background-attachment </td>
+							<td> scroll <br> fixed </td>
+							<td>Mengatur apakah sebuah background image di-fixed (diberada ditempat yang sama saat pengguna me-scroll halaman) atau di-scroll (dapat discrol)  </td>
+						</tr>
+						<tr>
+							<td> background-color </td>
+							<td>  </td>
+							<td> Mengatur background warna dari suatu element </td>
+						</tr>
+						<tr>
+							<td> background-image </td>
+							<td> url("<i>alamat gambar</i>") </td>
+							<td> Mengatur background gambar pada suatu element </td>
+						</tr>
+						<tr>
+							<td> background-position </td>
+							<td> <i>p1 = horizontal <br> p2 = vertikal</i> </td>
+							<td> Mengatur posisi (starting position) dari sebuah background image</td>
+						</tr>
+						<tr>
+							<td> background-repeat </td>
+							<td> repeat <br> no-repeat <br> repeat-x <br> repeat-y  </td>
+							<td> Mengatur bagaimana background image akan di-repeat (diulang-ulang) </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="CSS colors.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="CSS borders.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			<article>
+			</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

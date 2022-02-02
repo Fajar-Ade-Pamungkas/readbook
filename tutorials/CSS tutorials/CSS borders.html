@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS |  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/javaScript3.js"></script>
+</head>
+<style type="text/css">
+.example-content, .simple-example, .sembunyikan  {
+	background-color:white;
+	color:black;
+}
+.sembunyikan p {
+	margin-bottom:15px;
+}
+ol li{
+	list-style-position:inside;
+	margin-left:10px;
+}
+ul {
+	margin:10px 0px;
+}
+.dotted { border:  dotted;}
+.groove { border:  groove;}
+.solid { border:  solid;}
+.dashed { border: dashed;}
+.double { border: double;}
+.ridge { border: ridge;}
+.inset { border: inset;}
+.outset { border: outset;}
+.noBorder { border:none;}
+.borderHidden { border:hidden;}
+
+#sembunyikan02 p.one {    
+	border-style: solid; 
+	border-width: 5px;
+	border-color:black;
+} 
+
+#sembunyikan02 p.two {    
+	border-style: solid; 
+	border-width: medium;
+	border-color:black;
+} 
+
+#sembunyikan02 p.three {    
+	border-style: solid; 
+	border-width: 2px 10px 4px 20px;
+	border-color:black;
+}
+
+
+#sembunyikan04 p {
+border-top-style: dotted; 
+border-right-style: solid; 
+border-bottom-style: dotted; 
+border-left-style: solid;
+}
+
+#sembunyikan05 p {
+border-style: dotted solid;
+}
+
+#sembunyikan06 p {
+border: 5px solid red;
+}
+</style>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Border </h1>
+				
+				<div style="border:15px gold groove;">
+					<h2>CSS Border Properties </h2>
+					<p> Properti <mark>boder</mark> CSS membolehkan kamu untuk menentukan style, width, color dari sebuah element's border. </p>
+					<p> Element ini memiliki sebuah groove border, tebal 15px  dan warna gold. </p>
+				</div>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> Border Style </h2>
+				<p> Properti <mark>border-style</mark> menentukan apa macam - macam border untuk tampilan. </p>
+				<p> Nilai - nilai berikut diperbolehkan: </p>
+				
+				<ul>
+					<li><mark>dotted</mark> - Mendefinisikan sebuah border titik</li>
+					<li><mark>dashed</mark> - Mendefinisikan sebuah border garis terpisah - pisah </li>
+					<li><mark>solid</mark> - Mendefinisikan sebuah border garis </li>
+					<li><mark>double</mark> - Mendefinisikan sebuah border ganda </li>
+					<li><mark>groove</mark> - Mendefinisikan sebuah border beralur (grooved) 3D. Efek  tergantung kepada properti border-color</li>  
+					<li><mark>ridge</mark> - Mendefinisikan sebuah 3D ridged border. Efek tergantung kepada properti border-color</li> 
+					<li><mark>inset</mark> - Mendefinisikan sebuah 3D inset border. Efek tergantung kepada properti border-color</li> 
+					<li><mark>outset</mark> - Mendefinisikan sebuah 3D outset border. Efek tergantung kepada properti border-color</li> 
+					<li><mark>none</mark> - Mendefinisikan tidak ada border</li>
+					<li><mark>hidden</mark> - Mendefinisikan sebuah border tersembunyi</li> 
+				</ul>
+				
+				<p> Properti <mark>border-style</mark> bisa memiliki dari satu untuk 4 nilai (for the top border, right border, bottom border, and the left border).</p>
+				<article class="example-box">
+					<h4> Input </h4>
+					<div class="example-content">
+					body {
+						<blockquote>
+						p.dotted {border-style: dotted;} <br>
+						p.dashed {border-style: dashed;} <br>
+						p.solid {border-style: solid;} <br>
+						p.double {border-style: double;} <br>
+						p.groove {border-style: groove;} <br>
+						p.ridge {border-style: ridge;} <br>
+						p.inset {border-style: inset;} <br>
+						p.outset {border-style: outset;} <br>
+						p.none {border-style: none;} <br>
+						p.hidden {border-style: hidden;} <br>
+						p.mix {border-style: dotted dashed solid double;}
+						</blockquote>
+					}
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan01">
+					<p class="dotted">A dotted border.</p>
+					<p class="dashed">A dashed border.</p>
+					<p class="solid">A solid border.</p>
+					<p class="double">A double border.</p>
+					<p class="groove">A groove border. The effect depends on the border-color value.</p>
+					<p class="ridge">A ridge border. The effect depends on the border-color value.</p>
+					<p class="inset">An inset border. The effect depends on the border-color value.</p>
+					<p class="outset">An outset border. The effect depends on the border-color value.</p>					
+					<p class="noBorder">No border.</p>
+					<p class="hidden"> A hidden border.</p>
+					<p class="campur">A mixed border.</p>
+					</div>
+				</article>
+				
+				<div class="nasehat">
+				<p> <b>Catatan:</b> <b>None</b> dari properti border CSS yang dideskripsikan diatas akan membuat border ditiadakan, sedangkan <b>hidden</b>
+				membuat border tidak terlihat (bukan dihilangkan !)</p>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Border Width </h2>
+				<p> Properti <mark>border-width</mark> menentukan lebar dari keempat border. </p>
+				<p> width bisa diatur seperti ukuran (satuan) tertentu (seperti px, pt, cm, em, dan lain sebagainya) atau dengan penggunaan salah satu dari nilai yang dikenal: thin, medium, atau thick. </p>
+				<p> properti <mark>border-width</mark> bisa memiliki nilai masing-masing untuk setiap sisi bordersatu untuk keempat (for the top border, right border, bottom border, and the left border).</p>
+				
+				<article class="example-box">
+					<h4> Input </h4>
+					<div class="example-content">
+					p.one {
+					    <blockquote>
+						border-style: solid; <br>
+					    border-width: 5px;
+						</blockquote>
+					} <br>
+					<br>
+					p.two {
+					    <blockquote>
+						border-style: solid; <br>
+					    border-width: medium;
+						</blockquote>
+					} <br>
+					<br>
+					p.three {
+					    <blockquote>
+						border-style: solid; <br>
+					    border-width: 2px 10px 4px 20px;
+					</blockquote>
+					}
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan02">
+						<p style="border: 5px solid ;">This is a paragraph </p>
+						<p style="border: medium solid ;">This is a paragraph </p>
+						<p style="border-width: 2px 10px 4px 20px; border-style: solid ;">This is a paragraph </p>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Border Color </h2>
+				<p> Properti <mark>border-color</mark> digunakan untuk mengatur warna dari keempat border. </p>
+				<p> Warna bisa diatur dengan: </p>
+				<ul>
+					<li> sebuah nama warna valid - seperti <b>"red"</b> </li>
+					<li> Sebuah nilai HEX - seperti <b>"#ff0000"</b> </li>
+					<li> Sebuah nilai RGB - seperti <b>"rgb(255,0,0)" </b></li>
+					<li> <b>transparent</b> </li>
+				</ul>
+				
+				<p> Properti <mark>border-color</mark> bisa memiliki nilai masing - masing untuk setiap sisi border 
+				(for the top border, right border, bottom border, and the left border). </p>
+				<p> Jika <mark>border-color</mark> tidak diatur, border mewariskan (inherits) warna tentang element. </p>
+				
+				<article class="example-box">
+					<h4> Input </h4>
+					<div class="example-content">
+					p.one {
+					    <blockquote>
+						border-style: solid; <br>
+				   		border-color: red;
+						</blockquote>
+					} <br>
+					<br>
+					p.two {
+					    <blockquote>
+						border-style: solid; <br>
+				   		border-color: green;
+						</blockquote>
+					} <br>
+					<br>
+					p.three {
+					    <blockquote>
+						border-style: solid; <br>
+				   		border-color: red green blue yellow;
+					</blockquote>
+					}
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan03">
+						<p style="border: red solid ;">This is a paragraph </p>
+						<p style="border: green solid ;">This is a paragraph </p>
+						<p style="border-color: red green blue yellow; border-style: solid ;">This is a paragraph </p>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Border - Individual Sides </h2>
+				<p> Dari contoh diatas kamu telah melihat bahwa border memungkinkan untuk menentukan border yang berbeda untuk setiap sisi border. </p>
+				<p> Di CSS, Juga ada properti untuk penentuan setiap sisi border (top, right, bottom, and left):</p>
+				
+				
+				<article class="example-box">
+					<h4> Input </h4>
+					<div class="example-content">
+						p {
+						<blockquote>
+						border-top-style: dotted; <br>
+						border-right-style: solid; <br>
+						border-bottom-style: dotted; <br>
+						border-left-style: solid;
+						</blockquote>
+						}
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan04">
+					
+						<p>This is a paragraph</p>
+						<p>This is a paragraph</p>
+						<p>This is a paragraph</p>
+					
+					</div>
+				</article>
+				 
+				<p> Contoh diatas memberikan hasil yang sama seperti ini: </p>
+				
+				<article class="example-box">
+					<h4> Input </h4>
+					<div class="example-content">
+						p {
+						<blockquote>
+							border-style: dotted solid;
+						</blockquote>
+						}
+					</div>
+					<button onclick="tampilkan05()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan05">
+					
+						<p>This is a paragraph</p>
+						<p>This is a paragraph</p>
+						<p>This is a paragraph</p>
+					
+					</div>
+				</article>
+				
+				<p> Jadi, disini adalah bagaimana border bekerja: </p>
+				
+				<p> Jika properti <mark>border-style</mark> memiliki empat nilai: </p>
+				<ul>
+					<li>border-style: dotted solid double dashed;</li>
+							<ol>
+								<li>border atas adalah dotted </li>
+								<li>border kanan adalah solid </li>
+								<li>border bawah adalah double </li>
+								<li>border kiri adalah dashed </li>
+							</ol>
+				</ul>
+				<p>Jika properti <mark>border-style</mark> memikiki tiga nilai: </p>
+				<ul>
+					<li>border-style: dotted solid double;</li>
+						<ol>
+							<li> border atas adalah dotted </li>
+							<li> borders kanan dan kiri adalah solid </li>
+							<li> border bawah adalah double </li>
+						</ol>
+				</ul>
+				
+				<p>Jika properti <mark>border-style</mark> memikiki dua nilai: </p>
+				<ul>
+					<li>border-style: dotted solid;</li>
+						<ol>
+							<li> border atas dan bawah adalah dotted </li>
+							<li> borders kanan dan kiri adalah solid </li>
+						</ol>
+				</ul>
+				
+				<p>Jika properti <mark>border-style</mark> memikiki satu nilai: </p>
+				<ul>
+					<li>border-style: dotted;</li>
+						<ol>
+							<li> Semua border adalah dotted </li>
+						</ol>
+				</ul>
+				
+				<p> Properti <mark>border-style</mark> digunakan pada contoh diatas. Akan tetapi, border-style juga bekerja dengan <mark>border-width</mark> dan <mark>border-color</mark>. </p>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Border - Shorthand Property </h2>
+				<p> Seperti yang bisa kamu lihat, Ada banyak properti untuk pertimbangan ketika menyetujui sebuah border. </p>
+				<p> Untuk shorten kode, Border juga memingkinkan untuk menentukan semua properti border masing - masing dalam satu properti. </p>
+				<p> Properti <mark>border</mark> merupakan shorthand property untuk properti boder individual berikut: </p>
+				<ul>
+					<li>border-width</li>
+					<li>border-style (required)</li>
+					<li>border-color</li>
+				</ul>
+				
+				<article class="example-box">
+					<h4> Input </h4>
+					<div class="example-content">
+						p {
+						<blockquote>
+							border: 5px solid red;
+						</blockquote>
+						}
+					</div>
+					<button onclick="tampilkan06()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan06">
+					
+						<p>This is a paragraph</p>
+						<p>This is a paragraph</p>
+						<p>This is a paragraph</p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> All CSS Border Properties </h2>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th> Properti </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> border </td>
+							<td> Mengatur semua properti border dalam satu deklarasi </td>
+						</tr>
+						<tr>
+							<td> border-bottom </td>
+							<td> Mengatur semua properti border bottom (border bawah) dalam satu deklarasi </td>
+						</tr>
+						<tr>
+							<td> border-bottom-color </td>
+							<td> Mengatur warna border bagian bawah </td>
+						</tr>
+						<tr>
+							<td> border-bottom-style </td>
+							<td> Mengatur style (bentuk) border bagian bawah </td>
+						</tr>
+						<tr>
+							<td> border-bottom-width </td>
+							<td> Mengatur width (lebar) border bagian bawah </td>
+						</tr>
+						<tr>
+							<td> border-color </td>
+							<td> Mengatur warna untuk keempat border </td>
+						</tr>
+						<tr>
+							<td> border-left </td>
+							<td> Mengatur semua properti border left (border kiri) dalam satu deklarasi </td>
+						</tr>
+						<tr>
+							<td> border-left-color </td>
+							<td> Mengatur warna border bagian kiri </td>
+						</tr>
+						<tr>
+							<td> border-left-style </td>
+							<td> Mengatur style (bentuk) border bagian kiri </td>
+						</tr>
+						<tr>
+							<td> border-left-width </td>
+							<td> Mengatur width (lebar) border bagian kiri </td>
+						</tr>
+						<tr>
+							<td> border-right </td>
+							<td> Mengatur semua properti border right (border kanan) dalam satu deklarasi </td>
+						</tr>
+						<tr>
+							<td> border-right-color </td>
+							<td> Mengatur warna border bagian kanan </td>
+						</tr>
+						<tr>
+							<td> border-right-style </td>
+							<td> Mengatur style (bentuk) border bagian kanan </td>
+						</tr>
+						<tr>
+							<td> border-right-width </td>
+							<td> Mengatur width (lebar) border bagian kanan </td>
+						</tr>
+						<tr>
+							<td> border-style </td>
+							<td> Mengatur style (bentuk) untuk keempat border </td>
+						</tr>
+						<tr>
+							<td> border-top </td>
+							<td> Mengatur semua properti border top (border atas) dalam satu deklarasi </td>
+						</tr>
+						<tr>
+							<td> border-top-color </td>
+							<td> Mengatur warna border bagian atas </td>
+						</tr>
+						<tr>
+							<td> border-top-style </td>
+							<td> Mengatur style (bentuk) border bagian atas </td>
+						</tr>
+						<tr>
+							<td> border-top-width </td>
+							<td> Mengatur width (lebar) border bagian atas </td>
+						</tr>
+						<tr>
+							<td> border-width </td>
+							<td> Mengatur width (lebar) dari keempat border </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+			
+</section>
+<section>		
+			<article id="NoB">
+			<a href="CSS backgrounds.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="CSS margins.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

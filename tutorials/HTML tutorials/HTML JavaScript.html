@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML JavaScript</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript">
+
+
+function show() {
+	document.getElementById("contoh1").innerHTML= "Hello JavaScript!";
+}
+function show02() {
+	document.getElementById("contoh02").innerHTML= "Hello JavaScript!";
+}
+function show03() {
+	var x = "Hello JavaScript";
+	document.getElementById("contoh3").innerHTML= x;
+}
+function show04() {
+	v = document.getElementById("contoh04")
+	v.style.fontSize="20px";
+	v.style.color= "red";
+}
+function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match("bulbon")) {
+        image.src = "../../pictures/hey.jpg";
+    } else {
+        image.src = "../../pictures/cool image.jpg";
+    }
+}
+
+</script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML JavaScript</h1>
+				<p id="contoh"> JavaScript membuat halaman HTML lebih dinamis dan interaktif </p>
+			</div>
+			
+<!--			
+<section>
+			<article>
+				<h2> Try it Yourself - Examples </h2>
+				<p onlick="myInsert()"><mark>Insert a script</mark></p>
+				<p> Bagaimana menyisipkan JavaSdript kedala  dokumen HMTL. </p> <br>
+				<p onclick="myNoScript()"> <mark>Use of the <b class="blue"><<b>noscript</b>></b> tag </mark></p>
+				<p> Bagaimana untuk meng-handle (mengatasi) browser yang tidak men-support scripting (penaskahan JavaScript), atau telah scripting dilumpukan. </p>
+			</article>
+</section>
+-->
+<section>
+			<article>
+				<h2> The HTML <b class="blue"><<b>script</b>></b> Tag </h2>
+				<p> Tag <<b>script</b>> digunakan untuk mendefinisikan sebuah script (JavaScript). </p>
+				<p> Element <<b>script</b>> salah satu berisi scripting statements (pernyataan penaskahan) atau tujuannya untuk sebuah file script external sepanjang attribute <b>src</b>. </p>
+				<p> Yang umum digunakan untjk JavaScript adalah manipulasi gambar, validasi form, dan dinamis merubah konten. </p>
+				<p> Script dibawah ini menuliskan kata "Hello JavaScript!" kedalam element HTML dengan id="demo": </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>p</b> <span class="teal">id="demo"</span>><<b>/p</b>> <br>
+								<br>
+								<b>script</b>> <br>
+								document.getElementByid("demo").innerHTML="Hello JavaScript !"; <br>
+								<<b>/script</b>> <br>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+
+					</div>
+					<button onclick="show()">Output:</button>
+					<div class="example-content sembunyikn" id="sembunyika01" >
+						<p id="contoh1"></p>
+					</div>
+				</article>
+				
+				<div class="nasehatX">
+				Untuk mempelajari tentang JavaScript kunjungilah, artikel kami tentang 
+				<a href="../JavaScript tutorials/js HOME.html" > Tutorial JavaScript</a>.
+				</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> The HTML <b class="blue"><<b>noscript</b>></b> Tag </h2>
+				<p> 
+				Tag <<b>niscript</b>> digunakan untuk menyediakan sebuah konten alternatif untuk pengguna yanh telah melumpuhkan 
+				atau me-nonaktifkan (disable) script pada browser mereka atau memiliki browser yang tidak mendukung client-side scripting. 
+				</p>
+				<p>  Element <<b>noscript</b>> bisa berisi semua element yang bisa kamu temukan didalam element <<b>body</b>> dari sebuah halaman HTML normal. </p>
+				<p> Konten didalam element <<b>noscript</b>> hanya akan ditampilkan jika suatu script tidak disupport, atau dilumpuhkan dalam browser pengguna: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>p</b> <span class="teal">id="demo"</span>><<b>/p</b>> <br>
+								<br>
+								<b>script</b>> <br>
+								document.getElementByid("demo").innerHTML="Hello JavaScript !"; <br>
+								<<b>/script</b>> <br>
+								<br>
+								<br>
+								<<b>noscript</b>> <br>
+								Sorry, your browser do not support for JavaScript ! <br>
+								<<b>/noscript</b>> <br>
+								<br>
+								<<b>p</b>> A browser without support for JavaScript will show the text written inside the noscript element. <<b>/p</b>> <br>
+								<br>
+								
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+				
+					</div>
+					<button onclick="show02()">Output:</button>
+					<div class="example-content">
+						<p id="contoh02" ></p>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> A Taste of JavaScript (From Our JavaScript Tutorial) </h2>
+				<p> Disini adalah beberapa contoh tentang apa yang bisa JavaScript lakukan: </p>
+				
+				<article class="example-box">
+					<h4> JavaScript bisa mengubah konten HTML</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>p</b> <span class="teal">id="demo"</span>><<b>/p</b>> <br>
+								<br>
+								<b>script</b>> <br>
+								document.getElementByid("demo").innerHTML="Hello JavaScript !"; <br>
+								<<b>/script</b>> <br>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+				
+					</div>
+					<button onclick="show03()">Output:</button>
+					<div class="example-content"">
+						<p id="contoh3" ></p>
+					</div>
+				</article>
+				
+				<article class="example-box">
+					<h4> JavaScript bisa mengubah style HTML</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>p</b> <span class="teal">id="demo"</span>> Helo world<<b>/p</b>> <br>
+								<br>
+								<b>script</b>> <br>
+								x = document.getElementByid("demo"); <br>
+								x.style.color= "red"; <br>
+								x.style.fontSize= "20px"; <br>
+								<<b>/script</b>> <br>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+				
+					</div>
+					<button onclick="show04()">Output:</button>
+					<div class="example-content"">
+						<p id="contoh04" > Hello World !</p>
+					</div>
+				</article>
+				
+				<article class="example-box">
+					<h4> JavaScript bisa mengubah gambar HTML</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>img</b> <span class="teal">onclick="changeImage()" src="../../hey.jpg"width="150px" height="auto" id="myImage"</span>> <br>
+								<br>
+								<b>script</b>> <br>
+								<code>function</code> changeImage() {
+										<blockquote>
+										var image = document.getElementByid("myImage"); <br>
+										if (image.src.match("bulbon")){
+											<blockquote>
+											image.src="../../pictures/coolImage.jpg";
+											</blockquote>
+										} else{
+											<blockquote>
+											image.src="../../pictures/Rain Fall.png";
+											</blockquote>
+											}
+										</blockquote>
+									}
+									<br>
+								<<b>/script</b>> <br>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+				
+					</div>
+					<button onclick="tampilkan04()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+						<img src="../../pictures/hey.jpg" onclick="changeImage()" width="100px" height="150px" id="myImage">
+						<p>Klik gambar diatas untuk mengubah gambar</p>
+					</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> HTML Script Tags </h2>
+				
+				<table>
+					<thead>
+						<tr>
+							<th>Tag</th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> <<b>script</b>> </td>
+							<td> Mendefinisikan sebuah client-side script </td>
+						</tr>
+						<tr>
+							<td> <<b>noscript</b>> </td>
+							<td> Mendefinisikan sebuah konten alternatif untuk para pengguna yang tidak mendukung client-side script </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML iframes.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML head.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

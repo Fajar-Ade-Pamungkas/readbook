@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS Pseudi-class </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+/* unvisited link */ 
+#sembunyikan01 a:link {
+	color: #FF0000;
+} 
+
+/* visited link */ 
+#sembunyikan01 a:visited {
+	color: #00FF00;
+} 
+
+/* mouse over link */ 
+#sembunyikan01 a:hover {
+	color: #FF00FF;
+} 
+
+/* selected link */ 
+#sembunyikan01 a:active {
+	color: #0000FF;
+}
+
+
+/* CONTOH 2*/
+#sembunyikan02 a.highlight:hover {
+	color: #ff0000;
+}
+
+/*CONTOH 3*/
+#sembunyikan03 div:hover {
+	background-color: blue;
+} 
+
+#sembunyikan03 div {
+	background-color: green; 
+	color: white; 
+	padding: 25px; 
+	text-align: center;
+} 
+
+/*CONTOH 4*/
+#sembunyikan04 p:first-child {
+	color: blue;
+}
+/*CONTOH 5*/
+#sembunyikan05 p i:first-child {
+	color: blue;
+}
+
+/*CONTOH 6*/
+#sembunyikan06 p:first-child i {
+	color: blue;
+}
+
+/*CONTOH 7*/
+#sembunyikan07 q:lang(no) {
+	quotes: "~" "~";
+}
+
+/*CONTOH 8*/
+#sembunyikan08 a.one:link {color:#ff0000;} 
+#sembunyikan08 a.one:visited {color:#0000ff;} 
+#sembunyikan08 a.one:hover {color:#ffcc00;} 
+
+#sembunyikan08 a.two:link {color:#ff0000;} 
+#sembunyikan08 a.two:visited {color:#0000ff;} 
+#sembunyikan08 a.two:hover {font-size:150%;} 
+
+#sembunyikan08 a.three:link {color:#ff0000;} 
+#sembunyikan08 a.three:visited {color:#0000ff;} 
+#sembunyikan08 a.three:hover {background:#66ff66;} 
+
+#sembunyikan08 a.four:link {color:#ff0000;} 
+#sembunyikan08 a.four:visited {color:#0000ff;} 
+#sembunyikan08 a.four:hover {font-family:monospace;} 
+
+#sembunyikan08 a.five:link {color:#ff0000;text-decoration:none;} 
+#sembunyikan08 a.five:visited {color:#0000ff;text-decoration:none;} 
+#sembunyikan08 a.five:hover {text-decoration:underline;}
+
+/*CONTOH 9*/
+#sembunyikan09 input:focus {
+	background-color: yellow;
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Pseudo-classes </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> What are Pseudo-classes?</h2>
+				<p> Apa itu Pseudo-class ? </p>
+				<p> Pseudo-class digunakan untuk mendefinisikan keadaan istimewa dari suatu element. </p>
+				<p> Untuk contoh, pseudo-class bisa digunakan untuk: </p>
+				<ul>
+					<li> Me-style suatu element ketika pengguna atau user menggerak mouse pada element tersebut</li>
+					<li> Me-style link yang telah dikunjungi atau belum dikunjungi secara berbeda</li>
+					<li> Me-style suatu element ketika element dapat memusatkan atau focus</li>
+				</ul>
+				<button class="exbutton pertama" style="border:2px groove silver;">Mouse Over Me</button>
+				<input type="text" placeholder="Mouse Over Me" style="width: 30%; height: 30px;"/>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Syntax</h2>
+				<p> Sintaksis daei pseudo-class:</p>
+				<div class="simple-example">
+				selector:pseudo-class { <br>
+				    <em>property:value;</em> <br>
+				}
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Anchor Pseudo-classes</h2>
+				<p> Link bisa ditampilkan dalam cara yang berbeda-beda:</p>
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						<em>/* unvisited link */</em> <br>
+						a:link {
+						<blockquote>
+						    color: #FF0000;
+						</blockquote>
+						} <br>
+						<br>
+						<em>/* visited link */</em> <br>
+						a:visited { 
+						<blockquote>
+						    color: #00FF00;
+						</blockquote>
+						} <br>
+						<br>
+						<em>/* mouse over link */</em> <br>
+						a:hover {
+						<blockquote>
+						    color: #FF00FF;
+						</blockquote>
+						} <br>
+						<br>
+						<em>/* selected link */</em> <br>
+						a:active {
+						<blockquote>
+						    color: #0000FF;
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						<em>/* unvisited link */</em> <br>
+						a:link {
+						<blockquote>
+						    color: #FF0000;
+						</blockquote>
+						} <br>
+						<br>
+						<em>/* visited link */</em> <br>
+						a:visited { 
+						<blockquote>
+						    color: #00FF00;
+						</blockquote>
+						} <br>
+						<br>
+						<em>/* mouse over link */</em> <br>
+						a:hover {
+						<blockquote>
+						    color: #FF00FF;
+						</blockquote>
+						} <br>
+						<br>
+						<em>/* selected link */</em> <br>
+						a:active {
+						<blockquote>
+						    color: #0000FF;
+						</blockquote>
+						}
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+					<<b>a</b> <span class="teal">href="CSS HOME.html"</span>>CSS Tutorial <<b>/a</b>> <br><br>
+						
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+					<a href="CSS HOME.html" >CSS Tutorial </a>
+					
+					</div>
+				</article>
+				
+				<div class="nasehat">
+					<p><b>Catatan:</b> <mark>a:hover</mark> HARUS datang setelah <mark>a:link</mark> dan <mark>a:visited</mark> dalam pendefinisian CSS pada urutan untuk menjadi efektif! <mark>a:active</mark> HARUS datang <mark>a:hover</mark>
+					dalam pendefinisian CSS pada urutan agar menjadi efektif! Pseudo-class names bukan case-sensitive.</p>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Pseudo-classes and CSS Classes</h2>
+				<p> Pseudo-class bisa dikombinasikan dengan CSS class:</p>
+				<p> Ketika kamu menunggu dekat (hover) link dalam contoh, Link akan berubah warna: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						a.highlight:hover {
+						<blockquote>
+						    color: #ff0000;
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+						a.highlight:hover {
+						<blockquote>
+						    color: #ff0000;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>a</b> <span class="teal">href="CSS HOME.html" class="highlight"</span>>CSS Tutorial <<b>/a</b>> <br><br>
+						
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+					<a href="CSS HOME.html" class="highlight">CSS Tutorial </a>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Hover on </h2>
+				<p> Sebuah contoh penggunaan <mark>:hover</mark> pseudo-class pada element <<b>div</b>>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open03">
+						
+						div:hover {
+						<blockquote>
+						    background-color: blue;
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div:hover {
+						<blockquote>
+						    background-color: blue;
+						</blockquote>
+						} <br>
+						<br>
+						div {
+						<blockquote>
+							background-color: green; <br>
+							color: white; <br>
+							padding: 25px; <br>
+							text-align: center;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>p</b>>Mouse over the div element below to change its background color:<<b>/p</b>> <br>
+						<<b>div</b> <span class="teal">class="mouseover"</span>>Mouse Over Me<<b>/div</b>> <br><br>
+						
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+					<p>Mouse over the div element below to change its background color:</p>
+					<div class="mouseover">Mouse Over Me</div>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS - The :first-child Pseudo-class</h2>
+				<p> Pseudo-class <mark>:first-child</mark> mencocokan/membandingkan element tertentuyang merupakan anak pertama (first child) dari element apapun:</p>
+				
+				<h4>Match the first <<b>p</b>> element </h4>
+				<p> Pada contoh berikut, selector mencocokan element <<b>p</b>> apapun yang merupakan anak pertama dari element apa saja.</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open04">
+						
+						p:first-child {
+						<blockquote>
+						    color: blue;
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close04">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						p:first-child {
+						<blockquote>
+						    color: blue;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>p</b>>This is some text.<<b>/p</b>> <br>
+						<<b>p</b>>This is some text.<<b>/p</b>> <br>
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> For :first-child to work in IE8 and earlier, a DOCTYPE must be declared.<<b>/p</b>> <br><br>
+						
+						
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<button onclick="buka04()" class="exbutton"> Open </button>
+					<button onclick="tutup04()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+					<p>This is some text.</p>
+					<p>This is some text.</p>
+					<p><b>Note:</b> For :first-child to work in IE8 and earlier, a DOCTYPE must be declared.</p>
+					
+					
+					</div>
+				</article>
+				
+				<h4>Match the first <<b>i</b>> element in all <<b>p</b>> elements </h4>
+				<p> Pada contoh berikut, selector mencocokan element <<b>i</b>> pertama dalam semua element <<b>p</b>>:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open05">
+						
+						p i:first-child {
+						<blockquote>
+						    color: blue;
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close05">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						p i:first-child {
+						<blockquote>
+						    color: blue;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>p</b>>I am a <i>strong</i> person. I am a <<b>i</b>>strong<<b>/i</b>> person.<<b>/p</b>> <br>
+						<<b>p</b>>I am a <i>strong</i> person. I am a <<b>i</b>>strong<<b>/i</b>> person.<<b>/p</b>> <br>
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> For :first-child to work in IE8 and earlier, a DOCTYPE must be declared.<<b>/p</b>> <br><br>
+						
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan05()" class="exbutton">Klik disini</button>
+					<button onclick="buka05()" class="exbutton"> Open </button>
+					<button onclick="tutup05()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+					
+					<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+					<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+					<p><b>Note:</b> For :first-child to work in IE8 and earlier, a DOCTYPE must be declared.</p>
+					
+					</div>
+				</article>
+				
+				<h4>Match all <<b>i</b>> elements in all first child <p> elements</4>
+				<p> Pada contoh berikut, selector mencocokan semua element <<b>i</b>> dalam element <<b>p</b>> yang merupakan anak pertama dari element lainnya: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open06">
+						
+						p:first-child i {
+						<blockquote>
+						    color: blue;
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close06">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						p:first-child i {
+						<blockquote>
+						    color: blue;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>p</b>>I am a <i>strong</i> person. I am a <<b>i</b>>strong<<b>/i</b>> person.<<b>/p</b>> <br>
+						<<b>p</b>>I am a <i>strong</i> person. I am a <<b>i</b>>strong<<b>/i</b>> person.<<b>/p</b>> <br>
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> For :first-child to work in IE8 and earlier, a DOCTYPE must be declared.<<b>/p</b>> <br><br>
+						
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan06()" class="exbutton">Klik disini</button>
+					<button onclick="buka06()" class="exbutton"> Open </button>
+					<button onclick="tutup06()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+					
+					<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+					<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+					<p><b>Note:</b> For :first-child to work in IE8 and earlier, a DOCTYPE must be declared.</p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS - The :lang Pseudo-class</h2>
+				<p> Pseudo-class <mark>:lang</mark> mengizinkan kamu untuk mendefinisikan peraturan untuk language (bahasa) yang berbeda-beda:</p>
+				<p> Pada contoh berikut, <mark>:lang</mark> mendefinisikan tanda kutipan (quottation) untuk element <<b>q</b>> dengan <i>lang="no"</i>:</p>
+				
+				</head>
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open07">
+						
+						q:lang(no) {
+						<blockquote>
+						    quotes: "~" "~";
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close07">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						q:lang(no) {
+						<blockquote>
+						    quotes: "~" "~";
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						<<b>p</b>> Some text <<b>q</b> <span class="teal">lang="no"</span>>A quote in a paragraph<<b>/q</b>> Some teks<<b>/p</b>>. <br><br>
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan07()" class="exbutton">Klik disini</button>
+					<button onclick="buka07()" class="exbutton"> Open </button>
+					<button onclick="tutup07()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan07">
+					
+						<p>Some text <q lang="no">A quote in a paragraph</q> Some text.</p>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>More Examples</h2>
+				<p> Menambahkan style yang berbeda-beda untuk hyperlink</p>
+				<p>Contoh ini memperlihatkan bagaiaman untuk menambahkan style lainnya untuk hyperlink.</p>
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open08">
+						
+						a.one:link {color:#ff0000;} <br>
+						a.one:visited {color:#0000ff;} <br>
+						a.one:hover {color:#ffcc00;} <br>
+						<br>
+						a.two:link {color:#ff0000;} <br>
+						a.two:visited {color:#0000ff;} <br>
+						a.two:hover {font-size:150%;} <br>
+						<br>
+						a.three:link {color:#ff0000;} <br>
+						a.three:visited {color:#0000ff;} <br>
+						a.three:hover {background:#66ff66;} <br>
+						<br>
+						a.four:link {color:#ff0000;} <br>
+						a.four:visited {color:#0000ff;} <br>
+						a.four:hover {font-family:monospace;} <br>
+						<br>
+						a.five:link {color:#ff0000;text-decoration:none;} <br>
+						a.five:visited {color:#0000ff;text-decoration:none;} <br>
+						a.five:hover {text-decoration:underline;} 
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close08">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						a.one:link {color:#ff0000;} <br>
+						a.one:visited {color:#0000ff;} <br>
+						a.one:hover {color:#ffcc00;} <br>
+						<br>
+						a.two:link {color:#ff0000;} <br>
+						a.two:visited {color:#0000ff;} <br>
+						a.two:hover {font-size:150%;} <br>
+						<br>
+						a.three:link {color:#ff0000;} <br>
+						a.three:visited {color:#0000ff;} <br>
+						a.three:hover {background:#66ff66;} <br>
+						<br>
+						a.four:link {color:#ff0000;} <br>
+						a.four:visited {color:#0000ff;} <br>
+						a.four:hover {font-family:monospace;} <br>
+						<br>
+						a.five:link {color:#ff0000;text-decoration:none;} <br>
+						a.five:visited {color:#0000ff;text-decoration:none;} <br>
+						a.five:hover {text-decoration:underline;} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<p>Mouse over the links and watch them change layout:</p>
+						
+						<<b>p</b>><<b>b</b>><<b>a</b> <span class="teal">class="one" href="default.html" target="_blank"</span>>This link changes color<<b>/a</b>><<b>/b</b>><<b>/p</b>> <br>
+						<<b>p</b>><<b>b</b>><<b>a</b> <span class="teal">class="two" href="default.html" target="_blank"</span>>This link changes font-size<<b>/a</b>><<b>/b</b>><<b>/p</b>> <br>
+						<<b>p</b>><<b>b</b>><<b>a</b> <span class="teal">class="three" href="default.html" target="_blank"</span>>This link changes background-color<<b>/a</b>><<b>/b</b>><<b>/p</b>> <br>
+						<<b>p</b>><<b>b</b>><<b>a</b> <span class="teal">class="four" href="default.html" target="_blank"</span>>This link changes font-family<<b>/a</b>><<b>/b</b>><<b>/p</b>> <br>
+						<<b>p</b>><<b>b</b>><<b>a</b> <span class="teal">class="five" href="default.html" target="_blank"</span>>This link changes text-decoration<<b>/a</b>><<b>/b</b>><<b>/p</b>> <br>
+						
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan08()" class="exbutton">Klik disini</button>
+					<button onclick="buka08()" class="exbutton"> Open </button>
+					<button onclick="tutup08()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan08">
+					
+					<p>Mouse over the links and watch them change layout:</p>
+					
+					<p><b><a class="one" href="default.html" target="_blank">This link changes color</a></b></p>
+					<p><b><a class="two" href="default.html" target="_blank">This link changes font-size</a></b></p>
+					<p><b><a class="three" href="default.html" target="_blank">This link changes background-color</a></b></p>
+					<p><b><a class="four" href="default.html" target="_blank">This link changes font-family</a></b></p>
+					<p><b><a class="five" href="default.html" target="_blank">This link changes text-decoration</a></b></p>
+					
+					
+					</div>
+				</article>
+				
+				<p> Pengggunaan dari :focus</p>
+				<p> Contoh ini memperlihatkan bagaimana untuk menggunakan pseudo-class <mark>:focus</mark>.</p>
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open09">
+						
+						input:focus {
+						<blockquote>
+							background-color: yellow;
+						</blockquote>
+						} 
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close09">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						input:focus {
+						<blockquote>
+							background-color: yellow;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>form</b> <span class="teal">action="http://www.readbook.co.id/css/form_action.asp" method="get"</span>> <br>
+						<blockquote>
+							First name: <<b>input</b> <span class="teal">type="text" name="fname"</span>><<b>br</b>> <br>
+							Last name: <<b>input</b> <span class="teal">type="text" name="lname"</span>><<b>br</b>> <br>
+							<<b>input</b> <span class="teal">type="submit" value="Submit"</span>>
+						</blockquote>
+						<<b>/form</b>> <br><br>
+						
+						<<b>p</b>><<b>b</b>>Note:<<b>/</b>b> IE8 supports the :focus pseudo-class only if a !DOCTYPE is specified.<<b>/p</b>> <br><br>
+						
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan09()" class="exbutton">Klik disini</button>
+					<button onclick="buka09()" class="exbutton"> Open </button>
+					<button onclick="tutup09()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan09">
+					
+					<form>
+						First name: <input type="text" name="fname"><br>
+						Last name: <input type="text" name="lname"><br>
+						<input type="submit" value="Submit">
+					</form>
+					
+					<p><b>Note:</b> IE8 supports the :focus pseudo-class only if a !DOCTYPE is specified.</p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>All CSS Pseudo Classes </h2>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Selector</th>
+							<th>Contoh</th>
+							<th>Deskripsi Contoh</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> :active </td>
+							<td> a:active </td>
+							<td>Menyeleksi link (sedang) aktif</td>
+						</tr>
+						<tr>
+							<td> :checked </td>
+							<td> input:checked </td>
+							<td>Menyeleksi setisp element <<b>input</b>> yang diperiksa</td>
+						</tr>
+						<tr>
+							<td> :disabled </td>
+							<td> input:disabled </td>
+							<td>Menyeleksi setiap element <<b>input</b>> yang dilumpuhkan atau dinonaktifkan</td>
+						</tr>
+						<tr>
+							<td> :empty </td>
+							<td> p:empty </td>
+							<td>Menyeleksi setisp element <<b>p</b>> yang tidak memiliki anak (children)</td>
+						</tr>
+						<tr>
+							<td> :enabled </td>
+							<td> input:enabled </td>
+							<td>Menyeleksi setisp element <<b>input</b>> yang dimungkinkan (atau diaktifkan)</td>
+						</tr>
+						<tr>
+							<td> :first-child </td>
+							<td> p:first-child </td>
+							<td>Menyeleksi setiap element <<b>p</b>> yang merupakan anak pertama dari element induknya (parent)</td>
+						</tr>
+						<tr>
+							<td> :first-of-type </td>
+							<td> p:first-of-type </td>
+							<td>Menyeleksi setiap element <<b>p</b>> merupakan element <<b>p</b>> pertama dari element induknya
+						</tr>
+						<tr>
+							<td> :focus </td>
+							<td> input:focus </td>
+							<td>Menyeleksi element <<b>inpu</b>> yang memiliki focus ()</td>
+						</tr>
+						<tr>
+							<td> :hover </td>
+							<td> a:hover </td>
+							<td>Menyeleksi link pada mouse over</td>
+						</tr>
+						<tr>
+							<td> :in-range </td>
+							<td> input:in-range </td>
+							<td>Menyeleksi element <<b>inpu</b>> dengan sebuah nilai dengan sebuah jarak tertentu</td>
+						</tr>
+						<tr>
+							<td> :invalid </td>
+							<td> input:invalid </td>
+							<td>Menyeleksisemua element <<b>input</b>> dengan sebuah nilai invalid (tidak sah)</td>
+						</tr>
+						<tr>
+							<td> :lang(language) </td>
+							<td> p:lang(it) </td>
+							<td>Menyeleksi setisp element <<b>p</b>> dengan nilai attribute <b>lang</b> yang dimuali dengan "it"</td>
+						</tr>
+						<tr>
+							<td> :last-child </td>
+							<td> p:last-child </td>
+							<td>Menyeleksi setiap element <<b>p</b>> yang merupakan anak terakhir dari elemenr induknya</td>
+						</tr>
+						<tr>
+							<td> :last-of-type </td>
+							<td> :last-of-type </td>
+							<td>Menyeleksi setiap element <<b>p</b>> yang merupakan element terakhir dari element induknya</td>
+						</tr>
+						<tr>
+							<td> :link </td>
+							<td> a:link </td>
+							<td>Menyeleksi semua link yang belum dikunjungi</td>
+						</tr>
+						<tr>
+							<td> :not(selector) </td>
+							<td> :not(p) </td>
+							<td>Menyeleksi setiap element yang bukan merupakan element <<b>p</b>> </td>
+						</tr>
+						<tr>
+							<td> :nth-child(n) </td>
+							<td> p:nth-child(2) </td>
+							<td>Menyeleksi setiap element <<b>p</b>> yang merupakan anak kedua dari element induknya</td>
+						</tr>
+						<tr>
+							<td> :nth-last-child(n) </td>
+							<td> p:nth-last-child(2) </td>
+							<td>Menyeleksi setiap element <<b>p</b>> yang merupakan anak kedua dari element induknya, penghiungan dari anak terakhir (last child)</td>
+						</tr>
+						<tr>
+							<td> :nth-last-of-type(n) </td>
+							<td> p:nth-last-of-type(2) </td>
+							<td>Menyeleksi setiap element <<b>p</b>> yang merupakan element <<b>p</b>> kedua dari element induknya, penghitungan dari anak terakhir (last child)</td>
+						</tr>
+						<tr>
+							<td> :nth-of-type(n) </td>
+							<td> p:nth-of-type(2) </td>
+							<td>Menyeleksi setiap element <<b>p</b>> yang merupakan element <<b>p</b>> kedua dari element induknya</td>
+						</tr>
+						<tr>
+							<td> :only-of-type </td>
+							<td> p:only-of-type </td>
+							<td>Menyeleksi setiap element <<b>p</b>> yang hanya merupakan element <<b>p</b>> dari element induknya</td>
+						</tr>
+						<tr>
+							<td> :only-child </td>
+							<td> p:only-child </td>
+							<td>Menyeleksi setiap element <<b>p</b>> yang hanya merupakan element anak dari element induknya</td>
+						</tr>
+						<tr>
+							<td> :optional </td>
+							<td> input:optional </td>
+							<td>Menyeleksi element <<b>input</b>> dengan  tidak ada attribute <b>"required"</b> </td>
+						</tr>
+						<tr>
+							<td> :out-of-range </td>
+							<td> input:out-of-range </td>
+							<td>Menyeleksi element <<b>input</b>> dengan sebuah nilai diluar jarak tertentu</td>
+						</tr>
+						<tr>
+							<td> :read-only </td>
+							<td> input:read-only </td>
+							<td>Menyeleksi element <<b>input</b>> dengan sebuah nilai attribute "readonly" yang ditentukan</td>
+						</tr>
+						<tr>
+							<td> :read-write </td>
+							<td> input:read-write </td>
+							<td>Menyeleksi element <<b>input</b>> dengan  tidak ada attribute "readonly"</td>
+						</tr>
+						<tr>
+							<td> :required </td>
+							<td> input:required </td>
+							<td>Menyeleksi element <<b>input</b>> dengan sebuah nilai attribute "required" yang ditentukan</td>
+						</tr>
+						<tr>
+							<td> :root </td>
+							<td> root </td>
+							<td>Menyeleksi document's root element </td>
+						</tr>
+						<tr>
+							<td> :target </td>
+							<td> #news:target </td>
+							<td>Menyeleksi element (ber-id) #news aktif saat ini (diklik pada sebuah URL yang berisikan nama anchor) </td>
+						</tr>
+						<tr>
+							<td> :valid </td>
+							<td> input:valid </td>
+							<td>Menyeleksi semua element <<b>input</b>> dengan sebuah nilai valid atau sah </td>
+						</tr>
+						
+						<tr>
+							<td> :visited </td>
+							<td> a:visited </td>
+							<td>Menyeleksi semua link yang (sudah) dikungingi
+						</tr>
+					</tbody>
+				</table>
+				
+				<h2>All CSS Pseudo Elements</h2>
+				<table class="table">
+					<thead>
+						<tr> 
+							<th>Selector</th>
+							<th>Contoh</th>
+							<th>Deskripsi Contoh</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> ::after </td>
+							<td> p::after </td>
+							<td> Menyisipkan kontent setelah setiap element <<b>p</b>> </td>
+						</tr>
+						<tr>
+							<td> ::before </td>
+							<td> p::before </td>
+							<td> Menyisipkan kontent sebelum setiap element <<b>p</b>> </td>
+						</tr>
+						<tr>
+							<td> ::first-letter </td>
+							<td> p::first-letter </td>
+							<td> Menyeleksi huruf pertama dari setiap element <<b>p</b>> </td>
+						</tr>
+						<tr>
+							<td> ::first-line </td>
+							<td> p::first-line </td>
+							<td> Menyeleksi baris pertama dari setiap element <<b>p</b>> </td>
+						</tr>
+						<tr>
+							<td> ::selection </td>
+							<td> p::selection </td>
+							<td> Menyeleksi portion dari sebuah element yang diseleksi oleh user </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS combinators.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS pseudo-element.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+<style type="text/css">
+video {
+	margin-bottom:15px;
+	border:5px black solid;
+	padding:10px;
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML5 Video</h1>
+
+			</div>
+			
+			
+<section>			
+			<article>
+				 
+					 <video width="100%" height="auto" controls>
+					   <source src="../sorry.mp4" type="video/mp4"/>
+					 </video>
+
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Playing Videos in HTML </h2>
+				<p> Memainkan Video di HTML</p>
+				<p> Sebelum HTML5, Tidak ada standar untuk menampilkan video pada sebuah web page. </p>
+				<p> Sebelum HTML5, video hanya bisa dimainkan dengan sebuah  plug-in (seperti flash). </p>
+				<p> Element <<b>video</b>> HTML5 menentukan sebuah cara standar untuk menanamkan sebuah video daoam web page. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Browser Support </h2>
+				<p> Nomor pada tabel menentukan browser versi pertams yang mendukung secara penuh element <<b>video</b>>. </p>
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td class="left"> Element</td>
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> <<b>video</b>> </td>
+							<td> 4.0 </td>
+							<td> 9.0 </td>
+							<td> 3.5 </td>
+							<td> 4.0 </td>
+							<td> 10.5 </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> The HTML <b class="blue"><<b>video</b>></b> Element </h2>
+				<p> Untuk menampilkan sebuah video dalam Html, gunakanlah element <<b>video</b>>: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br>
+						<<b>html</b>><br>
+							<<b>head</b>><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br><br>
+						
+							<<b>video</b> <span class="teal">width="320" height="240" controls</span>><br>
+							  <<b>source</b> <span class="teal">src="movie.mp4" type="video/mp4"</span>> <br>
+							  <<b>source</b> <span class="teal">src="movie.ogg" type="video/ogg"</span>> <br>
+							Your browser does not support the video tag. <br>
+							<<b>/video</b>> <br><br>
+								
+							<<b>/body</b>><br>
+						<<b>/html</b>>
+						
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						<video width="320" height="240" controls>
+						  <source src="movie.mp4" type="video/mp4">
+						  <source src="movie.ogg" type="video/ogg">
+						Your browser does not support the video tag.
+						</video>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> How it Works </h2>
+				<p> Bagaimana Video Bekerja. </p>
+				<p> Attribute <b>controls</b> menambahakan kontrol video, seperti play, pause, volume. </p>
+				<p> Ide yang bagus untuk selalu memasukan attribute <b>width</b> dan <b>height</b>. </p>
+				<p> Jika <b>height</b> dan <b>width</b> tidak diatur, browser tidak akan mengetahui ukuran video. Efeknya akan menjadi halaman akan berubah (atau flicker) selama video dimuat. </p>
+				<p> Teks diantara tag <<b>video</b>> dan <<b>/video</b>> hanya akan ditampilkan dalam browser yang tidak men-support element <<b>video</b>>. </p>
+				<p> Element <<b>source</b>> bisa me-link ke file video yang berbeda. Browser akan menggunakan format yang diakui pertama (first recognized format). </p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> HTML <b class="blue"><<b>video</b>></b> Autoplay </h2>
+				<p> Untuk memulai sebuah video secara otomatis gunakanlah attribute <b>autoplay</b>: </p>
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br>
+						<<b>html</b>><br>
+							<<b>head</b>><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br><br>
+						
+							<<b>video</b> <span class="teal">width="320" height="240" autoplay</span>><br>
+							  <<b>source</b> <span class="teal">src="movie.mp4" type="video/mp4"</span>> <br>
+							  <<b>source</b> <span class="teal">src="movie.ogg" type="video/ogg"</span>> <br>
+							Your browser does not support the video tag. <br>
+							<<b>/video</b>> <br><br>
+								
+							<<b>/body</b>><br>
+						<<b>/html</b>>
+						
+					</div>
+					<button onclick="tampilkan02()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+						<video width="320" height="240" autoplay>
+						  <source src="../sorry.mp4" type="video/mp4">
+						  <source src="movie.ogg" type="video/ogg">
+						Your browser does not support the video tag.
+						</video>
+					</div>
+				</article>
+				
+				<div class="nasehat">
+				<p> Attribute <b>autoplay</b> tidak bekerja di perangkat mobile seperti <b>iPad</b> dan <b>iPhone</b>. </p>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML Video - Browser Support </h2>
+				<p> Sekarang ini, ada 3 format video yang disupport untuk element <<b>video</b>>: MP4, WebM, dan Ogg: </p>
+				
+				<table>
+					<thead>
+						<tr>
+							<th> Browser </th>
+							<th> MP4 </th>
+							<th> WebM </th>
+							<th> Ogg </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> Internet Explorer </td>
+							<td> YES </td>
+							<td> NO </td>
+							<td> NO </td>
+						</tr>
+						<tr>
+							<td> Chrome </td>
+							<td> YES </td>
+							<td> YES </td>
+							<td> YES </td>
+						</tr>
+						<tr>
+							<td> Firefox </td>
+							<td> YES </td>
+							<td> YES </td>
+							<td> YES </td>
+						</tr>
+						<tr>
+							<td> Safari </td>
+							<td> YES </td>
+							<td> NO </td>
+							<td> NO </td>
+						</tr>
+						<tr>
+							<td> Opera </td>
+							<td> YES (untuk Opera 25) </td>
+							<td> YES </td>
+							<td> YES </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML Video - Media Types </h2>
+				<table>
+					<thead>
+						<tr>
+							<th> File Format </th>
+							<th> Media Type </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> MP4 </td>
+							<td> video/mp4 </td>
+						</tr>
+						<tr>
+							<td> WebM </td>
+							<td> video/webm </td>
+						</tr>
+						<tr>
+							<td> Ogg </td>
+							<td> video/ogg </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML Video - Methods, Properties, and Events </h2>
+				<p> HTML5 mendefinisikan metode DOM, dan event untuk element <<b>video</b>>. </p>
+				<p> Ini mengizinkan kamu untuk load, play, dan pause video, sebagus penyetingan durasi dan volume. </p>
+				<p> Ada juga DOM events yang bisa memberitahukan kamu ketika sebuah video mulai dimainkan, dipause dan sebagainya. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br>
+						<<b>html</b>><br>
+							<<b>head</b>><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br><br>
+						
+							<<b>div</b> <span class="teal">style="text-align:center"</span>> <br> 
+							<<b>button</b> <span class="teal">onclick="playPause()"</span>>Play/Pause<<b>/button</b>> <br> 
+							<<b>button</b> <span class="teal">onclick="makeBig()"</span>>Big<<b>/button</b>> <br>
+							<<b>button</b> <span class="teal">onclick="makeSmall()"</span>>Small<<b>/button</b>> <br>
+							<<b>button</b> <span class="teal">onclick="makeNormal()"</span>>Normal<<b>/button</b>> <br>
+							<<b>br</b>><<b>br</b>> <br>
+							<<b>video</b> <span class="teal">width="320" height="240" autoplay</span>><br>
+							  <<b>source</b> <span class="teal">src="movie.mp4" type="video/mp4"</span>> <br>
+							  <<b>source</b> <span class="teal">src="movie.ogg" type="video/ogg"</span>> <br>
+							Your browser does not support the video tag. <br>
+							<<b>/video</b>> <br>
+							<<b>/div</b>> <br>
+							
+							<<b>script</b>> <br> 
+							<code>var</code> myVideo = document.getElementById("video1");  <br>
+							<br>
+							<code>function</code> playPause() {
+							<blockquote>
+							<code>if</code> (myVideo.paused) <br>
+							myVideo.play(); <br>
+							<code>else </code> <br>
+							myVideo.pause(); 
+							</blockquote>
+							} <br>
+							<br>
+							<code>function</code> makeBig() { 
+							<blockquote>myVideo.width = 560; </blockquote>
+							} <br>
+							<br>
+							
+							<code>function</code> makeSmall() { 
+							<blockquote>myVideo.width = 320; </blockquote>
+							} <br>
+							<br>
+							<code>function</code> makeNormal() { 
+							<blockquote>myVideo.width = 420; </blockquote>
+							} <br>
+							<<b>/script</b>> <br> 
+							<<b>p</b>>Video courtesy of <<b>a</b> <span class="teal">href="http://www.bigbuckbunny.org/" target="_blank"</span>>
+							Big Buck Bunny<<b>/a</b>>.<<b>/p</b>> <br>
+							<br>
+							<<b>/body</b>><br>
+						<<b>/html</b>>
+						
+					</div>
+					<button onclick="tampilkan03()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+						
+						<div style="text-align:center"> 
+						<button onclick="playPause()">Play/Pause</button> 
+						<button onclick="makeBig()">Big</button>
+						<button onclick="makeSmall()">Small</button>
+						<button onclick="makeNormal()">Normal</button>
+						<br><br>
+						<video id="video1" width="420">
+						<source src="../sorry.mp4" type="video/mp4">
+						<source src="../sorry.ogg" type="video/ogg">
+						Your browser does not support HTML5 video.
+						</video>
+						</div> 
+						<p>Video courtesy of <a href="http://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p>
+					</div>
+				</article>
+				<p> Untuk referensi DOM penuh, silahkan kunjungi <a href="HTML5 Audio/Video DOM Reference.html" >HTML5 Audio/Video DOM Reference</a>.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML5 Video Tags </h2>
+				<table>
+					<thead>
+						<tr>
+							<th> Tag </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> <<b>video</b>> </td>
+							<td> Mendefinisikan sebuah video atau movie </td>
+						</tr>
+						<tr>
+							<td> <<b>source</b>> </td>
+							<td> Mendefinisikan mutiple media resource (sumber media multiple) seperti <<b>video</b>> dan <<b>audio</b> </td>
+						</tr>
+						<tr>
+							<td> <<b>track</b>> </td>
+							<td> Mendefinisikan text track (jejak teks) pads media players </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML media.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML5 audio.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+	if (myVideo.paused) {
+	myVideo.play(); 
+	}else{ 
+	myVideo.pause(); 
+	}
+} 
+
+function makeBig() { 
+	myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+	myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+	myVideo.width = 420; 
+} 
+</script> 
+</body>
+</html>

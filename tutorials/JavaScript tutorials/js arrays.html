@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | JavaScript | js array</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="javaScript.js"></script>
+<script type="text/javascript" src="javaScript2.js"></script>
+<script type="text/javascript" src="javaScript3.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical"> <!--open link-->
+		<button onclick="openMenu()" id="menu">Open Menu</button>
+		<button onclick="closeMenu()" id="menu">Close Menu</button>
+		
+		<div id="vertical">
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch()"> JavaScript Tutorial</button>
+			<div class="drop-content" id="myDropdown">
+			<input type="text" class="myInput" id="myInput" placeholder="Cari" onkeyup="filterFunction()"/>
+			<ol>
+				<a href="js home.html"><li> Home </li></a>
+				<a href="js introduction.html"><li> Introduction </li></a>
+				<a href="js where to.html"><li> Where To </li></a>
+				<a href="js output.html"><li> Output </li></a>
+				<a href="js syntax.html"><li> Syntax </li></a>
+				<a href="js statements.html" ><li> Statements </li></a>
+				<a href="js comments.html" ><li> Comments </li></a>
+				<a href="js variables.html"><li> Variable </li></a>
+				<a href="js operators.html"><li> Operators </li></a>
+				<a href="js arithmetic.html"><li> Arithmetic </li></a>
+				<a href="js assignment.html"><li> Assignment </li></a>
+				<a href="js data types.html"><li> Data Types </li></a>
+				<a href="js functions.html"><li> Functions </li></a>
+				<a href="js objects.html"><li> Objects </li></a>
+				<a href="js scope.html"><li> Scope </li></a>
+				<a href="js events.html"><li> Events </li></a>
+				<a href="js strings.html"><li> string </li></a>
+				<a href="js string methods.html"><li> Strings Method </li></a>
+				<a href="js numbers.html"><li> Numbers </li></a>
+				<a href="js number methods.html"><li> Number Methods </li></a>
+				<a href="js math.html"><li> Math </li></a>
+				<a href="js random.html" ><li> Math Random </li></a>
+				<a href="js dates.html"><li> Dates </li></a>
+				<a href="js date formats.html" ><li> Date Formats </li></a>
+				<a href="js date methods.html" ><li> Date Methods </li></a>
+				<a href="js get date methods.html" ><li> Date get Methods </li></a>
+				<a href="js set date methods.html" ><li> Date Set Methods </li></a>
+				<a href="js arrays.html"><li> Arrays </li></a>
+				<a href="js array methods.html" ><li> Array Methods </li></a>
+				<a href="js array sort.html"><li> Array Sort </li></a>
+				<a href="js array iteration.html"><li> Array Iteration </li></a>
+				<a href="js booleans.html" ><li> boolean </li></a>
+				<a href="js comparisons.html" ><li> Comparisons </li></a>
+				<a href="js conditions.html" ><li>Conditions</li></a>
+				<a href="js switch.html" ><li>Switch </li></a>
+				<a href="js loop for.html"><li> Loop For </li></a>
+				<a href="js loop while.html" ><li>Loop while</li></a>
+				<a href="js break.html" ><li>Break</li></a>
+				<a href="js type conversion.html" ><li> Types conversion</li></a>
+				<a href="js bitwise.html" ><li> Bitwise </li></a>
+				<a href="js RegExp.html" ><li>RegExp</li></a>
+				<a href="js errors.html" ><li>Errors </li></a>
+				<a href="js debugging.html"><li>Debugging </li></a>
+				<a href="js hoisting.html" ><li>Hoisting</li></a>
+				<a href="js strict mode.html"><li>Strict mode</li></a>
+				<a href="js this keyword.html" ><li> this Keyword </li></a>
+				<a href="js let.html" ><li> Let </li></a>
+				<a href="js const.html" ><li> Const </li></a>
+				<a href="js style guide.html" ><li>Style guide</li></a>
+				<a href="js best practices.html" ><li>best practices </li></a>
+				<a href="js mistakes.html"><li> Mistakes </li></a>
+				<a href="js performance.html" ><li>Performance</li></a>
+				<a href="js reserved words.html" ><li>Reserved words</li></a>
+				<a href="js versions.html" ><li> Versions </li></a>
+				<a href="js version ES5.html" ><li class="redZone"> Version ES5 </li></a>
+				<a href="js version ES6.html" ><li class="redZone"> Version ES6 </li></a>
+				<a href="js JSON.html"><li>JSON</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch2()"> JavaScript Formulir</button>
+			<div class="drop-content" id="myDropdown2">
+			<input type="text" class="myInput" id="myInput2" placeholder="Cari" onkeyup="filterFunction2()"/>
+			<ol>
+				<a href="forms validation.html" ><li>Forms Validation</li></a>
+				<a href="forms API.html" ><li class="redZone">Forms API</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch3()"> JavaScript Object</button>
+			<div class="drop-content" id="myDropdown3">
+			<input type="text" class="myInput" id="myInput3" placeholder="Cari" onkeyup="filterFunction3()"/>
+			<ol>
+				<a href="object definitions.html" ><li>Object Definitions</li></a>
+				<a href="object properties.html" ><li>Object Properties</li></a>
+				<a href="object methods.html"><li class="redZone">Object Methods</li></a>
+				<a href="object accessors.html" ><li>Object accessors</li></a>
+				<a href="object constructors.html" ><li>Object constructor</li></a>
+				<a href="object prototypes.html" ><li>Object Prototypes</li></a>
+				<a href="object ECMAScript5.html" ><li class="redZone">Object ECMAScript5</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch4()"> JavaScript Function</button>
+			<div class="drop-content" id="myDropdown4">
+			<input type="text" class="myInput" id="myInput4" placeholder="Cari" onkeyup="filterFunction4()"/>
+			<ol>
+				<a href="funtion definitions.html" ><li>Function Definitions</li></a>
+				<a href="function parameters.html" ><li>Function Parameters</li></a>
+				<a href="function invocation.html" ><li>Function Invocation</li></a>
+				<a href="function closures.html" ><li>Function Closures</li></a>
+				<a href="function apply.html" ><li class="redZone">Function Apply</li></a>
+				<a href="function call.html" ><li>Function Call</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch5()">  JavaScript HMTL DOM </button>
+			<div class="drop-content" id="myDropdown5">
+			<input type="text" class="myInput" id="myInput5" placeholder="Cari" onkeyup="filterFunction5()"/>
+			<ol>
+				<a href="DOM intro.html" ><li> DOM Introduction </li></a>
+				<a href="DOM methods.html" ><li> DOM Methods </li></a>
+				<a href="DOM document.html" ><li> DOM Documents</li></a>
+				<a href="DOM elements.html" ><li> DOM Elements  </li></a>
+				<a href="DOM HTML.html" ><li> DOM HTML</li></a>
+				<a href="DOM CSS.html" ><li> DOM CSS  </li></a>
+				<a href="DOM animations.html" ><li> DOM Animations </li></a>
+				<a href="DOM events.html" ><li> DOM Events </li></a>
+				<a href="DOM eventListener.html" ><li> DOM EventListener </li></a>
+				<a href="DOM navigation.html" ><li> DOM Navigation </li></a>
+				<a href="DOM nodes.html" ><li> DOM Nodes </li></a>
+				<a href="DOM nodelist.html" ><li> DOM Nodelist </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch6()"> JavaScript Browser BOM </button>
+			<div class="drop-content" id="myDropdown6">
+			<input type="text" class="myInput" id="myInput6" placeholder="Cari" onkeyup="filterFunction6()"/>
+			<ol>
+				<a href="BOM window.html" ><li> Window </li></a>
+				<a href="BOM screen.html" ><li> Screen </li></a>
+				<a href="BOM location.html" ><li> Location </li></a>
+				<a href="BOM history.html" ><li> History  </li></a>
+				<a href="BOM navigator.html" ><li> Navigator </li></a>
+				<a href="BOM popup alert.html" ><li> Popup Alert </li></a>
+				<a href="BOM timing.html" ><li> Timing </li></a>
+				<a href="BOM cookies.html" ><li> Cookies </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch7()">JavaScript AJAX</button>
+			<div class="drop-content" id="myDropdown7">
+			<input type="text" class="myInput" id="myInput7" placeholder="Cari" onkeyup="filterFunction7()"/>
+			<ol>
+				<a href="AJAX intro.html" ><li> AJAX Introduction</li></a>
+				<a href="AJAX XMLHttpRequest.html" ><li> AJAX XMLHttpRequest </li></a>
+				<a href="AJAX request.html" ><li> AJAX Request </li></a>
+				<a href="AJAX respone.html" ><li class="redZone"> AJAX Response </li></a>
+				<a href="AJAX XML file.html" ><li> AJAX XML File</li></a>
+				<a href="AJAX PHP.html" ><li> AJAX PHP </li></a>
+				<a href="AJAX ASP.html" ><li> AJAX ASP </li></a>
+				<a href="AJAX database.html" ><li> AJAX Database </li></a>
+				<a href="AJAX XML applications.html" ><li> AJAX XML Application </li></a>
+				<a href="AJAX examples.html" ><li> AJAX Example </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch8()">JavaScript JSON</button>
+			<div class="drop-content" id="myDropdown8">
+			<input type="text" class="myInput" id="myInput8" placeholder="Cari" onkeyup="filterFunction8()"/>
+			<ol>
+				<a href="JSON intro.html" ><li class="redZone"> JSON Introduction</li></a>
+				<a href="JSON syntax.html" ><li class="redZone"> JSON Syntax </li></a>
+				<a href="JSON vs XML.html" ><li class="redZone"> JSON vs XML </li></a>
+				<a href="JSON data types.html" ><li class="redZone"> JSON Data Types </li></a>
+				<a href="JSON parse.html" ><li class="redZone"> JSON parse </li></a>
+				<a href="JSON stringify.html" ><li class="redZone"> JSON Stringify</li></a>
+				<a href="JSON objects.html" ><li class="redZone"> JSON Objects </li></a>
+				<a href="JSON arrays.html" ><li class="redZone"> JSON Arrays </li></a>
+				<a href="JSON PHP.html" ><li class="redZone"> JSON PHP </li></a>
+				<a href="JSON HTML.html" ><li class="redZone"> JSON HTML </li></a>
+				<a href="JSON JSONP.html" ><li class="redZone"> JSON JSONP </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch9()">JavaScript Reference</button>
+			<div class="drop-content" id="myDropdown9">
+			<input type="text" class="myInput" id="myInput9" placeholder="Cari" onkeyup="filterFunction9()"/>
+			<ol>
+				<li> <p> JavaScript References </p> </li>
+				<a href="JavaScript references/overview.html" > <li> Overview </li> </a>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch11()">JavaScript</button>
+					<div class="drop-content" id="myDropdown11">
+					<input type="text" class="myInput" id="myInput11" placeholder="Cari" onkeyup="filterFunction11()"/>
+					<ol>
+						<a href="JavaScript references/string reference.html" ><li>String Reference </li></a>
+						<a href="JavaScript references/number reference.html" ><li>Number Reference </li></a>
+						<a href="JavaScript references/operator reference.html" ><li>Operator Reference </li></a>
+						<a href="JavaScript references/statement reference.html" ><li>Statement Reference </li></a>
+						<a href="JavaScript references/math reference.html" ><li>Math Reference </li></a>
+						<a href="JavaScript references/date reference.html" ><li>Date Reference </li></a>
+						<a href="JavaScript references/array reference.html" ><li> Array Reference </li></a>
+						<a href="JavaScript references/boolean reference.html" ><li> Boolean Reference </li></a>
+						<a href="JavaScript references/RegExp reference.html" ><li> RegExp Reference </li></a>
+						<a href="JavaScript references/global reference.html" ><li> Global Reference </li></a>
+						<a href="JavaScript references/conversion reference.html" ><li> Conversion Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()">Browser Object Model (BOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="JavaScript references/BOM window reference.html" ><li> BOM Window Reference </li></a>
+						<a href="JavaScript references/BOM navigator reference.html" ><li> BOM Navigator Reference </li></a>
+						<a href="JavaScript references/BOM screen reference.html" ><li> BOM screen Reference </li></a>
+						<a href="JavaScript references/BOM history reference.html" ><li> BOM History Reference </li></a>
+						<a href="JavaScript references/BOM location reference.html" ><li> BOM Location Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()"> HTML Document Object Model (DOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="JavaScript references/DOM document reference.html" ><li> DOM Documents Reference </li></a>
+						<a href="JavaScript references/DOM element reference.html" ><li> DOM Elements Reference </li></a>
+						<a href="JavaScript references/DOM attribute reference.html" ><li> DOM Attributes Reference </li></a>
+						<a href="JavaScript references/DOM event reference.html" ><li> DOOM Events Reference </li></a>
+						<a href="JavaScript references/DOM style.html" ><li> DOM Style Reference </li></a>
+					</ol>
+					</div>
+			</ol>
+			</div>
+			</div>
+		</div>
+		</div>
+		</div> <!--close Link-->
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> Array JavaScript  </h1>
+				<p>
+				Array digunakan untuk menyimpan nilai lebih dari satu dalam satu variabel.
+				</p>
+			</div>
+<section>
+			<article>
+				<h1> Tampilan Array </h1>
+				<p>
+				Pada contoh ini, kita menggunakan sebuah script untuk menampilkan array dalam element
+				 paragraf dengan id="demo"
+				</p><br>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh </i></h1>
+			<div class="example-content">	
+			<q lang="code">p id="demo"</q> <q lang="code">/p</q><br><br>						
+			<q lang="code">script</q><br>
+			<div class="redZone">
+				<span class="purple">var</span> cars =["Gallardo", "Lamborghini", "RX-8"];<br>
+			</div>
+			document.getElementById(<span class="blue">"demo"</span>).innerHTML= cars;<br>
+			<q lang="code">/script</q>
+			</div>
+			</article>
+			
+			<article>
+				<p>
+				Baris pertama (didalam script) menciptakan sebuah array yang dinamai cars.<br><br>
+				Baris kedua "mencari" element dengan id="demo" dan "menampilkan" array dengan "innerHTML".
+				</p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Cobalah oleh Kamu Sendiri</h1>
+				<p>
+				Ciptakanlah sebuah Array dan berikan nilai untuk itu
+				</p>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh </i></h1>
+			<h4>Input </h4>
+			<div class="example-content">	
+			<q lang="code">p id="demo"</q> <q lang="code">/p</q><br><br>						
+			<q lang="code">script</q><br>
+			<div class="redZone">
+				<span class="purple">var</span> animes = ["Naruto", "Dragon Ball", "Yu-Gi-Oh!", 'Doraemon'];<br>
+			</div>
+			document.getElementById(<span class="blue">"demo"</span>).innerHTML= animes[0];<br>
+			<q lang="code">/script</q>
+			</div>
+			<h4> Output </h4>
+			<div class="example-content">
+			<button onclick="$arrays1()"> Klik disini </button>
+			<p id="$arrays01"> Nilai dari penyeleksian animes[0] adalah </p>
+			</div>
+			</article>
+			
+			<article>
+				<p>
+				Spasi atau baris baru tidaklah penting, pendeklarasian bisa dirangkai menurun seperti:
+				</p>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh </i></h1>
+			<h4>Input </h4>
+			<div class="example-content">	
+			<q lang="code">p id="demo"</q> <q lang="code">/p</q><br><br>						
+			<q lang="code">script</q><br>
+			<div class="redZone">
+				<span class="purple">var</span> animes = [<br>
+				<blockquote>
+				"Naruto", <br>
+				"Dragon Ball", <br>
+				"Yu-Gi-Oh!", <br>
+				'Doraemon'<br>
+				</blockquote>
+				];<br>
+			</div>
+			document.getElementById(<span class="blue">"demo"</span>).innerHTML= animes[2];<br>
+			<q lang="code">/script</q>
+			</div>
+			<h4> Output </h4>
+			<div class="example-content">
+			<button onclick="$arrays2()"> Klik disini </button>
+			<p id="$arrays02"> Nilai dari penyeleksian animes[2] adalah </p>
+			</div>
+			</article>
+			
+			<!--ATTENTION-->
+			<article>
+			<table class="attention">
+			<tr>
+			<td class="td-left">
+			<h1>!</h1>
+			</td>
+			<td>
+			Jangan pernah Menaruh menaruh tanda koma pada element terakhir ("doraemon",), efeknya adalah
+			browser tidak konsekuenan antara satu sisi dan sisi lain. 
+			(browser akan mengira bahwa ada element lain setelahnya)
+			</td>
+			</tr>
+			</table>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Apa itu Array ?</h1>
+				<p>
+				Array adalah variabel special, dimana kamu bisa menaruh nilai lebih dari satu dalam satu waktu.<br><br>
+				Jika kamu memiliki daftar item (daftar nama mobil, seperti contoh), penyusunan itu dalam satu variabel 
+				bisa dilihat seperti ini:
+				</p>
+			</article>
+			
+			<article class="simple-example">
+			<span class="purple">var</span> car1 = "Gallardo";
+			<span class="purple">var</span> car2 = "Nissan";
+			<span class="purple">var</span> car3 ='Audi';
+			</article>
+			
+			<article>
+				<p>
+				Biarpun, apakah jika kamu mau me-loop sepanjang cars dan mencari satu yang spesifik. dan
+				apakah jika kamu tidak hanya memiliki 3 item tapi 300 item? <br><br>
+				Solusinya adalah Array. <br><br>
+				Sebuah array dapat menaruh banyak nilai dibawah satu nama, dan kamu bisa mengaksesnya dengan
+				pemicu untuk nomor urut (index number)
+				</p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Pembuatan Array </h1>
+				<p>
+				Penggunaan literal Array adalah cara paling mudah untuk membuat Array JavaScript.<br><br>
+				Sintaksis:
+				</p>
+				<article class="simple-example">
+					var <i>namaArray</i>= ["item1", "item2", ....];
+				</article>
+				
+				<p> contoh: </p>
+				
+				<article class="simple-example">
+					var animals = ["Tiger", "Panda", "Koala", "sheep"];
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Penggunaan Kata Kunci new JavaScript </h1>
+				<p>
+				Contoh berikut juga membuat sebuah array dan memberikan nilai pada array:
+				</p>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh </i></h1>
+			<h4>Input </h4>
+			<div class="example-content">	
+			<q lang="code">p id="demo"</q> <q lang="code">/p</q><br><br>						
+			<q lang="code">script</q><br>
+			<div class="redZone">
+				<span class="purple">var</span> cars =  new Array("Gallardo", "Nissan", 'Audi', "RX-8");<br>
+
+			</div>
+			document.getElementById(<span class="blue">"demo"</span>).innerHTML= cars[3];<br>
+			<q lang="code">/script</q>
+			</div>
+			<h4> Output </h4>
+			<div class="example-content">
+			<button onclick="$arrays3()"> Klik disini </button>
+			<p id="$arrays03"> Nilai dari penyeleksian cars[3] adalah </p>
+			</div>
+			</article>
+			
+			<!--ATTENTION-->
+			<article>
+			<table class="attention">
+			<tr>
+			<td class="td-left">
+			<h1>!</h1>
+			</td>
+			<td>
+			Kedua contoh diatas melakukan hal yang sama, ada yang tidak perlu menggunakan <b>new</b> Array().<br>
+			Untuk kesederhanaan, keahlian pembacaan dan kecepatan pengeksekusian, gunakanlah satu yang utama 
+			(Metode literal Array)
+			</td>
+			</tr>
+			</table>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Pengaksesan Elemen - elemen Array </h1>
+				<p>
+				Kamu mengarah pada element Array dengan pemicu <b>index number</b> (nomor urut).<br><br>
+				Pernyataan ini mengakses element pertama dari array bernama cars.
+				</p>
+				<article class="simple-example">
+				var name = cars[0];
+				</article>
+				<p>
+				Pernyataan ini memodifikasi element pertama dalam cars
+				</p>
+				<article class="simple-example">
+				cars[0] = "Ferrari";
+				</article>
+			</article>
+			
+			<!--ATTENTION-->
+			<article>
+			<table class="attention">
+			<tr>
+			<td class="td-left">
+			<h1>!</h1>
+			</td>
+			<td>
+			[0] untuk element pertama, [1] untuk element kedua. Index number dimulai dari angka 0.
+			</td>
+			</tr>
+			</table>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Kamu bisa memiliki Object - object Berbeda dalam Satu Array</h1>
+				<p>
+				Variabel - variabel JavaScript bisa menjadi Object. Array adalah macam - macam object special.<br><br>
+				Karena itu, Kamu bisa memiliki variabel - variabel dengan tipe yang berbeda dalam Array yang sama.<br><br>
+				Kamu bisa memiliki object dalam array, kamu bisa memiliki fungsi dalam array, kamu bisa memiliki 
+				array dalam array.
+				</p>
+			</article>
+			
+			<article class="simple-example">
+			myArray[0] = Date.now;<br>
+			myArray[1] = function;<br>
+			myArray[2] = myCars;
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Array Adalah Object </h1>
+				<p>
+				Array adalah tipe JavaScript yang Special, operator <b>typeof</b> dalam JavaScript akan 
+				mengembalikan "object" untuk Array. <br><br>
+				Tapi, Array JavaScript dideskripsikan terbaik yaitu sebagai Array.<br><br>
+				Array menggunakan <b>number</b> untuk mengakses elementnya. Pada contoh ini, person[0] 
+				mengembalikan "Fajar".
+				</p>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh </i></h1>
+			<h4>Input </h4>
+			<div class="example-content">	
+			<q lang="code">p id="demo"</q> <q lang="code">/p</q><br><br>						
+			<q lang="code">script</q><br>
+				<span class="purple">var</span> person =  ["Fajar", "Ade", "Pamungkas"];<br>
+			document.getElementById(<span class="blue">"demo"</span>).innerHTML= <b class="red">person[0]</b>;<br>
+			<q lang="code">/script</q>
+			</div>
+			<h4> Output </h4>
+			<div class="example-content">
+			<button onclick="$arrays4()"> Klik disini </button>
+			<p id="$arrays04"> Nilai dari penyeleksian person[0] adalah </p>
+			</div>
+			</article>
+			
+			<article>
+				<p> 
+				Object menggunakan <b>nama</b> untuk mengakses "anggotanya", pada contoh ini
+				person.middleName mengembalikan "Ade".
+				</p>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh </i></h1>
+			<h4>Input </h4>
+			<div class="example-content">	
+			<q lang="code">p id="demo"</q> <q lang="code">/p</q><br><br>						
+			<q lang="code">script</q><br>
+				<span class="purple">var</span> person =  {firstName:"Fajar", middleName:"Ade", lastName:"Pamungkas"};<br>
+			document.getElementById(<span class="blue">"demo"</span>).innerHTML= <b class="red">person.middleName</b>;<br>
+			<q lang="code">/script</q>
+			</div>
+			<h4> Output </h4>
+			<div class="example-content">
+			<button onclick="$arrays5()"> Klik disini </button>
+			<p id="$arrays05"> Nilai dari penyeleksian person.middleName adalah </p>
+			</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Meode dan Properti Array </h1>
+				<p>
+				Kekuatan sesungguhnya dari Array JavaScript adalah pembangunan properti dan metode Array.
+				</p>
+
+			
+			<article class="example-box">
+			<div class="example-content">
+			<span class="purple">var</span> x = cars.length; 
+			<em> //properti length mengembalikan berapa banyak anggota dalam array</em><br>
+			<span class="purple">var</span> x = cars.sort(); 
+			<em> //metode sort() menyusun array dalam  susunan alpabet</em><br>
+			</div>
+			</article>
+			<p>
+			Metode array di cover di chapter selanjutnya
+			</p>
+			</article>			
+</section>
+<section>			
+			<article>
+				<h1> Properti length </h1>
+				<p>
+				Properti <b>length</b> dari sebuah Array mengembalikan panjang sebuah array.
+				</p>
+			</article>
+			
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh </i></h1>
+			<h4>Input </h4>
+			<div class="example-content">	
+			<span class="purple">var</span> saudara = [ <br>
+			<blockquote>
+			"Andi Oka Mahendra ", <br>
+			"Iqbal Abdillah ", <br>
+			"Rizki Ade Pangestu ", <br>
+			"Fajar Ade Pamungkas " <br>
+			</blockquote>
+			]; <br>
+			jumlah<b class="red">saudara.length</b>;
+			</div>
+			<h4> Output </h4>
+			<div class="example-content">
+			<p>Properti <b>length</b> mengembalikan berapa jumlah item dalam sebuah array</p>
+			<button onclick="$arrays6()"> Klik disini </button>
+			<p id="$arrays06"> </p>
+			</div>
+			</article>
+			
+			<!--ATTENTION-->
+			<article>
+			<table class="attention">
+			<tr>
+			<td class="td-left">
+			<h1>!</h1>
+			</td>
+			<td>
+			Properti length selalu lebih satu daripada index number array tertinggi.
+			</td>
+			</tr>
+			</table>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Penambahan Element Array </h1>
+				<p>
+				Cara paling mudah untuk menambahkan element Array yaitu menggunakan metode <b>push()</b>:
+				</p>
+			
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">	
+				<span class="purple">var</span> saudara = [ <br>
+				<blockquote>
+				"Andi Oka Mahendra ", <br>
+				"Iqbal Abdillah ", <br>
+				"Rizki Ade Pangestu ", <br>
+				"Fajar Ade Pamungkas " <br>
+				</blockquote>
+				]; <br>
+				tambahkan = <b class="red">saudara.push("Ella")</b>;
+				</div>
+				<h4> Output </h4>
+				<div class="example-content">
+				<p>Metode <b>push()</b> menambahkan data baru dalam sebuah array</p>
+				<button onclick="$arrays7()"> Klik disini </button>
+				<p id="$arrays07"> </p>
+				</div>
+				</article>
+				
+				<p>
+				Element baru juga bisa ditambahkan ke sebuah Array, menggunakan properti <b>length</b>:
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">	
+				<span class="purple">var</span> saudara = [ <br>
+				<blockquote>
+				"Andi Oka Mahendra ", <br>
+				"Iqbal Abdillah ", <br>
+				"Rizki Ade Pangestu ", <br>
+				"Fajar Ade Pamungkas " <br>
+				</blockquote>
+				]; <br>
+				<b class="red">saudara[saudara.length] = "Ella"</b>;
+				</div>
+				<h4> Output </h4>
+				<div class="example-content">
+				<p>Metode <b>push()</b> menambahkan data baru dalam sebuah array</p>
+				<button onclick="$arrays8()"> Klik disini </button>
+				<p id="$arrays08"> </p>
+				</div>
+				</article>
+				
+				<p>
+				Penambahan Element baru dengan index tinggi akan membuat undefined "holes" (lubang dalam array).
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">	
+				<span class="purple">var</span> saudara = [ <br>
+				<blockquote>
+				"Andi Oka Mahendra ", <br>
+				"Iqbal Abdillah ", <br>
+				"Rizki Ade Pangestu ", <br>
+				"Fajar Ade Pamungkas " <br>
+				</blockquote>
+				]; <br>
+				<b class="red">saudara[10] = "Ella"</b>;
+				</div>
+				<h4> Output </h4>
+				<div class="example-content">
+				<p>Metode <b>push()</b> menambahkan data baru dalam sebuah array</p>
+				<button onclick="$arrays9()"> Klik disini </button>
+				<p id="$arrays09"> </p>
+				</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Pengakalan Element Array</h1>
+				<p> 
+				Cara terbaik untuk me-loop sepanjang array adalah menggunakan loop <b>for</b>
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">	
+				function $arrays10(){ <br>
+				<blockquote>
+				var index,text; <br>
+				var text = "";
+				var fruits = ["Apel", 'Mangga', "Jeruk", "Anggur"];<br>
+				<div class="redZone">
+				for(index = 0; index <q lang="no">< </q> fruits.length; index++){<br>
+				<blockquote>
+				text += fruits[index];<br>
+				</blockquote>
+				} </div>
+				document.getElementById("$arrays10").innerHTML=text;
+				</blockquote>
+				}
+				</div>
+				<h4> Output </h4>
+				<div class="example-content">
+				<p>Metode <b>push()</b> menambahkan data baru dalam sebuah array</p>
+				<button onclick="$arrays10()"> Klik disini </button>
+				<p id="$arrays10"> </p>
+				</div>
+				</article>
+				
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Associative Arrays </h1>
+				<p>
+				Banyak bahasa pemrograman yang men-support dengan index nama (named indexes).<br><br>
+				Array dengan index nama disebut dengan <b>associative Array (atau hashes)</b>. <br><br>
+				JavaScript <b>TIDAK</b> mendukung array dengan index nama. <br><br>
+				Dalam JavaScript, <b>array</b> selalu menggunakan <b>index nomor</b>.
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">
+				
+				<span class="purple">var</span> player = []; <br>
+				player[0] = "Draxler"; <br>
+				player[1] = "De Bruyne"; <br>
+				player[2] = "Özil"; <br>
+				<span class="purple">var</span> x = player.length; <em> // player.length akan mengembalikan banyak item</em> <br>
+				<span class="purple">var</span> y = player[2]; <em> // player[2] akan mengembalikan item "Özil"</em>
+				</div>
+				<h4> Output</h4> 
+				<div class="example-content">
+				<button onclick="$arrays11()">Klik disini</button>
+				<p id="$arrays11"></p>
+				</div>
+				</article>
+				
+				<!--ATTENTION-->
+				<article>
+				<table class="attention">
+				<tr>
+				<td class="td-left">
+				<h1>!</h1>
+				</td>
+				<td> <h4> Warning  !!! </h4>
+				Jika kamu menggunakan index nama, JavaScript akan mengartikan lain menjadi Object Standar.<br>
+				Setelah itu, <b>semua metode dan properti array akan menghasilkan hasil yang keliru</b>.
+				</td>
+				</tr>
+				</table>
+				</article>
+				
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">
+				
+				<span class="purple">var</span> player = []; <br>
+				<div class="redZone">
+				player["asRoma"] = "Draxler"; <br>
+				player["manCty"] = "De Bruyne"; <br>
+				player["arsenal"] = "Özil"; <br>
+				</div>
+				<span class="purple">var</span> x = player.length; <em> // player.length akan mengembalikan 0</em> <br>
+				<span class="purple">var</span> y = player[2]; <em>// player[2] akan mengembalikan undefined</em>
+				</div>
+				<h4> Output</h4> 
+				<div class="example-content">
+				<button onclick="$arrays12()">Klik disini</button>
+				<p id="$arrays12"></p>
+				</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Perbedaan Antara Object dan Array </h1>
+				<p>
+				Dalam JavaScript, <b>Array</b> menggunakan <b>index nomor</b><br>
+				Dalam JavaScript, <b>Object</b> menggunakan <b>index nama</b>
+				</p>
+			</article>
+			
+			<!--ATTENTION-->
+			<article>
+			<table class="attention">
+			<tr>
+			<td class="td-left">
+			<h1>!</h1>
+			</td>
+			<td>
+			Array adalah jenis Object yang special, dengan index nomor.
+			</td>
+			</tr>
+			</table>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Kapan untuk Menggunakan Array, Kapan untuk Menggunakan Object</h1>
+				<p>
+				<ol>
+					<li> JavaScript tidak mendukung associative array</li>
+					<li> Kamu lebih baik gunakan <b>object</b> jika kamu mau element nama menjadi <b>string (text)</b></li>
+					<li> kamu lebih baik gunakan <b>Array</b> jika kamu mau element nama menjadi b0<b> nomor</b> </li>
+				</ol>
+				</p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Hindarilah new Array() </h1>
+				<p>
+				Ada yang tidak diperlukan untuk menggunakan JavaScript's built-in Array constructor <b>new</b> Array().<br><br>
+				<b>Gunakanlah alternative []</b> <br><br>
+				Ini adalah dua pernyataan yang berbeda, keduanya menciptakan array baru yang kosong yang diberi nama point.
+				</p>
+				
+				<div class="simple-example">
+				<span class="purple">var</span> points = new Array(); <em>//buruk</em> <br>
+				<span class="purple">var</span> points = []; <em> //baik </em> <br>
+				</div>
+				
+				<p>
+				Ini adalah dua pernyataan yang berbeda, keduanya menciptakan array yang berisikan nilai 6 nomor.
+				</p>
+				
+				<div class="simple-example">
+				<span class="purple">var</span> points = new Array(100, 22, 33, 40, 58, 96); <em>//buruk</em> <br>
+				<span class="purple">var</span> points = [100, 22, 33, 40, 58, 96]; <em> //baik </em> <br>
+				</div>
+				
+				<p>
+				Kata kunci <b>new</b> hanya akan mempersulit suatu kode, dan bisa juga mengeluarkan hasil yang tidak pasti.
+				</p>
+				
+				<div class="simple-example">
+				<span class="purple">var</span> points = new Array(100, 96); <em>//membuat sebuah array dengan dua element </em> <br>
+				</div>
+				
+				<p>
+				Apa yang akan terjadi, jika saya menghapus satu element?
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh </i></h1>
+				<h4> Input</h4>
+				<div class="example-content">
+				<span class="purple">var</span> points = new Array(100); <em>//menghapus satu element  array  </em> <br>
+				</div>
+				<h4> Output</h4>
+				<div class="example-content">
+				<button onclick="$arrays13()">Klik disini </button>
+				<p id="$arrays13"></p>
+				</div>
+				</article>				
+			</article>
+</section>
+<section>
+			<article>
+				<h1> How to Recognize an Array </h1>
+				<p>
+				Pertanyaan umum yang biasa ditanyakan: "Bagai saya tahu jika sebuah variabel adalah Array?" <br><br>
+				Masalahnya adalah jika kita gunakan operator <b>typeof</b> akan mengembalikan "object".
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh </i></h1>
+				<h4> Input</h4>
+				<div class="example-content">
+				<span class="purple">var</span> points = [440, 200, 10, 40, 90];<br>
+				<span class="purple redZone">typeof</span> points <em>// hanya akan mengembalikan object </em> <br>
+				</div>
+				<h4> Output</h4>
+				<div class="example-content">
+				<button onclick="$arrays14()">Klik disini </button>
+				<p id="$arrays14"></p>
+				</div>
+				</article>
+								
+				<p>
+				Operator <b>typeof</b> akan mengembalikan object, karena Array JavaScript merupakan sebuah object.
+				</p>
+				
+				<h4> Solusi ke 1 </h4>
+				<p>
+				Untuk mengatasi masalah ini, ECMAScript 5 mendefinisikan sebuah metode baru yaitu <b>Array.isArray()</b>.
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh </i></h1>
+				<h4> Input</h4>
+				<div class="example-content">
+				<span class="purple">var</span> points = [440, 200, 10, 40, 90];<br>
+				<span class="redZone">Array.isArray(points);</span>  <em>// akan mengembalikan true (benar) </em> <br>
+				</div>
+				<h4> Output</h4>
+				<div class="example-content">
+				<button onclick="$arrays15()">Klik disini </button>
+				<p id="$arrays15"></p>
+				</div>
+				</article>
+				<p>
+				Masalah dengan metode ECMAScript 5 ini yaitu <b>metode ini tidak didukung oleh browser versi terdahulu</b>.
+				</p>
+				
+				<h4> Solusi ke 2 </h4>
+				<p>
+				Untuk mengatasi masalah ini, <b> kamu bisa membuat fungsi isArray() kamu sendiri</b>.
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">	
+				<q lang="code">p</q> Ini adalah fungsi "buatan sendiri", ketika digunakan pada Array maka akan mengembalikan "true".<q lang="code">/p</q><br><br>						
+				<q lang="code">p id="demo"</q> <q lang="code">/p</q><br><br>						
+				<q lang="code">script</q><br>
+				<span class="purple">var</span> animes = ["Naruto", "Dragon Ball", "Yu-Gi-Oh!", 'Doraemon'];<br>
+				document.getElementById(<span class="blue">"demo"</span>).innerHTML= isArray(animes);<br><br>
+				<div class="redZone">
+				<span class="purple">function</span> isArray(x) { <br>
+					<blockquote>
+						return x.constructor.String().indexOf("Array") > -1
+					</blockquote>
+				}<br>
+				</div>
+				<q lang="code">/script</q>
+				</div>
+				<h4> Output </h4>
+				<div class="example-content">
+				<p>
+				Ini adalah fungsi "buatan sendiri", ketika digunakan pada Array maka akan mengembalikan "true".
+				</p>
+				<p id="$arrays16"> </p>
+				</div>
+				</article>
+				<p>
+				Fungai diatas selalu mengembalikan true (benar), jika pernyataan adalah Array.<br><br>
+				Atau lebih tepatnya, akan mengembalikan true jika object protoype nya berisikan kata "Array".
+				</p>
+				
+				<h4> Solusi ke 3 </h4>
+				<p>
+				Pengunaan operator <b> instanceof</b> mengembalikan true jika object dibuat dengan diberi contructor.
+				</p>
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh </i></h1>
+				<h4> Input</h4>
+				<div class="example-content">
+				<span class="purple">var</span> points = [440, 200, 10, 40, 90];<br>
+				<span class="redZone">points instanceof Array;</span>  <em>// akan mengembalikan true (benar) </em> <br>
+				</div>
+				<h4> Output</h4>
+				<div class="example-content">
+				<button onclick="$arrays17()">Klik disini </button>
+				<p id="$arrays17"></p>
+				</div>
+				</article>
+			</article>
+</section>
+<section>
+			
+			<article id="NoB">
+			<a href="js set date methods.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="js array methods.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			</article>
+			<article>
+			</article>
+</section>
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+
+<script type="text/javascript">
+var animes = ["Naruto", "Dragon Ball", "Yu-Gi-Oh!", 'Doraemon'];
+document.getElementById("$arrays16").innerHTML= isArray(animes);
+
+function isArray(x) { 
+	return x.constructor.toString().indexOf("Array") > -1
+}
+
+</script>
+</body>
+</html>

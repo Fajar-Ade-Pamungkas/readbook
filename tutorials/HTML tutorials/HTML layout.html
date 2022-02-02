@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML layout</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+<style type="text/css">
+.utama {
+	padding:10px;
+	box-sizing:border-box;
+	margin:0;
+	min-height:400px;
+	font:14px verdana;
+}
+.kepala {
+	width:100%;
+	color:white;
+	background-color:black;
+	padding:10px;
+}
+.kiri {
+	width:20%;
+	padding:5px;
+	background:orange;
+	height:300px;
+} 
+.kiri ul {list-style:none;}
+.kiri ul li {line-height:2.5;}
+.badan {
+	padding:15px;
+	width:80%;
+	height:300px;
+	line-height:1.5;
+} .badan h3 {
+	 text-align:center;
+	 color:teal;
+   }
+.kaki {
+	background:black;
+	text-align:center;
+	width:100%;
+	padding:5px;
+	color:orange;
+}
+.kepala, .kiri, .badan, .kaki {
+	float:left;
+}
+#tab {
+	text-align:center;
+	height:200px;
+} 
+#tab td {
+	padding:10px;
+	background:white;
+	border:5px silver solid;
+	border-collapse:separate;
+	border-spacing:10px;
+}
+.list ul li {
+	line-height:1.5;
+}
+.semantik {
+	width:100%;
+}
+.utama-semantik{
+	height:400px;
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML Layout</h1>
+				<p> Website sering kali menampilkan konten dalam multiple columns (seperti sebuah majalah atau koran). </p>
+			</div>
+			<div class="utama">
+				<div class="kepala">
+					<h2> My Website </h2>
+				</div>
+				<div class="kiri">
+					<ul>
+						<li> London </li>
+						<li> New York </li>
+						<li> Jakarta </li>
+					</ul>
+				</div>
+				<div class="badan">
+					<h3> London </h3>
+					<p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants. </p>
+					
+					<p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium. </p>
+					
+				</div>
+				<div class="kaki"> 
+				Copyright &copy; Readbook.co.id
+				</div>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> HTML Layout Using <b class="blue"><<b>div</b>></b> Elements </h2>
+				<div class="nasehat"> 
+				Element <<b>div</b>> sering kali digunakan sebagai layout tool (peralatan tata ruang atau rancangan), karena ia bisa dengan mudsh diposisikan dengan CSS. 
+				</div>
+				<p> Contoh ini menggunakan empat element <<b>div</b>> untuk menciptakan multiple column layout (tata ruang kolom lebih dari satu): </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+							<<b>div</b> <span class="teal">class="utama"</span>> <br>
+								<blockquote>
+								<<b>div</b> <span class="teal">class="kepala"</span>> 
+									<blockquote><<b>h2</b>> My Website <<b>/h2</b>></blockquote>
+								<<b>/div</b>> <br>
+								<<b>div</b> <span class="teal">class="kiri"</span>> 
+									<blockquote>
+									<<b>ul</b>>
+										<blockquote>
+										<<b>li</b>> London <<b>/li</b>> <br>
+										<<b>li</b>> New York <<b>/li</b>> <br>
+										<<b>li</b>> Jakarta <<b>/li</b>> 
+										</blockquote>
+									<<b>/ul</b>> 
+									</blockquote>
+								<<b>/div</b>>
+								<<b>div</b> <span class="teal">class="badan"</span>>
+									<blockquote>
+									<<b>h3</b>> London <<b>/h3</b>> <br>
+									<<b>p</b>>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants. <<b>/p</b>> <br>
+									<br>
+									<<b>p</b>>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium. <<b>/p</b>> <br>
+									</blockquote>
+								<<b>/div</b>> <br>
+								<<b>div</b> <span class="teal">class="kaki"</span>> <br>
+								Copyright &copy; Readbook.co.id
+								<<b>/div</b>>
+								</blockquote>
+							<<b>/div</b>> <br>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+				
+						
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						
+						<div class="utama">
+							<div class="kepala">
+								<h2> My Website </h2>
+							</div>
+							<div class="kiri">
+								<ul>
+									<li> London </li>
+									<li> New York </li>
+									<li> Jakarta </li>
+								</ul>
+							</div>
+							<div class="badan">
+								<h3> London </h3>
+								<p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants. </p>
+								
+								<p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium. </p>
+								
+							</div>
+							<div class="kaki"> 
+							Copyright &copy; Readbook.co.id
+							</div>
+						</div>
+						
+						
+					</div>
+				</article>
+				
+				<article class="example-box">
+					<h4>CSS Style</h4>
+					<div class="example-content">
+					
+					<<b>style</b>> <br>
+					.utama {
+						<blockquote>
+						padding:10px; <br>
+						box-sizing:border-box; <br>
+						margin:0; <br>
+						min-height:400px; <br>
+						font:14px verdana;
+						</blockquote>
+					}<br>
+					.kepala {
+						<blockquote>
+						width:100%;<br>
+						color:white; <br>
+						background-color:black; <br>
+						padding:10px;
+						</blockquote>
+					}<br>
+					.kiri {
+						<blockquote>
+						width:20%; <br>
+						padding:5px; <br>
+						background:orange; <br>
+						height:300px;
+						</blockquote>
+					}  <br>
+					.kiri ul {list-style:none;} <br>
+					.kiri ul li {line-height:2.5;} <br>
+					.badan {
+						<blockquote>
+						padding:15px;
+						width:80%;
+						height:300px;
+						line-height:1.5;
+						</blockquote>
+					} .badan h3 {
+						 <blockquote>
+						 text-align:center; <br>
+						 color:teal;
+						 </blockquote>
+					   } <br>
+					.kaki {
+						<blockquote>
+						background:black; <br>
+						text-align:center; <br>
+						width:100%; <br>
+						padding:5px; <br>
+						color:orange; 
+						</blockquote>
+					} <br>
+					.kepala, .kiri, .badan, .kaki {
+						<blockquote>float:left;</blockquote>
+					} <br>
+					<<b>/style</b>>
+					
+					</div>
+				</article>
+					
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Website Layout Using HTML5 </h2>
+				<p> HTML5 menawarkan element semantik baruyang mendefinisikan bagian - bagian beda dsri halaman web: </p>
+				
+				<div class="utama-semantik">
+					<div class="col-m-6 col-6">
+						<table width="100%" id="tab">
+							<tr>
+								<td colspan="2"> <<b>header</b>> </td>
+							</tr>
+							<tr>
+								<td colspan="2"> <<b>nav</b>> </td>
+							</tr>
+							<tr>
+								<td width="80%" height="100px"> <<b>section</b>> </td>
+								<td rowspan="2"> <<b>aside</b>> </td>
+							</tr>
+							<tr>
+								<td width="80%" height="50px"> <<b>article</b>> </td>
+							</tr>
+							<tr>
+								<td colspan="2" width="100%"> <<b>footer</b>> </td>
+							</tr>
+						</table>
+					</div>
+					<div class="col-m-6 col-6">
+						<ul class="list">
+							<li> <<b>header</b>> - Mendefinisikan sebuah header untuk sebuah dokumen atau sebuah sesi </li>
+							<li> <<b>nav</b>> - Mendefinisikan suatu container untuk navigasi link </li>
+							<li> <<b>section</b>> - Mendefinisikan sebuah sesi (bagian) dalam sebuah dokumen </li>
+							<li> <<b>article</b>> - Mendefinisikan sebuah independent self-contained article </li>
+							<li> <<b>aside</b>> - Mendefinisikan konten samping (content aside) dari kontent (seperti sidebar) </li>
+							<li> <<b>footer</b>> - Mendefinisikan sebuah footer (kaki) dokumen atau sesi </li>
+							<li> <<b>details</b>> - Mendefinisikan penambahan details (rincian) </li>
+							<li> <<b>summary</b>> - Mendefinisikan heading untuk element <<b>detail</b>> </li>
+						</ul>
+					</div>
+				</div>
+				
+				<p> Contoh ini menggunakan <<b>header</b>>, <<b>nav</b>>, <<b>section</b>>, dan <<b>footer</b>> untuk membhat mutiple column layout: </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML Layout Using Tablesn</h2>
+				<div class="nasehat">
+				Element <<b>table</b>> tidak didesign untuk menjadi sebuah layout tool. <br>
+				Tujuan element <<b>table</b> adalah untuk menampilkan <b>tabular data</b>. 
+				</div>
+				<p> Layout bisa dicapai menggunakan element <<b>table</b>>, karena element tabel bisa di-styled dengan CSS: </p>
+				
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>HTML</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>table</b> <span class="teal">class="lamp"</span>> 
+								<blockquote>
+								<<b>tr</b>>
+								<blockquote>
+								  <<b>th</b>> <br>
+								    <<b>img</b> <span class="teal">src="/images/lamp.jpg" alt="Note" style="height:32px;width:32px"</span>>  <br>
+								  <<b>/th</b>> <br>
+								  <<b>td</b>> <br>
+								    The table element was not designed to be a layout tool.
+								  <<b>/td</b>> 
+								</blockquote>
+								<<b>/tr</b>>
+								</blockquote>
+								<<b>/table</b>> <br>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<h4>CSS</h4>
+					<div class="example-content">
+						
+						<<b>style</b>><br>
+						table.lamp {
+						    <blockquote>
+							width:100%;
+						    border:1px solid #d4d4d4;
+							</blockquote>
+						} <br>
+						table.lamp th, td {
+						    <blockquote>padding:10px;</blockquote>
+						} <br>
+						table.lamp th {
+						    <blockquote>width:40px;</blockquote>
+						} <br>
+						<<b>/style</b>>
+					
+					</div>
+					<button onclick="tampilkan02()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+						
+						<table class="lamp">
+						<tr>
+						  <th>
+						    <img src="../logos/search.png" alt="Note" style="height:32px;width:32px">
+						  </th>
+						  <td>
+							Element tabel tidak didesign untuk menjadi sebuah layout tool (peralatan rancangan).
+						  </td>
+						</tr>
+						</table>
+						
+					</div>
+				</article>
+				
+				<div class="nasehatX">
+				<h4 class="center redZone blue"> Warning ! </h4>
+				 Pembuatan layout (tata ruang) dengan tabel tidaklah salah, tapi itu tidak direkomendasikan ! <br>
+				 Jadi hindarilah tabel untuk pembuatan layout.
+				</div>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML classes.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML responsive.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

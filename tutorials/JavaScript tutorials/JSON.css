@@ -1,0 +1,28 @@
+.rightHead {
+	width:60%;
+	padding:10px;
+	float:left;
+	height:250px;
+}
+.leftHead {
+	width:40%;
+	padding:10px;
+	float:left;
+	height:100px;
+	border-radius:15px;
+	font-family:Arial,sans-serif;
+	text-align:center;
+}
+.head-title {
+	height:100px;
+}
+p {
+	line-height:2.0;
+}
+.exbutton {
+	padding:5px;
+	margin:10px;
+	font-size:15px;
+	background-color:olive;
+	border:none;
+}

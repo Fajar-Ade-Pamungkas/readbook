@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS HOME</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+.body {
+    background-color: #d0e4fe;
+}
+
+h3 {
+    color: orange;
+    text-align: center;
+}
+
+p {
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+</style>
+<script type="text/javascript">
+var a = document.documentElement;
+var b = document.getElementsByTagName("h1");
+var c = document.getElementsByTagName("p");
+function tampilkan01A(){
+	a.style.backgroundColor = "red";
+	document.getElementsByName("p").style.textAlign = "right";
+}
+</script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+		<!--button onclick="openMenu()" id="menu">Open Menu</button>
+		<button onclick="closeMenu()" id="menu">Close Menu</button>
+		
+		<div id="vertical"-->
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch()"> CSS Tutorial</button>
+			<div class="drop-content" id="myDropdown">
+			<input type="text" class="myInput" id="myInput" placeholder="Cari" onkeyup="filterFunction()"/>
+			<ol>
+				<a href="CSS HOME.html" ><li>CSS HOME</li> </a>
+				<a href="CSS introduction.html" ><li>CSS Introduction</li> </a>
+				<a href="CSS syntax.html" ><li>CSS Sintaksis </li> </a>
+				<a href="CSS how to.html" ><li>CSS Bagaimana </li> </a>
+				<a href="CSS colors.html" ><li>CSS Color </li> </a>
+				<a href="CSS backgrounds.html" ><li>CSS Background </li> </a>
+				<a href="CSS borders.html" ><li>CSS Border </li> </a>
+				<a href="CSS margins.html" ><li>CSS margin </li> </a>
+				<a href="CSS padding.html" ><li>CSS padding </li> </a>
+				<a href="CSS heightOrWidth.html" ><li>CSS Height/Width </li> </a>
+				<a href="CSS text.html" ><li>CSS Teks </li> </a>
+				<a href="CSS fonts.html" ><li>CSS Fonts </li> </a>
+				<a href="CSS links.html" ><li>CSS Links </li> </a>
+				<a href="CSS lists.html" ><li>CSS Lists </li> </a>
+				<a href="CSS tables.html" ><li>CSS Tables</li> </a>
+				<a href="CSS box model.html" ><li>CSS Box Model </li> </a>
+				<a href="CSS outline.html" ><li>CSS Outline </li> </a>
+				<a href="CSS display.html" ><li>CSS Display </li> </a>
+				<a href="CSS max-width.html" ><li>CSS Max-width</li> </a>
+				<a href="CSS position.html" ><li>CSS Position </li> </a>
+				<a href="CSS float.html" ><li>CSS Float </li> </a>
+				<a href="CSS inline-block.html" ><li>CSS Inline-block</li> </a>
+				<a href="CSS align.html" ><li>CSS Align </li> </a>
+				<a href="CSS combinators.html" ><li>CSS Combinator </li> </a>
+				<a href="CSS pseudo-class.html" ><li>CSS Pseudo-class </li> </a>
+				<a href="CSS pseudo-element.html" ><li>CSS Pseudo-element </li> </a>
+				<a href="CSS navigator bar.html" ><li>CSS Navigator </li> </a>
+				<a href="CSS dropdowns.html" ><li>CSS Dropdown</li> </a>
+				<a href="CSS tooltips.html" ><li>CSS Tooltips </li> </a>
+				<a href="CSS image gallery.html" ><li>CSS Image Gallery </li> </a>
+				<a href="CSS image opacity.html" ><li>CSS Image Opacity </li> </a>
+				<a href="CSS image sprites.html" ><li>CSS Image Sprites </li> </a>
+				<a href="CSS attr selectors.html" ><li>CSS Attr Selector </li> </a>
+				<a href="CSS forms.html" ><li>CSS Forms </li> </a>
+				<a href="CSS counter.html" ><li>CSS Counter </li> </a>
+			</ol>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch2()"> CSS3 Tutorial</button>
+			<div class="drop-content" id="myDropdown2">
+			<input type="text" class="myInput" id="myInput2" placeholder="Cari" onkeyup="filterFunction2()"/>
+			<ol>
+				<a href="CSS3 intorduction.html" ><li>CSS3 Introduction </li> </a>
+				<a href="CSS3 rounded corners.html" ><li>CSS3 Rounded Corner</li> </a>
+				<a href="CSS3 border images.html" ><li>CSS3 Border Images </li> </a>
+				<a href="CSS3 backgrounds.html" ><li>CSS3 Background </li> </a>
+				<a href="CSS3 colors.html" ><li>CSS3 Color </li> </a>
+				<a href="CSS3 gradient.html" ><li>CSS3 Gradient </li> </a>
+				<a href="CSS3 shadows.html" ><li>CSS3 Shadow</li> </a>
+				<a href="CSS3 text.html" ><li>CSS3 Teks </li> </a>
+				<a href="CSS3 fonts.html" ><li>CSS3 Fonts </li> </a>
+				<a href="CSS3 2D transforms.html" ><li>CSS3 2D Transforms </li> </a>
+				<a href="CSS3 3D transforms.html" ><li>CSS3 3D Transforms </li> </a>
+				<a href="CSS3 transitions.html" ><li>CSS3 Transitions </li> </a>
+				<a href="CSS3 animations.html" ><li>CSS3 Animations </li> </a>
+				<a href="CSS3 images.html" ><li>CSS3 Images</li> </a>
+				<a href="CSS3 buttons.html" ><li>CSS3 Buttons</li> </a>
+				<a href="CSS3 pagination.html" ><li>CSS3 Pagination </li> </a>
+				<a href="CSS3 multiple columns.html" ><li>CSS3 Multiple Columns</li> </a>
+				<a href="CSS3 user interface.html" ><li>CSS3 User Interface </li> </a>
+				<a href="CSS3 box sizing.html" ><li>CSS3 Box Sizing</li> </a>
+				<a href="CSS3 flexbox.html" ><li>CSS3 Flexbox </li> </a>
+				<a href="CSS3 media queries.html" ><li>CSS3 Media queries </li> </a>
+				<a href="CSS3 MQ examples.html" ><li>CSS3 MQ Examples </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch3()"> CSS Responesive</button>
+			<div class="drop-content" id="myDropdown3">
+			<input type="text" class="myInput" id="myInput3" placeholder="Cari" onkeyup="filterFunction3()"/>
+			<ol>
+				<a href="RWD introduction.html" ><li>RWD Introduction </li> </a>
+				<a href="RWD viewport.html" ><li>RWD Viewport </li> </a>
+				<a href="RWD grid view.html" ><li>RWD Grid View </li> </a>
+				<a href="RWD media queries.html" ><li>RWD Media Queries </li> </a>
+				<a href="RWD images.html" ><li>RWD Images </li> </a>
+				<a href="RWD videos.html" ><li>RWD Video </li> </a>
+				<a href="RWD frameworks.html" ><li>RWD Frameworks </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch4()"> CSS References </button>
+			<div class="drop-content" id="myDropdown4">
+			<input type="text" class="myInput" id="myInput4" placeholder="Cari" onkeyup="filterFunction4()"/>
+			<ol>
+				<a href="CSS references/CSS references.html" ><li> CSS References </li></a>
+				<a href="CSS references/CSS selectors.html" ><li> CSS Selectors </li></a>
+				<a href="CSS references/CSS functions.html" ><li> CSS Functions </li></a>
+				<a href="CSS references/CSS aurals.html" ><li> CSS Reference Aural </li></a>
+				<a href="CSS references/CSS web safe fonts.html" ><li> CSS Web Safe </li></a>
+				<a href="CSS references/CSS animatable.html" ><li> CSS animatable </li></a>
+				<a href="CSS references/CSS units.html" ><li> CSS Units </li></a>
+				<a href="CSS references/CSS PX-EM converter.html" ><li class="disabled"> CSS PX-EM Converter </li></a>
+				<a href="CSS references/CSS colors.html" ><li class="disabled"> CSS Color </li></a>
+				<a href="CSS references/CSS color values.html" ><li> CSS Color Values </li></a>
+				<a href="CSS references/CSS browser support.html" ><li class="disabled"> CSS Browser Support </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch5()">  CSS Properties </button>
+			<div class="drop-content" id="myDropdown5">
+			<input type="text" class="myInput" id="myInput5" placeholder="Cari" onkeyup="filterFunction5()"/>
+			<ol>
+				<a href="CSS properties/align-content.html" ><li> align-text </li></a>
+				<a href="CSS properties/align-items.html" ><li> align-items </li></a>
+				<a href="CSS properties/align-self.html" ><li> align-self </li></a>
+				<a href="CSS properties/all.html" ><li> all </li></a>
+				<a href="CSS properties/animation.html" ><li> animation </li></a>
+				<a href="CSS properties/animation-delay.html" ><li> animation-delay </li></a>
+				<a href="CSS properties/animation-direction.html" ><li> animation-direction </li></a>
+				<a href="CSS properties/animation-duration.html" ><li> animation-duration </li></a>
+				<a href="CSS properties/animation-fill-mode.html" ><li> animation-fill-mode </li></a>
+				<a href="CSS properties/animation-iteration-count.html" ><li> animation-iteration-count </li></a>
+				<a href="CSS properties/animation-name.html" ><li> animation-name </li></a>
+				<a href="CSS properties/animation-play-state.html" ><li> animation-play-state </li></a>
+				<a href="CSS properties/animation-timing-function.html" ><li> animation-timing-function </li></a>
+				<a href="CSS properties/backface-visibility.html" ><li> backface-visibility </li></a>
+				<a href="CSS properties/background.html" ><li> backgrouns </li></a>
+				<a href="CSS properties/background-attachment.html" ><li> background-attachment </li></a>
+				<a href="CSS properties/background-blend-mode.html" ><li> background-blend-mode </li></a>
+				<a href="CSS properties/background-clip.html" ><li> background-clip </li></a>
+				<a href="CSS properties/background-color.html" ><li> background-color </li></a>
+				<a href="CSS properties/background-image.html" ><li> background-image </li></a>
+				<a href="CSS properties/background-origin.html" ><li> background-origin </li></a>
+				<a href="CSS properties/background-position.html" ><li> background-position </li></a>
+				<a href="CSS properties/background-repeat.html" ><li> background-repeat </li></a>
+				<a href="CSS properties/background-size.html" ><li> background-size </li></a>
+				<a href="CSS properties/border.html" ><li> border </li></a>
+				<a href="CSS properties/border-bottom.html" ><li> border-bottom </li></a>
+				<a href="CSS properties/border-bottom-color.html" ><li> border-bottom-color </li></a>
+				<a href="CSS properties/border-bottom-left-radius.html" ><li> border-bottom-left-radius </li></a>
+				<a href="CSS properties/border-bottom-right-radius.html" ><li> border-bottom-right-radius </li></a>
+				<a href="CSS properties/border-bottom-style.html" ><li> border-bottom-style </li></a>
+				<a href="CSS properties/border-bottom-width.html" ><li> border-bottom-width </li></a>
+				<a href="CSS properties/border-collapse.html" ><li> border-collapse </li></a>
+				<a href="CSS properties/border-color.html" ><li> border-color </li></a>
+				<a href="CSS properties/border-image.html" ><li> border-image </li></a>
+				<a href="CSS properties/border-image-outset.html" ><li> border-imgae-outset </li></a>
+				<a href="CSS properties/border-image-repeat.html" ><li> border-image-repeat </li></a>
+				<a href="CSS properties/border-image-slice.html" ><li> border-image-slice </li></a>
+				<a href="CSS properties/border-image-source.html" ><li> border-image-source </li></a>
+				<a href="CSS properties/border-image-width.html" ><li> border-image-width </li></a>
+				<a href="CSS properties/border-left.html" ><li> border-left </li></a>
+				<a href="CSS properties/border-left-color.html" ><li> border-left-color </li></a>
+				<a href="CSS properties/border-left-style.html" ><li> border-left-style </li></a>
+				<a href="CSS properties/border-left-width.html" ><li> border-left-width </li></a>
+				<a href="CSS properties/border-radius.html" ><li> border-radius </li></a>
+				<a href="CSS properties/border-right.html" ><li> border-right </li></a>
+				<a href="CSS properties/border-right-color.html" ><li> border-right-color </li></a>
+				<a href="CSS properties/border-right-style.html" ><li> border-right-style </li></a>
+				<a href="CSS properties/border-right-width.html" ><li> border-right-width </li></a>
+				<a href="CSS properties/border-spacing.html" ><li> border-spacing </li></a>
+				<a href="CSS properties/border-style.html" ><li> birder-style </li></a>
+				<a href="CSS properties/border-top.html" ><li> border-top </li></a>
+				<a href="CSS properties/border-top-color.html" ><li> border-top-color </li></a>
+				<a href="CSS properties/border-top-left-radius.html" ><li> border-top-left-radius </li></a>
+				<a href="CSS properties/border-top-right-radius.html" ><li> border-top-right-radius </li></a>
+				<a href="CSS properties/border-top-style.html" ><li> border-top-style </li></a>
+				<a href="CSS properties/border-top-width.html" ><li> border-top-width </li></a>
+				<a href="CSS properties/border-width.html" ><li> border-width </li></a>
+				<a href="CSS properties/bottom.html" ><li> bottom </li></a>
+				<a href="CSS properties/box-shadow.html" ><li> box-shadow </li></a>
+				<a href="CSS properties/box-sizing.html" ><li> box-sizing </li></a>
+				<a href="CSS properties/caption-side.html" ><li> caption-side </li></a>
+				<a href="CSS properties/clear.html" ><li> clear </li></a>
+				<a href="CSS properties/clip.html" ><li> clip </li></a>
+				<a href="CSS properties/color.html" ><li> color </li></a>
+				<a href="CSS properties/column-count.html" ><li> cokumn-count </li></a>
+				<a href="CSS properties/column-fill.html" ><li> column-fill </li></a>
+				<a href="CSS properties/column-gap.html" ><li> column-gap </li></a>
+				<a href="CSS properties/column-rule.html" ><li> column-rule </li></a>
+				<a href="CSS properties/column-rule-color.html" ><li> column-rule-color </li></a>
+				<a href="CSS properties/column-rule-style.html" ><li> column-rule-style </li></a>
+				<a href="CSS properties/column-rule-width.html" ><li> column-rule-width </li></a>
+				<a href="CSS properties/column-span.html" ><li> column-span </li></a>
+				<a href="CSS properties/column-width.html" ><li> column-width </li></a>
+				<a href="CSS properties/columns.html" ><li> columns </li></a>
+				<a href="CSS properties/content.html" ><li> content </li></a>
+				<a href="CSS properties/counter-increment.html" ><li> counter-increment </li></a>
+				<a href="CSS properties/counter-reset.html" ><li> counter-reset </li></a>
+				<a href="CSS properties/cursor.html" ><li> cursor </li></a>
+				<a href="CSS properties/direction.html" ><li> direction </li></a>
+				<a href="CSS properties/display.html" ><li> display </li></a>
+				<a href="CSS properties/empty-cells.html" ><li> empty-cells </li></a>
+				<a href="CSS properties/filter.html" ><li> filter </li></a>
+				<a href="CSS properties/flex.html" ><li> flex </li></a>
+				<a href="CSS properties/flex-basis.html" ><li> flex-basis </li></a>
+				<a href="CSS properties/flex-direction.html" ><li> flex-direction </li></a>
+				<a href="CSS properties/flex-flow.html" ><li> flex-flow </li></a>
+				<a href="CSS properties/flex-grow.html" ><li> flex-grow </li></a>
+				<a href="CSS properties/flex-shrink.html" ><li> flex-shrink </li></a>
+				<a href="CSS properties/flex-wrap.html" ><li> flex-wrap </li></a>
+				<a href="CSS properties/float.html" ><li> float </li></a>
+				<a href="CSS properties/font.html" ><li> font </li></a>
+				<a href="CSS properties/@font-face.html" ><li> @font-face </li></a>
+				<a href="CSS properties/font-family.html" ><li> font-family </li></a>
+				<a href="CSS properties/font-size.html" ><li> font-size </li></a>
+				<a href="CSS properties/font-size-adjust.html" ><li> font-size-adjust </li></a>
+				<a href="CSS properties/font-stretch.html" ><li> font-stretch </li></a>
+				<a href="CSS properties/font-style.html" ><li> font-style </li></a>
+				<a href="CSS properties/font-variant.html" ><li> font-variant </li></a>
+				<a href="CSS properties/font-weight.html" ><li> font-weight </li></a>
+				<a href="CSS properties/hanging-punctuation.html" ><li> hanging-punctuation </li></a>
+				<a href="CSS properties/height.html" ><li> height </li></a>
+				<a href="CSS properties/justify-content.html" ><li> justify-content </li></a>
+				<a href="CSS properties/@keyframes.html" ><li> @keyframes </li></a>
+				<a href="CSS properties/left.html" ><li> left </li></a>
+				<a href="CSS properties/letter-spacing.html" ><li> letter-spacing </li></a>
+				<a href="CSS properties/line-height.html" ><li> line-height </li></a>
+				<a href="CSS properties/list-style.html" ><li> list-style </li></a>
+				<a href="CSS properties/list-style-image.html" ><li> list-style-image </li></a>
+				<a href="CSS properties/list-style-position.html" ><li> list-style-position </li></a>
+				<a href="CSS properties/list-style-type.html" ><li> list-style-type </li></a>
+				<a href="CSS properties/margin.html" ><li> margin </li></a>
+				<a href="CSS properties/margin-bottom.html" ><li> margin-bottom </li></a>
+				<a href="CSS properties/margin-left.html" ><li> margin-left </li></a>
+				<a href="CSS properties/margin-right.html" ><li> margin-right </li></a>
+				<a href="CSS properties/margin-top.html" ><li> margin-top </li></a>
+				<a href="CSS properties/max-height.html" ><li> max-height </li></a>
+				<a href="CSS properties/max-width.html" ><li> max-width </li></a>
+				<a href="CSS properties/@media.html" ><li> @media </li></a>
+				<a href="CSS properties/min-height.html" ><li> min-height </li></a>
+				<a href="CSS properties/min-width.html" ><li> min-width </li></a>
+				<a href="CSS properties/nav-down.html" ><li> nav-down </li></a>
+				<a href="CSS properties/nav-index.html" ><li> nav-index </li></a>
+				<a href="CSS properties/nav-left.html" ><li> nav-left </li></a>
+				<a href="CSS properties/nav-right.html" ><li> nav-right </li></a>
+				<a href="CSS properties/nav-up.html" ><li> nav-up </li></a>
+				<a href="CSS properties/opacity.html" ><li> opacity </li></a>
+				<a href="CSS properties/order.html" ><li> order </li></a>
+				<a href="CSS properties/outline.html" ><li> outline </li></a>
+				<a href="CSS properties/outline-color.html" ><li> outline-color </li></a>
+				<a href="CSS properties/outline-offset.html" ><li> outline-offset </li></a>
+				<a href="CSS properties/outline-style.html" ><li> outline-style </li></a>
+				<a href="CSS properties/outline-width.html" ><li> outline-width </li></a>
+				<a href="CSS properties/overflow.html" ><li> overflow </li></a>
+				<a href="CSS properties/overflow-x.html" ><li> overflow-x </li></a>
+				<a href="CSS properties/overflow-y.html" ><li> overflow-y </li></a>
+				<a href="CSS properties/padding.html" ><li> padding </li></a>
+				<a href="CSS properties/padding-bottom.html" ><li> padding-bottom </li></a>
+				<a href="CSS properties/padding-left.html" ><li> padding-left </li></a>
+				<a href="CSS properties/padding-right.html" ><li> padding-right </li></a>
+				<a href="CSS properties/padding-top.html" ><li> padding-top </li></a>
+				<a href="CSS properties/page-break-after.html" ><li> page-break-after </li></a>
+				<a href="CSS properties/page-break-before.html" ><li> page-break-before </li></a>
+				<a href="CSS properties/page-break-inside.html" ><li> page-break-inside </li></a>
+				<a href="CSS properties/perspective.html" ><li> perspective </li></a>
+				<a href="CSS properties/perspective-origin.html" ><li> perspective-origin </li></a>
+				<a href="CSS properties/position.html" ><li> position </li></a>
+				<a href="CSS properties/quotes.html" ><li> quotes </li></a>
+				<a href="CSS properties/resize.html" ><li> resize </li></a>
+				<a href="CSS properties/right.html" ><li> right </li></a>
+				<a href="CSS properties/tab-size.html" ><li> tab-size </li></a>
+				<a href="CSS properties/table-layout.html" ><li> table-layout </li></a>
+				<a href="CSS properties/text-align.html" ><li> text-align </li></a>
+				<a href="CSS properties/text-align-last.html" ><li> text-align-last </li></a>
+				<a href="CSS properties/text-decoration.html" ><li> text-decoration </li></a>
+				<a href="CSS properties/text-decoration-color.html" ><li> text-decoration-color </li></a>
+				<a href="CSS properties/text-decoration-line.html" ><li> text-decoration-line </li></a>
+				<a href="CSS properties/text-decoration-style.html" ><li> text-decoration-style </li></a>
+				<a href="CSS properties/text-indent.html" ><li> text-indent </li></a>
+				<a href="CSS properties/text-justify.html" ><li> text-justify </li></a>
+				<a href="CSS properties/text-overflow.html" ><li> text-overflow </li></a>
+				<a href="CSS properties/text-shadow.html" ><li> text-shadow </li></a>
+				<a href="CSS properties/text-transform.html" ><li> text-transform </li></a>
+				<a href="CSS properties/top.html" ><li> top </li></a>
+				<a href="CSS properties/transform.html" ><li> transform </li></a>
+				<a href="CSS properties/transform-origin.html" ><li> transform-origin </li></a>
+				<a href="CSS properties/transform-style.html" ><li> transform-style </li></a>
+				<a href="CSS properties/transition.html" ><li> transition </li></a>
+				<a href="CSS properties/transition-delay.html" ><li> transition-delay </li></a>
+				<a href="CSS properties/transition-duration.html" ><li> transition-duration </li></a>
+				<a href="CSS properties/transition-property.html" ><li> transition-property </li></a>
+				<a href="CSS properties/transition-timing-function.html" ><li> transition-timing-function </li></a>
+				<a href="CSS properties/unicode-bidi.html" ><li> unicode-bidi </li></a>
+				<a href="CSS properties/vertical-align.html" ><li> vertical-align </li></a>
+				<a href="CSS properties/visibility.html" ><li> visibility </li></a>
+				<a href="CSS properties/white-space.html" ><li> white-space </li></a>
+				<a href="CSS properties/width.html" ><li> width </li></a>
+				<a href="CSS properties/word-break.html" ><li> word-break </li></a>
+				<a href="CSS properties/word-spacing.html" ><li> word-spacing </li></a>
+				<a href="CSS properties/word-wrap.html" ><li> word-wrap </li></a>
+				<a href="CSS properties/z-index.html" ><li> z-index </li></a>
+			</ol>
+			</div>
+			</div>
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Tutorials</h1>
+				<img src="..//logos/css 3.png" class="brand"> 
+				<div class="brand-title">
+				<p> CSS adalah bahasa stylesheet (sehelai gaya) yang mendeskripsikan presentasi tentang element HTML (atau XML).</p>
+				<p> CSS mendeskipsikan bagaimana element harus diterjemahkan pada layar, pada kertas atau pada media lainnya. </p>
+				<p> Tutorial ini akan mengajari kamu trntang CSS dari dasar menjadi lebih maju. </p>
+				</div>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> Examples in Each Chapter </h2>
+				<p> Contoh di Setiap Chapter </p>
+				<p> Tutorial CSS ini berisikan banyak contoh CSS. </p>
+				<p> Kamu bisa mencoabnya dengan menyalin kode lalu terapkan pada dokumen kamu. </p>
+				
+				<article class="example-box">
+					<h4>Contoh CSS</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br>
+						<<b>html</b>><br>
+							<<b>head</b>><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+							<<b>style</b>> <br>
+							body {
+							    <blockquote>background-color: #d0e4fe;</blockquote>
+							} <br>
+							<br>
+							h1 {
+								<blockquote>
+							    color: orange; <br>
+							    text-align: center;
+								</blockquote>
+							}<br>
+							<br>
+							p {
+								<blockquote>
+							    font-family: "Times New Roman"; <br>
+							    font-size: 20px;
+								</blockquote>
+							} <br>
+							<<b>/style</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br>
+							
+								<<b>h1</b>> Ini heading pertamaku <<b>/h1</b>><br>
+								<<b>p</b>> Ini paragraf pertamaku<<b>/p</b>><br><br>
+								
+							<<b>/body</b>><br>
+						<<b>/html</b>>
+						
+					</div>
+					<button onclick="tampilkan01A()">Output:</button>
+					<div class="example-content sembunyikan body" id="sembunyikan01">
+						<h3>Ini Heading pertamaku</h3>
+						<p> Ini paragraf pertamaku</p>
+					</div>
+				</article>
+				<p> Kliklah pada tombol "Output" untuk melihat bagaimana CSS bekerja. </p>
+</section>
+<section>			
+			<article>
+				<h2> CSS Examples </h2>
+				<p> Contoh - Contoh CSS</p>
+				<p> Belajarlah dari contoh 300 lebih ! Dengan Editor kamu bisa mencobanya oleh kamu sendiri. </p>
+				<a href="" >Try-It-Yourself! </a>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> CSS Quiz Test </h2>
+				<p> Teslah kemampuan CSS kamu di Readbook! </p>
+				<a href="" >Start CSS Quiz!</a>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> CSS References </h2>
+				<p> Referensi CSS</p>
+				<p> Di sini kamu akan menemukan referensi tentang CSS semua properti dan selector dengan sintaksis, 
+				contoh browser dan selebihnya. </p>
+				<p><a href="CSS references/CSS references.html" >CSS Properties Reference</a> </p>
+				<p><a href="CSS references/CSS selectors.html" >CSS Selectors Reference</a> </p>
+				<p><a href="CSS references/CSS aurals.html" >CSS Aural Reference</a></p>
+				<p><a href="CSS references/CSS units.html" >CSS Units</a></p>
+				<p><a href="CSS references/CSS color values.html" >CSS Color Reference </a></p>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="CSS HOME.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="CSS introduction .html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			<article>
+			</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

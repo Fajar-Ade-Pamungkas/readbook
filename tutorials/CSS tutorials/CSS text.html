@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS Text </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+.p01 {
+	border:2px skyblue solid;
+	padding:10px;
+}
+.p01 h2 {
+	text-align:center;
+	color:green;
+}
+.p01 p{
+	text-indent:50px;
+	font-family:times new roman;
+}
+.p01 span{
+	color:lightblue;
+}
+
+/*contoh 2*/
+.div02 {
+	color: blue;
+}
+
+.heading02 {
+	color: green;
+	font-size:36px;
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Text</h1>
+			</div>
+			
+			
+<section>
+			<article class="p01">
+				<h2>TEXT FORMATTING</h2>
+				<p>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, 
+				and the space between characters is specified. The underline is removed from this colored <span>"Try it yourself"</span> link.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Text Color</h2>
+				<p> Properti <mark>color</mark> digunakan untuk mengatur warna teks: </p>
+				<p> Dengan CSS, warna sangat sering ditentukan dengan: </p>
+				<ul>
+					<li> a color name (nama warna) - seperti "red" </li>
+					<li> a HEX value (nilai HEX) - seperti "#ff0000"</li>
+					<li>an RGB value (nilai RGB) - seperti "rgb(255,0,0)"</li>
+				</ul>
+				<p> Lihatlah di CSS Color Values untuk daftar lengkao yang nilai warna  mungkin (diperbolehkan). </p>
+				<p> Warna teks default utuk halaman didefinisikan dalam selektor body. </p>
+
+				<article class="example-box">
+					 <h4> Input </h4>
+					 <div class="example-content">
+					 
+					 body {
+					 <blockquote>
+					     color: blue;
+					 </blockquote>
+					 } <br>
+					 <br>
+					 h1 {
+					 <blockquote>
+					     color: green;
+					 </blockquote>
+					 }
+					 
+					 </div>
+					 <button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					 <div class="result sembunyikan" id="sembunyikan01">
+					 
+					 <div class="div02">
+					 	
+					 	<h3 class="heading02">This is heading 1</h3>
+					 	<p>This is an ordinary paragraph. Notice that this text is blue. 
+					 	The default text color for a page is defined in the body selector.</p>
+					 	
+					 </div>
+					 
+					 </div>
+				</article>
+				
+				<div class="nasehat">
+					<p><b>Catatan:</b> Untuk W3C mengalah pada CSS: Jika kamu mendefinisikan properti <mark>color</mark>, 
+					kamu juga harus mendefinisikan properti <mark>background-color</mark>. </p>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Text Alignment </h2>
+				<p> Properti <mark>text-align</mark> digunakan untuk mengatur perataan horizontal dsri suatu teks. </p>
+				<p> Teks bisa diratakan kiri (left) atau kanan (right), tengah (center) atau (kiri-kanan). </p>
+				<p> Contoh berikut menampilkan perataan tengah, dan kiri dan kanan teks (perataan kiri merupkan defualt  jika direksi teks adalah left-to-right dan perataan kanan merupakan default jika direksi teks adalah right-to-left): </p>
+				
+				<article class="example-box">
+					 <h4> Input </h4>
+					 <div class="example-content">
+					
+					h1 {
+					<blockquote>
+					    text-align: center;
+					</blockquote>
+					}<br>
+					<br>
+					h2 {
+					<blockquote>
+					    text-align: left;
+					</blockquote>
+					}<br>
+					<br>
+					h3 {
+					<blockquote>
+					    text-align: right;
+					</blockquote>
+					}
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan03">
+						
+						<p style="text-align:center; font-size:36px;">Heading 1 (center)</p>
+						<p style="text-align:left; font-size:32px;">Heading 2 (left)</p>
+						<p style="text-align:right; font-size:28px;">Heading 3 (right)</p>
+						
+						<p>The three headings above are aligned center, left and right.</p>
+						
+					</div>
+				</article>
+				
+				<p> Ketika properti <mark>text-align</mark> diatur menjadi "justify", setiap baris direnggangkan jadi setiap baris memiliki lebar yang sama, dan margin kanan dan kiri luruh (seperti dalam majalah dan koran): </p>
+				
+				<article class="example-box">
+					 <h4> Input </h4>
+					 <div class="example-content">
+					
+					div {
+					<blockquote>
+					    text-align: justify;
+					</blockquote>
+					}
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan02">
+					
+						<h3>Example text-align: justify;</h3>
+						
+						<p>The text-align: justify; value stretches the lines so that each line has equal width (like in newspapers and magazines).</p>
+						
+						<div class="div03">
+						In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'
+						</div>
+						
+					</div>
+				</article>
+
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Text Decoration </h2>
+				<p> Properti <mark>text-decoration</mark> digunakan untuk mengatur atau mencopot dekorssi dari text. </p>
+				<p> Nilai <mark>text-decoration</mark>: <b>none</b>, seringkali digunakan untuk menghilangkan underline (garis bawah) dari link: </p>
+				
+				<article class="example-box">
+					 <h4> Input </h4>
+					 <div class="example-content">
+					 
+					 a { 
+					 <blockquote>
+					     text-decoration: none;
+					 </blockquote>
+					 }
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan04">
+						<p>A link with no underline: 
+						<a class="nonline"href="CSS HOME.html">Readbook.com</a></p>
+					</div>
+				</article>
+				
+				<p> Nilai <mark>text-decoration</mark> lainnya digunakan untuk mendekorasi text: </p>
+				
+				<article class="example-box">
+					 <h4> Input </h4>
+					 <div class="example-content">
+					 
+					 h1 {
+					 <blockquote>
+					     text-decoration: overline;
+					 </blockquote>
+					 } <br>
+					 <br>
+					 h2 {
+					 <blockquote>
+					     text-decoration: line-through;
+					 </blockquote>
+					 } <br>
+					 <br>
+					 h3 {
+					 <blockquote>
+					     text-decoration: underline;
+					 </blockquote>
+					 }
+					
+					</div>
+					<button onclick="tampilkan05()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan05">
+						
+						</style>
+						</head>
+						<body>
+						
+						<p style="text-decoration:overline; font-size:36px;">This is heading 1</p>
+						<p style="text-decoration:line-through; font-size:32px;">This is heading 2</p>
+						<p style="text-decoration:underline; font-size:28px;">This is heading 3</p>
+						
+					</div>
+				</article>
+				
+				<div class="nasehat">
+					<p><b>Catatan:</b> Cara ini tidal direkomendasikan untuk underline text yang bukan sebuah link, ini seringkali memusingkan the reader (mesin pembaca). </p>
+				</div>
+
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Text Transformation </h2>
+				<p> Properti <mark>text-transform</mark> digunakan untuk menentuksn huruf besar atau kecil dalam teks. </p>
+				<p> Itu bisa digunakan untuk mengganti teks apapun kedalam huruf besar atau kecil atau capitalize. </p>
+				
+				<article class="example-box">
+					 <h4> Input </h4>
+					 <div class="example-content">
+					p.uppercase {
+					<blockquote>
+					    text-transform: uppercase;
+					</blockquote>
+					} <br>
+					<br>
+					p.lowercase {
+					<blockquote>
+					    text-transform: lowercase;
+					</blockquote>
+					}<br>
+					<br>
+					p.capitalize {
+					<blockquote>
+					    text-transform: capitalize;
+					</blockquote>
+					}
+					</div>
+					<button onclick="tampilkan06()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan06">
+						
+						<p style="text-transform:uppercase;">This is some text.</p>
+						<p style="text-transform:lowercase;">This is some text.</p>
+						<p style="text-transform:capitalize;">This is some text.</p>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Text Indentation</h2>
+				<p> Properti <mark>text-indent</mark> digunakan untuk menentukan indentasi (teks berspasi) dari baris pertama teks: </p>
+				
+				<article class="example-box">
+					 <h4> Input </h4>
+					 <div class="example-content">
+					 
+					 p { 
+					 <blockquote>
+					     text-indent: 50px;
+					 </blockquote>
+					 }
+					
+					</div>
+					<button onclick="tampilkan07()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan07">
+					
+						<p style="text-indent:50px;">In my younger and more vulnerable years my father gave me some advice that I've been turning over 
+						in my mind ever since. 
+						'Whenever you feel like criticizing anyone,' he told me, 'just remember 
+						that all the people in this world haven't had the advantages that you've had.'</p>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Letter Spacing</h2>
+				<p> Properti <mark>text-spacing</mark> digunakan untuj menentukan spasi diantara karakter dalam suatu teks.</p>
+				<p> Contoh berikut mempertontonkan bagaimana untuk meningkatkan atau menurunkan spasi diantara karakter: </p>
+				
+				<article class="example-box">
+					 <h4> Input </h4>
+					 <div class="example-content">
+					 
+					 h1 {
+					 <blockquote>
+					     letter-spacing: 3px;
+					 </blockquote>
+					 } <br>
+					 <br>
+					 h2 {
+					 <blockquote>
+					     letter-spacing: -3px;
+					 </blockquote>
+					 }
+					
+					</div>
+					<button onclick="tampilkan08()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan08">
+					
+						<p style="letter-spacing:3px; font-size:36px;"> This is Heading</p>
+						<p style="letter-spacing:-3px; font-size:32px;"> This is Heading</p>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Line Height</h2>
+				<p> Properti <mark>line-height</mark> digunakan untuk menentukan spasi antar baris: </p>
+				
+				<article class="example-box">
+					 <h4> Input </h4>
+					 <div class="example-content">
+					 
+					 p.small {
+					 <blockquote>
+					     line-height: 0.8;
+					 </blockquote>
+					 } <br>
+					 <br>
+					 p.big {
+					 <blockquote>
+					     line-height: 1.8;
+					 </blockquote>
+					 }
+					
+					</div>
+					<button onclick="tampilkan09()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan09">
+					
+						<p>
+						This is a paragraph with a standard line-height.<br>
+						The default line height in most browsers is about 110% to 120%.<br>
+						</p>
+						
+						<p style="line-height:0.8;">
+						This is a paragraph with a smaller line-height.<br>
+						This is a paragraph with a smaller line-height.<br>
+						</p>
+						
+						<p style="line-height:1.8;">
+						This is a paragraph with a bigger line-height.<br>
+						This is a paragraph with a bigger line-height.<br>
+						</p>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Text Direction</h2>
+				<p> Properti <mark>direction</mark> digunakan untuk mengubah direksi (arah) teks dari suatu element: </p>
+				
+				<article class="example-box">
+					 <h4> Input </h4>
+					 <div class="example-content">
+					 
+					 div {
+					 <blockquote>
+					     direction: rtl;
+					 </blockquote>
+					 }
+					
+					</div>
+					<button onclick="tampilkan10()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan10">
+					
+						<div>This is default text direction.</div>
+						<div style="direction: rtl;">This is right-to-left text direction.</div>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Word Spacing</h2>
+				<p> Properti <mark>word-spacing</mark> digunakan untuk menentukan spasi diantara kata dalam suatu teks. </p>
+				<p> Contoh berikut mempertontonkan bagaimana untuk meningkatkan atau menurunkan spasi diantara kata. </p>
+				
+				<article class="example-box">
+					 <h4> Input </h4>
+					 <div class="example-content">
+					 
+					 h1 {
+					 <br>
+					     word-spacing: 10px;
+					 <br>
+					 } <br>
+					 <br>
+					 h2 {
+					 <br>
+					     word-spacing: -5px;
+					 <br>
+					 }
+					
+					</div>
+					<button onclick="tampilkan11()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan11">
+					
+						<p style="word-spacing:10px; font-size:36px;"> This is Heading</p>
+						<p style="word-spacing:-5px; font-size:32px;"> This is Heading</p>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>All CSS Text Properties </h2>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th> Properti </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> color </td>
+							<td> Mengatur warna teks </td>
+						</tr>
+						<tr>
+							<td> direction </td>
+							<td> Menentukan direksi (arah) teks atau arah penulisan  </td>
+						</tr>
+						<tr>
+							<td> letter-spacing </td>
+							<td> Menambahkan atau mengurangi spasi diantara karakter dalam suatu teks </td>
+						</tr>
+						<tr>
+							<td> line-height </td>
+							<td> Mengatur tinggi baris </td>
+						</tr>
+						<tr>
+							<td> text-align </td>
+							<td> Menentukan perataan horizontal dari teks </td>
+						</tr>
+						<tr>
+							<td> text-decoration </td>
+							<td> Menentukan dekorasi yang ditambahkan ke teks </td>
+						</tr>
+						<tr>
+							<td> text-indent </td>
+							<td> Menentukan Indentasi (Spasi) diawal teks dalam text-block  </td>
+						</tr>
+						<tr>
+							<td> text-shadow </td>
+							<td> Menentukan efek bayangan yang ditambahkan ke teks </td>
+						</tr>
+						<tr>
+							<td> text-transform </td>
+							<td> Mengendalikan capitalization text (besar kecilnya teks) untuk teks </td>
+						</tr>
+						<tr>
+							<td> unicode-bidi </td>
+							<td> Digunakan bersama dengan properti <mark>direction</mark> untuk mengatur apakah teks harus dikesampingkan untuk support multiple languages dalam dokumen yang sama </td>
+						</tr>
+						<tr>
+							<td> vertical-align </td>
+							<td> Mengatur perataan secara vertikal suatu element </td>
+						</tr>
+						<tr>
+							<td> white-space </td>
+							<td> Menentukan bagaimana white-space didalam suatu element dikendalikan </td>
+						</tr>
+						<tr>
+							<td> word-spacing </td>
+							<td> Menambahkan atau mengurangi spasi antara kata dalam suatu teks </td>
+						</tr>
+					</tbody>
+				</table>
+
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS heightOrWidth.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS fonts.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

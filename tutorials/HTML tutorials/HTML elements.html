@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML elements</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML Elements</h1>
+				<p>
+				<b>Dokumen</b> HTML dibuat oleh <b>element</b> HTML.</p>
+			</div>
+			
+			
+<section>
+			<article>
+				<h1> Elemen HTML </h1>
+				<p>Element HTML ditulis dengan sebuah start tag dan end tag, dengan konten yang berada diantara kedua tag tersebut:</p>
+				<p><<span class="maroon">tagname</span>> Kontent <<span class="maroon">/tagname</span>> </p>
+				<p> Element HTML adalah apapun dari start tag sampai end tag: </p>
+				<p><<b>p</b>>My first HTML paragraph.<<b>/p</b>></p>
+				
+				<table>
+					<thead>
+						<tr>
+							<th>Start tag</th>
+							<th>Element content</th>
+							<th>End tag</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> <<b>h1</b>> </td>
+							<td> Heading pertamaku</td>
+							<td><<b>/h1</b>></td>
+						</tr>
+						<tr>
+							<td><<b>p</b>></td>
+							<td>paragraph pertamaku</td>
+							<td><<b>/p</b>></td>
+						</tr>
+						<tr>
+							<td><<b>br</b>></td>
+							<td> </td>
+							<td> </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<div class="nasehat">
+					Beberapa elemen HTML tidak memiliki end tag (penutupan tag).
+				</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Nested HTML Elements </h1>
+				<p> elemen HTML bisa disarangkan (elemen bisa berisikan elemen lain). </p>
+				<p> Semua dokumen HTML terdiri dari elemen HTML yang bersarang. </p>
+				<p> Contoh ini berisikan 4 elemen HTML:</p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br>
+						<<b>html</b>><br>
+							<<b>body</b>><br><br>
+							
+								<<b>h1</b>> Ini heading pertamaku <<b>/h1</b>><br>
+								<<b>p</b>> Ini paragraf pertamaku<<b>/p</b>><br><br>
+								
+							<<b>/body</b>><br>
+						<<b>/html</b>>
+						
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						<h3>Ini Heading pertamaku</h3>
+						<p> Ini paragraf pertamaku</p>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Penjelasan Contoh HTML </h1>
+				<p> Elemen <<b>html</b>> mendefinisikan <b>keseluruhan dokumen</b>. </p>
+				<p> Ia memiliki sebuah start tag <<b>html</b>>dan sebuah end tag <<b>/html</b>>. </p>
+				<p> Elemen berisi elemen HTML yang lainnya (elemen <<b>body</b>>). </p>
+				
+				<div class="simple-example">
+					<<b>html</b>><br>
+						<<b>body</b>><br><br>
+						
+							<<b>h1</b>> Ini heading pertamaku <<b>/h1</b>><br>
+							<<b>p</b>> Ini paragraf pertamaku<<b>/p</b>><br><br>
+							
+						<<b>/body</b>><br>
+					<<b>/html</b>>
+				</div>
+				
+				<p> elemen <<b>body</b>> mendefinisikn <b>badan dokumen</b> atau <b>isi dokumen</b>. </p>
+				<p> Ia memiliki sebuah start tag <<b>body</b>>dan sebuah end tag <<b>/body</b>>. </p>
+				<p> elemen ini berisi 2 elemen HTML yang lainnya (<<b>h1</b>> dan <<b>p</b>>).</p>
+				
+				<div class="simple-example">
+					<<b>body</b>><br><br>
+						<<b>h1</b>> Ini heading pertamaku <<b>/h1</b>><br>
+						<<b>p</b>> Ini paragraf pertamaku<<b>/p</b>><br><br>
+					<<b>/body</b>>
+				</div>
+				
+				<p> elemen <<b>h1</b>> mendefinisikan <b>Kepala HTML</b>. </p>
+				<p> Ia memiliki sebuah start tag <<b>h1</b>>dan sebuah end tag <<b>/h1</b>>. </p>
+				<p> elemen ini berisi: <b>Ini heading pertamaku</b>. </p>
+				
+				
+				<div class="simple-example">
+					<<b>h1</b>> Ini heading pertamaku <<b>/h1</b>>
+				</div>
+				
+				<p> elemen <<b>p</b>> mendefinisikan sebuah <b> paragraf HTML</b>. </p>
+				<p> Ia memiliki sebuah start tag <<b>p</b>>dan sebuah end tag <<b>/p</b>>. </p>
+				<p> elemen ini berisi: <b>Ini paragraf pertamaku</b>. </p>
+				
+				<div class="simple-example">
+					<<b>p</b>> Ini paragraf pertamaku<<b>/p</b>>
+				</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1>  Jangan Lupa Menutup dengan End Tag </h1>
+				<p> Beberapa elemen HTML akan menampilkan secara benar, bahkan jika kamu lupa menutupnya dengan end tag:</p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br>
+						<<b>html</b>><br>
+							<<b>body</b>><br><br>
+							
+								<<b>h1</b>> Ini heading pertamaku <br>
+								<<b>p</b>> Ini paragraf pertamaku <br><br>
+								
+							<<b>/body</b>><br>
+						<<b>/html</b>>
+						
+					</div>
+					<button onclick="tampilkan02()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+						<h3>Ini Heading pertamaku
+						<p> Ini paragraf pertamaku
+					</div>
+				</article>
+				
+				<p>Contoh diatas mengerjakan pada semua browser, karena penutupan tag adalah opsi ditentukan. </p>
+				<p> 
+				Jangan pernah mempercayakan cara ini. Ini mungkin mengproduksi hasil yang keliru dan/atau error 
+				jika kamu lupa menutup dengan end tag.
+				</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Empty HTML Elements </h1>
+				<p> Elemen HTML dengan tidak adanya konten disebut dengan <b>empty elements</b>. </p>
+				<p> <<b>br</b>> adalah sebuah empty element tanpa penutup tag (<<b>br</b>> tag mendefinisikan sebuah line break atau baris baru). </p>
+				<p> Empty element bisa di <i>"tutup"</i> pada tag pembuka seperti <<b>b /</b>>. </p>
+				<div class="nasehat">
+					<p> 
+					HTML5 tidak memerlukan empty element untuk ditutup. Tapi jika kamu mau validasi yang lebih akurat, atau kamu butuh untuk membuat 
+					dokument yang mudah dibaca oleh XML parsers, kamu harus menutup semua elemen HTML.
+					</p>
+				</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Saran HTML: Gunakanlah Tag Lowercase </h1>
+				<p> HTML tag bukan merupakan case sensitive: <<b>p</b>> artinya sama seperti <<b>P</b>>. </p>
+				<p> Standar HTML5 tidak perlu lowercase tag (tag dengan huruf kecil), tapi W3S menyarankan lowercase pada HTML4, dan <b>menuntut</b> lowercase untuk tipe dokumen yang lebih akurat seperti XHTML.</p>
+				<p> Di Readbook kita selalu gunkan lowercase tag. </p>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML basic.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML attributes.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

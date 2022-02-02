@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | JavaScript | DOM navigation</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="javaScript.js"></script>
+<script type="text/javascript" src="javaScript2.js"></script>
+<script type="text/javascript" src="javaScript3.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical"> <!--open link-->
+		<button onclick="openMenu()" id="menu">Open Menu</button>
+		<button onclick="closeMenu()" id="menu">Close Menu</button>
+		
+		<div id="vertical">
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch()"> JavaScript Tutorial</button>
+			<div class="drop-content" id="myDropdown">
+			<input type="text" class="myInput" id="myInput" placeholder="Cari" onkeyup="filterFunction()"/>
+			<ol>
+				<a href="js home.html"><li> Home </li></a>
+				<a href="js introduction.html"><li> Introduction </li></a>
+				<a href="js where to.html"><li> Where To </li></a>
+				<a href="js output.html"><li> Output </li></a>
+				<a href="js syntax.html"><li> Syntax </li></a>
+				<a href="js statements.html" ><li> Statements </li></a>
+				<a href="js comments.html" ><li> Comments </li></a>
+				<a href="js variables.html"><li> Variable </li></a>
+				<a href="js operators.html"><li> Operators </li></a>
+				<a href="js arithmetic.html"><li> Arithmetic </li></a>
+				<a href="js assignment.html"><li> Assignment </li></a>
+				<a href="js data types.html"><li> Data Types </li></a>
+				<a href="js functions.html"><li> Functions </li></a>
+				<a href="js objects.html"><li> Objects </li></a>
+				<a href="js scope.html"><li> Scope </li></a>
+				<a href="js events.html"><li> Events </li></a>
+				<a href="js strings.html"><li> string </li></a>
+				<a href="js string methods.html"><li> Strings Method </li></a>
+				<a href="js numbers.html"><li> Numbers </li></a>
+				<a href="js number methods.html"><li> Number Methods </li></a>
+				<a href="js math.html"><li> Math </li></a>
+				<a href="js random.html" ><li> Math Random </li></a>
+				<a href="js dates.html"><li> Dates </li></a>
+				<a href="js date formats.html" ><li> Date Formats </li></a>
+				<a href="js date methods.html" ><li> Date Methods </li></a>
+				<a href="js get date methods.html" ><li> Date get Methods </li></a>
+				<a href="js set date methods.html" ><li> Date Set Methods </li></a>
+				<a href="js arrays.html"><li> Arrays </li></a>
+				<a href="js array methods.html" ><li> Array Methods </li></a>
+				<a href="js array sort.html"><li> Array Sort </li></a>
+				<a href="js array iteration.html"><li> Array Iteration </li></a>
+				<a href="js booleans.html" ><li> boolean </li></a>
+				<a href="js comparisons.html" ><li> Comparisons </li></a>
+				<a href="js conditions.html" ><li>Conditions</li></a>
+				<a href="js switch.html" ><li>Switch </li></a>
+				<a href="js loop for.html"><li> Loop For </li></a>
+				<a href="js loop while.html" ><li>Loop while</li></a>
+				<a href="js break.html" ><li>Break</li></a>
+				<a href="js type conversion.html" ><li> Types conversion</li></a>
+				<a href="js bitwise.html" ><li> Bitwise </li></a>
+				<a href="js RegExp.html" ><li>RegExp</li></a>
+				<a href="js errors.html" ><li>Errors </li></a>
+				<a href="js debugging.html"><li>Debugging </li></a>
+				<a href="js hoisting.html" ><li>Hoisting</li></a>
+				<a href="js strict mode.html"><li>Strict mode</li></a>
+				<a href="js this keyword.html" ><li> this Keyword </li></a>
+				<a href="js let.html" ><li> Let </li></a>
+				<a href="js const.html" ><li> Const </li></a>
+				<a href="js style guide.html" ><li>Style guide</li></a>
+				<a href="js best practices.html" ><li>best practices </li></a>
+				<a href="js mistakes.html"><li> Mistakes </li></a>
+				<a href="js performance.html" ><li>Performance</li></a>
+				<a href="js reserved words.html" ><li>Reserved words</li></a>
+				<a href="js versions.html" ><li> Versions </li></a>
+				<a href="js version ES5.html" ><li class="redZone"> Version ES5 </li></a>
+				<a href="js version ES6.html" ><li class="redZone"> Version ES6 </li></a>
+				<a href="js JSON.html"><li>JSON</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch2()"> JavaScript Formulir</button>
+			<div class="drop-content" id="myDropdown2">
+			<input type="text" class="myInput" id="myInput2" placeholder="Cari" onkeyup="filterFunction2()"/>
+			<ol>
+				<a href="forms validation.html" ><li>Forms Validation</li></a>
+				<a href="forms API.html" ><li class="redZone">Forms API</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch3()"> JavaScript Object</button>
+			<div class="drop-content" id="myDropdown3">
+			<input type="text" class="myInput" id="myInput3" placeholder="Cari" onkeyup="filterFunction3()"/>
+			<ol>
+				<a href="object definitions.html" ><li>Object Definitions</li></a>
+				<a href="object properties.html" ><li>Object Properties</li></a>
+				<a href="object methods.html"><li class="redZone">Object Methods</li></a>
+				<a href="object accessors.html" ><li>Object accessors</li></a>
+				<a href="object constructors.html" ><li>Object constructor</li></a>
+				<a href="object prototypes.html" ><li>Object Prototypes</li></a>
+				<a href="object ECMAScript5.html" ><li class="redZone">Object ECMAScript5</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch4()"> JavaScript Function</button>
+			<div class="drop-content" id="myDropdown4">
+			<input type="text" class="myInput" id="myInput4" placeholder="Cari" onkeyup="filterFunction4()"/>
+			<ol>
+				<a href="funtion definitions.html" ><li>Function Definitions</li></a>
+				<a href="function parameters.html" ><li>Function Parameters</li></a>
+				<a href="function invocation.html" ><li>Function Invocation</li></a>
+				<a href="function closures.html" ><li>Function Closures</li></a>
+				<a href="function apply.html" ><li class="redZone">Function Apply</li></a>
+				<a href="function call.html" ><li>Function Call</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch5()">  JavaScript HMTL DOM </button>
+			<div class="drop-content" id="myDropdown5">
+			<input type="text" class="myInput" id="myInput5" placeholder="Cari" onkeyup="filterFunction5()"/>
+			<ol>
+				<a href="DOM intro.html" ><li> DOM Introduction </li></a>
+				<a href="DOM methods.html" ><li> DOM Methods </li></a>
+				<a href="DOM document.html" ><li> DOM Documents</li></a>
+				<a href="DOM elements.html" ><li> DOM Elements  </li></a>
+				<a href="DOM HTML.html" ><li> DOM HTML</li></a>
+				<a href="DOM CSS.html" ><li> DOM CSS  </li></a>
+				<a href="DOM animations.html" ><li> DOM Animations </li></a>
+				<a href="DOM events.html" ><li> DOM Events </li></a>
+				<a href="DOM eventListener.html" ><li> DOM EventListener </li></a>
+				<a href="DOM navigation.html" ><li> DOM Navigation </li></a>
+				<a href="DOM nodes.html" ><li> DOM Nodes </li></a>
+				<a href="DOM nodelist.html" ><li> DOM Nodelist </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch6()"> JavaScript Browser BOM </button>
+			<div class="drop-content" id="myDropdown6">
+			<input type="text" class="myInput" id="myInput6" placeholder="Cari" onkeyup="filterFunction6()"/>
+			<ol>
+				<a href="BOM window.html" ><li> Window </li></a>
+				<a href="BOM screen.html" ><li> Screen </li></a>
+				<a href="BOM location.html" ><li> Location </li></a>
+				<a href="BOM history.html" ><li> History  </li></a>
+				<a href="BOM navigator.html" ><li> Navigator </li></a>
+				<a href="BOM popup alert.html" ><li> Popup Alert </li></a>
+				<a href="BOM timing.html" ><li> Timing </li></a>
+				<a href="BOM cookies.html" ><li> Cookies </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch7()">JavaScript AJAX</button>
+			<div class="drop-content" id="myDropdown7">
+			<input type="text" class="myInput" id="myInput7" placeholder="Cari" onkeyup="filterFunction7()"/>
+			<ol>
+				<a href="AJAX intro.html" ><li> AJAX Introduction</li></a>
+				<a href="AJAX XMLHttpRequest.html" ><li> AJAX XMLHttpRequest </li></a>
+				<a href="AJAX request.html" ><li> AJAX Request </li></a>
+				<a href="AJAX respone.html" ><li class="redZone"> AJAX Response </li></a>
+				<a href="AJAX XML file.html" ><li> AJAX XML File</li></a>
+				<a href="AJAX PHP.html" ><li> AJAX PHP </li></a>
+				<a href="AJAX ASP.html" ><li> AJAX ASP </li></a>
+				<a href="AJAX database.html" ><li> AJAX Database </li></a>
+				<a href="AJAX XML applications.html" ><li> AJAX XML Application </li></a>
+				<a href="AJAX examples.html" ><li> AJAX Example </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch8()">JavaScript JSON</button>
+			<div class="drop-content" id="myDropdown8">
+			<input type="text" class="myInput" id="myInput8" placeholder="Cari" onkeyup="filterFunction8()"/>
+			<ol>
+				<a href="JSON intro.html" ><li class="redZone"> JSON Introduction</li></a>
+				<a href="JSON syntax.html" ><li class="redZone"> JSON Syntax </li></a>
+				<a href="JSON vs XML.html" ><li class="redZone"> JSON vs XML </li></a>
+				<a href="JSON data types.html" ><li class="redZone"> JSON Data Types </li></a>
+				<a href="JSON parse.html" ><li class="redZone"> JSON parse </li></a>
+				<a href="JSON stringify.html" ><li class="redZone"> JSON Stringify</li></a>
+				<a href="JSON objects.html" ><li class="redZone"> JSON Objects </li></a>
+				<a href="JSON arrays.html" ><li class="redZone"> JSON Arrays </li></a>
+				<a href="JSON PHP.html" ><li class="redZone"> JSON PHP </li></a>
+				<a href="JSON HTML.html" ><li class="redZone"> JSON HTML </li></a>
+				<a href="JSON JSONP.html" ><li class="redZone"> JSON JSONP </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch9()">JavaScript Reference</button>
+			<div class="drop-content" id="myDropdown9">
+			<input type="text" class="myInput" id="myInput9" placeholder="Cari" onkeyup="filterFunction9()"/>
+			<ol>
+				<li> <p> JavaScript References </p> </li>
+				<a href="JavaScript references/overview.html" > <li> Overview </li> </a>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch11()">JavaScript</button>
+					<div class="drop-content" id="myDropdown11">
+					<input type="text" class="myInput" id="myInput11" placeholder="Cari" onkeyup="filterFunction11()"/>
+					<ol>
+						<a href="JavaScript references/string reference.html" ><li>String Reference </li></a>
+						<a href="JavaScript references/number reference.html" ><li>Number Reference </li></a>
+						<a href="JavaScript references/operator reference.html" ><li>Operator Reference </li></a>
+						<a href="JavaScript references/statement reference.html" ><li>Statement Reference </li></a>
+						<a href="JavaScript references/math reference.html" ><li>Math Reference </li></a>
+						<a href="JavaScript references/date reference.html" ><li>Date Reference </li></a>
+						<a href="JavaScript references/array reference.html" ><li> Array Reference </li></a>
+						<a href="JavaScript references/boolean reference.html" ><li> Boolean Reference </li></a>
+						<a href="JavaScript references/RegExp reference.html" ><li> RegExp Reference </li></a>
+						<a href="JavaScript references/global reference.html" ><li> Global Reference </li></a>
+						<a href="JavaScript references/conversion reference.html" ><li> Conversion Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()">Browser Object Model (BOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="JavaScript references/BOM window reference.html" ><li> BOM Window Reference </li></a>
+						<a href="JavaScript references/BOM navigator reference.html" ><li> BOM Navigator Reference </li></a>
+						<a href="JavaScript references/BOM screen reference.html" ><li> BOM screen Reference </li></a>
+						<a href="JavaScript references/BOM history reference.html" ><li> BOM History Reference </li></a>
+						<a href="JavaScript references/BOM location reference.html" ><li> BOM Location Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()"> HTML Document Object Model (DOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="JavaScript references/DOM document reference.html" ><li> DOM Documents Reference </li></a>
+						<a href="JavaScript references/DOM element reference.html" ><li> DOM Elements Reference </li></a>
+						<a href="JavaScript references/DOM attribute reference.html" ><li> DOM Attributes Reference </li></a>
+						<a href="JavaScript references/DOM event reference.html" ><li> DOOM Events Reference </li></a>
+						<a href="JavaScript references/DOM style.html" ><li> DOM Style Reference </li></a>
+					</ol>
+					</div>
+			</ol>
+			</div>
+			</div>
+		</div>
+		</div>
+		</div> <!--close Link-->
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> JavaScript HTML DOM - Navigation</h1>
+				<p>
+				Dengan HTML DOM, kamu bisa menavigasi node tree menggunakan node relationsips.
+			</div>
+			
+			
+<section>
+			<article>
+				<h1> DOM Nodes </h1>
+				<p>
+				Pencatatan untuk W3C HTML DOM Standard, segalanya pada sebuah dokumen HTML adalah node:
+				</p>
+				<ul>
+					<li>Seluruh dokumen adalah dokumen node</li>
+					<li> Setiap element HTML adalah elemen node</li>
+					<li> Teks didalam elemen HTML adalah teks node</li>
+					<li> Setiap attribute HTML adalah attribut node</li>
+					<li> Semua comment adalah comment node </li>
+				</ul>
+				<p>
+				Dengan HTML DOM, semua node didalam node tree bisa diakses oleh JavaScript. <br><br>
+				Node baru bisa dibuat, dan semua node bisa dimodifikasi atau dihapus.
+				</p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Node Relationships </h1>
+				<p>
+				Node - node pada node tree memiliki hierarchical relationship (hubungan hirarki) untunk masing - masing lainnya. <br><br>
+				Istilah parent, child dan sibling digunakan untuk mendeksripsikan hubungan.<br><br>
+				</p>
+				
+				<ul>
+					<li> Pada sebuah node tree, node yang berada diatas disebut dengan root (atau root node). </li>
+					<li> Setiap node memiliki persis satu parent, kecuali root (yang mana tidak memilikk parent)</li>
+					<li> Sebuah node bisa memiliki sebuah nomor dari children. </li>
+					<li> Sibling (brother and sister) adalah node dengan parent yang sama.</li>
+				</ul>
+			
+				<article class="simple-example">
+					<q lang="no"><</q>html> <br><br>
+					
+					  <q lang="no"><</q>head> 
+					      <blockquote><q lang="no"><</q>title>DOM Tutorial<q lang="no"><</q>/title></blockquote>
+					  <q lang="no"><</q>/head> <br><br>
+					
+					  <q lang="no"><</q>body> <br>
+					      <q lang="no"><</q>h1>DOM Lesson one<q lang="no"><</q>/h1><br>
+					      <q lang="no"><</q>p>Hello world!<q lang="no"><</q>/p> <br>
+					  <q lang="no"></q>/body> <br><br><br>
+					
+					<q lang="no"><</q>/html>
+				</article>
+				
+				<p>
+				Dari HTML diatas kamu bisa membacanya:
+				</p>
+				
+				<ul>
+					<li><b>html</b> adalah root node</li>
+					<li><b>html</b> tidak memiliki parents</li>
+					<li><b>html</b> adalah parent dari <b>head</b> dan <b>body</b></li>
+					<li><b>head</b> adalah child pertama dari <b>html</b></li>
+					<li><b>body</b> adalah child terakhir dari <b>html</b></li>
+				</ul>
+				
+				<p>dan:</p>
+				
+				<ul>
+					<li><b>head</b> memiliki child: <b>title</b></li>
+					<li><b>title</b> memiliki satu child (sebuah teks node): "DOM Tutorial"</li>
+					<li><b>body</b> has two children: <b>h1</b> dan <b>p</b></li>
+					<li><b>h1</b> has one child: "DOM Lesson one"</li>
+					<li><b>p</b> has one child: "Hello world!"</li>
+					<li><b>h1</b> and <b>p</b> are siblings</li>
+				</ul>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Navigating Between Nodes </h1>
+				<p>
+				Kamu bisa menggunakan properti node berikut untuk menavigasi diantara node dengan JavaScript:
+				</p>
+				
+				<ul>
+					<li> parentNode </li>
+					<li> childNodes[<i>nomornode</i>] </li>
+					<li> firstChild </li>
+					<li> lastChild </li>
+					<li> nextSibling </li>
+					<li> previousSibling </li>
+				</ul>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> <b class="justRed">Warning !</b> </h1>
+				<p>
+				Error umum pada pemrosesan DOM ialah untuk memperkirakan sebuah elemen node  ke teks konten. <br><br>
+				Pada contoh ini: <<b>title</b>>Dom Tutoria<<b>/titl</b>>, elemen node <<b>titil</b>> tidak berisi teks. 
+				ia berisi sebuah teks node dengan nilai <b>"DOM Tutorial"</b>. <br><br>
+				Nilai dari teks node bisa diakses oleh properti innerHTML node atau nodeValue.
+				</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Child Nodes dan Node Values </h1>
+				<p>
+				Pada penambahan pada properti <b>innerHTML</b>, kamu bisa juga menggunakan metode <b>childNode</b> dan 
+				<b>NodeValue</b> untuk mendapatkan konten dari sebuah elemen. <br><br>
+				Contoh berikut mengoleksi nilai node dari elemen <<b>h1</b>> dan salinan itu dimasukan kedalam elemen <<b>p</b>>:
+				</p>
+				<article class="example-box">
+					<h1> Contoh </h1>
+					<div class="example-content">
+						<i><</i>html> <br>
+						<i><</i>body> <br><br>
+						
+						<i><</i>h1 id="intro">My First Page<i><</i>/h1> <br><br>
+						
+						<i><</i>p id="demo">Hello!<i><</i>/p> <br><br>
+						
+						<i><</i>script> 
+							<blockquote>
+							var myText = document.getElementById("intro").<b class="justRed">childNodes[0]</b>.nodeValue; <br>
+							document.getElementById("demo").innerHTML = myText; 
+							</blockquote>
+						<i><</i>/script> <br><br>
+						
+						<i><</i>/body> <br>
+						<i><</i>/html>
+					</div>
+				</article>
+				
+				<p>
+				Pada contoh diatas, <b>getElementById</b> adalah sebuah metode, sedangkan <b>childNodes</b> dan <b>nodeValues</b> adalah properti. <br><br>
+				Pada tutorial ini kita gunakan properti <b>innerHTML</b>. akan tetapi, pembelajaran metode diatas sangat berguna untuk 
+				mengerti struktur tree dan navigasi dari DOM.<br><br>
+				Penggunaan properti <b>firstChild</b> itu sama menggunakan <b>childNodes[0]</b>:
+				</p>
+				
+				<article class="example-box">
+					<h1> Contoh </h1>
+					<div class="example-content">
+						<i><</i>html> <br>
+						<i><</i>body> <br><br>
+						
+						<i><</i>h1 id="intro">My First Page<i><</i>/h1> <br><br>
+						
+						<i><</i>p id="demo">Hello!<i><</i>/p> <br><br>
+						
+						<i><</i>script> 
+						<blockquote>
+						var myText = document.getElementById("intro").<b class="justRed">firstChild</b>.nodeValue; <br>
+						document.getElementById("demo").innerHTML = myText; 
+						</blockquote>
+						<i><</i>/script> <br><br>
+						
+						<i><</i>/body> <br>
+						<i><</i>/html>
+						</div>
+				</article>
+				
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> DOM Root Nodes  </h1>
+				<p>
+				Ada dua properti special yang memgizinkan mengakses full dokumen:
+				</p>
+				
+				<ul>
+					<li> document.body - body dari dokumen</li>
+					<li> document.documentElement - full dokumen </li>
+				</ul>
+				
+				<article class="example-box">
+					<h1> Contoh </h1>
+					<div class="example-content">
+						<i><</i>html> <br>
+						<i><</i>body> <br><br>
+						
+						<i><</i>p> Hello World!<i><</i>/h1> <br><br>
+						<i><</i>div>
+							<blockquote>
+							<i><</i>p> DOM sangat berguna !<i><</i>/p> <br>
+							<i><</i>p> Contoh ini akan mempertontonkan properti <<i>i</i>b> document.body<i><</i>/b>.<i><</i>/p> 
+							</blockquote>
+						<i><</i>/div><br> <br>
+						<i><</i>script> 
+							<blockquote>
+							<span class="blue">alert(<span class="purple">document.body.innerHTML</span>)</span>;
+							</blockquote>
+						<i><</i>/script> <br><br>
+						
+						<i><</i>/body> <br>
+						<i><</i>/html>
+						</div>
+				</article>
+				
+				<article class="example-box">
+					<h1> Contoh </h1>
+					<div class="example-content">
+						<i><</i>html> <br>
+						<i><</i>body> <br><br>
+						
+						<i><</i>p> Hello World!<i><</i>/h1> <br><br>
+						<i><</i>div>
+							<blockquote>
+							<i><</i>p> DOM sangat berguna !<i><</i>/p> <br>
+							<i><</i>p> Contoh ini akan mempertontonkan properti <<i>i</i>b> document.documentElement<i><</i>/b>.<i><</i>/p> 
+							</blockquote>
+						<i><</i>/div><br> <br>
+						<i><</i>script> 
+							<blockquote>
+							<span class="blue">alert(<span class="purple">document.documentElement.innerHTML</span>)</span>;
+							</blockquote>
+						<i><</i>/script> <br><br>
+						
+						<i><</i>/body> <br>
+						<i><</i>/html>
+						</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Properti nodeName </h1>
+				<p>
+				Properti nodeName menentukan nama daei sebuah node.
+				</p>
+				
+				<ul>
+					<li> nodeName merupakan read-only</li>
+					<li>nodeName dari sebuah element node itu sama seperti tag name </li>
+					<li> nodeName daei attribute node merupakan nama attribute </li>
+					<li> nodeName dari sebuah teks node itu selalu #teks </li>
+					<li> nodeName dari dokumen node itu selalu #document </li>
+				</ul>
+				
+				<p>
+				<b>node</b> nodeName selalu berisi uppercase (huruf kapital) tag name dari sebuah elemen HTML.
+				</p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Properti nodeValue  </h1>
+				<p>
+				Properti nodeValue menentukan nilai dari sebuah node.
+				</p>
+				
+				<ul>
+					<li> nodeValue untuk  node - node elemen adalah undefined (tak didefinisi) </li>
+					<li> nodeValue untuk node - node teks  adalah teks itu sendiri </li>
+					<li> nodeValue untuk node - node attribute adalah nilai attribut</li>
+				</ul>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Properti nodeType </h1>
+				<p>
+				Properti nodeType mengembalikan tipe dari node. nodeType merupakan read-only. <br><br>
+				Tipe - tipe node paling  penting adalah:
+				</p>
+				
+				<table>
+					<thead>
+						<tr>
+							<th>Tipe Element</th>
+							<th>NodeType</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Element</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>Attribute</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>Text</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>Comment</td>
+							<td>8</td>
+						</tr>
+						<tr>
+							<td>Document</td>
+							<td>9</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="DOM eventListener.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="DOM nodes.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			</article>
+			<article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

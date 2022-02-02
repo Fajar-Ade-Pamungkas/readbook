@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS3 3D transforms </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+.example-content > div { 
+width: 300px; 
+height: 100px; 
+background-color: yellow; 
+border: 1px solid black; 
+} 
+
+div#myDiv01 { 
+-webkit-transform: rotateX(150deg); /* Safari */ 
+transform: rotateX(150deg); /* Standard syntax */ 
+} 
+
+div#myDiv02 { 
+-webkit-transform: rotateY(150deg); /* Safari */ 
+transform: rotateY(150deg); /* Standard syntax */ 
+}
+
+div#myDiv03 { 
+-webkit-transform: rotateZ(90deg); /* Safari */ 
+transform: rotateZ(90deg); /* Standard syntax */ 
+} 
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS3 3D Transforms </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> CSS3 3D Transforms</h2>
+				<p> CSS3 mengizinkan kamj untuk memformat element kamu menggunakan transformasi 3 Dimensi.</p>
+				
+				<p> Mouse over the elements below to see the difference between a 2D and a 3D transformation:</p>
+				
+				<div>
+					<div class="rotasi2D">2D rotate</div>
+					<div class="rotasi3D">3D rotate</div>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Browser Support for 3D Transforms</h2>
+				<p> Nomor pada tabel menentukan browser versi pertama yang mendukung secara penuh  properti ini.</p>
+				<p> Nomor yang diikut dengan <mark>-ms-</mark>, <mark>-webkit-</mark>, <mark>-moz-</mark> atau <mark>-o-</mark> menentukan versi pertama yang bekerja dengan awalan properti.</p>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> Properti </td>
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td>transform</td>
+							<td> 36.0 <br> 12.0 -webkit- </td>
+							<td> 12.0 dan 10.0 </td>
+							<td> 16.0 <br> 10.0 -moz- </td>
+							<td> 4.0 -webkit-</td>
+							<td> 23.0 <br> 15.0 -webkit- </td>
+						</tr>
+						<tr class="center">
+							<td>transform-origin <br> (sintaksis dengan tiga-nilai)</td>
+							<td> 36.0 <br> 12.0 -webkit- </td>
+							<td> 12.0 dan 10.0  </td>
+							<td> 16.0 <br> 10.0 -moz- </td>
+							<td> 4.0 -webkit- </td>
+							<td> 23.0 <br> 15.0 -webkit- </td>
+						</tr>
+						<tr class="center">
+							<td> transform-style </td>
+							<td> 36.0 <br> 12.0 -webkit- </td>
+							<td> 12.0 dan 11.0  </td>
+							<td> 16.0 <br> 10.0 -moz- </td>
+							<td> 4.0 -webkit- </td>
+							<td> 23.0 <br> 15.0 -webkit- </td>
+						</tr>
+						<tr class="center">
+							<td> perspective </td>
+							<td> 36.0 <br> 12.0 -webkit- </td>
+							<td> 12.0 dan 10.0  </td>
+							<td> 16.0 <br> 10.0 -moz- </td>
+							<td> 4.0 -webkit- </td>
+							<td> 23.0 <br> 15.0 -webkit- </td>
+						</tr>
+						<tr class="center">
+							<td> perspective-origin </td>
+							<td> 36.0 <br> 12.0 -webkit- </td>
+							<td> 12.0 dan 10.0  </td>
+							<td> 16.0 <br> 10.0 -moz- </td>
+							<td> 4.0 -webkit- </td>
+							<td> 23.0 <br> 15.0 -webkit- </td>
+						</tr>
+						<tr class="center">
+							<td> perspective-visibility </td>
+							<td> 36.0 <br> 12.0 -webkit- </td>
+							<td> 12.0 dan 10.0  </td>
+							<td> 16.0 <br> 10.0 -moz- </td>
+							<td> 4.0 -webkit- </td>
+							<td> 23.0 <br> 15.0 -webkit- </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 3D Transforms</h2>
+				<p> Pada chapter ini kamu akaj mempelajari tentang metode-metode transformasi 3 Dimensi berikut:</p>
+				
+				<ul>
+					<li>rotateX()</li>
+					<li>rotateY()</li>
+					<li>rotateZ()</li>
+				</ul>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>The rotateX() Method</h2>
+				<div class="rotasiX"></div>
+				<p> Metode <mark>rotateX()</mark> digunakan untuk merotasi/memutar sebuah element disekitar sumbu-X (nya) pada nilai derajat yang diberikan.</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						div { <br>
+						-webkit-transform: rotateX(150deg); <em>/* Safari */</em> <br>
+						transform: rotateX(150deg); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 300px; <br>
+						height: 100px; <br>
+						background-color: yellow; <br>
+						border: 1px solid black; <br>
+						} <br>
+						 <br>
+						div#myDiv { <br>
+						-webkit-transform: rotateX(150deg); /* Safari */ <br>
+						transform: rotateX(150deg); /* Standard syntax */ <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<div> <br>
+						This a normal div element. <br>
+						</div> <br>
+						 <br>
+						<div id="myDiv"> <br>
+						The rotateX() method rotates an element around its X-axis at a given degree. This div element is rotated 150 degrees. <br>
+						</div> <br>
+						 <br>
+						<p><b>Note:</b> Internet Explorer 9 (and earlier versions) does not support the rotateX() method.</p> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<div>
+						This a normal div element.
+						</div>
+						
+						<div id="myDiv01">
+						The rotateX() method rotates an element around its X-axis at a given degree. This div element is rotated 150 degrees.
+						</div>
+						
+						<p><b>Note:</b> Internet Explorer 9 (and earlier versions) does not support the rotateX() method.</p>
+						
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>The rotateY() Method</h2>
+				<div class="rotasiY"></div>
+				<p> Metode <mark>rotateY()</mark> digunakan untuk merotasi/memutar sebuah element sekitar sumbu-Y (nya) pada nilai derajat yang diberikan.</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						div { <br>
+						-webkit-transform: rotateY(130deg); <em>/* Safari */</em> <br>
+						transform: rotateY(130deg); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 300px; <br>
+						height: 100px; <br>
+						background-color: yellow; <br>
+						border: 1px solid black; <br>
+						} <br>
+						 <br>
+						div#myDiv { <br>
+						-webkit-transform: rotateY(150deg); /* Safari */ <br>
+						transform: rotateY(150deg); /* Standard syntax */ <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<div>
+						This a normal div element.
+						</div>
+						
+						<div id="myDiv">
+						The rotateY() method rotates an element around its Y-axis at a given degree. This div element is rotated 150 degrees.
+						</div>
+						
+						<p><b>Note:</b> Internet Explorer 9 (and earlier versions) does not support the rotateY() method.</p>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<div> <br>
+						This a normal div element. <br>
+						</div> <br>
+						 <br>
+						<div id="myDiv02"> <br>
+						The rotateY() method rotates an element around its Y-axis at a given degree. This div element is rotated 150 degrees. <br>
+						</div> <br>
+						 <br>
+						<p><b>Note:</b> Internet Explorer 9 (and earlier versions) does not support the rotateY() method.</p> <br> <br>
+						
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>The rotateZ() Method</h2>
+				<p> Metode <mark>rotateZ()</mark> digunakan untuk merotasi/memutar sebuah element sekitar sumbu-Z (nya) pada nilai derajat yang diberikan.</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open03">
+						
+						div { <br>
+						-webkit-transform: rotateZ(90deg); <em>/* Safari */</em> <br>
+						transform: rotateZ(90deg); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 300px; <br>
+						height: 100px; <br>
+						background-color: yellow; <br>
+						border: 1px solid black; <br>
+						} <br>
+						 <br>
+						div#myDiv { <br>
+						-webkit-transform: rotateZ(90deg); /* Safari */ <br>
+						transform: rotateZ(90deg); /* Standard syntax */ <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<div> <br>
+						This a normal div element. <br>
+						</div> <br>
+						 <br>
+						<div id="myDiv"> <br>
+						The rotateZ() method rotates an element around its Z-axis at a given degree. This div element is rotated 90 degrees. <br>
+						</div> <br>
+						 <br>
+						<p><b>Note:</b> Internet Explorer 9 (and earlier versions) does not support the rotateZ() method.</p> <br> <br>
+						
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+						<div>
+						This a normal div element.
+						</div>
+						
+						<div id="myDiv03"> 
+						The rotateZ() method rotates an element around its Z-axis at a given degree. This div element is rotated 90 degrees.
+						</div> 
+						
+						<p><b>Note:</b> Internet Explorer 9 (and earlier versions) does not support the rotateZ() method.</p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 Transform Properties</h2>
+				<p> Daftar tabel berikut adalah semua properti transformasi 3D:</p>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Properti</th>
+							<th>Deskripsi</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> transform </td>
+							<td> Menerapkan transformasi 2D atau 3D untuk sebuah element </td>
+						</tr>
+						<tr>
+							<td> transform-origin </td>
+							<td> Memperbolehkan kamu untuk mengubah posisi pada element bertransformasi </td>
+						</tr>
+						<tr>
+							<td> transform-style </td>
+							<td> Menentukan bagaimana nested element dibuat (render) pada ruang 3 Dimensi </td>
+						</tr>
+						<tr>
+							<td> perspective </td>
+							<td> Menentukan perspektif (pemandangan) pada bagaimana element 3 Dimensi ditunjukan </td>
+						</tr>
+						<tr>
+							<td> perspective-origin </td>
+							<td> Menentukan posisi bawah dari element 3 Dimensi </td>
+						</tr>
+						<tr>
+							<td> backface-visibility </td>
+							<td> Mendefinisikan apakah (iya) atau tidak  element harus diperlihatkan ketika bukan lapisan luar layar (not facing the screen)</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>3D Transform Methods</h2>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Fungsi</th>
+							<th>Deskripsi</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>matrix3d(<i>n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n</i>) </td>
+							<td>Mendefinisikan transformasi 3D, menggunakan 4x4 matrix dari 16 nilai</td>
+						</tr>
+						<tr>
+							<td> translate3d(<i>x,y,z</i>) </td>
+							<td> Mendefinisikan translasi 3D </td>
+						</tr>
+						<tr>
+							<td> translateX(<i>x</i>) </td>
+							<td> Mendefinisikan translasi 3D, hanya menggunakan nilai untuk sumbu-X </td>
+						</tr>
+						<tr>
+							<td> translateY(<i>y</i>) </td>
+							<td> Mendefinisikan translasi 3D, hanya menggunakan nilai untuk sumbu-Y </td>
+						</tr>
+						<tr>
+							<td> translateZ(<i>z</i>) </td>
+							<td> Mendefinisikan translasi 3D, hanya menggunakan nilai untuk sumbu-Z </td>
+						</tr>
+						<tr>
+							<td> scale3d(<i>x,y,z</i>) </td>
+							<td> Mendefinisikan transformasi skala 3D </td>
+						</tr>
+						<tr>
+							<td> scaleX(<i>x</i>) </td>
+							<td> Mendefinisikan transformasi skala 3D dengan memberikan sebuah nilai untuk sumbu-X </td>
+						</tr>
+						<tr>
+							<td> scaleY(<i>y</i>) </td>
+							<td> Mendefinisikan transformasi skala 3D dengan memberikan sebuah nilai untuk sumbu-Y </td>
+						</tr>
+						<tr>
+							<td> scaleZ(<i>z</i>) </td>
+							<td> Mendefinisikan transformasi skala 3D dengan memberikan sebuah nilai untuk sumbu-Z </td>
+						</tr>
+						<tr>
+							<td> rotate3d(<i>x,y,z,angle</i>) </td>
+							<td> Mendefinisikan rotasi 3 Dimensi </td>
+						</tr>
+						<tr>
+							<td> rotateX(<i>angle</i>) </td>
+							<td> Mendefinisikan rotasi 3 Dimensi sepanjang sumbu-X </td>
+						</tr>
+						<tr>
+							<td> rotateY(<i>angle</i>) </td>
+							<td> Mendefinisikan rotasi 3 Dimensi sepanjang sumbu-Y </td>
+						</tr>
+						<tr>
+							<td> rotateZ(<i>angle</i>) </td>
+							<td> Mendefinisikan rotasi 3 Dimensi sepanjang sumbu-Z </td>
+						</tr>
+						<tr>
+							<td> perspective(<i>n</i>) </td>
+							<td> Mendefinisikan sebuah perspective view (tampilan pemandangan) untuk element bertransformasi 3 Dimensi </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS3 2D transforms.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS3 transitions.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

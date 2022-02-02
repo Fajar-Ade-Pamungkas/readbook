@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML XHTML</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML dan XHTML </h1>
+				<p> XHTML adalah HTML yang ditulis sebagai XML. </p>
+
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> Apa itu XHTML? </h2>
+				<ul> 
+					<li>XHTML didirikan untuk E<b>X</b>tensible <b>H</b>yper<b>T</b>ext <b>M</b>arkup <b>L</b>anguage. </li>
+					<li>XHTML hampir mirip dengan HTML </li>
+					<li> XHTML lebih teliti (stricter) daripada HTML </li>
+					<li> XHTML adalah HTML yang didefinisikan sebagai XML application </li>
+					<li> XHTML didukung oleh semua mayor browser </li>
+				</li>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2>Kenapa XHTML? </h2>
+				<p> Banyak pages (halaman) di internet yang berisi "bad" HTML. </p>
+				<p> Kode HTML ini bekerja baik di banyak browser (bahkan jika ia tidak mengikut aturan HTML)
+				
+				<article class="example-box">
+					<div class="example-content">
+						<<b>html</b>> <br>
+						<<b>head</b>>
+						  <blockquote><<b>title</b>>This is bad HTML<<b>/title</b>> </blockquote>
+						<br>
+						<<b>body</b>>
+							<blockquote>
+							<<b>h1</b>>Bad HTML <br>
+							<<b>p</b>>This is a paragraph
+							</blockquote>
+						<<b>/body</b>>
+					</div>
+				</article>
+				
+				<p> 
+				Pemasaran hari ini terdiri dari teknologi browser yang berbeda. Beberapa browser berjalan pada komputer dan 
+				beberapa browser berjalan pada mobile phones atau perangkat kecil lainhya. Semakin kecil perangkat seringkali 
+				lack resource (kekurangan sumber) atau kekuatan untuk menafsirksn "bad" markup.
+				</p>
+				
+				<p>XML adalah sebuah markup language dimana dokumen harus ditandai ulang dengan benar (menjadi "formula yang benar"). </p>
+				<p> Jika kamu mau belajar XML, silahkan baca <a href="XML tutorial.html" >XML tutorial</a>. </p>
+				<p> Dengan pengkombinasian kekuatan dari HTML dan XML, XHTML berkembang. </p>
+				<p> XHTML adalah HTML yang didesign ulanh sebagai XML. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The Most Important Differences from HTML: </h2>
+				<h3>Document Structure</h3>
+				<ul> 
+					<li>XHTML DOCTYPE adalah <b>mandatory</b> (bersifat perintah) </li>
+					<li> Attribute <b>xmlns</b> pada <<b>html</b>> adalah <b>mandatory</b> </li>
+					<li> <<b>html</b>>, <<b>head</b>>, <<b>title</b>>, dan <<b>body</b>> merupakan <b>mandatory</b> </li>
+				</ul>
+				
+				<h3>XHTML Elements</h3>
+				<ul>
+					<li> Element - element XHTML harus di <b>"properly nested"</b> </li>
+					<li> Element - element XHTML harus <b>selalu ditutup</b> </li>
+					<li> Element - element XHTML harus <b>lowercase</b> (huruf kecil semua)</li>
+					<li> Dokumen - dokumen XHTML harus memili <b>satu root element</b> </li>
+				</ul>
+				
+				<h3>XHTML Attributes</h3>
+				<ul>
+					<li> Nama attribute harus <b>lowercase</b> </li>
+					<li> nilai attribute harus dipakaikan <b>tanda kutip</b></li>
+					<li> Attribute yang disingkat (Attribute minimization) <b>dilarang</b> </li>
+				</ul>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> <b class="blue"> <<b>!DOCTYPE</b> ....></b> Is Mandatory </h2>
+				<p> Sebuah dokumen XHTML harus memiliki sebuah pendeklarasian <b>DOCTYPE XHTML</b>. </p>
+				<p> Daftar lengkap tentang semua XHTML Dcotypes dicari dalam referensi tag HTML. </p>
+				<p> <<b>html</b>>, <<b>head</b>>, <<b>title</b>>, dan  <<b>body</b>> juga harus disediakan, dan attribute <b>xmlns</b> dalam <<b>html</b>> harus menentukan xml namespase untuk dokumen. </p>
+				<p> Contoh ini menampilkan sebuah Dokumen XHTML dengan minal tag yang diperlukan: </p>
+				<article class="example-box">
+					<div class="example-content">
+						<<b>!DOCTYPE</b> <span class="teal">html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"</span> <br>
+						<span class="teal">"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"</span>> <br><br>
+						<<b>html</b> <span class="teal">xmlns="http://www.w3.org/1999/xhtml"</span>> <br> <br>
+						<<b>head</b>>
+						  <blockquote><<b>title</b>>Title of HTML<<b>/title</b>> </blockquote>
+						<<b>/head</b>><br>
+						<<b>body</b>>
+						<br><br>
+							beberapa Konten
+						<br><br>
+						<<b>/body</b>> <br>
+						<<b>/html</b>>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Element XHTML Harus di-Properly Nested </h2>
+				<p> Dalam HTML, beberapa element bisa di-"improperly nested" dengan satu sama lain, seperti ini: </p>
+				
+				<div class="example-content">
+				<<b>b</b>><<b>i</b>>This text is bold and italic<<b>/b</b>><<b>/i</b>>
+				</div>
+				
+				<p> Dalam XHTML, semua element harus di-"properly nested" dengan satu sama lain, seperti ini: </p>
+				
+				<div class="example-content">
+				<<b>b</b>><<b>i</b>>This text is bold and italic<<b>/i</b>><<b>/b</b>>
+				</div>
+				
+			</article>
+</section>
+<section>			
+			<article>
+				<h2>  Element XHTML Harus Selalu Ditutup </h2>
+				<p> Ini salah: </p>
+				
+				<div class="example-content">
+				<<b>p</b>>This is a paragraph <br>
+				<<b>p</b>>This is another paragraph
+				</div>
+				
+				<p> Ini benar: </p>
+				
+				<div class="example-content">
+				<<b>p</b>>This is a paragraph <<b>/p</b>><br>
+				<<b>p</b>>This is another paragraph <<b>/p</b>>
+				</div>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Elements Kosong (Tunggal) juga Harus Ditutup </h2>
+				
+				<p> Ini salah: </p>
+				
+				<div class="example-content">
+				A break: <<b>br</b>> <br>
+				A horizontal rule: <<b>hr</b>> <br>
+				An image: <<b>img</b> <span class="teal">src="happy.gif" alt="Happy face"</span>>
+				</div>
+				
+				<p> Ini benar: </p>
+				
+				<div class="example-content">
+				A break: <<b>br /</b>> <br>
+				A horizontal rule: <<b>hr /</b>> <br>
+				An image: <<b>img</b> <span class="teal">src="happy.gif" alt="Happy face"</span> <b>/</b>>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Element XHTML Harus dalam Lower Case (Huruf kecil) </h2>
+				
+				<p> Ini salah: </p>
+				
+				<div class="example-content">
+				<<b>BODY</b>> <br>
+				<<b>P</b>>This is a paragraph<<b>/P</b>> <br>
+				<<b>/BODY</b>>
+				</div>
+				
+				<p> Ini benar: </p>
+				
+				<div class="example-content">
+				<<b>body</b>> <br>
+				<<b>p</b>>This is a paragraph<<b>/p</b>> <br>
+				<<b>/body</b>>
+				</div>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Nama Attribute XHTML Harus dalam Lower Case (Huruf Kecil) </h2>
+				
+				<p> Ini salah: </p>
+				
+				<div class="example-content">
+				<<b>table</b> <span class="teal">WIDTH="100%"</span>>
+				</div>
+				
+				<p> Ini benar: </p>
+				
+				<div class="example-content">
+				<<b>table</b> <span class="teal">width="100%"</span>>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Nilai Attribute Harus Diberi Tanda Kutip </h2>
+				
+				<p> Ini salah: </p>
+				
+				<div class="example-content">
+				<<b>table</b> <span class="teal">width=100%</span>>
+				</div>
+				
+				<p> Ini benar: </p>
+				
+				<div class="example-content">
+				<<b>table</b> <span class="teal">width="100%"</span>>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Attribute Minimization Is Forbidden </h2>
+				
+				<p> Peminimalan attribute itu dilarang </p> <br>
+				<p> Ini salah: </p>
+				
+				<div class="example-content">
+				<<b>input</b> <span class="teal">type="checkbox" name="vehicle" value="car" checked</span> <b>/</b>>
+				</div>
+				
+				<p> Ini benar: </p>
+				
+				<div class="example-content">
+				<<b>input</b> <span class="teal">type="checkbox" name="vehicle" value="car" checked="cheched"</span> <b>/</b>>
+				</div>
+				
+				<p> Ini salah: </p>
+				
+				<div class="example-content">
+				<<b>input</b> <span class="teal">type="text" name="lastname" disabled</span> <b>/</b>>
+				</div>
+				
+				<p> Ini benar: </p>
+				
+				<div class="example-content">
+				<<b>input</b> <span class="teal">type="text" name="lastname" disabled="disable"</span> <b>/</b>>
+				</div>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Bagaimana Cara Mengubah HTML Menjadi XHTML ? </h2>
+				<ul>
+					<li> Tambahkanlah <<b>!DOCTYPE</b>> XHTML untuk baris pertama dari setiap halaman </li>
+					<li> Tambahkanlah sebuah attribute <b>xmlns</b> kedalam element <<b>html</b>> pada setiap halaman</li>
+					<li> Ubahlah semua nama element menjadi lowercase (huruf kecil) </li>
+					<li> Tutuplah semua empty elements (element kosong atau tunggal) </li>
+					<li> Ubahlah semua nama attribute menjadi lowercase </li>
+					<li> Berilah tanda kutip di semua nilai attribute </li>
+				</ul>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML URL encode.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML forms.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML computercode</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML Computer Code Elements </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<article class="example-box">
+					<h1>Computer Code Element </h1>
+					<div class="example-content">
+						<<b>code</b>> <br>
+						var x = 5; <br>
+						var y = 6; <br>
+						document.getElementById("demo").innerHTML = x + y; <br>
+						<<b>/code</b>>
+					</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> HTML Computer Code Formatting </h1>
+				<p> HTML normalnya menggunakan kata variabel untuk ukuran dan spasi. </p>
+				<p> Ini tidak dibutuhkan ketika menampilkan contoh tentang computer code </p>
+				<p> Element <<b>kbd</b>>, <<b>samp</b>> dan <<b>code</b>> semuanya mendukung fixed letter size and spacing. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h1>  HTML <<b class="blue">kbd</b>> For Keyboard Input </h1>
+				<p> Element <<b>kbd</b>> mendefinisikan input keyboard (masukan keyboard): </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>kbd</b>>File | Open...<<b>/kbd</b>>
+					
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="simple-example sembunyikan" id="sembunyikan01">
+					
+						<kbd>File | Open...</kbd>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> HTML <<b class="blue">samp</b>> For Computer Output </h1>
+				<p> Element <<b>samp</b>> mendefinisikan sample output (sampel keluaran) dari sebuah program komputer: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>samp</b>> <br>
+						demo.example.com login: Apr 12 09:10:17 <br>
+						Linux 2.6.10-grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189 <br>
+						<<b>/samp</b>>
+					
+					</div>
+					<button onclick="tampilkan02()">Output:</button>
+					<div class="simple-example sembunyikan" id="sembunyikan02">
+					
+						<samp>
+						demo.example.com login: Apr 12 09:10:17
+						Linux 2.6.10-grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189
+						</samp>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> HTML <<b class="blue">code</b>> For Computer Code </h1>
+				<p> Element <<b>code</b>> mendefinisikan sebuah potongan dari kode pemrograman. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>code</b>> <br>
+						var x = 5; <br>
+						var y = 6; <br>
+						document.getElementById("demo").innerHTML = x + y; <br>
+						<<b>/code</b>>
+					
+					</div>
+					<button onclick="tampilkan03()">Output:</button>
+					<div class="simple-example sembunyikan" id="sembunyikan03">
+					
+						<code>
+						var x = 5;
+						var y = 6;
+						document.getElementById("demo").innerHTML = x + y;
+						</code>
+						
+					</div>
+				</article>
+				
+				<p> Perhatikanlah, element <<b>code </b>> tidak mengeyedua ekstra spasi dan garis baru. </p>
+				<p> Untuk memperbaiki ini, Kamu bisa menaruh element <<b>code</b>> didalam element <<b>pre</b>>: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>pre</b>> <br>
+						<<b>code</b>> <br>
+						var x = 5; <br>
+						var y = 6; <br>
+						document.getElementById("demo").innerHTML = x + y; <br>
+						<<b>/code</b>> <br>
+						<<b>/pre</b>>
+					
+					</div>
+					<button onclick="tampilkan04()">Output:</button>
+					<div class="simple-example sembunyikan" id="sembunyikan04">
+					
+<pre>
+<code>
+var x = 5;
+var y = 6;
+document.getElementById("demo").innerHTML = x + y;
+</code>
+</pre>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> HTML <<b class="blue">var</b>> For Variables </h1>
+				<p> Variabel bisa menjadi variabel pada sebuah expresi matematika atau sebuah variabel pada pemrogram yang konteks: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						Einstein wrote: <<b>var</b>>E<<b>/var</b>> = <<b>var</b>>m<<b>/var</b>><<b>var</b>>c<<b>/var</b>><<b>sup</b>>2<<b>/sup</b>>.
+					
+					</div>
+					<button onclick="tampilkan05()">Output:</button>
+					<div class="simple-example sembunyikan" id="sembunyikan05">
+					
+						Einstein wrote: <var>E</var> = <var>m</var><var>c</var><sup>2</sup>.
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> HTML Computer Code Elements </h1>
+				
+				<table>
+					<thead>
+						<tr>
+							<th> Tag </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> <<b>code</b>> </td>
+							<td> Mendefinisikan programming code </td>
+						</tr>
+						<tr>
+							<td> <<b>kbd</b>> </td>
+							<td> Mendefinisikan keyboard inout </td>
+						</tr>
+						<tr>
+							<td> <<b>samp</b>> </td>
+							<td> Mendefinisikan computer output</td>
+						</tr>
+						<tr>
+							<td> <<b>samp</b>> </td>
+							<td> Mendefinisikan sebuah variabel </td>
+						</tr>
+						<tr>
+							<td> <<b>pre</b>> </td>
+							<td> Mendefinisikan mendefinisikan preformatted text </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML quotations.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML comments.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | JavaScript | js string methods</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="javaScript.js"></script>
+<script type="text/javascript" src="javaScript2.js"></script>
+<script type="text/javascript" src="javaScript3.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		
+		<div id="nav-vertical"> <!--open link-->
+		<button onclick="openMenu()" id="menu">Open Menu</button>
+		<button onclick="closeMenu()" id="menu">Close Menu</button>
+		
+		<div id="vertical">
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch()"> JavaScript Tutorial</button>
+			<div class="drop-content" id="myDropdown">
+			<input type="text" class="myInput" id="myInput" placeholder="Cari" onkeyup="filterFunction()"/>
+			<ol>
+				<a href="js home.html"><li> Home </li></a>
+				<a href="js introduction.html"><li> Introduction </li></a>
+				<a href="js where to.html"><li> Where To </li></a>
+				<a href="js output.html"><li> Output </li></a>
+				<a href="js syntax.html"><li> Syntax </li></a>
+				<a href="js statements.html" ><li> Statements </li></a>
+				<a href="js comments.html" ><li> Comments </li></a>
+				<a href="js variables.html"><li> Variable </li></a>
+				<a href="js operators.html"><li> Operators </li></a>
+				<a href="js arithmetic.html"><li> Arithmetic </li></a>
+				<a href="js assignment.html"><li> Assignment </li></a>
+				<a href="js data types.html"><li> Data Types </li></a>
+				<a href="js functions.html"><li> Functions </li></a>
+				<a href="js objects.html"><li> Objects </li></a>
+				<a href="js scope.html"><li> Scope </li></a>
+				<a href="js events.html"><li> Events </li></a>
+				<a href="js strings.html"><li> string </li></a>
+				<a href="js string methods.html"><li> Strings Method </li></a>
+				<a href="js numbers.html"><li> Numbers </li></a>
+				<a href="js number methods.html"><li> Number Methods </li></a>
+				<a href="js math.html"><li> Math </li></a>
+				<a href="js random.html" ><li> Math Random </li></a>
+				<a href="js dates.html"><li> Dates </li></a>
+				<a href="js date formats.html" ><li> Date Formats </li></a>
+				<a href="js date methods.html" ><li> Date Methods </li></a>
+				<a href="js get date methods.html" ><li> Date get Methods </li></a>
+				<a href="js set date methods.html" ><li> Date Set Methods </li></a>
+				<a href="js arrays.html"><li> Arrays </li></a>
+				<a href="js array methods.html" ><li> Array Methods </li></a>
+				<a href="js array sort.html"><li> Array Sort </li></a>
+				<a href="js array iteration.html"><li> Array Iteration </li></a>
+				<a href="js booleans.html" ><li> boolean </li></a>
+				<a href="js comparisons.html" ><li> Comparisons </li></a>
+				<a href="js conditions.html" ><li>Conditions</li></a>
+				<a href="js switch.html" ><li>Switch </li></a>
+				<a href="js loop for.html"><li> Loop For </li></a>
+				<a href="js loop while.html" ><li>Loop while</li></a>
+				<a href="js break.html" ><li>Break</li></a>
+				<a href="js type conversion.html" ><li> Types conversion</li></a>
+				<a href="js bitwise.html" ><li> Bitwise </li></a>
+				<a href="js RegExp.html" ><li>RegExp</li></a>
+				<a href="js errors.html" ><li>Errors </li></a>
+				<a href="js debugging.html"><li>Debugging </li></a>
+				<a href="js hoisting.html" ><li>Hoisting</li></a>
+				<a href="js strict mode.html"><li>Strict mode</li></a>
+				<a href="js this keyword.html" ><li> this Keyword </li></a>
+				<a href="js let.html" ><li> Let </li></a>
+				<a href="js const.html" ><li> Const </li></a>
+				<a href="js style guide.html" ><li>Style guide</li></a>
+				<a href="js best practices.html" ><li>best practices </li></a>
+				<a href="js mistakes.html"><li> Mistakes </li></a>
+				<a href="js performance.html" ><li>Performance</li></a>
+				<a href="js reserved words.html" ><li>Reserved words</li></a>
+				<a href="js versions.html" ><li> Versions </li></a>
+				<a href="js version ES5.html" ><li class="redZone"> Version ES5 </li></a>
+				<a href="js version ES6.html" ><li class="redZone"> Version ES6 </li></a>
+				<a href="js JSON.html"><li>JSON</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch2()"> JavaScript Formulir</button>
+			<div class="drop-content" id="myDropdown2">
+			<input type="text" class="myInput" id="myInput2" placeholder="Cari" onkeyup="filterFunction2()"/>
+			<ol>
+				<a href="forms validation.html" ><li>Forms Validation</li></a>
+				<a href="forms API.html" ><li class="redZone">Forms API</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch3()"> JavaScript Object</button>
+			<div class="drop-content" id="myDropdown3">
+			<input type="text" class="myInput" id="myInput3" placeholder="Cari" onkeyup="filterFunction3()"/>
+			<ol>
+				<a href="object definitions.html" ><li>Object Definitions</li></a>
+				<a href="object properties.html" ><li>Object Properties</li></a>
+				<a href="object methods.html"><li class="redZone">Object Methods</li></a>
+				<a href="object accessors.html" ><li>Object accessors</li></a>
+				<a href="object constructors.html" ><li>Object constructor</li></a>
+				<a href="object prototypes.html" ><li>Object Prototypes</li></a>
+				<a href="object ECMAScript5.html" ><li class="redZone">Object ECMAScript5</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch4()"> JavaScript Function</button>
+			<div class="drop-content" id="myDropdown4">
+			<input type="text" class="myInput" id="myInput4" placeholder="Cari" onkeyup="filterFunction4()"/>
+			<ol>
+				<a href="funtion definitions.html" ><li>Function Definitions</li></a>
+				<a href="function parameters.html" ><li>Function Parameters</li></a>
+				<a href="function invocation.html" ><li>Function Invocation</li></a>
+				<a href="function closures.html" ><li>Function Closures</li></a>
+				<a href="function apply.html" ><li class="redZone">Function Apply</li></a>
+				<a href="function call.html" ><li>Function Call</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch5()">  JavaScript HMTL DOM </button>
+			<div class="drop-content" id="myDropdown5">
+			<input type="text" class="myInput" id="myInput5" placeholder="Cari" onkeyup="filterFunction5()"/>
+			<ol>
+				<a href="DOM intro.html" ><li> DOM Introduction </li></a>
+				<a href="DOM methods.html" ><li> DOM Methods </li></a>
+				<a href="DOM document.html" ><li> DOM Documents</li></a>
+				<a href="DOM elements.html" ><li> DOM Elements  </li></a>
+				<a href="DOM HTML.html" ><li> DOM HTML</li></a>
+				<a href="DOM CSS.html" ><li> DOM CSS  </li></a>
+				<a href="DOM animations.html" ><li> DOM Animations </li></a>
+				<a href="DOM events.html" ><li> DOM Events </li></a>
+				<a href="DOM eventListener.html" ><li> DOM EventListener </li></a>
+				<a href="DOM navigation.html" ><li> DOM Navigation </li></a>
+				<a href="DOM nodes.html" ><li> DOM Nodes </li></a>
+				<a href="DOM nodelist.html" ><li> DOM Nodelist </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch6()"> JavaScript Browser BOM </button>
+			<div class="drop-content" id="myDropdown6">
+			<input type="text" class="myInput" id="myInput6" placeholder="Cari" onkeyup="filterFunction6()"/>
+			<ol>
+				<a href="BOM window.html" ><li> Window </li></a>
+				<a href="BOM screen.html" ><li> Screen </li></a>
+				<a href="BOM location.html" ><li> Location </li></a>
+				<a href="BOM history.html" ><li> History  </li></a>
+				<a href="BOM navigator.html" ><li> Navigator </li></a>
+				<a href="BOM popup alert.html" ><li> Popup Alert </li></a>
+				<a href="BOM timing.html" ><li> Timing </li></a>
+				<a href="BOM cookies.html" ><li> Cookies </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch7()">JavaScript AJAX</button>
+			<div class="drop-content" id="myDropdown7">
+			<input type="text" class="myInput" id="myInput7" placeholder="Cari" onkeyup="filterFunction7()"/>
+			<ol>
+				<a href="AJAX intro.html" ><li> AJAX Introduction</li></a>
+				<a href="AJAX XMLHttpRequest.html" ><li> AJAX XMLHttpRequest </li></a>
+				<a href="AJAX request.html" ><li> AJAX Request </li></a>
+				<a href="AJAX respone.html" ><li class="redZone"> AJAX Response </li></a>
+				<a href="AJAX XML file.html" ><li> AJAX XML File</li></a>
+				<a href="AJAX PHP.html" ><li> AJAX PHP </li></a>
+				<a href="AJAX ASP.html" ><li> AJAX ASP </li></a>
+				<a href="AJAX database.html" ><li> AJAX Database </li></a>
+				<a href="AJAX XML applications.html" ><li> AJAX XML Application </li></a>
+				<a href="AJAX examples.html" ><li> AJAX Example </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch8()">JavaScript JSON</button>
+			<div class="drop-content" id="myDropdown8">
+			<input type="text" class="myInput" id="myInput8" placeholder="Cari" onkeyup="filterFunction8()"/>
+			<ol>
+				<a href="JSON intro.html" ><li class="redZone"> JSON Introduction</li></a>
+				<a href="JSON syntax.html" ><li class="redZone"> JSON Syntax </li></a>
+				<a href="JSON vs XML.html" ><li class="redZone"> JSON vs XML </li></a>
+				<a href="JSON data types.html" ><li class="redZone"> JSON Data Types </li></a>
+				<a href="JSON parse.html" ><li class="redZone"> JSON parse </li></a>
+				<a href="JSON stringify.html" ><li class="redZone"> JSON Stringify</li></a>
+				<a href="JSON objects.html" ><li class="redZone"> JSON Objects </li></a>
+				<a href="JSON arrays.html" ><li class="redZone"> JSON Arrays </li></a>
+				<a href="JSON PHP.html" ><li class="redZone"> JSON PHP </li></a>
+				<a href="JSON HTML.html" ><li class="redZone"> JSON HTML </li></a>
+				<a href="JSON JSONP.html" ><li class="redZone"> JSON JSONP </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch9()">JavaScript Reference</button>
+			<div class="drop-content" id="myDropdown9">
+			<input type="text" class="myInput" id="myInput9" placeholder="Cari" onkeyup="filterFunction9()"/>
+			<ol>
+				<li> <p> JavaScript References </p> </li>
+				<a href="JavaScript references/overview.html" > <li> Overview </li> </a>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch11()">JavaScript</button>
+					<div class="drop-content" id="myDropdown11">
+					<input type="text" class="myInput" id="myInput11" placeholder="Cari" onkeyup="filterFunction11()"/>
+					<ol>
+						<a href="JavaScript references/string reference.html" ><li>String Reference </li></a>
+						<a href="JavaScript references/number reference.html" ><li>Number Reference </li></a>
+						<a href="JavaScript references/operator reference.html" ><li>Operator Reference </li></a>
+						<a href="JavaScript references/statement reference.html" ><li>Statement Reference </li></a>
+						<a href="JavaScript references/math reference.html" ><li>Math Reference </li></a>
+						<a href="JavaScript references/date reference.html" ><li>Date Reference </li></a>
+						<a href="JavaScript references/array reference.html" ><li> Array Reference </li></a>
+						<a href="JavaScript references/boolean reference.html" ><li> Boolean Reference </li></a>
+						<a href="JavaScript references/RegExp reference.html" ><li> RegExp Reference </li></a>
+						<a href="JavaScript references/global reference.html" ><li> Global Reference </li></a>
+						<a href="JavaScript references/conversion reference.html" ><li> Conversion Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()">Browser Object Model (BOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="JavaScript references/BOM window reference.html" ><li> BOM Window Reference </li></a>
+						<a href="JavaScript references/BOM navigator reference.html" ><li> BOM Navigator Reference </li></a>
+						<a href="JavaScript references/BOM screen reference.html" ><li> BOM screen Reference </li></a>
+						<a href="JavaScript references/BOM history reference.html" ><li> BOM History Reference </li></a>
+						<a href="JavaScript references/BOM location reference.html" ><li> BOM Location Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()"> HTML Document Object Model (DOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="JavaScript references/DOM document reference.html" ><li> DOM Documents Reference </li></a>
+						<a href="JavaScript references/DOM element reference.html" ><li> DOM Elements Reference </li></a>
+						<a href="JavaScript references/DOM attribute reference.html" ><li> DOM Attributes Reference </li></a>
+						<a href="JavaScript references/DOM event reference.html" ><li> DOOM Events Reference </li></a>
+						<a href="JavaScript references/DOM style.html" ><li> DOM Style Reference </li></a>
+					</ol>
+					</div>
+			</ol>
+			</div>
+			</div>
+		</div>
+		</div>
+		</div> <!--close Link-->
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> Metode String JavaScript </h1>
+					<p>
+					Metode string bisa membantu kamu dalam berkerja dengan String.
+					</p>
+			</div>
+			
+			
+<section>
+			<article>
+				<h1> Penemuan String Dalam String </h1>
+				<p>
+				Metode <b>indexOf</b> mengembalikan daftar kata (posisi dari) peristiwa pertama dari 
+				sebuah teks tertentu dalam sebuah string:
+				</p>
+			</article>
+			
+			<!-- KOTAK CONTOH SIMPEL-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<div class="example-content">						
+			txt ="disini aku akan mencarikan kata 'aku' di dalam kalimat ini";
+			posisi = txt.indexOf("aku");
+			</div>
+			</article>
+			
+			<!-- CONTOH DETAIL 1-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Detail</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br>
+			<q lang="code">title</q>coba<q lang="code">/title</q><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">p</q> 
+			posisi "aku" ada di...
+			<q lang="code">/p</q><br><br>
+			<q lang="code">button <span class="purple">onclick="myFunction()"</span></q>Klik disini<q lang="code">/button</q><br><br>
+			<q lang="code">p <span class="purple">id="demo"</span></q><q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">function</span> myFunction() {<br><br>
+			<blockquote>
+			<span class="purple">var</span> txt ="disini aku akan mencarikan posisi kata 'kamu' di dalam kalimat ini";<br>
+			posisi = txt.indexOf("aku");
+			document.getElementById("<span class="purple">demo</span>").innerHTML=posisi;<br>
+			</blockquote>
+			}<br><br>
+			<q lang="code">/script</q><br><br>
+			<q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>
+			
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<p> 
+			Posisi "aku" ada di ...
+			</p>
+			<button onclick="stringmethods1()"> Klik disini</button>
+			<p id="stringmethods01"></p>
+			</div>
+			</article>	
+			
+			<article>
+				<p>
+				Metode <b>lastIndexOf</b>Mengembalikan posisi dari occurence (kejadian) temuan terakhir dari 
+				nilai tertentu dalam sebuah string :
+				</p>
+			</article>
+			
+			<!-- KOTAK CONTOH SIMPEL-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<div class="example-content">						
+			txt ="disini aku akan mencarikan kata 'aku' di dalam kalimat ini";
+			posisi = txt.LastndexOf("aku");
+			</div>
+			</article>
+			
+			<!-- CONTOH DETAIL 2-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Detail</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br>
+			<q lang="code">title</q>coba<q lang="code">/title</q><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">p</q> 
+			posisi "aku" ada di...
+			<q lang="code">/p</q><br><br>
+			<q lang="code">button <span class="purple">onclick="myFunction()"</span></q>Klik disini<q lang="code">/button</q><br><br>
+			<q lang="code">p <span class="purple">id="demo"</span></q><q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">function</span> myFunction() {<br><br>
+			<blockquote>
+			<span class="purple">var</span> txt ="disini aku akan mencarikan posisi kata 'aku' di dalam kalimat ini";<br>
+			posisi = txt.lastIndexOf("aku");
+			document.getElementById("<span class="purple">demo</span>").innerHTML=posisi;<br>
+			</blockquote>
+			}<br><br>
+			<q lang="code">/script</q><br><br>
+			<q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>
+			
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<p> 
+			Posisi "aku" ada di ...
+			</p>
+			<button onclick="stringmethods2()"> Klik disini</button>
+			<p id="stringmethods02"></p>
+			</div>
+			</article>	
+			
+			<article>
+				<p>
+				Kedua metode indexOf() dan lasrIndexOf() mengembalikan -1 berarti kata tersebut tidak ditemukan.
+				</p>
+			</article>
+			
+			<!--ATTENTION-->
+			<article>
+			<table class="attention">
+			<tr>
+			<td class="td-left">
+			<h1>!</h1>
+			</td>
+			<td class="td-right">
+			JavaScript menghitung mulai dari 0 (nol).<br>
+			Yang artinya 0 untuk posisi string pertama, 1 untuk posisi kedua, 2 untuk posisi ke tiga dan seterusnya.
+			</td>
+			</tr>
+			</table>
+			</article>
+			
+			<article>
+				<p>
+				Kedua metode menerima sebuah parameter kedua sebagai permulaan posisi untuk mencari.
+				</p>
+			</article>
+			
+</section>
+
+<section>
+			<article>
+				<h1> Pencarian String Dalam String</h1>
+				<p>
+				Mencari sebuah string pada sebuah nilai dan mengembalikan posisi dari kecocokan.				
+				</p>
+			</article>
+			
+			<!-- KOTAK CONTOH SIMPEL-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<div class="example-content">						
+			txt ="disini aku akan mencarikan kata 'aku' di dalam kalimat ini";
+			posisi = txt.search("aku");
+			</div>
+			</article>
+			
+			<!-- CONTOH DETAIL 3-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Detail</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br>
+			<q lang="code">title</q>coba<q lang="code">/title</q><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">p</q> 
+			posisi "aku" ada di...
+			<q lang="code">/p</q><br><br>
+			<q lang="code">button <span class="purple">onclick="myFunction()"</span></q>Klik disini<q lang="code">/button</q><br><br>
+			<q lang="code">p <span class="purple">id="demo"</span></q><q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">function</span> myFunction() {<br><br>
+			<blockquote>
+			<span class="purple">var</span> txt ="disini aku akan mencarikan posisi kata 'aku' di dalam kalimat ini";<br>
+			posisi = txt.seacrh("aku");
+			document.getElementById("<span class="purple">demo</span>").innerHTML=posisi;<br>
+			</blockquote>
+			}<br><br>
+			<q lang="code">/script</q><br><br>
+			<q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>
+			
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<p> 
+			Posisi "aku" ada di ...
+			</p>
+			<button onclick="stringmethods3()"> Klik disini</button>
+			<p id="stringmethods03"></p>
+			</div>
+			</article>	
+			
+			<!--ATTENTION-->
+			<article>
+			<table class="attention">
+			<tr>
+			<td class="td-left">
+			<h1>!</h1>
+			</td>
+			<td class="td-right">
+			<h1> Apakah Kamu Memperhatikan ?</h1>
+			</td>
+			</tr>
+			</table>
+			</article>
+			
+			<article>
+				<p>
+				Kedua metode <b>search()</b> dan <b>indexof()</b> adalah sama.<br><br>
+				mereka menerima atau meyetujui (accept) argumen yang sama maka merekapun aka 
+				mengeluarkan hasil yang sama.<br><br>
+				Kedua metode itu sama, tapi untuk metode search() bisa mengambil lebih banyak kekuatan nilai cari.<br><br>
+				Kamu akan mempelajari lebih banyak tentang powerful search values di chapter tentang regular expression.
+				</p>
+			</article>
+
+</section>
+<section>			
+			<article>
+				<h1> Pemisahan Bagian dalam String </h1>
+				<p>
+				Disini ada 3 metode pemisahan suatu bagian dari sebuah string:
+				</p>
+				<ul>
+					<li> slice(start,end) </li>
+					<li> substring(start,end) </li>
+					<li> substr(start,length) </li>
+				</ul>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Metode slice() </h1>
+				<p>
+				<b>slice()</b> mengekstrak suatu bagian dari sebuah string dan mengembalikan 
+				bagian pisahan dalam sebuah string baru. <br><br>
+				Metode ini membawa 2 parameter: index awal (posisi) dan index akhir (posisi).<br><br>
+				Contoh ini memotong suatu porsi string dari posisi 6 sampai posisi 12.
+				</p>
+			</article>
+			
+			<!-- KOTAK CONTOH SIMPEL-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<div class="example-content">
+			buah ="Apel, Mangga, Jeruk, Anggur";<br>
+			posisi = buah.slice(6,12);
+			</div>
+			</article>
+			
+			<!-- CONTOH DETAIL 4-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Detail</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br>
+			<q lang="code">title</q>coba<q lang="code">/title</q><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">p</q> 
+			Slice dengan parameter positif
+			<q lang="code">/p</q><br><br>
+			<q lang="code">button <span class="purple">onclick="myFunction()"</span></q>Klik disini<q lang="code">/button</q><br><br>
+			<q lang="code">p <span class="purple">id="demo"</span></q><q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">function</span> myFunction() {<br><br>
+			<blockquote>
+			<span class="purple">var</span> buah ="Apel, Mangga, Jeruk, Anggur";<br>
+			posisi = buah.slice(6,12);<br>
+			document.getElementById("<span class="purple">demo</span>").innerHTML=posisi;<br>
+			</blockquote>
+			}<br><br>
+			<q lang="code">/script</q><br><br>
+			<q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>
+			
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<p> 
+			Slice dengan parameter positif
+			</p>
+			<button onclick="stringmethods4()"> Klik disini</button>
+			<p id="stringmethods04"> Apel, Mangga, Jeruk, Anggur </p>
+			</div>
+			</article>	
+			
+			<article>
+				<p>
+				Jika parameter negatif, maka posisi dihitung dari akhir string (dari kanan ke kiri).<br><br>
+				Contoh ini memotong suatu porsi string dari posisi -21 sampai posisi -15.
+				</p>
+			</article>
+			
+			<!-- KOTAK CONTOH SIMPEL-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<div class="example-content">
+			buah ="Apel, Mangga, Jeruk, Anggur";<br>
+			posisi = buah.slice(-21, -15);
+			</div>
+			</article>
+			
+			<!-- CONTOH DETAIL 5-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Detail</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br>
+			<q lang="code">title</q>coba<q lang="code">/title</q><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">p</q> 
+			Slice dengan parameter negatif
+			<q lang="code">/p</q><br><br>
+			<q lang="code">button <span class="purple">onclick="myFunction()"</span></q>Klik disini<q lang="code">/button</q><br><br>
+			<q lang="code">p <span class="purple">id="demo"</span></q><q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">function</span> myFunction() {<br><br>
+			<blockquote>
+			<span class="purple">var</span> buah ="Apel, Mangga, Jeruk, Anggur";<br>
+			posisi = buah.slice(-21, -15);<br>
+			document.getElementById("<span class="purple">demo</span>").innerHTML=posisi;<br>
+			</blockquote>
+			}<br><br>
+			<q lang="code">/script</q><br><br>
+			<q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>
+			Slice dengan parameter negatif
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<p> 
+			
+			</p>
+			<button onclick="stringmethods5()"> Klik disini</button>
+			<p id="stringmethods05"> Apel, Mangga, Jeruk, Anggur </p>
+			</div>
+			</article>	
+			
+			<article>
+				<p>
+				Jika kamu menghilangkan parameter kedua, maka JavaScript akan memotong 
+				index dengan parameter pertama saja.
+				</p>
+			</article>
+			
+			<!-- KOTAK CONTOH SIMPEL-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<div class="example-content">
+			buah ="Apel, Mangga, Jeruk, Anggur";<br>
+			posisi = buah.slice(6);
+			</div>
+			</article>
+			
+			<!-- CONTOH DETAIL 6-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Detail</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br>
+			<q lang="code">title</q>coba<q lang="code">/title</q><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">p</q> 
+			Slice dengan satu parameter positif
+			<q lang="code">/p</q><br><br>
+			<q lang="code">button <span class="purple">onclick="myFunction()"</span></q>Klik disini<q lang="code">/button</q><br><br>
+			<q lang="code">p <span class="purple">id="demo"</span></q><q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">function</span> myFunction() {<br><br>
+			<blockquote>
+			<span class="purple">var</span> buah ="Apel, Mangga, Jeruk, Anggur";<br>
+			posisi = buah.slice(6);<br>
+			document.getElementById("<span class="purple">demo</span>").innerHTML=posisi;<br>
+			</blockquote>
+			}<br><br>
+			<q lang="code">/script</q><br><br>
+			<q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>
+			Slice dengan satu parameter positif
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<p> 
+			
+			</p>
+			<button onclick="stringmethods6()"> Klik disini</button>
+			<p id="stringmethods06"> Apel, Mangga, Jeruk, Anggur </p>
+			</div>
+			</article>	
+			
+			<!-- KOTAK CONTOH SIMPEL-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<div class="example-content">
+			buah ="Apel, Mangga, Jeruk, Anggur";<br>
+			posisi = buah.slice(-15);
+			</div>
+			</article>
+			
+			<!-- CONTOH DETAIL 7-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Detail</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br>
+			<q lang="code">title</q>coba<q lang="code">/title</q><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">p</q> 
+			Slice dengan satu parameter negatif
+			<q lang="code">/p</q><br><br>
+			<q lang="code">button <span class="purple">onclick="myFunction()"</span></q>Klik disini<q lang="code">/button</q><br><br>
+			<q lang="code">p <span class="purple">id="demo"</span></q><q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">function</span> myFunction() {<br><br>
+			<blockquote>
+			<span class="purple">var</span> buah ="Apel, Mangga, Jeruk, Anggur";<br>
+			posisi = buah.slice(-15);<br>
+			document.getElementById("<span class="purple">demo</span>").innerHTML=posisi;<br>
+			</blockquote>
+			}<br><br>
+			<q lang="code">/script</q><br><br>
+			<q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>
+			
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<p> 
+			Slice dengan satu parameter negatif
+			</p>
+			<button onclick="stringmethods7()"> Klik disini</button>
+			<p id="stringmethods07"> Apel, Mangga, Jeruk, Anggur </p>
+			</div>
+			</article>
+			
+			<!--ATTENTION-->
+			<article>
+			<table class="attention">
+			<tr>
+			<td class="td-left">
+			<h1>!</h1>
+			</td>
+			<td class="td-right">
+			Posisi negatif tidak bekerja di Internet Explorer 8 (IE) dan versi terdahulunya.
+			</td>
+			</tr>
+			</table>
+			</article>
+			
+</section>
+<section>			
+			<article>
+				<h1> Metode substring()</h1>
+				<p>
+				<b>substring()</b> mirip (similar) dengan slice().<br><br>
+				Perbedaanya adalah substring() tidak bisa menyetujui index negatif (posisi negatif).
+				</p>
+			</article>
+			
+			<!-- KOTAK CONTOH SIMPEL-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<div class="example-content">
+			buah ="Apel, Mangga, Jeruk, Anggur";<br>
+			posisi = buah.substring(6,12);
+			</div>
+			</article>
+			
+			<!-- CONTOH DETAIL 8-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Detail</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br>
+			<q lang="code">title</q>coba<q lang="code">/title</q><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">p</q> 
+			Substring() tidak bisa menggunakan parameter negatif.
+			<q lang="code">/p</q><br><br>
+			<q lang="code">button <span class="purple">onclick="myFunction()"</span></q>Klik disini<q lang="code">/button</q><br><br>
+			<q lang="code">p <span class="purple">id="demo"</span></q><q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">function</span> myFunction() {<br><br>
+			<blockquote>
+			<span class="purple">var</span> buah ="Apel, Mangga, Jeruk, Anggur";<br>
+			posisi = buah.substring(6, 12);<br>
+			document.getElementById("<span class="purple">demo</span>").innerHTML=posisi;<br>
+			</blockquote>
+			}<br><br>
+			<q lang="code">/script</q><br><br>
+			<q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<p> 
+			Substring() tidak bisa menggunakan parameter negatif.
+			</p>
+			<button onclick="stringmethods8()"> Klik disini</button>
+			<p id="stringmethods08"> Apel, Mangga, Jeruk, Anggur </p>
+			</div>
+			</article>
+			
+			<article>
+				<p>
+				Jika kamu menghilangkan parameter kedua, maka JavaScript akan memotong 
+				index dengan parameter pertama saja.
+				</p>
+			</article>
+</section>
+<section>
+			
+			<article>
+				<h1> Metode substr()</h1>
+				<p>
+				<b>substr()</b> mirip (similar) dengan slice().<br><br>
+				Perbedaanya adalah parameter kedua pada substr() menentukan <b>seberapa panjang</b> yang ingin
+				diambil.
+				</p>
+			</article>
+			
+			<!-- KOTAK CONTOH SIMPEL-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<div class="example-content">
+			buah ="Apel, Mangga, Jeruk, Anggur";<br>
+			posisi = buah.substr(6,6);
+			</div>
+			</article>
+			
+			<!-- CONTOH DETAIL 9-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Detail</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br>
+			<q lang="code">title</q>coba<q lang="code">/title</q><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">p</q> 
+			substr(6,6) artinya mengambil karakter dari urutan ke 6 dan mengambil  6 karakter telahnya.
+			<q lang="code">/p</q><br><br>
+			<q lang="code">button <span class="purple">onclick="myFunction()"</span></q>Klik disini<q lang="code">/button</q><br><br>
+			<q lang="code">p <span class="purple">id="demo"</span></q><q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">function</span> myFunction() {<br><br>
+			<blockquote>
+			<span class="purple">var</span> buah ="Apel, Mangga, Jeruk, Anggur";<br>
+			posisi = buah.substr(6, 12);<br>
+			document.getElementById("<span class="purple">demo</span>").innerHTML=posisi;<br>
+			</blockquote>
+			}<br><br>
+			<q lang="code">/script</q><br><br>
+			<q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<p> 
+			substr(6,6) artinya mengambil karakter dari urutan ke 6 dan mengambil  6 karakter telahnya.
+			</p>
+			<button onclick="stringmethods9()"> Klik disini</button>
+			<p id="stringmethods09"> Apel, Mangga, Jeruk, Anggur </p>
+			</div>
+			</article>
+			
+			<article>
+				<p>
+				Jika parameter bernilai negatif maka penghitungan posisi dimulai dari kanan ke kiri.<br><br>
+				Parameter kedua tidak boleh bernilai negatif, karena parameter memiliki arti <b>panjang karakter</b> yang akan diambil.<br><br>
+				Jika parameter kedua kosong (tidak diisi) maka pengambilam karakter dari pemotongan posisi karakter  yang dipotong
+				hingga ke karakter terakhir.
+				</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h1>Replacing String Content (Penggantian isi String)</h1>
+				Metode <b>replace()</b> mengganti nilai tertentu dengan nilai lainnya dalam String.
+			</article>
+			
+			<!-- KOTAK CONTOH SIMPEL-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<div class="example-content">
+			buah ="Apel, Mangga, Jeruk, Anggur";<br>
+			posisi = buah.replace("Apel", "Melon");
+			</div>
+			</article>
+			
+			<!-- CONTOH DETAIL 10-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Detail</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br>
+			<q lang="code">title</q>coba<q lang="code">/title</q><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">p</q> 
+			replace("Melon", "Apel") mengganti string (teks) Apel dengan Melon.
+			<q lang="code">/p</q><br><br>
+			<q lang="code">button <span class="purple">onclick="myFunction()"</span></q>Klik disini<q lang="code">/button</q><br><br>
+			<q lang="code">p <span class="purple">id="demo"</span></q><q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">function</span> myFunction() {<br><br>
+			<blockquote>
+			<span class="purple">var</span> buah ="Apel, Mangga, Jeruk, Anggur";<br>
+			posisi = buah.replace("Apel", "Melon");<br>
+			document.getElementById("<span class="purple">demo</span>").innerHTML=posisi;<br>
+			</blockquote>
+			}<br><br>
+			<q lang="code">/script</q><br><br>
+			<q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<p> 
+			replace("Apel", "Melon") mengganti string (teks) Apel dengan Melon.
+			</p>
+			<button onclick="stringmethods10()"> Klik disini</button>
+			<p id="stringmethods10"> Apel, Mangga, Jeruk, Anggur </p>
+			</div>
+			</article>
+			
+			<article>
+				<p>
+				Metode replace() bisa juga digunakan untuk mengambil regular expression 
+				(ekpresi teratur) sebagai nilai cari. <br><br>
+				Oleh settingan pabrik (default), fungsi replace() hanya mengganti kecocokan pertama.
+				Untuk mengganti semua kecocokan, gunakan regular expression dengan sebuah <b>g</b> flag 
+				(untuk kecocokan global):
+				</p>
+			</article>
+			
+			<!-- KOTAK CONTOH SIMPEL-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<div class="example-content">
+			buah ="Apel, Mangga, Jeruk, Anggur";<br>
+			posisi = buah.replace(/Apel/g, "Melon");
+			</div>
+			</article>
+			
+			<!-- CONTOH DETAIL 11-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Detail</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br>
+			<q lang="code">title</q>coba<q lang="code">/title</q><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">p</q> 
+			replace("Melon", "Apel") mengganti string (teks) Apel dengan Melon menggunakan g flag.
+			<q lang="code">/p</q><br><br>
+			<q lang="code">button <span class="purple">onclick="myFunction()"</span></q>Klik disini<q lang="code">/button</q><br><br>
+			<q lang="code">p <span class="purple">id="demo"</span></q><q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">function</span> myFunction() {<br><br>
+			<blockquote>
+			<span class="purple">var</span> buah ="Apel, Mangga, Jeruk, Anggur";<br>
+			posisi = buah.replace(/Apel/g, "Melon");<br>
+			document.getElementById("<span class="purple">demo</span>").innerHTML=posisi;<br>
+			</blockquote>
+			}<br><br>
+			<q lang="code">/script</q><br><br>
+			<q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<p> 
+			replace("Apel", "Melon") mengganti string (teks) Apel dengan Melon menggunakaj g flag.
+			</p>
+			<button onclick="stringmethods11()"> Klik disini</button>
+			<p id="stringmethods11"> Apel, Mangga, Jeruk, Anggur </p>
+			</div>
+			</article>
+			
+			<article>
+				<p>
+				Metode ini tidak merubah string yang dipanggil, ini hanya mengembalikan string baru.
+				</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Pengubahan Huruf Menjadi Besar Dan Kecil</h1>
+				<p>
+				Sebuah String bisa dirubah menjadi huruf besar dengan menggunakan <b>toUpperCase()</b>
+				</p>
+			</article>
+			
+			<!-- KOTAK CONTOH SIMPEL-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<div class="example-content">
+			buah ="Apel, Mangga, Jeruk, Anggur";<br>
+			posisi = buah.toUpperCase();
+			</div>
+			</article>
+			
+			<!-- CONTOH DETAIL 12-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Detail</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br>
+			<q lang="code">title</q>coba<q lang="code">/title</q><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">p</q> 
+			toUpperCase() menggubah semua string menjadi huruf besar.
+			<q lang="code">/p</q><br><br>
+			<q lang="code">button <span class="purple">onclick="myFunction()"</span></q>Klik disini<q lang="code">/button</q><br><br>
+			<q lang="code">p <span class="purple">id="demo"</span></q><q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">function</span> myFunction() {<br><br>
+			<blockquote>
+			<span class="purple">var</span> buah ="Apel, Mangga, Jeruk, Anggur";<br>
+			posisi = buah.toUpperCase();<br>
+			document.getElementById("<span class="purple">demo</span>").innerHTML=posisi;<br>
+			</blockquote>
+			}<br><br>
+			<q lang="code">/script</q><br><br>
+			<q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<p> 
+			toUpperCase() menggubah semua string menjadi huruf besar.
+			</p>
+			<button onclick="stringmethods12()"> Klik disini</button>
+			<p id="stringmethods12"> Apel, Mangga, Jeruk, Anggur </p>
+			</div>
+			</article>
+			
+			<article>
+				<p>
+				Sebuah String bisa dirubah menjadi huruf kecil dengan menggunakan <b>toLowerCase()</b>
+				</p>
+			</article>
+			
+			<!-- KOTAK CONTOH SIMPEL-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<div class="example-content">
+			buah ="Apel, Mangga, Jeruk, Anggur";<br>
+			posisi = buah.toUpperCase();
+			</div>
+			</article>
+			
+			<!-- CONTOH DETAIL 13-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Detail</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br>
+			<q lang="code">title</q>coba<q lang="code">/title</q><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">p</q> 
+			toLowerCase() menggubah semua string menjadi huruf kecil.
+			<q lang="code">/p</q><br><br>
+			<q lang="code">button <span class="purple">onclick="myFunction()"</span></q>Klik disini<q lang="code">/button</q><br><br>
+			<q lang="code">p <span class="purple">id="demo"</span></q><q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">function</span> myFunction() {<br><br>
+			<blockquote>
+			<span class="purple">var</span> buah ="APEL, MANGGA, JERUK, ANGGUR";<br>
+			posisi = buah.toLowerCase();<br>
+			document.getElementById("<span class="purple">demo</span>").innerHTML=posisi;<br>
+			</blockquote>
+			}<br><br>
+			<q lang="code">/script</q><br><br>
+			<q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<p> 
+			toLowerCase() menggubah semua string menjadi huruf kecil.
+			</p>
+			<button onclick="stringmethods13()"> Klik disini</button>
+			<p id="stringmethods13"> APEL, MANGGA, JERUK, ANGGUR </p>
+			</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Metode concat()</h1>
+				<p>
+				<b>concat()</b> dapat menggabungkan dua atau lebih string atau teks.
+				</p>
+			</article>
+			
+			<!-- KOTAK CONTOH SIMPEL-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<div class="example-content">
+			kata1="I Love You"; <br>
+			kata2="My Family";<br>
+			kata3=kata1.concat(" "+kata2);
+			</div>
+			</article>
+			
+			<!-- CONTOH DETAIL 14-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Detail</i></h1>
+			<h4>input</h4>
+			<div class="example-content">
+			
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br>
+			<q lang="code">title</q>coba<q lang="code">/title</q><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">p</q> 
+			concat() dapat menggabungkan kata1 dengan kata dua sehingga menjadi kalimat yang terpadu.
+			<q lang="code">/p</q><br><br>
+			<q lang="code">button <span class="purple">onclick="myFunction()"</span></q>Klik disini<q lang="code">/button</q><br><br>
+			<q lang="code">p <span class="purple">id="demo"</span></q><q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">function</span> myFunction() {<br><br>
+			<blockquote>
+			<span class="purple">var</span> kata1="I Love You"; <br>
+			kata2="My Family";<br>
+			kata3=kata1.concat(" "+kata2);
+			document.getElementById("<span class="purple">demo</span>").innerHTML=kata3;<br>
+			</blockquote>
+			}<br><br>
+			<q lang="code">/script</q><br><br>
+			<q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<p> 
+			concat() dapat menggabungkan kata1 dengan kata dua sehingga menjadi kalimat yang terpadu.
+			</p>
+			<button onclick="stringmethods14()"> Klik disini</button>
+			<p id="stringmethods14"> </p>
+			</div>
+			</article>
+			
+			<article>
+				<p>
+				<b>concat()</b> bisa digunakan untuk alternatif yang sama dengan operator +, dibawah ini 
+				memiliki fungsi yang sama.
+				</p>
+			</article>
+			
+			<!-- KOTAK CONTOH SIMPEL-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<div class="example-content">
+			<span class="purple">var</span> x = "Hello" + " " + " World !";<br>
+			<span class="purple">var</span> y = "Hello".concat(" ", "World !");
+			</div>
+			</article>
+			
+			<!--ATTENTION-->
+			<article>
+			<table class="attention">
+			<tr>
+			<td class="td-left">
+			<h1>!</h1>
+			</td>
+			<td class="td-right">
+			Semua metode string mengembalikan string baru, mereka tidak memodifikasi (mengadakan perubahan)
+			string aslinya <br>
+			Berbicara secara formal: string itu tetap: String tidak bisa dirubah tapi hanya bisa digantikan.
+			</td>
+			</tr>
+			</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Pemisahan Karakter String </h1>
+				<p>
+				Ada dua metode <b>aman</b> pemisahan karakter string.
+				</p>
+				<ul>
+					<li> charAt(posisi) </li>
+					<li> charCodeAt(posisi) </li>
+				</ul>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Metode charAt()</h1>
+				<p>
+				Metode <b>charAt()</b> mengembalikan karakter di index tertentu (posisi) dalam sebuah String.
+				</p>
+			</article>
+			
+			<!-- KOTAK CONTOH SIMPEL-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<div class="example-content">
+			kata1="Hello Javascript"; <br>
+			kata2 = kata1.charAt(0);
+			</div>
+			</article>
+			
+			<!-- CONTOH DETAIL 15-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Detail</i></h1>
+			<h4>input</h4>
+			<span class="grey" style="margin-left:50px">// mengembalikan H</span>
+			<div class="example-content">
+			
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br>
+			<q lang="code">title</q>coba<q lang="code">/title</q><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">p</q> 
+			charAt() dapat mengambil sebuah karakter dalam string.
+			<q lang="code">/p</q><br><br>
+			<q lang="code">button <span class="purple">onclick="myFunction()"</span></q>Klik disini<q lang="code">/button</q><br><br>
+			<q lang="code">p <span class="purple">id="demo"</span></q><q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">function</span> myFunction() {<br><br>
+			<blockquote>
+			<span class="purple">var</span> kata1="Hello Javascript"; <br>
+			kata2 = kata1.charAt(0);
+			document.getElementById("<span class="purple">demo</span>").innerHTML=kata2;<br>
+			</blockquote>
+			}<br><br>
+			<q lang="code">/script</q><br><br>
+			<q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<p> 
+			charAt() dapat mengambil sebuah karakter dalam string.
+			</p>
+			<button onclick="stringmethods15()"> Klik disini</button>
+			<p id="stringmethods15"> </p>
+			</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Metode charCodeAt()</h1>
+				<p>
+				Metode <b>charCodeAt()</b> mengembalikan unicode (kode dasar) dari karakter di index tertentu (posisi) dalam sebuah String.
+				</p>
+			</article>
+			
+			<!-- KOTAK CONTOH SIMPEL-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<div class="example-content">
+			kata1="Hello Javascript"; <br>
+			kata2 = kata1.charCodeAt(0);
+			</div>
+			</article>
+			
+			<!-- CONTOH DETAIL 16-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Detail</i></h1>
+			<h4>input</h4>
+			<span class="grey" style="margin-left:50px">// mengembalikan H</span>
+			<div class="example-content">
+			
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br>
+			<q lang="code">title</q>coba<q lang="code">/title</q><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">p</q> 
+			charCodeAt() mengembalikan unicode (kode dasar) sebuah karakter dalam string.
+			<q lang="code">/p</q><br><br>
+			<q lang="code">button <span class="purple">onclick="myFunction()"</span></q>Klik disini<q lang="code">/button</q><br><br>
+			<q lang="code">p <span class="purple">id="demo"</span></q><q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">function</span> myFunction() {<br><br>
+			<blockquote>
+			<span class="purple">var</span> kata1="Hello Javascript"; <br>
+			kata2 = kata1.charCodeAt(0);
+			document.getElementById("<span class="purple">demo</span>").innerHTML=kata2;<br>
+			</blockquote>
+			}<br><br>
+			<q lang="code">/script</q><br><br>
+			<q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<p> 
+			charCodeAt() mengembalikan unicode (kode dasar) sebuah karakter dalam string.
+			</p>
+			<button onclick="stringmethods16()"> Klik disini</button>
+			<p id="stringmethods16"> </p>
+			</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1>Pengaksesan String Sebagai Sebuah Array Itu Tidak Aman</h1>
+				<p>
+				Kamu mungkin sudah pernah melihat kode sepertu ini,
+				 pengaksesan string sebagai sebuah Array.
+				</p>
+			</article>
+			
+			<!-- KOTAK CONTOH SIMPEL-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<div class="example-content">
+			kata1="Hello Javascript"; <br>
+			kata1[0];
+			</div>
+			</article>
+			
+			<article>
+				<p>
+				Penggunaan tersebut <b>tidak aman</b> dan <b>tidak dapat diramal</b> 
+				</p>
+				<ul>
+					<li> Cara itu tidak bekerja disemua browser (tida di IE 5, IE 6, IE7).</li>
+					<li> Membuat string terlihat seperti array (tetapi mereka bukan array).</li>
+					<li> kata1[0] = "H" tidak memberikan error (tapi dapat berkerja).</li>
+				</ul>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1>Pengubahan String Menjadi Array</h1>
+				<p>
+				Sebuah string dapat diubah menjadi array menggunakan metode <b>split():</b>
+				</p>
+			</article>
+			
+			<!-- KOTAK CONTOH SIMPEL-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<div class="example-content">
+			kata1="Hello Javascript"; 
+			<span class="grey" style="margin-left:50px"> string</span><br>
+			kata1.split(",");
+			<span class="grey" style="margin-left:50px"> memotong di koma</span><br>
+			kata1.split[" "];
+			<span class="grey" style="margin-left:50px"> memotong di spasi</span><br>
+			kata1.split["|"];
+			<span class="grey" style="margin-left:50px"> memotong di jalur</span><br>
+			</div>
+			</article>
+			
+			<!-- CONTOH DETAIL 17-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Detail</i></h1>
+			<h4>input</h4>
+			<span class="grey" style="margin-left:50px">// mengembalikan H</span>
+			<div class="example-content">
+			
+			<q lang="code">!DOCTYPE html</q><br><br>
+			<q lang="code">html</q><br><br>
+			<q lang="code">head</q><br>
+			<q lang="code">title</q>coba<q lang="code">/title</q><br>
+			<q lang="code">/head</q><br><br>
+			<q lang="code">body</q><br><br>
+			<q lang="code">p</q> 
+			Pengubahan string menjadi sebuah array menggunakan metode split()
+			<q lang="code">/p</q><br><br>
+			<q lang="code">button <span class="purple">onclick="myFunction()"</span></q>Klik disini<q lang="code">/button</q><br><br>
+			<q lang="code">p <span class="purple">id="demo"</span></q><q lang="code">/p</q><br><br>
+			<q lang="code">script</q><br><br>
+			<span class="purple">function</span> myFunction() {<br><br>
+			<blockquote>
+			<span class="purple">var</span> str="a,b,c,d,e,f"; <br>
+			<span class="purple">var</span> arr = str.split(",");
+			document.getElementById("<span class="purple">demo</span>").innerHTML=arr[0];<br>
+			</blockquote>
+			}<br><br>
+			<q lang="code">/script</q><br><br>
+			<q lang="code">/body</q><br><br>
+			<q lang="code">/html</q><br>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<p> 
+			Pengubahan string menjadi sebuah array menggunakan metode split()
+			</p>
+			<button onclick="stringmethods17()"> Klik disini</button>
+			<p id="stringmethods17"> a, b, c, d, e, f</p>
+			</div>
+			</article>
+			
+			<article>
+				<p>
+				Jika sebuah pemisah ditiadakan, mengembalikan array akan isi string keseluruhan diindex [0].<br>
+				jika pemisahnya adalah "", mengembalikam array akan menjadikan  array dari satu karakter.
+				</p>
+			</article>
+			
+			<!-- KOTAK CONTOH SIMPEL-->
+			<article class="example-box">
+			<h1 style="text-align:center;"><i>Contoh Sederhana</i></h1>
+			<div class="example-content">
+			kata1="Hello"; 
+			<span class="grey" style="margin-left:50px"> string</span><br>
+			kata1.split("");
+			<span class="grey" style="margin-left:50px"> memotong didalam karakter</span><br>
+			</div>
+			<h4>output</h4>
+			<div class="example-content">
+			<p> 
+			Pengubahan string menjadi sebuah array menggunakan metode split()
+			</p>
+			<button onclick="stringmethods18()"> Klik disini</button>
+			<p id="stringmethods18">"Hello"</p>
+			</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h1>Referensi String Lengkap</h1>
+				<p>
+				Untuk referensi lengkap, silakan kunjungi :
+				<a href="referensi string lengkap.html" > Referensi String Lengkap</a>.<br><br>
+				Referensi berisi penjelasan dan contoh untuk semua properti dan metode string.
+				</p>
+			</article>
+</section>
+<section>
+					<article id="NoB">
+					<a href="js strings.html">
+					<div class="back">&larr; Kembali </div>
+					</a>
+					<a href="js numbers.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+					</a>
+					</article>
+					<article>
+					</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

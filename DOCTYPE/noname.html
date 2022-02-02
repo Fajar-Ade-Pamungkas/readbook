@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Alvida site</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; " />
+<meta http-equiv="refresh" content="30"/>
+<meta name="keywords" content="alvida" />
+<meta name="description" content="anything of love" />
+<meta name="author" content="fajar adei"/>
+<meta name="viewport" content="device-width, initial-scale=1.0"/>
+
+<style type="text/css">
+	*{
+		font-family:verdana;
+		box-sizing:border-box;
+		padding:0;
+		margin:0;
+		font-family:arial;
+	}
+	
+	#header {
+		background:-o-linear-gradient(right,red, orange, yellow, green, blue, navy, purple); 
+		background:-moz-linear-gradient(right, red, orange, yellow, green, blue, navy, purple);
+		background:-webkit-linear-gradient(left, red, orange, yellow, green, blue, navy, purple);
+		background:linear-gradient(to right, red, orange, yellow, green, blue, navy, purple);
+		width:100%;
+		height:120px;
+		text-align:center;
+		padding-top:20px;
+		-webkit-animation-name:rainbow;
+		-webkit-animation-duration:5px;
+		-webkit-animation-iteration-count:10;
+		-webkit-animation-direction:alternate;
+		-webkit-animation-timing-function:;
+	}
+	@-webkit-keyframes rainbow{
+		14% {background:-webkit-linear-gradient(left, purple, red, orange, yellow, green, blue, navy)}
+		28% {background:-webkit-linear-gradient(left, navy, purple, red, orange, yellow, green, blue)}
+		42% {background:-webkit-linear-gradient(left, blue, navy, purple, red, orange, yellow, green)}
+		56% {background:-webkit-linear-gradient(left, green, blue, navy, purple, red, orange, yellow)}
+		70% {background:-webkit-linear-gradient(left, yellow, green, blue, navy, purple, red, orange)}
+		84% {background:-webkit-linear-gradient(left, orange, yellow, green, blue, navy, purple, red)}
+		14% {background:-o-linear-gradient(left, purple, red, orange, yellow, green, blue, navy)}
+		28% {background:-o-linear-gradient(left, navy, purple, red, orange, yellow, green, blue)}
+		42% {background:-o-linear-gradient(left, blue, navy, purple, red, orange, yellow, green)}
+		56% {background:-o-linear-gradient(left, green, blue, navy, purple, red, orange, yellow)}
+		70% {background:-o-linear-gradient(left, yellow, green, blue, navy, purple, red, orange)}
+		84% {background:-o-linear-gradient(left, orange, yellow, green, blue, navy, purple, red)}
+		14% {background:-moz-linear-gradient(left, purple, red, orange, yellow, green, blue, navy)}
+		28% {background:-moz-linear-gradient(left, navy, purple, red, orange, yellow, green, blue)}
+		42% {background:-moz-linear-gradient(left, blue, navy, purple, red, orange, yellow, green)}
+		56% {background:-moz-linear-gradient(left, green, blue, navy, purple, red, orange, yellow)}
+		70% {background:-moz-linear-gradient(left, yellow, green, blue, navy, purple, red, orange)}
+		84% {background:-moz-linear-gradient(left, orange, yellow, green, blue, navy, purple, red)}
+	}
+	#header #salam{
+		width:200px;
+		height:20px;
+		position:relative;
+		left:40%;
+		margin:7px 2px;
+		font-style:italic;
+		color:white;
+		-webkit-animation-name:salam;
+		-webkit-animation-duration:5s;
+		-webkit-animation-iteration-count:infinite;
+		-webkit-animation-direction:alternate;
+		-webkit-animation-timing-function:;
+	}
+		@-webkit-keyframes salam{
+		0%{left:0%; /*color:red;*/}
+		7%{left:5%; /*color:orange*/}
+		14%{left:10%; /*color:yellow*/}
+		21%{left:15%; /*color:green*/}
+		28%{left:20%; /*color:blue*/}
+		36%{left:25%; /*color:navy*/}
+		43%{left:30%; /*color:purple*/}
+		50%{left:35%; /*color:gold*/}
+		57%{left:40%; /*color:cyan*/}
+		65%{left:45%; /*color:bluesea*/}
+		72%{left:50%; /*color:darkred*/}
+		79%{left:55%; /*color:lightblue*/}
+		86%{left:60%; /*color:orange*/}
+		93%{left:65%; /*color:green*/}
+		100% {left:70%; /*color:green*/}
+	
+		}
+	
+	#nav {
+		float:left;
+		width:100%;
+		background:black;
+	}
+	#nav ol{
+	 	list-style-type:none;
+	}
+	#nav ol li, #aside ol li{
+		display:inline-block;
+		color:white;
+		font-weight:bold;
+		text-transform:uppercase;
+		padding:5px 20px;
+	}
+	#nav ol li:hover, #aside ol li:hover{
+		background:gold;
+		color:black;
+		text-decoration:underline;
+	}
+	#aside {
+		width:20%;
+		height:300px;
+		background:limegreen;
+		padding-top:10px;
+		float:left;
+		padding:10px;
+	}
+	#aside ol{
+		list-style:none;
+	}
+	#main {
+		width:80%;
+		height:500px;
+		background-color:skyblue;
+		float:left;
+		padding:10px;
+		
+	}
+	#main #section{
+		width:100%;
+		height:200px;
+	}
+	#main #section .greeting{
+		width:100%;
+		height:200px;
+		padding:50px;
+		/* background:-webkit-radial-gradient(red, blue,black), */
+		background-image:url("../pictures/Gambar Kartun Romantis Islami Cinta Remaja Nuansa Kasih.jpg");
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-position: 0 -70px;;
+		text-align:center;
+		color:rgba(0,0,0,0.5);
+		text-shadow: 1px 1px 2px gold;
+		font-weight:bold;
+	}
+	#main #section #article{
+		width:100%;
+		font-family:verdana;
+		margin-top:15px;
+		text-indent:30px;
+	}
+	
+	@media only screen and (max-width:768px) {
+		#aside{
+			display:inline-block;
+			width:100%;
+		}
+		#main{
+			width:100%;
+		}
+	}
+	
+</style>
+</head>
+<body>
+	<div id="importanr">
+	
+		<!-- header part -->
+		<div id="header">
+			<h1>
+				ALVIDA
+			</h1>
+			<span>
+				A word that means !
+			</span>
+			<div id="salam">
+				<h4>
+				Assalamu'alaikum Wr.Wb
+				</h4>
+			</div>
+		</div>
+		
+		<!-- navigation part -->
+		<div id="nav">
+			<ol>
+				<li> history </li>
+				<li> words </li>
+				<li> diary </li>
+				<li> sadness </li>
+				<li> happiness </li>
+			</ol>
+		</div>
+		
+		<!-- aside part -->
+		<div id="aside">
+			<ol>
+				<li> first see you moment</li>
+				<li> chat youn </li>
+				<li> visit your home </li>
+			</ol>
+		</div>
+		
+		<!-- main part -->
+		<div id="main">
+			
+			<!-- section part-->
+			<div id="section">
+				
+				<div class="greeting">
+					<h2>No having but be hard to forgeting !</h2>
+				</div>
+				<div id="article">
+					it's a web for tell of anything that love feels, I have been bored with anything of love. so what and who?
+					it's a secret personal. more important i would like to be someone that can usefull to my family and i am not 
+					difficultly anyone i around. upps, sorry i just said unused things. well, it's MY BLOG so i wanna write anything what i want. heheheheee...
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

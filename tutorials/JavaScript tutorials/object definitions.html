@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | JavaScript | js sort</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="javaScript.js"></script>
+<script type="text/javascript" src="javaScript2.js"></script>
+<script type="text/javascript" src="javaScript3.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical"> <!--open link-->
+		<button onclick="openMenu()" id="menu">Open Menu</button>
+		<button onclick="closeMenu()" id="menu">Close Menu</button>
+		
+		<div id="vertical">
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch()"> JavaScript Tutorial</button>
+			<div class="drop-content" id="myDropdown">
+			<input type="text" class="myInput" id="myInput" placeholder="Cari" onkeyup="filterFunction()"/>
+			<ol>
+				<a href="js home.html"><li> Home </li></a>
+				<a href="js introduction.html"><li> Introduction </li></a>
+				<a href="js where to.html"><li> Where To </li></a>
+				<a href="js output.html"><li> Output </li></a>
+				<a href="js syntax.html"><li> Syntax </li></a>
+				<a href="js statements.html" ><li> Statements </li></a>
+				<a href="js comments.html" ><li> Comments </li></a>
+				<a href="js variables.html"><li> Variable </li></a>
+				<a href="js operators.html"><li> Operators </li></a>
+				<a href="js arithmetic.html"><li> Arithmetic </li></a>
+				<a href="js assignment.html"><li> Assignment </li></a>
+				<a href="js data types.html"><li> Data Types </li></a>
+				<a href="js functions.html"><li> Functions </li></a>
+				<a href="js objects.html"><li> Objects </li></a>
+				<a href="js scope.html"><li> Scope </li></a>
+				<a href="js events.html"><li> Events </li></a>
+				<a href="js strings.html"><li> string </li></a>
+				<a href="js string methods.html"><li> Strings Method </li></a>
+				<a href="js numbers.html"><li> Numbers </li></a>
+				<a href="js number methods.html"><li> Number Methods </li></a>
+				<a href="js math.html"><li> Math </li></a>
+				<a href="js random.html" ><li> Math Random </li></a>
+				<a href="js dates.html"><li> Dates </li></a>
+				<a href="js date formats.html" ><li> Date Formats </li></a>
+				<a href="js date methods.html" ><li> Date Methods </li></a>
+				<a href="js get date methods.html" ><li> Date get Methods </li></a>
+				<a href="js set date methods.html" ><li> Date Set Methods </li></a>
+				<a href="js arrays.html"><li> Arrays </li></a>
+				<a href="js array methods.html" ><li> Array Methods </li></a>
+				<a href="js array sort.html"><li> Array Sort </li></a>
+				<a href="js array iteration.html"><li> Array Iteration </li></a>
+				<a href="js booleans.html" ><li> boolean </li></a>
+				<a href="js comparisons.html" ><li> Comparisons </li></a>
+				<a href="js conditions.html" ><li>Conditions</li></a>
+				<a href="js switch.html" ><li>Switch </li></a>
+				<a href="js loop for.html"><li> Loop For </li></a>
+				<a href="js loop while.html" ><li>Loop while</li></a>
+				<a href="js break.html" ><li>Break</li></a>
+				<a href="js type conversion.html" ><li> Types conversion</li></a>
+				<a href="js bitwise.html" ><li> Bitwise </li></a>
+				<a href="js RegExp.html" ><li>RegExp</li></a>
+				<a href="js errors.html" ><li>Errors </li></a>
+				<a href="js debugging.html"><li>Debugging </li></a>
+				<a href="js hoisting.html" ><li>Hoisting</li></a>
+				<a href="js strict mode.html"><li>Strict mode</li></a>
+				<a href="js this keyword.html" ><li> this Keyword </li></a>
+				<a href="js let.html" ><li> Let </li></a>
+				<a href="js const.html" ><li> Const </li></a>
+				<a href="js style guide.html" ><li>Style guide</li></a>
+				<a href="js best practices.html" ><li>best practices </li></a>
+				<a href="js mistakes.html"><li> Mistakes </li></a>
+				<a href="js performance.html" ><li>Performance</li></a>
+				<a href="js reserved words.html" ><li>Reserved words</li></a>
+				<a href="js versions.html" ><li> Versions </li></a>
+				<a href="js version ES5.html" ><li class="redZone"> Version ES5 </li></a>
+				<a href="js version ES6.html" ><li class="redZone"> Version ES6 </li></a>
+				<a href="js JSON.html"><li>JSON</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch2()"> JavaScript Formulir</button>
+			<div class="drop-content" id="myDropdown2">
+			<input type="text" class="myInput" id="myInput2" placeholder="Cari" onkeyup="filterFunction2()"/>
+			<ol>
+				<a href="forms validation.html" ><li>Forms Validation</li></a>
+				<a href="forms API.html" ><li class="redZone">Forms API</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch3()"> JavaScript Object</button>
+			<div class="drop-content" id="myDropdown3">
+			<input type="text" class="myInput" id="myInput3" placeholder="Cari" onkeyup="filterFunction3()"/>
+			<ol>
+				<a href="object definitions.html" ><li>Object Definitions</li></a>
+				<a href="object properties.html" ><li>Object Properties</li></a>
+				<a href="object methods.html"><li class="redZone">Object Methods</li></a>
+				<a href="object accessors.html" ><li>Object accessors</li></a>
+				<a href="object constructors.html" ><li>Object constructor</li></a>
+				<a href="object prototypes.html" ><li>Object Prototypes</li></a>
+				<a href="object ECMAScript5.html" ><li class="redZone">Object ECMAScript5</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch4()"> JavaScript Function</button>
+			<div class="drop-content" id="myDropdown4">
+			<input type="text" class="myInput" id="myInput4" placeholder="Cari" onkeyup="filterFunction4()"/>
+			<ol>
+				<a href="funtion definitions.html" ><li>Function Definitions</li></a>
+				<a href="function parameters.html" ><li>Function Parameters</li></a>
+				<a href="function invocation.html" ><li>Function Invocation</li></a>
+				<a href="function closures.html" ><li>Function Closures</li></a>
+				<a href="function apply.html" ><li class="redZone">Function Apply</li></a>
+				<a href="function call.html" ><li>Function Call</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch5()">  JavaScript HMTL DOM </button>
+			<div class="drop-content" id="myDropdown5">
+			<input type="text" class="myInput" id="myInput5" placeholder="Cari" onkeyup="filterFunction5()"/>
+			<ol>
+				<a href="DOM intro.html" ><li> DOM Introduction </li></a>
+				<a href="DOM methods.html" ><li> DOM Methods </li></a>
+				<a href="DOM document.html" ><li> DOM Documents</li></a>
+				<a href="DOM elements.html" ><li> DOM Elements  </li></a>
+				<a href="DOM HTML.html" ><li> DOM HTML</li></a>
+				<a href="DOM CSS.html" ><li> DOM CSS  </li></a>
+				<a href="DOM animations.html" ><li> DOM Animations </li></a>
+				<a href="DOM events.html" ><li> DOM Events </li></a>
+				<a href="DOM eventListener.html" ><li> DOM EventListener </li></a>
+				<a href="DOM navigation.html" ><li> DOM Navigation </li></a>
+				<a href="DOM nodes.html" ><li> DOM Nodes </li></a>
+				<a href="DOM nodelist.html" ><li> DOM Nodelist </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch6()"> JavaScript Browser BOM </button>
+			<div class="drop-content" id="myDropdown6">
+			<input type="text" class="myInput" id="myInput6" placeholder="Cari" onkeyup="filterFunction6()"/>
+			<ol>
+				<a href="BOM window.html" ><li> Window </li></a>
+				<a href="BOM screen.html" ><li> Screen </li></a>
+				<a href="BOM location.html" ><li> Location </li></a>
+				<a href="BOM history.html" ><li> History  </li></a>
+				<a href="BOM navigator.html" ><li> Navigator </li></a>
+				<a href="BOM popup alert.html" ><li> Popup Alert </li></a>
+				<a href="BOM timing.html" ><li> Timing </li></a>
+				<a href="BOM cookies.html" ><li> Cookies </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch7()">JavaScript AJAX</button>
+			<div class="drop-content" id="myDropdown7">
+			<input type="text" class="myInput" id="myInput7" placeholder="Cari" onkeyup="filterFunction7()"/>
+			<ol>
+				<a href="AJAX intro.html" ><li> AJAX Introduction</li></a>
+				<a href="AJAX XMLHttpRequest.html" ><li> AJAX XMLHttpRequest </li></a>
+				<a href="AJAX request.html" ><li> AJAX Request </li></a>
+				<a href="AJAX respone.html" ><li class="redZone"> AJAX Response </li></a>
+				<a href="AJAX XML file.html" ><li> AJAX XML File</li></a>
+				<a href="AJAX PHP.html" ><li> AJAX PHP </li></a>
+				<a href="AJAX ASP.html" ><li> AJAX ASP </li></a>
+				<a href="AJAX database.html" ><li> AJAX Database </li></a>
+				<a href="AJAX XML applications.html" ><li> AJAX XML Application </li></a>
+				<a href="AJAX examples.html" ><li> AJAX Example </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch8()">JavaScript JSON</button>
+			<div class="drop-content" id="myDropdown8">
+			<input type="text" class="myInput" id="myInput8" placeholder="Cari" onkeyup="filterFunction8()"/>
+			<ol>
+				<a href="JSON intro.html" ><li class="redZone"> JSON Introduction</li></a>
+				<a href="JSON syntax.html" ><li class="redZone"> JSON Syntax </li></a>
+				<a href="JSON vs XML.html" ><li class="redZone"> JSON vs XML </li></a>
+				<a href="JSON data types.html" ><li class="redZone"> JSON Data Types </li></a>
+				<a href="JSON parse.html" ><li class="redZone"> JSON parse </li></a>
+				<a href="JSON stringify.html" ><li class="redZone"> JSON Stringify</li></a>
+				<a href="JSON objects.html" ><li class="redZone"> JSON Objects </li></a>
+				<a href="JSON arrays.html" ><li class="redZone"> JSON Arrays </li></a>
+				<a href="JSON PHP.html" ><li class="redZone"> JSON PHP </li></a>
+				<a href="JSON HTML.html" ><li class="redZone"> JSON HTML </li></a>
+				<a href="JSON JSONP.html" ><li class="redZone"> JSON JSONP </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch9()">JavaScript Reference</button>
+			<div class="drop-content" id="myDropdown9">
+			<input type="text" class="myInput" id="myInput9" placeholder="Cari" onkeyup="filterFunction9()"/>
+			<ol>
+				<li> <p> JavaScript References </p> </li>
+				<a href="JavaScript references/overview.html" > <li> Overview </li> </a>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch11()">JavaScript</button>
+					<div class="drop-content" id="myDropdown11">
+					<input type="text" class="myInput" id="myInput11" placeholder="Cari" onkeyup="filterFunction11()"/>
+					<ol>
+						<a href="JavaScript references/string reference.html" ><li>String Reference </li></a>
+						<a href="JavaScript references/number reference.html" ><li>Number Reference </li></a>
+						<a href="JavaScript references/operator reference.html" ><li>Operator Reference </li></a>
+						<a href="JavaScript references/statement reference.html" ><li>Statement Reference </li></a>
+						<a href="JavaScript references/math reference.html" ><li>Math Reference </li></a>
+						<a href="JavaScript references/date reference.html" ><li>Date Reference </li></a>
+						<a href="JavaScript references/array reference.html" ><li> Array Reference </li></a>
+						<a href="JavaScript references/boolean reference.html" ><li> Boolean Reference </li></a>
+						<a href="JavaScript references/RegExp reference.html" ><li> RegExp Reference </li></a>
+						<a href="JavaScript references/global reference.html" ><li> Global Reference </li></a>
+						<a href="JavaScript references/conversion reference.html" ><li> Conversion Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()">Browser Object Model (BOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="JavaScript references/BOM window reference.html" ><li> BOM Window Reference </li></a>
+						<a href="JavaScript references/BOM navigator reference.html" ><li> BOM Navigator Reference </li></a>
+						<a href="JavaScript references/BOM screen reference.html" ><li> BOM screen Reference </li></a>
+						<a href="JavaScript references/BOM history reference.html" ><li> BOM History Reference </li></a>
+						<a href="JavaScript references/BOM location reference.html" ><li> BOM Location Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()"> HTML Document Object Model (DOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="JavaScript references/DOM document reference.html" ><li> DOM Documents Reference </li></a>
+						<a href="JavaScript references/DOM element reference.html" ><li> DOM Elements Reference </li></a>
+						<a href="JavaScript references/DOM attribute reference.html" ><li> DOM Attributes Reference </li></a>
+						<a href="JavaScript references/DOM event reference.html" ><li> DOOM Events Reference </li></a>
+						<a href="JavaScript references/DOM style.html" ><li> DOM Style Reference </li></a>
+					</ol>
+					</div>
+			</ol>
+			</div>
+			</div>
+		</div>
+		</div>
+		</div> <!--close Link-->
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> JavaScript Object</h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h1> JavaScript Object </h1>
+				
+				<!--ATTENTION-->
+
+				<table class="attention">
+					<tr>
+						<td class="td-left">
+							<h1>!</h1>
+						</td>
+						<td class="td-right">
+							Dalam JavaScript, Object adalah Raja, jika kamu mengerti object, kamu mengerti JavaScript.
+						</td>
+					</tr>
+				</table>
+				
+				<p>
+				Di JavaScript, hampir "segalanya" adalah sebuah object.<br>
+				</p>
+				
+				<ul>
+					<li>Boolean bisa menjadi object (atau data primitif diperlakukan sebagai object).</li>
+					<li>Number bisa menjadi object (atau data primitif diperlakukan sebagai object).</li>
+					<li>String bisa menjadi object (atau data primitif diperlakukan sebagai object).</li>
+					<li>Date selalu merupakan object .</li>
+					<li>Math selalu merupakan object.</li>
+					<li>Regular Expression selalu merupakan object </li>
+					<li>Array selalu merupakan object </li>
+					<li>Function selalu merupakan object </li>
+				</ul>
+				
+				<p>
+				Di JvaScript, semua nilai, kecuali nilai primitif adalah object. <br>
+				Nilai primitif yaitu Steing ("John Doe"), Number (3.14), true, false, null, dan undefined
+				</p>
+				
+			</article>
+</section>
+<section>
+		<article>
+			<h1> Objects Adalah Variables Yang Berisikan Variables </h1>
+			<p>
+			Variabel - variabel bisa berisi nilai tunggal:
+			</p>
+			
+			<article class="example-box">
+				<h1> Contoh Nilai Primitif </h1>
+				<div class="example-content">
+					<span class="purple">var</span> people = "John Doe";
+				</div>
+			</article>
+			
+			<p>
+			Object adalah variabel juga. Tapi object bisa berisikan banyak nilai.<br>
+			Nilai yang ditulsi seperti pasangan <b>nama : nilai</b> (nama dan nilai dipisahkan dengan sebuah tanda titik dua).
+			</p>
+			
+			<article class="example-box">
+				<h1> Contoh Object </h1>
+				<div class="example-content">
+					<span class="purple">var</span> people = {firstName : "Fajar Ade", lastName : "Pamungkas", age : "20", eyeColor : "brown"};
+				</div>
+			</article>
+			
+			<table class="attention">
+				<tr>
+					<td class="td-left">
+						<h1>!</h1>
+					</td>
+					<td class="td-right">
+					Sebuah object JavaScript merupakan sebuah pengoleksian <b>nilai - nilai bernama</b>.
+					</td>
+				</tr>
+			</table>
+			
+		</article>
+</section>
+<section>
+		<article>
+			<h1> Properti - Properti Object </h1>
+			<p>
+			Nilai - nilai bernama pada object JavaScript disebut <b>properti</b>:
+			</p>
+			
+			<table>
+				<thead>
+					<tr>
+						<th> Properti </th>
+						<th> Nilai </th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr> 
+						<td> firstName </td>
+						<td> Fajar Ade </td>
+					</tr>
+					<tr>
+						<td> lastName </td>
+						<td> Pamungkas </td>
+					</tr>
+					<tr>
+						<td> age </td>
+						<td> 20 </td>
+					</tr>
+					<tr>
+						<td> eyeColor </td>
+						<td> brown </td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p>
+			Object - object ditulis sebagai sepasang nama dan nilai yang mirip dengan:
+			</p>
+			<ul> 
+				<li>Associative arrays pada PHP</li>
+				<li>Dictionaries pada Python </li>
+				<li>Hash tables pada C </li>
+				<li> Hash maps pada Java </li>
+				<li> Hashes pada Ruby dan Perl</li>
+			</ul>
+		</article>
+</section>
+<section>
+		<article>
+			<h1> Metode - Metode Object </h1>
+			<p>
+			Metode merupakan <b>aksi</b> yang bisa dikerjakan pada Object. <br>
+			Properti - properti object bisa menjadi nilai primitif, object - object lain dan fungsi. <br>
+			Sebuah <b>metode object</b> adalah sebuah properti yang berisikan sebuah <b>function definition</b>:
+			</p>
+			
+			<table>
+				<thead>
+					<tr>
+						<th> Properti </th>
+						<th> Nilai </th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr> 
+						<td> firstName </td>
+						<td> Fajar Ade </td>
+					</tr>
+					<tr>
+						<td> lastName </td>
+						<td> Pamungkas </td>
+					</tr>
+					<tr>
+						<td> age </td>
+						<td> 20 </td>
+					</tr>
+					<tr>
+						<td> eyeColor </td>
+						<td> brown </td>
+					</tr>
+					<tr>
+						<td> fullName </td>
+						<td> function() {return this.firstName + " " + this.lastName;} </td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<div class="nasehat">
+				<p>
+				Object JavaScript adalah pengisi untuk nilai bernama yang disebut <b>property</b> dan <b>method</b>
+				</p>
+			</div>
+			
+			<p>
+			Kamu akan mempelajari tentang metode pada chapter selanjutnya.
+			</p>
+		</article>
+</section>
+<section>
+		<article>
+			<h1> Pemciptaan Sebuah Object JavaScript </h1>
+			<p>
+			Dengan JavaScript, kamu bisa mendefinisikan dan menciptakan object kamu sendiri. <br> <br>
+			Ada cara - cara yang berbeda untuk menciptakan object baru:
+			</p>
+			<ul> 
+				<li> Definisikan dan ciptakan object tunggal, menggunakan sebuah object yang sesungguhnya.</li>
+				<li> Definisikan dan ciptakan sebuah object tunggal, dengan kata kunci <b>new</b> </li>
+				<li> Definisikanlah sebuah object constructor (pembangun object) dan kemudian ciptakan 
+				object - object dari tipe yang dibangun </li>
+			</ul>
+			
+			<div class="nasehat">
+				<p>
+				Pada ECMAScript 5, sebuah object juga bisa diciptakan dengan function Object.create().
+				</p>
+			</div>
+		</article>
+</section>
+<section>
+		<article>
+			<h1> Penggunaan Sebuah Object Yang Sesungguhnya</h1>
+			<p>
+			Ini merupakan cara termudah untuk menciptakan sebuah object JavaScript. <br>
+			Penggunaan sebuah object literal, kamu keduanya mendefini dan menciptakan sebuah object dalam satu pernyataan.<br>
+			Sebuah object literal adalah daftar dari pasangan nama:nilai (seperti age:20) dalam curly braces atau kurung kurawal {}. <br>
+			Contoh berikut menciptakan sebuah object JavaScript baru dengan empat properti:
+			</p>
+			
+			<article class="example-box">
+				<h1> Contoh Penciptaan Object Literal </h1>
+				<h4> Input </h4>
+				<div class="example-content">
+					<span class="purple">var</span> people = {firstName : "Fajar Ade", lastName : "Pamungkas", age : 20, eyeColor : "brown"}; <br>
+					<span class="purple">var</span> nama = people.firstName;
+				</div>
+				<h4>Output</h4>
+				<div class="example-content">
+					<button onclick="myDef"> Klik Disini </button>
+					<p class="myDef"> </p>
+				</div>
+			</article>
+			
+			<p>
+			Spasi dan baris baru tidaklah penting. Sebuah object definisi bisa dijangka dengan baris ganda:
+			</p>
+			
+			<article class="example-box">
+				<h1> Contoh Penciptaan Object Literal </h1>
+				<h4> Input </h4>
+				<div class="example-content">
+					<span class="purple">var</span> people = {
+						<blockquote>
+						firstName : "Fajar Ade", <br>
+						lastName : "Pamungkas", <br>
+						age : 20, <br>
+						eyeColor : "brown"
+						</blockquote>
+					}; <br> 
+					<span class="purple">var</span> nama = people.firstName;
+				</div>
+				<h4>Output</h4>
+				<div class="example-content">
+					<button onclick="myDef"> Klik Disini </button>
+					<p class="myDef"> </p>
+				</div>
+			</article>
+		</article>
+</section>
+<section>
+		<article>
+			<h1> Penggunaan Kata Kunci <b class="justRed">new</b> JavaScript</h1>
+			
+			<p>
+			Contoh berikut juga menciptakan sebuah Object JavaScript baru dengan empat Properti:
+			</p>
+			
+			<article class="example-box">
+				<h1> Contoh Penciptaan Object Literal </h1>
+				<h4> Input </h4>
+				<div class="example-content">
+					<span class="purple">var</span> people = <span class="justRed">new</span> Object(); <br>
+						person.firstName = "Fajar Ade"; <br>
+						lastName = "Pamungkas"; <br>
+						age = 20; <br>
+						eyeColor = "brown";
+					<span class="purple">var</span> nama = people.firstName;
+				</div>
+				<h4>Output</h4>
+				<div class="example-content">
+					<button onclick="myDef"> Klik Disini </button>
+					<p class="myDef"> </p>
+				</div>
+			</article>
+			
+			<div class="nasehat">
+				<p>
+				Kedua contoh diatas melakukan sama persis (exactly). Tidak ada yang diperlukan untuk menggunakan new Object. <br>
+				Untuk kesederhanaan, keahlian pembacaan dan kecepatan pengeksekusian, gunakanlah salah satu (metode literal object).
+				</p>
+			</div>
+		</article>
+</section>
+<section>
+		<article>
+			<h1> Penggunaan Sebuah Pembangun Object (Object Constructor) </h1>
+			<p>
+			Contoh diatas dibatasi pada banyak situasi. Mereka hanya menciptakan sebuah object tunggal. <br>
+			Terkadang kita suka memiliki sebuah "tipe object" yang bisa digunakan untuk menciptakan banyak object dari satu tipe. <br>
+			Cara standar untuk menciptakan sebuah "tipe object" adalah menggunakan sebuah fungsi pembangun object:
+			</p>
+			
+			<article class="example-box">
+				<h1>Contoh </h1>
+				<h4> Input </h4>
+				<div class="example-content">
+					<span class="purple">function</span> person(first, last, age, eye) {
+						<blockquote>
+					    this.firstName = first; <br>
+					    this.lastName = last; <br>
+					    this.age = age; <br>
+					    this.eyeColor = eye;
+						</blockquote>
+					} <br>
+					<span class="purple">var</span> myFather = <span class="justRed">new</span> person("John", "Doe", 50, "blue"); <br>
+					<span class="purple">var</span> myMother = <span class="justRed">new</span> person("Sally", "Rally", 48, "green");
+				</div>
+				<h4>Output</h4>
+				<div class="example-content">
+					<button onclick="myDef()">Klik disini </button>
+					<p id="myDef"></p>
+				</div>
+			</article>
+			
+			<p>
+			Fungsi (person) diatas  adalah sebuah Constructor Object. <br>
+			Sekali kamu memiliki sebuah object constructor, kamu bisa menciptakan object baru dari tipe yang sama:
+			</p>
+			
+			<div class="simple-example">
+				<span class="purple">var</span> myFather = <span class="justRed">new</span> person("John", "Doe", 50, "blue"); <br>
+				<span class="purple">var</span> myMother = <span class="justRed">new</span> person("Sally", "Rally", 48, "green");
+			</div>
+		</article>
+</section>
+<section>
+			<article>
+				<h1> Kata kunci <b class="blue">this</b></h1>
+				<p>
+				Pada JavaScript, suatu hal disebut <b>this</b>, adalah object yang "owns" (sendiri) kode JavaScript.<br>
+				Nilai dari <b>this</b>, ketika digunakan pada sebuah fungsi, adalah object  yang "owns" fungsi.<br>
+				Nilai dari <b>this</b>, ketika digunakan pada sebuah object, adalah object  itu sendiri.<br>
+				Kata kunci <b>this</b> pada sebuah object constructor tidak memiliki nilai. Ia hanya sebuah cadangan (substitute) untuk object baru.<br>
+				Nilai dari <b>this</b> akan menjadi object baru ketika constructor digunakan untuk menciptakan sebuah object.
+				</p>
+				<!--ATTENTION-->
+				
+				<table class="attention">
+					<tr>
+						<td class="td-left">
+							<h1>!</h1>
+						</td>
+						<td class="td-right">
+						Catatan bahwa <b>this</b> bukan merupakan variabel, <b>this</b> adalah kata kunci. 
+						Kamu tidak bisa mengubah nilai dari <b>this</b>.
+						</td>
+					</tr>
+				</table>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Built-in JavaScript Constructor </h1>
+				<p>
+				JavaScript memiliki built-in constructor untuk obejct - object asal (native)
+				</p>
+				
+				<article class="example-box">
+					<h1> Contoh </h1>
+					<div class="example-content">
+						<span class="purple">var</span> x1 = new Object();    <em>// sebuah Object object bar</em><br>
+						<span class="purple">var</span> x2 = new String();    <em>// sebuah object String baru</em> <br>
+						<span class="purple">var</span> x3 = new Number();    <em>// sebuah object Number baru</em> <br>
+						<span class="purple">var</span> x4 = new Boolean()    <em>// sebuah object Boolean baru</em> <br>
+						<span class="purple">var</span> x5 = new Array();     <em>// sebuah object Array baru</em> <br>
+						<span class="purple">var</span>	x6 = new RegExp();    <em>// sebuah object RegExp baru</em> <br>
+						<span class="purple">var</span> x7 = new Function();  <em>// sebuah object Function baru</em><br>
+						<span class="purple">var</span> x8 = new Date();      <em>// sebuah object Date baru</em>
+					</div>
+					<h1> Output </h1>
+					<div class="example-content">
+						<button onclick="myDef3()"> Klik Disini </button>
+						<p id="myDef3"></p>
+					</div>
+				</article>
+				
+				<p>
+				Object Math() tidak ada di daftar. Math adalah sebuah object global. 
+				kata kunci new tidak bisa digunakan pada Math.
+				</p>
+				
+				<div class="nasehat">
+					<h1> Apakah Kamu Tahu ? </h1>
+					<p> Seperti yang kamu lihat, JavaScript memiliki versi - versi object dari 
+					tipe data primitif String, Number dan Boolean. <br> <br>
+					Tidak ada alasan untuk membuat object complex (rumit). Nilai primitif 
+					mengeksekusi banyak yang lebih cepat. <br><br>
+					Dan tidak ada alasan untuk menggunakan new Array(). Gunakanlah array 
+					sesungguhnya (array literal) dengan alternatif : []<br><br>
+					Dan tidak ada alasan untuk menggunakan new RegExp(). Gunakanlah pola 
+					sesungguhnya dengan dengan alternatif: /()/ <br><br>
+					Dan tidak ada alasan untuk menggunakan new Function(). Gunakanlah 
+					ekspresi fungsi dengan alternatif: function () {} <br><br>
+					Dan tidak ada alasan untuk menggunakan new Object(). Gunakanlah object 
+					sesungguhnya dengan alternatif: {}.
+					</p>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Object JavaScript Merupakan Mutable (Tidak Tetap) </h1>
+				<p>
+				Object tidak tetap: Mereka bisa dialamatkan dengan referensi, bukan nilai. <br>
+				Jika y adalah sebuah object, pernyataan berikut tidak akan memciptakan sebuah salinan dari y.
+				</p>
+				
+				<div class="simple-example">
+					<span class="purle">var</span> x = y;  <em>// ini tidak akan menciptakan sebuah salinan dari y.</em>
+				</div>
+				
+				<p>
+				Object x bukan sebuah <b>salinan</b> y, x adalah y, keduanya z dan y bertujuan untuk object yang sama. <br>
+				Segalanya mengubah menjadi y juga akan mengubah x, karena x dan y adalah object yang sama.
+				</p>
+				
+				<article class="example-box">
+					<h1> Contoh </h1>
+					<h4> Input </h4>
+					<div class="example-content">
+						<span class="purple">var</span> person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"} <br><br>
+						
+						<span class="purple">var</span> x = person; <br>
+						x.age = 10;     <em>// Ini akan mengubah keduanya x.age dan person.age </em>
+					</div>
+					<h4> Output </h4>
+					<div class="example-content">
+						<button onclick="myDef()">Klik Disini</button>
+						<p id="myDef"></p>
+					</div>
+				</article>
+			</article>
+			
+			<article id="NoB">
+			<a href="validation API.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="object properties.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			</article>
+			<article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+
+<script type="text/javascript">
+function myDef3() {
+	 var x1 = new Object();    // sebuah Object object bar
+	 var x2 = new String();    // sebuah object String baru 
+	 var x3 = new Number();    // sebuah object Number baru 
+	 var x4 = new Boolean()    // sebuah object Boolean baru 
+	 var x5 = new Array();     // sebuah object Array baru 
+	 var x6 = new RegExp();    // sebuah object RegExp baru 
+	 var x7 = new Function();  // sebuah object Function baru
+	 var x8 = new Date();      // sebuah object Date baru
+	 
+	 document.getElementById("myDef3").innerHTML = 
+	 x1 + "<br>" + x2 + "<br>" + x3 + "<br>" + x4 + "<br>" +
+	 x5 + "<br>" + x6 + "<br>" + x7 + "<br>" + x8 ;
+}
+
+</script>
+</body>
+</html>

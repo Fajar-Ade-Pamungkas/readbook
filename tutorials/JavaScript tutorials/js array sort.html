@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | JavaScript | js array sort</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="javaScript.js"></script>
+<script type="text/javascript" src="javaScript2.js"></script>
+<script type="text/javascript" src="javaScript3.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical"> <!--open link-->
+		<button onclick="openMenu()" id="menu">Open Menu</button>
+		<button onclick="closeMenu()" id="menu">Close Menu</button>
+		
+		<div id="vertical">
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch()"> JavaScript Tutorial</button>
+			<div class="drop-content" id="myDropdown">
+			<input type="text" class="myInput" id="myInput" placeholder="Cari" onkeyup="filterFunction()"/>
+			<ol>
+				<a href="js home.html"><li> Home </li></a>
+				<a href="js introduction.html"><li> Introduction </li></a>
+				<a href="js where to.html"><li> Where To </li></a>
+				<a href="js output.html"><li> Output </li></a>
+				<a href="js syntax.html"><li> Syntax </li></a>
+				<a href="js statements.html" ><li> Statements </li></a>
+				<a href="js comments.html" ><li> Comments </li></a>
+				<a href="js variables.html"><li> Variable </li></a>
+				<a href="js operators.html"><li> Operators </li></a>
+				<a href="js arithmetic.html"><li> Arithmetic </li></a>
+				<a href="js assignment.html"><li> Assignment </li></a>
+				<a href="js data types.html"><li> Data Types </li></a>
+				<a href="js functions.html"><li> Functions </li></a>
+				<a href="js objects.html"><li> Objects </li></a>
+				<a href="js scope.html"><li> Scope </li></a>
+				<a href="js events.html"><li> Events </li></a>
+				<a href="js strings.html"><li> string </li></a>
+				<a href="js string methods.html"><li> Strings Method </li></a>
+				<a href="js numbers.html"><li> Numbers </li></a>
+				<a href="js number methods.html"><li> Number Methods </li></a>
+				<a href="js math.html"><li> Math </li></a>
+				<a href="js random.html" ><li> Math Random </li></a>
+				<a href="js dates.html"><li> Dates </li></a>
+				<a href="js date formats.html" ><li> Date Formats </li></a>
+				<a href="js date methods.html" ><li> Date Methods </li></a>
+				<a href="js get date methods.html" ><li> Date get Methods </li></a>
+				<a href="js set date methods.html" ><li> Date Set Methods </li></a>
+				<a href="js arrays.html"><li> Arrays </li></a>
+				<a href="js array methods.html" ><li> Array Methods </li></a>
+				<a href="js array sort.html"><li> Array Sort </li></a>
+				<a href="js array iteration.html"><li> Array Iteration </li></a>
+				<a href="js booleans.html" ><li> boolean </li></a>
+				<a href="js comparisons.html" ><li> Comparisons </li></a>
+				<a href="js conditions.html" ><li>Conditions</li></a>
+				<a href="js switch.html" ><li>Switch </li></a>
+				<a href="js loop for.html"><li> Loop For </li></a>
+				<a href="js loop while.html" ><li>Loop while</li></a>
+				<a href="js break.html" ><li>Break</li></a>
+				<a href="js type conversion.html" ><li> Types conversion</li></a>
+				<a href="js bitwise.html" ><li> Bitwise </li></a>
+				<a href="js RegExp.html" ><li>RegExp</li></a>
+				<a href="js errors.html" ><li>Errors </li></a>
+				<a href="js debugging.html"><li>Debugging </li></a>
+				<a href="js hoisting.html" ><li>Hoisting</li></a>
+				<a href="js strict mode.html"><li>Strict mode</li></a>
+				<a href="js this keyword.html" ><li> this Keyword </li></a>
+				<a href="js let.html" ><li> Let </li></a>
+				<a href="js const.html" ><li> Const </li></a>
+				<a href="js style guide.html" ><li>Style guide</li></a>
+				<a href="js best practices.html" ><li>best practices </li></a>
+				<a href="js mistakes.html"><li> Mistakes </li></a>
+				<a href="js performance.html" ><li>Performance</li></a>
+				<a href="js reserved words.html" ><li>Reserved words</li></a>
+				<a href="js versions.html" ><li> Versions </li></a>
+				<a href="js version ES5.html" ><li class="redZone"> Version ES5 </li></a>
+				<a href="js version ES6.html" ><li class="redZone"> Version ES6 </li></a>
+				<a href="js JSON.html"><li>JSON</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch2()"> JavaScript Formulir</button>
+			<div class="drop-content" id="myDropdown2">
+			<input type="text" class="myInput" id="myInput2" placeholder="Cari" onkeyup="filterFunction2()"/>
+			<ol>
+				<a href="forms validation.html" ><li>Forms Validation</li></a>
+				<a href="forms API.html" ><li class="redZone">Forms API</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch3()"> JavaScript Object</button>
+			<div class="drop-content" id="myDropdown3">
+			<input type="text" class="myInput" id="myInput3" placeholder="Cari" onkeyup="filterFunction3()"/>
+			<ol>
+				<a href="object definitions.html" ><li>Object Definitions</li></a>
+				<a href="object properties.html" ><li>Object Properties</li></a>
+				<a href="object methods.html"><li class="redZone">Object Methods</li></a>
+				<a href="object accessors.html" ><li>Object accessors</li></a>
+				<a href="object constructors.html" ><li>Object constructor</li></a>
+				<a href="object prototypes.html" ><li>Object Prototypes</li></a>
+				<a href="object ECMAScript5.html" ><li class="redZone">Object ECMAScript5</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch4()"> JavaScript Function</button>
+			<div class="drop-content" id="myDropdown4">
+			<input type="text" class="myInput" id="myInput4" placeholder="Cari" onkeyup="filterFunction4()"/>
+			<ol>
+				<a href="funtion definitions.html" ><li>Function Definitions</li></a>
+				<a href="function parameters.html" ><li>Function Parameters</li></a>
+				<a href="function invocation.html" ><li>Function Invocation</li></a>
+				<a href="function closures.html" ><li>Function Closures</li></a>
+				<a href="function apply.html" ><li class="redZone">Function Apply</li></a>
+				<a href="function call.html" ><li>Function Call</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch5()">  JavaScript HMTL DOM </button>
+			<div class="drop-content" id="myDropdown5">
+			<input type="text" class="myInput" id="myInput5" placeholder="Cari" onkeyup="filterFunction5()"/>
+			<ol>
+				<a href="DOM intro.html" ><li> DOM Introduction </li></a>
+				<a href="DOM methods.html" ><li> DOM Methods </li></a>
+				<a href="DOM document.html" ><li> DOM Documents</li></a>
+				<a href="DOM elements.html" ><li> DOM Elements  </li></a>
+				<a href="DOM HTML.html" ><li> DOM HTML</li></a>
+				<a href="DOM CSS.html" ><li> DOM CSS  </li></a>
+				<a href="DOM animations.html" ><li> DOM Animations </li></a>
+				<a href="DOM events.html" ><li> DOM Events </li></a>
+				<a href="DOM eventListener.html" ><li> DOM EventListener </li></a>
+				<a href="DOM navigation.html" ><li> DOM Navigation </li></a>
+				<a href="DOM nodes.html" ><li> DOM Nodes </li></a>
+				<a href="DOM nodelist.html" ><li> DOM Nodelist </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch6()"> JavaScript Browser BOM </button>
+			<div class="drop-content" id="myDropdown6">
+			<input type="text" class="myInput" id="myInput6" placeholder="Cari" onkeyup="filterFunction6()"/>
+			<ol>
+				<a href="BOM window.html" ><li> Window </li></a>
+				<a href="BOM screen.html" ><li> Screen </li></a>
+				<a href="BOM location.html" ><li> Location </li></a>
+				<a href="BOM history.html" ><li> History  </li></a>
+				<a href="BOM navigator.html" ><li> Navigator </li></a>
+				<a href="BOM popup alert.html" ><li> Popup Alert </li></a>
+				<a href="BOM timing.html" ><li> Timing </li></a>
+				<a href="BOM cookies.html" ><li> Cookies </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch7()">JavaScript AJAX</button>
+			<div class="drop-content" id="myDropdown7">
+			<input type="text" class="myInput" id="myInput7" placeholder="Cari" onkeyup="filterFunction7()"/>
+			<ol>
+				<a href="AJAX intro.html" ><li> AJAX Introduction</li></a>
+				<a href="AJAX XMLHttpRequest.html" ><li> AJAX XMLHttpRequest </li></a>
+				<a href="AJAX request.html" ><li> AJAX Request </li></a>
+				<a href="AJAX respone.html" ><li class="redZone"> AJAX Response </li></a>
+				<a href="AJAX XML file.html" ><li> AJAX XML File</li></a>
+				<a href="AJAX PHP.html" ><li> AJAX PHP </li></a>
+				<a href="AJAX ASP.html" ><li> AJAX ASP </li></a>
+				<a href="AJAX database.html" ><li> AJAX Database </li></a>
+				<a href="AJAX XML applications.html" ><li> AJAX XML Application </li></a>
+				<a href="AJAX examples.html" ><li> AJAX Example </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch8()">JavaScript JSON</button>
+			<div class="drop-content" id="myDropdown8">
+			<input type="text" class="myInput" id="myInput8" placeholder="Cari" onkeyup="filterFunction8()"/>
+			<ol>
+				<a href="JSON intro.html" ><li class="redZone"> JSON Introduction</li></a>
+				<a href="JSON syntax.html" ><li class="redZone"> JSON Syntax </li></a>
+				<a href="JSON vs XML.html" ><li class="redZone"> JSON vs XML </li></a>
+				<a href="JSON data types.html" ><li class="redZone"> JSON Data Types </li></a>
+				<a href="JSON parse.html" ><li class="redZone"> JSON parse </li></a>
+				<a href="JSON stringify.html" ><li class="redZone"> JSON Stringify</li></a>
+				<a href="JSON objects.html" ><li class="redZone"> JSON Objects </li></a>
+				<a href="JSON arrays.html" ><li class="redZone"> JSON Arrays </li></a>
+				<a href="JSON PHP.html" ><li class="redZone"> JSON PHP </li></a>
+				<a href="JSON HTML.html" ><li class="redZone"> JSON HTML </li></a>
+				<a href="JSON JSONP.html" ><li class="redZone"> JSON JSONP </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch9()">JavaScript Reference</button>
+			<div class="drop-content" id="myDropdown9">
+			<input type="text" class="myInput" id="myInput9" placeholder="Cari" onkeyup="filterFunction9()"/>
+			<ol>
+				<li> <p> JavaScript References </p> </li>
+				<a href="JavaScript references/overview.html" > <li> Overview </li> </a>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch11()">JavaScript</button>
+					<div class="drop-content" id="myDropdown11">
+					<input type="text" class="myInput" id="myInput11" placeholder="Cari" onkeyup="filterFunction11()"/>
+					<ol>
+						<a href="JavaScript references/string reference.html" ><li>String Reference </li></a>
+						<a href="JavaScript references/number reference.html" ><li>Number Reference </li></a>
+						<a href="JavaScript references/operator reference.html" ><li>Operator Reference </li></a>
+						<a href="JavaScript references/statement reference.html" ><li>Statement Reference </li></a>
+						<a href="JavaScript references/math reference.html" ><li>Math Reference </li></a>
+						<a href="JavaScript references/date reference.html" ><li>Date Reference </li></a>
+						<a href="JavaScript references/array reference.html" ><li> Array Reference </li></a>
+						<a href="JavaScript references/boolean reference.html" ><li> Boolean Reference </li></a>
+						<a href="JavaScript references/RegExp reference.html" ><li> RegExp Reference </li></a>
+						<a href="JavaScript references/global reference.html" ><li> Global Reference </li></a>
+						<a href="JavaScript references/conversion reference.html" ><li> Conversion Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()">Browser Object Model (BOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="JavaScript references/BOM window reference.html" ><li> BOM Window Reference </li></a>
+						<a href="JavaScript references/BOM navigator reference.html" ><li> BOM Navigator Reference </li></a>
+						<a href="JavaScript references/BOM screen reference.html" ><li> BOM screen Reference </li></a>
+						<a href="JavaScript references/BOM history reference.html" ><li> BOM History Reference </li></a>
+						<a href="JavaScript references/BOM location reference.html" ><li> BOM Location Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()"> HTML Document Object Model (DOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="JavaScript references/DOM document reference.html" ><li> DOM Documents Reference </li></a>
+						<a href="JavaScript references/DOM element reference.html" ><li> DOM Elements Reference </li></a>
+						<a href="JavaScript references/DOM attribute reference.html" ><li> DOM Attributes Reference </li></a>
+						<a href="JavaScript references/DOM event reference.html" ><li> DOOM Events Reference </li></a>
+						<a href="JavaScript references/DOM style.html" ><li> DOM Style Reference </li></a>
+					</ol>
+					</div>
+			</ol>
+			</div>
+			</div>
+		</div>
+		</div>
+		</div> <!--close Link-->
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> JavaScript Sorting Arrays</h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h1> Sorting an Array </h1>
+				<p>
+				Metode <b>sort()</b> bisa digunakan untuk mengurutkan array secara alpabet:
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh</i></h1>
+				<h4>input</h4>
+				<div class="example-content">
+				
+					<span class="purple">var</span> fruits = ["Banana", "Orange", "Apple", "Mango"]; <br>
+					fruits.sort();        <em> // Mengurutkan elemen - elemen fruits </em>
+				</div>
+				<h4>output</h4>
+				<div class="example-content">
+				<button onclick="mySort1()">Klik disini</button>
+					<p id="mySort01"></p>
+				</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Reversing an Array </h1>
+				<p>
+				Metode <b>reverse()</b> membalikan urutan elemen - elemen dalam array. <br>
+				Kamu bisa menggunakan untuk mengurutkan array secara terbalik.
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh</i></h1>
+				<h4>input</h4>
+				<div class="example-content">
+				
+					<span class="purple">var</span> fruits = ["Banana", "Orange", "Apple", "Mango"]; <br>
+					fruits.sort();        <em> // Pertama mengurutkan elemen - elemen fruits </em>
+					fruits.reverse();        <em> // Kemudian membalikkan  susunan elemen - elemen fruits (secara terbalik) </em>
+				</div>
+				<h4>output</h4>
+				<div class="example-content">
+				<button onclick="mySort2()">Klik disini</button>
+					<p id="mySort02"></p>
+				</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Numeric Sort </h1>
+				<p>
+				Dengan default, fungsi <b>sort()</b> mengurutkan array sebagai <b>String</b>.<br>
+				Ini berkerja dengan baik untuk String ("Apple" urutan sebelum "Banana"). <br>
+				Biarpun, jika Number diurutkan sebagai String , "25" lebih besar daripada "100", karena 
+				"2" lebih besar daripada "1". <br>
+				Oleh karena itu, metode <b>sort()</b> akan mengeluarkan hasil yang salah ketika pengurutan Number.<br>
+				Kamu bisa memperbaiki ini dengan penyediaan <b>sebuah fungsi perbandingan</b>:
+				</p>
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh</i></h1>
+				<h4>input</h4>
+				<div class="example-content">
+				
+					<span class="purple">var</span> points = [40, 100, 1, 5, 25, 10]; <br>
+					points.sort(<span class="purple">function</span>(a, b){<span class="purple">return</span> a - b})
+				
+				</div>
+				<h4>output</h4>
+				<div class="example-content">
+				<button onclick="mySort3()">Klik disini</button>
+					<p id="mySort03"></p>
+				</div>
+				</article>
+				
+				<p>
+				Gunakanlah trik yang sama untuk mengurutkan sebuah array menurun (Array descending):
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh</i></h1>
+				<h4>input</h4>
+				<div class="example-content">
+				
+					<span class="purple">var</span> points = [40, 100, 1, 5, 25, 10]; <br>
+					points.sort(<span class="purple">function</span>(a, b){<span class="purple">return</span> b - a})
+				
+				</div>
+				<h4>output</h4>
+				<div class="example-content">
+				<button onclick="mySort4()">Klik disini</button>
+					<p id="mySort04"></p>
+				</div>
+				</article>
+				
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Fungsi Banding </h1>
+				<p>
+				Tujuan dari fungsi banding adalah untuk mendefinisikan sebuah alternatif pengurutan suatu susunan. <br>
+				Fungsi banding harus mengembalikan sebuah nilai negatif, nol, atau positif tergantung pada pernyataan:
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i> Rumus Fungsi Banding</i></h1>
+				<div class="example-content">
+				
+					points.sort(<span class="purple">function</span>(a, b){<span class="purple">return</span> a - b})
+				
+				</div>
+				</article>
+				
+				<p>
+				Ketika fungsi sort() membandingkan dua nilai, ia akan mengirimkan nilai - nilai kepada fungsi banding 
+				dan mengurutkan nilai - nilai berdasarkan kepada pengembalian nilai (negatif, nol, positif).<br>
+				<b>Contoh:</b> <br>
+				Ketika perbandingan  dan 100, metode sort() memanggil fungsi perbandingan function(40,100). <br>
+				Fungsi mengkalkulasikan 40 - 100, dan mengembalikan -60 (sebuah nilai negatif). <br>
+				Fungsi sort akan mengurutkan 40 sebagai sebuah nilai yang lebih kecil daripada 100. <br>
+				Kamu bisa menggunakan potongan (snippet) kode inj untuk eksperimen dengan 
+				pengurutan secara numeric (angka) dan secara alpabet (huruf):
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh</i></h1>
+				<h4>input</h4>
+				<div class="example-content">
+				
+					<q lang="code">button onclick="myFunction1()"</q>
+					Sort Alphabetically<q lang="code">/button</q> <br>
+					<q lang="code">button onclick="myFunction2()"</q>
+					Sort Numerically<q lang="code">/button</q><br><br>
+					
+					<q lang="code">p id="demo"</q><q lang="code">/p</q><br><br>
+					
+					<q lang="code">script</q> <br>
+					<span class="purple">var</span> points = [40, 100, 1, 5, 25, 10];<br>
+					document.getElementById("<span class="blue">demo</span>").innerHTML = points; <br><br>
+					
+					
+					<span class="purple">function</span> myFunction1() { 
+						<blockquote>
+						points.sort();<br>
+						document.getElementById("demo").innerHTML = points;
+						</blockquote>
+					}<br>
+					<span class="purple">function</span> myFunction2() {
+						<blockquote>
+						points.sort(function(a, b){return a - b});<br>
+						document.getElementById("demo").innerHTML = points;
+						</blockquote>
+					}<br>
+					<q lang="code">/script</q>
+				</div>
+				<h4>output</h4>
+				<div class="example-content">
+				<button onclick="mySort5A()"> Alphabet </button> 
+				<button onclick="mySort5B()"> Numeric </button>
+					<p id="mySort05"></p>
+				</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Pengurutan sebuah Array dalam Susunan Acak </h1>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh</i></h1>
+				<h4>input</h4>
+				<div class="example-content">
+				
+					<span class="purple">var</span> points = [40, 100, 1, 5, 25, 10]; <br>
+					points.sort(<span class="purple">function</span>(a, b){<span class="purple">return</span> 0.5 - <span class="purple">Math.random()</span>})
+				
+				</div>
+				<h4>output</h4>
+				<div class="example-content">
+				<button onclick="mySort6()">Klik disini</button>
+					<p id="mySort06"></p>
+				</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Mencari Nilai Array Terbesar (atau Terkecl) </h1>
+				<p>
+				Tidak ada built-in functions untuk menemukan nilai maksimal atau minimal pada sebuah Array.<br>
+				Biarpun, setelah kamu menyusun sebuah array, kamu bisa menggunakan index (daftar isi) untuk 
+				memperoleh (obtain) nilai - nilai tertinggi dan terendah.<br>
+				Pengurutan susunan naik (ascending):
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh</i></h1>
+				<h4>input</h4>
+				<div class="example-content">
+				
+					<span class="purple">var</span> points = [40, 100, 1, 5, 25, 10]; <br>
+					points.sort(<span class="purple">function</span>(a, b){<span class="purple">return</span> a - b});
+					<em> // sekarang nilai dari <b>points[0]</b> berisi nilai terendah </em> <br>
+					<em> // dan nilai dari <b>points[points.length-1]</b> berisi nilai tertinggi </em>
+					
+				</div>
+				<h4>output</h4>
+				<div class="example-content">
+				<button onclick="mySort7()">Klik disini</button>
+					<p id="mySort07"></p>
+				</div>
+				</article>
+				
+				<p>
+				Pengurutan susunan turun (descending):
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh</i></h1>
+				<h4>input</h4>
+				<div class="example-content">
+				
+					<span class="purple">var</span> points = [40, 100, 1, 5, 25, 10]; <br>
+					points.sort(<span class="purple">function</span>(a, b){<span class="purple">return</span> b - a});
+					<em> // sekarang nilai dari <b>points[0]</b> berisi nilai tertinggi </em> <br>
+					<em> // dan nilai dari <b>points[points.length-1]</b> berisi nilai terendah </em>
+					
+				</div>
+				<h4>output</h4>
+				<div class="example-content">
+				<button onclick="mySort8()">Klik disini</button>
+					<p id="mySort08"></p>
+				</div>
+				</article>
+			</article>
+			
+			<article class="nasehat">
+				<p>
+				Pengurutan sebuah array secara keseluruhan merupakan suatu metode yang tidak efisien jika hanya 
+				ingin mencari nilai tertinggi (atau terendah).
+				</p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1>Penggunaan Math.max() Pada sebuah Array </h1>
+				<p>
+				Kamu bisa menggunakan penerapan Math.max() untuk mencari nilai tertinggi pada sebuah array:
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh</i></h1>
+				<h4>input</h4>
+				<div class="example-content">
+				
+					<em> // document.getElementById("demo").innerHTML= myArrMax(40, 100, 1, 5, 25, 10);</em> <br><br>
+
+					<span class="purple"> function</span>myArrMax(Arr){ <br>
+					<span class="purple">return</span> Math.max.apply(null, Arr) <br>
+					};
+					
+				</div>
+				<h4>output</h4>
+				<div class="example-content">
+				<button onclick="mySort9()">Klik disini</button>
+					<p id="mySort09"></p>
+				</div>
+				</article>
+				
+				<p>
+				Math.max.apply([1, 2, 3]) adalah equivalent (padankata atau kata yang sama) untuk Math.max(1, 2, 3).
+				</p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1>Penggunaan Math.min() Pada sebuah Array </h1>
+				<p>
+				Kamu bisa menggunakan penerapan Math.min() untuk mencari nilai terendah pada sebuah array:
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh</i></h1>
+				<h4>input</h4>
+				<div class="example-content">
+				
+					<em> // document.getElementById("demo").innerHTML= myArrMax(40, 100, 1, 5, 25, 10);</em> <br><br>
+				
+					<span class="purple"> function</span>myArrMax(Arr){ <br>
+					<span class="purple">return</span> Math.min.apply(null, Arr) <br>
+					};
+					
+				</div>
+				<h4>output</h4>
+				<div class="example-content">
+				<button onclick="mySort10()">Klik disini</button>
+					<p id="mySort10"></p>
+				</div>
+				</article>
+				
+				<p>
+				Math.min.apply([1, 2, 3]) adalah equivalent (padankata atau kata yang sama) untuk Math.min(1, 2, 3).
+				</p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Metode JavaScript Max dan Min Ku </h1>
+				<p>
+				Solusi tercepat yaitu dengan menggunakan metode "home made" atau metode buatan sendiri. <br>
+				Fungsi ini me-loop (mengakali) sepanjang sebuah Array pembandingan setiap nilai 
+				dengan nilai tertinggi yang ditemukan:
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh (Mencari Nilai Tertinggi)</i></h1>
+				<h4>input</h4>
+				<div class="example-content">
+				
+					<span class="purple">function</span> myArrayMax(arr) { <br>
+						<blockquote>
+						<span class="purple">var</span> len = arr.length <br>
+						<span class="purple">var</span> max = <span class="justRed">-Infinity</span>;<br>
+						<span class="purple">while</span> (len--) {
+							<blockquote>
+							<span class="purple">if</span> (arr[len] > max) {
+								<blockquote>min = arr[len];</blockquote>
+							}
+							</blockquote>
+						} <br>
+						<span class="purple">return</span> max;
+						</blockquote>
+					}
+					
+				</div>
+				<h4>output</h4>
+				<div class="example-content">
+				<button onclick="mySort11()">Klik disini</button>
+					<p id="mySort11"></p>
+				</div>
+				</article>
+				
+				<p>
+				Fungsi ini me-loop (mengakali) sepanjang sebuah Array pembandingan setiap nilai 
+				dengan nilai terendah yang ditemukan:
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh (Mencari Nilai Terendah)</i></h1>
+				<h4>input</h4>
+				<div class="example-content">
+				
+					<span class="purple">function</span> myArrayMax(arr) { <br>
+						<blockquote>
+						<span class="purple">var</span> len = arr.length <br>
+						<span class="purple">var</span> min = <span class="justRed">Infinity</span>;<br>
+						<span class="purple">while</span> (len--) {
+							<blockquote>
+							<span class="purple">if</span> (arr[len] <q lang="no"><</q> min) { 
+								<blockquote>min = arr[len];</blockquote>
+							}
+							</blockquote>
+						} <br>
+						<span class="purple">return</span> min;
+						</blockquote>
+					}
+					
+				</div>
+				<h4>output</h4>
+				<div class="example-content">
+				<button onclick="mySort12()">Klik disini</button>
+					<p id="mySort12"></p>
+				</div>
+				</article>
+				
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Pengurutan Array Object </h1>
+				<p>
+				Array JavaScript sering kali berisikan object - object:
+				</p>
+				
+				<article class="example-box">
+					<h1> Contoh </h1>
+					<div class="example-content">
+						<span class="purple">var</span> cars = [ <br>
+						{type:"Volvo", year:2016}, <br>
+						{type:"Saab", year:2001},<br>
+						{type:"BMW", year:2010}<br>
+						]; 
+					</div>
+				</article>
+				
+				<p>
+				Bahkan jika objet memiliki properti - properti dari tipe - tipe data yang berbeda, metode sort() 
+				bisa digunakan untuk mengurutkan array. <br>
+				Solusinya adalah dengan menulis fungsi banding untuk membandingkan nilai - nilai properti:
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh</i></h1>
+				<h4>input</h4>
+				<div class="example-content">
+				
+					cars.sort(<span class="purple">function</span>(a, b){<span class="purple">return</span> a.year - b.year)
+				
+				</div>
+				<h4>output</h4>
+				<div class="example-content">
+				<button onclick="mySort13()">Klik disini</button>
+					<p id="mySort13"></p>
+				</div>
+				</article>
+				
+				<p>
+				Perbandingan properti - properti String sedikit lebih rumit:
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh</i></h1>
+				<h4>input</h4>
+				<div class="example-content">
+				
+					
+					cars.<span class="purple">sort</span>(<span class="purple">function</span>(a, b){
+						<blockquote>
+						<span class="purple">var</span> x = a.type.toLowerCase(); <br>
+						<span class="purple">var</span> y = b.type.toLowerCase(); <br>
+						<span class="purple">if</span> (x <q lang="no"><</q> y) <span class="purple">return</span> -1;} <br>
+						<span class="purple">if</span> (x > y) { <span class="purple">return</span> 1;} <br>
+						<span class="purple">return</span> 0;
+						</blockquote>
+					});
+				</div>
+				<h4>output</h4>
+				<div class="example-content">
+				<button onclick="mySort14()">Klik disini</button>
+					<p id="mySort14"></p>
+				</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article id="NoB">
+			<a href="js array methods.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="js array iteration.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			</article>
+			<article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

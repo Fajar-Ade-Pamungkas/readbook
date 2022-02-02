@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<script type="text/javascript" src="buka.js"></script>
+<style type="text/css">
+#sembunyikan01 a[target] { 
+background-color: yellow; 
+}
+
+#sembunyikan02 a[target="_blank"] { 
+background-color: yellow; 
+}
+
+#sembunyikan03 [title~="flower"] { 
+border: 5px solid yellow; 
+}
+
+#sembunyikan04 [class|="top"] {
+background: yellow; 
+color:black;
+}
+
+#sembunyikan05 [class^="top"] { 
+background: yellow; 
+color:black;
+}
+
+#sembunyikan06 [class$="test"] { 
+background: yellow; 
+color:black;
+}
+
+#sembunyikan07 [class*="te"] { 
+background: yellow; 
+color:black;
+}
+
+#sembunyikan08 input[type="text"] { 
+width: 150px; 
+display: block; 
+margin-bottom: 10px; 
+background-color: yellow; 
+} 
+
+#sembunyikan08 input[type="button"] { 
+width: 120px; 
+margin-left: 35px; 
+display: block; 
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Attribute Selectors </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> Style HTML Elements With Specific Attributes </h2>
+				<p> Me-Style Elemen-elemen HTML Dengan Attribut Tertentu</p>
+				<p> Attribute selector memungkinkan untuk me-style elemen-elemen HTML yang memiliki attribut tertentu atau nilai attribut tertentu.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS [attribute] Selector</h2>
+				<p> Selector <mark>[attribute]</mark> digunakan untuk menyeleksi elemen-elemen dengan attribute tertentu.</p>
+				<p> Contoh berikut menyeleksi semua element <<b>a</b>> dengan attribute <mark>target</mark>:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						a[target] { <br>
+						background-color: yellow; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						a[target] { <br>
+						background-color: yellow; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>p</b>>The links with a target attribute gets a yellow background:<<b>/p</b>> <br>
+					 <br>
+					<<b>a</b> <span class="teal">href="../index.html"</span>>w3schools.com<<b>/a</b>> <br>
+					<<b>a</b> <span class="teal">href="http://www.disney.com/" target="_blank"</span>>disney.com<<b>/a</b>> <br>
+					<<b>a</b> <span class="teal">href="http://www.wikipedia.org/" target="_top"</span>>wikipedia.org<<b>/a</b>> <br>
+					 <br>
+					<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> For [<<b>i</b>>attribute<<b>/i</b>>] to work in IE8 and earlier, a DOCTYPE must be declared.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<p>The links with a target attribute gets a yellow background:</p>
+						
+						<a href="../index.html">w3schools.com</a>
+						<a href="http://www.disney.com/" target="_blank">disney.com</a>
+						<a href="http://www.wikipedia.org/" target="_top">wikipedia.org</a>
+						
+						<p><b>Note:</b> For [<i>attribute</i>] to work in IE8 and earlier, a DOCTYPE must be declared.</p>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> CSS [attribute="value"] Selector</h2>
+				<p> Selector <mark>[attribute="value"]</mark> digunakan untuk menyeleksi elemen-elemen dengan attribute dan nilai tertentu.</p>
+				<p> Contoh berikut menyeleksi semua element <<b>a</b>> dengan attribute <mark>target="_blank"</mark>:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						a[target="_blank"] { <br>
+						background-color: yellow; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						a[target="_blank"] { <br>
+						background-color: yellow; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>p</b>>The links with a target="_blank" gets a yellow background:<<b>/p</b>> <br>
+					 <br>
+					<<b>a</b> <span class="teal">href="../index.html"</span>>w3schools.com<<b>/a</b>> <br>
+					<<b>a</b> <span class="teal">href="http://www.disney.com/" target="_blank"</span>>disney.com<<b>/a</b>> <br>
+					<<b>a</b> <span class="teal">href="http://www.wikipedia.org/" target="_top"</span>>wikipedia.org<<b>/a</b>> <br>
+					 <br>
+					<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> For [<<b>i</b>>attribute<<b>/i</b>>] to work in IE8 and earlier, a DOCTYPE must be declared.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<p>The link with target="_blank" gets a yellow background:</p>
+						
+						<a href="../index.html">w3schools.com</a>
+						<a href="http://www.disney.com/" target="_blank">disney.com</a>
+						<a href="http://www.wikipedia.org/" target="_top">wikipedia.org</a>
+						
+						<p><b>Note:</b> For [<i>attribute</i>] to work in IE8 and earlier, a DOCTYPE must be declared.</p>
+						</body>
+						
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS [attribute~="value"] Selector</h2>
+				<p> Selector <mark>[attribute~="value"]</mark> digunakan untuk menyeleksi elemen-elemen dengan sebuah nilai attribute yang berisikan kata tertentu.</p>
+				<p> Contoh berikut menyeleksi semua element dengan attribute <mark>title</mark> yang berisikan space-separated list of words, salah satu yang mana merupakan <mark>"flower"</mark>:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open03">
+						
+						[title~="flower"] { <br>
+						border: 5px solid yellow; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						[title~="flower"] { <br>
+						border: 5px solid yellow; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>p</b>>All images with the title attribute containing the word "flower" get a yellow border.<<b>/p</b>> <br>
+					 <br>
+					<<b>img</b> <span class="teal">src="klematis.jpg" title="klematis flower" width="150" height="113"</span>> <br>
+					<<b>img</b> <span class="teal">src="img_flwr.gif" title="flower" width="224" height="162"</span>> <br>
+					<<b>img</b> <span class="teal">title="tree" width="200" height="358"</span>> <br>
+					 <br>
+					<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> For [<<b>i</b>>attribute<<b>/i</b>>~=<<b>i</b>>value<<b>/i</b>>] to work in IE8 and earlier, a DOCTYPE must be declared.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+						<p>All images with the title attribute containing the word "flower" get a yellow border.</p>
+						
+						<img src="../../Pictures/Night.jpg" title="klematis flower" width="150" height="113">
+						<img src="../../Pictures/Turtle in the beach.jpeg" title="flower" width="224" height="162">
+						<img src="../../Pictures/Putik.jpg" title="tree" width="200" height="358">
+						
+						<p><b>Note:</b> For [<i>attribute</i>~=<i>value</i>] to work in IE8 and earlier, a DOCTYPE must be declared.</p>
+						
+					
+					</div>
+				</article>
+				<p>Contoh diatas akan mencocokan elemen-elemen dengan <mark>title="flower"</mark>, <mark>title="summer flower"</mark>, dan <mark>title="flower new"</mark>, tapi tidak <mark>title="my-flower"</mark> atau <mark>title="flowers"</mark>.</p>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS [attribute|="value"] Selector</h2>
+				<p> Selector <mark>[attribute |="value"]</mark> digunakan untuk menyeleksi elemen-elemen dengan attribute tertentu yang diawali dengan nilai tertentu.</p>
+				<p> Contoh berikut menyeleksi semua element dengan nilai attribute class yang dimulai dengan "top":</p>
+				<div class="nasehat">
+					<p> <b>Catatan:</b> Nilai tidak harus keseluruhan kata, salah satu pun bisa, seperti<b>class="top"</b>, atau yang diikuti dengan sebuah hyphen( - ), seperti <b>class="top-text"</b> !</p>
+				</div>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open04">
+						
+						[class|="top"] {<br>
+						background: yellow; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close04">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						[class|="top"] {<br>
+						background: yellow; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>h1</b> <span class="teal">class="top-header"</span>>Welcome<<b>/h1</b>> <br>
+					<<b>p</b> <span class="teal">class="top-text"</span>>Hello world!<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">class="topcontent"</span>>Are you learning CSS?<<b>/p</b>>
+					
+					<<b>p</b>><<b>b</b>>Note:</b> For [<<b>i</b>>attribute<<b>/i</b>>|=<<b>i</b>>value<<b>/i</b>>] to work in IE8 and earlier, a DOCTYPE must be declared.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<button onclick="buka04()" class="exbutton"> Open </button>
+					<button onclick="tutup04()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+						<h4 class="top-header">Welcome</h4>
+						<p class="top-text">Hello world!</p>
+						<p class="topcontent">Are you learning CSS?</p>
+						
+						<p><b>Note:</b> For [<i>attribute</i>|=<i>value</i>] to work in IE8 and earlier, a DOCTYPE must be declared.</p>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS [attribute^="value"] Selector</h2>
+				<p> Selector <mark>[attribute^="value"]</mark> digunakan untuk menyeleksi elemen-elemen yang memiliki nilai attribute yang diawali dengan nilai tertentu.</p>
+				<p> Contoh berikut menyeleksi semua element dengan nilai attribute class yang dimulai dengan "top":</p>
+				<div class="nasehat">
+					<p><b>Catatan:</b> (menyeleksi) Nilai attribute tidak harus keseluruhan kata!</p>
+				</div>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open05">
+						
+						[class^="top"] { <br>
+						background: yellow; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close05">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						[class^="top"] { <br>
+						background: yellow; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>h1</b> <span class="teal">class="top-header"</span>>Welcome<<b>/h1</b>> <br>
+					<<b>p</b> <span class="teal">class="top-text"</span>>Hello world!<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">class="topcontent"</span>>Are you learning CSS?<<b>/p</b>>
+					
+					<<b>p</b>><<b>b</b>>Note:</b> For [<<b>i</b>>attribute<<b>/i</b>>^=<<b>i</b>>value<<b>/i</b>>] to work in IE8 and earlier, a DOCTYPE must be declared.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan05()" class="exbutton">Klik disini</button>
+					<button onclick="buka05()" class="exbutton"> Open </button>
+					<button onclick="tutup05()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+					
+						<h4 class="top-header">Welcome</h4>
+						<p class="top-text">Hello world!</p>
+						<p class="topcontent">Are you learning CSS?</p>
+						
+						<p><b>Note:</b> For [<i>attribute</i>^=<i>value</i>] to work in IE8 and earlier, a DOCTYPE must be declared.</p>
+						
+						
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS [attribute$="value"] Selector</h2>
+				<p> Selector <mark>[attribute$="value"]</mark> digunakan untuk menyeleksi elemen-elemen yang memiliki nilai attribut yang diakhiri dengan nilai tertentu.</p>
+				<p> Contoh berikut menyeleksi semua elemenr dengan nilai attribute class yang diakhiri dengan "test":</p>
+				<div class="nasehat">
+					<p><b>Catatan:</b> (menyeleksi) Nilai attribute tidak harus keseluruhan kata!</p>
+				</div>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open06">
+						
+						[class$="test"] { <br>
+						background: yellow; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close06">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						[class$="test"] { <br>
+						background: yellow; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>div</b> <span class="teal">class="first_test"</span>>The first div element.<<b>/div</b>> <br>
+					<<b>div</b> <span class="teal">class="second"</span>>The second div element.<<b>/div</b>> <br>
+					<<b>div</b> <span class="teal">class="my-test"</span>>The third div element.<<b>/div</b>> <br>
+					<<b>p</b> <span class="teal">class="mytest"</span>>This is some text in a paragraph.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan06()" class="exbutton">Klik disini</button>
+					<button onclick="buka06()" class="exbutton"> Open </button>
+					<button onclick="tutup06()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+					
+						<div class="first_test">The first div element.</div>
+						<div class="second">The second div element.</div>
+						<div class="my-test">The third div element.</div>
+						<p class="mytest">This is some text in a paragraph.</p>
+						
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS [attribute*="value"] Selector</h2>
+				<p> Selector <mark>[attribute*="value"]</mark> digunakan untuk menyeleksi elemen-elemen yang memiliki nilai attribute yang berisikan nilai tertentu.</p>
+				<p> Contoh berikut menyeleksi semua element dengan nilai attribute class yang berisi (kata) "te":</p>
+				<div class="nasehat">
+					<p><b>Catatan:</b> (menyeleksi) Nilai attribute tidak harus keseluruhan kata!</p>
+				</div>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open07">
+						
+						[class*="te"] { <br>
+						background: yellow; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close07">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						[class*="te"] { <br>
+						background: yellow; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>div</b> <span class="teal">class="first_test"</span>>The first div element.<<b>/div</b>> <br>
+					<<b>div</b> <span class="teal">class="second"</span>>The second div element.<<b>/div</b>> <br>
+					<<b>div</b> <span class="teal">class="my-test"</span>>The third div element.<<b>/div</b>> <br>
+					<<b>p</b> <span class="teal">class="mytest"</span>>This is some text in a paragraph.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan07()" class="exbutton">Klik disini</button>
+					<button onclick="buka07()" class="exbutton"> Open </button>
+					<button onclick="tutup07()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan07">
+					
+					<div class="first_test">The first div element.</div>
+					<div class="second">The second div element.</div>
+					<div class="my-test">The third div element.</div>
+					<p class="mytest">This is some text in a paragraph.</p>
+					
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Styling Forms</h2>
+				<p> Selector <mark>attribute</mark> bisa digunakan untuk styling form tanpa class atau ID:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open08">
+						
+						input[type="text"] { <br>
+						width: 150px; <br>
+						display: block; <br>
+						margin-bottom: 10px; <br>
+						background-color: yellow; <br>
+						} <br>
+						<br>
+						input[type="button"] { <br>
+						width: 120px; <br>
+						margin-left: 35px; <br>
+						display: block; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close08">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						input[type="text"] { <br>
+						width: 150px; <br>
+						display: block; <br>
+						margin-bottom: 10px; <br>
+						background-color: yellow; <br>
+						} <br>
+						<br>
+						input[type="button"] { <br>
+						width: 120px; <br>
+						margin-left: 35px; <br>
+						display: block; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>form</b> <span class="teal">name="input" action="#" method="get"</span>> <br>
+					Firstname:<<b>input</b> <span class="teal">type="text" name="Name" value="Peter" size="20"</span>> <br>
+					Lastname:<<b>input</b> <span class="teal">type="text" name="Name" value="Griffin" size="20"</span>> <br>
+					<<b>input</b> <span class="teal">type="button" value="Example Button"</span>> <br>
+					<<b>/form</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan08()" class="exbutton">Klik disini</button>
+					<button onclick="buka08()" class="exbutton"> Open </button>
+					<button onclick="tutup08()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan08">
+					
+					
+					<form name="input" action="#" method="get">
+					Firstname:<input type="text" name="Name" value="Peter" size="20">
+					Lastname:<input type="text" name="Name" value="Griffin" size="20">
+					<input type="button" value="Example Button">
+					</form>
+					
+					
+					</div>
+				</article>
+				<p><b>Tip:</b> Kunjungilah <a href="CSS forms.html" >CSS Forms Tutorial</a> kami untuk contoh lebih tentang bagaimana untuk me-style formulir dengan CSS.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>More Examples of CSS Selectors</h2>
+				<p> Gunakanlah <a href="CSS selector tester.html" >CSS Selector Tester</a> untuk mendemonstrasikan perbedaan selector.</p>
+				<p> Untuk referensi lengkao tentang semua CSS selectoe, silahkan pergilah ke <a href="CSS selectors reference.html" >CSS Selectors Reference</a> kita.</p>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS image sprites.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS forms.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

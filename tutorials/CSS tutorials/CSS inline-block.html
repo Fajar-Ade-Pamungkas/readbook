@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS Inline-block </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+/* Contoh 1 */
+.floating-box {
+    float: left; 
+    width: 150px; 
+    height: 75px; 
+    margin: 10px; 
+	border: 3px solid #73AD21;
+} 
+
+.after-box {
+	clear: left; 
+	border: 3px solid red;
+}
+
+/* Contoh 2 */
+.floating-boxes {
+	display:inline-block;
+	width:150px;
+	height:75px;
+	margin:10px;
+	border:3px solid #73ad21;
+}
+
+.after-boxes {
+	border:3px red solid;
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Layout - inline-block </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> The inline-block Value </h2>
+				<p> Inline-block sudah memungkinkan untuk waktu yang lama untuk membuat sebuah kotak grid (grid of boxes) 
+				yang mengisi lebar dan melilit (wrap) browser dengan bagus (ketika browser diukur ulang), dengan menggunakan properti <mark>float</mark>.</p>
+				<p> Akan tetapi, nilai <mark>inline-block</mark> dari properti <mark>display</mark> membuat ini bahkan lebih mudah. </p>
+				<p> Element <mark>inline-block</mark> seperti element dalam baris (inline) tapi merrka bisa memiliki sebuah lebar (width) dan tinggi (height).</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Examples</h2>
+				<p> Cara lama - Pengunaan <mark>float</mark> (perhatikanlah bahwa kita juga perlu memnentukan properti <mark>clear</mark> untuk element setelah floating boxes atau kotak mengapung):</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						.floating-box {
+						<blockquote>
+						    float: left; <br>
+						    width: 150px; <br>
+						    height: 75px; <br>
+						    margin: 10px; <br>
+						    border: 3px solid #73AD21; 
+						</blockquote>
+						} <br>
+						<br>
+						.after-box {
+						<blockquote>
+						    clear: left; <br>
+							border: 3px solid red; 
+						</blockquote>
+						} 
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.floating-box {
+						<blockquote>
+						    float: left; <br>
+						    width: 150px; <br>
+						    height: 75px; <br>
+						    margin: 10px; <br>
+						    border: 3px solid #73AD21; 
+						</blockquote>
+						} <br>
+						<br>
+						.after-box {
+						<blockquote>
+						    clear: left; <br>
+							border: 3px solid red; 
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>h2</b>>The Old Way - using float<<b>/h2</b>> <br>
+						<br>
+						<<b>div</b> <span class="teal">class="floating-box"</span>>Floating box<<b>/div</b>> <br>
+						<<b>div</b> <span class="teal">class="floating-box"</span>>Floating box<<b>/div</b>> <br>
+						<<b>div</b> <span class="teal">class="floating-box"</span>>Floating box<<b>/div</b>> <br>
+						<<b>div</b> <span class="teal">class="floating-box"</span>>Floating box<<b>/div</b>> <br>
+						<<b>div</b> <span class="teal">class="floating-box"</span>>Floating box<<b>/div</b>> <br>
+						<<b>div</b> <span class="teal">class="floating-box"</span>>Floating box<<b>/div</b>> <br>
+						<<b>div</b> <span class="teal">class="floating-box"</span>>Floating box<<b>/div</b>> <br>
+						<<b>div</b> <span class="teal">class="floating-box"</span>>Floating box<<b>/div</b>> <br>
+						<br>
+						<<b>div</b> <span class="teal">class="after-box"</span>>Another box, after the floating boxes...<<b>/div</b>> <br><br>
+						
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						
+						<p style="font-size: large;">The Old Way - using float</p>
+						
+						<div class="floating-box">Floating box</div>
+						<div class="floating-box">Floating box</div>
+						<div class="floating-box">Floating box</div>
+						<div class="floating-box">Floating box</div>
+						<div class="floating-box">Floating box</div>
+						<div class="floating-box">Floating box</div>
+						<div class="floating-box">Floating box</div>
+						<div class="floating-box">Floating box</div>
+						
+						<div class="after-box">Another box, after the floating boxes...</div>
+						
+					</div>
+				</article>
+				
+				<p> Efek yang sama bisa dicapai dengan penggunaan nilai <b class="redZone">inline-block</b> dari properti <mark>display</mark> 
+				(perhatikanlah bahwa tidak ada properti <mark>clear</mark> yang diperlukan): </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						.floating-box {
+						<blockquote>
+						    display: inline-block; <br>
+						    width: 150px; <br>
+						    height: 75px; <br>
+						    margin: 10px; <br>
+						    border: 3px solid #73AD21; 
+						</blockquote>
+						} <br>
+						.after-box {
+						<blockquote>
+							border: 3px solid red; 
+						</blockquote>
+						} 
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.floating-box {
+						<blockquote>
+						    display: inline-block; <br>
+						    width: 150px; <br>
+						    height: 75px; <br>
+						    margin: 10px; <br>
+						    border: 3px solid #73AD21; 
+						</blockquote>
+						} <br>
+						.after-box {
+						<blockquote>
+							border: 3px solid red; 
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>h2</b>>The New Way - using inline-block<<b>/h2</b>> <br>
+						<br>
+						<<b>div</b> <span class="teal">class="floating-box"</span>>Floating box<<b>/div</b>> <br>
+						<<b>div</b> <span class="teal">class="floating-box"</span>>Floating box<<b>/div</b>> <br>
+						<<b>div</b> <span class="teal">class="floating-box"</span>>Floating box<<b>/div</b>> <br>
+						<<b>div</b> <span class="teal">class="floating-box"</span>>Floating box<<b>/div</b>> <br>
+						<<b>div</b> <span class="teal">class="floating-box"</span>>Floating box<<b>/div</b>> <br>
+						<<b>div</b> <span class="teal">class="floating-box"</span>>Floating box<<b>/div</b>> <br>
+						<<b>div</b> <span class="teal">class="floating-box"</span>>Floating box<<b>/div</b>> <br>
+						<<b>div</b> <span class="teal">class="floating-box"</span>>Floating box<<b>/div</b>> <br>
+						<br>
+						<<b>div</b> <span class="teal">class="after-box"</span>>Another box, after the floating boxes...<<b>/div</b>> <br><br>
+						
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<p style="font-size: large;">The New Way - using inline-block</p>
+						
+						<div class="floating-boxes">Floating box</div>
+						<div class="floating-boxes">Floating box</div>
+						<div class="floating-boxes">Floating box</div>
+						<div class="floating-boxes">Floating box</div>
+						<div class="floating-boxes">Floating box</div>
+						<div class="floating-boxes">Floating box</div>
+						<div class="floating-boxes">Floating box</div>
+						<div class="floating-boxes">Floating box</div>
+						
+						<div class="after-boxes">Another box, after the floating boxes...</div>
+						
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS float.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS align.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS references | CSS color values  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="../tutorial.css">
+<link rel="stylesheet" type="text/css" href="../style.css">
+<script type="text/javascript" src="../buka.js"></script>
+<script type="text/javascript" src="../../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../.,/HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+#sembunyikan01 .p1 {background-color:#ff0000;} 
+#sembunyikan01 .p2 {background-color:#00ff00;} 
+#sembunyikan01 .p3 {background-color:#0000ff;} 
+#sembunyikan01 .p4 {background-color:#ffff00;} 
+#sembunyikan01 .p5 {background-color:#ff00ff;} 
+
+#sembunyikan02 .p1 {background-color:rgb(255,0,0);} 
+#sembunyikan02 .p2 {background-color:rgb(0,255,0);} 
+#sembunyikan02 .p3 {background-color:rgb(0,0,255);} 
+#sembunyikan02 .p4 {background-color:rgb(192,192,192);} 
+#sembunyikan02 .p5 {background-color:rgb(255,255,0);} 
+#sembunyikan02 .p6 {background-color:rgb(255,0,255);} 
+
+#sembunyikan03 .p1 {background-color:rgba(255, 0, 0, 0.3);} 
+#sembunyikan03 .p2 {background-color:rgba(0, 255, 0, 0.3);} 
+#sembunyikan03 .p3 {background-color:rgba(0, 0, 255, 0.3);} 
+#sembunyikan03 .p4 {background-color:rgba(192, 192, 192, 0.3);} 
+#sembunyikan03 .p5 {background-color:rgba(255, 255, 0, 0.3);} 
+#sembunyikan03 .p6 {background-color:rgba(255, 0, 255, .3);} 
+
+#sembunyikan04 .p1 {background-color:hsl(120,100%,50%);} 
+#sembunyikan04 .p2 {background-color:hsl(120,100%,75%);} 
+#sembunyikan04 .p3 {background-color:hsl(120,100%,25%);} 
+#sembunyikan04 .p4 {background-color:hsl(120,60%,70%);} 
+#sembunyikan04 .p5 {background-color:hsl(290,100%,50%);} 
+#sembunyikan04 .p6 {background-color:hsl(290,60%,70%);} 
+
+#sembunyikan05 .p1 {background-color:hsla(120,100%,50%,0.3);} 
+#sembunyikan05 .p2 {background-color:hsla(120,100%,75%,0.3);} 
+#sembunyikan05 .p3 {background-color:hsla(120,100%,25%,0.3);} 
+#sembunyikan05 .p4 {background-color:hsla(120,60%,70%,0.3);} 
+#sembunyikan05 .p5 {background-color:hsla(290,100%,50%,0.3);} 
+#sembunyikan05 .p6 {background-color:hsla(290,60%,70%,0.3);} 
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Legal Color Values </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> CSS Colors </h2>
+				
+				<p> Warna-warna dalam CSS bisa ditentukan dengan metode-metode berikut:</p>
+				<ul>
+					<li>Hexadecimal colors</li>
+					<li>RGB colors</li>
+					<li>RGBA colors</li>
+					<li>HSL colors</li>
+					<li>HSLA colors</li>
+					<li>Predefined/Color-browser color names</li>
+				</ul>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Hexadecimal Colors</h2>
+				
+				<p> Nilai warna Hexadecimal didukung di semua mayor browser.</p>
+				<p> Sebuah warna hexadecimal ditentukan dengan #RRGGBB, dimana RR (red), GG (green), BB (blue). bilangan hexadecimal menentukan komponen-komponen warna. Semua nilai hsrus berada diantara 00 dan FF.</p>
+				
+				<p> Untuk contoh, nilai #0000ff diterjemahkan sebagai biru, karena komponen biru diatur menjadi nilai tertingginya (ff) dan yang lainnya diatur menjadi 00.</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<p> Mendefinisikan warna HEX yang berbeda:</p>
+					<div class="example-content" id="content-open01">
+						
+						#p1 {background-color: #ff0000;}   <em>/* red */</em> <br>
+						#p2 {background-color: #00ff00;}   <em>/* green */</em> <br>
+						#p3 {background-color: #0000ff;}   <em>/* blue */</em> <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#p1 {background-color:#ff0000;} <br>
+						#p2 {background-color:#00ff00;} <br>
+						#p3 {background-color:#0000ff;} <br>
+						#p4 {background-color:#ffff00;} <br>
+						#p5 {background-color:#ff00ff;} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>>RGB colors:<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">id="p1"</span>>Red<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">id="p2"</span>>Green<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">id="p3"</span>>Blue<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">id="p4"</span>>Yellow<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">id="p5"</span>>Cerise<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<p>HEX colors:</p>
+						<p class="p1">Red</p>
+						<p class="p2">Green</p>
+						<p class="p3">Blue</p>
+						<p class="p4">Yellow</p>
+						<p class="p5">Cerise</p>
+						</body>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>RGB Colors</h2>
+				
+				<p> Nilai warna RGB didukung di semua mayor browser.</p>
+				<p> Sebuah nilai warna RGB ditentukan dengan rgb(red, green, blue). Etiap parameter (red, green, blue) mendefinsikan intensitas warna dan bisa menjadi bilangan antara 0 sampai 255 atau nilai persen (dari 0% sampai 100%).</p>
+				<p> Untuk contoh, nilai rgb(0,0,255) diterjemahkan sebagai biru, karena parameter blue diataur menjadi lebih tinggi dan yang lainnya diatur manjadi 0.</p>
+				<p> Juga, niali berikut mendefinisikan warna yanh sama rgb(0,0,255) dan rgb(0%,0%,100%).</p>
+				
+
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<p> Mendefinisikan warna RGB yang berbeda:</p>
+					<div class="example-content" id="content-open02">
+						
+						#p1 {background-color: rgb(255,0,0);}   <em>/* red */</em> <br>
+						#p2 {background-color: rgb(0,255,0);}   <em>/* green */</em> <br>
+						#p3 {background-color: rgb(0,0,255);}   <em>/* blue */</em> <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#p1 {background-color:rgb(255,0,0);} <br>
+						#p2 {background-color:rgb(0,255,0);} <br>
+						#p3 {background-color:rgb(0,0,255);} <br>
+						#p4 {background-color:rgb(192,192,192);} <br>
+						#p5 {background-color:rgb(255,255,0);} <br>
+						#p6 {background-color:rgb(255,0,255);} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>>RGB colors:<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">id="p1"</span>>Red with opacity<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">id="p2"</span>>Green with opacity<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">id="p3"</span>>Blue with opacity<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">id="p4"</span>>Gray with opacity<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">id="p5"</span>>Yellow with opacity<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">id="p6"</span>>Cerise with opacity<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<p>RGB colors:</p>
+						<p class="p1">Red</p>
+						<p class="p2">Green</p>
+						<p class="p3">Blue</p>
+						<p class="p4">gray</p>
+						<p class="p5">Yellow</p>
+						<p class="p6">Cerise</p>
+						</body>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>RGBA Colors</h2>
+				
+				<p> Nilai warna RGBA didukung di IE9+, Firefox 3+, Chrome, Safari, dan di Opera 10+.</p>
+				<p> Nilai warna RGBA merupakan sebuah ekstensi dari nilai warna RGB dengan sebuah Alpha channel - Yang mana menentukan opacity (sifat tembus cahaya) dari object.</p>
+				<p> Sebuah nikai warna RGBA ditentukan dengan: rgba(red, green, blue, alpha). Parameter alpha adalah sebuah nomor diantara 0.0 (transparan secara penuh) dan 1.0 (tidak transparan).</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<p> Mendefinisikan warna RGB yang berbeda dengan opacity:</p>
+					<div class="example-content" id="content-open03">
+						
+						#p1 {background-color: rgba(255, 0 , 0, 0.3);}   <em>/* red with opacity */</em> <br>
+						#p2 {background-color: rgba(0, 255 , 0, 0.3);}   <em>/* green with opacity */</em> <br>
+						#p3 {background-color: rgba(0,0,255, 0,3);}   <em>/* blue with opacity */</em> <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#p1 {background-color:rgba(255, 0, 0, 0.3);} <br>
+						#p2 {background-color:rgba(0, 255, 0, 0.3);} <br>
+						#p3 {background-color:rgba(0, 0, 255, 0.3);} <br>
+						#p4 {background-color:rgba(192, 192, 192, 0.3);} <br>
+						#p5 {background-color:rgba(255, 255, 0, 0.3);} <br>
+						#p6 {background-color:rgba(255, 0, 255, .3);} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>>RGBA colors:<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">id="p1"</span>>Red with opacity<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">id="p2"</span>>Green with opacity<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">id="p3"</span>>Blue with opacity<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">id="p4"</span>>Gray with opacity<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">id="p5"</span>>Yellow with opacity<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">id="p6"</span>>Cerise with opacity<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+						<p>RGBA colors:</p>
+						<p class="p1">Red</p>
+						<p class="p2">Green</p>
+						<p class="p3">Blue</p>
+						<p class="p4">gray</p>
+						<p class="p5">Yellow</p>
+						<p class="p6">Cerise</p>
+						</body>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>HSL Colors</h2>
+				
+				<p> Nilai warna HSL  didukung di IE9+, Firefox, Chrome, Safari daj Opera 10+.</p>
+				<p> HSL merepresentasikan hue (corak warna), saturation (kejenuhan), lightness (tingkat keterangan) - dan merepresentasikan sebuah cylindrical-coordinate representation of colors.</p>
+				<p> Sebuah nilai warna HSL ditentukan dengan: hsl(hue, saturation, lightness).</p>
+				<p> Hue adalah sebuah derajat di roda warna (dari 0 sampai 360) - 0 (atau 360) adalah merah, 120 adalah hijau, 240 adalah biru. Saturation adalah nilai persen: 0% berarti sebuah bentuk 
+				dari gray (abu-abu) dan 100% adalah full color. Lightness juga adalah persen: 0% adalah hitam, 100% adalah putih.</p>
+				
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<p> Mendefinisikan warna HSL yang berbeda:</p>
+					<div class="example-content" id="content-open04">
+						
+						#p1 {background-color: hsl(120, 100%, 50%);}   <em>/* green */</em> <br>
+						#p2 {background-color: hsl(120, 100%, 75%);}   <em>/* light green */</em> <br>
+						#p3 {background-color: hsl(120, 100%, 25%);}   <em>/* dark green */</em> <br>
+						#p4 {background-color: hsl(120, 60%, 70%);}    <em>/* pastel green */</em> <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close04">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#p1 {background-color:hsl(120,100%,50%);} <br>
+						#p2 {background-color:hsl(120,100%,75%);} <br>
+						#p3 {background-color:hsl(120,100%,25%);} <br>
+						#p4 {background-color:hsl(120,60%,70%);} <br>
+						#p5 {background-color:hsl(290,100%,50%);} <br>
+						#p6 {background-color:hsl(290,60%,70%);} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>>HSL colors:<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">id="p1"</span>>Green<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">id="p2"</span>>Light green<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">id="p3"</span>>Dark green<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">id="p4"</span>>Pastel green<<b>/p</b>> <br> <br>
+						<<b>p</b> <span class="teal">id="p5"</span>>Violet<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">id="p6"</span>>Pastel violet<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<button onclick="buka04()" class="exbutton"> Open </button>
+					<button onclick="tutup04()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+						<p>HSL colors:</p>
+						<p class="p1">Green</p>
+						<p class="p2">Light green</p>
+						<p class="p3">Dark green</p>
+						<p class="p4">Pastel green</p>
+						<p class="p5">Violet</p>
+						<p class="p6">Pastel violet</p>
+						</body>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>HSLA Colors</h2>
+				
+				<p> Nilai warna HSLA didukung di IE9+, Firefox 3+, Chrome, Safari, dan di Opera 10+.</p>
+				<p>Nilai warna HSLA merupakan ekstensi dari nilai warna HSL dengan Alpha channel - Yang mana mengindikasikan opacity (sifat tembus cahaya) dari object.</p>
+				<p> Sebuah nilai HSLA ditentukan dengan: hsla(hue, saturation, lightness, alpha), dimana parameter alpha mendefinisikan opacity. Parameter alpha merupakan sebuah nomor antara 0.0 (transparan secara penuh) dan 1.0 (tidak transparan).</p>
+				
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<p> Mendefinisikan warna HSL yang berbeda dengan opacity:</p>
+					<div class="example-content" id="content-open05">
+						
+						#p1 {background-color: hsla(120, 100%, 50%, 0.3);}   <em>/* green with opacity*/</em> <br>
+						#p2 {background-color: hsla(120, 100%, 75%, 0.3);}   <em>/* light green with opacity */</em> <br>
+						#p3 {background-color: hsla(120, 100%, 25%, 0.3);}   <em>/* dark green with opacity */</em> <br>
+						#p4 {background-color: hsla(120, 60%, 70% 0.3);}    <em>/* pastel green with opacity */</em> <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close05">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#p1 {background-color:hsla(120,100%,50%,0.3);} <br>
+						#p2 {background-color:hsla(120,100%,75%,0.3);} <br>
+						#p3 {background-color:hsla(120,100%,25%,0.3);} <br>
+						#p4 {background-color:hsla(120,60%,70%,0.3);} <br>
+						#p5 {background-color:hsla(290,100%,50%,0.3);} <br>
+						#p6 {background-color:hsla(290,60%,70%,0.3);} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>>HSL colors:<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">id="p1"</span>>Green with opacity<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">id="p2"</span>>Light green with opacity<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">id="p3"</span>>Dark green with opacity<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">id="p4"</span>>Pastel green with opacity<<b>/p</b>> <br> <br>
+						<<b>p</b> <span class="teal">id="p5"</span>>Violet with opacity<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">id="p6"</span>>Pastel violet with opacity<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan05()" class="exbutton">Klik disini</button>
+					<button onclick="buka05()" class="exbutton"> Open </button>
+					<button onclick="tutup05()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+					
+						<p>HSL colors:</p>
+						<p class="p1">Green</p>
+						<p class="p2">Light green</p>
+						<p class="p3">Dark green</p>
+						<p class="p4">Pastel green</p>
+						<p class="p5">Violet</p>
+						<p class="p6">Pastel violet</p>
+						</body>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Predefined/Cross-browser Color Names</h2>
+				
+				<p> 140 nama-nama warna dikenali di HTML dan CSS color specification.</p>
+				<p> Lihatlah di tabel nama-nama warna yang sudah dikenal.</p>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS units.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="align-content.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

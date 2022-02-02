@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+.example-content h4 {
+	font-size:24px;
+	color:white;
+}
+.example-content h5 {
+	font-size:20px;
+}
+#sembunyikan01 { 
+counter-reset: section; 
+} 
+
+#sembunyikan01 h5::before { 
+counter-increment: section; 
+content: "Section " counter(section) ": "; 
+}
+
+#sembunyikan02 { 
+counter-reset: section; 
+} 
+
+#sembunyikan02 h4 { 
+counter-reset: subsection; 
+} 
+
+#sembunyikan02 h4::before { 
+counter-increment: section; 
+content: "Section " counter(section) ". "; 
+} 
+
+#sembunyikan02 h5::before { 
+counter-increment: subsection; 
+content: counter(section) "." counter(subsection) " "; 
+}
+
+#sembunyikan03 ol { 
+counter-reset: section; 
+list-style-type: none; 
+} 
+
+#sembunyikan03 li::before { 
+counter-increment: section; 
+content: counters(section,".") " "; 
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Counters </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2>Using CSS Counters</h2>
+				<p> Penggunaan CSS Counter</p>
+				<p> CSS counter ialah seperti "variabel". Nilai variabel bisa dinaikan dengan peraturan CSS 
+				(yang mana akan meninggalkan jejak (track) berapa banyak waktu digunakan).</p>
+				<p> Agar bekerja dengan CSS counter kita akan menggunakan properti berikut:</p>
+				<ul>
+					<li> <mark>counter-reset</mark> - Memebuat atau me-reset sebuah nilai counter </li>
+					<li> <mark>counter-increment</mark> - Meningkatkan atau menaikan sebuah nilai counter</li>
+					<li> <mark>content</mark> - Menyisipkan content yang dihasilkan</li>
+					<li> <mark>counter()</mark> atau fungsi <mark>counter()</mark> - Menambahkan  nilai dari suatu counter untuk sebuah element</li>
+				</ul>
+				
+				<p> Untuk mengggunakan CSS counter, counter pertama kali harus dibuat dengan <mark>counter-reset</mark>.</p>
+				<p> Contoh berikut membuat sebuah counter untuk halaman (dalam selector <mark>body</mark>), kemudian menaikan nilai counter 
+				untuk setiap element <<b>h2</b>> dan menambahkan "Section <b><</b>value of the counter<b>></b>:" untuk permulaan dari setiap element <<b>h2</b>>:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						body { <br>
+						counter-reset: section; <br>
+						} <br>
+						 <br>
+						h2::before { <br>
+						counter-increment: section; <br>
+						content: "Section " counter(section) ": "; <br>
+						} 
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						body { <br>
+						counter-reset: section; <br>
+						} <br>
+						 <br>
+						h2::before { <br>
+						counter-increment: section; <br>
+						content: "Section " counter(section) ": "; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>h1</b>>Using CSS Counters:<<b>/h1</b>> <br>
+					<<b>h2</b>>HTML Tutorial<<b>/h2</b>> <br>
+					<<b>h2</b>>CSS Tutorial<<b>/h2</b>> <br>
+					<<b>h2</b>>JavaScript Tutorial<<b>/h2</b>> <br>
+					 <br>
+					<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> IE8 supports these properties only if a !DOCTYPE is specified.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<h4>Using CSS Counters:</h4>
+						<h5>HTML Tutorial</h5>
+						<h5>CSS Tutorial</h5>
+						<h5>JavaScript Tutorial</h5>
+						
+						<p><b>Note:</b> IE8 supports these properties only if a !DOCTYPE is specified.</p>
+					
+					</div>
+				</article>
+				
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Nesting Counters</h2>
+				<p> Contoh berikut membuat satu counter untuk (section) halaman dan satu counter untuk seriap element <<b>h1</b>> (sebsection). Counter "section" akan dihitung untuk setiap element <<b>h1</b>> dengan "Section <b><</b>value of section counter<b>></b>.", 
+				dan "subsection" counter akan dihitung untuk setiap element <<b>h2</b>> dengan "<b><</b>value of section counter<b>></b>.<b><</b>value of subsection counter<b>></b>":</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						body { <br>
+						counter-reset: section; <br>
+						} <br>
+						 <br>
+						h1 { <br>
+						counter-reset: subsection; <br>
+						} <br>
+						 <br>
+						h1::before { <br>
+						counter-increment: section; <br>
+						content: "Section " counter(section) ". "; <br>
+						} <br>
+						 <br>
+						h2::before { <br>
+						counter-increment: subsection; <br>
+						content: counter(section) "." counter(subsection) " "; <br>
+						} 
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						body { <br>
+						counter-reset: section; <br>
+						} <br>
+						 <br>
+						h1 { <br>
+						counter-reset: subsection; <br>
+						} <br>
+						 <br>
+						h1::before { <br>
+						counter-increment: section; <br>
+						content: "Section " counter(section) ". "; <br>
+						} <br>
+						 <br>
+						h2::before { <br>
+						counter-increment: subsection; <br>
+						content: counter(section) "." counter(subsection) " "; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>h1</b>>HTML tutorials:<<b>/h1</b>> <br>
+					<<b>h2</b>>HTML Tutorial<<b>/h2</b>> <br>
+					<<b>h2</b>>CSS Tutorial<<b>/h2</b>> <br>
+					 <br>
+					<<b>h1</b>>Scripting tutorials:<<b>/h1</b>> <br>
+					<<b>h2</b>>JavaScript<<b>/h2</b>> <br>
+					<<b>h2</b>>VBScript<<b>/h2</b>> <br>
+					 <br>
+					<<b>h1</b>>XML tutorials:<<b>/h1</b>> <br>
+					<<b>h2</b>>XML<<b>/h2</b>> <br>
+					<<b>h2</b>>XSL<<b>/h2</b>> <br>
+					 <br>
+					<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> IE8 supports these properties only if a !DOCTYPE is specified.<</b>/p</b>> <br> <br>
+										
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<h4>HTML tutorials:</h4>
+						<h5>HTML Tutorial</h5>
+						<h5>CSS Tutorial</h5>
+						
+						<h4>Scripting tutorials:</h4>
+						<h5>JavaScript</h5>
+						<h5>VBScript</h5>
+						
+						<h4>XML tutorials:</h4>
+						<h5>XML</h5>
+						<h5>XSL</h5>
+						
+						<p><b>Note:</b> IE8 supports these properties only if a !DOCTYPE is specified.</p>
+					
+					</div>
+				</article>
+				
+				<p> Sebuah counter bisa juga dimanfaatkan untuk membuat outlined list karena hal baru dari sebuah counter yang dibuat secara otomatis pada child element. 
+				Disini kita menggunakan fungsi <mark>counter()</mark> untuk menyisipkan string diantara tingkat yang berbeda dari nested counter:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open03">
+						
+						ol { <br>
+						counter-reset: section; <br>
+						list-style-type: none; <br>
+						} <br>
+						 <br>
+						li::before { <br>
+						counter-increment: section; <br>
+						content: counters(section,".") " "; <br>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						ol { <br>
+						counter-reset: section; <br>
+						list-style-type: none; <br>
+						} <br>
+						 <br>
+						li::before { <br>
+						counter-increment: section; <br>
+						content: counters(section,".") " "; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>ol</b>>
+					<blockquote>
+						<<b>li</b>>item<<b>/li</b>> <br>
+						<<b>li</b>>item     
+						<blockquote>
+							<<b>ol</b>>
+							<blockquote>
+								<<b>li</b>>>item<<b>/li</b>> <br>
+								<<b>li</b>>item<<b>/li</b>> <br>
+								<<b>li</b>>item
+								<blockquote>
+									<<b>ol</b>> 
+									<blockquote>
+										<<b>li</b>>item<<b>/li</b>> <br>
+										<<b>li</b>>item<<b>/li</b>> <br>
+										<<b>li</b>>item<<b>/li</b>> 
+									</blockquote>
+									<<b>/ol</b>>
+								</blockquote>
+								<<b>/li</b>> <br>
+								<<b>li</b>>item<<b>/li</b>>
+							</blockquote>
+							<<b>/ol</b>>
+						</blockquote>
+						<<b>/li</b>> <br>
+						<<b>li</b>>item<<b>/li</b>> <br>
+						<<b>li</b>>item</<b>li</b>>
+					</blockquote>
+					<<b>/ol</b>> <br>
+					 <br>
+					<<b>ol</b>>
+					<blockquote>
+						<<b>li</b>>item<<b>/li</b>> <br>
+						<<b>li</b>>item<<b>/li</b>>
+					</blockquote>
+					<<b>/ol</b>> <br>
+					 <br>
+					<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> IE8 supports these properties only if a !DOCTYPE is specified.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+					<ol>
+						<li>item</li>
+						<li>item     
+							<ol>
+								<li>item</li>
+								<li>item</li>
+								<li>item
+								<ol>
+									<li>item</li>
+									<li>item</li>
+									<li>item</li>
+								</ol>
+								</li>
+								<li>item</li>
+							</ol>
+						</li>
+						<li>item</li>
+						<li>item</li>
+					</ol>
+					
+					<ol>
+						<li>item</li>
+						<li>item</li>
+					</ol>
+					
+					<p><b>Note:</b> IE8 supports these properties only if a !DOCTYPE is specified.</p>
+					
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> CSS Counter Properties</h2>
+				<table class="table">
+					<thead>
+						<tr>
+							<th> Properti </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>content</td>
+							<td> Digunakan dengan pseudo-element <b>::after</b> dan <b>::before</b>, 
+							untuk menyisipkan konten yang dihasilkan</td>
+						</tr>
+						<tr>
+							<td> counter-increment</td>
+							<td> Meningkatkan/menaikan satu atau lebih nilai counter</td>
+						</tr>
+						<tr>
+							<td>counter-reset</td>
+							<td>Menciptakan atau me-reset satu atau lebih counter</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS forms.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS3 introduction.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

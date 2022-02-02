@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML head</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript">
+function show() {
+	x = "Hello JavaScript!";
+	document.getElementById("contoh1").innerHTML= x;
+	var x;
+}
+</script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML Head</h1>
+				
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> The HTML <b class="blue"><<b>head</b>></b> Element </h2>
+				<p> Element <<b>head</b>> adalah sebuah container (tempat) untuk untuk metadata (data about data). </p>
+				<p> Metadata  HTML adalah data tentang dokumen HTML. Metaata tidak ditampilkan. </p>
+				<p> Metadata secara tipikal (secara khas) mendefinisikan document, styles, links, scripts dan infomasi meta lainnya. </p>
+				<p> Tag - tag berikut mendefinisikan meta data: <<b>title</b>> <<b>style</b>>, <<b>meta</b>>, <<b>script</b>>, dan <<b>base</b>>. </p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Omitting <b class="blue"><<b>html</b>></b> and <b class="blue"><<b>body</b>></b>? </h2>
+				<p> Dalam standar HTML5, tag <<b>html</b>>, tag <<b>body</b>> dan tag <<b>head</b>> bisa dihilangkan (omitted). </p>
+				<p> Kode berikut akan memvalidasi sebagai HTML5: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+								<<b>h1</b>> This is a Heading<<b>/h1</b>> <br>
+								<<b>p</b>> This is a Paragraph<<b>/p</b>> <br>
+						
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						<h2 style="font-size:30px;"> This is a Heading </h2>
+						<p> This is a Paragraph </p>
+					</div>
+				</article>
+				
+				<div class="nasehatX">
+				Kita tidak merekomendasikan penghapusan tag <<b>html</b>> dan <<b>body</b>>.
+				</div>
+				
+				<p> element <<b>html</b>> adalah document root. ia direkomendasikan sebagai tempat untuk penentuan page language (bahasa halaman): </p>
+				
+				<div class="simple-example">
+				<<b>!DOCTYPE</b> <span class="teal">html</span>> <br>
+				<<b>html</b> <span class="teal"> lang="en-US"</span>>
+				</div>
+				
+				<p> Pendeklarasian bahasa penting untuk accessibility application (screen readers) dan search engines (mesin pencari). </p>
+				<p> Penghilangan tag <<b>html</b>> dana <<b>body</b>> bisa merusak software DOM/XML yang tertulis dengan buruk. </p>
+				<p> Akhirnya, penghapusan atau penghilangan tag <<b>body</b>> bisa memproduksi error dalam browser lama (IE9). </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Omitting <b class="blue"><<b>head</b>></b> </h2>
+				<p> Dalam standar HTML5, tag <<b>head</b>> bisa juga dihilangkan. </p>
+				<p> Dengan default, browser akan menambahkan semua element sebelum <<b>body</b>>, untuk element <<b>head</b>> dafault (pengaturan yang sudsh diatur). </p>
+				<p> Kamu bisa mengurangi kerumitan HTML, dengan menghilangkan tag <<b>head</b>>: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+							<<b>html</b>> <br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>body</b>> <br>	
+							<<b>h1</b>> This is a Heading<<b>/h1</b>> <br>
+								<<b>p</b>> This is a Paragraph<<b>/p</b>> <br>
+							<<b>/body</b>> <br>
+							<<b>/html</b>>
+					</div>
+					<button onclick="tampilkan02()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+						<h2 style="font-size:30px;"> This is a Heading </h2>
+						<p> This is a Paragraph </p>
+					</div>
+				</article>
+				
+				<div class="nasehat">
+				Penghilangan tag tidak familiar (tidak lazim digunakan) untuk para pengembang web. 
+				Penghilangan itu butuh waktu untuk memantapkan sebagai garis pedoman (guideline). 
+				</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> The HTML <b class="blue"><<b>title</b>></b> Element </h2>
+				<p> Element <<b>title</b>> mendefinisikan title (judul) dsri dokumen. </p>
+				<p> Element <<b>title</b>> diperkukan dslsm semua dokumen HTML/XHTML. </p>
+				<p> Element <<b>title</b>>: </p>
+				
+				<ul>
+					<li> Mendefinisikan sebuah title dalam browser tab </li>
+					<li> Menyediakan sebuah title (judul) untik halaman ketika ia ditambahkan ke favorites</li>
+					<li> Menampilkan sebuah title (judul) untuk halaman dalam hasil mesin pencari (seacrh engine resul)</li>
+				</ul>
+				
+				<p> sebuah dokumen HTML yang disederhanakan: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+							<<b>html</b>> <br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>body</b>> <br>	
+							konten HTML .... <br>
+							<<b>/body</b>> <br>
+							<<b>/html</b>>
+					</div>
+					<button onclick="tampilkan03()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+						Konten HTML ...
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The HTML <b class="blue"><<b>style</b>></b> Element </h2>
+				<p> Element <<b>style</b>> digunakan untuk mendefinisikan informasi style kepada dokumen HTML. </p>
+				<p> Didalam element <<b>style</b>> kamu bisa menentukan bagaiaman element - element HTML harus diterjemahkan atau diubah dalam sebuah browser: </p>
+				
+					<article class="example-box">
+						<h1>Contoh</h1>
+						<h4>Input:</h4>
+						<div class="example-content">
+						
+							<<b>!DOCTYPE html</b>><br><br>
+								<<b>html</b>> <br>
+								<<b>head</b>> <br>
+								<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+								<<b>style</b>> <br>
+								body {background-color:orange;} <br>
+								h1, p { color: white;}
+								<<b>/style</b>> <br>
+								<<b>/head</b>> <br>
+								<<b>body</b>> <br>	
+								<<b>h1</b>> This is a Heading<<b>/h1</b>> <br>
+									<<b>p</b>> This is a Paragraph<<b>/p</b>> <br>
+								<<b>/body</b>> <br>
+								<<b>/html</b>>
+						</div>
+						<button onclick="tampilkan04()">Output:</button>
+						<div class="example-content sembunyikan" id="sembunyikan04" style="background:orange;">
+							<h2 style="font-size:30px; color:white;"> This is a Heading </h2>
+							<p style="color:white;"> This is a Paragraph </p>
+						</div>
+					</article>
+						
+				
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> The HTML <b class="blue"><<b>link</b>></b> Element </h2>
+				
+				<p> Element <<b>link</b>> mendefinisikan hubungan halaman (page relationship) dengan file dari sumber diluar dokumen HTML saat ini (external resource). </p>
+				<p> Element <<b>link</b>> paling sering digunakan untuk link ke style sheet (CSS): </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+							<<b>html</b>> <br>
+							<<b>head</b>> <br> <br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+							<<b>style</b> <span class="teal"> rel="stylesheet" href="style.css"</span>> <br> <br>
+							<<b>/head</b>> <br>
+							<<b>body</b>> <br>	
+							<br>
+								<<b>h1</b>> This is a Heading<<b>/h1</b>> <br>
+								<<b>p</b>> This is a Paragraph<<b>/p</b>> <br>
+							<br>
+							<<b>/body</b>> <br>
+							<<b>/html</b>>
+					</div>
+					<button onclick="tampilkan05()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan05" style="background:orange;">
+						<h2 style="font-size:30px; color:white;"> This is a Heading </h2>
+						<p style="color:white;"> This is a Paragraph </p>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The HTML <b class="blue"><<b>meta</b>></b> Element </h2>
+				<p> Element <<b>meta</b>> digunakan untuk menentukan page description, keywords, author (nama penulis), dan metadata lainnya. </p>
+				<p> Metadata digunakan oleh browser (bagaimana tuk menampilkan konten), dengan search engines (keyword), dan layanan web lainnya. </p>
+				
+				<p> mendefinisikan <b>keyword</b> kepada search engines: </p>
+				<div class="simple-example">
+					<<b>meta</b> <span class="teal">name="keywords" content="HTML, CSS, XML, XHTML, JavaScript"</span>> 
+				</div>
+				
+				<p> mendefinisikan <b>description</b> halaman web kamu: </p>
+				<div class="simple-example">
+					<<b>meta</b> <span class="teal">name="description" content="Media Belajar Otodidak Website"</span>> 
+				</div>
+				
+				<p> mendefinisikan <b>character set</b> yang digunakan: </p>
+				<div class="simple-example">
+					<<b>meta</b> <span class="teal">charset"UTF-8"</span>> 
+				</div>
+				
+				<p> mendefinisikan <b>author</b> (penulis) halaman: </p>
+				<div class="simple-example">
+					<<b>meta</b> <span class="teal">name="author" content="Fajar Ade Pamungkas"</span>> 
+				</div>
+				
+				<p> Me-<b>refresh</b> dokumen setiap 30 detik: </p>
+				<div class="simple-example">
+					<<b>meta</b> <span class="teal">http-equiv="refresh" content="30"</span>> 
+				</div>
+				
+				
+				<article class="example-box">
+					<h1>Contoh kumpulan meta data</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+							<<b>html</b>> <br>
+							<<b>head</b>> <br> <br>
+					<<b>meta</b> <span class="teal">name="keywords" content="HTML, CSS, XML, XHTML, JavaScript"</span>> <br>
+					<<b>meta</b> <span class="teal">name="description" content="Media Belajar Otodidak Website"</span>> <br>
+					<<b>meta</b> <span class="teal">charset"UTF-8"</span>> <br>
+					<<b>meta</b> <span class="teal">name="author" content="Fajar Ade Pamungkas"</span>>  <br>
+					<<b>meta</b> <span class="teal">http-equiv="refresh" content="30"</span>> <br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+							<<b>style</b> <span class="teal"> rel="stylesheet" href="style.css"</span>> <br> <br>
+							<<b>/head</b>> <br>
+							<<b>body</b>> <br>	
+							<br>
+								<<b>h1</b>> This is a Heading<<b>/h1</b>> <br>
+								<<b>p</b>> Metadata tidak akan ditampilkan karena merupakan sebuah informasi halaman<<b>/p</b>> <br>
+							<br>
+							<<b>/body</b>> <br>
+							<<b>/html</b>>
+					</div>
+					<button onclick="tampilkan06()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan06" style="background:orange;">
+						<h2 style="font-size:30px; color:white;"> This is a Heading </h2>
+						<p style="color:white;"> Metadata tidak akan ditampilkan karena merupakan sebuah informasi halaman </p>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The HTML <b class="blue"><<b>script</b>></b> Element </h2>
+				<p> Element <<b>script</b>> digunakan untuk mendefinisikan client-side JavaScript. </p>
+				<p> Script dibawah ini menuliskan kata <i>Hello JavaScript!</i> kedalam sebuah element HTML dengan id="demo": </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br>
+							<<b>head</b>><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+							<b>script</b>> <br>
+							document.getElementByid("demo").innerHTML="Hello JavaScript !"; <br>
+							<<b>/script</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>p</b> <span class="teal">id="demo"</span>><<b>/p</b>> <br>
+								<br>
+							<<b>/body</b>><br>
+						<<b>/html</b>><br>
+				
+					</div>
+					<button onclick="show()">Output:</button>
+					<div class="example-content sembunyikn" id="sembunyika01" >
+						<p id="contoh1"></p>
+					</div>
+				</article>
+				
+				<div class="nasehatX">
+				Untuk mempelajari tentang JavaScript kunjungilah, artikel kami tentang 
+				<a href="../JavaScript tutorials/js HOME.html" > Tutorial JavaScript</a>.
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The HTML <b class="blue"><<b>base</b>></b> Element </h2>
+				<p> Element <<b>base</b>> menentukan <b>base URL</b> (URL dasar) dan <b>base target</b> (target dasar) untuk semua URL relatif dalam sebuah halaman: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br>
+							<<b>head</b>><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+							<<b>base</b>  <span class="teal">target="_blank"</span>> <br>
+							<b>script</b>> <br>
+							document.getElementByid("demo").innerHTML="Hello JavaScript !"; <br>
+							<<b>/script</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>img</b> <span class="blue">src="../images/html5.gif"</span>> <br>
+								<<b>p</b>> <br>
+								Since we have specified a base URL, the browser will look for the image "html5.gif" at "http://www.w3schools.com/images/html5.gif" <br>
+								<<b>/p</b>> <br>
+								<br>
+								<<b>p</b>><<b>a</b> <span class="teal">href="../index.html"</span>>Readbooks<<b>/a</b>> <br>
+								<<b>/p</b>> <br>
+								<br>
+								<<b>p</b>> <br>
+								The link above opens in a new window. This is because the base target is set to "_blank". <br>
+								<<b>/p</b>> <br>
+								<br>
+							<<b>/body</b>><br>
+						<<b>/html</b>><br>
+				
+					</div>
+					<button onclick="tampilkan07()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan07" >
+						
+						<img src="../../Pictures/Rain Fall.png" width="128px">
+						<p class="grey">
+						Sejak kita telah menentukan sebuah base URL, browser akan melihat image atau gambar "Rain Falk.png" di "http:www.readbooks.co.id/images/Rain Fall.png"
+						</p>
+						<p>
+						Since we have specified a base URL, the browser will look for the image "html5.gif" at "http://www.w3schools.com/images/html5.gif"
+						</p>
+						
+						<p><a href="HTML HOME.html">Readbooks</a>
+						</p>
+						
+						<p class="grey">
+						Link diatas membuka dalam sebuah window baru. Ini dikarenakan base target diatur menjadi "_blank".
+						</p>
+						<p>
+						The link above opens in a new window. This is because the base target is set to "_blank".
+						</p>
+						
+					</div>
+				</article>
+				
+				<div class="nasehat">
+				Dengan kata lain <<b>base</b>> bisa mengatur semua URL dan target link menjadi metode pembukaan link dalam satu waktu. 
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML head Elements </h2>
+				
+				<table>
+					<thead>
+						<tr>
+							<th> Tag </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> <<b>head</b>> </td>
+							<td> Mendefinisikan informasi tentang dokumen </td>
+						</tr>
+						<tr>
+							<td> <<b>title</b>> </td>
+							<td> Mendefinisikan judul (title) dari sebuah dokumen </td>
+						</tr>
+						<tr>
+							<td> <<b>base</b>> </td>
+							<td> Mendefinisikan sebuah default address (alamat default) atau default target untuk semua link dalam sebuah halaman </td>
+						</tr>
+						<tr>
+							<td> <<b>link</b>> </td>
+							<td> Mendefinisikan hubungan antara dokumen dengan externsl resource (file dari sumber luar dokumen) </td>
+						</tr>
+						<tr>
+							<td> <<b>meta</b>> </td>
+							<td> Mendefinisikan metadata tentang sebuah dokumen HTML </td>
+						</tr>
+						<tr>
+							<td> <<b>script</b>> </td>
+							<td> Mendefinisikan sebuah client-side script (naskah samping client) atau naskah JavaScript
+						</tr>
+						<tr>
+							<td> <<b>style</b>> </td>
+							<td> Mendefinisikan style information (informasi gaya) untuk sebuah dokumen </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML JavaScript.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML entities.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS references | CSS referensi  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="../tutorial.css">
+<link rel="stylesheet" type="text/css" href="../style.css">
+<script type="text/javascript" src="../buka.js"></script>
+<script type="text/javascript" src="../../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../.,/HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+.example-box h4 b{
+	color: black;
+	text-shadow: 1px 1px 5px white;
+}
+
+/*Contoh 1*/
+#sembunyikan01 a:after {
+content: " (" attr(href) ")";
+} 
+
+/*Contoh 2*/
+#sembunyikan02 .div2 { 
+position: absolute; 
+left: 50px; 
+width: calc(100% - 100px); 
+border: 1px solid black; 
+background-color: yellow; 
+padding: 5px; 
+text-align: center; 
+} 
+
+
+/*Contoh 4*/
+#sembunyikan04 .p1 {background-color:hsl(120,100%,50%);} 
+#sembunyikan04 .p2 {background-color:hsl(120,100%,75%);} 
+#sembunyikan04 .p3 {background-color:hsl(120,100%,25%);} 
+#sembunyikan04 .p4 {background-color:hsl(120,60%,70%);} 
+#sembunyikan04 .p5 {background-color:hsl(290,100%,50%);} 
+#sembunyikan04 .p6 {background-color:hsl(290,60%,70%);} 
+
+/*Contoh 5*/
+#sembunyikan05 .p1 {background-color:hsla(120,100%,50%,0.3);} 
+#sembunyikan05 .p2 {background-color:hsla(120,100%,75%,0.3);} 
+#sembunyikan05 .p3 {background-color:hsla(120,100%,25%,0.3);} 
+#sembunyikan05 .p4 {background-color:hsla(120,60%,70%,0.3);} 
+#sembunyikan05 .p5 {background-color:hsla(290,100%,50%,0.3);} 
+#sembunyikan05 .p6 {background-color:hsla(290,60%,70%,0.3);} 
+
+
+/*Contoh 6*/
+#sembunyikan06 .grad { 
+background: -webkit-linear-gradient(red,yellow,blue); /* Safari 5.1-6.0 */ 
+background: -o-linear-gradient(red,yellow,blue); /* Opera 11.1-12.0 */ 
+background: -moz-linear-gradient(red,yellow,blue); /* Firefox 3.6-15 */ 
+background: linear-gradient(red,yellow,blue); /* Standard syntax */ 
+}
+
+/*Contih 7*/
+#sembunyikan07 .grad { 
+background: -webkit-radial-gradient(red, green, blue); /* Safari 5.1- 6.0 */ 
+background: -o-radial-gradient(red, green, blue); /* Opera 11.6-12.0 */ 
+background: -moz-radial-gradient(red, green, blue); /* Firefox 3.6-15 */ 
+background: radial-gradient(red, green, blue); /* Standard syntax */ 
+} 
+
+/*Contoh 8*/
+#sembunyikan08 .grad { 
+background: -webkit-repeating-linear-gradient(red ,yellow 10% ,blue 20%); /* Safari 5.1-6.0 */ 
+background: -o-repeating-linear-gradient(red ,yellow 10% ,blue 20%); /* Opera 11.1-12.0 */ 
+background: -moz-repeating-linear-gradient(red ,yellow 10% ,blue 20%); /* Firefox 3.6-15 */ 
+background: repeating-linear-gradient(red ,yellow 10%,blue 20%); /* Standard syntax */ 
+}
+
+#sembunyikan09 .grad { 
+background: -webkit-repeating-radial-gradient(red, green 10%, blue 15%); /* Safari 5.1- 6.0 */ 
+background: -o-repeating-radial-gradient(red, green 10%, blue 15%); /* Opera 11.6-12.0 */ 
+background: -moz-repeating-radial-gradient(red, green 10%, blue 15%); /* Firefox 3.6-15 */ 
+background: repeating-radial-gradient(red, green 10%, blue 15%); /* Standard syntax */ 
+color:white;
+}
+
+
+/*Contoh 10*/
+#sembunyikan10 .p1 {background-color:rgb(255, 0, 0);} 
+#sembunyikan10 .p2 {background-color:rgb(0, 0, 255);} 
+#sembunyikan10 .p3 {background-color:rgb(0, 255, 0);} 
+#sembunyikan10 .p4 {background-color:rgb(255, 255, 255);} 
+#sembunyikan10 .p5 {background-color:rgb(255, 255, 0);} 
+#sembunyikan10 .p6 {background-color:rgb(0, 0, 0); color:white;} 
+
+
+/*Contoh 11*/
+#sembunyikan11 .p1 {background-color:rgba(255, 0, 0, 0.2);} 
+#sembunyikan11 .p2 {background-color:rgba(0, 0, 255, 0.2);} 
+#sembunyikan11 .p3 {background-color:rgba(0, 255, 0, 0.4);} 
+#sembunyikan11 .p4 {background-color:rgba(255, 255, 255, 0.6);} 
+#sembunyikan11 .p5 {background-color:rgba(255, 255, 0, 0.8);} 
+#sembunyikan11 .p6 {background-color:rgba(0, 0, 0, 1); color:white;} 
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Functions Reference </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> CSS Functions </h2>
+				<p> Kolom "CSS" mengindikasikan di CSS versi yang mana fungsi didefinisikan (CSS1, CSS2, CSS3).</p>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th> Fungsi </th>
+							<th> Deskripsi </th>
+							<th> CSS </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> attr() </td>
+							<td> Mengembalikan nilai dari sebuah attribute dari element yang terseleksi </td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> calc() </td>
+							<td> Memperbolehkan kamu untuk menampilkan kalkulasi untuk memutuskan nilai properti CSS </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> cubic-bezier() </td>
+							<td> Menentukan rumus bezier untuk element </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> hsl() </td>
+							<td> Menentukan rumus pencampuran warna dengan metode hue (corak warna), saturation (kejenuhan), lighting (pencahayaan) </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> hsla() </td>
+							<td> Menentukan rumus pencampuran warna dengan metode hue (corak warna), saturation (kejenuhan), lighting (pencahayaan) dan alpha (sifat tembus cahaya) </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> linear-gradient() </td>
+							<td> Membuat sebuah "image" yang mana mempresentasikan gradien linier warna </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> radial-gradient() </td>
+							<td> Membuat sebuah "image" yang mana mempresentasikan sebuah gradient warna radial (seperti gelombang sinyal) dari pusat gradient </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> repeating-linear-gradient() </td>
+							<td> Membuat sebuah "image" terdiri dari gradient berulang-ulang </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> repeating-radial-gradient() </td>
+							<td> Mirip dengan <b>radial-gradient()</b>, tapi ia mengulang secara otomatis color stop dengan tidak terbatas di kedua arahnya </td>
+							<td> 3 </td>
+						</tr>
+						<tr>
+							<td> rgb() </td>
+							<td> Menentukan rumus pencampuran warna red, green, blue untuk element </td>
+							<td> 2 </td>
+						</tr>
+						<tr>
+							<td> rgba() </td>
+							<td> Menentukan rumus pencampuran warna red, green, blue dengan penambahan alpha (sifat tembus cahaya) untuk element </td>
+							<td> 3 </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Contoh Untuk Setiap Fungsi</h2>
+				<article class="example-box">
+					<h4>Contoh 1: Fungsi <b>attr()</b></h4>
+					<p class="fontWhite">Contoh berikut menyisipkan nilai tentang attribute <b>href</b> dalam tanda kurung setelah masing-masing link:</p>
+					<div class="example-content" id="content-open01">
+						
+						a:after {
+						<blockquote>
+						content: " (" attr(href) ")";
+						</blockquote>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						a:after {
+						<blockquote>
+						content: " (" attr(href) ")";
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>>The following example inserts the value of the href attribute in parenthesis after each link:<<b>/p</b>> <br>
+						<<b>a</b> <span class="teal">href="CSS HOME.html" target="_self"</span>>Link 1<<b>/a</b>> <<b>br</b>> <br>
+						<<b>a</b> <span class="teal">href="RWD intro.html" target="_self"</span>>Link 2<<b>/a</b>> <<b>br</b>> <br>
+						<<b>a</b> <span class="teal">href="CSS3 intro.html" target="_self"</span>>Link 3<<b>/a</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<p>The following example inserts the value of the href attribute in parenthesis after each link:</p>
+						<a href="../CSS HOME.html" target="_self">Link 1</a> <br>
+						<a href="../RWD intro.html" target="_self">Link 2</a> <br>
+						<a href="../CSS3 intro.html" target="_self">Link 3</a> 
+					
+					</div>
+				</article>
+				
+				
+				
+				<article class="example-box">
+					<h4> Contoh 2: Fungsi <b>calc()</b> </h4>
+					<p class="fontWhite"> Menggunakan calc() untuk mengkalkulasikan lebar dari element <<b>div</b>>:</p>
+					<div class="example-content" id="content-open02">
+						
+						#div1 { <br>
+						position: absolute; <br>
+						left: 50px; <br>
+						width: calc(100% - 100px); <br>
+						border: 1px solid black; <br>
+						background-color: yellow; <br>
+						padding: 5px; <br>
+						text-align: center; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#div1 { <br>
+						position: absolute; <br>
+						left: 50px; <br>
+						width: calc(100% - 100px); <br>
+						border: 1px solid black; <br>
+						background-color: yellow; <br>
+						padding: 5px; <br>
+						text-align: center; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">id="div1"</span>> <br>
+						<<b>p</b>> Use calc() to calculate the width of a <<b>div</b>> element:<<b>/p</b>> <br>
+						<<b>/div</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<div class="div2">
+						<p> Use calc() to calculate the width of a <<b>div</b>> element: </p>
+						</div>
+					
+					</div>
+				</article>
+				
+				
+				
+				<article class="example-box">
+					<h4>Contoh 3: Fungsi <b>cubic-bezier()</b></h4>
+					<div class="example-content" id="content-open03">
+						
+						
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+					</div>
+				</article>
+				
+				
+				<article class="example-box">
+					<h4>Contoh 4: Fungsi <b>hsl()</b></h4>
+					<div class="example-content" id="content-open04">
+						
+						#p1 {background-color: hsl(120, 100%, 50%);}  <em>/* green */</em> <br>
+						#p2 {background-color: hsl(120, 100%, 75%);} <em> 10/* light green */</em> <br>
+						#p3 {background-color: hsl(120, 100%, 25%);} <em> /* dark green */</em> <br>
+						#p4 {background-color: hsl(120, 60%, 70%);}   <em>/* pastel green */</em> <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close04">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#p1 {background-color:hsl(120,100%,50%);} <br>
+						#p2 {background-color:hsl(120,100%,75%);} <br>
+						#p3 {background-color:hsl(120,100%,25%);} <br>
+						#p4 {background-color:hsl(120,60%,70%);} <br>
+						#p5 {background-color:hsl(290,100%,50%);} <br>
+						#p6 {background-color:hsl(290,60%,70%);} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>p</b>>HSL colors:<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="p1"</span>>Green<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="p2"</span>>Light green<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="p3"</span>>Dark green<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="p4"</span>>Pastel green<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="p5"</span>>Violet<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="p6"</span>>Pastel violet<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<button onclick="buka04()" class="exbutton"> Open </button>
+					<button onclick="tutup04()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+						<p>HSL colors:</p>
+						<p class="p1">Green</p>
+						<p class="p2">Light green</p>
+						<p class="p3">Dark green</p>
+						<p class="p4">Pastel green</p>
+						<p class="p5">Violet</p>
+						<p class="p6">Pastel violet</p>
+					
+					</div>
+				</article>
+				
+				
+				
+				
+				<article class="example-box">
+					<h4>Contoh 5: Fungsi <b>hsla()</b></h4>
+					<div class="example-content" id="content-open05">
+						
+						#p1 {background-color: hsla(120, 100%, 50%, 0.3);}  <em>/* green with opacity */ </em> <br>
+						#p2 {background-color: hsla(120, 100%, 75%, 0.3);} <em> /* light green with opacity */ </em> <br>
+						#p3 {background-color: hsla(120, 100%, 25%, 0.3);}  <em>/* dark green with opacity */ </em> <br>
+						#p4 {background-color: hsla(120, 60%, 70%, 0.3);}   <em>/* pastel green with opacity */ </em> <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close05">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#p1 {background-color:hsla(120,100%,50%,0.3);} <br>
+						#p2 {background-color:hsla(120,100%,75%,0.3);} <br>
+						#p3 {background-color:hsla(120,100%,25%,0.3);} <br>
+						#p4 {background-color:hsla(120,60%,70%,0.3);} <br>
+						#p5 {background-color:hsla(290,100%,50%,0.3);} <br>
+						#p6 {background-color:hsla(290,60%,70%,0.3);} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>p</b>>HSLA colors:<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="p1"</span>>Green<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="p2"</span>>Light green<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="p3"</span>>Dark green<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="p4"</span>>Pastel green<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="p5"</span>>Violet<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="p6"</span>>Pastel violet<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan05()" class="exbutton">Klik disini</button>
+					<button onclick="buka05()" class="exbutton"> Open </button>
+					<button onclick="tutup05()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+					
+						<p>HSLA colors:</p>
+						<p class="p1">Green</p>
+						<p class="p2">Light green</p>
+						<p class="p3">Dark green</p>
+						<p class="p4">Pastel green</p>
+						<p class="p5">Violet</p>
+						<p class="p6">Pastel violet</p>
+						
+					
+					</div>
+				</article>
+				
+				
+				
+				
+				<article class="example-box">
+					<h4>Contoh 6: Fungsi <b>linear-gradient()</b></h4>
+					<p class="fontWhite"> Contoh berikut menampilkan gradien garis yang dimulai dari atas. Ia dimulai dengan waena merah, bertransisi menjadi kuning lalu biru:</p>
+					<div class="example-content" id="content-open06">
+						
+						#grad { <br>
+						background: -webkit-linear-gradient(red, yellow, blue); /* Safari 5.1-6.0 */ <br>
+						background: -o-linear-gradient(red, yellow, blue); /* Opera 11.1-12.0 */ <br>
+						background: -moz-linear-gradient(red, yellow, blue); /* Firefox 3.6-15 */ <br>
+						background: linear-gradient(red, yellow, blue); /* Standard syntax */ <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close06">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#grad { <br>
+						background: -webkit-linear-gradient(red, yellow, blue); /* Safari 5.1-6.0 */ <br>
+						background: -o-linear-gradient(red, yellow, blue); /* Opera 11.1-12.0 */ <br>
+						background: -moz-linear-gradient(red, yellow, blue); /* Firefox 3.6-15 */ <br>
+						background: linear-gradient(red, yellow, blue); /* Standard syntax */ <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">id="grad"</span>> <br>
+						<<b>p</b>> The following example shows a linear gradient that starts at the top. It starts red, transitioning to yellow, then to blue:<<b>/p</b>> <br>
+						<<b>/div</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan06()" class="exbutton">Klik disini</button>
+					<button onclick="buka06()" class="exbutton"> Open </button>
+					<button onclick="tutup06()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+					
+						<div class="grad">
+						<p> The following example shows a linear gradient that starts at the top. It starts red, transitioning to yellow, then to blue: </p>
+						</div>
+					
+					</div>
+				</article>
+				
+				
+				
+				
+				<article class="example-box">
+					<h4>Contoh 7: Fungsi <b>radial-gradient()</b></h4>
+					<p class="fontWhite">A radial gradient with evenly spaced color stops::</p>
+					<div class="example-content" id="content-open07">
+						
+						#grad { <br>
+						background: -webkit-radial-gradient(red, green, blue); /* Safari 5.1- 6.0 */ <br>
+						background: -o-radial-gradient(red, green, blue); /* Opera 11.6-12.0 */ <br>
+						background: -moz-radial-gradient(red, green, blue); /* Firefox 3.6-15 */ <br>
+						background: radial-gradient(red, green, blue); /* Standard syntax */ <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close07">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#grad { <br>
+						background: -webkit-radial-gradient(red, green, blue); /* Safari 5.1- 6.0 */ <br>
+						background: -o-radial-gradient(red, green, blue); /* Opera 11.6-12.0 */ <br>
+						background: -moz-radial-gradient(red, green, blue); /* Firefox 3.6-15 */ <br>
+						background: radial-gradient(red, green, blue); /* Standard syntax */ <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">id="grad"</span>> <br>
+						<<b>p</b>>A radial gradient with evenly spaced color stops:<<b>/p</b>> <br>
+						<<b>/div</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan07()" class="exbutton">Klik disini</button>
+					<button onclick="buka07()" class="exbutton"> Open </button>
+					<button onclick="tutup07()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan07">
+					
+						<div class="grad">
+						<p>A radial gradient with evenly spaced color stops:</p>
+						</div>
+					
+					</div>
+				</article>
+				
+				
+				
+				<article class="example-box">
+					<h4>Contoh 8: Fungsi <b>repeating-linear-gradient()</b></h4>
+					<p class="fontWhite">Sebuah gradien garis berulang-ulang:</p>
+					<div class="example-content" id="content-open08">
+						
+						#grad { <br>
+						background: -webkit-repeating-linear-gradient(red ,yellow 10% ,blue 20%); /* Safari 5.1-6.0 */ <br>
+						background: -o-repeating-linear-gradient(red ,yellow 10% ,blue 20%); /* Opera 11.1-12.0 */ <br>
+						background: -moz-repeating-linear-gradient(red ,yellow 10% ,blue 20%); /* Firefox 3.6-15 */ <br>
+						background: repeating-linear-gradient(red ,yellow 10%,blue 20%); /* Standard syntax */ <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close08">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#grad { <br>
+						background: -webkit-repeating-linear-gradient(red ,yellow 10% ,blue 20%); /* Safari 5.1-6.0 */ <br>
+						background: -o-repeating-linear-gradient(red ,yellow 10% ,blue 20%); /* Opera 11.1-12.0 */ <br>
+						background: -moz-repeating-linear-gradient(red ,yellow 10% ,blue 20%); /* Firefox 3.6-15 */ <br>
+						background: repeating-linear-gradient(red ,yellow 10%,blue 20%); /* Standard syntax */ <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">id="grad"</span>> <br>
+						<<b>p</b>>A repeating linear gradient<<b>/p</b>> <br>
+						<<b>/div</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan08()" class="exbutton">Klik disini</button>
+					<button onclick="buka08()" class="exbutton"> Open </button>
+					<button onclick="tutup08()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan08">
+					
+						<div class="grad">
+						<p>A repeating linear gradient:</p>
+						</div>
+					
+					</div>
+				</article>
+				
+				
+				<article class="example-box">
+					<h4>Contoh 9: Fungsi <b>radial-gradient()</b></h4>
+					<p class="fontWhite">Sebuah gradien lingkaran:</p>
+					<div class="example-content" id="content-open09">
+						
+						#grad { <br>
+						background: -webkit-repeating-radial-gradient(red, green 10%, blue 15%); /* Safari 5.1- 6.0 */  <br>
+						background: -o-repeating-radial-gradient(red, green 10%, blue 15%); /* Opera 11.6-12.0 */  <br>
+						background: -moz-repeating-radial-gradient(red, green 10%, blue 15%); /* Firefox 3.6-15 */  <br>
+						background: repeating-radial-gradient(red, green 10%, blue 15%); /* Standard syntax */  <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close09">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#grad { <br>
+						background: -webkit-repeating-radial-gradient(red, green 10%, blue 15%); /* Safari 5.1- 6.0 */  <br>
+						background: -o-repeating-radial-gradient(red, green 10%, blue 15%); /* Opera 11.6-12.0 */  <br>
+						background: -moz-repeating-radial-gradient(red, green 10%, blue 15%); /* Firefox 3.6-15 */  <br>
+						background: repeating-radial-gradient(red, green 10%, blue 15%); /* Standard syntax */  <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b> <span class="teal">id="grad"</span>> <br>
+						<<b>p</b>>A repeating radial gradient:<<b>/p</b>> <br>
+						<<b>/div</b>> <br><br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan09()" class="exbutton">Klik disini</button>
+					<button onclick="buka09()" class="exbutton"> Open </button>
+					<button onclick="tutup09()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan09">
+					
+						<div class="grad">
+						<p>A repeating radial gradient:</p>
+						</div>
+					
+					</div>
+				</article>
+					
+					
+					
+				<article class="example-box">
+					<h4>Contoh 10: Fungsi <b>rgb()</b></h4>
+					<div class="example-content" id="content-open10">
+						
+						#p1 {background-color:rgb(255, 0, 0);} <br>
+						#p2 {background-color:rgb(0, 0, 255);} <br>
+						#p3 {background-color:rgb(0, 255, 0);} <br>
+						#p4 {background-color:rgb(255, 255, 255);} <br>
+						#p5 {background-color:rgb(255, 255, 0);} <br>
+						#p6 {background-color:rgb(0, 0, 0);} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close10">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#p1 {background-color:rgb(255, 0, 0);} <br>
+						#p2 {background-color:rgb(0, 0, 255);} <br>
+						#p3 {background-color:rgb(0, 255, 0);} <br>
+						#p4 {background-color:rgb(255, 255, 255);} <br>
+						#p5 {background-color:rgb(255, 255, 0);} <br>
+						#p6 {background-color:rgb(0, 0, 0);} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>p</b>>RGB colors:<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="p1"</span>>Red<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="p2"</span>>Blue<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="p3"</span>>Green<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="p4"</span>>White<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="p5"</span>>Purple<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="p6"</span>>Black<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan10()" class="exbutton">Klik disini</button>
+					<button onclick="buka10()" class="exbutton"> Open </button>
+					<button onclick="tutup10()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan10">
+					
+						<p>RGB colors:</p>
+						<p class="p1">Red</p>
+						<p class="p2">Blue</p>
+						<p class="p3">Green</p>
+						<p class="p4">White</p>
+						<p class="p5">Purple</p>
+						<p class="p6">Black</p>
+					
+					</div>
+				</article>
+					
+					
+				<article class="example-box">
+					<h4>Contoh 11: Fungsi <b>rgba()</b></h4>
+					<div class="example-content" id="content-open11">
+						
+						#p1 {background-color:rgba(255, 0, 0, 0);} <br>
+						#p2 {background-color:rgba(0, 0, 255, 0.2);} <br>
+						#p3 {background-color:rgba(0, 255, 0, 0.4);} <br>
+						#p4 {background-color:rgba(255, 255, 255, 0.6);} <br>
+						#p5 {background-color:rgba(255, 255, 0, 0.8);} <br>
+						#p6 {background-color:rgba(0, 0, 0, 1);} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close11">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#p1 {background-color:rgba(255, 0, 0, 0);} <br>
+						#p2 {background-color:rgba(0, 0, 255, 0.2);} <br>
+						#p3 {background-color:rgba(0, 255, 0, 0.4);} <br>
+						#p4 {background-color:rgba(255, 255, 255, 0.6);} <br>
+						#p5 {background-color:rgba(255, 255, 0, 0.8);} <br>
+						#p6 {background-color:rgba(0, 0, 0, 1);} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+					<<b>p</b>>RGBA colors:<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="p1"</span>>Red<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="p2"</span>>Blue<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="p3"</span>>Green<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="p4"</span>>White<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="p5"</span>>Purple<<b>/p</b>> <br>
+					<<b>p</b> <span class="teal">id="p6"</span>>Black<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan11()" class="exbutton">Klik disini</button>
+					<button onclick="buka11()" class="exbutton"> Open </button>
+					<button onclick="tutup11()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan11">
+					
+						<p>RGBA colors:</p>
+						<p class="p1">Red</p>
+						<p class="p2">Blue</p>
+						<p class="p3">Green</p>
+						<p class="p4">White</p>
+						<p class="p5">Purple</p>
+						<p class="p6">Black</p>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS selectors.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS aurals.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

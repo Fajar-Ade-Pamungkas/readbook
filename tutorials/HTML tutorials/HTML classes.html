@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML classes</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+<style type="text/css">
+.equal {
+	padding:20px;
+	margin:20px;
+	background-color:black;
+	color:white;
+	font-size:;
+	text-align:justify;
+}
+.simple-example .cities {
+    background-color:black; 
+    color:white; 
+    margin:20px; 
+    padding:20px;
+} 
+span.note {font-size:120%;color:red;}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML Classes </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2>Classing Block Elements </h2>
+				<p> Attribute <b>class</b> HTML membuat ia memungkinan untuk mendefinisikan equal style (gaya yang sama) untuk element <<b>div</b>> "sama": </p>
+				<br>
+				<div class="equal">
+					<h3>London</h3>
+					<p> London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+					<p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+				</div>
+				
+				<div class="equal">
+					<h3> Paris </h3>
+					<p>Paris is the capital and most populous city of France. </p>
+					<p> Situated on the Seine River, it is at the heart of the Île-de-France region, also known as the région parisienne. </p>
+					<p> Within its metropolitan area is one of the largest population centers in Europe, with over 12 million inhabitants. </p>
+				</div>
+				
+				<div class="equal">
+					<h3> Tokyo </h3>
+					<p> Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+					<p> It is the seat of the Japanese government and the Imperial Palace, and the home of the Japanese Imperial Family.</p>
+					<p> The Tokyo prefecture is part of the world's most populous metropolitan area with 38 million people and the world's largest urban economy. </p>
+				</div>
+
+				<article class="example-box">
+					<h4 class="fontWhite"> Tag HTML diatas </h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br>
+						<<b>html</b>><br>
+							<<b>head</b>><br>
+								<<b>style</b> <br>
+								div.cities {
+								<blockquote>
+								    background-color:black; <br>
+								    color:white; <br>
+								    margin:20px; <br>
+								    padding:20px;
+								</blockquote>
+								} <br>
+								<<b>/style</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br>
+								<br>
+						<<b>div</b> <span class="teal">class="cities"</span>> <br>
+						<<b>h2</b>>London<<b>/h2</b>> <br>
+						<<b>p</b>>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.<<b>/p</b>> <br>
+						<<b>/div</b>> <br>
+						<br>
+						<<b>div</b> <span class="teal">class="cities"</span>> <br>
+						<<b>h2</b>>Paris<<b>/h2</b>> <br>
+						<<b>p</b>>Paris is the capital and most populous city of France.<<b>/p</b>> <br>
+						<<b>/div</b>> <br>
+						<br>
+						<<b>div</b> <span class="teal">class="cities"</span>> <br>
+						<<b>h2</b>>Tokyo<<b>/h2</b>> <br>
+						<<b>p</b>>Tokyo is the capital of Japan, the center of the Greater Tokyo Area, <br>
+						and the most populous metropolitan area in the world.<<b>/p</b>> <br>
+						<<b>/div</b>> <br>
+								<br>
+							<<b>/body</b>><br>
+						<<b>/html</b>><br>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Classing Inline Elements </h2>
+				<p> Attribute <b>class</b> HTML membuat ia memungkinan untuk mendefinisikan equal style (gaya yang sama) untuk element <<b>span</b>> "sama": </p>
+				<br>
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+								<<b>style</b> <br>
+								span.note {font-size:120%;color:red;} <br>
+								<<b>/style</b>> <br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>h1</b>>My <<b>span</b> <span class="teal">class="note"</span>>Important<<b>/span</b>> Heading<<b>/h1</b>> <br>
+								<<b>p</b>>This is some <<b>span</b> <span class="teal">class="note"</span>>important<<b>/span</b>> text.<<b>/p</b>> <br>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+				
+						
+					</div>
+					<button onclick="tampilkan02()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+						
+						<h1>My <span class="note">Important</span> Heading</h1>
+						<p>This is some <span class="note">important</span> text.</p>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML blocks.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML layout.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

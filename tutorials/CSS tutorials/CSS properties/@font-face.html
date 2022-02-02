@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS properties | CSS3 @font-face rule  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="../tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="../buka.js"></script>
+<script type="text/javascript" src="../../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../.,/HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+
+
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS3 @font-face Rule </h1>
+			</div>
+			
+			
+
+<section>
+			<article>
+				<h2>Contoh</h2>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<p> Menentukan sebuah font bernama "myFirstFont", dan menentuksn URL dimana itu bisa ditemukan: </p>
+					<div class="example-content" id="content-open01">
+						
+						@font-face { <br>
+						    font-family: myFirstFont; <br>
+						    src: url(sansation_light.woff); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Definisi dan Penggunaan</h2>
+				
+				<p>Dengan <mark>@font-face</mark> rule. web designers tidak lebih jauh harus menggunakan salah satu dari "web-safe" fonts.</p>
+				<p> Dalam @font-face rule baru kamu pertama kali harus mendefinisikan nama untuk font (contoh. myFirstFont), dan kemudian point untuk font file.</p>
+				<p><b>Tip:</b> Gunakanlah lowercase letter untuk font URL. Uppercase letters bisa memberikan hasil yang diluar perkiraan dalam IE!</p>
+				<p> untuk menggunakan font untuk sebuah element HTML, mengarah pada nama font (myFirstFont) selama properti <mark>font-family</mark>:</p>
+				
+				<div class="simple-example">
+					div {
+						<blockquote>
+						font-family: myFirstFont;
+						</blockquote>
+					}
+				</div>
+				<table class="definition sembunyikan">
+					<tr>
+						<th> Default value: </th>
+						<td>  </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<th> Inherited: </th>
+						<td> no </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<th> Animatable: </th>
+						<td> no. <a href="../CSS references/CSS animatable.html" > Read about animatable</a> </td> 
+						<td>  </td>
+					</tr>
+					<tr>
+						<th> Version </th>
+						<td> CSS3 </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<th> JavaScript syntax: </th>
+						<td> <i>object</i>.style. </td>
+						<td> <a href="JavaScript syntax/.html" target="_blank" >Try it</a> </td>
+					</tr>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Browser Support</h2>
+				
+				<p> Nomor dalam tabel menentukan browser versi pertama yang mendukung properti secara penuh.</p>
+				<p> Nomor yang diikuti oleh <mark>-webkit-</mark>, <mark>-moz-</mark> atau <mark>-o-</mark> menentukan versi pertama yang bekerja dengan awalan kata.</p>
+				
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="7" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> Properti </td>
+							<td> <img src="../../logos/Chrome.png" alt="Chrome"> </td>
+							<td> <img src="../../logos/Edge.png" alt="Edge"> </td>
+							<td> <img src="../../logos/IE.png" alt="Internet Explorer"> </td>
+							<td> <img src="../../logos/Firefox.png" alt="Firefox"> </td>
+							<td> <img src="../../logos/Safari.png" alt="Safari"> </td>
+							<td> <img src="../../logos/Opera.png" alt="Opera"> </td>
+						</tr>
+						<tr>
+							<td> TTF/OFF </td>
+							<td> 4.0 </td>
+							<td> 12.0* </td>
+							<td> 9.0* </td>
+							<td> 3.5 </td>
+							<td> 3.1 </td>
+							<td> 10.0 </td>
+						</tr>
+						<tr>
+							<td> WOFF </td>
+							<td> 5.0 </td>
+							<td> 12.0 </td>
+							<td> 9.0 </td>
+							<td> 3.6 </td>
+							<td> 5.1 </td>
+							<td> 11.1 </td>
+						</tr>
+						<tr>
+							<td> WOFF2 </td>
+							<td> 36.0 </td>
+							<td> <span>Not supported</span> </td>
+							<td> <span>Nit supported</span> </td>
+							<td> 35.0* </td>
+							<td> <span>Not supported</span> </td>
+							<td> 26.0 </td>
+						</tr>
+						<tr>
+							<td> SVG </td>
+							<td> 4.0 </td>
+							<td> <span>Not supported</span> </td>
+							<td> <span>Not supported</span> </td>
+							<td> <span>Not supported</span> </td>
+							<td> 3.2 </td>
+							<td> 9.0 </td>
+						</tr>
+						<tr>
+							<td> EOT </td>
+							<td> <span>Not supported</span> </td>
+							<td> 12.0 </td>
+							<td> 6.0 </td>
+							<td> <span>Not supported</span> </td>
+							<td> <span>Not supported</span> </td>
+							<td> <span>Not supported</span> </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<p>*Edge dan IE: Format font hanya bekerja ketika diatur menjadi "installable".</p>
+				<p>*Firefox: Disabled by default, tapi bisa di enabled (perlu mengatur sebuah flag menjadi "true" untuk menggunakan WOFF2).</p>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Sintaksis CSS</h2>
+				
+				<div class="simple-example">
+					@font-face { 
+						<blockquote>
+						<em>font-properties</em>
+						</blockquote>
+					}
+				</div>
+				
+				<h2>Nilai Properti</h2>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Font Descriptor</th>
+							<th>Nilai</th>
+							<th>Deskripsi</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> font-family </td>
+							<td> <i>name</i> </td>
+							<td> Diperlukan! Mendefinisikan nama dari font </td>
+						</tr>
+						<tr>
+							<td> src </td>
+							<td> <i>URL</i> </td>
+							<td> Diperlukan. Mendefinisikan URL(s) dimana font harus didownload dari internet </td>
+						</tr>
+						<tr>
+							<td> font-strecth </td>
+							<td> 
+								normal <br>
+								condensed <br>
+								ultra-condensed <br>
+								extra-condensed <br>
+								semi-condednsed <br>
+								expanded <br>
+								semi-expanded <br>
+								extra-expanded <br>
+								ultra-expanded
+							</td>
+							<td> Optional. Mendefinisikan bagaiamana font harus direnggangkan. Nilai default adalah "normal" </td>
+						</tr>
+						<tr>
+							<td> font-style </td>
+							<td> 
+								normal <br>
+								italic <br>
+								oblique 
+							 </td>
+							<td> Optional. Mendefinisikan bagaimana font harus digayakan (styled). Nilai default adalah "normal" </td>
+						</tr>
+						<tr>
+							<td> font-weight </td>
+							<td> 
+								normal <br>
+								100 <br>
+								200 <br>
+								300 <br>
+								400 <br>
+								500 <br>
+								600 <br>
+								700 <br>
+								800 <br>
+								900
+							</td>
+							<td> Optional. Mendefinisikan ketebalan dsri font. Nilai default adalah "normal" </td>
+						</tr>
+						<tr>
+							<td> unicode-range </td>
+							<td> <i>unicode-range</i> </td>
+							<td> Optional. Mendefinisikan range (jarak) dariunicode characters font support. Nikai default adalah "U+0-10FFFF" </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Contoh Lebih</h2>
+				
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<p> Kmau harus mrnambahkan perintah @font-face lainnya yang berisikan pendeskripsi untuk teks tebal: </p>
+					<div class="example-content" id="content-open02">
+						
+						@font-face { <br>
+						    font-family: myFirstFont; <br>
+						    src: url(sansation_bold.woff); <br>
+							font-weight: bold; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						
+					
+					</div>
+				</article>
+				
+				<p> File "sansation_bold.woff" merupakan file font lainnya, yang berisi karakter tebal untuk Sansation font.</p>
+				<p> Browser akan menggunakan ini kapanpun sebuah potongan dari teks dengan font-family "myFirstFont" harus diubah sebagai bold (tebal).</p>
+				<p> Dengan cara ini kamu bisa memiliki banyak perintah <mark>@font-face</mark> untuk font yang sama.</p>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Halaman yang Berhubungan</h2>
+				<ul>
+					<li>CSS3 tutorial: <a href="../CSS3 fonts.html" > CSS3 Fonts </a></li>
+				</ul>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="font.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="font-family.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

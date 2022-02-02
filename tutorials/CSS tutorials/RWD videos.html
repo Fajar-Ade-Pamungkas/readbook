@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | RWD videos </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<script type="text/javascript" src="buka.js"></script>
+<style type="text/css">
+.videos {
+    width: 100%; 
+    height: auto;
+}
+.video {
+    max-width: 100%; 
+    height: auto;
+}
+.example-content{
+ 	width:100%;
+ }
+ html { 
+ font-family: "Lucida Sans", sans-serif;
+ }
+ 
+ .header {
+ background-color: #9933cc;
+ color: #ffffff;
+ padding: 15px;
+ }
+ 
+ .menu ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ }
+ 
+ .menu li {
+ padding: 8px;
+ margin-bottom: 7px;
+ background-color :#33b5e5;
+ color: #ffffff;
+ box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+ }
+ 
+ .menu li:hover {
+ background-color: #0099cc;
+ }
+ 
+ .aside {
+ background-color: #33b5e5;
+ padding: 15px;
+ color: #ffffff;
+ text-align: center;
+ font-size: 14px;
+ box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+ }
+ 
+ .footer {
+ background-color: #0099cc;
+ color: #ffffff;
+ text-align: center;
+ font-size: 12px;
+ padding: 15px;
+ }
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> Responsive Web Design - Videos</h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> Using The <mark>width</mark> Property </h2>
+				<p> Jika properti <mark>width</mark> diatur menjadi 100%, video akan menjadi responsive dan scale up and down: </p>
+				<article class="example-box">
+					<h4>Contoh</h4>
+					<div class="example-content" id="content-open01">
+					video {
+					<blockquote>
+					    width: 100%; <br>
+					    height: auto;
+					</blockquote>
+					}
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+						<<b>html</b>><br>
+						<<b>head</b>><br>
+						<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+						<<b>style</b>> <br>
+						video {
+						<blockquote>
+						    width: 100%; <br>
+						    height: auto;
+						</blockquote>
+						} <br>
+						<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						<<b>video</b> <span class="teal">controls</span>><br>
+						  <<b>source</b> <span class="teal">src="movie.mp4" type="video/mp4"</span>> <br>
+						  <<b>source</b> <span class="teal">src="movie.ogg" type="video/ogg"</span>> <br>
+						Your browser does not support the video tag. <br>
+						<<b>/video</b>> <br>
+						<<b>p</b>>Resize the browser window to see how the video will scale.<<b>/p</b>> <br> <br>
+						<<b>/body</b>> <br>
+						<<b>/html</b>><br>
+					</div>
+					<button onclick="tampilkan01()" class="exbutton"> Klik disini</button>
+					<button onclick="buka01()" class="exbutton">Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					<video width="400" controls class="videos">
+					  <source src="../sorry.mp4" type="video/mp4"> 
+					  <source src="movie.ogg" type="video/ogg"> 
+					Your browser does not support the video tag. 
+					</video> 
+					<p>Resize the browser window to see how the image wil scale.</p> 
+					</div>
+				</article>
+				<div class="nasehat">
+				<p> <b>Perhatikanlah</b> bahwa pada contoh diatas, image akan di-scale up menjadi lebih besar daripada ukuran alsinya. 
+				Solusi yang lebih baik, pada banyak kasus, akan digunakan properti <b>max-width</b> sebagai pengganti. </p>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Using The <mark>max-width</mark> Property </h2>
+				<p> Jika properti <mark>max-width</mark> diatur menjadi 100%, video akan me-scale down jika itu tidak harus, tapi jangan pernah me-scale up menjadi lebih besar daripada ukuran asliny: </p>
+				<article class="example-box">
+					<h4>Contoh</h4>
+					<div class="example-content" id="content-open02">
+					video {
+					<blockquote>
+					    max-width: 100%; <br>
+					    height: auto;
+					</blockquote>
+					} <br>
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+						<<b>html</b>><br>
+						<<b>head</b>><br>
+						<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+						<<b>style</b>> <br>
+						video {
+						<blockquote>
+						    max-width: 100%; <br>
+						    height: auto;
+						</blockquote>
+						} <br>
+						<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						<<b>video</b> <span class="teal"> width="400" controls</span>><br>
+						  <<b>source</b> <span class="teal">src="movie.mp4" type="video/mp4"</span>> <br>
+						  <<b>source</b> <span class="teal">src="movie.ogg" type="video/ogg"</span>> <br>
+						Your browser does not support the video tag. <br>
+						<<b>/video</b>> <br>
+						<<b>p</b>>Resize the browser window to see how the video wil scale when the width is less than 460px.<<b>/p</b>> <br> <br>
+						<<b>/body</b>> <br>
+						<<b>/html</b>><br>
+					</div>
+					<button onclick="tampilkan02()" class="exbutton"> Klik disini</button>
+					<button onclick="buka02()" class="exbutton">Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					<video width="400" controls class="video">
+					  <source src="../sorry.mp4" type="video/mp4"> 
+					  <source src="movie.ogg" type="video/ogg"> 
+					Your browser does not support the video tag. 
+					</video> 
+					<p>Resize the browser window to see how the video wil scale when the width is less than 460px.</p> 
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Add an Video to The Example Web Page </h2>
+				<p> Tambahkan sebuah Video ke contoh  Web Page</p>
+				<p> 
+				
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open03">
+					video {
+					<blockquote>
+					    width: 100%; <br>
+					    height: auto;
+					</blockquote>
+					} <br>
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+					* { <br>
+					box-sizing: border-box; <br>
+					} <br>
+					<br>
+					.row:after { <br>
+					content: ""; <br>
+					clear: both; <br>
+					display: block; <br>
+					}<br>
+					<br>
+					[class*="col-"] { <br>
+					float: left; <br>
+					padding: 15px; <br>
+					}<br>
+					<br>
+					video {
+					<blockquote>
+					    width: 100%; <br>
+					    height: auto;
+					</blockquote>
+					} <br>
+					<br>
+					html { <br>
+					font-family: "Lucida Sans", sans-serif;<br>
+					}<br>
+					<br>
+					.header {<br>
+					background-color: #9933cc;<br>
+					color: #ffffff;<br>
+					padding: 15px;<br>
+					}<br>
+					<br>
+					.menu ul {<br>
+					list-style-type: none;<br>
+					margin: 0;<br>
+					padding: 0;<br>
+					}<br>
+					<br>
+					.menu li {<br>
+					padding: 8px;<br>
+					margin-bottom: 7px;<br>
+					background-color :#33b5e5;<br>
+					color: #ffffff;<br>
+					box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);<br>
+					}<br>
+					<br>
+					.menu li:hover {<br>
+					background-color: #0099cc;<br>
+					}<br>
+					<br>
+					.aside {<br>
+					background-color: #33b5e5;<br>
+					padding: 15px;<br>
+					color: #ffffff;<br>
+					text-align: center;<br>
+					font-size: 14px;<br>
+					box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);<br>
+					}<br>
+					<br>
+					.footer {<br>
+					background-color: #0099cc;<br>
+					color: #ffffff;<br>
+					text-align: center;<br>
+					font-size: 12px;<br>
+					padding: 15px;<br>
+					}<br>
+					<br>
+					/* For mobile phones: */<br>
+					[class*="col-"] {<br>
+					width: 100%;<br>
+					}<br>
+					<br>
+					@media only screen and (min-width: 600px) {<br>
+					/* For tablet: */<br>
+					.col-m-1 {width: 8.33%;}<br>
+					.col-m-2 {width: 16.66%;}<br>
+					.col-m-3 {width: 25%;}<br>
+					.col-m-4 {width: 33.33%;}<br>
+					.col-m-5 {width: 41.66%;}<br>
+					.col-m-6 {width: 50%;}<br>
+					.col-m-7 {width: 58.33%;}<br>
+					.col-m-8 {width: 66.66%;}<br>
+					.col-m-m-9 {width: 75%;}<br>
+					.col-m-10 {width: 83.33%;}<br>
+					.col-m-11 {width: 91.66%;}<br>
+					.col-m-12 {width: 100%;}<br>
+					}<br>
+					<br>
+					@media only screen and (min-width: 768px) {<br>
+					/* For desktop: */<br>
+					.col-1 {width: 8.33%;}<br>
+					.col-2 {width: 16.66%;}<br>
+					.col-3 {width: 25%;}<br>
+					.col-4 {width: 33.33%;}<br>
+					.col-5 {width: 41.66%;}<br>
+					.col-6 {width: 50%;}<br>
+					.col-7 {width: 58.33%;}<br>
+					.col-8 {width: 66.66%;}<br>
+					.col-9 {width: 75%;}<br>
+					.col-10 {width: 83.33%;}<br>
+					.col-11 {width: 91.66%;}<br>
+					.col-12 {width: 100%;}<br>
+					}<br>
+					<br>
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						<<b>div</b> <span class="teal">class="header"</span>> <br>
+						<<b>h1</b>>Chania<<b</div>/h1</b>> <br>
+						<<b>/div</b>><br>
+						<br>
+						<<b>div</b> <span class="teal">class="row"</span>> <br>
+						<<b>div</b> <span class="teal">class="col-m-3 col-3 menu"</span>> <br>
+						<<b>ul</b>><br>
+						<<b>li</b>>The Flight<<b>/li</b>> <br>
+						<<b>li</b>>The City<<b>/li</b>> <br>
+						<<b>li</b>>The Island<<b>/li</b>> <br>
+						<<b>li</b>>The Food<<b>/li</b>> <br>
+						<<b>/ul</b>> <br>
+						<<b>/div</b>> <br>
+						<br>
+						<<b>div</b> <span class="teal">class="col-m-6 col-9"</span>> <br>
+						<<b>h1</b>>The City<<b>/h1</b>> <br> 
+						<<b>p</b>>Chania is the capital of the Chania region on the island of Crete. 
+						The city can be divided in two parts, the old town and the modern city.<<b>/p</b>><br>
+						<<b>video</b> <span class="teal"> width="400" controls</span>><br>
+						  <<b>source</b> <span class="teal">src="movie.mp4" type="video/mp4"</span>> <br>
+						  <<b>source</b> <span class="teal">src="movie.ogg" type="video/ogg"</span>> <br>
+						Your browser does not support the video tag. <br>
+						<<b>/video</b>> <br>
+						<<b>/div</b>> <br>
+						<br>
+						<<b>div</b> <span class="teal">class="col-m-3 col-12 right"</span>> <br>
+						<<b>div</b> <span class="teal">class="aside"</span>> <br>
+						<<b>h2</b>>What?<<b>/h2</b>><br>
+						<<b>p</b>>Chania is a city on the island of Crete.<<b>/p</b>> <br>
+						<<b>h2</b>>Where?<<b>/h2</b>> <br>
+						<<b>p</b>>Crete is a Greek island in the Mediterranean Sea.<<b>/p</b>> <br>
+						<<b>h2</b>>How?<<b>/h2</b>> <br>
+						<<b>p</b>>You can reach Chania airport from all over Europe.<<b>/p</b>><br>
+						<<b>/div</b>><br>
+						<<b>/div</b>><br>
+						<br>
+						<<b>/div</b>> <br>
+						<br>
+						<<b>div</b> <span class="teal">class="footer"</span>> <br>
+						<<b>p</b>>Resize the browser window to see how the content respond to the resizing.<<b>/p</b>><br>
+						<<b>/div</b>> <br>
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+						<div class="header"> 
+						<h1>Chania</h1> 
+						</div>
+						
+						<div class="row"> 
+						<div class="col-m-3 col-3 menu"> 
+						<ul>
+						<li>The Flight</li> 
+						<li>The City</li> 
+						<li>The Island</li> 
+						<li>The Food</li> 
+						</ul> 
+						</div> 
+						
+						<div class="col-m-6 col-9"> 
+						<h1>The City</h1> 
+						<p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+						<video width="200" controls class="videos">
+						  <source src="../sorry.mp4" type="video/mp4"> 
+						  <source src="movie.ogg" type="video/ogg"> 
+						Your browser does not support the video tag. 
+						</video> 
+						</div> 
+						
+						<div class="col-m-3 col-12 right"> 
+						<div class="aside"> 
+						<h2>What?</h2>
+						<p>Chania is a city on the island of Crete.</p> 
+						<h2>Where?</h2> 
+						<p>Crete is a Greek island in the Mediterranean Sea.</p> 
+						<h2>How?</h2> 
+						<p>You can reach Chania airport from all over Europe.</p>
+						</div>
+						</div>
+						
+						</div> 
+						
+						<div class="footer"> 
+						<p>Resize the browser window to see how the content respond to the resizing.</p>
+						</div> 
+					</div>
+				</article>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="RWD images.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="RWD framework.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML5 canvas reference </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+<style type="text/css">
+td:first-child {
+	font-weight:bold;
+	vertical-align:top;
+}
+table td i {
+	color:gray;
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch()"> HTML Tutorial</button>
+			<div class="drop-content" id="myDropdown">
+			<input type="text" class="myInput" id="myInput" placeholder="Cari" onkeyup="filterFunction()"/>
+			<ol>
+				<a href="HTML HOME.html" > <li>HOME</li> </a>
+				<a href="HTML introduction.html" > <li> Pengenalan </li> </a>
+				<a href="HTML textEditor.html" > <li> Text Editor </li> </a>
+				<a href="HTML basic.html" > <li> Dasar </li> </a>
+				<a href="HTML elements.html" > <li> Element </li> </a>
+				<a href="HTML attributes.html" > <li> Attribute </li> </a>
+				<a href="HTML headings.html" > <li> Heading </li> </a>
+				<a href="HTML paragraphs.html" > <li> Paragraf </li> </a>
+				<a href="HTML styles.html" > <li> Style </li> </a>
+				<a href="HTML formatting.html" > <li> Formatting </li> </a>
+				<a href="HTML quotations.html" > <li> Tanda Petik </li> </a>
+				<a href="HTML computercode.html" > <li> Kode Komputer </li> </a>
+				<a href="HTML comments.html" > <li> Komentar </li> </a>
+				<a href="HTML colors.html" > <li> Warna </li> </a>
+				<a href="HTML CSS.html" > <li> CSS </li> </a>
+				<a href="HTML links.html" > <li> Link </li> </a>
+				<a href="HTML images.html" > <li> Gambar </li> </a>
+				<a href="HTML tables.html" > <li> Tabel </li> </a>
+				<a href="HTML lists.html" > <li> Daftar </li> </a>
+				<a href="HTML blocks.html" > <li> Blok </li> </a>
+				<a href="HTML classes.html" > <li> Class </li> </a>
+				<a href="HTML layout.html" > <li> Layout </li> </a>
+				<a href="HTML responsive.html" > <li> Respon </li> </a>
+				<a href="HTML iframes.html" > <li class="redZone"> Iframes </li> </a>
+				<a href="HTML JavaScript.html" > <li> JavaScript </li> </a>
+				<a href="HTML head.html" > <li> Head </li> </a>
+				<a href="HTML entities.html" > <li> Entities </li> </a>
+				<a href="HTML symbols.html" > <li> Simbol </li> </a>
+				<a href="HTML charset.html" > <li> Charset </li> </a>
+				<a href="HTML URL encode.html" > <li> URL Encode </li> </a>
+				<a href="HTML XHTML.html" > <li> XHTML </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch2()"> HTML Form</button>
+			<div class="drop-content" id="myDropdown2">
+			<input type="text" class="myInput" id="myInput2" placeholder="Cari" onkeyup="filterFunction2()"/>
+			<ol>
+				<a href="HTML forms.html" > <li> Formulir </li> </a>
+				<a href="HTML form elements.html" > <li> Elemen Formulir </li> </a>
+				<a href="HTML input types.html" > <li> Tipe Input </li> </a>
+				<a href="HTML input attributes.html" > <li> Attribute input </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch3()"> HTML5 </button>
+			<div class="drop-content" id="myDropdown3">
+			<input type="text" class="myInput" id="myInput3" placeholder="Cari" onkeyup="filterFunction3()"/>
+			<ol>
+				<a href="HTML5 intro.html" > <li> Pengenalan HTM5 </li> </a>
+				<a href="HTML5 support.html" > <li> Support HTML5</li> </a>
+				<a href="HTML5 elements.html" > <li> Element HTML5 </li> </a>
+				<a href="HTML5 semantics.html" > <li> Semantik HTML5</li> </a>
+				<a href="HTML5 migration.html" > <li> Migrasi HTML5</li> </a>
+				<a href="HTML5 style guide.html" > <li> Panduan Style HTML5  </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch4()"> HTML5 Graphics </button>
+			<div class="drop-content" id="myDropdown4">
+			<input type="text" class="myInput" id="myInput4" placeholder="Cari" onkeyup="filterFunction4()"/>
+			<ol>
+				<a href="HTML5 canvas.html" > <li> Canvas </li> </a>
+				<a href="HTML5 SVG.html" > <li> SVG </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch5()"> HTML Media </button>
+			<div class="drop-content" id="myDropdown5">
+			<input type="text" class="myInput" id="myInput5" placeholder="Cari" onkeyup="filterFunction5()"/>
+			<ol>
+				<a href="HTML media.html" > <li> HTML Media </li> </a>
+				<a href="HTML5 video.html" > <li> HTML Video </li> </a>
+				<a href="HTML5 audio.html" > <li> HTML Audio </li> </a>
+				<a href="HTML plug-ins.html" > <li> HTML Plug-ins </li> </a>
+				<a href="HTML YouTube.html" > <li> HTML Youtube </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch6()"> HTML5 APIs </button>
+			<div class="drop-content" id="myDropdown6">
+			<input type="text" class="myInput" id="myInput6" placeholder="Cari" onkeyup="filterFunction6()"/>
+			<ol>
+				<a href="HTML5 geolocation.html" > <li> Geolocation </li> </a>
+				<a href="HTML5 drag or down.html" > <li> Drag or Down </li> </a>
+				<a href="HTML5 local storage.html" > <li> Penyimpanan Lokal </li> </a>
+				<a href="HTML5 application cache.html" > <li> Application Cache </li> </a>
+				<a href="HTML5 web worker.html" > <li> Web Worker </li> </a>
+				<a href="HTML5 SSE.html" > <li> SSE </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch7()"> Canvas Tutorials </button>
+			<div class="drop-content" id="myDropdown7">
+			<input type="text" class="myInput" id="myInput7" placeholder="Cari" onkeyup="filterFunction7()"/>
+			<ol>
+				<li class="title-nav"> Canvas Tutorial</li>
+				<a href="canvas HOME.html" > <li> Canvas Home </li> </a>
+				<a href="canvas drawing.html" > <li> Canvas Drawing </li> </a>
+				<a href="canvas coordinates.html" > <li> Canvas Coordinates </li> </a>
+				<a href="canvas gradients.html" > <li> Canvas Gradient </li> </a>
+				<a href="canvas text.html" > <li> Canvas Text </li> </a>
+				<a href="canvas images.html" > <li> Canvas Images </li> </a>
+			</ol>
+		
+			<ol>
+				<li class="title-nav"> Canvas Clock </li>
+				<a href="canvas clock intro.html" > <li> Clock Intorduction </li> </a>
+				<a href="canvas clock face.html" > <li> Clock Face </li> </a>
+				<a href="canvas clock numbers.html" > <li> Clock Numbers </li> </a>
+				<a href="canvas clock hands.html" > <li> Clock Hands </li> </a>
+				<a href="canvas clock start.html" > <li> Clock Start </li> </a>
+			</ol>
+		
+			<ol>
+				<li class="title-nav"> Canvas Reference </li>
+				<a href="canvas reference.html" > <li> Canvas Reference </li> </a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch8()"> SVG Tutorials</button>
+			<div class="drop-content" id="myDropdown8">
+			<input type="text" class="myInput" id="myInput8" placeholder="Cari" onkeyup="filterFunction8()"/>
+			<ol>
+				<li class="title-nav">SVG Tutorials</li>
+				<a href="SVG HOME.html" > <li> SVG Home </li> </a>
+				<a href="SVG in HTML5.html" > <li> SVG in HTML5 </li> </a>
+				<a href="SVG rectangle.html" > <li> SVG Rectangle </li> </a>
+				<a href="SVG circle.html" > <li> SVG Circle </li> </a>
+				<a href="SVG ellipse.html" > <li> SVG Ellipse </li> </a>
+				<a href="SVG line.html" > <li> SVG Line </li> </a>
+				<a href="SVG polygon.html" > <li> SVG Polygon </li> </a>
+				<a href="SVG polyline.html" > <li> SVG Polyline </li> </a>
+				<a href="SVG path.html" > <li> SVG Path </li> </a>
+				<a href="SVG text.html" > <li> SVG Text </li> </a>
+				<a href="SVG stroking.html" > <li> SVG Stroking </li> </a>
+			</ol>
+			
+			<ol>
+				<li class="title-nav">SVG Filter Introduction</li>
+				<a href="SVG filters intro.html" > <li> SVG Filter intoduction </li> </a>
+				<a href="SVG blur effects.html" > <li> SVG Blur Effects </li> </a>
+				<a href="SVG drop shadows.html" > <li> SVG Drop Shadows </li> </a>
+			</ol>
+			
+			<ol>
+				<li class="title-nav">SVG Gradient</li>
+				<a href="SVG linier.html" > <li> SVG Linier </li> </a>
+				<a href="SVG radial.html" > <li> SVG Radial </li> </a>
+			</ol>
+			
+			<ol>
+				<li class="title-nav">SVG Examples</li>
+				<a href="SVG examples.html" > <li> SVG Examples </li> </a>
+			</ol>
+			
+			<ol>
+				<li class="title-nav">SVG Reference</li>
+				<a href="SVG reference.html" > <li> SVG Reference </li> </a>
+			</ol>
+			</div>
+			</div>
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML5 Canvas Reference </h1>
+			</div>
+			
+			
+<section>			
+			<article>
+				<h2> Description </h2>
+				<p> Penjelasan</p>
+				<p> Element <<b>canvas</b>> digunakan untuk menggambar grafik, on the fly, via scrtipting (biasanya JavaScript). </p>
+				<p> Akan tetapi, element <<b>canvas</b>> tidak memiliki kemampuan gambar dari pemiliknya (canvas hanya sebuah container untuk grapik) - 
+				Kamu harus menggunakan sebuah script untuk menggambar grafik yang sebenarnya.</p>
+				<p> Metode <b>getContex()</b> mengembalikan sebuah object yang menyediakan metode dan properti untuk gambar pada canvas. </p>
+				<p> Referensi ini akan meng-cover properti dan metode dari object <b>getContex("2")</b>, yang mana bisa digunakan untuk menggambar teks, 
+				garis, kotak, lingkaran, dan banyak lagu - pada canvas. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Browser Support </h2>
+				<p> Nomor pada tabel menentukan browser versi pertama yang mendukung secara penuh element <<b>canvas</b>>. </p>
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td class="left"> Element</td>
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> <<b>canvas</b>> </td>
+							<td> 4.0 </td>
+							<td> 9.0 </td>
+							<td> 2.0 </td>
+							<td> 3.1 </td>
+							<td> 9.0 </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<p> Internet Explorer 9, Firefox, Opera, Chrome, and Safari support <<b>canvas</b>> and its properties and methods.</p>
+				<p> <b>Note:</b> Internet Explorer 8 and earlier versions, do not support the <<b>canvas</b>> element.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Colors, Styles, and Shadows </h2>
+				<table>
+					<thead>
+						<tr>
+							<th> Properti </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> fillStyle </td>
+							<td> Mengatur warna, gradient, atau pattern (pola) yang digunakan untuk gambar <br>
+							<b>Nilai:</b> 
+								<ul>
+								 	<li> color (atau warna) </li>
+								 	<li> gradient </li>
+								 	<li> pattern (atau pola)
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> strokeStyle </td>
+							<td> Mengatur warna, gradient, atau pola yang digunakan untuk strokes (coretan) <br>
+							<b>Nilai:</b> 
+								<ul>
+								 	<li> color (atau warna) </li>
+								 	<li> gradient </li>
+								 	<li> pattern (atau pola)
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> shadowColor </td>
+							<td> Mengatur warna untuk digunakan pada shadow (bayangan) <br>
+							<b>Nilai:</b> 
+								<ul>
+								 	<li> color (atau warna) </li>
+								</ul>
+							</td>
+							</td>
+						</tr>
+						<tr>
+							<td> shadowBlur </td>
+							<td> Mengatur blur level (level buram) untuk shadow <br>
+							<b>Nilai:</b> 
+								<ul>
+								 	<li> number (nomor) </li>
+								</ul>
+							</td>
+							</td>
+						</tr>
+						<tr>
+							<td> shadowOffsetX </td>
+							<td> Mengatur jarak horizontal bayangan dari bentuk <br>
+							<b>Nilai:</b> 
+								<ul>
+								 	<li> number (nomor) </li>
+								</ul>
+							</td>
+							</td>
+						</tr>
+						<tr>
+							<td> shadowOffsetY </td>
+							<td> Mengatur jarak vertikal bayangan dari bentuk <br>
+							<b>Nilai:</b> 
+								<ul>
+								 	<li> number (nomor) </li>
+								</ul>
+							</td>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<table>
+					<thead>
+						<tr>
+							<th> Metode </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> createLinearGradient() </td>
+							<td> Membuat sebuah linear gradient (untuk digunakan pada konten canvas) <br>
+								<b>sintaksis:</b> <i>context</i>.createLinearGradient(<i>x0,y0,x1,y1</i>) <br>
+								<b>Nilai:</b> 
+								<ul>
+								 	<li> x0 - koordinat x titik awal dari gradient </li>
+								 	<li> y0 - koordinat y titik awal dari gradient </li>
+								 	<li> x1 - koordinat x titk akhir dari gradient </li>
+								 	<li> y1 - koordinat y titik akhir dari gradient </li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> createPattern() </td>
+							<td> Mengulangi suatu element tertentu dalam direksi atau intruksi tertentu. <br>
+								<b>Sintaksis:</b> <i>context</i>.createPattern(<i>image,"repeat|repeat-x|repeat-y|no-repeat"</i>); <br>
+								<b>Nilai: </b>
+								<ul>
+									<li> image - menentukan elemen image, canvas, atau video daru pola untuk digunakna</li>
+									<li> repeat - Default. Pola mengulang sedara horixontal dan vertikal </li>
+									<li> repeat-x - Pola mengulang secara horizontal saja </li>
+									<li> repeat-y - Pola mengulang secara vertikal saja </li>
+									<li> no-repeat - Pola akan ditampilkan sekali saja (tidak diulang)</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> createRadialGradient() </td>
+							<td> Membuat sebuah radial/circular gradient (untuk digunakan pada konten canvas) <br>
+								<b>sintaksis:</b> <i>context</i>.createRadialGradient(<i>x0,y0,r0,x1,y1,r1</i>) <br>
+								<b>Nilai:</b> 
+								<ul>
+								 	<li> x0 - koordinat x lingkaran awal dari gradient </li>
+								 	<li> y0 - koordinat y lingkaran awal dari gradient </li>
+								 	<li> r0 - radius dari lingkaran awal </li>
+								 	<li> x1 - koordinat x lingkaran akhir dari gradient </li>
+								 	<li> y1 - koordinat y lingkaran akhir dari gradient </li>
+								 	<li> r1 - radius dari lingkaran akhir </li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> addColorStop() </td>
+							<td> Menentukan warna dan posisi berhenti dalam sebuah gradient object. <br>
+								<b>sintaksis:</b> <i>gradient</i>.addColorStop(<i>stop,color</i>) <br>
+								<b>Nilai:</b> 
+								<ul>
+									<li> stop - Nilai antara 0.0 sampai 0.1 yang mempresentasikan posisi antara awal dan akhir dalam sebuah gradient</li>
+									<li> color - Nilai CSS color untuk ditampilkan di stop position</li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Line Styles </h2>
+				
+				<table>
+					<thead>
+						<tr>
+							<th> Properti </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> lineCap </td>
+							<td> Mengatur style dari end caps untuk garis <br>
+								<b>sintaksis:</b> <i>contex</i>.lineCap= "<i>butt|round|square</i>"; <br>
+								<b>Nilai:</b> 
+								<ul>
+									<li> butt - Default, Sebuah flat edge ditambahkan ke setiap akhri garis</li>
+									<li> round - sebuah cap akhir bulat ditambahkan untuk setiap akhir garis</li>
+									<li> square - sebuah cap akhir kotak ditambahkan untuk setiap akhir garis</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> lineJoin </td>
+							<td> Mengatur tipe dari corner created, ketika dua garis bertemu <br>
+								<b>sintaksis:</b> <i>contex</i>.lineJoin= "<i>bevel|round|miter</i>"; <br>
+								<b>Nilai:</b> 
+								<ul>
+									<li> bevel - membuat sebuah sudut menyerong (bveled corner) </li>
+									<li> round - membuat sudut membulat atau melengkung (rounded corner)</li>
+									<li> miter - Default. membuat sebuah sudut naik (sharp corner)</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> lineWidth </td>
+							<td> Mengatur lebar atau tebal garis saat ini<br>
+								<b>sintaksis:</b> <i>contex</i>.lineWidth= <i>number</i>; <br>
+								<b>Nilai:</b> 
+								<ul>
+									<li> number - tebal garis saat ini, dalam satuan pixel </li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> miterLimit </td>
+							<td> Mengatur panjang miter maksimum <br>
+								<b>sintaksis:</b> <i>contex</i>.lineLimit= <i>number</i>; <br>
+								<b>Nilai:</b> 
+								<ul>
+									<li> number - sebuah nomor positif yang menentukan panjang miter maksimum melebihi miterLimit, 
+									sudut akan ditampilkan seperti lineJoin "bevel"</li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Rectangles </h2>
+				<table>
+					<thead>
+						<tr>
+							<th>  Metode</th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> rect() </td>
+							<td> Membuat sebuah reactangle (persgi panjang) <br>
+								<b>sintaksis:</b> <i>contex</i>.rect(<i>x,y,width,height</i>) <br>
+								<b>Nilai:</b> 
+								<ul>
+									<li> x - koordinat x sudut kiri atas dari rectangle </li>
+									<li> y - koordinat y sudut kiri atas dari rectangle </li>
+									<li> width - tebal dari rectangle, dalam satuan pixel </li>
+									<li> height - tinggi dari rectangle, dalam satuan pixel </li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> fillRect() </td>
+							<td> Menggambar sebuah persegi panjang "terisi" <br>
+								<b>sintaksis:</b> <i>contex</i>.fillRect(<i>x,y,width,height</i>) <br>
+								<b>Nilai:</b> 
+								<ul>
+									<li> x - koordinat x sudut kiri atas dari rectangle </li>
+									<li> y - koordinat y sudut kiri atas dari rectangle </li>
+									<li> width - tebal dari rectangle, dalam satuan pixel </li>
+									<li> height - tinggi dari rectangle, dalam satuan pixel </li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> strokeRect() </td>
+							<td> Menggambar sebuah persegi panjang (tidak ada isian)
+								<b>sintaksis:</b> <i>contex</i>.strokeRect(<i>x,y,width,height</i>) <br>
+								<b>Nilai:</b> 
+								<ul>
+									<li> x - koordinat x sudut kiri atas dari rectangle </li>
+									<li> y - koordinat y sudut kiri atas dari rectangle </li>
+									<li> width - tebal dari rectangle, dalam satuan pixel </li>
+									<li> height - tinggi dari rectangle, dalam satuan pixel </li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> clearRect() </td>
+							<td> Membereskan pixel tertentu dengan sebuah persegi panjang yang diberikan<br>
+								<b>sintaksis:</b> <i>contex</i>.clearRect(<i>x,y,width,height</i>) <br>
+								<b>Nilai:</b> 
+								<ul>
+									<li> x - koordinat x sudut kiri atas dari rectangle </li>
+									<li> y - koordinat y sudut kiri atas dari rectangle </li>
+									<li> width - tebal dari rectangle untuk dibersihkan, dalam satuan pixel </li>
+									<li> height - tinggi dari rectangle untuk dibersikan, dalam satuan pixel </li>
+								</ul>
+							 </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Paths </h2>
+				
+				<table>
+					<thead>
+						<tr>
+							<th> Metode </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> fill() </td>
+							<td> Mengisi gambar (path) saat ini <br> 
+							<b>sintaksis:</b> <i>contex</i>.fill() <br>
+							</td>
+						</tr>
+						<tr>
+							<td> stroke() </td>
+							<td> Sebenarnya menggambar path yang kamu telah definisikan <br>
+							<b>sintaksis:</b> <i>contex</i>.stroke() <br>
+							</td>
+						</tr>
+						<tr>
+							<td> beginPath() </td>
+							<td> Memulai sebuah path, atau me-reset pat saat ini <br>
+							<b>sintaksis:</b> <i>contex</i>.beginPath() <br>
+							</td>
+						</tr>
+						<tr>
+							<td> moveTo() </td>
+							<td> Menggerakan path ke titik tertentu dalam canvas, tanpa pembuatan sebuah garis <br>
+							<b>sintaksis:</b> <i>contex</i>.moveTo(<i>x,y</i>) <br>
+							<b>Nilai: </b>
+							<ul>
+								<li> x - koordinat x tentang kemana harus menggerakan path</li>
+								<li> y - koordinat y tentang kemana harus menggerakan path</li>
+							</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> closePath() </td>
+							<td> Membuat sebuah path dari titik balik saat inu untuk titik permulaan<br>
+								<b>sintaksis:</b> <i>contex</i>.closePath() <br>
+							</td>
+						</tr>
+						<tr>
+							<td> lineTo() </td>
+							<td> Menambahkan sebuah titij baru dan membuat sebuah garis untuk titik itu dari titik yang ditentukan terakhir dalam canvas<br>
+								<b>sintaksis:</b> <i>contex</i>.moveTo(<i>x,y</i>) <br>
+								<b>Nilai: </b>
+								<ul>
+									<li> x - koordinat x tentang kemana harus membuat garis (berpindah)</li>
+									<li> y - koordinat y tentang kemana harus membuat garis (berpindah)</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> clip() </td>
+							<td> Melipat daerah dari bentuk apapun dan ukuran dari canvas asli<br>
+								<b>sintaksis:</b> <i>contex</i>.clip() <br>
+							</td>
+						</tr>
+						<tr>
+							<td> quadraticCurveTo() </td>
+							<td> Membuat sebuah quadratic Bézier curve <br> 
+							<b>sintaksis:</b> <i>contex</i>.quadraticCurveTo(<i>cpx,cpy,x,y</i>) <br>
+							<b>Nilai: </b>
+							<ul>
+								<li> cpx - koordinat x dari titik kendali Bézier </li>
+								<li> cpy - koordinat y dari titik kendali Bézier </li>
+								<li> x - koordinat x dari titik akhir</li>
+								<li> y - koordinat y dari titik akhir</li>
+							</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> bezierCurveTo() </td>
+							<td> Membuat sehuah cubic Bézier curve<br>
+							<b>sintaksis:</b> <i>contex</i>.bezierCurveTo(<i>cp1x,cp1y,cp2x,cp2y,x,y</i>) <br>
+							<b>Nilai: </b>
+							<ul>
+								<li> cp1x - koordinat x dari titik kendali Bézier pertama </li>
+								<li> cp1y - koordinat y dari titik kendali Bézier pertama </li>
+								<li> cp2x - koordinat x dari titik kendali Bézier kedua </li>
+								<li> cp2y - koordinat y dari titik kendali Bézier kedua </li>
+								<li> x - koordinat x dari titik akhir</li>
+								<li> y - koordinat y dari titik akhir </li>
+							</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> arc() </td>
+							<td> Membuat sebuah arc/curve (kurva) (yang digunkan untuk membuat lingkaran atau bagian dsri lingkaran)<br> 
+							<b>sintaksis:</b> <i>contex</i>.arc(<i>x, y, r, sAngle, eAngle, counterclockwise</i>) <br>
+							<b>Nilai: </b>
+							<ul>
+								<li> x - Koordinat x dari pusat lingkaran</li>
+								<li> y - koordinat y dari pusat lingkaran</li>
+								<li> r - radius (jari - jari) dari lingkaran</li>
+								<li> sAngle - Angle (sudut) awal, pada radians (0 merupakan posisi jam 3 dari arc's circle)</li>
+								<li> eAngle - Angle (sudut) akhir, pada radians</li>
+								<li> counterclockwise - Optional. Menentukan apakah gambar harus di-counterclockwise atau clockwise. False adalah default, 
+								dan mengindikasikan clockwise (searah putaran jarum jam). Sedangkan true mengindikasikan counter-clockwise</li>
+							</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> arcTo() </td>
+							<td> Membuat sebuah arc/curve (kurva) diantara dua tangent <br>
+								<b>sintaksis:</b> <i>context</i>.arcTo(<i>x1, y1, x2, y2, r</i>) <br>
+								<b>Nilai:</b> 
+								<ul>
+								 	<li> x1 - koordinat x  dari tangent (garis singgung) pertama </li>
+								 	<li> y1 - koordinat y dari tangent (garis singgung) pertama </li>
+								 	<li> x2 - koordinat x dari tangent (garis singgung) kedua </li>
+								 	<li> y2 - koordinat y dari tangent (garis singgung) kedua </li>
+								 	<li> r - radius dari arc </li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> isPointInPath() </td>
+							<td> Mengembalikan true jika titik tertentu berada di path saat ini, jika tidak false <br>
+								<b>sintaksis:</b> <i>context</i>.isPointInPath(<i>x, y</i>) <br>
+								<b>Nilai:</b> 
+								<ul>	
+									<li> x - koordinat x untuk tes </li>
+									<li> y - koordinat y untuk tes </li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Transformations </h2>
+				
+				<table>
+					<thead>
+						<tr>
+							<th> Metode </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> scale() </td>
+							<td> Me-skala gambar saat ini menjadi lebih besar atau lebih kecil <br>
+								<b>sintaksis:</b> <i>context</i>.scale(<i>scalewidth, scaleheight</i>) <br>
+								<b>Nilai:</b> 
+								<ul>	
+									<li> scalewidth - Me-skala lebar dari gambar saat ini (1=100%, 0.5=50%, 2=200%, dan seterunsya.) </li>
+									<li> scaleheight - Me-skala tinggi dari gambar saat ini (1=100%, 0.5=50%, 2=200%, dan seterunsya.) </li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> ratate() </td>
+							<td> Me-rotasi gambar saat ini <br> 
+								<b>sintaksis:</b> <i>context</i>.rotate(<i>angle</i>) <br>
+								<b>Nilai:</b> 
+								<ul>	
+									<li>angle - Sudut (angle) rotasi, pada radians. <br>
+										Untuk mengkalkulasikan dari drajat menjadi radian: <b>degrees*Math.PI/180.</b><br>
+										Contoh: Untuk rotasi 5 derajat, ditentukan berikut: <b>5*Math.PI/180</b>
+									</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> translate() </td>
+							<td> Memetakan kembali posisi (0,0) pada canvas<br> 
+								<b>sintaksis:</b> <i>context</i>.translate(<i>x, y</i>) <br>
+								<b>Nilai:</b> 
+								<ul>
+									<li> x - nilai untuk menambahkan manjadi horizontal koordinat (x) </li>
+									<li> y - nilai untuk menambahkan manjadi vertikal koordinat (y) </li>
+								</li>
+							</td>
+						</tr>
+						<tr>
+							<td> transform() </td>
+							<td> Mengganti transformation matrix saat ini untuk gambar<br> 
+								<b>sintaksis:</b> <i>context</i>.transform(<i>a, b, c, d, e, f</i>) <br>
+								<b>Nilai:</b> 
+								<ul>
+									<li>a - Scales the drawing horizontally	(Me-skala gambar secara horizontal)</li>
+									<li>b - Skew the the drawing horizontally (Memiringkan/mencondongkan gambar secara horizontal) </li>
+									<li>c - Skew the the drawing vertically (Memiringkan/mencondongkan gambar secara vertikal) </li>
+									<li>d - Scales the drawing vertically (Me-skala gambar secara vertikal) </li>
+									<li>e - Moves the the drawing horizontally (Menggerakan gambar secara horizontal) </li>
+									<li>f - Moves the the drawing vertically (Menggerakan gambar secara vertikal) </li>
+								</li>
+							</td>
+						</tr>
+						<tr>
+							<td> setTransform() </td>
+							<td> Mereset transform saat ini menjadi matrix identitas. Lalu menjalankan metode transform()<br>
+							<b>sintaksis:</b> <i>context</i>.setTransform(<i>a, b, c, d, e, f</i>) <br>
+							<b>Nilai:</b> 
+							<ul>
+								<li>a - Scales the drawing horizontally	(Me-skala gambar secara horizontal)</li>
+								<li>b - Skew the the drawing horizontally (Memiringkan/mencondongkan gambar secara horizontal) </li>
+								<li>c - Skew the the drawing vertically (Memiringkan/mencondongkan gambar secara vertikal) </li>
+								<li>d - Scales the drawing vertically (Me-skala gambar secara vertikal) </li>
+								<li>e - Moves the the drawing horizontally (Menggerakan gambar secara horizontal) </li>
+								<li>f - Moves the the drawing vertically (Menggerakan gambar secara vertikal) </li>
+							</li>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Text </h2>
+				<table>
+					<thead>
+						<tr>
+							<th> Properti </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> font </td>
+							<td> Mengatur properti font saat ini untuk konten teks </td>
+						</tr>
+						<tr>
+							<td> textAlign </td>
+							<td> Mengatur perataan teks saat ini untuk konten teks </td>
+						</tr>
+						<tr>
+							<td> textBaseline </td>
+							<td> Mengatur garis dasar atau garis pangkal teks yang digunkan ketika penggambaran teks <br> 
+							<b>Syntax:</b>	<i>context</i>.textBaseline="<i>alphabetic|top|hanging|middle|ideographic|bottom</i>"; <br>
+							<b>Nilai: </b>
+							<ul>
+								<li>alphabetic - Default. The text baseline is the normal alphabetic baseline </li>
+								<li>top - The text baseline is the top of the em square </li>
+								<li>hanging - The text baseline is the hanging baseline	</li>
+								<li>middle - The text baseline is the middle of the em square</li>
+								<li>ideographic - The text baseline is the ideographic baseline</li>
+								<li>bottom - The text baseline is the bottom of the bounding box</li>
+							</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<table>
+					<thead>
+						<tr>
+							<th> Metode </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> fillText() </td>
+							<td> Menggambar teks "terisi" pada canvas<br> 
+								<b>Syntax:</b>	<i>context</i>.fillText(<i>text, x , y, maxWidth</i>); <br>
+								<b>Nilai: </b>
+								<ul>
+									<li> text - Menentukan teks yang akan ditulis pada canvas </li>
+									<li> x - koordinat x kemana pewarnaan (painting) awal teks (relative to the canvas) </li>
+									<li> y - koordinat x kemana pewarnaan (painting) awal teks (relative to the canvas) </li>
+									<li> maxWidth - Optional. Maksimum lebar yang diizinkan dari teks, dalam satuan pixel</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> strokeText() </td>
+							<td> Menggambar text pada canvas (tidak ada isi)<br> 
+								<b>Syntax:</b>	<i>context</i>.strokeText(<i>text, x , y, maxWidth</i>); <br>
+								<b>Nilai: </b>
+								<ul>
+									<li> text - Menentukan teks yang akan ditulis pada canvas </li>
+									<li> x - koordinat x kemana pewarnaan (painting) awal teks (relative to the canvas) </li>
+									<li> y - koordinat x kemana pewarnaan (painting) awal teks (relative to the canvas) </li>
+									<li> maxWidth - Optional. Maksimum lebar yang diizinkan dari teks, dalam satuan pixel</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> measureText() </td>
+							<td> Mengembalikan sebuah object yang berisikan width daru teks tertentu <br> 
+								<b>Syntax:</b>	<i>context</i>.measureText(<i>text</i>); <br>
+								<b>Nilai: </b>
+								<ul>
+									<li> text - teks untuk diperhitungkan (measured) </li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Image Drawing </h2>
+				<table>
+					<thead>
+						<tr>
+							<th> Metode  </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> drawImage() </td>
+							<td> Menggambar sebuah image, canvas atau video kedalam canvas<br>
+							 	<b>Syntax:</b>	<i>context</i>.drawImage(<i>img,sx,sy,swidth,sheight,x,y,width,height</i>); <br>
+							 	<b>Nilai: </b>
+							 	<ul>
+							 		<li> img - Menentukan element image, canvas atau video untuk digunakan </li>
+							 		<li> sx - optional. koordinat x dimana pemotong awal </li>
+							 		<li> sy - optional. koordinat x dimana pemotong awal </li>
+							 		<li> swidth - Optional. Lebar dari image yang di-clip </li>
+							 		<li> sheight - Optional. Tinggi dari image yang di-clip </li>
+							 		<li> x - Koordinat x dimana tempat atau letak image pada canvas </li>
+							 		<li> y - Koordinat y dimana tempat atau letak image pada canvas </li>
+							 		<li> width - Optional. Lebar dari image untuk digunakan (merenggangkan atau mengurangi (ukuran) image) </li>
+							 		<li> height - Optional. Tinggi dari image untuk digunakan (merenggangkan atau mengurangi (ukuran) image) </li>
+							 </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Pixel Manipulation </h2>
+				<table>
+					<thead>
+						<tr>
+							<th> Properti </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> width </td>
+							<td> Mengembalikan lebar dsri sebuah object <b>ImageData</b> <br>
+							<b>sintaksis:</b> <i>imgData</i>.width</td>
+						</tr>
+						<tr>
+							<td> height </td>
+							<td> Mengembalikan tinggi dari sebuah object <b>ImageData</b> <br>
+							<b>sintaksis:</b> <i>imgData</i>.width</td>
+							</td>
+						</tr>
+						<tr>
+							<td> data </td>
+							<td> Mengembalikan object yang berisikan data gambar dari object <b>imageData</b> tertentu</td>
+							<b>sintaksis:</b> <i>imgData</i>.data</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<thead>
+						<tr>
+							<th> Metode </th>
+							<th> Deksripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> creatImageData()  </td>
+							<td> Membuat suatu (image) baru, blank ImageData object <br>
+							<b>sintaksis:</b> var imgData= <i>context</i>.createImageData(<i>width,height</i>); <br>
+							<b>sintaksis:</b> var imgData= <i>context</i>.createImageData(<i>imageData</i>); <br>
+							<b> Nilai:</b>
+							<ul>
+								<li> width - The width of the new ImageData object, in pixels </li>
+								<li> height - The height of the new ImageData object, in pixels </li>
+								<li> imageData - anotherImageData object  </li>
+							</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> getImageData() </td>
+							<td> Mengembalikan ImageData object yang menyalin pixel data untuk rectangle tertentu pada sebuah canvas<br> 
+								<b>sintaksis:</b> <i>context</i>.getImageData(<i>x,y,width,height</i>); <br>
+								<b>Nilai:</b> 
+								<ul>
+									<li> x - koordinat x (dalam satuan pixel) dari sudut kiri atas untuk salin awal dari </li>
+									<li> y - koordinat y (dalam satuan pixel) dari sudut kiri atas untuk salin awal dari </li>
+									<li> width - lebar dari area persegi panjang yang akan kamu salin </li>
+									<li> height - Tinggi dari area persegi panjang yang akan kamu salin </li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> putImageData() </td>
+							<td> Menaruh data gambar (dari sebuah object ImageData tertentu) kembali kedalam canvas <br>
+								<b>Sintaksis:</b> <i>context</i>.putImageData(<i>imgData,x,y,dirtyX,dirtyY,dirtyWidth,dirtyHeight</i>); <br>
+								<b>Nilai: </b> 
+								<ul>
+									<li> imgData - Specifies the ImageData object to put back onto the canvas </li>
+									<li> x - The x-coordinate, in pixels, of the upper-left corner of the ImageData object </li>
+									<li> y - The y-coordinate, in pixels, of the upper-left corner of the ImageData object </li>
+									<li> dirtyX - Optional. The horizontal (x) value, in pixels, where to place the image on the canvas</li>
+									<li> dirtyY - Optional. The vertical (y) value, in pixels, where to place the image on the canvas</li>
+									<li> dirtyWidth - Optional. The width to use to draw the image on the canvas</li>
+									<li> dirtyHeight - Optional. The height to use to draw the image on the canvas</li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Compositing </h2>
+				<table>
+					<thead>
+						<tr>
+							<th> Properti </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> globalAlpha </td>
+							<td> Mengatur alphabet saat ini atau nilai tembus pandang (transparency) dari gambar <br>
+							<b>Sintaksis:</b> <i>context</i>.globalAlpha=<i>Number</i>; <br>
+							<b>Nilai: </b> 
+							<ul>
+								<li> Number - Nilai transparency. Harus menjadi sebuah nomor antara 0.0 (fully transparent) dan 1.0 (no transparency)</li>
+							</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> globalCompositeOperation </td>
+							<td> Mengatur bagaimana sebuah image baru digambar kedalam sebuah image yang telah ada <br>
+								<b>Sintaksis:</b> <i>context</i>.globalCompositeOperation="<i>source-in</i>"; <br>
+								<b>Nilai: </b> 
+								<ul>
+									<li> source-over - Default. Menampilkan source image over (image sumber melebihi) the destination iamge </li>
+									<li> source-atop - Menampilkan source image di atas dari destination image. Bagian dari source image yang berads diluar destination image yang tidak ditampilkan</li>
+									<li> source-in - Menampilkan source image dalam destination image. Hanya bagian dari source image yang berada DIDALAM destination image yang ditampilkan dan destinastion image yang transparan</li>
+									<li> source-out - Menampilkan source image dalam destination image. Hanya bagian dari source image yang berada DILUAR destination image yang ditampilkan dan destinastion image yang transparan</li>
+									<li> destination-over - Menampilkan destination image yang melebihi source image </li>
+									<li> destination-atop - Menampilkan destination image di atas dari source image. Bagian dari destination image yang berads diluar destination image yang tidak ditampilkan</li>
+									<li> destination-in - Menampilkan destination image kedalam source image. Hanya bagian dari destination image yang berada DIDALAM source image yang ditampilkan dan source image yang transparan</li>
+									<li> destination-out - Menampilkan destination image kedalam source image. Hanya bagian dari destination image yang berada DILUAR source image yang ditampilkan dan source image yang transparan</li>
+									<li> lighter - Menampilkan source image + destination image </li>
+									<li> copy - Menampilkan source image. Destination image diabaikan</li>
+									<li> xor - Sourcr image dikombinasikan dengan menggunakan sebuah exclusive OR dengan destination image</li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Other</h2>
+				<table>
+					<thead>
+						<tr>
+							<th> Metode  </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> save() </td>
+							<td> Menyimpan keadaan dari context saat ini </td>
+						</tr>
+						<tr>
+							<td> restore() </td>
+							<td> Mengembalikan attribute dan path state yang disimpan sebelumnya </td>
+						</tr>
+						<tr>
+							<td> createEvent() </td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td> getContext() </td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td> toDataURL()</td>
+							<td> </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="canvas clock start.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="SVG HOME.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			</article>
+			<article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

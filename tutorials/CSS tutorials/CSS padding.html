@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS Padding </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Padding </h1>
+				<div class="pad01 center" style="border: 1px gold solid;">
+				<h2>CSS Padding Properties</h2>
+				<p> Properti <mark>padding</mark> CSS digunakan untuk mengahsilkan spasi di sekeliling konten:</p>
+				<p> Properti margin mengatur ukuran dari white space diantara element content dan element border. </p>
+				<p> Element ini memiliki padding 50px. </p>
+				</div>
+			</div>
+			
+<section>
+			<article>
+				<h2>CSS Padding </h2>
+				<p> Properti <mark>padding</mark> mendefinisikan white space (ruang putih) konten element dan border element.</p>
+				<p> Padding membersihkan area di sekeliling konten (didalam border) dari suatu element. </p>
+				<div class="nasheat">
+				<p> <b>Catatan:</b> padding berefek dengan background warna dari element! </p>
+				</div>
+				<p> Dengan CSS, kamu memiliki kendali penuh pada padding. Ada properti - properri CSS untuk pengaturan padding untuk setiap sisi dari element (top, right, bottom, and left).</p>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Padding - Individual Sides </h2>
+				<p> CSS memiliki properti untuk penentuan padding untuk setiap sisi sebuah element: </p>
+				<ul>
+					<li> <mark>padding-top </mark> </li>
+					<li> <mark>padding-right</mark> </li>
+					<li> <mark>padding-bottom</mark> </li>
+					<li> <mark> padding-left</mark> </li>
+				</ul>
+				<p> Semua properti padding bisa memiliki nilai berikut: </p>
+				
+				<ul>
+					<li> length - Menentukan margin dalam satuan px, pt, cm, dan sebagainya. </li>
+					<li> % - Menentukan margin dalam satuan persen (%) width atau lebar dari element pengisi</li>
+					<li> inherit - Menentukan bahwa margin harus diwariskan (inherited) dari parent element (elemen induk)</li>
+				</ul>
+
+				<p> Contoh berikut mengatur perbedaan margin untuk semua keempat sisi dari element <<b>/p</b>>: </p>
+				<article class="example-box">
+					<h4> Input </h4>
+					<div class="example-content">
+						
+						p {
+						<blockquote>
+						    padding-top: 50px; <br>
+						    padding-bottom: 30px; <br>
+						    padding-right: 50px; <br>
+						    padding-left: 80px;
+						</blockquote>
+						}
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan01">
+							<p> This paragraph has a top and bottom margin of 100px, a left margin of 80px, and a right margin of 150px.</p>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Padding - Shorthand Property </h2>
+				<p> Untuk mempersingkat kode, ini memungkinkan untuk menentukan semua properti padding dalam satu deklarasi. </p>
+				<p> Properti <mark>padding</mark> merupakan sebuah shorthand properti untuk properti padding individual sebagai berikut: </p>
+				
+				<ul>
+					<li> <mark>padding-top</mark></li>
+					<li> <mark>padding-right</mark></li>
+					<li> <mark>padding-bottom</mark></li>
+					<li> <mark>padding-left</mark></li>
+				</ul>
+				
+				<article class="example-box">
+					<h4> Input </h4>
+					<div class="example-content">
+					
+					p.p2 {
+					<blockquote>
+					    padding:20px 50px 10px 30px;
+					</blockquote>
+					}
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<div class="result sembunyikan" id="sembunyikan03">
+					<p class="p2"> This paragraph has a top and bottom margin of 100px, a left margin of 80px, and a right margin of 150px.</p>
+					</div>
+				</article>
+				
+				<p> Jadi, Disini adalah penjelasan bagaimana itu bekerja: </p>
+				<p> Jika properti <mark>padding</mark> memiliki empat properti: </p>
+				<ul>
+					<li>padding: 25px 50px 75px 100px</li>
+						<ol>
+							<li> top padding is 25px</li>
+							<li>right padding is 50px</li>
+							<li>bottom padding is 75px</li>
+							<li>left padding is 100px</li>
+						</ol>
+				</ul>
+				
+				<p> Jika properti <mark>padding</mark> memiliki tiga nilai </p>
+				<ul>
+					<li>padding: 25px 50px 75px;</li>
+						<ol>
+						<li>top padding is 25px</li>
+						<li>right and left padding are 50px</li>
+						<li>bottom padding is 75px</li>
+						</ol>
+				</ul>
+				
+				<p> Jika properti <mark>padding</mark> memiliki dua nilai: </p>
+				<ul>
+					<li>padding: 25px 50px;</li>
+					<ol>
+						<li>top and bottom padding are 25px</li>
+						<li>right and left padding are 50px</li>
+					</ol>
+				</ul>
+				
+				<p> Jika properti <mark>padding</mark> memiliki satu nilai</p>
+				<ul>
+					<li>padding: 25px;</li>
+						<ol>
+							<li>all four padding are 25px</li>
+						</ol>
+				</ul>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>All CSS Padding Properties</h2>
+				<table class="table">
+					<thead>
+						<tr>
+							<th> Properti </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> padding </td>
+							<td> Shorthand property untuk mengatur properti padding dalam satu deklarasi </td>
+						</tr>
+						<tr>
+							<td> padding-bottom </td>
+							<td> Mengatur padding bagian bawah dari suatu element </td>
+						</tr>
+						<tr>
+							<td> padding-left </td>
+							<td> Mengatur padding bagian kiri dari suatu element </td>
+						</tr>
+						<tr>
+							<td> padding-right </td>
+							<td> Mengatur padding bagian kanan dari suatu element </td>
+						</tr>
+						<tr>
+							<td> padding-top </td>
+							<td> Mengatur padding bagian atas dari suatu element </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS margins.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS heightOrWidth.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

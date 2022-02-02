@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS3 2D Transforms  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+/* Untuk div pendamping*/
+.example-content > div { 
+width: 300px; 
+height: 100px; 
+background-color: yellow; 
+border: 1px solid black; 
+} 
+
+/*Untuk style rumus*/
+.simple-example i{
+	color:gray;
+}
+
+/*Contoh 01*/
+div.translasi  { 
+width: 300px; 
+height: 100px; 
+background-color: yellow; 
+border: 1px solid black; 
+-ms-transform: translate(50px,100px); /* IE 9 */ 
+-webkit-transform: translate(50px,100px); /* Safari */ 
+transform: translate(50px,100px); 
+} 
+
+/*Contoh 02*/
+div.rotasiPositif { 
+width: 300px; 
+height: 100px; 
+background-color: yellow; 
+border: 1px solid black; 
+-ms-transform: rotate(20deg); /* IE 9 */ 
+-webkit-transform: rotate(20deg); /* Safari */ 
+transform: rotate(20deg); /* Standard syntax */ 
+} 
+
+ /*Contoh 03*/
+div.rotasiNegatif { 
+width: 300px; 
+height: 100px; 
+background-color: yellow; 
+border: 1px solid black; 
+-ms-transform: rotate(-20deg); /* IE 9 */ 
+-webkit-transform: rotate(-20deg); /* Safari */ 
+transform: rotate(-20deg); /* Standard syntax */ 
+}
+ 
+ 
+ /*Contoh 04*/
+div.scaleIncrement { 
+margin: 150px; 
+width: 200px; 
+height: 100px; 
+background-color: yellow; 
+border: 1px solid black; 
+border: 1px solid black; 
+-ms-transform: scale(2,3); /* IE 9 */ 
+-webkit-transform: scale(2,3); /* Safari */ 
+transform: scale(2,3); /* Standard syntax */ 
+} 
+
+ /*Contoh 05*/
+div.scaleDecrement { 
+margin: 150px; 
+width: 200px; 
+height: 100px; 
+background-color: yellow; 
+border: 1px solid black; 
+border: 1px solid black; 
+-ms-transform: scale(0.5, 0.5); /* IE 9 */ 
+-webkit-transform: scale(0.5, 0.5); /* Safari */ 
+transform: scale(0.5, 0.5); /* Standard syntax */ 
+} 
+
+ /*Contoh 06*/
+div.mySkewX { 
+-ms-transform: skewX(20deg); /* IE 9 */ 
+-webkit-transform: skewX(20deg); /* Safari */ 
+transform: skewX(20deg); /* Standard syntax */ 
+} 
+
+ /*Contoh 07*/
+div.mySkewY { 
+-ms-transform: skewY(20deg); /* IE 9 */ 
+-webkit-transform: skewY(20deg); /* Safari */ 
+transform: skewY(20deg); /* Standard syntax */ 
+} 
+
+/*Contoh 08*/
+div.mySkew { 
+-ms-transform: skew(20deg, 10deg); /* IE 9 */ 
+-webkit-transform: skew(20deg, 10deg); /* Safari */ 
+transform: skew(20deg, 10deg); /* Standard syntax */ 
+} 
+
+/*Contoh 09*/
+div.mySkew2 { 
+-ms-transform: skew(20deg); /* IE 9 */ 
+-webkit-transform: skew(20deg); /* Safari */ 
+transform: skew(20deg); /* Standard syntax */ 
+} 
+
+/*Contoh 10*/
+div.myMatrix1 { 
+-ms-transform: matrix(1, -0.3, 0, 1, 0, 0); /* IE 9 */ 
+-webkit-transform: matrix(1, -0.3, 0, 1, 0, 0); /* Safari */ 
+transform: matrix(1, -0.3, 0, 1, 0, 0); /* Standard syntax */ 
+} 
+
+div.myMatrix2 { 
+-ms-transform: matrix(1, 0, 0.5, 1, 150, 0); /* IE 9 */ 
+-webkit-transform: matrix(1, 0, 0.5, 1, 150, 0); /* Safari */ 
+transform: matrix(1, 0, 0.5, 1, 150, 0); /* Standard syntax */ 
+} 
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS3 2D Transforms </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> CSS3 Transforms</h2>
+				<p> CSS3 <mark>transform</mark> memperbokehkan kamu untuk perpindahan (translate), perputaran (rotasi), 
+				memperbesar & memperkecil (scale) dan mencondong/memiringkan (skew) element.</p>
+				<p> Transformasi adalah sebuah efek yang membiarkan sebuah element berubah benruj, ukuran dan posisi.</p>
+				<p> CSS3 mendukung transformasi 2D dan 3D.</p>
+				<p> Mouse over the elements below to see the difference between a 2D and a 3D transformation:</p>
+				
+				<div>
+				<span class="rotasi2D">2D rotate</span>
+				<span class="rotasi3D">3D rotate</span>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Browser Support for 2D Transforms</h2>
+				<p> Nomor pada tabel menentukan browser versi pertama yang mendukung secara penuh  properti ini.</p>
+				<p> Nomor yang diikut dengan <mark>-mz-</mark>, <mark>-webkit-</mark>, <mark>-moz-</mark> atau <mark>-o-</mark> menentukan versi pertama yang bekerja dengan awalan properti.</p>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> Properti </td>
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td>transform</td>
+							<td> 36.0 <br> 4.0 -webkit- </td>
+							<td> 12.0 dan 10.0 <br> 9.0 -ms-</td>
+							<td> 16.0 <br> 3.5 -moz- </td>
+							<td> 3.1 -webkit-</td>
+							<td> 23.0 <br> 15.0 -webkit- <br> 12.1 <br> 10.5 -o-</td>
+						</tr>
+						<tr class="center">
+							<td>transform-origin <br> (sintaksis dengan dua-nilai)</td>
+							<td> 36.0 <br> 4.0 -webkit-</td>
+							<td> 12.0 dan 10.0 <br> 9.0 -ms- </td>
+							<td> 16.0 <br> 3.5 -moz- </td>
+							<td> 3.2 -webkit- </td>
+							<td> 23.0 <br> 15.0 -webkit- <br> 12.1 <br> 10.5 -o- </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 2D Transforms</h2>
+				<p> Pada chapter ini kamu akan mempelajari tentang metode-metode transformasi 2D berikut:</p>
+				
+				<ul>
+					<li>translate()</li>
+					<li>rotate()</li>
+					<li>scale()</li>
+					<li>skewX()</li>
+					<li>skewY()</li>
+					<li>matrix()</li>
+				</ul>
+				
+				<p> <b>Tip:</b> Kamu akan mempelajari tentang 3D transforms pada chapter selanjutnya.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>The translate() Method</h2>
+				<p> Metode <mark>translate()</mark> mengerakan suatu element dari posisinya saat ini (menurut pada parameter yang diberikan untuk X-axis [sumbu-X] dan Y-axis [sumbu-Y]).</p>
+				<p> Contoh berikut memindahkan element <<b>div</b>> 50 pixel ke kanan, dan 100 pixel kebawah dari posisinya saat ini:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						div { <br>
+						-ms-transform: translate(50px,100px); <em>/* IE 9 */</em> <br>
+						-webkit-transform: translate(50px,100px); <em>/* Safari */</em> <br>
+						transform: translate(50px,100px); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 300px; <br>
+						height: 100px; <br>
+						background-color: yellow; <br>
+						border: 1px solid black; <br>
+						-ms-transform: translate(50px,100px); <em>/* IE 9 */</em> <br>
+						-webkit-transform: translate(50px,100px); <em>/* Safari */</em> <br>
+						transform: translate(50px,100px); <em>/* Standard syntax */</em> <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b>> <br>
+						The translate() method moves an element from its current position. This div element is moved 50 pixels to the right, 
+						and 100 pixels down from its current position. <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<div class="translasi">
+						The translate() method moves an element from its current position. This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+						</div>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>The rotate() Method</h2>
+				<p> Metode <mark>rotate()</mark> digunakan untuk merotasi/memutar suatu element searah jarum jam (clockwise) atau melawan arah jarum jam (counter-clockwise) menurut pada derajat yang diberikan.</p>
+				<p> Contoh berikut merotasi/memutar element <<b>div</b>>  searah jarum jam dengan 20 derajat:</p>
+				
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						div { <br>
+						-ms-transform: rotate(20deg); <em>/* IE 9 */</em> <br>
+						-webkit-transform: rotate(20deg); <em>/* Safari */</em> <br>
+						transform: rotate(20deg); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 300px; <br>
+						height: 100px; <br>
+						background-color: yellow; <br>
+						border: 1px solid black; <br>
+						} <br>
+						<br>
+						div.rotasiPositif { <br>
+						-ms-transform: rotate(20deg); <em>/* IE 9 */</em> <br>
+						-webkit-transform: rotate(20deg); <em>/* Safari */</em> <br>
+						transform: rotate(20deg); <em>/* Standard syntax */</em> <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b>> <br>
+						This a normal div element. <br>
+						<<b>/div</b>> <br>
+						 <br>
+						<<b>div</b> <span class="teal">class="rotasiPositif"</span>> <br>
+						The rotate() method rotates an element clockwise or counter-clockwise. This div element is rotated clockwise 20 degrees. <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<div class="div02">
+						This a normal div element.
+						</div>
+						
+						<div class="rotasiPositif">
+						The rotate() method rotates an element clockwise or counter-clockwise. This div element is rotated clockwise 20 degrees.
+						</div>
+					
+					</div>
+				</article>
+				
+				
+				<p> Pengunaan nilai negatif (-derajat) akan merotasi/memutar element melawan arah jarum jam.</p>
+				<p> Contoh berikut merotasi/memutar element <<b>div</b>>  melawan arah jarum jam dengan -20 derajat:</p>
+				
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open03">
+						
+						div { <br>
+						-ms-transform: rotate(-20deg); <em>/* IE 9 */</em> <br>
+						-webkit-transform: rotate(-20deg); <em>/* Safari */</em> <br>
+						transform: rotate(-20deg); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 300px; <br>
+						height: 100px; <br>
+						background-color: yellow; <br>
+						border: 1px solid black; <br>
+						} <br>
+						<br>
+						div.rotasiNegatif { <br>
+						-ms-transform: rotate(-20deg); <em>/* IE 9 */</em> <br>
+						-webkit-transform: rotate(-20deg); <em>/* Safari */</em> <br>
+						transform: rotate(-20deg); <em>/* Standard syntax */</em> <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>div</b>> <br>
+						This a normal div element. <br>
+						<<b>/div</b>> <br>
+						 <br>
+						<<b>div</b> <span class="teal">class="rotasiNegatif"</span>> <br>
+						The rotate() method rotates an element clockwise or counter-clockwise. This div element is rotated clockwise 20 degrees. <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+						<div class="div02">
+						This a normal div element.
+						</div>
+						
+						<div class="rotasiNegatif">
+						The rotate() method rotates an element clockwise or counter-clockwise. This div element is rotated clockwise 20 degrees.
+						</div>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>The scale() Method</h2>
+				<p> Metode <mark>scale()</mark> digunakan untuk meningkatkan (increment) atau menurunkan (decrement) ukuran dari suatu element (berdasarkan pada parameter yang diberikan untuk lebar dam tingginya).</p>
+				<p> Contoh berikut meningkatkan element <<b>div</b>> untuk 2 time dari lebar aslinya dan 3 time dari tinggi aslinya:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open04">
+						
+						div { <br>
+						-ms-transform: scale(2,3); <em>/* IE 9 */</em> <br>
+						-webkit-transform: scale(2,3); <em>/* Safari */</em> <br>
+						transform: scale(2,3); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close04">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div.scaleIncrement {  <br>
+						margin: 150px; <br>
+						width: 200px; <br>
+						height: 100px; <br>
+						background-color: yellow; <br>
+						border: 1px solid black; <br>
+						border: 1px solid black; <br>
+						-ms-transform: scale(2,3); <em>/* IE 9 */</em> <br>
+						-webkit-transform: scale(2,3); <em>/* Safari */</em> <br>
+						transform: scale(2,3); <em>/* Standard syntax */</em> <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>>The scale() method increases or decreases the size of an element.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b> <span class="teal">class="scaleIncrement"</span>> <br>
+						This div element is two times of its original width, and three times of its original height. <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<button onclick="buka04()" class="exbutton"> Open </button>
+					<button onclick="tutup04()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+						<p>The scale() method increases or decreases the size of an element.</p>
+						
+						<div class="scaleIncrement">
+						This div element is two times of its original width, and three times of its original height.
+						</div>
+					
+					</div>
+				</article>
+				
+				
+				<p> Contoh berikut menurunkan element <<b>div</b>> setengah dari lebar dan tinggi aslinya:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open05">
+						
+						div { <br>
+						-ms-transform: scale(0.5,0.5); /* IE 9 */ <br>
+						-webkit-transform: scale(0.5,0.5); /* Safari */ <br>
+						transform: scale(0.5,0.5); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close05">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div.scaleDecrement {  <br>
+						margin: 150px; <br>
+						width: 200px; <br>
+						height: 100px; <br>
+						background-color: yellow; <br>
+						border: 1px solid black; <br>
+						border: 1px solid black; <br>
+						-ms-transform: scale(0.5, 0.5); <em>/* IE 9 */</em> <br>
+						-webkit-transform: scale(0.5, 0.5); <em>/* Safari */</em> <br>
+						transform: scale(0.5, 0.5); <em>/* Standard syntax */</em> <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>>The scale() method increases or decreases the size of an element.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b> <span class="teal">class="scaleDecrement"</span>> <br>
+						This div element is two times of its original width, and three times of its original height. <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan05()" class="exbutton">Klik disini</button>
+					<button onclick="buka05()" class="exbutton"> Open </button>
+					<button onclick="tutup05()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+					
+						<p>The scale() method increases or decreases the size of an element.</p>
+						
+						<div class="scaleDecrement">
+						This div element is the half of its original width, and three times of its original height.
+						</div>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>The skewX() Method</h2>
+				<p> Metode <mark>skewX()</mark> digunakan untuk memiringkan/mencondongkan sepanjang sumbu-X dengan sudut/angle yang diberikan.</p>
+				<p> Contoh berikut memiringkan element <<b>div</b>> 20 derajat sepanjang sumbu-X.</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open06">
+						
+						div {  <br>
+						-ms-transform: skewX(20deg); <em>/* IE 9 */</em> <br>
+						-webkit-transform: skewX(20deg); <em>/* Safari */</em> <br>
+						transform: skewX(20deg); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close06">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 300px; <br>
+						height: 100px; <br>
+						background-color: yellow; <br>
+						border: 1px solid black; <br>
+						} <br>
+						 <br>
+						div.skalaX { <br>
+						-ms-transform: skewX(20deg); <em>/* IE 9 */</em> <br>
+						-webkit-transform: skewX(20deg); <em>/* Safari */</em> <br>
+						transform: skewX(20deg); <em>/* Standard syntax */</em> <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>>The skewX() method skews an element along the X-axis by the given angle.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b>> <br>
+						This a normal div element. <br>
+						<<b>/div</b>> <br>
+						 <br>
+						<<b>div</b> <span class="teal">sclass="mySkewX"</span>> <br>
+						This div element is skewed 20 degrees along the X-axis. <br>
+						<<b>/div</b>>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan06()" class="exbutton">Klik disini</button>
+					<button onclick="buka06()" class="exbutton"> Open </button>
+					<button onclick="tutup06()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+						
+						<p>The skewX() method skews an element along the X-axis by the given angle.</p>
+						
+						<div>
+						This a normal div element.
+						</div>
+						
+						<div class="mySkewX">
+						This div element is skewed 20 degrees along the X-axis.
+						</div>
+						
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>The skewY() Method</h2>
+				<p> Metode <mark>skewY</mark> digunakan untuk memiringkan/mencondongkan sebuah element sepanjang sumbu-X dengan angle/sudut yang ditentunkan.</p>
+				<p> Contih berikut meringkan/mencondongkan element <<b>div</b>> 20 derajat sepanjang sumbu-Y:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open07">
+						
+						div { <br>
+						-ms-transform: skewY(20deg); <em>/* IE 9 */</em> <br>
+						-webkit-transform: skewY(20deg); <em>/* Safari */</em> <br>
+						transform: skewY(20deg); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close07">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 300px; <br>
+						height: 100px; <br>
+						background-color: yellow; <br>
+						border: 1px solid black; <br>
+						} <br>
+						 <br>
+						div.skalaY { <br>
+						-ms-transform: skewY(20deg); <em>/* IE 9 */</em> <br>
+						-webkit-transform: skewY(20deg); <em>/* Safari */</em> <br>
+						transform: skewY(20deg); <em>/* Standard syntax */</em> <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>>The skewY() method skews an element along the Y-axis by the given angle.<<b>/p</b>>  <br>
+						 <br>
+						<<b>div</b>> <br>
+						This a normal div element. <br>
+						<<b>/div</b>> <br>
+						 <br>
+						<<b>div</b> <span class="teal">class="mySkewY"</span>> <br>
+						This div element is skewed 20 degrees along the Y-axis. <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan07()" class="exbutton">Klik disini</button>
+					<button onclick="buka07()" class="exbutton"> Open </button>
+					<button onclick="tutup07()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan07">
+					
+						<p>The skewY() method skews an element along the Y-axis by the given angle.</p>
+						
+						<div>
+						This a normal div element.
+						</div>
+						
+						<div class="mySkewY">
+						This div element is skewed 20 degrees along the Y-axis.
+						</div>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>The skew() Method</h2>
+				<p> Metode <mark>skew()</mark> memiringkan/mencondongkan sebuah element sepanjang sumbu-X dan sumbu-Y, dan 10 oleh sudut/angle yang diberikan.</p>
+				<p> Contoh berikut memiringkan/mencondongkan element <<b>div</b>> 20 derajat sepanjang sumbu-X, dan 10 derajat sepanjang sumbu-Y:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open08">
+						
+						div { <br>
+						-ms-transform: skew(20deg, 10deg); <em>/* IE 9 */</em> <br>
+						-webkit-transform: skew(20deg, 10deg); <em>/* Safari */</em> <br>
+						transform: skew(20deg, 10deg); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close08">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 300px; <br>
+						height: 100px; <br>
+						background-color: yellow; <br>
+						border: 1px solid black; <br>
+						} <br>
+						 <br>
+						div.mySkew { <br>
+						-ms-transform: skew(20deg,10deg); <em>/* IE 9 */</em> <br>
+						-webkit-transform: skew(20deg,10deg); <em>/* Safari */</em> <br>
+						transform: skew(20deg,10deg); <em>/* Standard syntax */</em> <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>>The skew() method skews an element into a given angle.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b>> <br>
+						This a normal div element. <br>
+						<<b>/div</b>> <br>
+						 <br>
+						<<b>div</b> <span class="teal">class="mySkew"</span>> <br>
+						This div element is skewed 20 degrees along the X-axis, and 10 degrees along the Y-axis. <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan08()" class="exbutton">Klik disini</button>
+					<button onclick="buka08()" class="exbutton"> Open </button>
+					<button onclick="tutup08()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan08">
+					
+						<p>The skew() method skews an element into a given angle.</p>
+						
+						<div>
+						This a normal div element.
+						</div>
+						
+						<div class="mySkew">
+						This div element is skewed 20 degrees along the X-axis, and 10 degrees along the Y-axis.
+						</div>
+					
+					</div>
+				</article>
+				
+				<p> Jika parameter kedua tidak ditentukan, parameter kedua memiliki nilai 0. Jadi, contoh berikut memiringkan/mencondongkan element <<b>div</b>> 20 derajat sepajang sumbu-X:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open09">
+						
+						div { <br>
+						-ms-transform: skew(20deg); <em>/* IE 9 */</em> <br>
+						-webkit-transform: skew(20deg); <em>/* Safari */</em> <br>
+						transform: skew(20deg); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close09">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 300px; <br>
+						height: 100px; <br>
+						background-color: yellow; <br>
+						border: 1px solid black; <br>
+						} <br>
+						 <br>
+						div.mySkew02 { <br>
+						-ms-transform: skew(20deg); <em>/* IE 9 */</em> <br>
+						-webkit-transform: skew(20deg); <em>/* Safari */</em> <br>
+						transform: skew(20deg); <em>/* Standard syntax */</em> <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>>The skew() method skews an element into a given angle.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b>> <br>
+						This a normal div element. <br>
+						<<b>/div</b>> <br>
+						 <br>
+						<<b>div</b> <span class="teal">class="mySkew02"</span>> <br>
+						This div element is skewed 20 degrees along the X-axis, and 10 degrees along the Y-axis. <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan09()" class="exbutton">Klik disini</button>
+					<button onclick="buka09()" class="exbutton"> Open </button>
+					<button onclick="tutup09()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan09">
+					
+						<p>The skew() method skews an element into a given angle.</p>
+						
+						<div>
+						This a normal div element.
+						</div>
+						
+						<div class="mySkew2">
+						This div element is skewed 20 degrees along the X-axis, and 10 degrees along the Y-axis.
+						</div>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>The matrix() Method</h2>
+				<p> Metode <mark>matrix()</mark> digunakan untuk mengkombinasikan semua metode transformasi 2D menjadi satu:</p>
+				<p> Metode <mark>matrix()</mark> mengambil 6 parameter, termasuk fungsi matematik, yang mana mengizinkan kamu untuk me-rotasi, me-scale, me-translate dan me-skew element.</p>
+				<p> Parameter sebagai berikut:</p>
+				
+				<div class="simple-example">
+					<p>matrix(<i>scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()</i>)</p>
+				</div>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open10">
+						
+						div { <br>
+						-ms-transform: matrix(1, -0.3, 0, 1, 0, 0); <em>/* IE 9 */</em> <br>
+						-webkit-transform: matrix(1, -0.3, 0, 1, 0, 0); <em>/* Safari */</em> <br>
+						transform: matrix(1, -0.3, 0, 1, 0, 0); <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close10">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 300px; <br>
+						height: 100px; <br>
+						background-color: yellow; <br>
+						border: 1px solid black; <br>
+						} <br>
+						 <br>
+						div.myMatrix1 { <br>
+						-ms-transform: matrix(1, -0.3, 0, 1, 0, 0); <em>/* IE 9 */</em> <br>
+						-webkit-transform: matrix(1, -0.3, 0, 1, 0, 0); <em>/* Safari */</em> <br>
+						transform: matrix(1, -0.3, 0, 1, 0, 0); <em>/* Standard syntax */</em> <br>
+						} <br>
+						 <br>
+						div.myMatrix2 { <br>
+						-ms-transform: matrix(1, 0, 0.5, 1, 150, 0); <em>/* IE 9 */</em> <br>
+						-webkit-transform: matrix(1, 0, 0.5, 1, 150, 0); <em>/* Safari */</em> <br>
+						transform: matrix(1, 0, 0.5, 1, 150, 0); <em>/* Standard syntax */</em> <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>>The matrix() method combines all the 2D transform methods into one.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b>> <br>
+						This a normal div element. <br>
+						<<b>/div</b>> <br>
+						 <br>
+						<<b>div</b> <span class="teal">class="myMatrix1"</span>> <br>
+						Using the matrix() method. <br>
+						<<b>/div</b>> <br>
+						 <br>
+						<<b>div</b> <span class="teal">class="myMatrix2"</span>> <br>
+						Another use of the matrix() method. <br>
+						<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan10()" class="exbutton">Klik disini</button>
+					<button onclick="buka10()" class="exbutton"> Open </button>
+					<button onclick="tutup10()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan10">
+					
+						<p>The matrix() method combines all the 2D transform methods into one.</p>
+						
+						<div>
+						This a normal div element.
+						</div>
+						
+						<div class="myMatrix1">
+						Using the matrix() method.
+						</div>
+						
+						<div class="myMatrix2">
+						Another use of the matrix() method.
+						</div>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 Transform Properties</h2>
+				<p> Daftar tabel berikut adalah semua properti 2D transform:</p>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Properti</th>
+							<th>Deskripsi</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> transform </td>
+							<td> Menerapkan transformasi (perubahan) 2D dan 3D untuk sebuah element  </td>
+						</tr>
+						<tr>
+							<td> transform-origin </td>
+							<td> Memperbolehkan kamu untuk mengubah posisi pada element yang ditransformasi </td>
+						</tr>
+						<tr>
+							<td>  </td>
+							<td>  </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>2D Transform Methods</h2>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Fungsi</th>
+							<th>Deskripsi</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>matrix(<i>n,n,n,n,n,n</i>)</td>
+							<td>Mendefinisikan 2D transformation, menggunakn sebuah matrix dari enam nilai</td>
+						</tr>
+						<tr>
+							<td> translate(<i>x,y</i>) </td>
+							<td> Mendefinisikan 2D translation, menggerakan element sepanjang sumbu-X dan sumbu-Y </td>
+						</tr>
+						<tr>
+							<td> translateX(<i>n</i>) </td>
+							<td> Mendefinisikan 2D translation, menggerakan element sepanjang sumbu-X </td>
+						</tr>
+						<tr>
+							<td> translateY(<i>n</i>) </td>
+							<td> Mendefinisikan 2D translation, menggerakan element sepanjang sumbu-Y </td>
+						</tr>
+						<tr>
+							<td> scale(<i>x,y</i>) </td>
+							<td> Mendefinisikan 2D scale  transformation, mengubah lebar dan tinggi element </td>
+						</tr>
+						<tr>
+							<td> scaleX(<i>n</i>) </td>
+							<td> Mendefinisikan 2D scale transformation, mengubah lebar element </td>
+						</tr>
+						<tr>
+							<td> scaleY(<i>n</i>) </td>
+							<td> Mendefinisikan 2D scale transformation, mengubah tinggi element </td>
+						</tr>
+						<tr>
+							<td> skew(<i>sudut-x, sudut-y</i>) </td>
+							<td> Mendefinisikan 2D skew transformation sepanjang sudut-X dan sudut-Y </td>
+						</tr>
+						<tr>
+							<td> skewX(<i>sudut</i>) </td>
+							<td> Mendefinisikan 2D skew transformation sepanjang sudut-X </td>
+						</tr>
+						<tr>
+							<td> skewY(<i>sudut</i>) </td>
+							<td> Mendefinisikan 2D skew transformation sepanjang sudut-Y </td>
+						</tr>
+						<tr>
+							<td> rotate() </td>
+							<td> Mendefinisikan 2D rotation, sudut/angle ditentukan dalam parameter  </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS3 fonts.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS3 3D transforms.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

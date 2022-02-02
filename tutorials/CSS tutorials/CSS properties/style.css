@@ -1,0 +1,105 @@
+
+
+
+.table td:nth-child(3) a, .definition td:nth-child(3) a {
+	padding:5px;
+	background:yellow;
+}
+	.table td:nth-child(3)  {
+		width:20%;
+		padding:10px 5px;
+	}
+	/*
+	.table td:nth-child(3) a:hover, .definition td:nth-child(3) a:hover {
+		background-color:yellow;
+		color:blue;
+	}
+	*/
+.table td:first-child a {
+ 	color:inherit;
+ 	text-decoration:underline;
+ }
+ 	.table tr:hover td:first-child a{
+ 		color:blue;
+ 	}
+.simple-example {
+	text-align:left;
+}
+
+.table tr:hover i, .definition  tr:hover i{
+	color:grey;
+}
+
+.definition {
+	margin: 10px 0;
+}
+
+.definition {
+	width:100%;
+}
+	.definition, .definition tr, .definition td, .definition th{
+		border-collapse:collapse;
+		border:1px white solid;
+		padding:10px;
+		font-size:small;
+		text-align:left;
+	}
+	.definition td:nth-last-child(3)  {
+		text-align:right;
+		width:20%;
+		padding:10px 2px;
+		text-overflow:clip;
+	}
+	
+	.definition a{
+		color:blue;
+		text-align:left;
+	}
+		.definition a:hover {
+			text-decoration:underline;
+		}
+		.definition tr, .definition td, .definition th, .definition {
+			border:none;
+			border-bottom:1px white solid;
+		}
+			.definition tr:hover {
+				background-color:#cccccc;
+				color:#000000;
+			}
+			
+/*ERORR*/
+.error{
+	width:50%;
+	padding:30px;
+	font-size:2em;
+	color:red;
+	opacity:1.0;
+	-webkit-transform:rotate(-25deg);
+	-moz-transform:rotate(-25deg);
+	-o-transform:rotate(-25deg);
+	transform:rotate(-25deg);
+	border:5px red solid;
+	position:fixed;
+	top:50%;
+	left:20%;
+	text-align:center;
+	font-family:'Times New Roman', New, serif;
+	-webkit-animation-name:error;
+	-webkit-animation-duration:5s;
+	-webkit-animation-iteration-count:infinite;
+	-moz-animation-name:error;
+	-moz-animation-duration:5s;
+	-moz-animation-iteration-count:infinite;
+	animation-name:error;
+	animation-duration:5s;
+	animation-iteration-count:infinite;
+}
+	@-webkit-keyframes error{
+		50% {opacity:0.0;}
+	}
+	@-moz-keyframes error{
+		50% {opacity:0.0;}
+	}
+	@keyframes error{
+		50% {opacity:0.0;}
+	}

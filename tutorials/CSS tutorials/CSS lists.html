@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS Lists </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+.list li{
+	background-color:brown;
+	margin-bottom:5p;
+}
+.list {
+	margin:5px;
+}
+ul.a {
+list-style-type: circle;
+}
+
+ul.b {
+list-style-type: square;
+}
+
+ol.c {
+list-style-type: upper-roman;
+}
+
+ol.d {
+list-style-type: lower-alpha;
+}
+ul.e {list-style-image:url("../logos/search.png");}
+ul.f {list-style-position:inside;}
+ul.g {list-style-position:outside;}
+ul.h {list-style: square inside url('../logos/search.png');}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Lists </h1>
+					
+					<div class="col-6 col-m-12">
+							<div style="background:red; max-height:200px;"  class="list">
+								<ol style="list-style-position:outside;">
+									<li>Coffee</li>
+									<li>Tea</li>
+									<li>Coca Cola</li>
+								</ol>
+							</div>
+					</div>
+					
+					<div class="col-6 col-m-12">
+							<div style="background:blue; max-height:200px;" class="list">
+								<ul style="list-style-position:inside;">
+									<li>Coffee</li>
+									<li>Tea</li>
+									<li>Coca Cola</li>
+								</ul>
+							</div>
+					</div>
+			
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> HTML Lists and CSS List Properties </h2>
+				<p> Pada HTML, ada dua tipe utama dari list (daftar):</p>
+				<ul>
+					<li> unordered list (<<b>ul</b>>) - List item ditandai dengan bullet </li>
+					<li> ordered list (<<b>ol</b>>) - List item ditandai dengan nomor atau huruf </li>
+				</ul>
+				<p> Properti list CSS memperbolehkan kamu untuk: </p>
+				<ul>
+					<li> Mengatur penanda list item yang berbeda untuk ordered list </li>
+					<li> Mengatur penanda list item yang berbeda untuk unordered list </li>
+					<li> Mengatur sebuah image sebagau oenanda list item</li>
+					<li> Menambahkan background warna untuk list dan list item </li>
+				</ul>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Different List Item Markers </h2>
+				<p> Penanda List Item yang berbeda </p>
+				<p> Properti <mark>list-style-type</mark> digunakan untuk menentukan tipe penanda list item.</p>
+				<p> Contoh berikut menampilkan beberapa penanda list item yang tersedia:</p>
+				<article class="example-box">
+					<h4>Contoh</h4>
+					<div class="example-content">
+					
+					ul.a {
+					<blockquote>
+					    list-style-type: circle;
+					</blockquote>
+					} <br>
+					<br>
+					ul.b {
+					<blockquote>
+					    list-style-type: square;
+					</blockquote>
+					}<br>
+					<br>
+					ol.c {
+					<blockquote>
+					    list-style-type: upper-roman;
+					</blockquote>
+					}<br>
+					<br>
+					ol.d {
+					<blockquote>
+					    list-style-type: lower-alpha;
+					</blockquote>
+					}
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						
+						<p>Example of unordered lists:</p>
+						<ul class="a">
+							<li>Coffee</li>
+							<li>Tea</li>
+							<li>Coca Cola</li>
+						</ul>
+						
+						<ul class="b">
+							<li>Coffee</li>
+							<li>Tea</li>
+							<li>Coca Cola</li>
+						</ul>
+						
+						<p>Example of ordered lists:</p>
+						<ol class="c">
+							<li>Coffee</li>
+							<li>Tea</li>
+							<li>Coca Cola</li>
+						</ol>
+						
+						<ol class="d">
+							<li>Coffee</li>
+							<li>Tea</li>
+							<li>Coca Cola</li>
+						</ol>
+					
+					</div>
+				</article>
+				
+				<p><b>Catatan:</b> Beberapa nilai untuk unordered list, dan beberapa untuk ordered list.</p>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> An Image as The List Item Marker</h2>
+				<p> Sebuah image sebagai Penanda List Item</p>
+				<p> Properti <mark>list-style-image</mark> digunakan untuk menentukan sebuah image sebagai penanda list item:</p>
+				
+				<article class="example-box">
+					<h4>Contoh</h4>
+					<div class="example-content">
+					
+						ul.e {
+						<blockquote>
+						    list-style-image: url('sqpurple.gif');
+						</blockquote>
+						}
+				
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<ul class="e">
+							<li>Coffee</li>
+							<li>Tea</li>
+							<li>Coca Cola</li>
+						</ul>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Position The List Item Markers </h2>
+				<p> Properti <mark>list-style-position</mark> menentukan apakah penanda list itrm harus tampak didalam atau diluar content flow: </p>
+				
+				<article class="example-box">
+					<h4>Contoh</h4>
+					<div class="example-content">
+				ul {
+				    list-style-position: inside;
+				}
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+						<p>The following list has list-style-position: inside:</p>
+						<ul class="f">
+							<li>Coffee</li>
+							<li>Tea</li>
+							<li>Coca Cola</li>
+						</ul>
+						
+						<p>The following list has list-style-position: outside:</p>
+						<ul class="g">
+							<li>Coffee</li>
+							<li>Tea</li>
+							<li>Coca Cola</li>
+						</ul>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>List - Shorthand property </h2>
+				<p> Properti <mark>list-style</mark> merupakan shorthand property. Ini digunakan untuk mengatur semua properti list dalam satu deklarasi: </p>
+				<article class="example-box">
+					<h4>Contoh</h4>
+					<div class="example-content">
+					
+						ul {
+						<blockquote>
+						    list-style: square inside url('sqpurple.gif');
+						</blockquote>
+						}
+						
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+						<ul class="h">
+							<li>Coffee</li>
+							<li>Tea</li>
+							<li>Coca Cola</li>
+						</ul>
+					
+					</div>
+				</article>
+				
+				<p> Ketika menggunakan shorthand property, urutan dari nilai properti adalah:</p>
+				<ul>
+					<li> <mark>list-style-type</mark> (jika sebuah list-style-image ditentukan, nilai dsri properti inu akan ditampilkan jika image untuk beberapa alasan tidak bisa ditampilkan)</li>
+					<li> <mark>list-style-position</mark> (menentukan apakah penanda list item harus tampak didalam atau dikuar content flow)</li>
+					<li> <mark>list-style-image</mark> (menentukan sebuah image sebagai penanda list item)</li>
+				</ul>
+				<p> Jika salah satu dari nilai properti diatas dihilangkan, nilai default untuk properti yang hilang akan disisipkan, jika ada. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Styling List With Colors</h2>
+				<p> Kita bisa juga menggayakan (style) list dengan warna, untuk memebuatnya terlihat sedikit lebih menarik. </p>
+				<p> Apapun yang ditambahlan ke tag <<b>ol</b>> atau <<b>ul</b>>, berefek untuk keseluruhan list, saat properti ditambahkan ke tag <<b>ol</b>> akan berefek kepada satu item list saja.</p>
+				
+				<article class="example-box">
+					<h4>Contoh</h4>
+					<div class="example-content">
+					
+					ol {
+					<blockquote>
+					    background: #ff9999; <br>
+					    padding: 20px;
+					</blockquote>
+					}<br>
+					<br>
+					ul {
+					<blockquote>
+					    background: #3399ff; <br>
+					    padding: 20px;
+					</blockquote>
+					}<br>
+					<br>
+					ol li {
+					<blockquote>
+					    background: #ffe5e5; <br>
+					    padding: 5px; <br>
+					    margin-left: 35px;
+					</blockquote>
+					} <br>
+					<br>
+					ul li {
+					<blockquote>
+					    background: #cce5ff; <br>
+					    margin: 5px;
+					</blockquote>
+					}
+					
+					</div>
+					<button onclick="tampilkan05()" class="exbutton">Klik disini</button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+					
+						<p> Ordered list with CSS:</p>
+						<ol style="background: #ff9999; padding:20px; color:black;">
+							<li style="background: #ffe5e5; padding: 5px; margin-left:35px;">Coffee</li>
+							<li style="background: #ffe5e5; padding: 5px; margin-left:35px;">Tea</li>
+							<li style="background: #ffe5e5; padding: 5px; margin-left:35px;">Coca Cola</li>
+						</ol>
+						
+						<p> Unordered list with CSS:</p>
+						<ul style="background: #3399ff; padding: 20px; color:black;">
+							<li style="background: #cce5ff; margin: 5px;">Coffee</li>
+							<li style="background: #cce5ff; margin: 5px;">Tea</li>
+							<li style="background: #cce5ff; margin: 5px;">Coca Cola</li>
+						</ul>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>All CSS List Properties</h2>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Properti</th>
+							<th>Deksripsi</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> list-style</td>
+							<td> Mengatur semua properti untuk list dalam satu deklarasi</td>
+						</tr>
+						<tr>
+							<td> list-style-image</td>
+							<td> Menentukan sebuah image sebagai penands list-item </td>
+						</tr>
+						<tr>
+							<td> list-style-position</td>
+							<td> Menentukan jika penanda list item harus tampak didslsm atau diluar content flow </td>
+						</tr>
+						<tr>
+							<td> list-style-type</td>
+							<td> Menentukan tipe dari penanda list item</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS links.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS tables.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS references | CSS referensi  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="../tutorial.css">
+<link rel="stylesheet" type="text/css" href="../style.css">
+<script type="text/javascript" src="../buka.js"></script>
+<script type="text/javascript" src="../../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../.,/HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+#myDIV { 
+width: 300px; 
+height: 200px; 
+background: red; 
+-webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */ 
+animation: mymove 5s infinite; 
+} 
+
+/* Code for Chrome, Safari and Opera */ 
+@-webkit-keyframes mymove {
+from {background-color: red;} 
+to {background-color: blue;} 
+} 
+
+/* Standard syntax */ 
+@keyframes mymove { 
+from {background-color: red;} 
+to {background-color: blue;} 
+} 
+
+
+
+.table td:nth-child(2){
+    text-align:right;
+}
+
+.table a{
+    padding:7px;
+    background-color:yellow;
+}
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Animatable </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> Definition and Usage </h2>
+				<p> Penjelasan dan Penggunaan</p>
+				
+				<p> Beberapa properti CSS merupakan animatable, berarti bahwa properti itu bisa digunakan dalam <strong>animation</strong> dan <strong>transition</strong>.</p>
+				<p> Properti (yang termasuk) animatable bisa berubah secara berangsung-angsur dari satu nilai ke nilai lainnya, seperti ukuran, nomor, persen dan warna.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Browser Support</h2>
+				<p> Nomor dalam tabel menentukan browser versi pertama yang mendukung secara penuh CSS animation.</p>
+				<p> Nomor-nomor yang diikuti dengan <mark>-webkit-</mark>, <mark>-moz-</mark>, atau <mark>-o-</mark> menentukan versi pertama yang berkerja dengan awalan kata.</p>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> <img src="../../logos/Chrome.png"> </td>
+							<td> <img src="../../logos/IE.png"> </td>
+							<td> <img src="../../logos/Firefox.png"> </td>
+							<td> <img src="../../logos/Safari.png"> </td>
+							<td> <img src="../../logos/Opera.png"> </td>
+						</tr>
+						<tr>
+							<td> 4.0 -webkit- </td>
+							<td> 10.0 </td>
+							<td> 16.0 <br> 5.0 -moz- </td>
+							<td> 4.0 -webkit- </td>
+							<td> 15.0 -webkit- <br> 12.1 <br> 12.0 -o-</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Example</h2>
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<p> Menganimasikan background-color dari merah menjadi biru:</p>
+					<div class="example-content" id="content-open01">
+						
+						<em>/* Code for Chrome, Safari and Opera */</em> <br>
+						@-webkit-keyframes mymove { <br>
+						from {background-color: red;} <br>
+						to {background-color: blue;} <br>
+						} <br>
+						 <br>
+						<em>/* Standard syntax */</em> <br>
+						@keyframes mymove { <br>
+						from {background-color: red;} <br>
+						to {background-color: blue;} <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						#myDIV { <br>
+						width: 300px; <br>
+						height: 200px; <br>
+						background: red; <br>
+						-webkit-animation: mymove 5s infinite; <em>/* Chrome, Safari, Opera */</em> <br>
+						animation: mymove 5s infinite; <br>
+						} <br>
+						 <br>
+						<em>/* Code for Chrome, Safari and Opera */</em> <br>
+						@-webkit-keyframes mymove { <br>
+						from {background-color: red;} <br>
+						to {background-color: blue;} <br>
+						} <br>
+						 <br>
+						<em>/* Standard syntax */</em> <br>
+						@keyframes mymove { <br>
+						from {background-color: red;} <br>
+						to {background-color: blue;} <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>>Gradually change the background-color from red, to blue:<<b>p</b>>
+						<<b>div</b>  <span class="teal">id="myDIV"</span>><<b>/div</b>>
+						
+						<<b>p</b>>The background-position property is <<b>em</b>>animatable<<b>/em</b>> in CSS.<<b>/p</b>>
+						<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> CSS Animations do not work in Internet Explorer 9 and earlier versions.<<b>/p</b>>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<p>Gradually change the background-color from red, to blue:<p>
+						<div id="myDIV"></div>
+						
+						<p>The background-position property is <em>animatable</em> in CSS.</p>
+						<p><strong>Note:</strong> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+					
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Animatable Properties</h2>
+				
+				<p> Properti-properti ini adalah animatable (bersifat dapat beranimasi) di CSS:</p>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Properti</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> background </td>
+							<td> <a href="animatable/background.html" > Klik disini </a> </td>
+						</tr>
+						<tr>
+							<td> background-color </td>
+							<td> <a href="animatable/background-color.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> background-position </td>
+							<td> <a href="animatable/background-position.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> background-size </td>
+							<td> <a href="animatable/background-size.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> border </td>
+							<td> <a href="animatable/border.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> border-bottom </td>
+							<td> <a href="animatable/border-bottom.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> border-bottom-color </td>
+							<td> <a href="animatable/border-bottom-color.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> border-bottom-left-radius </td>
+							<td> <a href="animatable/border-bottom-left-radius.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> border-bottom-right-radius </td>
+							<td> <a href="animatable/border-bottom-right-radius.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> border-bottom-width </td>
+							<td> <a href="animatable/border-bottom-width.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> border-color </td>
+							<td> <a href="animatable/border-color.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> border-left </td>
+							<td> <a href="animatable/border-left.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> border-left-color </td>
+							<td> <a href="animatable/border-left-color.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> border-left-width </td>
+							<td> <a href="animatable/border-left-width.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> border-right </td>
+							<td> <a href="animatable/border-right.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> border-right-color </td>
+							<td> <a href="animatable/border-right-color.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> border-right-width </td>
+							<td> <a href="animatable/border-right-width.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> border-spacing </td>
+							<td> <a href="animatable/border-spacing.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> border-top </td>
+							<td> <a href="animatable/border-top.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> border-top-color </td>
+							<td> <a href="animatable/border-top-color.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> border-top-left-radius </td>
+							<td> <a href="animatable/border-top-left-radius.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> border-top-right-radius </td>
+							<td> <a href="animatable/border-top-right-radius.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> border-top-width </td>
+							<td> <a href="animatable/border-top-width.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> bottom </td>
+							<td> <a href="animatable/bottom.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> box-shadow </td>
+							<td> <a href="animatable/box-shadow.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> clip </td>
+							<td> <a href="animatable/clip.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> color </td>
+							<td> <a href="animatable/color.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> column-count </td>
+							<td> <a href="animatable/column-count.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> column-gap </td>
+							<td> <a href="animatable/column-gap.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> column-rule </td>
+							<td> <a href="animatable/column-rule.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> column-rule-color </td>
+							<td> <a href="animatable/column-rule-color.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> column-rule-width </td>
+							<td> <a href="animatable/column-rule-width.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> columns </td>
+							<td> <a href="animatable/columns.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> filter </td>
+							<td> <a href="animatable/filter.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> flex </td>
+							<td>  </td>
+						</tr>
+						<tr>
+							<td> flex-basis </td>
+							<td> <a href="animatable/flex-basis.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> flex-grow </td>
+							<td> <a href="animatable/flex-grow.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> flex-shrink </td>
+							<td> <a href="animatable/flex-shrink.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> font </td>
+							<td> <a href="animatable/font.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> font-size </td>
+							<td> <a href="animatable/font-size.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> font-size-adjust </td>
+							<td>  </td>
+						</tr>
+						<tr>
+							<td> font-stretch </td>
+							<td>  </td>
+						</tr>
+						<tr>
+							<td> font-weight </td>
+							<td> <a href="animatable/font-weight.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> height </td>
+							<td> <a href="animatable/height.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> left </td>
+							<td> <a href="animatable/left.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> letter-spacing </td>
+							<td> <a href="animatable/letter-spacing.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> line-height </td>
+							<td> <a href="animatable/line-height.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> margin </td>
+							<td> <a href="animatable/margin.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> margin-bottom </td>
+							<td> <a href="animatable/margin-bottom.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> margin-left </td>
+							<td> <a href="animatable/margin-left.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> margin-right </td>
+							<td> <a href="animatable/margin-right.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> marhin-top </td>
+							<td> <a href="animatable/margin-top.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> maz-height </td>
+							<td> <a href="animatable/max-height.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> max-width </td>
+							<td> <a href="animatable/max-width.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> min-height </td>
+							<td> <a href="animatable/min-height.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> min-width </td>
+							<td> <a href="animatable/min-width.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> opacity </td>
+							<td> <a href="animatable/opacity.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> order </td>
+							<td> <a href="animatable/order.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> outline </td>
+							<td> <a href="animatable/outline.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> outline-color </td>
+							<td> <a href="animatable/outline-color.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> outline-offset </td>
+							<td> <a href="animatable/outline-offset.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> outline-width </td>
+							<td> <a href="animatable/outline-width.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> padding </td>
+							<td> <a href="animatable/padding.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> padding-bottom </td>
+							<td> <a href="animatable/padding-bottom.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> padding-left </td>
+							<td> <a href="animatable/padding-left.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> padding-right </td>
+							<td> <a href="animatable/padding-right.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> padding-top </td>
+							<td> <a href="animatable/padding-top.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> perspective </td>
+							<td> <a href="animatable/perspective.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> perspective-origin </td>
+							<td> <a href="animatable/perspective-origin.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> right </td>
+							<td> <a href="animatable/right.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> text-decoration-color </td>
+							<td> <a href="animatable/text-decoration-color.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> text-indent </td>
+							<td> <a href="animatable/text-indent.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> top </td>
+							<td> <a href="animatable/top.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> transform </td>
+							<td> <a href="animatable/transform.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> transform-origin </td>
+							<td> <a href="animatable/transform-origin.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> vertical-align </td>
+							<td> <a href="animatable/vertical-align.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> visibility </td>
+							<td> <a href="animatable/visibility.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> width </td>
+							<td> <a href="animatable/width.html" > Klik disini</a> </td>
+						</tr>
+						<tr>
+							<td> z-index </td>
+							<td> <a href="animatable/z-index.html" > Klik disini</a> </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS web safe fonts.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS units.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML5 semantics </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+<style type="text/css">
+.utama {
+	padding:10px;
+	box-sizing:border-box;
+	margin:0;
+	min-height:400px;
+	font:14px verdana;
+}
+.kepala {
+	width:100%;
+	color:white;
+	background-color:black;
+	padding:10px;
+}
+.kiri {
+	width:20%;
+	padding:5px;
+	background:orange;
+	height:300px;
+} 
+.kiri ul {list-style:none;}
+.kiri ul li {line-height:2.5;}
+.badan {
+	padding:15px;
+	width:80%;
+	height:300px;
+	line-height:1.5;
+} .badan h3 {
+	 text-align:center;
+	 color:teal;
+   }
+.kaki {
+	background:black;
+	text-align:center;
+	width:100%;
+	padding:5px;
+	color:orange;
+}
+.kepala, .kiri, .badan, .kaki {
+	float:left;
+}
+#tab {
+	text-align:center;
+	height:200px;
+} 
+#tab td {
+	padding:10px;
+	background:white;
+	border:5px silver solid;
+	border-collapse:separate;
+	border-spacing:10px;
+}
+.list ul li {
+	line-height:1.5;
+}
+.semantik {
+	width:100%;
+}
+.utama-semantik {
+	min-height:400px;
+}
+img {margin-left:5px;}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML5 Semantic Elements </h1>
+				<p> Semantik adalah pelajaran tentang pengartian kata dan ungkapan atau ucapan (phrases) dalam bahasa. </p>
+				<p> Element semantik adalah element dengan sebuah arti. </p>
+			</div>
+			
+			
+<section>			
+			<article>
+				<h2> Apa itu Element Semantik ? </h2>
+				<p> Suatu element semantik dengan jelas mendeskripsikan atau menggambarkan arti element itu untuk browser dan developer. </p>
+				<p> Contoh element non-semantic: <<b>div</b>>, dan <<b>span</b>> - Tidak memberitahukan apapun tentang kontennya. </p>
+				<p> Contoh element semantic: <<b>form</b>>, <<b>table</b>>, dan <<b>img</b>> - Secara jelas mendefinisikan konten itu sendiri. </p>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Browser Support </h2>
+				<img src="../logos/Chrome.png" width="7%" >
+				<img src="../logos/IE.png" width="7%" >
+				<img src="../logos/Firefox.png" width="7%" >
+				<img src="../logos/Safari.png" width="7%" >
+				<img src="../logos/Opera.png" width="7%" >
+				
+				<p> Element semantik HTML5 didukung di semua browser modern. </p>
+				<p> Pada penambahan, kamu bisa "mengajarkan" browser versi lebih lama bagaimana untuk menangani "unknown elements". </p>
+				<p> Bacalah lebih tentang ini di <a href="HTML5 browser support.html" >HTML5 Browser Support</a>.</p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> New Semantic Elements in HTML5 </h2>
+				
+				<p>
+				Banyak web site yang berisikan kode HTML seperti: <<b>div</b> <span class="teal">id="nav"</span>>, 
+				<<b>div</b> <span class="teal">id="header"</span>>, <<b>div</b> <span class="teal">id="footer"</span>> 
+				untuk mengindikasikan navigation, header dan footer.
+				</p>
+				<p> HTML5 menawarkan element - element semantik baru untuk mendefinisikan bagian - bagian dari sebuah halaman web yang berbeda: </p>
+				
+				<div class="utama-semantik">
+					<div class="col-m-3 col-3">
+						<ul class="list">
+							<li> <<b>header</b>> </li>
+							<li> <<b>nav</b>> </li> 
+							<li> <<b>section</b>> </li>
+							<li> <<b>article</b>> </li>
+							<li> <<b>aside</b>> </li>
+							<li> <<b>footer</b>> </li>
+							<li> <<b>details</b>> </li>
+							<li> <<b>summary</b>> </li>
+							<li> <<b>figcaption</b>> </li>
+							<li> <<b>figure</b>> </li>
+							<li> <<b>main</b>> </li>
+							<li> <<b>mark</b>> </li>
+							<li> <<b>time</b>> </li>
+						</ul>
+					</div>
+					
+					<div class="col-m-9 col-9">
+						<table width="100%" id="tab">
+							<tr>
+								<td colspan="2"> <<b>header</b>> </td>
+							</tr>
+							<tr>
+								<td colspan="2"> <<b>nav</b>> </td>
+							</tr>
+							<tr>
+								<td width="80%" height="100px"> <<b>section</b>> </td>
+								<td rowspan="2"> <<b>aside</b>> </td>
+							</tr>
+							<tr>
+								<td width="80%" height="50px"> <<b>article</b>> </td>
+							</tr>
+							<tr>
+								<td colspan="2" width="100%"> <<b>footer</b>> </td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML5 <b class="blue"><<b>section</b>></b> Element </h2>
+				<p> Element <<b>section</b>> mendefinisikan sebuah sesi (bagian) dalam sebuah dokumen. </p>
+				<p> Berdasarkan pada dokumentasi HTML5 W3C: "Section adalah sebuah pengelompokan tematik tentang konten, secara tipe dengan sebuah heading."</p>
+				<p> Sebuah Web site's home page bisa dirobek (split) kedalam sesi untuk introduction  (pengenalan), content (isian), dan contact information (informasi kontak). </p>
+				
+				<article class="example-box">
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE</b> <span class="teal">html</span>><br>
+						<<b>html</b>><br>
+							<<b>head</b>> <br>
+							<!--	<blockquote>
+								<<b>title</b>> Penciptaan Sebuah Element HTML Baru <<b>/title</b>> <br>
+								</blockquote> -->
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br><br>
+								
+								<blockquote>
+								<<b>section</b>> <br>
+								<<b>h1</b>>WWF<<b>/h1</b>> <br>
+								<<b>p</b>>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.<<b>/p</b>> <br>
+								<<b>/section</b>> <br>
+								<br>
+								<<b>section</b>>
+								<<b>h1</b>>WWF's Panda symbol<<b>/h1</b>>
+								<<b>p</b>>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.<<b>/p</b>> <br>
+								<<b>/section</b>> <br>
+								</blockquote>
+								
+							<<b>/body</b>><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						
+						<section>
+						<h3>WWF</h3>
+						<p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+						</section>
+						
+						<section>
+						<h3>WWF's Panda symbol</h3>
+						<p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+						</section>
+						
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> HTML5 <b class="blue"><<b>article</b>></b> Element </h2>
+				<p> Element <<b>article</b>> mendefinisikan kebebasan (independent), konten berisi dirinya sendiri (self-contained content). </p>
+				<p> Sebuah article harus membuat pengertian pada miliknya sendiri, dan article harus memungkinkan untuk membacanya secara bebas dari pengistirahatan website. </p>
+				<p> Contoh dimana element <<b>article</b>> bisa digunakan: </p>
+				
+				<ul>
+					<li> Forum post </li>
+					<li> Blog post </li>
+					<li> Newspaper article </li>
+				</ul>
+				
+				<article class="example-box">
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE</b> <span class="teal">html</span>><br>
+						<<b>html</b>><br>
+							<<b>head</b>> <br>
+							<!--	<blockquote>
+								<<b>title</b>> Penciptaan Sebuah Element HTML Baru <<b>/title</b>> <br>
+								</blockquote> -->
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br><br>
+								
+								<blockquote>
+								<<b>article</b>> <br>
+								  <<b>h1</b>>What Does WWF Do?<<b>/h1</b>> <br>
+								  <<b>p</b>>WWF's mission is to stop the degradation of our planet's natural environment,
+								  and build a future in which humans live in harmony with nature.<<b>/p</b>> <br>
+								<<b>/article</b>>
+								</blockquote>
+								
+							<<b>/body</b>><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan02()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+						
+						<article>
+						  <h3>What Does WWF Do?</h3>
+						  <p>WWF's mission is to stop the degradation of our planet's natural environment,
+						  and build a future in which humans live in harmony with nature.</p>
+						</article>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Nesting Semantic Elements </h2>
+				<p> Pada standar HTML5, element <<b>article</b>> mendefinisikan sebuah lengkapan, self-contained block of related elements. </p>
+				<p> Element <<b>section</b>> didefinisiksn sebagai element blok dari hubungan. </p>
+				<p> Bisakah kita menggunakan pendefinisian untuk memutuskan bagaiaman untuk menyarangkan (nest)? Atau tidak !</p>
+				<p> Di internet, kamu akan menemukan halaman HTML dengan element <<b>section</b>> berisikan element <<b>article</b>>, dan element <<b>article</b>> berisikan element <<b>section</b>>. </p>
+				<p> Kamu akan menemukan halaman dengan element <<b>section</b>> berisikan element <<b>section</b>> dan element <<b>article</b>> berisikan element <<b>article</b>>. </p>
+				<div class="nasehat"> 
+				Newspaper: <b>artikel</b> olahraga dalam <b>sesi</b> olahraga, memiliki <b>sesi</b> teknis dalam setiap <b>artikel</b>. 
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML5 <b class="blue"><<b>header</b>></b> Element </h2>
+				<p> Element <<b>header</b>> menentukan sebuah header (kepala) untuk sebuah dokumen atau sesi. </p>
+				<p> Element <<b>header</b>> lebih baik digunakan sebagai container untuk konten pengantar. </p>
+				<p> Kamu bisa memiliki beberapa element <<b>header</b>> dalam satu dokumen. </p>
+				<p> Contoh berikut mendefinisikan sebuah header untuk sebuah article: </p>
+				
+				<article class="example-box">
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE</b> <span class="teal">html</span>><br>
+						<<b>html</b>><br>
+							<<b>head</b>> <br>
+							<!--	<blockquote>
+								<<b>title</b>> Penciptaan Sebuah Element HTML Baru <<b>/title</b>> <br>
+								</blockquote> -->
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br><br>
+								
+								<blockquote>
+								<<b>article</b>> <br>
+								  <<b>header</b>> <br>
+								    <<b>h1</b>>What Does WWF Do?<<b>/h1</b>> <br>
+								    <<b>p</b>>WWF's mission:<<b>/p</b>> <br>
+								  <<b>/header</b>> <br>
+								  <<b>p</b>>WWF's mission is to stop the degradation of our planet's natural environment,
+								  and build a future in which humans live in harmony with nature.<<b>/p</b>> <br>
+								<<b>/article</b>> <br>
+								</blockquote>
+								
+							<<b>/body</b>><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan03()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+						
+						<article>
+						  <header>
+						    <h1>What Does WWF Do?</h1>
+						    <p>WWF's mission:</p>
+						  </header>
+						  <p>WWF's mission is to stop the degradation of our planet's natural environment,
+						  and build a future in which humans live in harmony with nature.</p>
+						</article>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML5 <b class="blue"><<b>footer</b>></b> Element </h2>
+				<p> Element <<b>footer</b>> menentukan sebuah footer (kaki) dari sebuah dokumen atau sesi. </p>
+				<p> Element <<b>footer</b>> lebih baik berisikan informasi tentang element isian itu sendiri. </p>
+				<p> Footer secara khas berisikan autor (penulis)dari dokumen, copyright information, links to terms of use, contact information dan sebagainya. </p>
+				<p> Kamu bisa memiliki beberapa element <<b>footer</b>> dalam satu dokumen. </p>
+				
+				<article class="example-box">
+					<p class="fontWhite">Contoh:</p>
+					<div class="example-content">
+
+					<<b>footer</b>>
+					  <blockquote>
+					  <<b>p</b>>Posted by: Hege Refsnes<<b>/p</b>> <br>
+					  <<b>p</b>>Contact information: <<b>a</b> <span class="teal">href="mailto:someone@example.com"</span>> 
+					  someone@example.com<<b>/a</b>>.<<b>/p</b>> <br>
+					  </blockquote>
+					<<b>/footer</b>>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML5 <b class="blue"><<b>nav</b>></b> Element </h2>
+				<p> Element <<b>nav</b>> mendefinisikan sebuah penyetelan dari navigation link. </p>
+				<p> Element <<b>nav</b>> diterangkan untuk large block of navigation links. Akan tetapi, tidak semua link dalam dokument harus berada didalam element <<b>nav</b>>! </p>
+				<article class="example-box">
+					<p class="fontWhite">Contoh:</p>
+					<div class="example-content">
+					
+					<<b>nav</b>>
+					<blockquote>
+					  <<b>a</b> <span class="teal">href="/html/"</span>>HTML<<b>/a</b>> | <br>
+					  <<b>a</b> <span class="teal">href="/css/"</span>>CSS<<b>/a</b>> | <br>
+					  <<b>a</b> <span class="teal">href="/js/"</span>>JavaScript<<b>/a</b>> | <br>
+					  <<b>a</b> <span class="teal">href="/jquery/"</span>>jQuery<<b>/a</b>>
+					</blockquote>
+					<<b>/nav</b>>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML5 <b class="blue"><<b>aside</b>></b> Element </h2>
+				<p> Element <<b>aside</b>> mendefinisikan bebrapa konten disamping dari konten utama (seperti sebuah sidebar). </p>
+				<p> Konten aside lebih baik dihubungkan ke konten berlingkup (surrounding content). </p>
+				
+				<article class="example-box">
+					<p class="fontWhite">Contoh:</p>
+					<div class="example-content">
+					
+					<<b>p</b>>My family and I visited The Epcot center this summer.<<b>/p</b>> <br>
+					<<b>aside</b>>
+					<blockquote>
+					  <<b>h4</b>>Epcot Center<<b>/h4</b>> <br>
+					  <<b>p</b>>The Epcot Center is a theme park in Disney World, Florida.<<b>/p</b>>
+					</blockquote>
+					<<b>/aside</b>>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML5 <b class="blue"><<b>figure</b>></b> and <b class="teal"><<b>figcaption</b>></b> Elements </h2>
+				<p> Dalam buku dan koran, ini merupakan umum untuk memilikk caption dengan gambar. </p>
+				<p> Tujuan dari sebuah caption adalah untuk menambahkan sebuah penjelasan visual ke sebuah gambar. </p>
+				<p> Dengan HTML5, gambar dan caption bisa dikelompokan bersa,a dslam sebuah element <<b>figure</b>>: </p>
+				
+				<article class="example-box">
+					<p class="fontWhite">Contoh:</p>
+					<div class="example-content">
+					
+					<<b>figure</b>>
+					<blockquote>
+					  <<b>img</b> <span class="teal">src="pic_mountain.jpg" alt="The Pulpit Rock" width="304" height="228"</span>> <br>
+					  <<b>figcaption</b>>Fig1. - The Pulpit Rock, Norway.<<b>/figcaption</b>>
+					</blockquote>
+					<<b>/figure</b>>
+				
+				</div>
+				
+				<p> Element <<b>img</b>> mendefinisikan gambar, element <<b>figcaption</b>> mendefinisikan sebuah caption (keterangan atau judul). </p>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Why Semantic HTML5 Elements? </h2>
+				
+				<p> Dengan HTML4, para pengembang menggunakan nama attribute favorit mereka untuk style page elements, seperti: </p>
+				<p> header, top, bottom, footer, menu, navigation, main, container, content, article, sidebar, topnav, ... </p>
+				<p> Ini membuat ia tidak mungkin untuk search engines  (mesin pencari) untuk mengidentifikasi konten web page yang benar. </p>
+				<p> Dengan element HTML5 seperti: <<b>header</b>>, <<b>footer</b>>, <<b>nav</b>>, <<b>section</b>>, <<b>article</b>>, dengan ini akan menjadi lebih mudah. </p>
+				<p> Perdasarkan pada W3F, sebuah Web Semantik: </p>
+				<div class="center">
+				<p>"Mengizinkan data untuk dibagikan dan digunakan kembali dari satu ke sisi lain applications, enterprises, dan communities."</p>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Semantic Elements in HTML5 </h2>
+				<p> Dibawah ini adalah sebuah daftar alfabet tentang element semantik baru di HTML5. </p>
+				<p> Kunjungi juga <a href="HTML5 reference.html" >Referensi HTML</a>. </p>
+				
+
+				
+				<table>
+					<thead>
+						<tr>
+							<th> Tag </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> <<b>article</b>> </td>
+							<td> Mendefinisikan sebuah artikel dalam sebuah dokumen </td>
+						</tr>
+						<tr>
+							<td> <<b>aside</b>> </td>
+							<td> Mendefinisikan konten samping dari halaman konten utama </td>
+						</tr>
+						<tr>
+							<td> <<b>details</b>> </td>
+							<td> Mendefinisikan penambahan details (rincian) yang bisa pengguna perlihatkan atau sembunyikan</td>
+						</tr>
+						<tr>
+							<td> <<b>figcaption</b>> </td>
+							<td> Mendefinisikan sebuah caption untuk sebuah element <<b>figure</b>> </td>
+						</tr>
+						<tr>
+							<td> <<b>figure</b>> </td>
+							<td> Mendefinisikan konten self-contained, seperti illustrasi, diagram, photo, code listings dan sebagainya.</td>
+						</tr>
+						<tr>
+							<td> <<b>footer</b>> </td>
+							<td> Mendefinisikan sebuah footer (kaki) dokumen atau sebuah sesi (bagian) </td>
+						</tr>
+						<tr>
+							<td> <<b>header</b>> </td>
+							<td> Mendefinisikan sebuah header (kepala) dokumen atau sebuah sesi (bagian) </td>
+						</tr>
+						<tr>
+							<td> <<b>main</b>> </td>
+							<td> Mendefinisikan konten utama dari sebuah dokumen </td>
+						</tr>
+						<tr>
+							<td> <<b>mark</b>> </td>
+							<td> Mendefinisikan teks yang ditandai atau highlight (cerahkan) </td>
+						</tr>
+						<tr>
+							<td> <<b>nav</b>> </td>
+							<td> Mendefinisikan navigation link dalam dokumen </td>
+						</tr>
+						<tr>
+							<td> <<b>section</b>> </td>
+							<td> Mendefinisikan sebuah sesi (bagian) dalam dokumen </td>
+						</tr>
+						<tr>
+							<td> <<b>summary</b>> </td>
+							<td> Mendefinisikan sebuah heading yang terlihat untuk sebuah element <<b>datalist</b>> </td>
+						</tr>
+						<tr>
+							<td> <<b>time</b>> </td>
+							<td> Mendefinisikan sebuah tanggal atau waktu </td>
+						</tr>
+					</tbody>
+				</table>
+				
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML5 elements.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML5 migration.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

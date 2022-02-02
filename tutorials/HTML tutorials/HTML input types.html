@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML inout types</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+<style type="text/css">
+input, {
+	padding:10px;
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML Input Types </h1>
+
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> Input Types </h2>
+				<p> Chapter ini mendefinisikan tipe - tipe input dari element <<b>input</b>>. </p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Input Type: <b class="yellow">text</b> </h2>
+				<p> <<b>input</b> <span class="teal">type="text"</span>> mendefinisikan sebuah ole-line input field untuk input berupa teks: </p>
+				<article class="example-box">
+					<h3>Contoh</h3>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>form</b>>
+								  <blockquote>
+								  First name:<<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="text" name="firstname"</span>><<b>br</b>> <br>
+								  Last name:<<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="text" name="lastname"</span>>
+								</blockquote>
+								<<b>/form</b>>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						<form>
+						  First name:<br>
+						  <input type="text" name="firstname"><br>
+						  Last name:<br>
+						  <input type="text" name="lastname">
+						</form>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Input Type: <b class="yellow">password</b> </h2>
+				<p> <<b>input</b> <span class="teal">type="password"</span>> mendefinisikan sebuah <b>password field</b>: </p>
+				
+				<article class="example-box">
+					<h3>Contoh</h3>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>form</b>>
+								  <blockquote>
+								  User name:<<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="text" name="username"</span>><<b>br</b>> <br>
+								  User password:<<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="password" name="pswd"</span>>
+								</blockquote>
+								<<b>/form</b>>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan02()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+						<form>
+						  User name:<br>
+						  <input type="text" name="username"><br>
+						 User password:<br>
+						  <input type="password" name="pswd">
+						</form>
+					</div>
+				</article>
+				
+				<div class="nasehat">
+				Karakter dalam sebuah password field <b>disamarkan</b> (ditampilkan seperti <b>asterisks</b> (tanda bintang) atau <b>circles</b> (lingkaran)). 
+				</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Input type: <b class="yellow">submit</b> </h2>
+				
+				<p> <<b>input</b> <span class="teal">type="submit"</span>> mendefinisikan sebuah tombol untuk <b>submitting</b> (penyerahan) formulir ke <b>form-handler</b>. </p>
+				<p> Form-handler secara khas adalah sebuah halaman server dengan sebuah script (naskah) untuk processing input data. </p>
+				<p> Form-handler ditentukan dalam attribute <b>action</b> (aksi) formulir: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>form</b>>
+								  <blockquote>
+									  First name:<<b>br</b>> <br>
+									  <<b>input</b> <span class="teal">type="text" name="firstname" value="Mickey"</span>><<b>br</b>> <br>
+									  Last name:<<b>br</b>> <br>
+									  <<b>input</b> <span class="teal">type="text" name="lastname" value="Mouse"</span>><<b>br</b>><<b>br</b>> <br>
+									  <<b>input</b> <span class="teal">type="submit" value="Submit"</span>>
+								</blockquote>
+								<<b>/form</b>>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan03()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+						
+						<form action="action_page.php">
+						  First name:<br>
+						  <input type="text" name="firstname" value="Mickey"><br>
+						  Last name:<br>
+						  <input type="text" name="lastname" value="Mouse"><br><br>
+						  <input type="submit" value="Submit">
+						</form>
+						
+					</div>
+				</article>
+				
+				<p> Jika kamu menghilangkan attribute <b>value</b> tombol submit, tombol akan mendapat default text: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>form</b>>
+								  <blockquote>
+									  First name:<<b>br</b>> <br>
+									  <<b>input</b> <span class="teal">type="text" name="firstname" value="Mickey"</span>><<b>br</b>> <br>
+									  Last name:<<b>br</b>> <br>
+									  <<b>input</b> <span class="teal">type="text" name="lastname" value="Mouse"</span>><<b>br</b>><<b>br</b>> <br>
+									  <<b>input</b> <span class="teal">type="submit"</span>>
+								</blockquote>
+								<<b>/form</b>>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan04()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+						
+						<form action="action_page.php">
+						  First name:<br>
+						  <input type="text" name="firstname" value="Mickey"><br>
+						  Last name:<br>
+						  <input type="text" name="lastname" value="Mouse"><br><br>
+						  <input type="submit">
+						</form>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Input Type: <b class="yellow">radio</b> </h2>
+				<p> <<b>input</b> <span class="teal">type="radio"</span>> mendefinisikan sebuah radio button. </p>
+				<p> Radio button membiarkan seorsng pengguna memilih HANYA SATU dari nomor terbatas dari pilihan: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/action_page.php"
+								  <blockquote>
+								  <<b>input</b> <span class="teal">type="radio" name="gender" value="male" checked</span>><<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="radio" name="gender" value="female"</span>><<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="radio" name="gender" value="other"</span>><<b>br</b>> <br>
+								</blockquote>
+								<<b>/form</b>>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan05()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+						
+						<form>
+						  <input type="radio" name="gender" value="male" checked> Male<br>
+						  <input type="radio" name="gender" value="female"> Female<br>
+						  <input type="radio" name="gender" value="other"> Other
+						</form>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Input Type: <b class="yellow">checkbox</b> </h2>
+				<p> <<b>input</b> <span class="teal">type="checkbox"</span>> mendefinisikan sebuah checkbox. </p>
+				<p> Checkbox membiarkan pengguna memilih NOL atau LEBIH pilihan dari sebuah nomor terbatas dari pilihan. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/action_page.php"
+								  <blockquote>
+								  <<b>input</b> <span class="teal">type="checkbox" name="vehicle1" value="Bike"</span>> I have a bike <<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="checkbox" name="vehicle2" value="Car"</span>> I have a car <<b>br</b>> <br>
+								</blockquote>
+								<<b>/form</b>>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan06()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+						
+						<form>
+							<input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+							<input type="checkbox" name="vehicle2" value="Car"> I have a car 
+						</form>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Input Type: <b class="yellow">button</b> </h2>
+				<p> <<b>input</b> <span class="teal">type="button"</span>> mendefinisikan sebuah button (tombol). </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+							<<b>button</b> <span class="teal">type="button" onclick="alert('Hello World!')"</span>>Click Me!<<b>/button</b>>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan07()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan07">
+						
+						<form action="action_page.php">
+							<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+						</form>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> HTML5 Input Types</h2>
+				<p>HTML5 menambahkan beberapa tipe input baru:</p>
+				
+				<ul>
+					<li>color</li>
+					<li>date</li>
+					<li>datetime</li>
+					<li>datetime-local</li>
+					<li>email</li>
+					<li>month</li>
+					<li>number</li>
+					<li>range</li>
+					<li>search</li>
+					<li>tel</li>
+					<li>time</li>
+					<li>url</li>
+					<li>week</li>
+				</ul>
+				
+				<div class="nasehat">
+				Tipe - tipe input diatas mungkin tidak didukung oleh web browser versi lama, akan diperlakukan sebagai input type text.
+				</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Input Type: <b class="yellow">number</b> </h2>
+				<p> <<b>input</b> <span class="teal">type="number"</span>> digunakan untuk input field yang harus berisi sebuah nilai numeric. </p>
+				<p> Kamu bisa menyetel restrictions (pembatasan) pada nomor. </p>
+				<p> Tergantung pada browser pendukung, pembatassn bisa menerapkan untuk input field. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>p</b>> <br>
+								Depending on browser support:<<b>br</b>> <br>
+								Numeric restrictions will apply in the input field. <br>
+								<<b>/p</b>> <br>
+								
+								<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/action_page.php"</span>> <br>
+								Quantity (between 1 and 5): <br>
+								<<b>input</b> <span class="teal">type="number" name="quantity" min="1" max="5"</span>> <br>
+								<<b>input</b> <span class="teal">type="submit"</span>> <br>
+								<<b>/form</b>> <br><br>
+								
+								<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> type="number" is not supported in IE9 and earlier.<<b>/p</b>> <br>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan08()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan08">
+						
+						<p>
+						Depending on browser support:<br>
+						Numeric restrictions will apply in the input field.
+						</p>
+						
+						<form action="http://www.w3schools.com/html/action_page.php">
+						Quantity (between 1 and 5):
+						<input type="number" name="quantity" min="1" max="5">
+						<input type="submit">
+						</form>
+						
+						<p><b>Note:</b> type="number" is not supported in IE9 and earlier.</p>
+						
+					</div>
+				</article>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Input Restrictions </h2>
+				<p> Disini adalah sebuah daftar dari beberapa input resrictions umum (beberapa yang baru dalam HTML5): </p>
+				
+				<table>
+					<thead>
+						<tr>
+							<th>Attribute</th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> disabled </td>
+							<td> Menentukan bahwa sebuah input field harus dilumpuhkan atau dinonaktifkan </td>
+						</tr>
+						<tr>
+							<td> max <img src="../logos/html 5.jpg" width="20" height="auto" alt="html5"></td>
+							<td> Menentukan nilai  maksimum untuk sebuah input field </td>
+						</tr>
+						<tr>
+							<td> maxlength </td>
+							<td> Menentukan (panjang) nomor maksimum karakter untuk input field </td>
+						</tr>
+						<tr>
+							<td> min <img src="../logos/html 5.jpg" width="20" height="auto" alt="html5"></td>
+							<td> Menentukan nilai minimum untuk sebuah inout field </td>
+						</tr>
+						<tr>
+							<td> pattern <img src="../logos/html 5.jpg" width="20" height="auto" alt="html5"></td>
+							<td> Menentukan sebuah regular expression untuk mengecek nilai input berlawanan (against) </td> 
+						</tr>
+						<tr>
+							<td> readonly </td>
+							<td> Menentukan bahwa sebuah input field hanya dibaca (tidak bisa diubah) </td>
+						</tr>
+						<tr>
+							<td> required <img src="../logos/html 5.jpg" width="20" height="auto" alt="html5"></td>
+							<td> Menentukan bahwa sebuah input field diperlukan (atau harus diisi) </td>
+						</tr>
+						<tr>
+							<td> size </td>
+							<td> Menentukan width atau lebar (dalam karakter) dari sebuah input field </td>
+						</tr>
+						<tr>
+							<td> step <img src="../logos/html 5.jpg" width="20" height="auto" alt="html5"></td>
+							<td> Menentukan legal number intervals untuk sebuah input field </td>
+						</tr>
+						<tr>
+							<td> value </td>
+							<td> Menentukan nilai default untuk sebuah input field </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<p> Kamu akan mempelajari lebih tentang input restrictions dalam chapter selanjutnya.</p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>p</b>> <br>
+								Depending on browser support:<<b>br</b>> <br>
+								Fixed steps will apply in the input field. <br>
+								<<b>/p</b>> <br>
+								
+								<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/action_page.php"</span>> <br>
+								Quantity <br>
+								<<b>input</b> <span class="teal">type="number" name="points" min="0" max="100" value="30"</span>> <br>
+								<<b>input</b> <span class="teal">type="submit"</span>> <br>
+								<<b>/form</b>> <br><br>
+								
+								<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> type="number" is not supported in IE9 and earlier.<<b>/p</b>> <br>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan09()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan09">
+						
+					<p>
+					Depending on browser support:<br>
+					Fixed steps will apply in the input field.
+					</p>
+					
+					<form action="http://www.w3schools.com/html/action_page.php">
+					Quantity:
+					<input type="number" name="points"
+					min="0" max="100" step="10" value="30">
+					<input type="submit">
+					</form>
+					
+					<p><b>Note:</b>type="number" is not supported in IE9 and earlier.</p>
+						
+					</div>
+				</article>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Input Type: <b class="yellow">date</b> </h2>
+				<p> <<b>input</b> <span class="teal">type="date"</span>> digunakan untuk input field yang harus berisi date atau tanggal. </p>
+				<p> Tergantung pada browser support, sebuah date picker bisa menampilkan ulang dalam input field. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>p</b>> <br>
+								Depending on browser support:<<b>br</b>> <br>
+								A date picker can pop-up when you enter the input field. <br>
+								<<b>/p</b>> <br>
+								
+								<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/action_page.php"</span>> <br>
+								Birthday: <br>
+								<<b>input</b> <span class="teal">type="date" name="bday"</span>> <br>
+								<<b>input</b> <span class="teal">type="submit"</span>> <br>
+								<<b>/form</b>> <br><br>
+								
+								<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> type="date" is not supported in Internet Explorer.<<b>/p</b>> <br>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan10()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan10">
+						
+					<p>
+					Depending on browser support:<br>
+					A date picker can pop-up when you enter the input field.
+					</p>
+					
+					<form action="http://www.w3schools.com/html/action_page.php">
+					Birthday:
+					<input type="date" name="bday">
+					<input type="submit">
+					</form>
+					
+					<p><b>Note:</b> type="date" is not supported in Internet Explorer.</p>
+						
+					</div>
+				</article>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> Yes </td>
+							<td> No </td>
+							<td> No </td>
+							<td> Yes </td>
+							<td> Yes </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>p</b>> <br>
+								Depending on browser support:<<b>br</b>> <br>
+								A date picker can pop-up when you enter the input field. <br>
+								<<b>/p</b>> <br>
+								
+								<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/action_page.php"</span>> <br>
+								Enter a date before 1980-01-01: <<b>br</b>> <br>
+								<<b>input</b> <span class="teal">type="date" name="bday" max="1979-12-31"</span>> <<b>br</b>> <<b>br</b>> <br>
+								Enter a date after 2000-01-01: <<b>br</b>> <br>
+								<<b>input</b> <span class="teal">type="date" name="bday" min="2000-01-02"</span>> <<b>br</b>> <<b>br</b>> <br>
+								<<b>input</b> <span class="teal">type="submit"</span>> <br>
+								<<b>/form</b>> <br><br>
+								
+								<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> type="date" is not supported in Internet Explorer.<<b>/p</b>> <br>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan11()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan11">
+						
+						<form action="http://www.w3schools.com/html/action_page.php">
+						Enter a date before 1980-01-01:<br>
+						<input type="date" name="bday" max="1979-12-31"><br><br>
+						Enter a date after 2000-01-01:<br>
+						<input type="date" name="bday" min="2000-01-02"><br><br>
+						<input type="submit"> 
+						</form>
+						
+					<p><b>Note:</b> type="date" is not supported in Internet Explorer.</p>
+					</div>
+				</article>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> Yes </td>
+							<td> No </td>
+							<td> No </td>
+							<td> Yes </td>
+							<td> Yes </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Input Type: <b class="yellow">color</b> </h2>
+				<p> <<b>input</b> <span class="teal">type="color"</span>> digunakan untuk input field yang harus berisi warna. </p>
+				<p> Tergantung pada browser support, sebuah color picker bisa menampilkan ulang dalam input field. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>p</b>> <br>
+								Depending on browser support:<<b>br</b>> <br>
+								A color picker can pop-up when you enter the input field. <br>
+								<<b>/p</b>> <br>
+								
+								<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/action_page.php"</span>> <br>
+								Select your favorite color: <<b>br</b>> <br>
+								<<b>input</b> <span class="teal">type="color" name="favcolor" value="#ff0000"</span>> <<b>br</b>> <<b>br</b>> <br>
+								<<b>input</b> <span class="teal">type="submit"</span>> <br>
+								<<b>/form</b>> <br><br>
+								
+								<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> type="color" is not supported in Internet Explorer.<<b>/p</b>> <br>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan12()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan12">
+						
+						<p>
+						Depending on browser support:<br>
+						A color picker can pop-up when you enter the input field.
+						</p>
+						
+						<form action="http://www.w3schools.com/html/action_page.php">
+						Select your favorite color: <br>
+						<input type="color" name="favcolor" value="#ff0000"> <br>
+						<input type="submit">
+						</form>
+						
+						<p><b>Note:</b> type="color" is not supported in Internet Explorer.</p>
+						
+					</div>
+				</article>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> Yes </td>
+							<td> No </td>
+							<td> Yes </td>
+							<td> No </td>
+							<td> Yes </td>
+						</tr>
+					</tbody>
+				</table>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Input Type: <b class="yellow">range</b> </h2>
+				<p> <<b>input</b> <span class="teal">type="range"</span>> digunakan untuk input field yang harus berisi sebuah nilai dengan jangkauan (range). </p>
+				<p> Tergantung pada browser support, input field bisa ditampilkan sebagai sebuah slider control (pengatur). </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>p</b>> <br>
+								Depending on browser support:<<b>br</b>> <br>
+								The input type "range" can be displayed as a slider control. <br>
+								<<b>/p</b>> <br>
+								
+								<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/action_page.php"</span>> <br>
+								Points: <<b>br</b>> <br>
+								<<b>input</b> <span class="teal">type="range" min="0" max="100"</span>> <<b>br</b>> <<b>br</b>> <br>
+								<<b>input</b> <span class="teal">type="submit"</span>> <br>
+								<<b>/form</b>> <br><br>
+								
+								<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> type="range" is not supported in Internet Explorer 9 and earlier versions.<<b>/p</b>> <br>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan13()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan13">
+						
+						<p>
+						Depending on browser support:<br>
+						The input type "range" can be displayed as a slider control.
+						</p>
+						
+						<form action="http://www.w3schools.com/html/action_page.php" method="get">
+						Points:
+						<input type="range" name="points" min="0" max="10">
+						<input type="submit">
+						</form>
+						
+						<p>
+						<b>Note:</b>
+						type="range" is not supported in Internet Explorer 9 and earlier versions.
+						</p>
+						
+					</div>
+				</article>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<div class="nasehat">
+				Kamu bisa menggunakan attribute berikut untuk menentukan batasan (restrictions): <b>min</b>, <b>max</b>, <b>step</b>, <b>value</b>.
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Input Type: <b class="yellow">month</b> </h2>
+				<p> <<b>input</b> <span class="teal">type="month"</span>> mengizinkan pengguna untuk menyeleksi sebuah bulan dan tahun. </p>
+				<p> Tergantung pada browser support, sebuah date picker bisa ditampilkan ulang dalam input field. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>p</b>> <br>
+								Depending on browser support:<<b>br</b>> <br>
+								A date picker can pop-up when you enter the input field. <br>
+								<<b>/p</b>> <br>
+								
+								<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/action_page.php"</span>> <br>
+								Birthday (month and year): <<b>br</b>> <br>
+								<<b>input</b> <span class="teal">type="month" name="bdaymonth"</span>> <<b>br</b>> <<b>br</b>> <br>
+								<<b>input</b> <span class="teal">type="submit"</span>> <br>
+								<<b>/form</b>> <br><br>
+								
+								<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> type="month" is not supported in Internet Explorer 9 and earlier versions.<<b>/p</b>> <br>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan14()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan14">
+						
+						<p>
+						Depending on browser support:<br>
+						A date picker can pop-up when you enter the input field.
+						</p>
+						
+						<form action="http://www.w3schools.com/html/action_page.php">
+						Birthday (month and year):
+						<input type="month" name="bdaymonth">
+						<input type="submit">
+						</form>
+						
+						<p><b>Note:</b>
+						type="month" is not supported in Internet Explorer.
+						</p>
+						
+					</div>
+				</article>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> Yes </td>
+							<td> No </td>
+							<td> No </td>
+							<td> Yes </td>
+							<td> Yes </td>
+						</tr>
+					</tbody>
+				</table>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Input Type: <b class="yellow">week</b> </h2>
+				<p> <<b>input</b> <span class="teal">type="week"</span>> mengizinkan pengguna untuk menyeleksi sebuah pekan (week) dan tahun. </p>
+				<p> Tergantung pada browser support, sebuah date picker bisa ditampilkan ulang dalam input field. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>p</b>> <br>
+								Depending on browser support:<<b>br</b>> <br>
+								A date picker can pop-up when you enter the input field. <br>
+								<<b>/p</b>> <br>
+								
+								<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/action_page.php"</span>> <br>
+								Select your week: <<b>br</b>> <br>
+								<<b>input</b> <span class="teal">type="week" name="year_week"</span>> <<b>br</b>> <<b>br</b>> <br>
+								<<b>input</b> <span class="teal">type="submit"</span>> <br>
+								<<b>/form</b>> <br><br>
+								
+								<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> type="week" is not supported in Internet Explorer 9 and earlier versions.<<b>/p</b>> <br>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan15()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan15">
+						
+						<p>
+						Depending on browser support:<br>
+						A date picker can pop-up when you enter the input field.
+						</p>
+						
+						<form action="http://www.w3schools.com/html/action_page.php">
+						Select your week:
+						<input type="week" name="year_week">
+						<input type="submit">
+						</form>
+						
+						<p><b>Note:</b>
+						type="week" is not supported in Internet Explorer.
+						</p>
+						
+					</div>
+				</article>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> Yes </td>
+							<td> No </td>
+							<td> No </td>
+							<td> Yes </td>
+							<td> Yes </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Input Type: <b class="yellow">time</b> </h2>
+				<p> <<b>input</b> <span class="teal">type="time"</span>> mengizinkan pengguna untuk menyeleksi waktu (No time zone). </p>
+				<p> Tergantung pada browser support, sebuah date picker bisa ditampilkan ulang dalam input field. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>p</b>> <br>
+								Depending on browser support:<<b>br</b>> <br>
+								A time picker might pop-up when you enter the input field. <br>
+								<<b>/p</b>> <br>
+								
+								<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/action_page.php"</span>> <br>
+								Select a time: <<b>br</b>> <br>
+								<<b>input</b> <span class="teal">type="time" name="user time"</span>> <<b>br</b>> <<b>br</b>> <br>
+								<<b>input</b> <span class="teal">type="submit"</span>> <br>
+								<<b>/form</b>> <br><br>
+								
+								<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> type="time" is not supported in Firefox and Internet Explorer .<<b>/p</b>> <br>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan16()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan16">
+						
+						<p>
+						Depending on browser support:<br>
+						A time picker might pop-up when you enter the input field.
+						</p>
+						
+						<form action="http://www.w3schools.com/html/action_page.php">
+						Select a time:
+						<input type="time" name="usr_time">
+						<input type="submit">
+						</form>
+						
+						<p><b>Note:</b>
+						type="time" is not supported in Firefox or Internet Explorer.
+						</p>
+						
+					</div>
+				</article>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> Yes </td>
+							<td> No </td>
+							<td> No </td>
+							<td> Yes </td>
+							<td> Yes </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Input Type: <b class="yellow">datetime</b> </h2>
+				<p> <<b>input</b> <span class="teal">type="datetime"</span>> mengizinkan pengguna untuk menyeleksi tanggal dan waktu (with time zone). </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>p</b>> <br>
+								Depending on browser support:<<b>br</b>> <br>
+								A date picker can pop-up when you enter the input field. <br>
+								<<b>/p</b>> <br>
+								
+								<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/action_page.php"</span>> <br>
+								Birthday (date and time): <<b>br</b>> <br>
+								<<b>input</b> <span class="teal">type="datetime" name="bdaytime"</span>> <<b>br</b>> <<b>br</b>> <br>
+								<<b>input</b> <span class="teal">type="submit"</span>> <br>
+								<<b>/form</b>> <br><br>
+								
+								<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> type="datetime" is not supported in Chrome, Firefox and Internet Explorer .<<b>/p</b>> <br>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan17()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan17">
+						
+						<p>
+						Depending on browser support:<br>
+						A date picker can pop-up when you enter the input field.
+						</p>
+						
+						<form action="http://www.w3schools.com/html/action_page.php">
+						Birthday (date and time):
+						<input type="datetime" name="bdaytime">
+						<input type="submit">
+						</form>
+						
+						<p><b>Note:</b> type="datetime" is not supported in Chrome, Firefox, or Internet Explorer.</p>
+						
+					</div>
+				</article>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> No </td>
+							<td> No </td>
+							<td> No </td>
+							<td> No </td>
+							<td> No </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<div class="nasehatX">
+				Input type <b>datetime</b> dicopot dari standar HTML. Gunakanlah penggnti <b>datetime-local</b> sebagai pengganti.
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Input Type: <b class="yellow">datetime-local</b> </h2>
+				<p> <<b>input</b> <span class="teal">type="datetime-local"</span>> mengizinkan pengguna untuk menyeleksi tanggal dan waktu (No time zone). </p>
+				<p> Tergantung pada browser support, sebuah date picker bisa ditampilkan ulang dalam input field. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>p</b>> <br>
+								Depending on browser support:<<b>br</b>> <br>
+								A date picker can pop-up when you enter the input field. <br>
+								<<b>/p</b>> <br>
+								
+								<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/action_page.php"</span>> <br>
+								Birthday (date and time): <<b>br</b>> <br>
+								<<b>input</b> <span class="teal">type="datetime-local" name="bdaytime"</span>> <<b>br</b>> <<b>br</b>> <br>
+								<<b>input</b> <span class="teal">type="submit"</span>> <br>
+								<<b>/form</b>> <br><br>
+								
+								
+								<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> type="datetime" is not supported in Internet Explorer .<<b>/p</b>> <br>
+								
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan18()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan18">
+						
+						<p>
+						Depending on browser support:<br>
+						A date picker can pop-up when you enter the input field.
+						</p>
+						
+						<form action="http://www.w3schools.com/html/action_page.php">
+						Birthday (date and time):
+						<input type="datetime-local" name="bdaytime">
+						<input type="submit">
+						</form>
+						
+						<p><b>Note:</b> type="datetime-local" is not supported in  Internet Explorer.</p>
+						
+					</div>
+				</article>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> Yes </td>
+							<td> No </td>
+							<td> No </td>
+							<td> Yes </td>
+							<td> Yes </td>
+						</tr>
+					</tbody>
+				</table>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Input Type: <b class="yellow">email</b> </h2>
+				<p> <<b>input</b> <span class="teal">type="email"</span>> digunakan untuk input field yang harus berisi sebuah email address. </p>
+				<p> Tergantung pada browser support, e-mail address bisa divalidasi secara otomatis ketika diserahkan. </p>
+				<p> Beberapa smartphones mengakui email type dan menambahkan "<b>.com</b>" kepada keyboard untuk mencocokan email input. </p>
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								
+								<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/action_page.php"</span>> <br>
+								E-mail: <<b>br</b>> <br>
+								<<b>input</b> <span class="teal">type="email" name="email"</span>> <<b>br</b>> <<b>br</b>> <br>
+								<<b>input</b> <span class="teal">type="submit"</span>> <br>
+								<<b>/form</b>> <br><br>
+								
+								
+								<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> type="email" is not supported in Internet Explorer 9 and earlier .<<b>/p</b>> <br>
+								
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan19()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan19">
+						
+						<form action="http://www.w3schools.com/html/action_page.php">
+						E-mail:
+						<input type="email" name="email">
+						<input type="submit">
+						</form>
+						
+						<p>
+						<b>Note:</b>type="email" is not supported in IE9 and earlier.
+						</p>
+						
+						
+					</div>
+				</article>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> No </td>
+							<td> Yes </td>
+						</tr>
+					</tbody>
+				</table>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Input Type: <b class="yellow">search</b> </h2>
+				<p> <<b>input</b> <span class="teal">type="search"</span>> digunakan untuk search field (search field berprilaku seperti sebuah regular text field). </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								
+								<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/action_page.php"</span>> <br>
+								Search Google: <<b>br</b>> <br>
+								<<b>input</b> <span class="teal">type="search" name="googlesearch"</span>> <<b>br</b>> <<b>br</b>> <br>
+								<<b>input</b> <span class="teal">type="submit"</span>> <br>
+								<<b>/form</b>> <br><br>
+								
+								
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan20()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan20">
+						
+						<form action="http://www.w3schools.com/html/action_page.php">
+						Search Google:
+						<input type="search" name="googlesearch">
+						<input type="submit">
+						</form>
+						
+					</div>
+				</article>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> No </td>
+							<td> Yes </td>
+							<td> No </td>
+							<td> Yes </td>
+							<td> No </td>
+						</tr>
+					</tbody>
+				</table>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Input Type: <b class="yellow">tel</b> </h2>
+				<p> <<b>input</b> <span class="teal">type="tel"</span>> digunakan untuk input field yang harus berisikan sebuah nomor telephone. </p>
+				<p> Tipe <b>tel</b> sekarang ini didukung hanya di Safari 8. </p>
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								
+								<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/action_page.php"</span>> <br>
+								Telephone: <<b>br</b>> <br>
+								<<b>input</b> <span class="teal">type="tel" name="usrtel"</span>> <<b>br</b>> <<b>br</b>> <br>
+								<<b>input</b> <span class="teal">type="submit"</span>> <br>
+								<<b>/form</b>> <br><br>
+								
+								<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> type="tel" is supported only in Safari 8 .<<b>/p</b>> <br>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan21()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan21">
+						
+						<form action="http://www.w3schools.com/html/action_page.php">
+						Telephone:
+						<input type="tel" name="usrtel">
+						<input type="submit">
+						</form>
+						
+						<p><b>Note:</b> type="tel" is supported only in Safari 8.</p>
+						
+					</div>
+				</article>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> No </td>
+							<td> No </td>
+							<td> No </td>
+							<td> Yes </td>
+							<td> No </td>
+						</tr>
+					</tbody>
+				</table>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Input Type: <b class="yellow">url</b> </h2>
+				<p> <<b>input</b> <span class="teal">type="url"</span>> digunakan untuk input field yang harus berisikan sebuah URL address. </p>
+				<p> Tergantung pada browser support, url field bisa divalidasi secara otomatis ketika diserahkan (submitted). </p> 
+				<p> Beberapa smartphones mengakui email type dan menambahkan "<b>.com</b>" kepada keyboard untuk mencocokan url input. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								
+								<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/action_page.php"</span>> <br>
+								Add your homepage: <<b>br</b>> <br>
+								<<b>input</b> <span class="teal">type="url" name="homepage"</span>> <<b>br</b>> <<b>br</b>> <br>
+								<<b>input</b> <span class="teal">type="submit"</span>> <br>
+								<<b>/form</b>> <br><br>
+								
+								<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> type="tel" is not supported in IE9 and earlier versions.<<b>/p</b>> <br>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan22()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan22">
+						
+						<form action="http://www.w3schools.com/html/action_page.php">
+						Add your homepage:
+						<input type="url" name="homepage">
+						<input type="submit">
+						</form>
+						
+						<p><b>Note:</b>
+						The type="url" is not supported in IE9 and earlier versions.</p>
+						
+					</div>
+				</article>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> No </td>
+							<td> Yes </td>
+						</tr>
+					</tbody>
+				</table>
+				
+			</article>
+</section>
+<section>
+			<article id="NoB">
+			<a href="HTML form elements.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML input attributes.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

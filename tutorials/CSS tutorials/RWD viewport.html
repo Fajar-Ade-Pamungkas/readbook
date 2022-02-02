@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS |  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<style type="text/css">
+b {
+	color:white;
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> Responsive Web Design - The Viewport </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> What is The Viewport? </h2>
+				<p> Apa itu Viewport ? </p>
+				<p> Viewport merupakan area yang dapat dilihat oleh pengguna dari halaman web. </p>
+				<p> Viewport berbeda - beda dengan perangkat, dan menjadi lebih kecil pada perangkat mobile (ponsel) daripada di sebuah layar komputer. </p>
+				<p> Sebelum tablet dan perangkat mobile, halaman web didesign hanya untuk layar komputer, dan viewport umum untuk halaman web yang memiliki design statis dan fixed size (ukuran yang tetap). </p>
+				<p> Lalu, ketika kita mulai menjelajah internet menggunakan tablet dan perangkat mobile, halaman web dengan ukuran tetap menjadi terlalu besar untuk viewport yang layak,  browser pada 
+				skala perangkat itu down (turun) untuk memuat halaman web sepenuhnya untuk layar.</p>
+				<p> Ini tidak sempurna !! Tapi cepat memperbaiki. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Setting The Viewport </h2>
+				<p> Pengaturan Viewport </p>
+				<p> HTML memperkenalkan sebuah metode untuk membiarkan web designer untuk mengambil alih viweport, sepanjang tag <<b>meta</b>>. </p>
+				<p> Kamu harus memasukan element viewport <<b>meta</b>> berikut dalam semua halaman web kamu. </p>
+				<div class="example-content">
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>>
+				</div>
+				<p> Element viewport <mark><<strong>meta</strong>> </mark>memberikan browser intruction untuk bagaimana mengontrol page's dimensions dan scaling. </p>
+				<p> Bagian <mark>width=device-width</mark> mengatur lebar halaman untuk menuruti <b>screen-width</b> perangkat (yang mana akan bervariasi tergantung pada perangkat tersebut).</p>
+				<p> Bagian <mark>initial-scale=1.0</mark> mengatur initial zoom level ketika halaman dimuat pertamakali oleh browser. </p>
+				<p> Disini adalah contoh dari web page tanpa tag meta viewport, dan web page yang sama dengan tag meta viewport: </p>
+				<p><b>Tip:</b> Jika kamu sedang browsing halaman ini dengan smartphone atau tablet, kamu bisa mengklik kedua link untuk melihat perbedaannya. </p>
+				
+				
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Size Content to The Viewport </h2>
+				<p> Users digunakan untuk men-scroll (menggulung) website secara vertical di dekstop dan perangkat mobile - tapi tidak sexara horizontal! </p>
+				<p> Jadi, jika user dipaksakan untuk men-scroll secara horizontal, atau zoom out (memperbesar), untuk mengerti seluruh web oage ia menghasikan dalam sebuah user experience yang kecil (poor)</p>
+				<p> Beberapa aturan - aturan tambahan berikut: </p>
+				<ol>
+					<li> <b> JANGAN gunakan large fixed width (lebar ukuran yang besarnya tetap)</b> - Untuk contoh, jika suatu gambar ditampilkan pada lebar yang lebih luas dari viewport ini bisa menyebabkan viewport men-scroll secara horizontal. 
+					Ingatlah untuk menyesuaikan konten ini menjadi lebih layak dengan lebar (width) dari viewport.</li>
+					<li> <b>JANGAN biarkan konten mengandalkan pada suatu keterangan viewport width untuk menyumbang dengan baik.</b> - Sejak itu dimensi layar dan width dalam CSS pixels memiliki variasi luas antara perangkat lainnya, 
+					konten tidak harus mengandalkan suatu keterangan levar viewport untuk membuatnya bagus (render well)</li>
+					<li> <b> Gunakanlah CSS media queries untuk menerapkan perbedaan styling kepada layar besar atau kecil</b> - Pengaturan large absolut CSS widths untuk page elements, akan mengakibatkan element menjadi terlalu luas untuk viewport 
+					pada perangkat yang lebih kecil. Sebagai pengganti, pertimbangkanlah penggunaan relative width value, semacam itu seperti width: 100%;, Berhati - hatilah menggunakan large absolute positioning values,
+					Ini mungkin menyebabkan element jatuh keluar viewport pada perangkat yang kecil. </li>
+				</ol>
+				
+				
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="RWD introduction.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="RWD grid view.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

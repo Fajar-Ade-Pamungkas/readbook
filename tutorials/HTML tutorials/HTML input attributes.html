@@ -1,0 +1,1664 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML form attibutes </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML Input Attributes </h1>
+
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> The <b class="justRed">value</b> Attribute </h2>
+				<p> Attribute <b>value</b> menentukan initial value (nilai kata pertama) untuk sebuah input field: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>form</b> <span class="teal">action=""</span>>
+								  <blockquote>
+								  First name:<<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="text" name="firstname" value="Ade"</span>><<b>br</b>> <br>
+								  Last name:<<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="text" name="lastname"</span>>
+								</blockquote>
+								<<b>/form</b>>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						<form>
+						  First name:<br>
+						  <input type="text" name="firstname" value="Ade"><br>
+						  Last name:<br>
+						  <input type="text" name="lastname">
+						</form>
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The <b class="justRed">readonly</b> Attribute </h2>
+				<p> Attribute <b>readonly</b> menentukan bahwa input field hanya untuk dibaca (tidak bisa diubah). </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>form</b> <span class="teal">action=""</span>>
+								  <blockquote>
+								  First name:<<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="text" name="firstname" value="Ade" readonly</span>><<b>br</b>> <br>
+								  Last name:<<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="text" name="lastname"</span>>
+								</blockquote>
+								<<b>/form</b>>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan02()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+						<form>
+						  First name:<br>
+						  <input type="text" name="firstname" value="Ade" readonly><br>
+						  Last name:<br>
+						  <input type="text" name="lastname">
+						</form>
+					</div>
+				</article>
+				
+				<div class="nasehat">
+				Attibute <b>readonly</b> tidak membutuhkan nilai. Tapi kamu bisa menulisnya sama seperti penulisan <b>readonly="readonly"</b>. 
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The <b class="justRed">disabled</b> Attribute </h2>
+				<p> Attribute <b>disabled</b> menentukan bahwa input field dilumpuhkan (tidak bisa digunakan): </p>
+				<p> Sebuah element yang dilumpuhkan tidak dapat digunakan dan tidak dapat diklik.</p>
+				<p> Element yang dilumpuhkan tidak akan diserahkan (submitted). </p> 
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>form</b> <span class="teal">action=""</span>>
+								  <blockquote>
+								  First name:<<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="text" name="firstname" value="Ade" disabled</span>><<b>br</b>> <br>
+								  Last name:<<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="text" name="lastname"</span>>
+								</blockquote>
+								<<b>/form</b>>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan03()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+						<form>
+						  First name:<br>
+						  <input type="text" name="firstname" value="Ade" disabled><br>
+						  Last name:<br>
+						  <input type="text" name="lastname">
+						</form>
+					</div>
+				</article>
+				
+				<div class="nasehat">
+				Attibute <b>disabled</b> tidak membutuhkan nilai. Tapi kamu bisa menulisnya sama seperti penulisan <b>disabled="disabled"</b>. 
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The <b class="justRed">size</b> Attribute </h2>
+				<p> Attribute <b>value</b> menentukan ukuran (pada karakter) untuk input field:</p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>form</b> <span class="teal">action=""</span>>
+								  <blockquote>
+								  First name:<<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="text" name="firstname" value="Ade" size="40"</span>><<b>br</b>> <br>
+								  Last name:<<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="text" name="lastname"</span>>
+								</blockquote>
+								<<b>/form</b>>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan04()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+						<form>
+						  First name:<br>
+						  <input type="text" name="firstname" value="Ade" size="40"><br>
+						  Last name:<br>
+						  <input type="text" name="lastname">
+						</form>
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The <b class="justRed">maxlength</b> Attribute </h2>
+				<p> Attribute <b>maxlength</b> menentukan panjang maksimum yang diperbolehkan  untuk input field: </p>
+
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>form</b> <span class="teal">action=""</span>>
+								  <blockquote>
+								  First name:<<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="text" name="firstname" value="Ade" maxlength="10"</span>><<b>br</b>> <br>
+								  Last name:<<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="text" name="lastname"</span>>
+								</blockquote>
+								<<b>/form</b>>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan05()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+						<form>
+						  First name:<br>
+						  <input type="text" name="firstname" maxlength="10"><br>
+						  Last name:<br>
+						  <input type="text" name="lastname">
+						</form>
+					</div>
+				</article>
+					
+					<p> Dengan attribute <b>maxlength</b>, input control tidak akan menerima lebih daripada panjang karakter yang diperbolahkan </p>
+					<p> Attribute tidak menyediakan feedback (arus balik atau respon) apapun. Jika kamu ingin alert pengguna, kamu harus menulis kode JavaScript. </p>
+					
+					<div class="nasehat">
+					Input restrictions bukan foolproof. JavaScript menyediakan banyak cara untuk menambahkan illegal input. <br>
+					Untuk safely restrict input, restrictions harus diklik oleh receiver (server) dengan baik. 
+					</div> 
+				
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> HTML5 Attributes </h2>
+				<p> HTML5 menambahkan attribute - attribute berikut untuk element tag <<b>input</b>>: </p>
+				<ul>
+					<li> autocomplete</li>
+					<li> autofocus</li>
+					<li> form </li>
+					<li> formaction </li>
+					<li> formenctype </li>
+					<li> formmethod </li>
+					<li> formnovalidate </li>
+					<li> formtarget </li>
+					<li> height and width </li>
+					<li> list </li>
+					<li> min and max </li>
+					<li> multiple </li>
+					<li> pattern (regexp) </li>
+					<li> placeholder </li>
+					<li> required </li>
+					<li> step </li>
+				</ul>
+				
+				<p> dan attribute - attribute berikut untuk element tag <<b>form</b>>: </p>
+				<ul>
+					<li> autocomplete </li>
+					<li> novalidate </li>
+				</ul>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The <b class="justRed">autocomplete</b> Attribute </h2>
+				<p> Attrihute autocomplete menentukan yang mana form atau input field yang harus sudah autocomplete on atau off. </p>
+				<p> Ketika autocomplete adalah on, browser secara otomatis melengkapi nilai berdasarkan nilai - niali yang pengguna telah masukan sebelumnya. </p>
+				<p> <b>tip:</b> Ini memungkinkan untuk memiliki autocomple "on" untuk form, dan "off" untuk spesific input field, atau sebaliknya (vice versa). </p>
+				<p> Attribute autocomplete bekerja dengan <<b>form</b>> dsn tipe <<b>input</b>> berikut: text, search, url, tel, email, password, datepicker, range dan color. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<p class="fontWhite"> Contoh HTML form dengan attribute autocomplete "on" dan "off" untuk salah satu input </p>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>form</b> <span class="teal">action="action_page.php" autocomplete="on"</span>>
+								  <blockquote>
+								  First name:<<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="text" name="firstname" value="Ade" maxlength="10"</span>><<b>br</b>> <br>
+								  Last name:<<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="text" name="lastname"</span>> <<b>br</b>> <br>
+								  E-mail:<<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="email" name="email" autocomplete="off"</span>> <<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="submit"</span>>
+								</blockquote>
+								<<b>/form</b>> <br><br>
+								<<b>p</b>>Fill in and submit the form, then reload the page to see how autocomplete works.<<b>/p</b>> <br>
+								<<b>p</b>>Notice that autocomplete is "on" for the form, but "off" for the e-mail field.<<b>/p</b>>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan06()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+						
+						<form action="action_page.php" autocomplete="on">
+						First name: <br> <input type="text" name="fname"><br>
+						Last name: <br> <input type="text" name="lname"><br>
+						E-mail: <br> <input type="email" name="email" autocomplete="off"><br>
+						<input type="submit">
+						</form>
+						
+						<p>Fill in and submit the form, then reload the page to see how autocomplete works.</p>
+						<p>Notice that autocomplete is "on" for the form, but "off" for the e-mail field.</p>
+						
+					</div>
+				</article>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> No </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<p> <b>Tip:</b> Dalam beberapa browser kamu mungkin memerlukaj aktivasi fungsi autocomplete agar ini bisa bekerja. </p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> The <b class="justRed">novalidate</b> Attribute </h2>
+				<p> Attribute <b>novalidate</b> dalah attibute untuk <<b>form</b>>. </p>
+				<p> Ketika dipersembahkan, novalidate menentukan bahwa form data tidak harus divalidasi (disahkan) ketika dikumpulkan atau diserahkan. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<p class="fontWhite"> Indikasi bahwa form tidak untuk divalidasi pada submit </p>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>form</b> <span class="teal">action="action_page.php" novalidate</span>>
+								  <blockquote>
+								  E-mail:<<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="email" name="user_email" </span>> <<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="submit"</span>>
+								</blockquote>
+								<<b>/form</b>> <br><br>
+								<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> The novalidate attribute of the form tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.<<b>/p</b>>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan07()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan07">
+						
+						<form action="action_page.php" novalidate>
+						E-mail: <input type="email" name="user_email">
+						<input type="submit">
+						</form>
+						
+						<p><strong>Note:</strong> The novalidate attribute of the form tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.</p>
+						
+					</div>
+				</article>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> No </td>
+							<td> Yes </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The <b class="justRed">autofocus</b> Attribute </h2>
+				<p> Attibute <b>autofocus</b> adalah sebuah attribute boolean. </p>
+				<p> Ketika dipersembahkan, ia menentukan bahwa element <<b>input</b>> secara otomatis harus mendapatkan focus ketika halaman memuat. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<p class="fontWhite"> Membiarkan input "First name" mendapatkan focus saat halaman pertama kali memuat. </p>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>form</b> <span class="teal">action="action_page.php" novalidate</span>>
+								  <blockquote>
+								First name:<<b>br</b>> <br>
+								<<b>input</b> <span class="teal">type="text" name="firstname" autofocus</span>><<b>br</b>> <br>
+							  Last name:<<b>br</b>> <br>
+							  <<b>input</b> <span class="teal">type="text" name="lastname"</span>> <<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="submit"</span>>
+								</blockquote>
+								<<b>/form</b>> <br><br>
+								<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> The autofocus attribute of the form tag is not supported in Internet Explorer 9 and earlier versions.<<b>/p</b>>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan08()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan08">
+						
+						<form action="http://www.w3schools.com/html/action_page.php">
+						First name:<input type="text" name="fname" autofocus><br>
+						Last name: <input type="text" name="lname"><br>
+						<input type="submit">
+						</form>
+						
+						<p><strong>Note:</strong> The autofocus attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>
+						
+						
+					</div>
+				</article>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> No </td>
+							<td> Yes </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> The <b class="justRed">form</b> Attribute </h2>
+				<p> Attribute <b>form</b> menentukan satu atau lebih form element <<b>input</b>> menjadi anggota. </p>
+				<p> <b>Tip</b>: Untuk mengarah ke lebih dari satu form, gunakankalh sebuah space-sparated list dari "id" formulir. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<p class="fontWhite"> Sebuah input field dilokasikan didalam form HTML (tapi masih bagian dari form): </p>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>form</b> <span class="teal">action="action_page.php" id="form1"</span>>
+								  <blockquote>
+								First name:<<b>br</b>> <br>
+								<<b>input</b> <span class="teal">type="text" name="firstname"</span>><<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="submit"</span>>
+								</blockquote>
+								<<b>/form</b>> <br><br>
+								<<b>p</b>> The "Last name" field below is outdie the form element, but still part of the form, <<b>/p</b>> <br>
+								  Last name:<<b>br</b>> <br>
+								  <<b>input</b> <span class="teal">type="text" name="lastname" form="form1"</span>> <<b>br</b>> <br>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan09()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan09">
+						
+						<form action="http://www.w3schools.com/html/action_page.php" id="form1">
+						First name: <br> <input type="text" name="fname"><br>
+						<input type="submit" value="Submit">
+						</form>
+						
+						<p>The "Last name" field below is outside the form element, but still part of the form.</p>
+						Last name: <input type="text" name="lname" form="form1">
+						
+					</div>
+				</article>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> Yes </td>
+							<td> No </td>
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The <b class="justRed">formaction</b> Attribute </h2>
+				<p> Attribute <b>formaction</b>  menentukan URL sebuah file yang akan memproses atau diproses input control ketika form diserahkan. </p>
+				<p> Attribute <b>formaction</b> mengesampingkan (override) attribute <b>action</b> dari element <<b>form</b>>. </p>
+				<p> Attribute <b>formaction digunakan dengan <b>typ="submit"</b> dan type="image"</b>.</p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<p class="fontWhite"> Sebuah form HTML dengan dua tombol submit, dengan action yang berbeda</p>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>form</b> <span class="teal">action="action_page.php"</span>>
+								    <blockquote>
+									First name:<<b>br</b>> <br>
+									<<b>input</b> <span class="teal">type="text" name="firstname"</span>><<b>br</b>> <br>
+								    Last name:<<b>br</b>> <br>
+								    <<b>input</b> <span class="teal">type="text" name="lastname"</span>> <<b>br</b>> <br>
+								 	<<b>input</b> <span class="teal">type="submit"</span>> <br>
+								 	<<b>input</b> <span class="teal">type="submit" formaction="demo_admin.asp" value="Submit as admin"</span>>
+									</blockquote>
+								<<b>/form</b>> <br><br>
+								<br>
+								<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> The formaction attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.<<b>/p</b>> <br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan10()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan10">
+						
+						<form action="http://www.w3schools.com/html/action_page.php">
+						First name: <input type="text" name="fname"><br>
+						Last name: <input type="text" name="lname"><br>
+						<input type="submit" value="Submit"><br>
+						<input type="submit" formaction="demo_admin.asp" value="Submit as admin">
+						</form>
+						
+						<p><strong>Note:</strong> The formaction attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>
+						
+						
+						
+					</div>
+				</article>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The <b class="justRed">formenctype</b> Attribute </h2>
+				<p> Attribute <b>formenctype</b> menentukan bagaiaman form-data harus disandikan (encoded) ketika penyerahan (submitting) formulir ke server (hanya untuj formulir dengan method="post"). </p>
+				<p> Attribute <b>formenctype</b> mengesampingkan attibute <i>enctype</i> dari element <<b>form</b>>. </p>
+				<p> Attribute <b>formentype</b> digunakan dengan (input) <b>type="submit"</b> dan <b>type="image"</b>. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<p class="fontWhite"> Mengirim form-data yang disandi default (default encode), dan disandikan sebagai "multipart/form-data" (tombol submit kedua): </p>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/demo_post_enctype.asp" method="post"</span>>
+								    <blockquote>
+									First name:<<b>br</b>> <br>
+									<<b>input</b> <span class="teal">type="text" name="fname"</span>><<b>br</b>> <br>
+								 	<<b>input</b> <span class="teal">type="submit"</span>> <br>
+								 	<<b>input</b> <span class="teal">type="submit" formenctype="multipart/form-data" value="Submit as Multipar/form-data"</span>>
+									</blockquote>
+								<<b>/form</b>> <br><br>
+								<br>
+								<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> The formenctype attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.<<b>/p</b>> <br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan11()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan11">
+						
+						<form action="http://www.w3schools.com/html/demo_post_enctype.asp" method="post">
+						First name: <input type="text" name="fname"><br>
+						<input type="submit" value="Submit">
+						<input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data">
+						</form>
+						
+						<p><strong>Note:</strong> The formenctype attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>
+						
+					</div>
+				</article>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The <b class="justRed">formmethod</b> Attribute </h2>
+				<p> Attribute <b>formmethod</b> mendefinisikan metode HTTP untuk pengiriman form-data menuju action URL. </p>
+				<p> Attribute <b>formmethod</b> mengesampingkan attribute  <b>method</b> dari element <<b>form</b>>. </p>
+				<p> Attribute <b>formmethod</b> bisa digunakan dengsn (input) <b>type="submit"</b> dan <b>type="image"</b>. </p>
+				
+				<article class="example-box">
+						<h1>Contoh</h1>
+						<h4>Input:</h4>
+						<p class="fontWhite"> Tombol submit kedua mengesampingkan metode HTTP dari form</p>
+						<div class="example-content">
+						
+							<<b>!DOCTYPE html</b>><br><br>
+							<<b>html</b>><br><br>
+								<<b>head</b>><br><br>
+								<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+								<<b>/head</b>><br><br>
+								<<b>body</b>><br>
+									<br>
+									<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/demo_post_enctype.asp" method="get"</span>>
+									    <blockquote>
+										First name:<<b>br</b>> <br>
+										<<b>input</b> <span class="teal">type="text" name="fname"</span>><<b>br</b>> <br>
+										Last name:<<b>br</b>> <br>
+										<<b>input</b> <span class="teal">type="text" name="lname"</span>><<b>br</b>> <br>
+									 	<<b>input</b> <span class="teal">type="submit"</span>> <br>
+									 	<<b>input</b> <span class="teal">type="submit" formmethod="post" formaction="demo_post.asp" value="Submit using POST"</span>>
+										</blockquote>
+									<<b>/form</b>> <br><br>
+									<br>
+									<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> The formmethod attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.<<b>/p</b>> <br>
+								<<b>/body</b>><br><br>
+							<<b>/html</b>><br>
+							
+							
+						</div>
+						<button onclick="tampilkan12()">Output:</button>
+						<div class="example-content sembunyikan" id="sembunyikan12">
+							
+							<form action="http://www.w3schools.com/html/action_page.php" method="get">
+							First name: <input type="text" name="fname"><br>
+							Last name: <input type="text" name="lname"><br>
+							<input type="submit" value="Submit">
+							<input type="submit" formmethod="post" formaction="demo_post.asp" value="Submit using POST">
+							</form>
+							
+							<p><strong>Note:</strong> The formmethod attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>
+							
+						</div>
+					</article>
+					
+					<table class="browser-support">
+						<thead>
+							<tr>
+								<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="browser-logos">
+								<td> <img src="../logos/Chrome.png"> </td>
+								<td> <img src="../logos/IE.png"> </td>
+								<td> <img src="../logos/Firefox.png"> </td>
+								<td> <img src="../logos/Safari.png"> </td>
+								<td> <img src="../logos/Opera.png"> </td>
+							</tr>
+							<tr class="center">
+								<td> Yes </td>
+								<td> Yes </td>
+								<td> Yes </td>
+								<td> Yes </td>
+								<td> Yes </td>
+							</tr>
+						</tbody>
+					</table>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The <b class="justRed">formnovalidate</b> Attribute </h2>
+				<p> Attribute <b>formnovalidate</b> merupakan sebuah attribute <b>boolean</b>. </p>
+				<p> Ketika hadir, attibute <b>formnovalidate</b> menentukan bahwa element <<b>input</b>> tidak harus mengesahkan atau memvalidasi ketika diserahkan. </p>
+				<p> Attribute <b>formnovalidate</b> mengesampingkan attribute <i>novalidate</i> dari element <<b>form</b>>. </p>
+				<p> Attribute <b>formnovalidate</b> bisa digunakan dengan (input) <b>type="submit"</b>. </p>
+				
+				
+				<article class="example-box">
+						<h1>Contoh</h1>
+						<h4>Input:</h4>
+						<p class="fontWhite"> Sebuah formulir dengan dua tombol submit (dengan atau tanpa validasi)</p>
+						<div class="example-content">
+						
+							<<b>!DOCTYPE html</b>><br><br>
+							<<b>html</b>><br><br>
+								<<b>head</b>><br><br>
+								<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+								<<b>/head</b>><br><br>
+								<<b>body</b>><br>
+									<br>
+									<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/action_page.php"</span>>
+									    <blockquote>
+										E-mail: <<b>br</b>> <br>
+										<<b>input</b> <span class="teal">type="email" name="userid"</span>><<b>br</b>> <br>
+									 	<<b>input</b> <span class="teal">type="submit"</span>> <br>
+									 	<<b>input</b> <span class="teal">type="submit" formnovalidate value="Submit without validation"</span>>
+										</blockquote>
+									<<b>/form</b>> <br><br>
+									<br>
+									<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> The formnovalidate attribute of the input tag is not supported in Internet Explorer 9 and earlier versions or in Safari.<<b>/p</b>> <br>
+								<<b>/body</b>><br><br>
+							<<b>/html</b>><br>
+							
+							
+						</div>
+						<button onclick="tampilkan13()">Output:</button>
+						<div class="example-content sembunyikan" id="sembunyikan13">
+							
+							<form action="http://www.w3schools.com/html/action_page.php">
+							E-mail: <input type="email" name="userid"><br>
+							<input type="submit" value="Submit"><br>
+							<input type="submit" formnovalidate value="Submit without validation">
+							</form>
+							
+							<p><strong>Note:</strong> The formnovalidate attribute of the input tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.</p>
+							
+						</div>
+					</article>
+					
+					<table class="browser-support">
+						<thead>
+							<tr>
+								<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="browser-logos">
+								<td> <img src="../logos/Chrome.png"> </td>
+								<td> <img src="../logos/IE.png"> </td>
+								<td> <img src="../logos/Firefox.png"> </td>
+								<td> <img src="../logos/Safari.png"> </td>
+								<td> <img src="../logos/Opera.png"> </td>
+							</tr>
+							<tr class="center">
+								<td> Yes </td>
+								<td> Yes </td>
+								<td> Yes </td>
+								<td> No </td>
+								<td> Yes </td>
+							</tr>
+						</tbody>
+					</table>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The <b class="justRed">formtarget</b> Attribute </h2>
+				<p> Attibute <b>formtarget</b> menentukan sebuah nama atau kata kunci yang mengindikasikan dimana untuk menampilkan  respon (tanggapan) yanh diterima setelah penyerahan form. </p>
+				<p> Attribute <b>formtarget</b> mengesampingkan attribute <i>target</i> dari element <<b>form</b>>. </p>
+				<p> Attribute <b>formtarget</b> bisa digunakan dengan (input) <b>type="submit"</b> dan <b>type="image"</b>. </p>
+				
+				<article class="example-box">
+						<h1>Contoh</h1>
+						<h4>Input:</h4>
+						<p class="fontWhite"> Sebuah formulir dengan dua tombol submit, dengan target window yang berbeda</p>
+						<div class="example-content">
+						
+							<<b>!DOCTYPE html</b>><br><br>
+							<<b>html</b>><br><br>
+								<<b>head</b>><br><br>
+								<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+								<<b>/head</b>><br><br>
+								<<b>body</b>><br>
+									<br>
+									<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/action_page.php"</span>>
+									    <blockquote>
+										First name: <<b>br</b>> <br>
+										<<b>input</b> <span class="teal">type="text" name="fname"</span>><<b>br</b>> <br>
+										Last name: <<b>br</b>> <br>
+										<<b>input</b> <span class="teal">type="text" name="lname"</span>><<b>br</b>> <br>
+									 	<<b>input</b> <span class="teal">type="submit" value="Submit as normal"</span>> <br>
+									 	<<b>input</b> <span class="teal">type="submit" formtarget="_blank" value="Submit to s new window/tab"</span>>
+										</blockquote>
+									<<b>/form</b>> <br><br>
+									<br>
+									<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> The formtarget attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.<<b>/p</b>> <br>
+								<<b>/body</b>><br><br>
+							<<b>/html</b>><br>
+							
+							
+						</div>
+						<button onclick="tampilkan14()">Output:</button>
+						<div class="example-content sembunyikan" id="sembunyikan14">
+							
+							<form action="http://www.w3schools.com/html/action_page.php">
+							First name: <input type="text" name="fname"><br>
+							Last name: <input type="text" name="lname"><br>
+							<input type="submit" value="Submit as normal">
+							<input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+							</form>
+							
+							<p><strong>Note:</strong> The formtarget attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>
+							
+						</div>
+					</article>
+					
+					<table class="browser-support">
+						<thead>
+							<tr>
+								<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="browser-logos">
+								<td> <img src="../logos/Chrome.png"> </td>
+								<td> <img src="../logos/IE.png"> </td>
+								<td> <img src="../logos/Firefox.png"> </td>
+								<td> <img src="../logos/Safari.png"> </td>
+								<td> <img src="../logos/Opera.png"> </td>
+							</tr>
+							<tr class="center">
+								<td> Yes </td>
+								<td> Yes </td>
+								<td> Yes </td>
+								<td> Yes </td>
+								<td> Yes </td>
+							</tr>
+						</tbody>
+					</table>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The <b class="justRed">height</b> and <b class="justRed">width</b> Attributes </h2>
+				<p> Attibute <b>height and width</b> menentukan tinggi dan lebar sebuah element <<b>input</b>>. </p>
+				<p> Attibute <b>height and width</b> hanya digunakan dengan <<b>input</b> <span class="teal"> type="image"</span>>. </p>
+				<div class="nasehat"> 
+				Selalu tentukan ukuran gambar. Jika browser tidak mengetahui ukurannya, halaman akan berkedip (flicker) selama memuat gambar. 
+				</div>
+				
+				<article class="example-box">
+						<h1>Contoh</h1>
+						<h4>Input:</h4>
+						<p class="fontWhite"> Definisikan sebuah gambar sebagai tombol submit, denhan attribute width dan height</p>
+						<div class="example-content">
+						
+							<<b>!DOCTYPE html</b>><br><br>
+							<<b>html</b>><br><br>
+								<<b>head</b>><br><br>
+								<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+								<<b>/head</b>><br><br>
+								<<b>body</b>><br>
+									<br>
+									<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/action_page.php"</span>>
+									    <blockquote>
+										First name: <<b>br</b>> <br>
+										<<b>input</b> <span class="teal">type="text" name="fname"</span>><<b>br</b>> <br>
+										Last name: <<b>br</b>> <br>
+										<<b>input</b> <span class="teal">type="text" name="lname"</span>><<b>br</b>> <br>
+									 	<<b>input</b> <span class="teal">type="image" src="../../Pictures/Rain Fall.png" alt="Submit" width="48" height="48"</span>> <br>
+										</blockquote>
+									<<b>/form</b>> <br><br>
+									<br>
+									<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> The input type="image" sends the X and Y coordinates of the click that activated the image button.<<b>/p</b>> <br>
+								<<b>/body</b>><br><br>
+							<<b>/html</b>><br>
+							
+							
+						</div>
+						<button onclick="tampilkan15()">Output:</button>
+						<div class="example-content sembunyikan" id="sembunyikan15">
+							
+							<form action="http://www.w3schools.com/html/action_page.php">
+							First name: <input type="text" name="fname"><br>
+							Last name: <input type="text" name="lname"><br>
+							<input type="image" src="../../Pictures/Rain Fall.png" alt="Submit" width="48" height="48">
+							</form>
+							
+							<p><b>Note:</b> The input type="image" sends the X and Y coordinates of the click that activated the image button.</p>
+							
+						</div>
+					</article>
+					
+					<table class="browser-support">
+						<thead>
+							<tr>
+								<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="browser-logos">
+								<td> <img src="../logos/Chrome.png"> </td>
+								<td> <img src="../logos/IE.png"> </td>
+								<td> <img src="../logos/Firefox.png"> </td>
+								<td> <img src="../logos/Safari.png"> </td>
+								<td> <img src="../logos/Opera.png"> </td>
+							</tr>
+							<tr class="center">
+								<td> Yes </td>
+								<td> Yes </td>
+								<td> Yes </td>
+								<td> Yes </td>
+								<td> Yes </td>
+							</tr>
+						</tbody>
+					</table>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The <b class="justRed">list</b> Attributes </h2>
+				<p> Attibute <b>list</b> mengarah atau mengacu kepada element <<b>datalist</b>> yang berisikan opsi yang dikenal (pre-defined options) untuk element <<b>input</b>>. </p>
+				
+				<article class="example-box">
+						<h1>Contoh</h1>
+						<h4>Input:</h4>
+						<p class="fontWhite"> Sebuah element <<b>input</b>> dengan nilai yanh dikenal (pre-defined values) dalam sebuah <<b>datalist</b>> </p>
+						<div class="example-content">
+						
+							<<b>!DOCTYPE html</b>><br><br>
+							<<b>html</b>><br><br>
+								<<b>head</b>><br><br>
+								<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+								<<b>/head</b>><br><br>
+								<<b>body</b>><br>
+									<br>
+									<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/action_page.php" method="get"</span>>
+									    <blockquote>
+										
+										<<b>input</b> <span class="teal">list="browsers" name="browser"</span>> <br>
+										<<b>datalist</b> <span class="teal">id="browsers"</span>> <br>
+										<<b>option</b> <span class="teal">value="Internet Explorer"</span>> <br>
+										<<b>option</b> <span class="teal">value="Firefox"</span>> <br>
+										<<b>option</b> <span class="teal">value="Chrome"</span>> <br>
+										<<b>option</b> <span class="teal">value="Opera"</span>> <br>
+										<<b>option</b> <span class="teal">value="Safari"</span>> <br>
+										<<b>/datalist</b>> <br>
+										<<b>input</b> <span class="teal">type="submit"</span>> <br>
+					
+										</blockquote>
+									<<b>/form</b>> <br><br>
+									<br>
+									<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> The datalist tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.<<b>/p</b>> <br>
+								<<b>/body</b>><br><br>
+							<<b>/html</b>><br>
+							
+							
+						</div>
+						<button onclick="tampilkan16()">Output:</button>
+						<div class="example-content sembunyikan" id="sembunyikan16">
+							
+							
+							<form action="http://www.w3schools.com/html/action_page.php" method="get">
+							
+							<input list="browsers" name="browser">
+								<datalist id="browsers">
+									<option value="Internet Explorer">
+									<option value="Firefox">
+									<option value="Chrome">
+									<option value="Opera">
+									<option value="Safari">
+								</datalist>
+							<input type="submit">
+							</form>
+							
+							<p><b>Note:</b> The datalist tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.</p>
+							
+							
+						</div>
+					</article>
+					
+					<table class="browser-support">
+						<thead>
+							<tr>
+								<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="browser-logos">
+								<td> <img src="../logos/Chrome.png"> </td>
+								<td> <img src="../logos/IE.png"> </td>
+								<td> <img src="../logos/Firefox.png"> </td>
+								<td> <img src="../logos/Safari.png"> </td>
+								<td> <img src="../logos/Opera.png"> </td>
+							</tr>
+							<tr class="center">
+								<td> Yes </td>
+								<td> Yes </td>
+								<td> Yes </td>
+								<td> No </td>
+								<td> Yes </td>
+							</tr>
+						</tbody>
+					</table>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The <b class="justRed">min</b> and <b class="justRed">max</b> Attributes </h2>
+				<p> Attribute <b>min</b> dan <b>max</b> menentukan nilai minimum dan maksimum untuk element <<b>inpu</b>>. </p>
+				<p> Attribute <b>min</b> dan <b>max</b> bekerja dengan tipe input berikut: <b>number</b>, <b>range</b>, <b>date</b>, <b>datetime</b>, <b>datetime-local</b>, <b>month</b>, <b>time</b>, dan <b>week</b>. </p>
+				
+				<article class="example-box">
+						<h1>Contoh</h1>
+						<h4>Input:</h4>
+						<p class="fontWhite"> Element <<b>input</b>> dengan nilai min dan max</p>
+						<div class="example-content">
+						
+							<<b>!DOCTYPE html</b>><br><br>
+							<<b>html</b>><br><br>
+								<<b>head</b>><br><br>
+								<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+								<<b>/head</b>><br><br>
+								<<b>body</b>><br>
+									<br>
+									<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/action_page.php"</span>>
+									    <blockquote>
+										
+										Enter a date before 1980-01-01: <br>
+										<<b>input</b> <span class="teal">type="date" name="bday" max="1979-12-31"</span>> <<b>br</b>><br>
+										
+										Enter a date after 2000-01-01: <br>
+										<<b>input</b> <span class="teal">type="date" name="bday" min="2000-01-02"</span>> <<b>br</b>><br>
+										
+										Quantity (between 1 and 5): <br>
+										<<b>input</b> <span class="teal">type="number" name="quantity" min="1" max="5"</span>> <<b>br</b>><br>
+										
+										<<b>input</b> <span class="teal">type="submit"</span>>
+										
+										</blockquote>
+									<<b>/form</b>> <br><br>
+									<br>
+									<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> The max and min attributes of the input tag is not supported in Internet Explorer 9 and earlier versions, or in Firefox.<<b>/p</b>> <br> <br>
+									<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> The max and min attributes will not work for dates and time in Internet Explorer 10, since IE 10 does not support these input types. <<b>/p</b>> <br>
+								<<b>/body</b>><br><br>
+							<<b>/html</b>><br>
+							
+							
+						</div>
+						<button onclick="tampilkan17()">Output:</button>
+						<div class="example-content sembunyikan" id="sembunyikan17">
+							
+							<form action="http://www.w3schools.com/html/action_page.php">
+							
+							Enter a date before 1980-01-01:
+							<input type="date" name="bday" max="1979-12-31"><br>
+							
+							Enter a date after 2000-01-01:
+							<input type="date" name="bday" min="2000-01-02"><br>
+							
+							Quantity (between 1 and 5):
+							<input type="number" name="quantity" min="1" max="5"><br>
+							
+							<input type="submit">
+							
+							</form>
+							
+							<p><strong>Note:</strong> The max and min attributes of the input tag is not supported in Internet Explorer 9 and earlier versions, or in Firefox.</p>
+							<p><strong>Note:</strong> The max and min attributes will not work for dates and time in Internet Explorer 10, since IE 10 does not support these input types.</p>
+							
+						</div>
+					</article>
+					
+					<table class="browser-support">
+						<thead>
+							<tr>
+								<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="browser-logos">
+								<td> <img src="../logos/Chrome.png"> </td>
+								<td> <img src="../logos/IE.png"> </td>
+								<td> <img src="../logos/Firefox.png"> </td>
+								<td> <img src="../logos/Safari.png"> </td>
+								<td> <img src="../logos/Opera.png"> </td>
+							</tr>
+							<tr class="center">
+								<td> Yes </td>
+								<td> Yes </td>
+								<td> No </td>
+								<td> Yes </td>
+								<td> Yes </td>
+							</tr>
+						</tbody>
+					</table>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The <b class="justRed">multiple</b> Attribute </h2>
+				<p> Attribute <b>multiple</b> merupakan sebuah attribute <b>boolean</b>. </p>
+				<p> Ketika dihadirkan, attibute multiple menentukan bahwa pengguna diizinkan untuk memasukan lebih dari satu nilai dalam element <<b>input</b>>. </p>
+				<p> Attribute <b>multiple</b> bekerja dengan tipe input berikut: <b>email</b>, dan <b>file</b>. </p>
+				
+				<article class="example-box">
+						<h1>Contoh</h1>
+						<h4>Input:</h4>
+						<p class="fontWhite"> Sebuah bidang file yang menerima nilai multiple </p>
+						<div class="example-content">
+						
+							<<b>!DOCTYPE html</b>><br><br>
+							<<b>html</b>><br><br>
+								<<b>head</b>><br><br>
+								<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+								<<b>/head</b>><br><br>
+								<<b>body</b>><br>
+									<br>
+									<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/action_page.php"</span>>
+									    <blockquote>
+									
+										Select images: 
+										<<b>input</b> <span class="teal">type="file" name="img" multiple</span>> <<b>br</b>><br>
+										<<b>input</b> <span class="teal">type="submit"</span>>
+										
+										</blockquote>
+									<<b>/form</b>> <br><br>
+									<br>
+									<<b>p</b>> Try selecting more than one file when browsing for files.<<b>/p</b>> <br>
+									<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> The multiple attribute of the input tag is not supported in Internet Explorer 9 and earlier versions. <<b>/p</b>> <br>
+								<<b>/body</b>><br><br>
+							<<b>/html</b>><br>
+							
+							
+						</div>
+						<button onclick="tampilkan18()">Output:</button>
+						<div class="example-content sembunyikan" id="sembunyikan18">
+							
+							<form action="http://www.w3schools.com/html/action_page.php">
+							Select images: <input type="file" name="img" multiple>
+							<input type="submit">
+							</form>
+							
+							<p>Try selecting more than one file when browsing for files.</p>
+							
+							<p><strong>Note:</strong> The multiple attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>
+							
+							
+						</div>
+					</article>
+					
+					<table class="browser-support">
+						<thead>
+							<tr>
+								<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="browser-logos">
+								<td> <img src="../logos/Chrome.png"> </td>
+								<td> <img src="../logos/IE.png"> </td>
+								<td> <img src="../logos/Firefox.png"> </td>
+								<td> <img src="../logos/Safari.png"> </td>
+								<td> <img src="../logos/Opera.png"> </td>
+							</tr>
+							<tr class="center">
+								<td> Yes </td>
+								<td> Yes </td>
+								<td> Yes </td>
+								<td> Yes </td>
+								<td> Yes </td>
+							</tr>
+						</tbody>
+					</table>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The <b class="justRed">pattern</b> Attribute </h2>
+				<p> Attribute <b>pattern</b> menentukan sebuah regular expression bahwa nilai element <<b>input</b>> diklik berlawanan (is clicked against). </p>
+				<p> Attribute <b>pattern</b> bekerja dengan tipe input berikut: <b>text</b>, <b>search</b>, <b>url</b>, <b>tel</b>, <b>email</b>, dan <b>password</b>. </p>
+				<p> <b>tips:</b> Gunakanlah attribute global <a href="" >title</a> untuk mendeskripsikan corak atau pola (pattern) untuk membantuk pengguna. </p>
+				<p> <b>tips:</b> Pelajari lagi tentang <a href="../JavaScript tutorials/js RegExp.html" > regular expression</a> pada tutorial JavaScript kita. </p>
+				
+				<article class="example-box">
+						<h1>Contoh</h1>
+						<h4>Input:</h4>
+						<p class="fontWhite"> Sebuah input field yang hanya bisa berisikan hanya 3 huruf saja (tidak ada nomor atau karakter special)</p>
+						<div class="example-content">
+						
+							<<b>!DOCTYPE html</b>><br><br>
+							<<b>html</b>><br><br>
+								<<b>head</b>><br><br>
+								<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+								<<b>/head</b>><br><br>
+								<<b>body</b>><br>
+									<br>
+									<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/action_page.php"</span>>
+									    <blockquote>
+									
+										Country code: 
+										<<b>input</b> <span class="teal">type="text" name="country_code" pattern="[A-Za-z]{3}" title="three letter country code"</span>> <<b>br</b>><br>
+										<<b>input</b> <span class="teal">type="submit"</span>>
+										
+										</blockquote>
+									<<b>/form</b>> <br><br>
+									<br>
+									<<b>p</b>> Try selecting more than one file when browsing for files.<<b>/p</b>> <br>
+									<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> The pattern attribute of the input tag is not supported in Internet Explorer 9 and earlier versions or in Safari. <<b>/p</b>> <br>
+								<<b>/body</b>><br><br>
+							<<b>/html</b>><br>
+							
+							
+						</div>
+						<button onclick="tampilkan19()">Output:</button>
+						<div class="example-content sembunyikan" id="sembunyikan19">
+							
+							<form action="http://www.w3schools.com/html/action_page.php">
+							Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+							<input type="submit">
+							</form>
+							
+							<p><strong>Note:</strong> The pattern attribute of the input tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.</p>
+							
+						</div>
+					</article>
+					
+					<table class="browser-support">
+						<thead>
+							<tr>
+								<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="browser-logos">
+								<td> <img src="../logos/Chrome.png"> </td>
+								<td> <img src="../logos/IE.png"> </td>
+								<td> <img src="../logos/Firefox.png"> </td>
+								<td> <img src="../logos/Safari.png"> </td>
+								<td> <img src="../logos/Opera.png"> </td>
+							</tr>
+							<tr class="center">
+								<td> Yes </td>
+								<td> Yes </td>
+								<td> Yes </td>
+								<td> No </td>
+								<td> Yes </td>
+							</tr>
+						</tbody>
+					</table>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The <b class="justRed">placeholder</b> Attribute </h2>
+				<p> Attribute <b>placeholder</b> menentukan sebuah petunjuk yang mendeskripsikan nilai dikira dsri sebuah input field (sebuah contoh sampel atau gambaran singkat tentang format). </p>
+				<p> Petunjuk ditampilkan dalam input field sebelum pengguna memasukan sebuah nilai. </p>
+				<p> Attribute <b>placeholder</b> bekerja dengan tipe input berikut: <b>text</b>, <b>search</b>, <b>url</b>, <b>tel</b>, <b>email</b>, dan <b>password</b>. </p>
+				
+				<article class="example-box">
+						<h1>Contoh</h1>
+						<h4>Input:</h4>
+						<p class="fontWhite"> Sebuah input field dengan sebuah teks placeholder</p>
+						<div class="example-content">
+						
+							<<b>!DOCTYPE html</b>><br><br>
+							<<b>html</b>><br><br>
+								<<b>head</b>><br><br>
+								<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+								<<b>/head</b>><br><br>
+								<<b>body</b>><br>
+									<br>
+									<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/action_page.php"</span>>
+									    <blockquote>
+									
+										First name: 
+										<<b>input</b> <span class="teal">type="text" name="fname" placeholder="First name"</span>> <<b>br</b>><br>
+										Last name: 
+										<<b>input</b> <span class="teal">type="text" name="lname" placeholder="Last name"</span>> <<b>br</b>><br>
+										<<b>input</b> <span class="teal">type="submit"</span>>
+										
+										</blockquote>
+									<<b>/form</b>> <br><br>
+									<br>
+									<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> The placeholder attribute of the input tag is not supported in Internet Explorer 9 and earlier versions. <<b>/p</b>> <br>
+								<<b>/body</b>><br><br>
+							<<b>/html</b>><br>
+							
+							
+						</div>
+						<button onclick="tampilkan20()">Output:</button>
+						<div class="example-content sembunyikan" id="sembunyikan20">
+							
+							<form action="http://www.w3schools.com/html/action_page.php">
+							<input type="text" name="fname" placeholder="First name"><br>
+							<input type="text" name="lname" placeholder="Last name"><br>
+							<input type="submit" value="Submit">
+							</form>
+							
+							<p><strong>Note:</strong> The placeholder attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>
+							
+						</div>
+					</article>
+					
+					<table class="browser-support">
+						<thead>
+							<tr>
+								<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="browser-logos">
+								<td> <img src="../logos/Chrome.png"> </td>
+								<td> <img src="../logos/IE.png"> </td>
+								<td> <img src="../logos/Firefox.png"> </td>
+								<td> <img src="../logos/Safari.png"> </td>
+								<td> <img src="../logos/Opera.png"> </td>
+							</tr>
+							<tr class="center">
+								<td> Yes </td>
+								<td> Yes </td>
+								<td> Yes </td>
+								<td> Yes </td>
+								<td> Yes </td>
+							</tr>
+						</tbody>
+					</table>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The <b class="justRed">required</b> Attribute </h2>
+				<p> Attribute <b>required</b> merupakan sebuah attribute <b>boolean</b>. </p>
+				<p> Ketika dipersembahkan, <b>required</b> menentukan bahwa sebuah inout field harus diisi sebelum penyerahan (submitting) formulir. </p>
+				<p> Attribute <b>required</b> bekerja dengan tipe input berikut: <b>text</b>, <b>search</b>, <b>url</b>, <b>tel</b>, <b>email</b>, <b>password</b>, <b>date pickers</b>, <b>number</b>, <b>checkbox</b>, <b>radio</b>, dan <b>file</b>. </p>
+				
+				<article class="example-box">
+						<h1>Contoh</h1>
+						<h4>Input:</h4>
+						<p class="fontWhite"> Sebuah input field required</p>
+						<div class="example-content">
+						
+							<<b>!DOCTYPE html</b>><br><br>
+							<<b>html</b>><br><br>
+								<<b>head</b>><br><br>
+								<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+								<<b>/head</b>><br><br>
+								<<b>body</b>><br>
+									<br>
+									<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/action_page.php"</span>>
+									    <blockquote>
+									
+										First name: 
+										<<b>input</b> <span class="teal">type="text" name="fname" placeholder="First name" required</span>> <<b>br</b>><br>
+										Last name: 
+										<<b>input</b> <span class="teal">type="text" name="lname" placeholder="Last name"</span>> <<b>br</b>><br>
+										<<b>input</b> <span class="teal">type="submit"</span>>
+										
+										</blockquote>
+									<<b>/form</b>> <br><br>
+									<br>
+									<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> The required attribute of the input tag is not supported in Internet Explorer 9 and earlier versions, or in Safari. <<b>/p</b>> <br>
+								<<b>/body</b>><br><br>
+							<<b>/html</b>><br>
+							
+							
+						</div>
+						<button onclick="tampilkan21()">Output:</button>
+						<div class="example-content sembunyikan" id="sembunyikan21">
+							
+							<form action="http://www.w3schools.com/html/action_page.php">
+							<input type="text" name="fname" placeholder="First name" required><br>
+							<input type="text" name="lname" placeholder="Last name"><br>
+							<input type="submit" value="Submit">
+							</form>
+							
+							<p><strong>Note:</strong> The required attribute of the input tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.</p>
+							
+						</div>
+					</article>
+					
+					<table class="browser-support">
+						<thead>
+							<tr>
+								<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="browser-logos">
+								<td> <img src="../logos/Chrome.png"> </td>
+								<td> <img src="../logos/IE.png"> </td>
+								<td> <img src="../logos/Firefox.png"> </td>
+								<td> <img src="../logos/Safari.png"> </td>
+								<td> <img src="../logos/Opera.png"> </td>
+							</tr>
+							<tr class="center">
+								<td> Yes </td>
+								<td> Yes </td>
+								<td> Yes </td>
+								<td> No </td>
+								<td> Yes </td>
+							</tr>
+						</tbody>
+					</table>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The <b class="justRed">step</b> Attribute </h2>
+				<p> Attribute <b>step</b> menentukan legal number interval (jeda waktu yang sah) untuk sebuah element <<b>input</b>>. </p>
+				<p> <b>Contoh:</b> Jika step="3", nomor yang sah bisa -3, 0, 3, 6, dan seterusnya. </p>
+				<p> <b>Tips:</b> Attribute <b>step</b> bisa digunakan bersama dengan attribute <b>max</b> dan <b>min</b> untuk menciptakan sebuah jangkauan (range) nilai yang legal.</p>
+				<p> Attribute <b>step</b> bekerja dengan tipe input berikut: <b>number</b>, <b>range</b>, <b>date</b>, <b>datetime</b>, <b>datetime-local</b>, <b>month</b>, <b>time</b> dan <b>week</b>. </p>
+				
+				<article class="example-box">
+						<h1>Contoh</h1>
+						<h4>Input:</h4>
+						<p class="fontWhite"> Sebuah input field dengan sebuah nomor interval legal yang ditentukan</p>
+						<div class="example-content">
+						
+							<<b>!DOCTYPE html</b>><br><br>
+							<<b>html</b>><br><br>
+								<<b>head</b>><br><br>
+								<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+								<<b>/head</b>><br><br>
+								<<b>body</b>><br>
+									<br>
+									<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/action_page.php"</span>>
+									    <blockquote>
+									
+										<<b>input</b> <span class="teal">type="number" name="points" step="3"</span>> <<b>br</b>><br>
+										<<b>input</b> <span class="teal">type="submit"</span>>
+										
+										</blockquote>
+									<<b>/form</b>> <br><br>
+									<br>
+									<<b>p</b>><<b>strong</b>>Note:<<b>/strong</b>> The step attribute of the input tag is not supported in Internet Explorer 9, and earlier versions. <<b>/p</b>> <br>
+								<<b>/body</b>><br><br>
+							<<b>/html</b>><br>
+							
+							
+						</div>
+						<button onclick="tampilkan22()">Output:</button>
+						<div class="example-content sembunyikan" id="sembunyikan22">
+							
+							<form action="http://www.w3schools.com/html/action_page.php">
+							<input type="number" name="points" step="3">
+							<input type="submit">
+							</form>
+							
+							<p><strong>Note:</strong> The step attribute of the input tag is not supported in Internet Explorer 9, and earlier versions.</p>
+							
+						</div>
+					</article>
+					
+					<table class="browser-support">
+						<thead>
+							<tr>
+								<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="browser-logos">
+								<td> <img src="../logos/Chrome.png"> </td>
+								<td> <img src="../logos/IE.png"> </td>
+								<td> <img src="../logos/Firefox.png"> </td>
+								<td> <img src="../logos/Safari.png"> </td>
+								<td> <img src="../logos/Opera.png"> </td>
+							</tr>
+							<tr class="center">
+								<td> Yes </td>
+								<td> Yes </td>
+								<td> Yes </td>
+								<td> Yes </td>
+								<td> Yes </td>
+							</tr>
+						</tbody>
+					</table>
+				
+			</article>
+</section>
+<section>
+			<article id="NoB">
+			<a href="HTML input types.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML5 intro.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

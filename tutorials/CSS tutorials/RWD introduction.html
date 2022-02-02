@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS |  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<style type="text/css">
+#rwd td, #rwd th{
+	background-color:gold;
+	border-collapse:separate;
+}
+#rwd, #rwd tr {
+	border-collapse:separate;
+	border-spacing:20px;
+}
+#rwd {
+	width:80%;
+	color:white;
+	position:relative;
+	left:10%;
+}
+#rwd td:nth-child(even) {
+	width:60%;
+}
+
+/*for tablet*/
+#rwdM td, #rwdM th{
+	background-color:gold;
+	border-collapse:separate;
+}
+#rwdM, #rwdM tr {
+	border-collapse:separate;
+	border-spacing:20px;
+}
+#rwdM {
+	width:50%;
+	color:white;
+	position:relative;
+	left:25%;
+}
+#rwdM td:nth-child(even) {
+	width:60%;
+}
+ 
+/*for smartphone */
+#rwdS td, #rwdS th, #rwdS tr{
+	background-color:gold;
+	border-collapse:separate;
+	padding: 5px;
+	text-align:center;
+}
+#rwdS, #rwdS tr {
+	border-collapse:separate;
+	border-spacing:5px;
+}
+#rwdS {
+	width:45%;
+	color:white;
+	position:relative;
+	left:30%;
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> Responsive Web Design - Introduction </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> What is Responsive Web Design? </h2>
+				<p> Apa itu Responsive Web Design? </p>
+				<p> Responsive web design membuat web page kamu terlihat bagus dia semua perangkat. </p>
+				<p> Responsive web design hanya menggunakan HTML dan CSS. </p>
+				<p> Responsive web design bukan merupakan sebuah program atau sebuah JavaScript. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Designing For The Best Experience For All Users </h2>
+				<p> Perancangan Untuk Pengalaman Terbaik untuk Semua Pengguna. </p>
+				<p> Web page bisa ditampilkan dalam banyak perangkat yang berbeda: desktops, tablets, dan  phones. 
+				Web page kamu harus terlihat bagus dsn mudsh untuk digunakan, tanpa memperhatikan perangkat yang digunakan. </p>
+				<p> Web page harusnya tidak meninggalkan informasi ke perangkat yang lebih kecil, tapi lebih baik menyesuaikan 
+				konten web page tersebut ke perangkat apapun dengan baik: </p>
+				
+				<div>
+					<table id="rwd" class="table">
+						<caption> Desktop </caption>
+						<thead>
+							<tr>
+								<th colspan="9"> Heading </th>
+							</tr>
+						</thead>
+						<tr>
+							<td> Menu </td>
+							<td rowspan="4" colspan="3" style="background:black;"> Content </td>
+							<td rowspan="2" colspan="3"> Aside </td>
+						</tr>
+						<tr>
+							<td> Profile </td>
+						</tr>
+						<tr>
+							<td> About Us </td>
+						</tr>
+						<tr>
+							<td colspan="9"> Footer </td>
+						</tr>
+					</table>
+				</div>
+				
+				<div>
+					<table id="rwdM" class="table">
+						<caption> Tablet </caption>
+						<thead>
+							<tr>
+								<th colspan="4"> Heading </th>
+							</tr>
+						</thead>
+						<tr>
+							<td> Menu </td>
+							<td rowspan="4" colspan="3" style="background:black;"> Content </td>
+						</tr>
+						<tr>
+							<td> Profile </td>
+						</tr>
+						<tr>
+							<td> About Us </td>
+						</tr>
+						<tr>
+							<td colspan="4"> Aside </td>
+						</tr>
+						<tr>
+							<td colspan="4"> Footer </td>
+						</tr>
+					</table>
+				</div>
+				
+				<div>
+					<table id="rwdS" class="table">
+						<caption> Smartphones </caption>
+						<thead>
+							<tr>
+								<th> Heading </th>
+							</tr>
+						</thead>
+						<tr>
+							<td> Menu </td>
+						</tr>
+						<tr>
+							<td> Profile </td>
+						</tr>
+						<tr>
+							<td> About Us </td>
+						</tr>
+						<tr>
+							<td style="height:180px; background:black;"> Content </td>
+						</tr>
+						<tr>
+							<td style="height:50px;"> Aside </td>
+						</tr>
+						<tr>
+							<td> Footer </td>
+						</tr>
+					</table>
+				</div>
+				
+				<p> Ini disebut dengan Responsive Web Design ketika kamu menggunakan CSS dan HTML untuk 
+				resize (mengukur kembali), hide (sembunyikan), shrink (menyusutkan), enlarge (memperbesar), atau move (memindahkan) konten 
+				agar membuatnya terlihat lebih bagus pada layar apapun. </p>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="CSS3 MQ examples.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="RWD viewport.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			<article>
+			</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

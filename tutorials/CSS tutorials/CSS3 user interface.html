@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS3 User Interface </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+#sembunyikan01 div { 
+border: 2px solid; 
+padding: 20px; 
+width: 300px; 
+resize: horizontal; 
+overflow: auto; 
+}
+
+#sembunyikan02 div { 
+border: 2px solid; 
+padding: 20px; 
+width: 300px; 
+resize: vertical; 
+overflow: auto; 
+}
+
+#sembunyikan03 div, .tiga { 
+border: 2px solid; 
+padding: 20px; 
+width: 300px; 
+resize: both; 
+overflow: auto; 
+}
+
+#sembunyikan04 div, .empat { 
+margin: 20px; 
+padding: 10px; 
+width: 300px; 
+height: 100px; 
+border: 1px solid black; 
+outline: 1px solid red; 
+/* Move the outline 15px away from the border */ 
+outline-offset: 15px; 
+}
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS3 User Interface </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> CSS3 User Interface </h2>
+				<p> CSS3 memiliki fitur-fitur antarmuka pengguna baru seperti resizing elements, outlines dan box sizing.</p>
+				<p> Pada chapter ini kamu akan belajar tentang properti-properti antar muka pengguna berikut:</p>
+				<ul>
+					<li>resize</li>
+					<li>outline-offset</li>
+				</ul>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Browser Support for User Interface</h2>
+				<p> Nomor pada tabel menentukan browser versi pertama yang mendukung secara penuh  properti ini.</p>
+				<p> Nomor yang diikut dengan <mark>-ms-</mark>, <mark>-webkit-</mark>, <mark>-moz-</mark> atau <mark>-o-</mark> menentukan versi pertama yang bekerja dengan awalan properti.</p>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> Properti </td>
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> resize </td>
+							<td> 4.0 </td>
+							<td> <span class="justRed">Not supported</span> </td>
+							<td> 5.0 <br> 4.0 -moz- </td>
+							<td> 4.0 </td>
+							<td> 15.0 -webkit- </td>
+						</tr>
+						<tr class="center">
+							<td> outline-offset </td>
+							<td>  4.0  </td>
+							<td> <span class="justRed">Not supported</span> </td>
+							<td> 4.0 -moz- </td>
+							<td> 4.0 </td>
+							<td> 9.5 </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 Resizing</h2>
+				<p> CSS3 Pengukuran Ulang</p>
+				<p> Properti <mark>resize</mark> menentukan apakah (iya) atau tidak sebuah element harus dapat diukur ulang oleh pengguna.</p>
+				<div class="tiga"> Element <<b>div</b>> ini dapat diukur ulang oleh pengguna (bekerja di Chrome, Firefox, Safari dan Opera).</div>
+				<p> Contoh berikut membiarkan pengguna mengukur ulang lebar dari element <<b>div</b>> saja:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						div { <br>
+						resize: horizontal; <br>
+						overflow: auto; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						border: 2px solid; <br>
+						padding: 20px;  <br>
+						width: 300px; <br>
+						resize: horizontal; <br>
+						overflow: auto; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> Internet Explorer does not support the resize property.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b>>Let the user resize the width of this div element.<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<p><b>Note:</b> Internet Explorer does not support the resize property.</p>
+						
+						<div>Let the user resize the width of this div element.</div>
+					
+					</div>
+				</article>
+				
+				<p> Contoh berikut membiarkan pengguna mengukur ulang tinggi dari element <<b>div</b>> saja:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						div { <br>
+						resize: vertical; <br>
+						overflow: auto; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						border: 2px solid; <br>
+						padding: 20px;  <br>
+						width: 300px; <br>
+						resize: vertical; <br>
+						overflow: auto; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> Internet Explorer does not support the resize property.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b>>Let the user resize the height of this div element.<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<p><b>Note:</b> Internet Explorer does not support the resize property.</p>
+						
+						<div>Let the user resize the height of this div element.</div>
+					
+					</div>
+				</article>
+				
+				
+				<p> Contoh berikut membiarkan pengguna mengukur ulang tinggi dan lebar dari element <<b>div</b>> :</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open03">
+						
+						div { <br>
+						resize: both; <br>
+						overflow: auto; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						border: 2px solid; <br>
+						padding: 20px;  <br>
+						width: 300px; <br>
+						resize: both; <br>
+						overflow: auto; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> Internet Explorer does not support the resize property.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b>>Let the user resize both the height and the width of this div element.<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+						<p><b>Note:</b> Internet Explorer does not support the resize property.</p>
+						
+						<div>Let the user resize both the height and the width of this div element.</div>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 Outline Offset</h2>
+				<p> CSS3 Penyeimbang Garis Luar</p>
+				<p> Properti <mark>outline-offset</mark> menambahkan ruang diantara sebuah garis luar dan tepi atau border dari element.</p>
+				<p> Outline berbeda dari border dalam 3 cara:</p>
+				<ul>
+					<li>Sebuah Outline (garis luar) adalah sebuah garis yang digambar disekitar element, diluar dari tepi border</li>
+					<li>Sebuah outline (garis luar) tidak mengambil ruang</li>
+					<li>Sebuah outline (garis luar) mungkin tidak persegi</li>
+				</ul>
+				
+				<div class="empat">Div ini memiliki sebuah outline 15px garis luar tepi border.</div>
+				<p> Contoh berikut menggunakan properti <mark>outline-offset</mark> untuk menambahkan sebuah ruang 15px diantara border dan outline:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open04">
+						
+						div { <br>
+						border: 1px solid black; <br>
+						outline: 1px solid red; <br>
+						outline-offset: 15px; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close04">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						margin: 20px; <br>
+						padding: 10px; <br>
+						width: 300px;  <br>
+						height: 100px; <br>
+						border: 1px solid black; <br>
+						outline: 1px solid red; <br>
+						<em>/* Move the outline 15px away from the border */</em> <br>
+						outline-offset: 15px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> Internet Explorer does not support the outline-offset property.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b>>This div has an outline 15px outside the border edge.<<b>/div</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<button onclick="buka04()" class="exbutton"> Open </button>
+					<button onclick="tutup04()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+						<p><b>Note:</b> Internet Explorer does not support the outline-offset property.</p>
+						
+						<div>This div has an outline 15px outside the border edge.</div>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 User Interface Properties</h2>
+				<p> Daftar tabel berikut adalah semua properti antarmuka pengguna (user interface):</p>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Properti</th>
+							<th> Deskripsi</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>box-sizing</td>
+							<td>Memperbolehkan kamu untuk memasukan padding dan border dalam sebuah total lebar dan tinggi elemen <br>
+								<strong>Nilai:</strong>
+								<ul>
+									<li>border-box</li>
+									<li>content-box</li>
+									<li>inherit</li>
+									<li>initial</li>
+								</td>
+							</td>
+						</tr>
+						<tr>
+							<td>nav-down</td>
+							<td>Menentukan dimana posisi untuk navigasi ketika menggunakan arrow-down navigation key (kunci navigasi arah bawah) <br>
+								<strong>Nilai:</strong>
+								<ul>
+									<li> auto </li>
+									<li> <i>id</i> </li>
+									<li> <i>target-name</i> </li>
+									<li> inherit </li>
+									<li> initial </li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> nav-index </td>
+							<td> Menentukan susunan tab untuk sebuah element <br>
+							 	<strong>Nilai:</strong>
+							 	<ul>
+							 	<li> auto </li>
+							 	<li> <i>number</i> </li>
+							 	<li> inherit </li>
+							 	<li> initial </li>
+							 	</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> nav-left </td>
+							<td>Menentukan dimana posisi untuk navigasi ketika menggunakan arrow-left navigation key (kunci navigasi arah kiri) <br>
+								<strong>Nilai:</strong>
+								<ul>
+									<li> auto </li>
+									<li> <i>id</i> </li>
+									<li> <i>target-name</i> </li>
+									<li> inherit </li>
+									<li> initial </li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> nav-right </td>
+							<td>Menentukan dimana posisi untuk navigasi ketika menggunakan arrow-right navigation key (kunci navigasi arah kanan) <br>
+								<strong>Nilai:</strong>
+								<ul>
+									<li> auto </li>
+									<li> <i>id</i> </li>
+									<li> <i>target-name</i> </li>
+									<li> inherit </li>
+									<li> initial </li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> nav-up </td>
+							<td>Menentukan dimana posisi untuk navigasi ketika menggunakan arrow-up navigation key (kunci navigasi arah atas) <br>
+								<strong>Nilai:</strong>
+								<ul>
+									<li> auto </li>
+									<li> <i>id</i> </li>
+									<li> <i>target-name</i> </li>
+									<li> inherit </li>
+									<li> initial </li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> outline-offset </td>
+							<td> Menambahkan ruang diantara sebuah outline dan tepi atau border dari sebuah element <br>
+							 	<strong>Nilai:</strong>
+							 	<ul>
+								 	<li> <i>length</i> </li>
+								 	<li> inherit </li>
+								 	<li> initial </li>
+							 	</ul>
+							</td>
+						</tr>
+						<tr>
+							<td> resize </td>
+							<td> Menentukan apakah (iya) atau tidak sebuah element dapat diukur ulang oleh pengguna <br>
+								<strong>Nilai:</strong>
+								<ul>
+									<li> vertical </li>
+									<li> horizontal </li>
+									<li> both </li>
+									<li> none </li>
+									<li> inherit </li>
+									<li> Initial </li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS3 multiple columns.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS3 box sizing.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML5 canvas </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML5 Canvas </h1>
+				<noscript><h3 class="redZone">Is not Supported</h3></noscript>
+				<p> Element <<b>canvas</b>> HTML digunakan untuk menggambar grafik pada sebuah halaman web. </p>
+				<p> Grafik disamping kiri diciptakan dengan <<b>canvas</b>>. Ia menampilkan empat element: 
+				a red rectangle, a gradient rectangle, a multicolor rectangle, and a multicolor text. </p>
+			</div>
+			
+			
+<section>			
+			<article>
+				<h2> What is HTML Canvas? </h2>
+				<p> Apa itu HTML Canvas ? </p>
+				<p> Element <<b>canvas</b>> HTML digunakan untuk menggambar grafik, on the fly, via scripting (biasanya JavaScript). </p>
+				<p> Element <<b>canvas</b>> merupakan sebuah container (tempat) saja. Kamu harus menggunakan script untuk menggambar grafik yang sebenarnya. </p>
+				<p> Canvas memiliki beberapa metode untuk penggambaran paths, boxes, circles, text, dan penambahan gambar. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> Browser Support </h2>
+				<p> Nomor pada tabel menentukan browser versi pertama yang mendukung secara penuh element <<b>canvas</b>>. </p>
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td class="left"> Element</td>
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> <<b>canvas</b>> </td>
+							<td> 4.0 </td>
+							<td> 9.0 </td>
+							<td> 2.0 </td>
+							<td> 3.1 </td>
+							<td> 9.0 </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> Canvas Examples </h2>
+				<p> Contoh Canvas </p>
+				<p> Canvas merupakan sebuah area persegi panjang pada sebuah halaman HTML. Dengan default, sebuah canvas tidak 
+				memiliki border dan tidak memiliki konten. </p>
+				<p> Markup terlihat seperti ini: </p>
+				
+				<div class="example-content">
+					<<b>canvas</b> <span class="teal">id="myCanvas" width="200" height="100"</span>><<b>/canvas</b>>
+				</div>
+				
+				<p> <b>Catatan:</b> Selaltu tentukan sebuah attribute <b>id</b> (untuk diarahkan ke dalam sebuah script), dan 
+				sebuah attribute width dan height untuk mendefinisikan ukuran dari canvas. </p>
+				<p> Untuk menambahkan sebuah border, gunakanlah attribute <b>style</b>. </p>
+				
+				<article class="example-box">
+					<h4> Contoh Dasar Canvas</h4>
+					<div class="example-content">
+					<<b>canvas</b> <span class="teal">id="myCanvas" width="200" height="100"
+					style="border:1px black solid;"</span>><<b>/canvas</b>>
+					</div>
+				</article>
+				
+				<article class="example-box">
+					<h4> Contoh Dasar Canvas</h4>
+					<div class="example-content">
+					<<b>canvas</b> <span class="teal">id="myCanvas" width="200" height="100"
+					style="border:1px black solid;"</span>><<b>/canvas</b>>
+					</div>
+				</article>
+				
+				<article class="example-box">
+					<h4> Gambar Dengan JavaScript</h4>
+					<div class="example-content">
+					<code>var</code> c = document.getElementById(myCanvas); <br>
+					<code>var</code> ctx = c.toContext("2d"); <br>
+					ctx.fillStyle = "#ff0000"; <br>
+					ctx.fillRect( 0,0,175,50);
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					<canvas id="myCanvas" width="200px" height="100px" style="border:1px black solid;">
+					Your browser does not support the HTML5 canvas tag.
+					</canvas>
+					</div>
+				</article>
+				
+				<article class="example-box">
+					<h4> Menggambar sebuah Garis </h4>
+					<div class="example-content">
+					<code>var</code> c = document.getElementById(myCanvas); <br>
+					<code>var</code> ctx = c.toContext("2d"); <br>
+					ctx.moveTo(0,0); <br>
+					ctx.lineTo(100, 200); <br>
+					ctx.stroke();
+					</div>
+					<button onclick="tampilkan02()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+						<canvas id="myCanvas02" width="200px" height="100px" style="border:1px black solid;">
+						Your browser does not support the HTML5 canvas tag.
+						</canvas>
+					</div>
+				</article>
+				
+				<article class="example-box">
+					<h4> Menggambar sebuah Garis </h4>
+					<div class="example-content">
+					<code>var</code> c = document.getElementById(myCanvas); <br>
+					<code>var</code> ctx = c.toContext("2d"); <br>
+					ctx.beginPath(); <br>
+					ctx.arc(95,50,40,02*Math.PI); <br>
+					ctx.stroke();
+					</div>
+					<button onclick="tampilkan03()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+						<canvas id="myCanvas02" width="200px" height="100px" style="border:1px black solid;">
+						Your browser does not support the HTML5 canvas tag.
+						</canvas>
+					</div>
+				</article>
+				
+				<article class="example-box">
+					<h4> Menggambar sebuah Kata </h4>
+					<div class="example-content">
+					<code>var</code> c = document.getElementById(myCanvas); <br>
+					<code>var</code> ctx = c.toContext("2d"); <br>
+					ctx.font = "20px Arial"; <br>
+					ctx.fillText("Hello world !" 50,100); <br>
+					</div>
+					<button onclick="tampilkan04()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+						<canvas id="myCanvas02" width="200px" height="100px" style="border:1px black solid;">
+						Your browser does not support the HTML5 canvas tag.
+						</canvas>
+					</div>
+				</article>
+				
+				<article class="example-box">
+					<h4> Menggambar Stroke Text </h4>
+					<div class="example-content">
+					<code>var</code> c = document.getElementById(myCanvas); <br>
+					<code>var</code> ctx = c.toContext("2d"); <br>
+					ctx.font = "20px Arial"; <br>
+					ctx.strokeText("Hello world !" 50,100); <br>
+					</div>
+					<button onclick="tampilkan05()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+						<canvas id="myCanvas02" width="200px" height="100px" style="border:1px black solid;">
+						Your browser does not support the HTML5 canvas tag.
+						</canvas>
+					</div>
+				</article>
+				
+				<article class="example-box">
+					<h4> Menggambar Linear Gradient  </h4>
+					<div class="example-content">
+					<code>var</code> c = document.getElementById(myCanvas); <br>
+					<code>var</code> ctx = c.toContext("2d"); <br><br>
+					
+					<em>// Menciptakan gradient </em>
+					<code>var</code> grd = ctx.createLinearGradient(0,0,200,0); <br>
+					grd.addColorStop(0,"red"); <br>
+					grd.addColorStop(1,"white"); <br><br>
+					
+					<em>// Mengisi dengan Gradient</em>
+					ctx.fillStyle = grd; <br>
+					ctx.fillRect(10,10,150,80);
+					</div>
+					<button onclick="tampilkan06()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+						<canvas id="myCanvas06" width="200px" height="100px" style="border:1px black solid;">
+						Your browser does not support the HTML5 canvas tag.
+						</canvas>
+					</div>
+				</article>
+				
+				<article class="example-box">
+					<h4> Menggambar Circular Gradient </h4>
+					<div class="example-content">
+					<code>var</code> c = document.getElementById(myCanvas); <br>
+					<code>var</code> ctx = c.toContext("2d"); <br>
+					
+					<em>// Menciptakan gradient </em>
+					<code>var</code> grd = ctx.createRadialGradient(75,50,5,90,60,100); <br>
+					grd.addColorStop(0,"red"); <br>
+					grd.addColorStop(1,"white"); <br><br>
+					
+					<em>// Mengisi dengan Gradient</em>
+					ctx.fillStyle = grd; <br>
+					ctx.fillRect(10,10,150,80);
+					</div>
+					<button onclick="tampilkan07()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan07">
+						<canvas id="myCanvas07" width="200px" height="100px" style="border:1px black solid;">
+						Your browser does not support the HTML5 canvas tag.
+						</canvas>
+					</div>
+				</article>
+				
+				<article class="example-box">
+					<h4> Canvas gambar </h4>
+					<div class="example-content">
+					
+						<<b>p</b>>Image to use:<<b>/p</b>> <br>
+						<<b>img</b> <span class="teal">id="scream" src="img_the_scream.jpg" alt="The Scream" width="220" height="277"</span>> <br><br>
+						
+						<<b>p</b>>Canvas to fill:<<b>/p</b>> <br>
+						<<b>canvas</b> <span class="teal">id="myCanvas" width="250" height="300"
+						style="border:1px solid #d3d3d3;"</span>><br> 
+						Your browser does not support the HTML5 canvas tag.<<b>/canvas</b>> <br>
+						
+						<<b>p</b>><<b>button</b> <span class="teal">onclick="myCanvas()"</span>>Try it<<b>/button</b>><<b>/p</b>> <br><br>
+						
+						<<b>script</b>> <br>
+						<code>function</code> myCanvas() { <br>
+						<code>var</code> c = document.getElementById("myCanvas"); <br>
+						<code>var</code> ctx = c.getContext("2d");<br>
+						<code>var</code> img = document.getElementById("scream"); <br>
+						ctx.drawImage(img,10,10);<br>
+						} <br>
+						<<b>/script</b>>
+						
+					</div>
+					<button onclick="tampilkan08()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan08">
+						<canvas id="myCanvas02" width="200px" height="100px" style="border:1px black solid;">
+						Your browser does not support the HTML5 canvas tag.
+						</canvas>
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML Canvas Tutorial </h2>
+				<p> Untuk mempelajari semua tentang HTML <<b>canvas</b>>, kunjungilah <a href="Canvas.html" >Tutorial Canvas HTML</a>. </p>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML5 style guide.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML5 SVG.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+<script type="text/javascript">
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(0,0,175,50);
+
+var c02 = document.getElementById("myCanvas02"); 
+var ctx02 = c02.toContext("2d"); 
+ctx02.moveTo(0,0); 
+ctx02.lineTo(100,200); 
+ctx02.stroke();
+</script>
+</body>
+</html>

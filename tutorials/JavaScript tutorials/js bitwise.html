@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | JavaScript | js bitwise</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="javaScript.js"></script>
+<script type="text/javascript" src="javaScript2.js"></script>
+<script type="text/javascript" src="javaScript3.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical"> <!--open link-->
+		<button onclick="openMenu()" id="menu">Open Menu</button>
+		<button onclick="closeMenu()" id="menu">Close Menu</button>
+		
+		<div id="vertical">
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch()"> JavaScript Tutorial</button>
+			<div class="drop-content" id="myDropdown">
+			<input type="text" class="myInput" id="myInput" placeholder="Cari" onkeyup="filterFunction()"/>
+			<ol>
+				<a href="js home.html"><li> Home </li></a>
+				<a href="js introduction.html"><li> Introduction </li></a>
+				<a href="js where to.html"><li> Where To </li></a>
+				<a href="js output.html"><li> Output </li></a>
+				<a href="js syntax.html"><li> Syntax </li></a>
+				<a href="js statements.html" ><li> Statements </li></a>
+				<a href="js comments.html" ><li> Comments </li></a>
+				<a href="js variables.html"><li> Variable </li></a>
+				<a href="js operators.html"><li> Operators </li></a>
+				<a href="js arithmetic.html"><li> Arithmetic </li></a>
+				<a href="js assignment.html"><li> Assignment </li></a>
+				<a href="js data types.html"><li> Data Types </li></a>
+				<a href="js functions.html"><li> Functions </li></a>
+				<a href="js objects.html"><li> Objects </li></a>
+				<a href="js scope.html"><li> Scope </li></a>
+				<a href="js events.html"><li> Events </li></a>
+				<a href="js strings.html"><li> string </li></a>
+				<a href="js string methods.html"><li> Strings Method </li></a>
+				<a href="js numbers.html"><li> Numbers </li></a>
+				<a href="js number methods.html"><li> Number Methods </li></a>
+				<a href="js math.html"><li> Math </li></a>
+				<a href="js random.html" ><li> Math Random </li></a>
+				<a href="js dates.html"><li> Dates </li></a>
+				<a href="js date formats.html" ><li> Date Formats </li></a>
+				<a href="js date methods.html" ><li> Date Methods </li></a>
+				<a href="js get date methods.html" ><li> Date get Methods </li></a>
+				<a href="js set date methods.html" ><li> Date Set Methods </li></a>
+				<a href="js arrays.html"><li> Arrays </li></a>
+				<a href="js array methods.html" ><li> Array Methods </li></a>
+				<a href="js array sort.html"><li> Array Sort </li></a>
+				<a href="js array iteration.html"><li> Array Iteration </li></a>
+				<a href="js booleans.html" ><li> boolean </li></a>
+				<a href="js comparisons.html" ><li> Comparisons </li></a>
+				<a href="js conditions.html" ><li>Conditions</li></a>
+				<a href="js switch.html" ><li>Switch </li></a>
+				<a href="js loop for.html"><li> Loop For </li></a>
+				<a href="js loop while.html" ><li>Loop while</li></a>
+				<a href="js break.html" ><li>Break</li></a>
+				<a href="js type conversion.html" ><li> Types conversion</li></a>
+				<a href="js bitwise.html" ><li> Bitwise </li></a>
+				<a href="js RegExp.html" ><li>RegExp</li></a>
+				<a href="js errors.html" ><li>Errors </li></a>
+				<a href="js debugging.html"><li>Debugging </li></a>
+				<a href="js hoisting.html" ><li>Hoisting</li></a>
+				<a href="js strict mode.html"><li>Strict mode</li></a>
+				<a href="js this keyword.html" ><li> this Keyword </li></a>
+				<a href="js let.html" ><li> Let </li></a>
+				<a href="js const.html" ><li> Const </li></a>
+				<a href="js style guide.html" ><li>Style guide</li></a>
+				<a href="js best practices.html" ><li>best practices </li></a>
+				<a href="js mistakes.html"><li> Mistakes </li></a>
+				<a href="js performance.html" ><li>Performance</li></a>
+				<a href="js reserved words.html" ><li>Reserved words</li></a>
+				<a href="js versions.html" ><li> Versions </li></a>
+				<a href="js version ES5.html" ><li class="redZone"> Version ES5 </li></a>
+				<a href="js version ES6.html" ><li class="redZone"> Version ES6 </li></a>
+				<a href="js JSON.html"><li>JSON</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch2()"> JavaScript Formulir</button>
+			<div class="drop-content" id="myDropdown2">
+			<input type="text" class="myInput" id="myInput2" placeholder="Cari" onkeyup="filterFunction2()"/>
+			<ol>
+				<a href="forms validation.html" ><li>Forms Validation</li></a>
+				<a href="forms API.html" ><li class="redZone">Forms API</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch3()"> JavaScript Object</button>
+			<div class="drop-content" id="myDropdown3">
+			<input type="text" class="myInput" id="myInput3" placeholder="Cari" onkeyup="filterFunction3()"/>
+			<ol>
+				<a href="object definitions.html" ><li>Object Definitions</li></a>
+				<a href="object properties.html" ><li>Object Properties</li></a>
+				<a href="object methods.html"><li class="redZone">Object Methods</li></a>
+				<a href="object accessors.html" ><li>Object accessors</li></a>
+				<a href="object constructors.html" ><li>Object constructor</li></a>
+				<a href="object prototypes.html" ><li>Object Prototypes</li></a>
+				<a href="object ECMAScript5.html" ><li class="redZone">Object ECMAScript5</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch4()"> JavaScript Function</button>
+			<div class="drop-content" id="myDropdown4">
+			<input type="text" class="myInput" id="myInput4" placeholder="Cari" onkeyup="filterFunction4()"/>
+			<ol>
+				<a href="funtion definitions.html" ><li>Function Definitions</li></a>
+				<a href="function parameters.html" ><li>Function Parameters</li></a>
+				<a href="function invocation.html" ><li>Function Invocation</li></a>
+				<a href="function closures.html" ><li>Function Closures</li></a>
+				<a href="function apply.html" ><li class="redZone">Function Apply</li></a>
+				<a href="function call.html" ><li>Function Call</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch5()">  JavaScript HMTL DOM </button>
+			<div class="drop-content" id="myDropdown5">
+			<input type="text" class="myInput" id="myInput5" placeholder="Cari" onkeyup="filterFunction5()"/>
+			<ol>
+				<a href="DOM intro.html" ><li> DOM Introduction </li></a>
+				<a href="DOM methods.html" ><li> DOM Methods </li></a>
+				<a href="DOM document.html" ><li> DOM Documents</li></a>
+				<a href="DOM elements.html" ><li> DOM Elements  </li></a>
+				<a href="DOM HTML.html" ><li> DOM HTML</li></a>
+				<a href="DOM CSS.html" ><li> DOM CSS  </li></a>
+				<a href="DOM animations.html" ><li> DOM Animations </li></a>
+				<a href="DOM events.html" ><li> DOM Events </li></a>
+				<a href="DOM eventListener.html" ><li> DOM EventListener </li></a>
+				<a href="DOM navigation.html" ><li> DOM Navigation </li></a>
+				<a href="DOM nodes.html" ><li> DOM Nodes </li></a>
+				<a href="DOM nodelist.html" ><li> DOM Nodelist </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch6()"> JavaScript Browser BOM </button>
+			<div class="drop-content" id="myDropdown6">
+			<input type="text" class="myInput" id="myInput6" placeholder="Cari" onkeyup="filterFunction6()"/>
+			<ol>
+				<a href="BOM window.html" ><li> Window </li></a>
+				<a href="BOM screen.html" ><li> Screen </li></a>
+				<a href="BOM location.html" ><li> Location </li></a>
+				<a href="BOM history.html" ><li> History  </li></a>
+				<a href="BOM navigator.html" ><li> Navigator </li></a>
+				<a href="BOM popup alert.html" ><li> Popup Alert </li></a>
+				<a href="BOM timing.html" ><li> Timing </li></a>
+				<a href="BOM cookies.html" ><li> Cookies </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch7()">JavaScript AJAX</button>
+			<div class="drop-content" id="myDropdown7">
+			<input type="text" class="myInput" id="myInput7" placeholder="Cari" onkeyup="filterFunction7()"/>
+			<ol>
+				<a href="AJAX intro.html" ><li> AJAX Introduction</li></a>
+				<a href="AJAX XMLHttpRequest.html" ><li> AJAX XMLHttpRequest </li></a>
+				<a href="AJAX request.html" ><li> AJAX Request </li></a>
+				<a href="AJAX respone.html" ><li class="redZone"> AJAX Response </li></a>
+				<a href="AJAX XML file.html" ><li> AJAX XML File</li></a>
+				<a href="AJAX PHP.html" ><li> AJAX PHP </li></a>
+				<a href="AJAX ASP.html" ><li> AJAX ASP </li></a>
+				<a href="AJAX database.html" ><li> AJAX Database </li></a>
+				<a href="AJAX XML applications.html" ><li> AJAX XML Application </li></a>
+				<a href="AJAX examples.html" ><li> AJAX Example </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch8()">JavaScript JSON</button>
+			<div class="drop-content" id="myDropdown8">
+			<input type="text" class="myInput" id="myInput8" placeholder="Cari" onkeyup="filterFunction8()"/>
+			<ol>
+				<a href="JSON intro.html" ><li class="redZone"> JSON Introduction</li></a>
+				<a href="JSON syntax.html" ><li class="redZone"> JSON Syntax </li></a>
+				<a href="JSON vs XML.html" ><li class="redZone"> JSON vs XML </li></a>
+				<a href="JSON data types.html" ><li class="redZone"> JSON Data Types </li></a>
+				<a href="JSON parse.html" ><li class="redZone"> JSON parse </li></a>
+				<a href="JSON stringify.html" ><li class="redZone"> JSON Stringify</li></a>
+				<a href="JSON objects.html" ><li class="redZone"> JSON Objects </li></a>
+				<a href="JSON arrays.html" ><li class="redZone"> JSON Arrays </li></a>
+				<a href="JSON PHP.html" ><li class="redZone"> JSON PHP </li></a>
+				<a href="JSON HTML.html" ><li class="redZone"> JSON HTML </li></a>
+				<a href="JSON JSONP.html" ><li class="redZone"> JSON JSONP </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch9()">JavaScript Reference</button>
+			<div class="drop-content" id="myDropdown9">
+			<input type="text" class="myInput" id="myInput9" placeholder="Cari" onkeyup="filterFunction9()"/>
+			<ol>
+				<li> <p> JavaScript References </p> </li>
+				<a href="JavaScript references/overview.html" > <li> Overview </li> </a>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch11()">JavaScript</button>
+					<div class="drop-content" id="myDropdown11">
+					<input type="text" class="myInput" id="myInput11" placeholder="Cari" onkeyup="filterFunction11()"/>
+					<ol>
+						<a href="JavaScript references/string reference.html" ><li>String Reference </li></a>
+						<a href="JavaScript references/number reference.html" ><li>Number Reference </li></a>
+						<a href="JavaScript references/operator reference.html" ><li>Operator Reference </li></a>
+						<a href="JavaScript references/statement reference.html" ><li>Statement Reference </li></a>
+						<a href="JavaScript references/math reference.html" ><li>Math Reference </li></a>
+						<a href="JavaScript references/date reference.html" ><li>Date Reference </li></a>
+						<a href="JavaScript references/array reference.html" ><li> Array Reference </li></a>
+						<a href="JavaScript references/boolean reference.html" ><li> Boolean Reference </li></a>
+						<a href="JavaScript references/RegExp reference.html" ><li> RegExp Reference </li></a>
+						<a href="JavaScript references/global reference.html" ><li> Global Reference </li></a>
+						<a href="JavaScript references/conversion reference.html" ><li> Conversion Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()">Browser Object Model (BOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="JavaScript references/BOM window reference.html" ><li> BOM Window Reference </li></a>
+						<a href="JavaScript references/BOM navigator reference.html" ><li> BOM Navigator Reference </li></a>
+						<a href="JavaScript references/BOM screen reference.html" ><li> BOM screen Reference </li></a>
+						<a href="JavaScript references/BOM history reference.html" ><li> BOM History Reference </li></a>
+						<a href="JavaScript references/BOM location reference.html" ><li> BOM Location Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()"> HTML Document Object Model (DOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="JavaScript references/DOM document reference.html" ><li> DOM Documents Reference </li></a>
+						<a href="JavaScript references/DOM element reference.html" ><li> DOM Elements Reference </li></a>
+						<a href="JavaScript references/DOM attribute reference.html" ><li> DOM Attributes Reference </li></a>
+						<a href="JavaScript references/DOM event reference.html" ><li> DOOM Events Reference </li></a>
+						<a href="JavaScript references/DOM style.html" ><li> DOM Style Reference </li></a>
+					</ol>
+					</div>
+			</ol>
+			</div>
+			</div>
+		</div>
+		</div>
+		</div> <!--close Link-->
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> Pengoperasian Bitwise JavaScript</h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h1> Operator Bitwise JavaScript </h1>
+				
+				<table class="attention explanation">
+							<caption> Tabel Operator Bitwise</caption>
+					<thead>
+						<tr>
+							<th> Operator </th>
+							<th> Nama </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> & </td>
+							<td> AND </td>
+							<td>
+							Mengatur setiap bit menjadi 1 jika kedua bit adalah 1
+							</td>
+						</tr>
+						<tr>
+							<td> | </td>
+							<td> OR </td>
+							<td>
+							Mengatur setiap bit menjadi 1 jika satu dari dua bit adalah 1
+							</td>
+						</tr>
+						<tr>
+							<td> ^ </td>
+							<td> XOR </td>
+							<td>
+								Mengatur setiap bit menjadi 1 hanya jika satu dari dua bit adalah 1
+							</td>
+						</tr>
+						<tr>
+							<td> ~ </td>
+							<td> NOT </td>
+							<td>
+							Mengembalikan (susunan) semua bit
+							</td>
+						</tr>
+						<tr>
+							<td> << </td>
+							<td> zero fill left shift</td>
+							<td>
+							Menggeserkan ke kiri dengan pendorongan nol masuk dari kanan dan (membiarkan) bit - bit paling kiri (leftmost) fall off*
+							</td>
+						</tr>					
+						<tr>
+							<td> >> </td>
+							<td> signed right shift </td>
+							<td>
+							Menggeserkan ke kiri dengan pendorongan salinan dari bit paling kiri dan (membiarkan) bit - bit paling kanan(righttmost) fall off*
+							</td>
+						</tr>
+						<tr>
+							<td> >>> </td>
+							<td> Zero fill right shift </td>
+							<td>
+							Menggeserkan ke kanan dengan pendorongan nol masuk dari kiri dan (membiarkan) bit - bit paling kanan (rightmost) fall off*
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Operator Bitwise JavaScript </h1>
+				
+				<table class="attention explanation">
+					<caption> Tabel Pengoperasian Bitwise</caption>
+					<thead>
+						<tr>
+							<th> Operasi </th>
+							<th> Hasil </th>
+							<th> Sama seperti </th>
+							<th> Hasil </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> 5 & 1 </td>
+							<td> 1 </td>
+							<td> 0101 & 0001 </td>
+							<td> 0001 </td>
+						</tr>
+						<tr>
+							<td> 5 | 1 </td>
+							<td> 5 </td>
+							<td>  0101 | 00001</td>
+							<td> 0101 </td>
+						</tr>
+						<tr>
+							<td> ~5</td>
+							<td> 10 </td>
+							<td> ~0101 </td>
+							<td> 1010 </td>
+						</tr>
+						<tr>
+							<td> 5 <q lang="no"><<</q> 1</td>
+							<td> 10 </td>
+							<td> 0101 <q lang="no"> << </q> 1 </td>
+							<td> 1010 </td>
+						</tr>
+						<tr>
+							<td> 5 ^ 1 </td>
+							<td> 4 </td>
+							<td> 0101 ^ 0001 </td>
+							<td> 0100 </td>
+						</tr>					
+						<tr>
+							<td> 5 >> 1 </td>
+							<td> 2 </td>
+							<td> 0101 >> 1 </td>
+							<td> 0010 </td>
+						</tr>
+						<tr>
+							<td> 5 >>> 1 </td>
+							<td> 2 </td>
+							<td> 0101 >>> 1 </td>
+							<td> 0010 </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+			<article>
+				<h1> JavaSceipt Menggunakan 32 bit Operand Bitwise </h1>
+				<p>
+				JavaScript menyusun nomor - nomor sebagai 64 bit floating point number (nomor dengan nilai titik terapung) 
+				yang ditunjukan pada 32 bit nomor binary (biner). <br>
+				Sebelum sebuah pengoperasian bitwise dilakukan, JavaScript mengubah number menjadi 32 bit signed integer (bilangan bulat yang disetujui). <br>
+				Setelah pengoperasian bitwise dilakukan, hasil diubah kembalik menjadi 64 bit JavaScript Number (Nomor JavaScript).
+				</p>
+				<div class="nasehat">
+					<p>
+					Contoh dibawah menggunakan 4 bit nomor biner tidak ditandatangani. 
+					Karena itu ~ 5 mengembalikan 10. <br>
+					Sejak JavaScript menggunakan 32 bits signed integer, ia tidak akan mengembalikan 10, ia akan mengembalikan -6. <br><br>
+					00000000000000000000000000000101 (5)<br>
+					11111111111111111111111111111010 (~5 = -6) <br><br>
+					Sebuah signed integer menggunakan bit paling kiri ssbagai minus sign.
+					</p>
+				</div>
+			</article>
+<section>
+<section>
+			<article>
+				<h1> Bitwise AND </h1>
+				<p>
+				Ketika sebuah bitwise AND dilakukan pada sepasang bit, ia mengembalikan 1 jika kedua bit 1. <br>
+				Contoh satu bit:
+				</p>
+				
+				<table>
+					<caption> Tabel Contoh Pengoperasian Bitwise AND (satu bit)</caption>
+					<thead>
+						<tr>
+							<th> Operasi </th>
+							<th> Hasil </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> 0 & 0 </td>
+							<td> 0 </td>
+						</tr>
+						<tr>
+							<td> 0 & 1 </td>
+							<td> 0 </td>
+						</tr>
+						<tr>
+							<td> 1 & 0 </td>
+							<td> 0 </td>
+						</tr>
+						<tr>
+							<td> 1 & 1 </td>
+							<td> 1 </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<p>
+				Contoh empat bit:
+				</p>
+				
+				<table>
+					<caption> Tabel Pengoperasian Bitwise AND (empat bit)</caption>
+					<thead>
+						<tr>
+							<th> Operasi </th>
+							<th> Hasil </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> 1111 & 0000 </td>
+							<td> 0000 </td>
+						</tr>
+						<tr>
+							<td> 1111 & 0001 </td>
+							<td> 0001 </td>
+						</tr>
+						<tr>
+							<td> 1111 & 0010 </td>
+							<td> 0010 </td>
+						</tr>
+						<tr>
+							<td> 1111 & 0100 </td>
+							<td> 0100 </td>
+						</tr>
+					</tbody>
+				</table>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Bitwise OR </h1>
+				<p>
+				Ketika sebuah bitwise OR dilakukan pada sepasang bit, ia mengembalikan 1 
+				jika salah satu bit adalah 1. <br>
+				Contoh satu bit:
+				</p>
+				
+				<table>
+					<caption> Tabel Contoh Pengoperasian Bitwise OR (satu bit)</caption>
+					<thead>
+						<tr>
+							<th> Operasi </th>
+							<th> Hasil </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> 0 | 0 </td>
+							<td> 0 </td>
+						</tr>
+						<tr>
+							<td> 0 | 1 </td>
+							<td> 1 </td>
+						</tr>
+						<tr>
+							<td> 1 | 0 </td>
+							<td> 1 </td>
+						</tr>
+						<tr>
+							<td> 1 | 1 </td>
+							<td> 1 </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<p>
+				Contoh empat bit:
+				</p>
+				
+				<table>
+					<caption> Tabel Pengoperasian Bitwise OR (empat bit)</caption>
+					<thead>
+						<tr>
+							<th> Operasi </th>
+							<th> Hasil </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> 1111 | 0000 </td>
+							<td> 1111 </td>
+						</tr>
+						<tr>
+							<td> 1111 | 0001 </td>
+							<td> 1111 </td>
+						</tr>
+						<tr>
+							<td> 1111 | 0010 </td>
+							<td> 1111 </td>
+						</tr>
+						<tr>
+							<td> 1111 | 0100 </td>
+							<td> 1111 </td>
+						</tr>
+					</tbody>
+				</table>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Bitwise XOR </h1>
+				<p>
+				Ketika sebuah bitwise XOR dilakukan pada sepasang bit, ia mengembalikan 1 
+				jika kedua bit (satu sama lain) berbeda. <br>
+				Contoh satu bit:
+				</p>
+				
+				<table>
+					<caption> Tabel Contoh Pengoperasian Bitwise XOR (satu bit)</caption>
+					<thead>
+						<tr>
+							<th> Operasi </th>
+							<th> Hasil </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> 0 ^ 0 </td>
+							<td> 0 </td>
+						</tr>
+						<tr>
+							<td> 0 ^ 1 </td>
+							<td> 1 </td>
+						</tr>
+						<tr>
+							<td> 1 ^ 0 </td>
+							<td> 1 </td>
+						</tr>
+						<tr>
+							<td> 1 ^ 1 </td>
+							<td> 0 </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<p>
+				Contoh empat bit:
+				</p>
+				
+				<table>
+					<caption> Tabel Pengoperasian Bitwise XOR (empat bit)</caption>
+					<thead>
+						<tr>
+							<th> Operasi </th>
+							<th> Hasil </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> 1111 ^ 0000 </td>
+							<td> 1111 </td>
+						</tr>
+						<tr>
+							<td> 1111 ^ 0001 </td>
+							<td> 1110 </td>
+						</tr>
+						<tr>
+							<td> 1111 ^ 0010 </td>
+							<td> 1101 </td>
+						</tr>
+						<tr>
+							<td> 1111 ^ 0100 </td>
+							<td> 1011 </td>
+						</tr>
+					</tbody>
+				</table>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h1> JavaScript Bitwise AND (&) </h1>
+				<p>
+				Bitwise AND akan mengembalikan 1 jika kedua bit 1: 
+				</p>
+				
+				<table>
+					<thead>
+						<tr>
+							<th> Desimal </th>
+							<th> Binary </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> 5 </td>
+							<td> 00000000000000000000000000000101 </td>
+						</tr>
+						<tr>
+							<td> 1 </td>
+							<td> 00000000000000000000000000000001 </td>
+						</tr>
+						<tr>
+							<td> 5 & 1 </td>
+							<td> 00000000000000000000000000000001 (1) </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<article class="example-box">
+					<h1 style="text-align:center; font-style:italic;"> Bitwise AND </h1>
+					<h4> Input </h4>
+					<div class="example-content">
+						<span class="purple">var</span> x = 5 & 1;
+					</div>
+					<h4> Output </h4>
+					<div class="example-content">
+					<button onclick="myBitwise1()">Klik disini </button>
+					<p id="myBitwise01">  </p>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> JavaScript Bitwise OR (|) </h1>
+				<p>
+				Bitwise AND akan mengembalikan 1 jika salah satu dari bit adalah 1: 
+				</p>
+				
+				<table>
+					<thead>
+						<tr>
+							<th> Desimal </th>
+							<th> Binary </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> 5 </td>
+							<td> 00000000000000000000000000000101 </td>
+						</tr>
+						<tr>
+							<td> 1 </td>
+							<td> 00000000000000000000000000000001 </td>
+						</tr>
+						<tr>
+							<td> 5 | 1 </td>
+							<td> 00000000000000000000000000000001 (5) </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<article class="example-box">
+					<h1 style="text-align:center; font-style:italic;"> Bitwise OR </h1>
+					<h4> Input </h4>
+					<div class="example-content">
+						<span class="purple">var</span> x = 5 | 1;
+					</div>
+					<h4> Output </h4>
+					<div class="example-content">
+					<button onclick="myBitwise2()">Klik disini </button>
+					<p id="myBitwise02">  </p>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> JavaScript Bitwise XOR (^) </h1>
+				<p>
+				Bitwise AND akan mengembalikan 1 jika bit - bit tersebut berbeda: 
+				</p>
+				
+				<table>
+					<thead>
+						<tr>
+							<th> Desimal </th>
+							<th> Binary </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> 5 </td>
+							<td> 00000000000000000000000000000101 </td>
+						</tr>
+						<tr>
+							<td> 1 </td>
+							<td> 00000000000000000000000000000001 </td>
+						</tr>
+						<tr>
+							<td> 5 | 1 </td>
+							<td> 00000000000000000000000000000001 (4) </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<article class="example-box">
+					<h1 style="text-align:center; font-style:italic;"> Bitwise OR </h1>
+					<h4> Input </h4>
+					<div class="example-content">
+						<span class="purple">var</span> x = 5 ^ 1;
+					</div>
+					<h4> Output </h4>
+					<div class="example-content">
+					<button onclick="myBitwise3()">Klik disini </button>
+					<p id="myBitwise03">  </p>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> JavaScript Bitwise NOT (~) </h1>
+				
+				<table>
+					<thead>
+						<tr>
+							<th> Desimal </th>
+							<th> Binary </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> 5 </td>
+							<td> 00000000000000000000000000000101 </td>
+						</tr>
+						<tr>
+							<td> ~5 </td>
+							<td> 00000000000000000000000000000001 (-6) </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<article class="example-box">
+					<h1 style="text-align:center; font-style:italic;"> Bitwise OR </h1>
+					<h4> Input </h4>
+					<div class="example-content">
+						<span class="purple">var</span> x = ~5 ;
+					</div>
+					<h4> Output </h4>
+					<div class="example-content">
+					<button onclick="myBitwise4()">Klik disini </button>
+					<p id="myBitwise04">  </p>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> JavaScript (Zero Fill) Bitwise Left Shift (<<) </h1>
+				<p>
+				Ini adalah sebuah zero fill left shift, satu atau lebih bit 0 didorong masuk dari 
+				kanan dan bit paling kiri di *fall off:
+				</p>
+				
+				<table>
+					<thead>
+						<tr>
+							<th> Desimal </th>
+							<th> Binary </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> 5 </td>
+							<td> 00000000000000000000000000000101 </td>
+						</tr>
+						<tr>
+							<td> 5 <q lang="no"><<</q> 1</td>
+							<td> 00000000000000000000000000000001 (10) </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<article class="example-box">
+					<h1 style="text-align:center; font-style:italic;"> Bitwise (Zero Fill) Left Shift  </h1>
+					<h4> Input </h4>
+					<div class="example-content">
+						<span class="purple">var</span> x = 5 <q lang="no"><<</q> 1;
+					</div>
+					<h4> Output </h4>
+					<div class="example-content">
+						<button onclick="myBitwise5()">Klik disini </button>
+						<p id="myBitwise05">  </p>
+					</div>
+				</article>
+			</article>
+				
+</section>
+<section>
+			<article>
+				<h1> JavaScript (Sign Preserving) Bitwise Right Shift (>>) </h1>
+				<p>
+				Ini adalah sebuah sign preserving left shift. Tiruan dari bit paling kiri didorong masuk 
+				dari kiri dan bit - bit paling kiri di *fall off:
+				</p>
+				
+
+				
+				<table>
+					<thead>
+						<tr>
+							<th> Desimal </th>
+							<th> Binary </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> -5 </td>
+							<td> 11111111111111111111111111111011 </td>
+						</tr>
+						<tr>
+							<td> -5 >>  1</td>
+							<td> 11111111111111111111111111111011 (-3) </td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<article class="example-box">
+					<h1 style="text-align:center; font-style:italic;"> Bitwise (Sign Preserving) Right Shift  </h1>
+					<h4> Input </h4>
+					<div class="example-content">
+						<span class="purple">var</span> x = -5 >> 1;
+					</div>
+					<h4> Output </h4>
+					<div class="example-content">
+					<button onclick="myBitwise6()">Klik disini </button>
+					<p id="myBitwise06">  </p>
+					</div>
+				</article>
+
+			</article>
+</section>
+<section>
+	<article>
+		<h1> Nomor - Nomor Binary </h1>
+		<p>
+		Nomor - nomor binary hanya dengan satu bit mudah untuk dimengerti:
+		</p>
+		
+		<table>
+			<thead>
+				<th> Presentasi Binary </th>
+				<th> Nilai Desimal </th>
+			</thead>
+			<tbody>
+				<tr>
+					<td> 00000000000000000000000000000001 </td>
+					<td> 1 </td>
+				</tr>
+				<tr>
+					<td> 00000000000000000000000000000010 </td>
+					<td> 2 </td>
+				</tr>
+				<tr>
+					<td> 00000000000000000000000000000100 </td>
+					<td> 4 </td>
+				</tr>
+				<tr>
+					<td> 00000000000000000000000000001000 </td>
+					<td> 8 </td>
+				</tr>
+				<tr>
+					<td> 00000000000000000000000000010000 </td>
+					<td> 16 </td>
+				</tr>
+				<tr>
+					<td> 00000000000000000000000000100000 </td>
+					<td> 32 </td>
+				</tr>
+				<tr>
+					<td> 00000000000000000000000001000000 </td>
+					<td> 64 </td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<p>
+		Pengaturan sedikit lebih dari bit - bit menampakan atau mengungkapkan (reveal) pola biner
+		</p>
+		
+		<table>
+			<thead>
+				<th> Presentasi Binary </th>
+				<th> Nilai Desimal </th>
+			</thead>
+			<tbody>
+				<tr>
+					<td> 00000000000000000000000000000101 </td>
+					<td> 5 (4 + 1) </td>
+				</tr>
+				<tr>
+					<td> 00000000000000000000000000001101 </td>
+					<td> 13 (8 + 4 + 1) </td>
+				</tr>
+				<tr>
+					<td> 00000000000000000000000000101101 </td>
+					<td> 45 (32 + 8 + 4 + 1) </td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<p>
+		Nomor binary JavaScript disusun dalam dua format pelengkap.<br>
+		Ini bermaksud bahwa suatu nomor negetif dalam bitwise NOT dari nomor plus 1 
+		</p>
+		
+		<table>
+			<thead>
+				<tr> 
+					<th> Presentasi Binary </th>
+					<th> Nilai Desimal </th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td> 00000000000000000000000000000101 </td>
+					<td> 5 </td>
+				</tr>
+				<tr>
+					<td> 11111111111111111111111111111011 </td>
+					<td> -5 </td>
+				</tr>
+				<tr>
+					<td> 00000000000000000000000000000110 </td>
+					<td> 6 </td>
+				</tr>
+				<tr>
+					<td> 11111111111111111111111111111010 </td>
+					<td> -6 </td>
+				</tr>
+				<tr>
+					<td> 00000000000000000000000000101000 </td>
+					<td> 40 </td>
+				</tr>
+				<tr>
+					<td> 11111111111111111111111111011000 </td> 
+					<td> -40 </td>
+				</tr>
+			</tbody>
+		</table>
+	</article>
+</section>
+<section>
+	<article>
+		<h1> Pengubahan Desimal menjad Binary </h1>
+		
+		<article class="example-box">
+			<h1 style="text-align:center; font-style:italic;"> Bitwise (Sign Preserving) Right Shift  </h1>
+			<h4> Input </h4>
+			<div class="example-content">
+				<span class="purple">function</span> bin2dec(dec) {
+					<blockquote>
+					<span class="purple">return</span> (dec >>> 0). toString(2);
+					</blockquote>
+				};
+			</div>
+			<h4> Output </h4>
+			<div class="example-content">
+			<button onclick="myBitwise7()">Klik disini </button>
+			<p id="myBitwise07">  </p>
+			</div>
+		</article>
+	</article>
+</section>
+
+<section>		
+	<article>
+		<h1> Pengubahan Desimal menjad Binary </h1>
+		
+		<article class="example-box">
+			<h1 style="text-align:center; font-style:italic;"> Bitwise (Sign Preserving) Right Shift  </h1>
+			<h4> Input </h4>
+			<div class="example-content">
+				<span class="purple">function</span> bin2dec(bin) {
+					<blockquote>
+					<span class="purple">return</span> parseInt(bin, 2). toString(10);
+					</blockquote>
+				};
+			</div>
+			<h4> Output </h4>
+			<div class="example-content">
+			<button onclick="myBitwise8()">Klik disini </button>
+			<p id="myBitwise08">  </p>
+			</div>
+		</article>
+	</article>
+</section>
+<section>
+	<article id="NoB">
+	<a href="js type conversion.html">
+	<div class="back">&larr; Kembali </div>
+	</a>
+	<a href="js RegExp.html" >
+	<div class="next">Selanjutnya &rarr;</div>
+	</a>
+	</article>
+	<article>
+	</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+
+<script type="text/javascript">
+
+// AND
+function myBitwise1() {
+	var x = 5 & 1;
+	document.getElementById("myBitwise01").innerHTML = x;
+}
+
+// OR
+function myBitwise2() {
+	var x = 5 | 1;
+	document.getElementById("myBitwise02").innerHTML = x;
+}
+
+// XOR
+function myBitwise3() {
+	var x = 5 ^ 1;
+	document.getElementById("myBitwise03").innerHTML = x;
+}
+
+// NOT
+function myBitwise4() {
+	var x = ~5;
+	document.getElementById("myBitwise04").innerHTML = x;
+}
+
+// (Zero Fill) Left Shift
+function myBitwise5() {
+	var x = 5 << 1;
+	document.getElementById("myBitwise05").innerHTML = x;
+}
+
+// (Sign Preserving) Right Shift
+function myBitwise6() {
+	var x = -5 >> 1;
+	document.getElementById("myBitwise06").innerHTML = x;
+}
+
+// Pengubahan Desimal menjadi Biner
+var des = 255;
+function myBitwise7(des) {
+	return (des >>> 0).toString(2);
+}
+document.getElementById("myBitwise7").innerHTML = myBitwise7(100);
+
+function myBitwise8(bin) {
+	return (bin, 2).toString(10);
+}
+document.getElementById("myBitwise8").innerHTML = myBitwise8(10);
+</script>
+</body>
+</html>

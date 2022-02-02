@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS3 Transitions </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+#sembunyikan02  div { 
+width: 100px; 
+height: 100px; 
+background: red; 
+-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */ 
+transition: width 2s; 
+} 
+
+#sembunyikan02 div:hover { 
+width: 300px; 
+} 
+
+#sembunyikan03 div { 
+width: 100px; 
+height: 100px; 
+background: red; 
+-webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */ 
+transition: width 2s, height 4s; 
+} 
+
+#sembunyikan03 div:hover { 
+width: 300px; 
+height: 300px; 
+} 
+
+#sembunyikan04 div { 
+width: 100px; 
+height: 100px; 
+background: red; 
+-webkit-transition: width 2s; /* Safari */ 
+transition: width 2s; 
+} 
+
+/* For Safari 3.1 to 6.0 */ 
+#sembunyikan04 #div1 {-webkit-transition-timing-function: linear;} 
+#sembunyikan04 #div2 {-webkit-transition-timing-function: ease;} 
+#sembunyikan04 #div3 {-webkit-transition-timing-function: ease-in;} 
+#sembunyikan04 #div4 {-webkit-transition-timing-function: ease-out;} 
+#sembunyikan04 #div5 {-webkit-transition-timing-function: ease-in-out;} 
+
+/* Standard syntax */ 
+#sembunyikan04 #div1 {transition-timing-function: linear;} 
+#sembunyikan04 #div2 {transition-timing-function: ease;} 
+#sembunyikan04 #div3 {transition-timing-function: ease-in;} 
+#sembunyikan04 #div4 {transition-timing-function: ease-out;} 
+#sembunyikan04 #div5 {transition-timing-function: ease-in-out;} 
+
+#sembunyikan04 div:hover { 
+width: 300px; 
+} 
+
+
+#sembunyikan05 div { 
+width: 100px; 
+height: 100px; 
+background: red; 
+-webkit-transition: width 3s; /* Safari */ 
+-webkit-transition-delay: 1s; /* Safari */ 
+transition: width 3s; 
+transition-delay: 1s; 
+} 
+
+#sembunyikan05 div:hover { 
+width: 300px; 
+} 
+
+#sembunyikan06 div { 
+width: 100px; 
+height: 100px; 
+background: red; 
+-webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */ 
+transition: width 2s, height 2s, transform 2s; 
+} 
+
+#sembunyikan06 div:hover { 
+width: 300px; 
+height: 300px; 
+-webkit-transform: rotate(180deg); /* Safari */ 
+transform: rotate(180deg); 
+} 
+
+#sembunyikan07 div { 
+width: 100px; 
+height: 100px; 
+background: red; 
+/* For Safari 3.1 to 6.0 */ 
+-webkit-transition-property: width; 
+-webkit-transition-duration: 2s; 
+-webkit-transition-timing-function: linear; 
+-webkit-transition-delay: 1s; 
+/* Standard syntax */ 
+transition-property: width; 
+transition-duration: 2s; 
+transition-timing-function: linear; 
+transition-delay: 1s; 
+} 
+
+#sembunyikan07 div:hover { 
+width: 300px; 
+} 
+
+#sembunyikan08 div { 
+width: 100px; 
+height: 100px; 
+background: red; 
+-webkit-transition: width 2s linear 1s; /* For Safari 3.1 to 6.0 */ transition: width 2s linear 1s; 
+} 
+
+#sembunyikan08 div:hover { 
+width: 300px; 
+} 
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS3 Transitions </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> CSS3 Transitions</h2>
+				<p> CSS3 transitions mengizinkan kamu untuk mengubah nilai properti dengan lembut/pelan (dari satu nilai ke nilainya), diatas/melebihi durasi yang diberikan.</p>
+				<p> <b>Contoh:</b> Gerakanlah mouse ke element dibawah untuk melihat CSS3 transition effect:</p>
+				
+				<div>
+					<div class="transisi">CSS3</div>
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Browser Support for Transitions</h2>
+				<p> Nomor pada tabel menentukan browser versi pertama yang mendukung secara penuh  properti ini.</p>
+				<p> Nomor yang diikut dengan <mark>-ms-</mark>, <mark>-webkit-</mark>, <mark>-moz-</mark> atau <mark>-o-</mark> menentukan versi pertama yang bekerja dengan awalan properti.</p>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="6" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> Properti </td>
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td>transition</td>
+							<td> 26.0 <br> 4.0 -webkit- </td>
+							<td> 12.0 dan 10.0 </td>
+							<td> 16.0 <br> 4.0 -moz- </td>
+							<td> 6.1 <br> 3.1 -webkit-</td>
+							<td> 12.1 <br> 10.5 -webkit- </td>
+						</tr>
+						<tr class="center">
+							<td>transition-delay </td>
+							<td> 26.0 <br> 4.0 -webkit- </td>
+							<td> 12.0 dan 10.0  </td>
+							<td> 16.0 <br> 4.0 -moz- </td>
+							<td> 6.1 <br> 3.1 -webkit- </td>
+							<td> 12.1 <br> 10.5 -o- </td>
+						</tr>
+						<tr class="center">
+							<td> transition-duration </td>
+							<td> 26.0 <br> 4.0 -webkit- </td>
+							<td> 12.0 dan 10.0  </td>
+							<td> 16.0 <br> 4.0 -moz- </td>
+							<td> 6.1 <br> 3.1 -webkit- </td>
+							<td> 12.1 <br> 10.5 -o- </td>
+						</tr>
+						<tr class="center">
+							<td> transition-property </td>
+							<td> 26.0 <br> 4.0 -webkit- </td>
+							<td> 12.0 dan 10.0  </td>
+							<td> 16.0 <br> 4.0 -moz- </td>
+							<td> 6.1 <br> 3.1 -webkit- </td>
+							<td> 12.1 <br> 10.5 -o- </td>
+						</tr>
+						<tr class="center">
+							<td> transition-timing-function </td>
+							<td> 26.0 <br> 4.0 -webkit- </td>
+							<td> 12.0 dan 10.0  </td>
+							<td> 16.0 <br> 4.0 -moz- </td>
+							<td> 6.1 <br> 3.1 -webkit- </td>
+							<td> 12.1 <br> 10.5 -o- </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>How to Use CSS3 Transitions?</h2>
+				<p> Bagaimana untuk Menggunakan CSS3 Transitions?</p>
+				<p> Untuk membuat sebuah efek transisi, kamu harus menentukan dua hal, yaitu:</p>
+				
+				<ul>
+					<li>Properti CSS yang ingin ditambahkan untuk sebuah efek</li>
+					<li> Durasi dari efek tersebut</li>
+				</ul>
+				
+				<div class="nasehat">
+					<p> <b>Catatan:</b> Jika bagian durasi tidak ditentukan, transisi tidak akan memiliki efek, 
+					karena nilai default (nya) adalah 0.</p>
+				</div>
+				
+				<p> Contoh berikut menampilkan element <<b>div</b>> dengan 100px (lebar) * 100px (tinggi) berwarna merah. Element <<b>div</b>> juga telah ditentukan sebuah efek transisi untuk properti <mark>width</mark>, dengan durasi 2 detik:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content">
+						
+						div { <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						background: red; <br>
+						-webkit-transition: width 2s; <em>/* Safari */</em> <br>
+						transition: width 2s; <br>
+						} <br>
+						
+					</div>
+				</article>
+				
+				
+				<p> Efek transisi akan dimulai ketika properti CSS yang ditentukan (yaitu <b>width</b>) berubah nilai.</p>
+				<p> Sekarang, ayo tentukan sebuah nilai baru untuk properti <mark>width</mark> ketika user mendekatkan mouse ke element <<b>div</b>> tersebut:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						div:hover { <br>
+						width: 300px; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						background: red; <br>
+						-webkit-transition: width 2s; <em>/* For Safari 3.1 to 6.0 */</em> <br>
+						transition: width 2s; <br>
+						} <br>
+						 <br>
+						div:hover { <br>
+						width: 300px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> This example does not work in Internet Explorer 9 and earlier versions.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b>><<b>/div</b>> <br>
+						 <br>
+						<<b>p</b>>Hover over the div element above, to see the transition effect.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+						<div></div>
+						<p>Hover over the div element above, to see the transition effect.</p>
+					
+					</div>
+				</article>
+				
+				<p> Perhatikanlah bahwa ketika cursor mouse mendekati element, element akan secara berangsur-angsur (geadually) mengubahnya kembali ke style aslinya.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Change Several Property Values</h2>
+				<p> Mengubah beberapa nilai properti </p>
+				<p> Contoh berikut menambahkan efek transisi untuk properti <mark>width</mark> dan <mark>height</mark>, 
+				dengan durasi 2 detik untuk lebar dan 4 detik untuk tinggi:</p>
+				
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open03">
+						
+						div { <br>
+						-webkit-transition: width 2s, height 4s; <em>/* Safari */</em> <br>
+						transition: width 2s, height 4s; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						background: red; <br>
+						-webkit-transition: width 2s, height 4s; <em>/* For Safari 3.1 to 6.0 */</em> <br>
+						transition: width 2s, height 4s; <br>
+						} <br>
+						 <br>
+						div:hover { <br>
+						width: 300px; <br>
+						height: 300px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> This example does not work in Internet Explorer 9 and earlier versions.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b>><<b>/div</b>> <br>
+						 <br>
+						<<b>p</b>>Hover over the div element above, to see the transition effect.<<b>/p</b>> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+						<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+						<div></div>
+						<p>Hover over the div element above, to see the transition effect.</p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Specify the Speed Curve of the Transition</h2>
+				<p> Properti <mark>transition-timing-function</mark> menentukan kecepatan kurva dari efek transisi:</p>
+				<p> Properti <mark>transition-timing-function</mark> bisa memikiki nilai-nilai berikut:</p>
+				
+				<ul>
+					<li> <b>ease</b> - Menentukan efek transisi dengan diawali pelan, lalu cepat, lalu diakhiri  pelan (ini adalah default)</li>
+					<li> <b>linear</b> - Menentukan efek transisi dengan kecepatan yang sama dari awal sampai akhir</li>
+					<li> <b>ease-in</b> - Menentukan efek transisi dengan awalan pelan</li>
+					<li> <b>ease-out</b> - Menentukan efek transisi dengan akhiran pelan</li>
+					<li> <b>ease-in-out</b> - Menentukan efek transisi dengan awalan dan akhiran pelan</li>
+					<li> <b>cubic-bezier(<i>n,n,n,n</i>)</b> - Membiarkan kamu mendefinisikan nilai kamu sendiri dalam fungsi <strong>cubic-bezier</strong></li>
+				</ul>
+				
+				
+				<p> Contoh berikut menampilkan beberapa perbedaan kecepatan kurva yang bisa digunakan:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open04">
+						
+						#div1 {transition-timing-function: linear;} <br>
+						#div2 {transition-timing-function: ease;} <br>
+						#div3 {transition-timing-function: ease-in;} <br>
+						#div4 {transition-timing-function: ease-out;} <br>
+						#div5 {transition-timing-function: ease-in-out;} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close04">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						background: red; <br>
+						-webkit-transition: width 2s; <em>/* Safari */</em> <br>
+						transition: width 2s; <br>
+						} <br>
+						 <br>
+						<em>/* For Safari 3.1 to 6.0 */</em> <br>
+						#div1 {-webkit-transition-timing-function: linear;} <br>
+						#div2 {-webkit-transition-timing-function: ease;} <br>
+						#div3 {-webkit-transition-timing-function: ease-in;} <br>
+						#div4 {-webkit-transition-timing-function: ease-out;} <br>
+						#div5 {-webkit-transition-timing-function: ease-in-out;} <br>
+						 <br>
+						<em>/* Standard syntax */</em> <br>
+						#div1 {transition-timing-function: linear;} <br>
+						#div2 {transition-timing-function: ease;} <br>
+						#div3 {transition-timing-function: ease-in;} <br>
+						#div4 {transition-timing-function: ease-out;} <br>
+						#div5 {transition-timing-function: ease-in-out;} <br>
+						 <br>
+						div:hover { <br>
+						width: 300px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> This example does not work in Internet Explorer 9 and earlier versions.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b> <span class="teal">id="div1"</span>>linear<<b>/div</b>><<b>br</b>> <br>
+						<<b>div</b> <span class="teal">id="div2"</span>>ease<<b>/div</b>><<b>br</b>> <br>
+						<<b>div</b> <span class="teal">id="div3"</span>>ease-in<<b>/div</b>><<b>br</b>> <br>
+						<<b>div</b> <span class="teal">id="div4"</span>>ease-out<<b>/div</b>><<b>br</b>> <br>
+						<<b>div</b> <span class="teal">id="div5"</span>>ease-in-out<<b>/div</b>><<b>br</b>> <br>
+						 <br>
+						<<b>p</b>>Hover over the div elements above, to see the different speed curves.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<button onclick="buka04()" class="exbutton"> Open </button>
+					<button onclick="tutup04()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+						<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+						<div id="div1">linear</div><br>
+						<div id="div2">ease</div><br>
+						<div id="div3">ease-in</div><br>
+						<div id="div4">ease-out</div><br>
+						<div id="div5">ease-in-out</div><br>
+						<p>Hover over the div elements above, to see the different speed curves.</p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Delay the Transition Effect</h2>
+				<p> Penundaan Efek Transisi</p>
+				<p> Properti <mark>transition-delay</mark> menentukan sebuah penundaan (alam satuan detik) untuk efek transisi.</p>
+				<p> Contoh berikut memiliki 1 menit penundaan (delay) sebelum dimulai:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open05">
+						
+						div { <br>
+						    -webkit-transition-delay: 1s; <em>/* Safari */</em> <br>
+						    transition-delay: 1s; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close05">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						background: red; <br>
+						-webkit-transition: width 3s; <em>/* Safari */</em> <br>
+						-webkit-transition-delay: 1s; <em>/* Safari */</em> <br>
+						transition: width 3s; <br>
+						transition-delay: 1s; <br>
+						} <br>
+						 <br>
+						div:hover { <br>
+						width: 300px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> This example does not work in Internet Explorer 9 and earlier versions.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b>><<b>/div</b>> <br>
+						 <br>
+						<<b>p</b>>Hover over the div element above, to see the transition effect.<<b>/p</b>> <br>
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> The transition effect has a 1 second delay before starting.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan05()" class="exbutton">Klik disini</button>
+					<button onclick="buka05()" class="exbutton"> Open </button>
+					<button onclick="tutup05()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+					
+						<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+						
+						<div></div>
+						
+						<p>Hover over the div element above, to see the transition effect.</p>
+						<p><b>Note:</b> The transition effect has a 1 second delay before starting.</p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Transition + Transformation</h2>
+				<p> Contoh berikut juga menambahkan sebuah transformasi untuk efek transisi:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open06">
+						
+						div { <br>
+						-webkit-transition: width 2s, height 2s,-webkit-transform 2s; <em>/* Safari */</em> <br>
+						transition: width 2s, height 2s, transform 2s; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close06">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						background: red; <br>
+						-webkit-transition: width 2s, height 2s, -webkit-transform 2s; <em>/* Safari */</em> <br>
+						transition: width 2s, height 2s, transform 2s; <br>
+						} <br>
+						 <br>
+						div:hover { <br>
+						width: 300px; <br>
+						height: 300px; <br>
+						-webkit-transform: rotate(180deg); <em>/* Safari */</em> <br>
+						transform: rotate(180deg); <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> This example does not work in Internet Explorer 9 and earlier versions.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b>><<b>/div</b>> <br>
+						 <br>
+						<<b>p</b>>Hover over the div element above, to see the transition effect.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan06()" class="exbutton">Klik disini</button>
+					<button onclick="buka06()" class="exbutton"> Open </button>
+					<button onclick="tutup06()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+					
+						<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+						<div></div>
+						<p>Hover over the div element above, to see the transition effect.</p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>More Transition Examples</h2>
+				<p> Contoh Transisi Lebih</p>
+				<p> Properti <mark>transition</mark> CSS3 bisa ditentukan dengan satu per satu, seperti ini:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open07">
+						
+						div { <br>
+						transition-property: width; <br>
+						transition-duration: 2s; <br>
+						transition-timing-function: linear; <br>
+						transition-delay: 1s; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close07">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						background: red; <br>
+						<em>/* For Safari 3.1 to 6.0 */</em> <br>
+						-webkit-transition-property: width; <br>
+						-webkit-transition-duration: 2s; <br>
+						-webkit-transition-timing-function: linear; <br>
+						-webkit-transition-delay: 1s; <br>
+						<em>/* Standard syntax */</em> <br>
+						transition-property: width; <br>
+						transition-duration: 2s; <br>
+						transition-timing-function: linear; <br>
+						transition-delay: 1s; <br>
+						} <br>
+						 <br>
+						div:hover { <br>
+						width: 300px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> This example does not work in Internet Explorer 9 and earlier versions.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b>><<b>/div</b>> <br>
+						 <br>
+						<<b>p</b>>Hover over the div element above, to see the transition effects.<<b>/p</b>> <br>
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> The transition effect has a 1 second delay before starting.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan07()" class="exbutton">Klik disini</button>
+					<button onclick="buka07()" class="exbutton"> Open </button>
+					<button onclick="tutup07()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan07">
+					
+						<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+						<div></div>
+						<p>Hover over the div element above, to see the transition effects.</p>
+						<p><b>Note:</b> The transition effect has a 1 second delay before starting.</p>
+					
+					</div>
+				</article>
+				
+				<p> Atau dengan menggunakan shorthand properti <mark>transition</mark>:</p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open08">
+						
+						div { <br>
+						transition: width 2s linear 1s; <br>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close08">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						div { <br>
+						width: 100px; <br>
+						height: 100px; <br>
+						background: red; <br>
+						-webkit-transition: width 2s linear 1s; <em>/* For Safari 3.1 to 6.0 */</em>
+						transition: width 2s linear 1s; <br>
+						} <br>
+						 <br>
+						div:hover { <br>
+						width: 300px; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> This example does not work in Internet Explorer 9 and earlier versions.<<b>/p</b>> <br>
+						 <br>
+						<<b>div</b>><<b>/div</b>> <br>
+						 <br>
+						<<b>p</b>>Hover over the div element above, to see the transition effect.<<b>/p</b>> <br>
+						<<b>p</b>><<b>b</b>>Note:<<b>/b</b>> The transition effect has a 1 second delay before starting.<<b>/p</b>> <br> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan08()" class="exbutton">Klik disini</button>
+					<button onclick="buka08()" class="exbutton"> Open </button>
+					<button onclick="tutup08()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan08">
+					
+						<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+						<div></div>
+						<p>Hover over the div element above, to see the transition effect.</p>
+						<p><b>Note:</b> The transition effect has a 1 second delay before starting.</p>
+					
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>CSS3 Transition Properties</h2>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Properti</th>
+							<th>Deskripsi</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tbody>
+							<tr>
+								<td> transition </td>
+								<td> Sebuah shorthand property untuk mengatur empat properti transisi kedalam satu properti </td>
+							</tr>
+							<tr>
+								<td> transition-delay </td>
+								<td> Menentukan sebuah penundaan (dalam satuan detik) untuk efek transisi </td>
+							</tr>
+							<tr>
+								<td> transition-duration </td>
+								<td> Menentukan seberapa detik atau milidetik sebuah efek transisi sehingga lengkap </td>
+							</tr>
+							<tr>
+								<td> transition-property </td>
+								<td> Menentukan nama dari properti CSS yang berefek transisi untuk (element)  </td>
+							</tr>
+							<tr>
+								<td> transition-timing-function </td>
+								<td> Menentukan kecepatan kurva dari efek transisi </td>
+							</tr>
+						</tbody>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS3 3D transforms.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS3 animations.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

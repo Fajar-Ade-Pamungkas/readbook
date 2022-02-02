@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | JavaScript | js mistakes</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="javaScript.js"></script>
+<script type="text/javascript" src="javaScript2.js"></script>
+<script type="text/javascript" src="javaScript3.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical"> <!--open link-->
+		<button onclick="openMenu()" id="menu">Open Menu</button>
+		<button onclick="closeMenu()" id="menu">Close Menu</button>
+		
+		<div id="vertical">
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch()"> JavaScript Tutorial</button>
+			<div class="drop-content" id="myDropdown">
+			<input type="text" class="myInput" id="myInput" placeholder="Cari" onkeyup="filterFunction()"/>
+			<ol>
+				<a href="js home.html"><li> Home </li></a>
+				<a href="js introduction.html"><li> Introduction </li></a>
+				<a href="js where to.html"><li> Where To </li></a>
+				<a href="js output.html"><li> Output </li></a>
+				<a href="js syntax.html"><li> Syntax </li></a>
+				<a href="js statements.html" ><li> Statements </li></a>
+				<a href="js comments.html" ><li> Comments </li></a>
+				<a href="js variables.html"><li> Variable </li></a>
+				<a href="js operators.html"><li> Operators </li></a>
+				<a href="js arithmetic.html"><li> Arithmetic </li></a>
+				<a href="js assignment.html"><li> Assignment </li></a>
+				<a href="js data types.html"><li> Data Types </li></a>
+				<a href="js functions.html"><li> Functions </li></a>
+				<a href="js objects.html"><li> Objects </li></a>
+				<a href="js scope.html"><li> Scope </li></a>
+				<a href="js events.html"><li> Events </li></a>
+				<a href="js strings.html"><li> string </li></a>
+				<a href="js string methods.html"><li> Strings Method </li></a>
+				<a href="js numbers.html"><li> Numbers </li></a>
+				<a href="js number methods.html"><li> Number Methods </li></a>
+				<a href="js math.html"><li> Math </li></a>
+				<a href="js random.html" ><li> Math Random </li></a>
+				<a href="js dates.html"><li> Dates </li></a>
+				<a href="js date formats.html" ><li> Date Formats </li></a>
+				<a href="js date methods.html" ><li> Date Methods </li></a>
+				<a href="js get date methods.html" ><li> Date get Methods </li></a>
+				<a href="js set date methods.html" ><li> Date Set Methods </li></a>
+				<a href="js arrays.html"><li> Arrays </li></a>
+				<a href="js array methods.html" ><li> Array Methods </li></a>
+				<a href="js array sort.html"><li> Array Sort </li></a>
+				<a href="js array iteration.html"><li> Array Iteration </li></a>
+				<a href="js booleans.html" ><li> boolean </li></a>
+				<a href="js comparisons.html" ><li> Comparisons </li></a>
+				<a href="js conditions.html" ><li>Conditions</li></a>
+				<a href="js switch.html" ><li>Switch </li></a>
+				<a href="js loop for.html"><li> Loop For </li></a>
+				<a href="js loop while.html" ><li>Loop while</li></a>
+				<a href="js break.html" ><li>Break</li></a>
+				<a href="js type conversion.html" ><li> Types conversion</li></a>
+				<a href="js bitwise.html" ><li> Bitwise </li></a>
+				<a href="js RegExp.html" ><li>RegExp</li></a>
+				<a href="js errors.html" ><li>Errors </li></a>
+				<a href="js debugging.html"><li>Debugging </li></a>
+				<a href="js hoisting.html" ><li>Hoisting</li></a>
+				<a href="js strict mode.html"><li>Strict mode</li></a>
+				<a href="js this keyword.html" ><li> this Keyword </li></a>
+				<a href="js let.html" ><li> Let </li></a>
+				<a href="js const.html" ><li> Const </li></a>
+				<a href="js style guide.html" ><li>Style guide</li></a>
+				<a href="js best practices.html" ><li>best practices </li></a>
+				<a href="js mistakes.html"><li> Mistakes </li></a>
+				<a href="js performance.html" ><li>Performance</li></a>
+				<a href="js reserved words.html" ><li>Reserved words</li></a>
+				<a href="js versions.html" ><li> Versions </li></a>
+				<a href="js version ES5.html" ><li class="redZone"> Version ES5 </li></a>
+				<a href="js version ES6.html" ><li class="redZone"> Version ES6 </li></a>
+				<a href="js JSON.html"><li>JSON</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch2()"> JavaScript Formulir</button>
+			<div class="drop-content" id="myDropdown2">
+			<input type="text" class="myInput" id="myInput2" placeholder="Cari" onkeyup="filterFunction2()"/>
+			<ol>
+				<a href="forms validation.html" ><li>Forms Validation</li></a>
+				<a href="forms API.html" ><li class="redZone">Forms API</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch3()"> JavaScript Object</button>
+			<div class="drop-content" id="myDropdown3">
+			<input type="text" class="myInput" id="myInput3" placeholder="Cari" onkeyup="filterFunction3()"/>
+			<ol>
+				<a href="object definitions.html" ><li>Object Definitions</li></a>
+				<a href="object properties.html" ><li>Object Properties</li></a>
+				<a href="object methods.html"><li class="redZone">Object Methods</li></a>
+				<a href="object accessors.html" ><li>Object accessors</li></a>
+				<a href="object constructors.html" ><li>Object constructor</li></a>
+				<a href="object prototypes.html" ><li>Object Prototypes</li></a>
+				<a href="object ECMAScript5.html" ><li class="redZone">Object ECMAScript5</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch4()"> JavaScript Function</button>
+			<div class="drop-content" id="myDropdown4">
+			<input type="text" class="myInput" id="myInput4" placeholder="Cari" onkeyup="filterFunction4()"/>
+			<ol>
+				<a href="funtion definitions.html" ><li>Function Definitions</li></a>
+				<a href="function parameters.html" ><li>Function Parameters</li></a>
+				<a href="function invocation.html" ><li>Function Invocation</li></a>
+				<a href="function closures.html" ><li>Function Closures</li></a>
+				<a href="function apply.html" ><li class="redZone">Function Apply</li></a>
+				<a href="function call.html" ><li>Function Call</li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch5()">  JavaScript HMTL DOM </button>
+			<div class="drop-content" id="myDropdown5">
+			<input type="text" class="myInput" id="myInput5" placeholder="Cari" onkeyup="filterFunction5()"/>
+			<ol>
+				<a href="DOM intro.html" ><li> DOM Introduction </li></a>
+				<a href="DOM methods.html" ><li> DOM Methods </li></a>
+				<a href="DOM document.html" ><li> DOM Documents</li></a>
+				<a href="DOM elements.html" ><li> DOM Elements  </li></a>
+				<a href="DOM HTML.html" ><li> DOM HTML</li></a>
+				<a href="DOM CSS.html" ><li> DOM CSS  </li></a>
+				<a href="DOM animations.html" ><li> DOM Animations </li></a>
+				<a href="DOM events.html" ><li> DOM Events </li></a>
+				<a href="DOM eventListener.html" ><li> DOM EventListener </li></a>
+				<a href="DOM navigation.html" ><li> DOM Navigation </li></a>
+				<a href="DOM nodes.html" ><li> DOM Nodes </li></a>
+				<a href="DOM nodelist.html" ><li> DOM Nodelist </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch6()"> JavaScript Browser BOM </button>
+			<div class="drop-content" id="myDropdown6">
+			<input type="text" class="myInput" id="myInput6" placeholder="Cari" onkeyup="filterFunction6()"/>
+			<ol>
+				<a href="BOM window.html" ><li> Window </li></a>
+				<a href="BOM screen.html" ><li> Screen </li></a>
+				<a href="BOM location.html" ><li> Location </li></a>
+				<a href="BOM history.html" ><li> History  </li></a>
+				<a href="BOM navigator.html" ><li> Navigator </li></a>
+				<a href="BOM popup alert.html" ><li> Popup Alert </li></a>
+				<a href="BOM timing.html" ><li> Timing </li></a>
+				<a href="BOM cookies.html" ><li> Cookies </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch7()">JavaScript AJAX</button>
+			<div class="drop-content" id="myDropdown7">
+			<input type="text" class="myInput" id="myInput7" placeholder="Cari" onkeyup="filterFunction7()"/>
+			<ol>
+				<a href="AJAX intro.html" ><li> AJAX Introduction</li></a>
+				<a href="AJAX XMLHttpRequest.html" ><li> AJAX XMLHttpRequest </li></a>
+				<a href="AJAX request.html" ><li> AJAX Request </li></a>
+				<a href="AJAX respone.html" ><li class="redZone"> AJAX Response </li></a>
+				<a href="AJAX XML file.html" ><li> AJAX XML File</li></a>
+				<a href="AJAX PHP.html" ><li> AJAX PHP </li></a>
+				<a href="AJAX ASP.html" ><li> AJAX ASP </li></a>
+				<a href="AJAX database.html" ><li> AJAX Database </li></a>
+				<a href="AJAX XML applications.html" ><li> AJAX XML Application </li></a>
+				<a href="AJAX examples.html" ><li> AJAX Example </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch8()">JavaScript JSON</button>
+			<div class="drop-content" id="myDropdown8">
+			<input type="text" class="myInput" id="myInput8" placeholder="Cari" onkeyup="filterFunction8()"/>
+			<ol>
+				<a href="JSON intro.html" ><li class="redZone"> JSON Introduction</li></a>
+				<a href="JSON syntax.html" ><li class="redZone"> JSON Syntax </li></a>
+				<a href="JSON vs XML.html" ><li class="redZone"> JSON vs XML </li></a>
+				<a href="JSON data types.html" ><li class="redZone"> JSON Data Types </li></a>
+				<a href="JSON parse.html" ><li class="redZone"> JSON parse </li></a>
+				<a href="JSON stringify.html" ><li class="redZone"> JSON Stringify</li></a>
+				<a href="JSON objects.html" ><li class="redZone"> JSON Objects </li></a>
+				<a href="JSON arrays.html" ><li class="redZone"> JSON Arrays </li></a>
+				<a href="JSON PHP.html" ><li class="redZone"> JSON PHP </li></a>
+				<a href="JSON HTML.html" ><li class="redZone"> JSON HTML </li></a>
+				<a href="JSON JSONP.html" ><li class="redZone"> JSON JSONP </li></a>
+			</ol>
+			</div>
+			</div>
+			
+			<div class="dropdown"> 
+			<button class="drop-button" onclick="mySearch9()">JavaScript Reference</button>
+			<div class="drop-content" id="myDropdown9">
+			<input type="text" class="myInput" id="myInput9" placeholder="Cari" onkeyup="filterFunction9()"/>
+			<ol>
+				<li> <p> JavaScript References </p> </li>
+				<a href="JavaScript references/overview.html" > <li> Overview </li> </a>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch11()">JavaScript</button>
+					<div class="drop-content" id="myDropdown11">
+					<input type="text" class="myInput" id="myInput11" placeholder="Cari" onkeyup="filterFunction11()"/>
+					<ol>
+						<a href="JavaScript references/string reference.html" ><li>String Reference </li></a>
+						<a href="JavaScript references/number reference.html" ><li>Number Reference </li></a>
+						<a href="JavaScript references/operator reference.html" ><li>Operator Reference </li></a>
+						<a href="JavaScript references/statement reference.html" ><li>Statement Reference </li></a>
+						<a href="JavaScript references/math reference.html" ><li>Math Reference </li></a>
+						<a href="JavaScript references/date reference.html" ><li>Date Reference </li></a>
+						<a href="JavaScript references/array reference.html" ><li> Array Reference </li></a>
+						<a href="JavaScript references/boolean reference.html" ><li> Boolean Reference </li></a>
+						<a href="JavaScript references/RegExp reference.html" ><li> RegExp Reference </li></a>
+						<a href="JavaScript references/global reference.html" ><li> Global Reference </li></a>
+						<a href="JavaScript references/conversion reference.html" ><li> Conversion Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()">Browser Object Model (BOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="JavaScript references/BOM window reference.html" ><li> BOM Window Reference </li></a>
+						<a href="JavaScript references/BOM navigator reference.html" ><li> BOM Navigator Reference </li></a>
+						<a href="JavaScript references/BOM screen reference.html" ><li> BOM screen Reference </li></a>
+						<a href="JavaScript references/BOM history reference.html" ><li> BOM History Reference </li></a>
+						<a href="JavaScript references/BOM location reference.html" ><li> BOM Location Reference </li></a>
+					</ol>
+					</div>
+					</div>
+					
+					<div class="dropdown"> 
+					<button class="drop-button" onclick="mySearch12()"> HTML Document Object Model (DOM)</button>
+					<div class="drop-content" id="myDropdown12">
+					<input type="text" class="myInput" id="myInput12" placeholder="Cari" onkeyup="filterFunction12()"/>
+					<ol>
+						<a href="JavaScript references/DOM document reference.html" ><li> DOM Documents Reference </li></a>
+						<a href="JavaScript references/DOM element reference.html" ><li> DOM Elements Reference </li></a>
+						<a href="JavaScript references/DOM attribute reference.html" ><li> DOM Attributes Reference </li></a>
+						<a href="JavaScript references/DOM event reference.html" ><li> DOOM Events Reference </li></a>
+						<a href="JavaScript references/DOM style.html" ><li> DOM Style Reference </li></a>
+					</ol>
+					</div>
+			</ol>
+			</div>
+			</div>
+		</div>
+		</div>
+		</div> <!--close Link-->
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> Masalah - masalah Umum JavaScript</h1>
+				<p>
+				Point pada chapter ini adalah mengetahui masalah - masalah yang biasa terjadi pada JavaScript.
+				</p>
+			</div>
+			
+			
+<section>
+			<article>
+				<h1> Secara Tidak Sengaja Menggunakan Operator Assignment </h1>
+				<p>
+				Program JavaScript mungkin mengeluarkan hasil yang tidak benar jika seorang programer secara tidak sengaja 
+				menggunakan sebuah operator assigment (=), alternatif dari operator perbandingan (==) pada sebuah pernyataan <b>if</b>. <br>
+				Pernyataan <b>if</b> ini mengembalikan <b>false</b> (seperti yang dibayangan) karena x tidak sama dengan 10:
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">	
+
+				<span class="purple">var</span> x = 0; <br>
+				<span class="purple">if</span>(x == 10)
+				
+				</div>
+				<h4> Output </h4>
+				<div class="example-content">
+				<p> Apakah nilai x sama dengan 10 ? </p>
+				<button onclick="mistakes1()"> Klik disini </button>
+				<p id="mistakes01"></p>
+				</div>
+				</article>
+				
+				<p>
+				Pernyataan <b>if</b> ini mengembalikan <b>true</b> (tidak seperti yang dibayangan) karena x adalah 10:
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">	
+				
+				<span class="purple">var</span> x = 0; <br>
+				<span class="purple">if</span>(x = 10)
+				
+				</div>
+				<h4> Output </h4>
+				<div class="example-content">
+				<p> Apakah nilai x sama dengan 10 ? </p>
+				<button onclick="mistakes2()"> Klik disini </button>
+				<p id="mistakes02"></p>
+				</div>
+				</article>
+				
+				<p>
+				Pernyataan <b>if</b> ini mengembalikan <b>false</b> (tidak seperti yang dibayangan) karena 0 adalah false:
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">	
+				
+				<span class="purple">var</span> x = 0; <br>
+				<span class="purple">if</span>(x = 0)
+				
+				</div>
+				<h4> Output </h4>
+				<div class="example-content">
+				<p> Apakah nilai x sama dengan 0 ? </p>
+				<button onclick="mistakes3()"> Klik disini </button>
+				<p id="mistakes03"></p>
+				</div>
+				</article>
+				
+				<!--ATTENTION-->
+				<article>
+				<table class="attention">
+				<tr>
+				<td class="td-left">
+				<h1>!</h1>
+				</td>
+				<td class="td-right">
+				suatu assigment (simbol kepemilikan) selalu mengembalikan nilai assignment.
+				</td>
+				</tr>
+				</table>
+				</article>
+				
+			</article>
+			
+</section>
+<section>			
+			<article>
+				<h1> Perkiraan Perbandingan Lepas</h1>
+				<p>
+				Pada perbandingan teratur (regular comparison) tipe data bukanlah masalah, pernyataan if ini mengembalikan true:
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">	
+				
+				<span class="purple">var</span> x = 10; <br>
+				<span class="purple">var</span> y = "10"; <br>
+				<span class="purple">if</span>(x == y)
+				
+				</div>
+				<h4> Output </h4>
+				<div class="example-content">
+				<p> Apakah nilai  variabel x sama dengan  variabel y ? </p>
+				<button onclick="mistakes4()"> Klik disini </button>
+				<p id="mistakes04"></p>
+				</div>
+				</article>
+				
+				<p>
+				Pada perbandingan teliti (strict comparison) tipe data itu penting, pernyataan if ini mengembalikan false:
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">	
+				
+				<span class="purple">var</span> x = 10; <br>
+				<span class="purple">var</span> y = "10"; <br>
+				<span class="purple">if</span>(x === y)
+				
+				</div>
+				<h4> Output </h4>
+				<div class="example-content">
+				<p> Apakah variabel x dan y memiliki kesamaan nilai dan tipe data? </p>
+				<button onclick="mistakes5()"> Klik disini </button>
+				<p id="mistakes05"></p>
+				</div>
+				</article>
+				
+				<p>
+				Ini adalah kesalahan yang biasa terjadi, untuk mengingatkan pernyataan switch menggunakan strict comparison: <br><br>
+				Pada kasus ini switch akan menunjukan alert:
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">	
+				
+				<span class="purple">var</span> x = 10; <br>
+				<span class="purple">switch</span>(x) { <br>
+					<blockquote>
+					case 10:
+						<blockquote>alert("Helo guys !");</blockquote>
+					</blockquote>
+				}
+				
+				</div>
+				<h4> Output </h4>
+				<div class="example-content">
+				<p> alert akan tampil seperti tanda peringatan, so don't panic !!! </p>
+				<button onclick="mistakes6()"> Klik disini </button>
+				</div>
+				</article>
+				
+				<p>
+				Pada kasus ini switch tidak akan menunjukan alert:
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">	
+				
+				<span class="purple">var</span> x = 10; <br>
+				<span class="purple">switch</span>(x) { <br>
+					<blockquote>
+					case "10":
+						<blockquote>alert("Helo guys !");</blockquote>
+					</blockquote>
+				}
+				
+				</div>
+				<h4> Output </h4>
+				<div class="example-content">
+				<p> Alert ini tidak akan tampil ! </p>
+				<button onclick="mistakes7()"> Klik disini </button>
+				</div>
+				</article>
+				
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Kebingungan Addition (Penambahan) dan Concatenation (Penggabungan) </h1>
+				<p>
+				<b>Addition</b> adalah tentang menambahkan <b>Number</b>. <br>
+				<b>Concatenation</b> adalah tentang penggabungan <b>String</b>. <br>
+				Dalam JavaScript kedua pengoperasian ini menggunakan operator yang sama yaitu + (tambah). <br>
+				Karena itu, penambahan antara hasil sesama Number akan berbeda dengan penambahan String:
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">	
+				
+				<span class="purple">var</span> x = 10 + 5;  <em>// menjadi 15 </em><br>
+				<span class="purple">switch</span> y = 10 + "5";  <em>// menjadi 105 </em><br>
+				
+				</div>
+				<h4> Output </h4>
+				<div class="example-content">
+				<button onclick="mistakes8()"> Klik disini </button>
+				<p id="mistakes08"></p>
+				</div>
+				</article>
+				
+				<p>
+				Ketika menambahkan dua variabel, ini dapat menyulitkan untuk mengantisipasi hasil:
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">	
+				
+				<span class="purple">var</span> a = 10 ;
+				<span class="purple">var</span> b = 5 ;  
+				<span class="purple">var</span> c = a + b; <em>// menjadi 15 </em><br><br>
+				<span class="purple">var</span> x = 10 ;
+				<span class="purple">var</span> y = "5" ;  
+				<span class="purple">var</span> z = x + y;  <em>// menjadi 105 </em><br>
+				
+				</div>
+				<h4> Output </h4>
+				<div class="example-content">
+				<button onclick="mistakes9()"> Klik disini </button>
+				<p id="mistakes09"></p>
+				</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Kesalah Pahaman Float  </h1>
+				<p>
+				Semua Number dalam JavaScript disusun sebagai 64-bit <b>Floating Point Numbers</b> (float). <br>
+				Semua bahasa pemrograman, termasuk JavaScript, memiliki kesulitan - kesulitan ketepatan nilai float point 
+				(bilangan dengan titik atau bilangan desimal).
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">	
+				
+				<span class="purple">var</span> a = 0.1 ;
+				<span class="purple">var</span> b = 0.2 ;  
+				<span class="purple">var</span> c = a + b; <em>// nilai dari c bukanlah 0.3 </em><br><br>
+				<span class="purple">if</span>( c == 0.3);  <em>// jika menggukan tes if maka akan gagal</em><br>
+				
+				</div>
+				<h4> Output </h4>
+				<div class="example-content">
+				<button onclick="mistakes10()"> Klik disini </button>
+				<p id="mistakes10"></p>
+				</div>
+				</article>
+				
+				<p>
+				Untuk mengatasi masalah ini, untuk membantu gunakan operator bagi dan kali:
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">	
+				
+				<span class="purple">var</span> a = 0.1 ;
+				<span class="purple">var</span> b = 0.2 ;  
+				<span class="purple">var</span> c = (a * 10 + b * 10)/ 10;  <em>// akan menjadi 0.3</em><br>
+				
+				</div>
+				<h4> Output </h4>
+				<div class="example-content">
+				<button onclick="mistakes11()"> Klik disini </button>
+				<p id="mistakes11"></p>
+				</div>
+				</article>
+				
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Penjedaan suatu String Variabel </h1>
+				<p>
+				JavaScript mengizinkan kamu untuk menjeda pernyataan kedalam baris kedua:
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">					
+					document.getElementById(<span class="purple">"demo"</span>).innerHTML= <br>
+					"Helo world !";
+				</div>
+				<h4> Output </h4>
+				<div class="example-content">
+				<button onclick="mistakes12()"> Klik disini </button>
+				<p id="mistakes12"></p>
+				</div>
+				</article>
+				
+				<p>
+				Penjedaan pada pertengahan String JavaScript tidak akan bekerja
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">					
+					document.getElementById(<span class="purple">"demo"</span>).innerHTML= <b>
+					"Helo <br>world !"</b>;
+				</div>
+				<h4> Output </h4>
+				<div class="example-content">
+				<button onclick="mistakes13()"> Klik disini </button>
+				<p id="mistakes13"></p>
+				</div>
+				</article>
+				
+				<p>
+				Kamu harus menambahkan backslash \ untuk menjeda dalam string
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">					
+					document.getElementById(<span class="purple">"demo"</span>).innerHTML= <b>
+					"Helo \ <br>world !"</b>;
+				</div>
+				<h4> Output </h4>
+				<div class="example-content">
+				<button onclick="mistakes13()"> Klik disini </button>
+				<p id="mistakes13"></p>
+				</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Salah Penempatan Semicolon </h1>
+				<p>
+				Karena salah penempatan semicolon, blok kode ini akan mengeksekusi tanpa memperhatikan nilai dari x:
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">					
+					<span class="purple">if</span>)(x == 10); <br> { 
+						<blockquote>Blok Kode </blockquote>
+					}
+				</div>
+				<h4> Output </h4>
+				<div class="example-content">
+				<button onclick="mistakes14()"> Klik disini </button>
+				<p id="mistakes14"></p>
+				</div>
+				</article>
+				
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Penjedaan Suatu Pernyataan Return </h1>
+				<p>
+				Ini adalah prilaku JavaScript default untuk menutup pernyataan secara otomatis di akhir baris.<br><br>
+				Oleh karena itu, Kedua contoh dibawah mengembalikan hasil yang sama:
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh 1 </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">
+					<span class="purple">function</span> myFunction(a) { 
+					   <blockquote>
+					    <span class="purple">var</span> power = 10 <br>
+					    <span class="purple">return</span> a * power 
+						</blockquote>
+					}
+				</div>
+				<h4> Output </h4>
+				<div class="example-content">
+				<button onclick="mistakes15()"> Klik disini </button>
+				<p id="mistakes15"></p>
+				</div>
+				</article>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh 2 </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">					
+					<span class="purple">function</span> myFunction(a) { 
+					   <blockquote>
+					    <span class="purple">var</span> power = 10  <br>
+					    <span class="purple">return</span> a * power 
+						</blockquote>
+					}
+				</div>
+				<h4> Output </h4>
+				<div class="example-content">
+				<button onclick="mistakes16()"> Klik disini </button>
+				<p id="mistakes16"></p>
+				</div>
+				</article>
+				
+				<p>
+				JavaScript juga mengizinkan kamu untuk menjeda sebuah pernyataan <b>var</b> ( var statement) kedalam dua baris.<br>
+				Karena itu, contoh 3 juga mengembalikan hasil yang sama:
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh 3 </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">
+					<span class="purple">function</span> myFunction(a) { 
+					   <blockquote>
+					    <span class="purple">var</span> <br>
+					     power = 10 <br>
+					    <span class="purple">return</span> a * power 
+						</blockquote>
+					}
+				</div>
+				<h4> Output </h4>
+				<div class="example-content">
+				<button onclick="mistakes17()"> Klik disini </button>
+				<p id="mistakes17"></p>
+				</div>
+				</article>
+				
+				<p>
+				Tapi apakah yang terjadi jika kamu menjeda pernyataan <b>return</b> kedalam dua baris seperti ini:
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh 4 </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">
+					<span class="purple">function</span> myFunction(a) { 
+					   <blockquote>
+					    <span class="purple">var</span> power = 10 <br>
+					    <span class="purple">return</span> <br>
+						a * power 
+						</blockquote>
+					}
+				</div>
+				<h4> Output </h4>
+				<div class="example-content">
+				<button onclick="mistakes18()"> Klik disini </button>
+				<p id="mistakes18"></p>
+				</div>
+				</article>
+				
+				<p>
+				JavaScript akan mengembalikan undefinied !<br>
+				Kenapa? karena JavaScript merasakan apa yang kamu maksud.:
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh 5 </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">
+					<span class="purple">function</span> myFunction(a) { 
+					   <blockquote>
+					    <span class="purple">var</span> <br>
+					    power = 10 <br>
+					    <span class="purple">return;</span> <br>
+						a * power 
+						</blockquote>
+					}
+				</div>
+				<h4> Output </h4>
+				<div class="example-content">
+				<button onclick="mistakes19()"> Klik disini </button>
+				<p id="mistakes19"></p>
+				</div>
+				</article>
+				
+			</article>
+</section>
+<section>			
+			<article>
+				<h1> Penjelasan </h1>
+				<p>
+				Jika sebuah pernyataan tidak lengkap seperti:
+				</p>
+				
+				<div class="simple-exapmle">
+					<span class="purple">var</span>
+				</div>
+				
+				<p>
+				JavaScript akan mencoba untuk melengkapi pernyataan tersebut dengan pembacaan pada baris baru:
+				</p>
+				
+				<div class="simple-exapmle">
+					power = 10;
+				</div>
+				
+				<p>
+				Tetapi semenjak pernyataan ini diselesaikan
+				</p>
+				
+				<div class="simple-exapmle">
+					<span class="purple">return</span>
+				</div>
+				
+				<p>
+				JavaScript akan secara otomatis menutupnya seperti
+				</p>
+				
+				<div class="simple-exapmle">
+					<span class="purple">return</span>;
+				</div>
+				
+				<p>
+				Ini terjadi karena pernyataan (akhiran) penutup dengan semicolon adalah opsi di JavaScript. <br>
+				JavaScript akan menutup pernyataan return di akhir baris, karena ia adalah sebuah pernyataan pelengkap.
+				</p>
+			</article>
+			
+			<!--ATTENTION-->
+			<article>
+			<table class="attention">
+			<tr>
+			<td class="td-left">
+			<h1>!</h1>
+			</td>
+			<td class="td-right">
+			Jangan pernah menjeda sebuah pernyataan <b>return</b>
+			</td>
+			</tr>
+			</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Pengaksesan Array dengan Index Nama </h1>
+				<p>
+				Banyak bahasa pemrograman yang mendukung array dengan index nama. <br>
+				Array dengan index nama disebut dengan Associative Array (hashes). <br>
+				JavaScript <b>TIDAK</b> mendukung areay dengan index nama. <br>
+				Pada JavaScript Array bisa diakses dengan <b>index nomor</b>:
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">
+				
+				<span class="purple">var</span> player = []; <br>
+				player[0] = "Draxler"; <br>
+				player[1] = "De Bruyne"; <br>
+				player[2] = "Özil"; <br>
+				<span class="purple">var</span> x = player.length; <em> // player.length akan mengembalikan banyak item</em> <br>
+				<span class="purple">var</span> y = player[2]; <em> // player[2] akan mengembalikan item "Özil"</em>
+				</div>
+				<h4> Output</h4> 
+				<div class="example-content">
+				<button onclick="$arrays11()">Klik disini</button>
+				<p id="$arrays11"></p>
+				</div>
+				</article>
+				
+				<p>
+				Di JavaScript <b> Object </b> menggunakan <b>index nama</b>.<br>
+				Jika kamu menggunakan index nama, ketika pengaksesan Array, maka JavaScript akan mendefiniskan ulang 
+				array menjadi object standar.<br>
+				Setelah otomatis pendefinisian ulang metode dan properti array akan mengeluarkan hasil  undefinied 
+				(yang tidak jelas) atau hasil yang salah:
+				</p>
+				
+				<article class="example-box">
+				<h1 style="text-align:center;"><i>Contoh </i></h1>
+				<h4>Input </h4>
+				<div class="example-content">
+				
+				<span class="purple">var</span> player = []; <br>
+				<div class="redZone">
+				player["asRoma"] = "Draxler"; <br>
+				player["manCty"] = "De Bruyne"; <br>
+				player["arsenal"] = "Özil"; <br>
+				</div>
+				<span class="purple">var</span> x = player.length; <em> // player.length akan mengembalikan 0</em> <br>
+				<span class="purple">var</span> y = player[2]; <em>// player[2] akan mengembalikan undefined</em>
+				</div>
+				<h4> Output</h4> 
+				<div class="example-content">
+				<button onclick="$arrays12()">Klik disini</button>
+				<p id="$arrays12"></p>
+				</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Mengakhiri sebuah Pendefinisian Array Dengan Koma </h1>
+				
+				<article class="example-box">
+				<h4> Salah </h4>
+				<div class="example-content">
+					points = [40, 100, 1, 5, 25, 10,];
+				</div>
+				</article>
+				
+				<p>
+				Beberapa mesin JSON dan JavaScript akan gagal, atau berjalan dengan tidak terduga.
+				</p>
+				
+				<article class="example-box">
+				<h4> Benar </h4>
+				<div class="example-content">
+					points = [40, 100, 1, 5, 25, 10];
+				</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Mengakhiri sebuah Pendefinisian Object Dengan Koma </h1>
+				
+				<article class="example-box">
+				<h4> Salah </h4>
+				<div class="example-content">
+					person = {firstName:"John", lastName:"Doe", age:46,}
+				</div>
+				</article>
+				
+				<p>
+				Beberapa mesin JSON dan JavaScript akan gagal, atau berjalan dengan tidak terduga.
+				</p>
+				
+				<article class="example-box">
+				<h4> Benar </h4>
+				<div class="example-content">
+					person = {firstName:"John", lastName:"Doe", age:46}
+				</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Undefinied Bukan Null </h1>
+				<p>
+				Dengan JavaScript <b>Null</b> untuk object, <b>undefinied</b> untuk variabel, properti dan metode <br>
+				Untuk (menjadi) Null, object harus didefinisikan atau dijelas, jika tida akan menjadi undefinied. <br>
+				Jika kamu mau mengetes jika sebuah object hidup, ini akan melemparkan error jika object adalah undefinied:
+				</p>
+				
+				<article class="example-box">
+				<h4> Salah </h4>
+				<div class="example-content">
+					<span class="purple">if</span>(myObj !== Null && <span class="purple">typeof</span> myObj !== "Undefinied")
+				</div>
+				</article>
+				
+				<p>
+				Oleh karena itu, kamu harus mengetes typeof() terlebih dahulu:
+				</p>
+				
+				<article class="example-box">
+				<h4> Benar</h4>
+				<div class="example-content">
+					<span class="purple">if</span>(<span class="purple">typeof</span> myObj !== "Undefinied" && myObj !== Null)
+				</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h1> Perkiraan Jangkauan Blok Kode (Code Block Scope) </h1>
+				<p>
+				JavaScript <b>TIDAK</b> membuat jangkauan baru untuk masing - masing blok kode. <br>
+				Itu adalah benar dalam kebanyakan bahasa pemrograman, tapi <b>TIDAK BENAR</b> di JavaScript. <br>
+				Ini adalah kesalahan umum, Diantara para pengembang JavaScript, untuk mempercayai bahwa kode ini 
+				mengembalikan undefinied.
+				</p>
+				
+				<article class="example-box">
+				<h4> Contoh </h4>
+				<div class="example-content">
+					<span class="purple">for</span> (<span class="purple">var</span> i = 0; i <q lang="no"><</q>10; i++) { <br>
+					    <em>// some code</em> <br>
+					} <br>
+					<span class="purple">return</span> i;
+				</div>
+				</article>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="js best practices.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="js performance.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			</article>
+			<article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

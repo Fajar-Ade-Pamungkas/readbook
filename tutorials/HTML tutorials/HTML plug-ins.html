@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML plug-ins </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML Plug-Ins </h1>
+				<p> Maksud dari sebuah <b>plug-in</b>, adalah untuk memperpanjang fungsionalitas dari browser HTML. </p>
+			</div>
+			
+			
+<section>			
+			<article>
+				<h2> HTML Helpers (Plug-ins) </h2>
+				<p> Pembantu HTML (Plug-Ins)</p>
+				<p> Helper applications merupakan program komputer yang memperluas atau memperpanjang fungsionalitas standar tentang sebuah web browser. </p>
+				<p> Helper applications juga disebut <b>plug-ins</b>. </p>
+				<p> Contoh plug-ins yang sudah diketahui secara baik adalah <b> Java applets</b>. </p>
+				<p> Plug-ins bisa ditambahkan ke halaman web dengan tag <<b>object</b>> atau tag <<b>embed</b>. </p>
+				<p> Plug-ins bisa digunakan untuk banyak tujuan: menampilkan map, men-skan virus, verifikasi id bank kamu, dan lain sebagainya. </p>
+				<p> Untuk menampilkan video dan audio: Gunakanlah tag <<b>video</b>> dan <<b>audio</b>>. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The <b class="blue"><<b>object</b>></b> Element </h2>
+				<p> Element <<b>object</b>> disupport di semua browser. </p>
+				<p> Element <<b>object</b>> mendefinisikan sebuah object tertanam (embedded object) dengsn sebuah dokumen HTML. </p>
+				<p> Ia berguna untuk menanamkan plug-ins (seperti Java applet, PDF readers, Flash Players) dalam web pages. </p>
+				
+				<article class="example-box">
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br>
+							<<b>head</b>><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br> <br>
+				<<b>object</b> <span class="teal">width="400" height="50" data="bookmark.swf"</span>><<b>/object</b>> <br><br>
+							<<b>/body</b>><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					<object width="400" height="50" data="bookmark.swf"></object>
+					</div>
+				</article>
+				
+				<p> Element <<b>object</b>> juga bisa digunakan untuk memasukan HTML dalam HTML. </p>
+				
+				<article class="example-box">
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br>
+							<<b>head</b>><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br> <br>
+				<<b>object</b> <span class="teal">width="100" height="500" data="HTML snippet.html"</span>>
+				<<b>/object</b>> <br><br>
+							<<b>/body</b>><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan02()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+				<object width="100%" height="500px" data="HTML CSS.html"></object>
+					</div>
+				</article>
+				
+				<p> Atau gambar jika kamu suka: </p>
+				
+				<article class="example-box">
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br>
+							<<b>head</b>><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br> <br>
+				<<b>object</b> <span class="teal">width="128" height="auto" data="Rain Fall.png"</span>>
+				<<b>/object</b>> <br><br>
+							<<b>/body</b>><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan03()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+				<object width="128" height="auto" data="../../Pictures/Rain Fall.png"></object>
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> The <b class="blue"><<b>embed</b>></b> Element </h2>
+				<p> Element <<b>embed</b>> disupport di semua mayor browser. </p>
+				<p> Element <<b>embed</b>> juga mendefinsikan sebuah objet tertanam dengan sebuah dokumen HTML. </p>
+				<p> Web browser telah mensupport element <<b>embed</b>> untuk waktu yang lama. Akan tetapi, 
+				<<b>embed</b>> belum menjadi sebuah bagian dari spesifikasi HTML sebelum HTML5. 
+				Element akaj memvalid di halaman HTML5, tapi tidak di halaman HTML4. </p>
+				
+				<article class="example-box">
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br>
+							<<b>head</b>><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br> <br>
+				<<b>embed</b> <span class="teal">width="400" height="50" src="bookmark.swf"</span>><br><br>
+							<<b>/body</b>><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan04()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					<embed width="400" height="50" src="bookmark.swf">
+					</div>
+				</article>
+				
+				<div class="nasehat">
+				Catatlah bahwa element <<b>embed</b>> tidak memiliki sebuah closing tag (seperti <del><<b>/embed</b>></del>). Dan tidak bisa berisi alternative text.
+				</div>
+				
+				<p> Element <<b>embed</b>> juga bisa digunakan untuk memasukan HTML dalam HTML. </p>
+				
+				<article class="example-box">
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br>
+							<<b>head</b>><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br> <br>
+				<<b>embed</b> <span class="teal">width="100%" height="500" src="audio.html"</span>><br><br>
+							<<b>/body</b>><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan05()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+					<embed width="100%" height="500" src="HTML5 audio.html">
+					</div>
+				</article>
+				
+				<p> Atau gambar jika kamu suka: </p>
+								
+				<article class="example-box">
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br>
+							<<b>head</b>><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br>
+							<<b>/head</b>><br>
+							<<b>body</b>><br> <br>
+				<<b>embed</b> <span class="teal">width="128" height="128" src="Rain Fall.png"</span>><br><br>
+							<<b>/body</b>><br>
+						<<b>/html</b>><br>
+						
+					</div>
+					<button onclick="tampilkan06()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+					<embed width="128" height="128" src="../../Pictures/Rain Fall.png">
+					</div>
+				</article>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML5 audio.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML YouTube.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS align </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="buka.js"></script>
+<script type="text/javascript" src="../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+/* Contoh 1 */
+.centerA {
+	margin: auto; 
+	width: 60%; 
+	border: 3px solid #73AD21; 
+	padding: 10px;
+}
+
+/* Contoh 2 */
+.rightB {
+	position: absolute; 
+	right: 0px; 
+	width: 300px; 
+	border: 3px solid #73AD21; 
+	padding: 10px;
+}
+
+/* Contoh 3 */
+.bodyC {
+	margin: 0; 
+	padding: 0;
+} 
+
+.containerC {
+	position: relative; 
+	width: 100%;
+	color:black;
+} 
+
+.rightC {
+	position: absolute; 
+	right: 0px; 
+	width: 300px; 
+	background-color: #b0e0e6;
+} 
+
+/* Contoh 4 */
+.rightD {
+	float: right; 
+	width: 300px; 
+	border: 3px solid #73AD21; 
+	padding: 10px;
+}
+
+/* Contoh 5 */
+
+.bodyE {
+	margin: 0; 
+	padding: 0;
+} 
+
+.rightE {
+	float: right; 
+	width: 300px; 
+	background-color: #b0e0e6;
+}
+</style>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Layout - Horizontal Align  </h1>
+				<div style="padding: 17px; text-align:center; border: 3px #73ad21 solid;">
+				Dalam CSS, bebebrapa properti bisa digunakan untuk perataan (teks) element secara horizontal. 
+				</div>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> Center Align - Using margin </h2>
+				<p> Perataan (teks) Tengah - Menggunakan (properti) <mark>margin</mark></p>
+				<p> Pengaturan lebar dari block-level element akan mencegahnya dari peregangan (stretching) ke tepi dari penampungnya (container). Gunakanlah <mark>margin: auto;</mark> untuk secara horizontal menengahkan suatu elemen dengan kontainernya. </p>
+				<p> Element inu akan mengambil lebar tertentu dan sisa dari ruang akan di-split (membelah) secara sama  antara dua margin (kiri dan kanan): </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						.center {
+						<blockquote>
+						    margin: auto; <br>
+						    width: 60%; <br>
+						    border: 3px solid #73AD21; <br>
+						    padding: 10px;
+						</blockquote>
+						} 
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.center {
+						<blockquote>
+						    margin: auto; <br>
+						    width: 60%; <br>
+						    border: 3px solid #73AD21; <br>
+						    padding: 10px;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>div</b> <span class="teal">class="center"</span>>
+						<blockquote>
+							<<b>p</b>><<b>b</b>>Note: <<b>/b</b>>Using margin:auto will not work in IE8, unless a !DOCTYPE is declared.<<b>/p</b>>
+						</blockquote>
+						<<b>/div</b>> <br><br>
+						
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<div class="centerA">
+							<p><b>Note: </b>Using margin:auto will not work in IE8, unless a !DOCTYPE is declared.</p>
+						</div>
+						
+					</div>
+				</article>
+				
+				<div class="nasehat">
+					<p> <b>Tip:</b> Perataan tengah (center) tidak memiliki efek jika properti <mark>width</mark> tidak diatur (atau mengaturnya menjadi 100%).</p>
+				</div>
+				<div class="nasehat">
+					<p> <b>Tip:</b> Perataan teks, lihatlah pada chapter <a href="CSS text" >CSS Text</a>. </p>
+				</div>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Left and Right Align - Using position</h2>
+				<p> Perataan Kiri dan Kanan - Menggunakan (properti) <mark>position</mark> </p>
+				<p> Satu metode untuk perataan element ialah dengan mengggunakan properti <mark>position: absolute;</mark> : </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open02">
+						
+						.right {
+						<blockquote>
+						    position: absolute; <br>
+						    right: 0px; <br>
+						    width: 300px; <br>
+						    border: 3px solid #73AD21; <br>
+						    padding: 10px;
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close02">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.right {
+						<blockquote>
+						    position: absolute; <br>
+						    right: 0px; <br>
+						    width: 300px; <br>
+						    border: 3px solid #73AD21; <br>
+						    padding: 10px;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>div</b> <span class="teal">class="right"</span>>
+						<blockquote>
+						<<b>p</b>>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.<<b>/p</b>>
+						</blockquote>
+						<<b>/div</b>> <br><br>
+						
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan02()" class="exbutton">Klik disini</button>
+					<button onclick="buka02()" class="exbutton"> Open </button>
+					<button onclick="tutup02()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+					
+						<div class="rightB">
+						<p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+						</div>
+						
+					</div>
+				</article>
+				<div class="nasehat">
+				<p> <b>Catatan:</b> Element berposisi absolute dicopot dari aliran normal (normal flow) dan bisa saling meliputi/melengkapi (overlap) element. </p>
+				</div>
+				
+				<div class="nasehat">
+					<p> <b>Tip:</b> Ketika perataan element dengan properti <mark>position</mark>, selalu definisikan properti <mark>margin</mark> dan <mark>padding</mark> untuk element <<b>body</b>>. Ini uhtuk menghindari perbedaan visual dalam browser yang berbeda.</p>
+				</div>
+				<p> Ada juga satu masalah dengan IE8 dan versi sebelumnya, ketika menggunakan properti <mark>position</mark>. Jika container element atau element penampung (dalam kasus kita <<b>div</b> <span class="teal">class="container"</span>>) memiliki lebar tertentu, dan
+				deklarasi <b class="redZone">!DOCTYPE</b> dihilangkan, IE8 dan versi sebelumnya akan menambahkan margin 17px pada sisi kanan. Ini terlihat menjadi space reserved (pemesanan ruang) untuk scrollbar. Jadi, selalu atur deklarasi <b>!DOCTYPE</b> ketika menggunakan properti <mark>position</mark>: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open03">
+						
+						body {
+						<blockquote>
+						    margin: 0; <br>
+						    padding: 0;
+						</blockquote>
+						} <br>
+						<br>
+						.container {
+						<blockquote>
+						    position: relative; <br>
+						    width: 100%;
+						</blockquote>
+						} <br>
+						<br>
+						.right {
+						<blockquote>
+						    position: absolute; <br>
+						    right: 0px; <br>
+						    width: 300px; <br>
+						    background-color: #b0e0e6;
+						</blockquote>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close03">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						body {
+						<blockquote>
+						    margin: 0; <br>
+						    padding: 0;
+						</blockquote>
+						} <br>
+						<br>
+						.container {
+						<blockquote>
+						    position: relative; <br>
+						    width: 100%;
+						</blockquote>
+						} <br>
+						<br>
+						.right {
+						<blockquote>
+						    position: absolute; <br>
+						    right: 0px; <br>
+						    width: 300px; <br>
+						    background-color: #b0e0e6;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>div</b> <span class="teal">class="container"</span>>
+						<blockquote>
+							<<b>div</b> <span class="teal">class="right"</span>>
+							<blockquote>
+								<<b>p</b>><<b>b</b>>Note: <<b>/b</b>>When aligning using the position property, always include the !DOCTYPE declaration! If missing, it can produce strange results in IE browsers.<<b>/p</b>>
+							</blockquote>
+							<<b>/div</b>>
+						</blockquote>
+						<<b>/div</b>> <br><br>
+						
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan03()" class="exbutton">Klik disini</button>
+					<button onclick="buka03()" class="exbutton"> Open </button>
+					<button onclick="tutup03()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+					
+						<div class="bodyC">
+							<div class="containerC">
+								<div class="rightC">
+									<p><b>Note: </b>When aligning using the position property, always include the !DOCTYPE declaration! If missing, it can produce strange results in IE browsers.</p>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Left and Right Align - Using float </h2>
+				<p> Perataan Kiri dan Kanan - Menggunakan (properti) <mark>float</mark> </p>
+				<p> Metode lainnya untuk perataan eleemnt ialah dengan menggunakan properti <mark>float</mark>: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open04">
+						
+						.right {
+						<blockquote>
+						    float: right; <br>
+						    width: 300px; <br>
+						    border: 3px solid #73AD21; <br>
+						    padding: 10px;
+						</blockquote>
+						}
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close04">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						.right {
+						<blockquote>
+						    float: right; <br>
+						    width: 300px; <br>
+						    border: 3px solid #73AD21; <br>
+						    padding: 10px;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>div</b> <span class="teal">class="right"</span>>
+						<blockquote>
+							<<b>p</b>>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.<<b>/p</b>>
+						</blockquote>
+						<<b>/div</b>> <br><br>
+						
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan04()" class="exbutton">Klik disini</button>
+					<button onclick="buka04()" class="exbutton"> Open </button>
+					<button onclick="tutup04()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+					
+						<div class="rightD">
+						<p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+						</div>
+						
+					</div>
+				</article>
+				
+				<div class="nasehat">
+					<p> <b>Tip:</b> Ketika perataan element dengan properti <mark>float</mark>, selalu definisikan properti <mark>margin</mark> dan <mark>padding</mark> untuk element <<b>body</b>>. Ini untuk menghindari perbedaan visual dalam browser yang berbeda.</p>
+				</div>
+				<p> Ada juga satu masalah dengan IE8 dan versi sebelumnya, ketika menggunakan properti <mark>float</mark>. Jika deklarasi <b class="redZone">!DOCTYPE</b> dihilangkan, IE8 dan versi sebelumnya akan menambahkan margin 17px pada sisi kanan. 
+				Ini terlihat menjadi space reserved (pemesanan ruang) untuk scrollbar. Jadi, selalu atur deklarasi <b>!DOCTYPE</b> ketika menggunakan properti <mark>float</mark>: </p>
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open05">
+						
+						body {
+						<blockquote>
+						    margin: 0; <br>
+						    padding: 0; 
+						</blockquote>
+						} <br>
+						<br>
+						.right {
+						<blockquote>
+						    float: right; <br>
+						    width: 300px; <br>
+						    background-color: #b0e0e6;
+						</blockquote>
+						} 
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close05">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+						<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						body {
+						<blockquote>
+						    margin: 0; <br>
+						    padding: 0; 
+						</blockquote>
+						} <br>
+						<br>
+						.right {
+						<blockquote>
+						    float: right; <br>
+						    width: 300px; <br>
+						    background-color: #b0e0e6;
+						</blockquote>
+						} <br>
+						
+					<<b>/style</b>> <br>
+						<<b>/head</b>><br>
+						<<b>body</b>><br><br>
+						
+						<<b>div</b> <span class="teal">class="right"</span>>
+						<blockquote>
+							<<b>p</b>><<b>b</b>>Note: <<b>/b</b>>When aligning using the float property, always include the !DOCTYPE declaration! If missing, it can produce strange results in IE browsers.<<b>/p</b>>
+						</blockquote>
+						<<b>/div</b>> <br><br>
+						
+						<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan05()" class="exbutton">Klik disini</button>
+					<button onclick="buka05()" class="exbutton"> Open </button>
+					<button onclick="tutup05()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan bodyE" id="sembunyikan05">
+						
+						<div class="bodyE">
+							<div class="rightE">
+								<p><b>Note: </b>When aligning using the float property, always include the !DOCTYPE declaration! If missing, it can produce strange results in IE browsers.</p>
+							</div>
+						</div>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS inline-block.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS combinators.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

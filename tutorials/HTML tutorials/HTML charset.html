@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML charset</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML Encoding (Character Set)</h1>
+				<p> 
+				Untuk menampilkan sebuah halaman HTML secara benar, sebuah web browser harus mengetahui character set (character encoding) tuk digunakan. 
+				</p>
+				
+			</div>
+			
+			
+<section>
+			<article>
+				<h2>What is Character Encoding? </h2>
+				<p> ASCII adalah <b>Standar penyandian karakter</b> pertama (dipanggil juga character set). ASCII mendefinisikan 127 karakter alphanumeric berbeda yang bisa digunakan di internet. </p>
+				<p> ASCII mendukung nomor (0-9), english letters (A-Z)dan beberapa karakter special seperti ! $ + - ( ) @ < > .</p>
+				<p> ISO-8859-1 adalah default  character set untuk HTML 4. Ia juga mendukung 256 kode karakter berbeda. </p>
+				<p> Karena ANSI dan ISO itu terbatas, default character encoding berubah menjadi UTF-8 dalam HTML5. </p>
+				<p> UTF-8 (Unicode) meng-cover hampir semua karakter dan simbol di dunia. </p> 
+				<div class="nasehat">
+				Semua processor HTML 4 juga mendukung UTF-8.
+				</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> The HTML <b class="blue">charset</b> Attribute </h2>
+				<p> Untuk menampilkan sebuah halaman HTML dengan benar, web browser harus mengetahui character set yang digunakan pada halaman. </p>
+				<p> Ini ditentukan dalam teg <<b>meta</b>>: </p> 
+				
+
+				<article class="example-box">
+					<p class="fontWhite">Untuk HTML4:</p>
+					<div class="example-content">
+						<<b>meta</b> <span class="teal">http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"</span>> 						
+					</div>
+					<p class="fontWhite">Untuk HTML5:</p>
+					<div class="example-content">
+						<<b>meta</b> <span class="teal">charset="UTF-8"</span>>
+					</div>
+				</article>
+				
+				<div class="nasehat">
+				Jika browser mendeteksi ISO-8859-1 dalam sebuah web page, ia men-default menjadi ANSI, karena ANSI adalah indetik (mirip) dengan ISO-8859-1 kecuali bahwa ANSI memiliki 32 karakter ekstra.
+				</div>
+			</article>
+</section>
+<section>
+			<article>
+				
+			<table>
+				<thead>
+					<tr>
+						<th>Numb</th>
+						<th>ASCII</th>
+						<th>ANSI</th>
+						<th>8859</th>
+						<th>UTF-8</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>32</td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td>space </td>
+					</tr>
+					<tr>
+						<td>33</td>
+						<td>!</td>
+						<td>!</td>
+						<td>!</td>
+						<td>!</td>
+						<td>exclamation mark</td>
+					</tr>
+					<tr>
+						<td>34</td>
+						<td>"</td>
+						<td>"</td>
+						<td>"</td>
+						<td>"</td>
+						<td>quotation mark</td>
+					</tr>
+					<tr>
+						<td>35</td>
+						<td>#</td>
+						<td>#</td>
+						<td>#</td>
+						<td>#</td>
+						<td>number sign</td>
+					</tr>
+					<tr>
+						<td>36</td>
+						<td>$</td>
+						<td>$</td>
+						<td>$</td>
+						<td>$</td>
+						<td>dollar sign</td>
+					</tr>
+					<tr>
+						<td>37</td>
+						<td>%</td>
+						<td>%</td>
+						<td>%</td>
+						<td>%</td>
+						<td>percent sign</td>
+					</tr>
+					<tr>
+						<td>38</td>
+						<td>&</td>
+						<td>&</td>
+						<td>&</td>
+						<td>&</td>
+						<td>ampersand</td>
+					</tr>
+					<tr>
+						<td>39</td>
+						<td>'</td>
+						<td>'</td>
+						<td>'</td>
+						<td>'</td>
+						<td>apostrophe</td>
+					</tr>
+					<tr>
+						<td>40</td>
+						<td>(</td>
+						<td>(</td>
+						<td>(</td>
+						<td>(</td>
+						<td>left parenthesis</td>
+					</tr>
+					<tr>
+						<td>41</td>
+						<td>)</td>
+						<td>)</td>
+						<td>)</td>
+						<td>)</td>
+						<td>right parenthesis</td>
+					</tr>
+					<tr>
+						<td>42</td>
+						<td>*</td>
+						<td>*</td>
+						<td>*</td>
+						<td>*</td>
+						<td>asterisk</td>
+					</tr>
+					<tr>
+						<td>43</td>
+						<td>+</td>
+						<td>+</td>
+						<td>+</td>
+						<td>+</td>
+						<td>plus sign</td>
+					</tr>
+					<tr>
+						<td>44</td>
+						<td>,</td>
+						<td>,</td>
+						<td>,</td>
+						<td>,</td>
+						<td>comma</td>
+					</tr>
+					<tr>
+						<td>45</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>hyphen-minus</td>
+					</tr>
+					<tr>
+						<td>46</td>
+						<td>.</td>
+						<td>.</td>
+						<td>.</td>
+						<td>.</td>
+						<td>full stop</td>
+					</tr>
+					<tr>
+						<td>47</td>
+						<td>/</td>
+						<td>/</td>
+						<td>/</td>
+						<td>/</td>
+						<td>solidus</td>
+					</tr>
+					<tr>
+						<td>48</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>digit zero</td>
+					</tr>
+					<tr>
+						<td>49</td>
+						<td>1</td>
+						<td>1</td>
+						<td>1</td>
+						<td>1</td>
+						<td>digit one</td>
+					</tr>
+					<tr>
+						<td>50</td>
+						<td>2</td>
+						<td>2</td>
+						<td>2</td>
+						<td>digit two</td>
+					</tr>
+					<tr>
+						<td>51</td>
+						<td>3</td>
+						<td>3</td>
+						<td>3</td>
+						<td>3</td>
+						<td>digit three</td>
+					</tr>
+					<tr>
+						<td>52</td>
+						<td>4</td>
+						<td>4</td>
+						<td>4</td>
+						<td>4</td>
+						<td>digit four</td>
+					</tr>
+					<tr>
+						<td>53</td>
+						<td>5</td>
+						<td>5</td>
+						<td>5</td>
+						<td>5</td>
+						<td>digit five</td>
+					</tr>
+					<tr>
+						<td>54</td>
+						<td>6</td>
+						<td>6 </td>
+						<td>6</td>
+						<td>6</td>
+						<td>digit six</td>
+					</td>
+					<tr>
+						<td>55</td>
+						<td>7</td>
+						<td>7</td>
+						<td>7</td>
+						<td>7</td>
+						<td>digit seven</td>
+					</tr>
+					<tr>
+						<td>56</td>
+						<td>8</td>
+						<td>8</td>
+						<td>8</td>
+						<td>8</td>
+						<td>digit eight</td>
+					</tr>
+					<tr>
+						<td>57</td>
+						<td>9</td>
+						<td>9</td>
+						<td>9</td>
+						<td>9</td>
+						<td>digit nine</td>
+					</tr>
+					<tr>
+						<td>58</td>
+						<td>:</td>
+						<td>:</td>
+						<td>:</td>
+						<td>:</td>
+						<td>colon</td>
+					</tr>
+					<tr>
+						<td>59</td>
+						<td>;</td>
+						<td>;</td>
+						<td>;</td>
+						<td>;</td>
+						<td>semicolon</td>
+					</tr>
+					<tr>
+						<td>60</td>
+						<td><</td>
+						<td><</td>
+						<td><</td>
+						<td><</td>
+						<td>less-than sign</td>
+					</tr>
+					<tr>
+						<td>61</td>
+						<td>=</td>
+						<td>=</td>
+						<td>=</td>
+						<td>=</td>
+						<td>equals sign</td>
+					</tr>
+					<tr>
+						<td>62</td>
+						<td>></td>
+						<td>></td>
+						<td>></td>
+						<td>></td>
+						<td>greater-than sign</td>
+					</tr>
+					<tr>
+						<td>63</td>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+						<td>question mark</td>
+					</tr>
+					<tr>
+						<td>64</td>
+						<td>@</td>
+						<td>@</td>
+						<td>@</td>
+						<td>@</td>
+						<td>commercial at</td>
+					</tr>
+					<tr>
+						<td>65</td>
+						<td>A</td>
+						<td>A</td>
+						<td>A</td>
+						<td>A</td>
+						<td>Latin capital letter A</td>
+					</tr>
+					<tr>
+						<td>66</td>
+						<td>B</td>
+						<td>B</td>
+						<td>B</td>
+						<td>B</td>
+						<td>Latin capital letter B</td>
+					</tr>
+					<tr>
+						<td>67</td>
+						<td>C</td>
+						<td>C</td>
+						<td>C</td>
+						<td>C</td>
+						<td>Latin capital letter C</td>
+					</tr>
+					<tr>
+						<td>68</td>
+						<td>D</td>
+						<td>D</td>
+						<td>D</td>
+						<td>D</td>
+						<td>Latin capital letter D</td>
+					</tr>
+					<tr>
+						<td>69</td>
+						<td>E</td>
+						<td>E3</td>
+						<td>E</td>
+						<td>E</td>
+						<td>Latin capital letter E</td>
+					</tr>
+					<tr>
+						<td>70</td>
+						<td>F</td>
+						<td>F</td>
+						<td>F</td>
+						<td>F</td>
+						<td>Latin capital letter F</td>
+					</tr>
+					<tr>
+						<td>71</td>
+						<td>G</td>
+						<td>G</td>
+						<td>G</td>
+						<td>G</td>
+						<td>Latin capital letter G</td>
+					</tr>
+					<tr>
+						<td>72</td>
+						<td>H</td>
+						<td>H</td>
+						<td>H</td>
+						<td>H</td>
+						<td>Latin capital letter H</td>
+					</tr>
+					<tr>
+						<td>73</td>
+						<td>I</td>
+						<td>I</td>
+						<td>I</td>
+						<td>I</td>
+						<td>Latin capital letter I</td>
+					</tr>
+					<tr>
+						<td>74</td>
+						<td>J</td>
+						<td>J</td>
+						<td>J</td>
+						<td>J</td>
+						<td>Latin capital letter J</td>
+					</tr>
+					<tr>
+						<td>75</td>
+						<td>K</td>
+						<td>K</td>
+						<td>K</td>
+						<td>K</td>
+						<td>Latin capital letter K</td>
+					</tr>
+					<tr>
+						<td>76</td>
+						<td>L</td>
+						<td>L</td>
+						<td>L</td>
+						<td>L</td>
+						<td>Latin capital letter L</td>
+					</tr>
+					<tr>
+						<td>77	</td>
+						<td>M</td>
+						<td>M</td>
+						<td>M</td>
+						<td>M</td>
+						<td>Latin capital letter M</td>
+					</tr>
+					<tr>
+						<td>78</td>
+						<td>N</td>
+						<td>N</td>
+						<td>N</td>
+						<td>N</td>
+						<td>Latin capital letter N</td>
+					</tr>
+					<tr>
+						<td>79</td>
+						<td>O</td>
+						<td>O</td>
+						<td>O</td>
+						<td>O</td>
+						<td>Latin capital letter O</td>
+					</tr>
+					<tr>
+						<td>80</td>
+						<td>P</td>
+						<td>P</td>
+						<td>P</td>
+						<td>P</td>
+						<td>Latin capital letter P</td>
+					</tr>
+					<tr>
+						<td>81	</td>
+						<td>Q</td>
+						<td>Q</td>
+						<td>Q</td>
+						<td>Q</td>
+						<td>Latin capital letter Q</td>
+					</tr>
+					<tr>
+						<td>82	</td>
+						<td>R</td>
+						<td>R</td>
+						<td>R</td>
+						<td>R</td>
+						<td>Latin capital letter R</td>
+					</tr>
+					<tr>
+						<td>83</td>
+						<td>S</td>
+						<td>S</td>
+						<td>S</td>
+						<td>S</td>
+						<td>Latin capital letter S</td>
+					</tr>
+					<tr>
+						<td>84</td>
+						<td>T</td>
+						<td>T</td>
+						<td>T</td>
+						<td>T</td>
+						<td>Latin capital letter T</td>
+					</tr>
+					<tr>
+						<td>85</td>
+						<td>U</td>
+						<td>U</td>
+						<td>U</td>
+						<td>U</td>
+						<td>Latin capital letter U</td>
+					</tr>
+					<tr>
+						<td>86</td>
+						<td>V</td>
+						<td>V</td>
+						<td>V</td>
+						<td>V</td>
+						<td>Latin capital letter V</td>
+					</tr>
+					<tr>
+						<td>87</td>
+						<td>W</td>
+						<td>W</td>
+						<td>W</td>
+						<td>W</td>
+						<td>Latin capital letter W</td>
+					</tr>
+					<tr>
+						<td>88</td>
+						<td>X</td>
+						<td>X</td>
+						<td>X</td>
+						<td>X</td>
+						<td>Latin capital letter X</td>
+					</tr>
+					<tr>
+						<td>89</td>
+						<td>Y</td>
+						<td>Y</td>
+						<td>Y</td>
+						<td>Y</td>
+						<td>Latin capital letter Y</td>
+					</tr>
+					<tr>
+						<td>90</td>
+						<td>Z</td>
+						<td>Z</td>
+						<td>Z</td>
+						<td>Z</td>
+						<td>Latin capital letter Z</td>
+					</tr>
+					<tr>
+						<td>91</td>
+						<td>[</td>
+						<td>[</td>
+						<td>[</td>
+						<td>[</td>
+						<td>left square bracket</td>
+					</tr>
+					<tr>
+						<td>92</td>
+						<td>\</td>
+						<td>\</td>
+						<td>\</td>
+						<td>\</td>
+						<td>reverse solidus</td>
+					</tr>
+					<tr>
+						<td>93</td>
+						<td>]</td>
+						<td>]</td>
+						<td>]</td>
+						<td>]</td>
+						<td>right square bracket</td>
+					</tr>
+					<tr>
+						<td>94</td>
+						<td>^</td>
+						<td>^</td>
+						<td>^</td>
+						<td>^</td>
+						<td>circumflex accent</td>
+					</tr>
+					<tr>
+						<td>95	</td>
+						<td>_</td>
+						<td>_</td>
+						<td>_</td>
+						<td>_</td>
+						<td>low line</td>
+					</tr>
+					<tr>
+						<td>96</td>
+						<td>`</td>
+						<td>`</td>
+						<td>`</td>
+						<td>`</td>
+						<td>grave accent</td>
+					</tr>
+					<tr>
+						<td>97</td>
+						<td>a</td>
+						<td>a</td>
+						<td>a</td>
+						<td>a</td>
+						<td>Latin small letter a</td>
+					</tr>
+					<tr>
+						<td>98</td>
+						<td>b</td>
+						<td>b</td>
+						<td>b</td>
+						<td>b</td>
+						<td>Latin small letter b</td>
+					</tr>
+					<tr>
+						<td>99	</td>
+						<td>c</td>
+						<td>c</td>
+						<td>c</td>
+						<td>c</td>
+						<td>Latin small letter c</td>
+					</tr>
+					<tr>
+						<td>100</td>
+						<td>d</td>
+						<td>d</td>
+						<td>d</td>
+						<td>d</td>
+						<td>Latin small letter d</td>
+					</tr>
+					<tr>
+						<td>101</td>
+						<td>e</td>
+						<td>e</td>
+						<td>e</td>
+						<td>e</td><td>Latin small letter e</td>
+					</tr>
+					<tr>
+						<td>102</td>
+						<td>f</td>
+						<td>f</td>
+						<td>f</td>
+						<td>f</td>
+						<td>Latin small letter f</td>
+					</tr>
+					<tr>
+						<td>103</td>
+						<td>g</td>
+						<td>g</td>
+						<td>g</td>
+						<td>g</td>
+						<td>Latin small letter g</td>
+					</tr>
+					<tr>
+						<td>104</td>
+						<td>h</td>
+						<td>h</td>
+						<td>h</td>
+						<td>h</td>
+						<td>Latin small letter h</td>
+					</tr>
+					<tr>
+						<td>105</td>
+						<td>i</td>
+						<td>i</td>
+						<td>i</td>
+						<td>i</td>
+						<td>Latin small letter i</td>
+					</tr>
+					<tr>
+						<td>106</td>
+						<td>j</td>
+						<td>j</td>
+						<td>j</td>
+						<td>j</td>
+						<td>Latin small letter j</td>
+					</tr>
+					<tr>
+						<td>107</td>
+						<td>k</td>
+						<td>k</td>
+						<td>k</td>
+						<td>k</td>
+						<td>Latin small letter k</td>
+					</tr>
+					<tr>
+						<td>108</td>
+						<td>l</td>
+						<td>l</td>
+						<td>l</td>
+						<td>l</td>
+						<td>Latin small letter l</td>
+					</tr>
+					<tr>
+						<td>109</td>
+						<td>m</td>
+						<td>m</td>
+						<td>m</td>
+						<td>m</td>
+						<td>Latin small letter m</td>
+					</tr>
+					<tr>
+						<td>110</td>
+						<td>n</td>
+						<td>n</td>
+						<td>n</td>
+						<td>n</td>
+						<td>Latin small letter n</td>
+					</tr>
+					<tr>
+						<td>111</td>
+						<td>o</td>
+						<td>o</td>
+						<td>o</td>
+						<td>o</td>
+						<td>Latin small letter o</td>
+					</tr>
+					<tr>
+						<td>112</td>
+						<td>p	</td>
+						<td>p</td>
+						<td>p</td>
+						<td>p</td>
+						<td>Latin small letter p</td>
+					</tr>
+					<tr>
+						<td>113</td>
+						<td>q</td>
+						<td>q</td>
+						<td>q</td>
+						<td>q</td>
+						<td>Latin small letter q</td>
+					</tr>
+					<tr>
+						<td>114</td>
+						<td>r</td>
+						<td>r</td>
+						<td>r</td>
+						<td>r</td>
+						<td>Latin small letter r</td>
+					</tr>
+					<tr>
+						<td>115</td>
+						<td>s</td>
+						<td>s</td>
+						<td>s</td>
+						<td>s	</td>
+						<td>Latin small letter s</td>
+					</tr>
+					<tr>
+						<td>116</td>
+						<td>t</td>
+						<td>t</td>
+						<td>t</td>
+						<td>t</td>
+						<td>Latin small letter t</td>
+					</tr>
+					<tr>
+						<td>117</td>
+						<td>u</td>
+						<td>u</td>
+						<td>u</td>
+						<td>u</td>
+						<td>Latin small letter u </td>
+					</tr>
+					<tr>
+						<td>118</td>
+						<td>v</td>
+						<td>v</td>
+						<td>v</td>
+						<td>v</td>
+						<td>Latin small letter v</td>
+					</tr>
+					<tr>
+						<td>119</td>
+						<td>w</td>
+						<td>w</td>
+						<td>w</td>
+						<td>w</td>
+						<td>Latin small letter w</td>
+					</tr>
+					<tr>
+						<td>120</td>
+						<td>x</td>
+						<td>x</td>
+						<td>x</td>
+						<td>x</td>
+						<td>Latin small letter x</td>
+					</tr>
+					<tr>
+						<td>121</td>
+						<td>y</td>
+						<td>y</td>
+						<td>y</td>
+						<td>y</td>
+						<td>Latin small letter y</td>
+					</tr>
+					<tr>
+						<td>122</td>
+						<td>z</td>
+						<td>z</td>
+						<td>z</td>
+						<td>z</td>
+						<td>Latin small letter z</td>
+					</tr>
+					<tr>
+						<td>123</td>
+						<td>{</td>
+						<td>{</td>
+						<td>{</td>
+						<td>{</td>
+						<td>left curly bracket</td>
+					</tr>
+					<tr>
+						<td>124</td>
+						<td>|</td>
+						<td>|</td>
+						<td>|</td>
+						<td>|</td>
+						<td>vertical line</td>
+					</tr>
+					<tr>
+						<td>125</td>
+						<td>}</td>
+						<td>}</td>
+						<td>}</td>
+						<td>}</td>
+						<td>right curly bracket</td>
+					</tr>
+					<tr>
+						<td>126</td>
+						<td>~</td>
+						<td>~</td>
+						<td>~</td>
+						<td>~</td>
+						<td>tilde</td>
+					</tr>
+					<tr>
+						<td>127</td>
+						<td>DEL</td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<td>128</td>
+						<td> </td>
+						<td>€ </td>
+						<td> </td>
+						<td> </td>
+						<td>euro sign</td>
+					</tr>
+					<tr>
+						<td>129</td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>	
+						<td> NOT USED </td>
+					</tr>
+					<tr>
+						<td>130	</td>
+						<td> </td>
+						<td>‚</td>
+						<td></td>
+						<td> </td>
+						<td> 	single low-9 quotation mark</td>
+					</tr>
+					<tr>
+						<td>131	</td>
+						<td> </td>
+						<td>	ƒ</td>
+						<td> </td>
+						<td>	</td>
+						<td> 	 	Latin small letter f with hook</td>
+					</tr>
+					<tr>
+						<td>132	</td>
+						<td> </td>
+						<td> 	„</td>
+						<td> </td>
+						<td> </td>	
+						<td>double low-9 quotation mark</td>
+					</tr>
+					<tr>
+						<td>133	</td>
+						<td>	</td>
+						<td>…	 </td>
+						<td> </td>
+						<td> </td>
+						<td>horizontal ellipsis</td>
+					</tr>
+					<tr>
+						<td>134</td>
+						<td> </td> 
+						<td>† </td>	
+						<td> </td>
+						<td>	</td>
+						<td>dagger</td>
+					</tr>
+					<tr>
+						<td>135</td>
+						<td> </td>
+						<td>‡</td>
+						<td> </td> 	
+						<td> </td>
+						<td>double dagger</td>
+					</tr>
+					<tr>
+						<td>136	</td>
+						<td>	</td>
+						<td>ˆ	</td>
+						<td> </td>
+						<td> </td>
+						<td>modifier letter circumflex accent</td>
+					</tr>
+					<tr>
+						<td>137</td>
+						<td> </td>
+						<td> 	‰</td>
+						<td> </td>
+						<td> </td>
+						<td> per mille sign </td>
+					</tr>
+					<tr>
+						<td>138	</td>
+						<td> </td>	
+						<td>Š</td> 
+						<td>  </td>
+						<td> </td>	 	 	
+						<td>Latin capital letter S with caron</td>
+					</tr>
+					<tr>
+						<td>139</td>
+						<td> </td> 
+						<td>‹</td>
+						<td> </td>
+						<td> </td>
+						<td>single left-pointing angle quotation mark</td>
+					</tr>
+					<tr>
+						<td>140</td>
+						<td> </td>
+						<td>Œ </td>
+						<td> </td>
+						<td> </td>
+						<td>Latin capital ligature OE</td>
+					</tr>
+					<tr>
+						<td>141	</td>
+						<td> </td>
+						<td> </td>
+						<td></td>
+						<td>		</td>
+						<td>NOT USED</td>
+					</tr>
+					<tr>
+						<td>142	</td>
+						<td> </td>
+						<td> 	Ž	 </td>
+						<td> </td>
+						<td> </td>
+						<td>	 	Latin capital letter Z with caron</td>
+					</tr>
+					<tr>
+						<td>143	</td>
+						<td> </td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>NOT USED</td>
+					</tr>
+					<tr>
+						<td>144	</td>
+						<td> </td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>NOT USED</td>
+					</tr>
+					<tr>
+						<td>145</td>
+						<td> </td>
+						<td>‘</td>
+						<td> </td>
+						<td> </td>
+						<td>left single quotation mark</td>
+					</tr>
+					<tr>
+						<td>146</td>
+						<td></td>
+						<td>’</td>	
+						<td> </td>
+						<td></td> 
+						<td>right single quotation mark</td>
+					</tr>
+					<tr>
+						<td>147</td>
+						<td></td>
+						<td>“</td>
+						<td></td>
+						<td> </td>
+						<td> left double quotation mark</td>
+					</tr>
+					<tr>
+						<td>148	</td>
+						<td> </td>
+						<td>”</td>
+						<td> </td>
+						<td> </td>
+						<td>right double quotation mark</td>
+					</tr>
+					<tr>
+						<td>149</td>
+						<td> </td>
+						<td>•</td>
+						<td> </td>
+						<td> </td>
+						<td>bullet</td>
+					</tr>
+					<tr>
+						<td>150</td>
+						<td> </td>
+						<td>–</td>
+						<td> </td>	
+						<td> </td>
+						<td>en dash</td>
+					</tr>
+					<tr>
+						<td>151</td>
+						<td> </td>
+						<td>—</td>
+						<td> </td>
+						<td> </td>
+						<td>em dash</td>
+					</tr>
+					<tr>
+						<td>152</td>
+						<td> </td>
+						<td>˜</td>
+						<td></td>
+						<td> </td>
+						<td>small tilde</td>
+					</tr>
+					<tr>
+						<td>153	</td>
+						<td></td>
+						<td>™</td>
+						<td> </td>
+						<td></td>
+						<td>trade mark sign</td>
+					</tr>
+					<tr>
+						<td>154</td>
+						<td> </td>
+						<td>š</td>
+						<td> </td>
+						<td> </td>
+						<td>Latin small letter s with caron</td>
+					</tr>
+					<tr>
+						<td>155	</td>
+						<td> </td>
+						<td>›</td>
+						<td> </td>
+						<td> </td>
+						<td>single right-pointing angle quotation mark</td>
+					</tr>
+					<tr>
+						<td>156	</td>
+						<td> </td>
+						<td>œ</td>
+						<td> </td>
+						<td> </td>
+						<td>Latin small ligature oe</td>
+					</tr>
+					<tr>
+						<td>157</td>
+						<td> </td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>NOT USED</td>
+					</tr>
+					<tr>
+						<td>158</td>
+						<td> </td>
+						<td>ž</td>
+						<td> </td>
+						<td> </td>
+						<td>Latin small letter z with caron</td>
+					</tr>
+					<tr>
+						<td>159	</td>
+						<td> </td>
+						<td>Ÿ</td>
+						<td></td>
+						<td> </td>
+						<td>Latin capital letter Y with diaeresis</td>
+					</tr>
+					<tr>
+						<td>160</td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td>no-break space</td>
+					</tr>
+					<!--
+					<tr>
+						161	 	¡	¡	¡	inverted exclamation mark
+						162	 	¢	¢	¢	cent sign
+						163	 	£	£	£	pound sign
+						164	 	¤	¤	¤	currency sign
+						165	 	¥	¥	¥	yen sign
+						166	 	¦	¦	¦	broken bar
+						167	 	§	§	§	section sign
+						168	 	¨	¨	¨	diaeresis
+						169	 	©	©	©	copyright sign
+						170	 	ª	ª	ª	feminine ordinal indicator
+						171	 	«	«	«	left-pointing double angle quotation mark
+						172	 	¬	¬	¬	not sign
+						173	 				soft hyphen
+						174	 	®	®	®	registered sign
+						175	 	¯	¯	¯	macron
+						176	 	°	°	°	degree sign
+						177	 	±	±	±	plus-minus sign
+						178	 	²	²	²	superscript two
+						179	 	³	³	³	superscript three
+						180	 	´	´	´	acute accent
+						181	 	µ	µ	µ	micro sign
+						182	 	¶	¶	¶	pilcrow sign
+						183	 	·	·	·	middle dot
+						184	 	¸	¸	¸	cedilla
+						185	 	¹	¹	¹	superscript one
+						186	 	º	º	º	masculine ordinal indicator
+						187	 	»	»	»	right-pointing double angle quotation mark
+						188	 	¼	¼	¼	vulgar fraction one quarter
+						189	 	½	½	½	vulgar fraction one half
+						190	 	¾	¾	¾	vulgar fraction three quarters
+						191	 	¿	¿	¿	inverted question mark
+						192	 	À	À	À	Latin capital letter A with grave
+						193	 	Á	Á	Á	Latin capital letter A with acute
+						194	 	Â	Â	Â	Latin capital letter A with circumflex
+						195	 	Ã	Ã	Ã	Latin capital letter A with tilde
+						196	 	Ä	Ä	Ä	Latin capital letter A with diaeresis
+						197	 	Å	Å	Å	Latin capital letter A with ring above
+						198	 	Æ	Æ	Æ	Latin capital letter AE
+						199	 	Ç	Ç	Ç	Latin capital letter C with cedilla
+						200	 	È	È	È	Latin capital letter E with grave
+						201	 	É	É	É	Latin capital letter E with acute
+						202	 	Ê	Ê	Ê	Latin capital letter E with circumflex
+						203	 	Ë	Ë	Ë	Latin capital letter E with diaeresis
+						204	 	Ì	Ì	Ì	Latin capital letter I with grave
+						205	 	Í	Í	Í	Latin capital letter I with acute
+						206	 	Î	Î	Î	Latin capital letter I with circumflex
+						207	 	Ï	Ï	Ï	Latin capital letter I with diaeresis
+						208	 	Ð	Ð	Ð	Latin capital letter Eth
+						209	 	Ñ	Ñ	Ñ	Latin capital letter N with tilde
+						210	 	Ò	Ò	Ò	Latin capital letter O with grave
+						211	 	Ó	Ó	Ó	Latin capital letter O with acute
+						212	 	Ô	Ô	Ô	Latin capital letter O with circumflex
+						213	 	Õ	Õ	Õ	Latin capital letter O with tilde
+						214	 	Ö	Ö	Ö	Latin capital letter O with diaeresis
+						215	 	×	×	×	multiplication sign
+						216	 	Ø	Ø	Ø	Latin capital letter O with stroke
+						217	 	Ù	Ù	Ù	Latin capital letter U with grave
+						218	 	Ú	Ú	Ú	Latin capital letter U with acute
+						219	 	Û	Û	Û	Latin capital letter U with circumflex
+						220	 	Ü	Ü	Ü	Latin capital letter U with diaeresis
+						221	 	Ý	Ý	Ý	Latin capital letter Y with acute
+						222	 	Þ	Þ	Þ	Latin capital letter Thorn
+						223	 	ß	ß	ß	Latin small letter sharp s
+						224	 	à	à	à	Latin small letter a with grave
+						225	 	á	á	á	Latin small letter a with acute
+						226	 	â	â	â	Latin small letter a with circumflex
+						227	 	ã	ã	ã	Latin small letter a with tilde
+						228	 	ä	ä	ä	Latin small letter a with diaeresis
+						229	 	å	å	å	Latin small letter a with ring above
+						230	 	æ	æ	æ	Latin small letter ae
+						231	 	ç	ç	ç	Latin small letter c with cedilla
+						232	 	è	è	è	Latin small letter e with grave
+						233	 	é	é	é	Latin small letter e with acute
+						234	 	ê	ê	ê	Latin small letter e with circumflex
+						235	 	ë	ë	ë	Latin small letter e with diaeresis
+						236	 	ì	ì	ì	Latin small letter i with grave
+						237	 	í	í	í	Latin small letter i with acute
+						238	 	î	î	î	Latin small letter i with circumflex
+						239	 	ï	ï	ï	Latin small letter i with diaeresis
+						240	 	ð	ð	ð	Latin small letter eth
+						241	 	ñ	ñ	ñ	Latin small letter n with tilde
+						242	 	ò	ò	ò	Latin small letter o with grave
+						243	 	ó	ó	ó	Latin small letter o with acute
+						244	 	ô	ô	ô	Latin small letter o with circumflex
+						245	 	õ	õ	õ	Latin small letter o with tilde
+						246	 	ö	ö	ö	Latin small letter o with diaeresis
+						247	 	÷	÷	÷	division sign
+						248	 	ø	ø	ø	Latin small letter o with stroke
+						249	 	ù	ù	ù	Latin small letter u with grave
+						250	 	ú	ú	ú	Latin small letter u with acute
+						251	 	û	û	û	Latin small letter with circumflex
+						252	 	ü	ü	ü	Latin small letter u with diaeresis
+						253	 	ý	ý	ý	Latin small letter y with acute
+						254	 	þ	þ	þ	Latin small letter thorn
+						255	 	ÿ	ÿ	ÿ	Latin small letter y with diaeresis
+					</tr>
+					-->
+				</tbody>
+			</table>
+			<div class="nasehatX">
+				<b>Catatan:</b> Tabel ini belum sepenuhnya selesai karena terlalu panjangnya jadi saya jeda sementara waktu.
+			</div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> The ASCII Character Set </h2>
+				<p> ASCII menggunakan nilai dsri 0 - 31 (dan 127) untuk kontrol karakter. </p>
+				<p> ASCII menggunakan nilai dari 32 - 126 untuk letter (huruf), digit (angka) dan simbol. </p>
+				<p> ASCII tidak menggunakan nilai dari 128 - 255. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The ANSI Character Set (Windows-1252) </h2>
+				<p>ANSI adalah serupa dengan ASCII untuk nilai dari 0 - 127. </p>
+				<p> ANSI memiliki sebuah priorietary set (penyetel pemilik) karakter untuk nilai dari 128 - 159. </p>
+				<p> ANSI serupa dengan UTF-8 untuk nilai dari 160 - 255. </p>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> The ISO-8859-1 Character Set </h2>
+				<p> 8859-1 adalah serupa dengan ASCII untuk nilai dari 0 - 127. </p>
+				<p> 8859-1 tidak menggunakan nilai dari 128 - 159. </p>
+				<p> 8859-1 serupa dengan UTF-8 untuk nilai dari 160 - 255. </p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The UTF-8 Character Set </h2>
+				<p> UTF-8 adalah serupa dengan ASCII untuk nilai dari 0 - 127. </p>
+				<p> UTF-8 tidak menggunakan nilai dari 128 - 159. </p>
+				<p> UTF-8 serupa dengan kedua ANSI dan 8859-1 untuk niali dari 160 - 225. </p>
+				<p> UTF-8 melanjutkan dari nilai 256 dengan lebih dari 10.000 karakter berbeda. </p>
+				<p> Untuk penutup lihatlah, materi kita tentang <a href="complete HTML character set reference" > Complete HTML Character Set Reference. </a></p>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML symbols.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML URL encode.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

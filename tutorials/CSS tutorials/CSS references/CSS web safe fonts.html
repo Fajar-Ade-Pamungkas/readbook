@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | CSS | CSS references | CSS web safe fonts  </title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="../tutorial.css">
+<link rel="stylesheet" type="text/css" href="../style.css">
+<script type="text/javascript" src="../buka.js"></script>
+<script type="text/javascript" src="../../HTML tutorials/script.js"></script>
+<script type="text/javascript" src="../.,/HTML tutorials/JavaScript3.js"></script>
+<style type="text/css">
+p.serif { 
+font-family: "Times New Roman", Times, serif; 
+} 
+
+p.sansserif { 
+font-family: Arial, Helvetica, sans-serif; 
+} 
+
+.table h3{
+	font-size:18px;
+}
+.table td {
+	text-align:left;
+}
+
+.georgia p, .georgia h3{
+	font-family:Georgia, serif;
+}
+
+.palatino p, .palatino h3{
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.times p, .times h3{
+	font-family:"Times New Roman", Times, serif;
+}
+
+.helvetical p, .helvetical h3{
+	font-family:Arial, Helvetical, sans-serif;
+}
+
+.gadget p,.gadget h3 {
+	font-family:"Arial Black", Gadget, sans-serif;
+}
+
+.cursive p, .cursive h3{
+	font-family:"Comic Sans MS", cursive, sans-serif;
+}
+
+.charcoal p, .charcoal h3{
+	font-family:Impact, Charcoal, sans-serif;
+}
+
+.lucida-grande p, .lucida-grande {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.geneva p, .geneva h3 {
+	font-family:Tahoma, Geneva, sans-serif;
+}
+
+.helvetical2 p, .helvetical2 h3{
+	font-family:"Trebuchet MS", Helvetical, sans-serif;
+}
+
+.geneva2 p, .geneva2 h3{
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+.courier p, .courier h3{
+	font-family:"Courier New", Courier, monospace;
+}
+
+.monaco p, .monaco h3  {
+	font-family:"Lucida Console", Monaco, monospace;
+}
+
+</style>
+
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> CSS Web Safe Font Combinations  </h1>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> Commonly Used Font Combinations </h2>
+				<p> Kombinasi Font yang umum digunakan</p>
+				
+				<p> Properti <mark>font-family</mark> harus mengikat beberapa nama-nama font seperti sistem "fallback", 
+				untuk memastikan kompabilitas maksimal antara browser/sistem operasi. Jika browser tidak mendukung font pertama, Ini akan mencoba font selanjutnya.</p>
+				<p> Mulailah dengan font yang inginkan, dan akhiri dengan generic family sebagai sistem "fallback", untuk membiarkan browser mengambil font yang mirip 
+				dalam generic famiky, jika tidak ada font lainnya yang tersedia:</p>
+				
+				
+				<article class="example-box">
+					<h4>Contoh:</h4>
+					<div class="example-content" id="content-open01">
+						
+						p {
+						<blockquote>
+						font-family: "Times New Roman", Times, serif;
+						</blockquote>
+						} <br>
+						
+					</div>
+					<div class="example-content sembunyikan" id="content-close01">
+					<<b>!DOCTYPE html</b>><br>
+					
+					<<b>html</b>><br>
+					<<b>head</b>><br>
+					<<b>meta</b> <span class="teal">name="viewport" content="width=device-width, initial-scale=1.0"</span>> <br>
+					<<b>style</b>> <br>
+						
+						p.serif { <br>
+						font-family: "Times New Roman", Times, serif; <br>
+						} <br>
+						 <br>
+						p.sansserif { <br>
+						font-family: Arial, Helvetica, sans-serif; <br>
+						} <br>
+						
+					<<b>/style</b>> <br>
+					<<b>/head</b>><br>
+					<<b>body</b>><br><br>
+					
+						<<b>h1</b>>CSS font-family<<b>/h1</b>> <br>
+						<<b>p</b> <span class="teal">class="serif"</span>>This is a paragraph, shown in the Times New Roman font.<<b>/p</b>> <br>
+						<<b>p</b> <span class="teal">class="sansserif"</span>>This is a paragraph, shown in the Arial font.<<b>/p</b>> <br>
+					
+					<<b>/body</b>> <br>
+					<<b>/html</b>><br>
+					
+					
+					</div>
+					<button onclick="tampilkan01()" class="exbutton">Klik disini</button>
+					<button onclick="buka01()" class="exbutton"> Open </button>
+					<button onclick="tutup01()" class="exbutton"> Close </button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+					
+						<h2>CSS font-family</h2>
+						<p class="serif">This is a paragraph, shown in the Times New Roman font.</p>
+						<p class="sansserif">This is a paragraph, shown in the Arial font.</p>
+					
+					</div>
+				</article>
+				
+				<p> Dibawah ini adalah beberapa kombinasi font yang umum digunakan, diorganisasikan dengan generic family.</p>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Serif Fonts</h2>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th> font-family </th>
+							<th> Contoh teks </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> Georgia, serif </td>
+							<td class="georgia"> 
+								<h3> Ini adalah Heading</h3> 
+								<p> Ini adalah paragraf </p>
+							</td>
+						</tr>
+						<tr>
+							<td> "Palatino Linotype", "Book Antiqua", Palatino, serif </td>
+							<td class="palatino">
+								<h3> Ini adalah Heading </h3>
+								<p> Ini adalah paragraf </p>
+							</td>
+						</tr>
+						<tr>
+							<td> "Times New Roman", Times, serif </td>
+							<td class="times">
+								<h3> Ini adalah Heading </h3>
+								<p> Ini adalah paragraf </p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Sans-Serif Fonts</h2>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th>font-family</th>
+							<th>Contoh teks</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> Arial, Helvetical, sans-serif </td>
+							<td class="helvetical">
+								<h3> Ini adalah Heading </h3>
+								<p> Ini adalah paragraf </p>
+							</td>
+						</tr>
+						<tr>
+							<td> "Arial Black", Gadget, sans-serif </td>
+							<td class="gadget">
+								<h3> Ini adalah Heading </h3>
+								<p> Ini adalah paragraf </p>
+							</td>
+						</tr>
+						<tr>
+							<td> "Comic Sans MS", cursive, sans-serif </td>
+							<td class="cursive">
+								<h3> Ini adalah Heading </h3>
+								<p> Ini adalah paragraf </p>
+							</td>
+						</tr>
+						<tr>
+							<td> Impact, Charcoal, sans-serif </td>
+							<td class="charcoal">
+								<h3> Ini adalah Heading </h3>
+								<p> Ini adalah paragraf </p>
+							</td>
+						</tr>
+						<tr>
+							<td> "Lucida Sans Unicode", "Lucida Grande", sans-serif </td>
+							<td class="lucida-grande">
+								<h3> Ini adalah Heading </h3>
+								<p> Ini adalah paragraf </p>
+							</td>
+						</tr>
+						<tr>
+							<td> Tahoma, Geneva, sans-serif </td>
+							<td class="geneva">
+								<h3> Ini adalah Heading </h3>
+								<p> Ini adalah paragraf </p>
+							</td>
+						</tr>
+						<tr>
+							<td> "Trebuchet MS", Helvetical, sans-serif </td>
+							<td>
+								<h3 class="helvetical2"> Ini adalah Heading </h3>
+								<p> Ini adalah paragraf </p>
+							</td>
+						</tr>
+						<tr>
+							<td> Verdana, Geneva, sans-serif </td>
+							<td class="geneva2">
+								<h3> Ini adalah Heading </h3>
+								<p> Ini adalah paragraf </p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2>Monospace Fonts</h2>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th>font-family</th>
+							<th>Contoh teks</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> "Courier New", Courier, monospace </td>
+							<td class="courier">
+								<h3> Ini adalah Heading </h3>
+								<p> Ini adalah paragraf </p>
+							</td>
+						</tr>
+						<tr>
+							<td> "Lucida Console", Monaco, monospace </td>
+							<td class="monaco">
+								<h3> Ini adalah Heading </h3>
+								<p> Ini adalah paragraf </p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+				<a href="CSS aurals.html">
+					<div class="back">&larr; Kembali </div>
+				</a>
+				<a href="CSS animations.html" >
+					<div class="next">Selanjutnya &rarr;</div>
+				</a>
+				<article>
+				</article>
+			</article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>

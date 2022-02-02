@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home | HTML | HTML form elements</title>
+<meta charset="utf-8" />
+<meta name="viewport" content"device-width, initial-scale=0.1"/>
+<meta name="description" content="readweb" />
+<meta name="keywords" content="javaScript" />
+<meta http-equiv="refresh" content="5m"/>
+<meta name="author" content="fajar ade pamungkas"/>
+
+<link rel="stylesheet" type="text/css" href="../../Readstyle.css"/>
+<link rel="stylesheet" type="text/css" href="tutorial.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--opening header-->
+	<div id="header">
+		<h1>Readbook</h1>
+		<p> A web Studing By &copy;Fajar</p>
+	</div>
+<!-- closing header-->
+
+<!--opening nav-->
+<div id="container javascript-tutorials">
+	<div class="col-2 col-m-12" >
+		<div id="nav-vertical">
+
+		</div>
+	</div>
+<!--closing nav-->
+
+<!-- opening main-->
+	<div class="col-8 col-m-12">
+		<div id="main">
+			<div class="branding-padd">
+				<h1> HTML Form Elements </h1>
+				<p> Chapter ini mendeskripsikan semua element formulir HTML. </p>
+			</div>
+			
+			
+<section>
+			<article>
+				<h2> The <b class="blue"><<b>input</b>></b> Element </h2>
+				<p> Element formulir yang paling penting adalah element <<b>input</b>>. </p>
+				<p> Element <<b>input</b>> bisa bervariasi dalam banyak cara, tergantung pada attribute <b>type</b>. </p>
+				<div class="nasehat"> Semua tipe input HTML di-cover dalam chapter selanjutnya. </div>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> The <b class="blue"><<b>select</b>></b> Element (Drop-Down List) </h2>
+				<p> Element <<b>select</b>> mendefinisiksn sebuah drop-down list: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>form</b> <span class="teal">action="http//:www.w3schools.com/action_page.php"</span>>
+								  <blockquote>
+									<<b>select</b> <span class="teal">name="cars"</span>> 
+									<blockquote>
+									  <<b>option</b> <span class="teal">value="volvo"</span>>Volvo<<b>/option</b>> <br>
+									  <<b>option</b> <span class="teal">value="saab"</span>>Saab<<b>/option</b>> <br>
+									  <<b>option</b> <span class="teal">value="fiat"</span>>Fiat<<b>/option</b>> <br>
+									  <<b>option</b> <span class="teal">value="audi"</span>>Audi<<b>/option</b>>
+									</blockquote>
+									<<b>/select</b>>
+								</blockquote>
+								<<b>/form</b>>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan01()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan01">
+						
+						<form action="action_page.php">
+							<select name="cars">
+							  <option value="volvo">Volvo</option>
+							  <option value="saab">Saab</option>
+							  <option value="fiat">Fiat</option>
+							  <option value="audi">Audi</option>
+							</select>
+						</form>
+						
+					</div>
+				</article>
+				
+				<article class="example-box">
+					<p class="fontWhite"> Coba kamu tambahkan attribute <b>selected</b> seperti ini pada salah satu opsi </p>
+					<div class="example-content">
+					  <<b>option</b> <span class="teal">value="fiat" selected</span>>Fiat<<b>/option</b>> <br>
+					</div>
+				</article>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> The <b class="blue"><<b>textarea</b>></b> Element </h2>
+				<p> Element <<b>textarea</b>> mendefinisikan multi-line input field (sebuah area teks): </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>form</b> <span class="teal">action="http//:www.w3schools.com/action_page.php"</span>>
+								  <blockquote>
+									<<b>textarea</b> <span class="teal">name="message" rows="10" cols="30"</span>> 
+										The cat was playing in the garden.
+									<<b>/textarea</b>> <<b>br</b>><br>
+									<<b>input</b> <span class="teal">type="submit"</span>>
+								</blockquote>
+								<<b>/form</b>>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan02()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan02">
+						
+						<form action="action_page.php">
+							<textarea name="message" rows="10" cols="30">
+							The cat was playing in the garden.
+							</textarea>
+							<br>
+							<input type="submit">
+						</form>
+						
+					</div>
+				</article>
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> The <b class="blue"><<b>button</b>></b> Element </h2>
+				<p> Element <<b>button</b>> mendefinisikan tombol yang dapat diklik: </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+							<<b>button</b> <span class="teal">type="button" onclick="alert('Hello World!')"</span>>Click Me!<<b>/button</b>>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan03()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan03">
+						
+						<form action="action_page.php">
+							<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+						</form>
+						
+					</div>
+				</article>
+				
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML5 Form Elements </h2>
+				<p> HTML5 menambahkan element formulir berikut ini: </p>
+				<ul>
+					<li> <<b>datalist</b>> </li>
+					<li> <<b>keygen</b>> </li>
+					<li> <<b>output</b>> </li>
+				</ul>
+				<div class="nasehat">
+					Dengan default, browser tidak menampilkan element yang tak diketahui. Element baru tidak akan menghancurksn halaman kamu.
+				</div>
+				
+			</article>
+</section>
+<section>			
+			<article>
+				<h2> HTML5 <b class="blue"><<b>datalist</b>></b> Element </h2>
+				<p> Element <<b>datalist</b>> menentukan sebuah daftar dari opsi yang dikenal untuk element <<b>input</b>>. </p>
+				<p> Para pengguna akan melihat sebuah drop-down list dari opsi yang dikenal sebagai input data. </p>
+				<p> Attribute <b>list</b> dari element <<b>input</b>>, harus mengarah ke attribute <b>id</b> element <<b>datalist</b>>.
+			
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<p class="fontWhite"> Sebuah element <<b>inout</b>> dengan pre-defined values dalam sebuah <<b>datalist</b>>: </p>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>form</b> <span class="teal">action="action_page.php"</span>>
+								  	<blockquote>
+								  	<<b>input</b> <span class="teal">list="browsers"</span>> <br>
+								  	<<b>datalist</b> <span class="teal">id="browsers"</span>>
+										<blockquote>
+									    <<b>option</b> <span class="teal">value="Internet Explorer"</span>> <br>
+									    <<b>option</b> <span class="teal">value="Firefox"</span>> <br>
+									    <<b>option</b> <span class="teal">value="Chrome"</span>> <br>
+									    <<b>option</b> <span class="teal">value="Opera"</span>> <br>
+									    <<b>option</b> <span class="teal">value="Safari"</span>>
+										</blockquote>
+								  	<<b>/datalist</b>> 
+									</blockquote>
+								<<b>/form</b>>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan04()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan04">
+						
+						<form action="action_page.php">
+						  <input list="browsers">
+						  <datalist id="browsers">
+						    <option value="Internet Explorer">
+						    <option value="Firefox">
+						    <option value="Chrome">
+						    <option value="Opera">
+						    <option value="Safari">
+						  </datalist> 
+						</form>
+						
+					</div>
+				</article>
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> No </td>
+							<td> Yes </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML5 <b class="blue"><<b>keygen</b>></b> Element </h2>
+				<p> Tujuan dari element <<b>keygen</b>> adalah untuk menyediakan cara keamanan untuk authenticate users. </p>
+				<p> Element <<b>keygen</b>> menentukan sebuah key-pair generator field dalam form. </p>
+				<p> Ketika formulir diserahkan, dua kunci dihasilkan, satu privasi (pribadi) dan satu publik. </p>
+				<p> Private key disimpan secara lokal, dan public key dikirim ke server. </p>
+				<p> Public key bisa digunakan untuk menghasilkan sebuah sertifikat nasabah (client sertificate) untuk authenticate (membuktikan) di masa depan. </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<p class="fontWhite"> Formulir dengan <b>keygen</b> field </p>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>form</b> <span class="teal">action="action_page.php"</span>>
+								  	<blockquote>
+									Username: <<b>input</b> <span class="teal">type="text" name="user"</span>>
+									<<b>br</b>><<b>br</b>> <br><br>
+									Encryption: <<b>keygen</b> <span class="teal">name="security"</span>>
+									<<b>br</b>><<b>br</b>> <br><br>
+									<<b>input</b> <span class="teal">type="submit"</span>>
+									</blockquote>
+								<<b>/form</b>>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan05()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan05">
+						
+						<form action="action_page.php">
+							Username: <input type="text" name="user">
+							<br><br>
+							Encryption: <keygen name="security">
+							<br><br>
+							<input type="submit">
+							</form>
+						</form>
+						
+					</div>
+				</article>	
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> Yes </td>
+							<td> No </td>
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML5 <b class="blue"><<b>output</b>></b> Element </h2>
+				<p> Element <<b>output</b>> mempersembahakan hasil dari kalkulasi (sepertu satu yang ditunjukan oleh sebuah script). </p>
+				
+				<article class="example-box">
+					<h1>Contoh</h1>
+					<h4>Input:</h4>
+					<p class="fontWhite"> Menunjukan kalkulasi dan menampilkan hasil dalam element <<b>output</b>>: </p>
+					<div class="example-content">
+					
+						<<b>!DOCTYPE html</b>><br><br>
+						<<b>html</b>><br><br>
+							<<b>head</b>><br><br>
+							<<b>title</b>> Judul Halaman <<b>/title</b>> <br><br>
+							<<b>/head</b>><br><br>
+							<<b>body</b>><br>
+								<br>
+								<<b>form</b> <span class="teal">action="http://www.w3schools.com/html/action_page.php"
+								oninput="x.value=parseInt(a.value)+parseInt(b.value)"</span>>
+									<blockquote>
+									0 <br>
+									<<b>input</b> <span class="teal">type="range" id="a" name="a" value="50"</span>> <br>
+									100 + <br>
+									<<b>input</b> <span class="teal">type="number" id="b" name="b" value="50"</span>> <br>
+									= <br>
+									<<b>output</b> <span class="teal">name="x" for="a b"</span>><<b>/output</b>> <br>
+									<<b>br</b>><<b>br</b>> <br>
+									<<b>input</b> <span class="teal">type="submit"</span>> 
+									</blockquote>
+								<<b>/form</b>>
+								<br>
+							<<b>/body</b>><br><br>
+						<<b>/html</b>><br>
+						
+						
+					</div>
+					<button onclick="tampilkan06()">Output:</button>
+					<div class="example-content sembunyikan" id="sembunyikan06">
+						
+						<form action="http://www.w3schools.com/html/action_page.php"
+						oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+						0
+						<input type="range" id="a" name="a" value="50">
+						100 +
+						<input type="number" id="b" name="b" value="50">
+						=
+						<output name="x" for="a b"></output>
+						<br><br>
+						<input type="submit">
+						</form>
+						
+					</div>
+				</article>	
+				
+				<table class="browser-support">
+					<thead>
+						<tr>
+							<th colspan="5" class="caption"> BROWSER SUPPORT </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="browser-logos">
+							<td> <img src="../logos/Chrome.png"> </td>
+							<td> <img src="../logos/IE.png"> </td>
+							<td> <img src="../logos/Firefox.png"> </td>
+							<td> <img src="../logos/Safari.png"> </td>
+							<td> <img src="../logos/Opera.png"> </td>
+						</tr>
+						<tr class="center">
+							<td> Yes </td>
+							<td> No </td>
+							<td> Yes </td>
+							<td> Yes </td>
+							<td> Yes </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>
+			<article>
+				<h2> HTML Form Elements </h2>
+				<p> 
+				<img src="../logos/html 5.jpg" width="20" height="auto" alt="html5">
+				= new in HTML5.
+				</p>
+				
+				<table>
+					<thead>
+						<tr>
+							<th> Tag </th>
+							<th> Deskripsi </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> <<b>form</b>> </td>
+							<td> Mendefinisikan sebuah formulir HTML untuk input pengguna </td>
+						</tr>
+						<tr>
+							<td> <<b>input</b>> </td>
+							<td> Mendefinisikan sebuah input control </td>
+						</tr>
+						<tr>
+							<td> <<b>textarea</b>> </td>
+							<td> Mendefinisikan sebuah multiline inout control (area teks) </td>
+						</tr>
+						<tr>
+							<td> <<b>label</b>> </td>
+							<td> Mendefinisikan label untuk sebuah element <<b>input</b>> </td>
+						</tr>
+						<tr>
+							<td> <<b>fieldset</b>> </td>
+							<td> Mengelompokan element yang berhubungan dalam sebuah formulir </td>
+						</tr>
+						<tr>
+							<td> <<b>legend</b>> </td>
+							<td> Mendefinisikan sebuah caption untuk sebuah element <<b>fieldset</b>> </td>
+						</tr>
+						<tr>
+							<td> <<b>select</b>> </td>
+							<td> Mendefinisikan sebuah dirp-down list </td>
+						</tr>
+						<tr>
+							<td> <<b>optgroup</b>> </td>
+							<td> Mendefinisikan sebuah kelompok dari opsi yang berhubungan dalam sebuah drop-down list </td>
+						</tr>
+						<tr>
+							<td> <<b>option</b>> </td>
+							<td> Mendefinisikan sebuah opsi dalam drop-down list </td>
+						</tr>
+						<tr>
+							<td> <<b>button</b>> </td>
+							<td> Mendefinisikan tombol yang dapat diklik </td>
+						</tr>
+						<tr>
+							<td> <<b>datalist</b>> <img src="../logos/html 5.jpg" width="20" height="auto" alt="html5"></td>
+							<td> Mendefinisikan sebuah daftar dari pre-defined options untuk input controls </td>
+						</tr>
+						<tr>
+							<td> <<b>keygen</b>> <img src="../logos/html 5.jpg" width="20" height="auto" alt="html5"></td>
+							<td> Mendefinisikan sebuah key-pair generator field (for forms) </td>
+						</tr>
+						<tr>
+							<td> <<b>output</b>> <img src="../logos/html 5.jpg" width="20" height="auto" alt="html5"></td>
+							<td> Mendefinisikan hasil dari sebuah kalkulasi </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+</section>
+<section>		
+			<article id="NoB">
+			<a href="HTML forms.html">
+			<div class="back">&larr; Kembali </div>
+			</a>
+			<a href="HTML input types.html" >
+			<div class="next">Selanjutnya &rarr;</div>
+			</a>
+			
+			<article>
+</section>
+
+			
+		</div>
+<!--closing main-->
+	</div>
+<!--closing container-->			
+</div>
+</body>
+</html>
