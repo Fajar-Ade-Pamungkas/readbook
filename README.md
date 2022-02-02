@@ -1,2 +1,2 @@
 # readbook
-Belajar membuat website sederhara
+Belajar membuat website sederhana
